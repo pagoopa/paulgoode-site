@@ -26,7 +26,8 @@ const products = defineCollection({
       tags: z.array(z.string()).default([]),
       order: z.number(),
       images: z.array(z.object({ src: image(), alt: z.string() })).min(1),
-      gumroadUrl: z.url().optional(),
+      // Stripe Payment Link (https://buy.stripe.com/...). Turns on the Buy button.
+      paymentLink: z.url().optional(),
       sold: z.boolean().default(false),
     }),
 });

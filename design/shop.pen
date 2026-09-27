@@ -7304,7 +7304,7 @@
                   "id": "S6QOX",
                   "name": "Label",
                   "fill": "$bg",
-                  "content": "Buy on Gumroad",
+                  "content": "Buy now",
                   "fontFamily": "$font-body",
                   "fontSize": 14,
                   "fontWeight": "500"
