@@ -10,7 +10,7 @@ images:
     alt: Waffle, acrylic on paper by Paul Goode
   - src: ../../assets/products/waffle/2.jpg
     alt: Waffle hanging on the studio wall
-# Paste the Gumroad product link here to turn on the Buy button.
-# gumroadUrl: https://<your-gumroad>.gumroad.com/l/waffle
+# Paste the Stripe Payment Link here to turn on the Buy button.
+# paymentLink: https://buy.stripe.com/...
 sold: false
 ---

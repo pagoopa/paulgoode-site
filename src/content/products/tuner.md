@@ -10,7 +10,7 @@ images:
     alt: Tuner, acrylic on paper by Paul Goode
   - src: ../../assets/products/tuner/2.jpg
     alt: Tuner hanging on the studio wall
-# Paste the Gumroad product link here to turn on the Buy button.
-# gumroadUrl: https://<your-gumroad>.gumroad.com/l/tuner
+# Paste the Stripe Payment Link here to turn on the Buy button.
+# paymentLink: https://buy.stripe.com/...
 sold: false
 ---

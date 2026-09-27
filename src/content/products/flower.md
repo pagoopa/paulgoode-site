@@ -10,7 +10,7 @@ images:
     alt: Flower, acrylic on paper by Paul Goode
   - src: ../../assets/products/flower/2.jpg
     alt: Flower hanging on the studio wall
-# Paste the Gumroad product link here to turn on the Buy button.
-# gumroadUrl: https://<your-gumroad>.gumroad.com/l/flower
+# Paste the Stripe Payment Link here to turn on the Buy button.
+# paymentLink: https://buy.stripe.com/...
 sold: false
 ---

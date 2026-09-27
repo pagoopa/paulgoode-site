@@ -22,7 +22,7 @@ interface Props {
 }
 
 const { product, related } = Astro.props;
-const { name, price, size, medium, signature, sold, gumroadUrl } = product.data;
+const { name, price, size, medium, signature, sold, paymentLink } = product.data;
 const { Content } = await render(product);
 const hasBody = Boolean(product.body?.trim());
 ---
@@ -60,9 +60,9 @@ const hasBody = Boolean(product.body?.trim());
 
         {sold ? (
           <span class="btn btn-solid product__buy is-disabled" aria-disabled="true">Sold</span>
-        ) : gumroadUrl ? (
-          <a class="btn btn-solid product__buy" href={gumroadUrl} target="_blank" rel="noopener noreferrer">
-            Buy on Gumroad
+        ) : paymentLink ? (
+          <a class="btn btn-solid product__buy" href={paymentLink}>
+            Buy now
           </a>
         ) : (
           <span class="btn btn-solid product__buy is-disabled" aria-disabled="true">Checkout coming soon</span>
@@ -71,7 +71,7 @@ const hasBody = Boolean(product.body?.trim());
         <p class="product__note">
           {sold
             ? 'This piece has found a home. '
-            : 'Checkout is handled securely through Gumroad. Each piece ships once, direct from the studio. '}
+            : 'Checkout is handled securely through Stripe. Each piece ships once, direct from the studio. '}
           Questions? <a href="mailto:hello@paulgoode.com">Email me</a>.
         </p>
 
