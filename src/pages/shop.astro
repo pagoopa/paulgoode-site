@@ -1,20 +1,311 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+// TODO: replace with real data pulled from Gumroad (API or manual list) once
+// products are listed there. `tags` and `signature` are placeholder
+// assignments for demonstration — swap in the real Pattern / Landscape /
+// Creature assignments whenever that pass is done.
+// `gumroadUrl` is a placeholder — point each at its real Gumroad product page.
+interface Product {
+  name: string;
+  slug: string;
+  price: string;
+  tags: Array<'pattern' | 'landscape' | 'creature'>;
+  signature: boolean;
+  gradA: string;
+  gradB: string;
+  gumroadUrl: string;
+}
+
+const products: Product[] = [
+  { name: 'Tuner', slug: 'tuner', price: '$250', tags: ['pattern'], signature: true, gradA: '#C1502E', gradB: '#8C3A22', gumroadUrl: '#' },
+  { name: 'Waffle', slug: 'waffle', price: '$200', tags: ['pattern'], signature: false, gradA: '#D9A441', gradB: '#B5842E', gumroadUrl: '#' },
+  { name: 'Revelation', slug: 'revelation', price: '$200', tags: ['landscape'], signature: false, gradA: '#3A5A6B', gradB: '#26404E', gumroadUrl: '#' },
+  { name: 'Orb', slug: 'orb', price: '$200', tags: ['pattern'], signature: false, gradA: '#8C6C9C', gradB: '#654A78', gumroadUrl: '#' },
+  { name: 'Lighthouse', slug: 'lighthouse', price: '$250', tags: ['landscape'], signature: true, gradA: '#3A5A6B', gradB: '#1E323C', gumroadUrl: '#' },
+  { name: 'Flower', slug: 'flower', price: '$200', tags: ['pattern'], signature: false, gradA: '#C77A93', gradB: '#9C5470', gumroadUrl: '#' },
+  { name: 'Dude', slug: 'dude', price: '$200', tags: ['creature'], signature: false, gradA: '#5B6B4F', gradB: '#3E4A35', gumroadUrl: '#' },
+  { name: 'Driver', slug: 'driver', price: '$250', tags: ['landscape'], signature: true, gradA: '#3A5A6B', gradB: '#2A4756', gumroadUrl: '#' },
+  { name: 'Creature', slug: 'creature', price: '$200', tags: ['creature'], signature: false, gradA: '#5B6B4F', gradB: '#455339', gumroadUrl: '#' },
+  { name: 'Road Trip', slug: 'road-trip', price: '$250', tags: ['landscape'], signature: true, gradA: '#C1502E', gradB: '#8C3A22', gumroadUrl: '#' },
+];
+
+const filters = [
+  { id: 'all', label: 'All' },
+  { id: 'pattern', label: 'Pattern' },
+  { id: 'landscape', label: 'Landscape' },
+  { id: 'creature', label: 'Creature' },
+  { id: 'signature', label: 'Signature Work' },
+] as const;
+
+const tagLabels: Record<string, string> = {
+  pattern: 'Pattern',
+  landscape: 'Landscape',
+  creature: 'Creature',
+};
 ---
 
-<Layout title="Shop" description="Original artwork by Paul Goode.">
-  <section class="wrap prose shop-stub">
-    <p class="eyebrow">Shop</p>
-    <h1>Coming soon</h1>
-    <p>
-      This page is a placeholder. The real shop — pulling in originals via
-      Gumroad, with category and tag filtering — is being built next.
+<Layout title="Shop" description="Original acrylic works on paper by Paul Goode.">
+  <section class="wrap intro">
+    <p class="eyebrow">Originals</p>
+    <h1>Drawing is thinking, framed.</h1>
+    <p class="intro__lede prose">
+      One-of-a-kind acrylic works on paper, 22&Prime; &times; 30&Prime;. Checkout
+      is handled securely through Gumroad &mdash; each piece ships once, direct
+      from the studio.
     </p>
   </section>
+
+  <section class="wrap filter-bar">
+    <div class="filter-bar__pills" role="group" aria-label="Filter by category">
+      {filters.map((f, i) => (
+        <button
+          type="button"
+          class="pill"
+          data-filter={f.id}
+          aria-pressed={i === 0 ? 'true' : 'false'}
+        >
+          {f.label}
+        </button>
+      ))}
+    </div>
+    <div class="filter-bar__count" data-result-count aria-live="polite"></div>
+  </section>
+
+  <section class="wrap product-grid">
+    {products.map((p) => {
+      const labels = p.tags.map((t) => tagLabels[t]);
+      if (p.signature) labels.push('Signature Work');
+      const filterKeys = [...p.tags, ...(p.signature ? ['signature'] : [])].join(' ');
+
+      return (
+        <article class="product-card" data-tags={filterKeys}>
+          <div
+            class="product-card__image"
+            style={`background: linear-gradient(135deg, ${p.gradA}, ${p.gradB})`}
+          >
+            <span class="product-card__initial">{p.name.charAt(0)}</span>
+            {p.signature && <span class="product-card__badge">Signature</span>}
+          </div>
+          <div class="product-card__body">
+            <div class="product-card__row">
+              <h2 class="product-card__name">{p.name}</h2>
+              <span class="product-card__price">{p.price}</span>
+            </div>
+            <p class="product-card__meta">22&Prime; &times; 30&Prime; &middot; Acrylic on paper</p>
+            <p class="product-card__tags">{labels.join(' · ')}</p>
+          </div>
+          <a class="btn product-card__cta" href={p.gumroadUrl} target="_blank" rel="noopener noreferrer">
+            View on Gumroad
+          </a>
+        </article>
+      );
+    })}
+  </section>
+
+  <p class="wrap empty-state" data-empty-state hidden>No pieces match that filter yet.</p>
 </Layout>
 
 <style>
-  .shop-stub {
-    padding-block: 64px 96px;
+  .intro {
+    padding-block: 72px 40px;
+    max-width: 900px;
+  }
+
+  .intro h1 {
+    font-size: 48px;
+    margin-block: 12px 14px;
+  }
+
+  .intro__lede {
+    font-size: 17px;
+    color: var(--color-ink-muted);
+    max-width: 640px;
+  }
+
+  .filter-bar {
+    padding-block: 0 40px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .filter-bar__pills {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .pill {
+    font-family: var(--font-body);
+    font-size: 14px;
+    border-radius: 999px;
+    padding: 9px 18px;
+    cursor: pointer;
+    border: 1px solid var(--color-ink);
+    background: transparent;
+    color: var(--color-ink);
+  }
+
+  .pill[aria-pressed='true'] {
+    border-color: var(--color-accent);
+    background: var(--color-accent);
+    color: var(--color-bg);
+  }
+
+  .filter-bar__count {
+    margin-left: auto;
+    font-size: 14px;
+    color: var(--color-ink-faint);
+  }
+
+  .product-grid {
+    padding-block: 0 96px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 32px 28px;
+  }
+
+  .product-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-card[hidden] {
+    display: none;
+  }
+
+  .product-card__image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .product-card__initial {
+    font-family: var(--font-display);
+    font-size: 96px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.55);
+  }
+
+  .product-card__badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: var(--color-bg);
+    color: var(--color-ink);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 999px;
+  }
+
+  .product-card__body {
+    padding-top: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .product-card__row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .product-card__name {
+    font-size: 19px;
+    margin: 0;
+  }
+
+  .product-card__price {
+    font-size: 16px;
+    color: var(--color-ink-muted);
+  }
+
+  .product-card__meta {
+    font-size: 13px;
+    color: var(--color-ink-faint);
+    margin: 0;
+  }
+
+  .product-card__tags {
+    font-size: 12px;
+    color: #a79a82;
+    margin: 2px 0 0;
+  }
+
+  .product-card__cta {
+    margin-top: 12px;
+    text-align: center;
+  }
+
+  .empty-state {
+    padding-block: 0 96px;
+    color: var(--color-ink-faint);
+  }
+
+  @media (max-width: 960px) {
+    .product-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 560px) {
+    .intro h1 {
+      font-size: 34px;
+    }
+
+    .product-grid {
+      grid-template-columns: 1fr;
+    }
   }
 </style>
+
+<script>
+  const pills = document.querySelectorAll<HTMLButtonElement>('.pill');
+  const cards = document.querySelectorAll<HTMLElement>('.product-card');
+  const countEl = document.querySelector<HTMLElement>('[data-result-count]');
+  const emptyEl = document.querySelector<HTMLElement>('[data-empty-state]');
+
+  function applyFilter(filterId: string) {
+    let visibleCount = 0;
+
+    cards.forEach((card) => {
+      const tags = (card.dataset.tags ?? '').split(' ').filter(Boolean);
+      const matches = filterId === 'all' || tags.includes(filterId);
+      card.hidden = !matches;
+      if (matches) visibleCount += 1;
+    });
+
+    if (countEl) {
+      const activeLabel = document.querySelector<HTMLElement>(`.pill[data-filter="${filterId}"]`)?.textContent?.trim();
+      const noun = visibleCount === 1 ? 'piece' : 'pieces';
+      countEl.textContent = filterId === 'all'
+        ? `${visibleCount} ${noun}`
+        : `${visibleCount} ${noun} · ${activeLabel}`;
+    }
+
+    if (emptyEl) {
+      emptyEl.hidden = visibleCount !== 0;
+    }
+  }
+
+  pills.forEach((pill) => {
+    pill.addEventListener('click', () => {
+      pills.forEach((p) => p.setAttribute('aria-pressed', 'false'));
+      pill.setAttribute('aria-pressed', 'true');
+      applyFilter(pill.dataset.filter ?? 'all');
+    });
+  });
+
+  applyFilter('all');
+</script>
