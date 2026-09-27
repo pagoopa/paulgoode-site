@@ -10,7 +10,6 @@ images:
     alt: Tuner, acrylic on paper by Paul Goode
   - src: ../../assets/products/tuner/2.jpg
     alt: Tuner hanging on the studio wall
-# Paste the Stripe Payment Link here to turn on the Buy button.
-# paymentLink: https://buy.stripe.com/...
+paymentLink: https://buy.stripe.com/6oU8wP2TL9KH0x4fF2gYU00
 sold: false
 ---
