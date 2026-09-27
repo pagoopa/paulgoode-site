@@ -1,0 +1,48 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Home">
+  <section class="wrap hero">
+    <p class="eyebrow">Founder, Uplifting Ink</p>
+    <h1>Drawing is thinking.</h1>
+    <p class="hero__lede prose">
+      UX designer, artist, and musician working across product design and
+      original art. This is where the process is visible — sketches, shop
+      pieces, and the journal, all in one place.
+    </p>
+    <div class="hero__actions">
+      <a class="btn btn-solid" href="/shop">View the shop</a>
+      <a class="btn" href="/blog">Read the journal</a>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .hero {
+    padding-block: 96px 64px;
+    max-width: 720px;
+  }
+
+  .hero h1 {
+    font-size: 56px;
+    margin-block: 12px 20px;
+  }
+
+  .hero__lede {
+    font-size: 18px;
+    color: var(--color-ink-muted);
+  }
+
+  .hero__actions {
+    display: flex;
+    gap: 16px;
+    margin-top: 32px;
+  }
+
+  @media (max-width: 640px) {
+    .hero h1 {
+      font-size: 38px;
+    }
+  }
+</style>
