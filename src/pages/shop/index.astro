@@ -1,0 +1,205 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ProductCard from '../../components/ProductCard.astro';
+import { getProducts, mediumKey } from '../../lib/products';
+
+const products = await getProducts();
+
+// Filters are derived from the product data, so a filter only appears when at
+// least one piece matches it. Add `tags: [pattern]` etc. to a product's
+// frontmatter to bring back subject filters.
+const tagLabels: Record<string, string> = {
+  pattern: 'Pattern',
+  landscape: 'Landscape',
+  creature: 'Creature',
+};
+const titleCase = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
+
+const tagIds = [...new Set(products.flatMap((p) => p.data.tags))];
+const mediumIds = [...new Set(products.map((p) => mediumKey(p.data.medium)))];
+
+const filters = [
+  { id: 'all', label: 'All' },
+  ...(products.some((p) => p.data.signature) ? [{ id: 'signature', label: 'Signature Work' }] : []),
+  ...tagIds.map((id) => ({ id, label: tagLabels[id] ?? titleCase(id) })),
+  ...(mediumIds.length > 1 ? mediumIds.map((id) => ({ id, label: titleCase(id) })) : []),
+];
+---
+
+<Layout title="Shop" description="Original acrylic and ink works on paper by Paul Goode.">
+  <section class="wrap intro">
+    <p class="eyebrow">Originals</p>
+    <h1>Drawing is thinking, framed.</h1>
+    <p class="intro__lede prose">
+      One-of-a-kind acrylic and ink works on paper, 22&Prime; &times; 30&Prime;.
+      Checkout is handled securely through Gumroad &mdash; each piece ships once,
+      direct from the studio.
+    </p>
+  </section>
+
+  <section class="wrap filter-bar">
+    <div class="filter-bar__pills" role="group" aria-label="Filter by category">
+      {filters.map((f, i) => (
+        <button
+          type="button"
+          class="pill"
+          data-filter={f.id}
+          aria-pressed={i === 0 ? 'true' : 'false'}
+        >
+          {f.label}
+        </button>
+      ))}
+    </div>
+    <div class="filter-bar__count" data-result-count aria-live="polite"></div>
+  </section>
+
+  <section class="wrap product-grid">
+    {products.map((p) => <ProductCard product={p} />)}
+  </section>
+
+  <p class="wrap empty-state" data-empty-state hidden>No pieces match that filter yet.</p>
+</Layout>
+
+<style>
+  .intro {
+    padding-block: 72px 40px;
+  }
+
+  .intro h1 {
+    font-size: 48px;
+    margin-block: 12px 14px;
+  }
+
+  .intro__lede {
+    font-size: 17px;
+    color: var(--color-ink-muted);
+    max-width: 640px;
+  }
+
+  .filter-bar {
+    padding-block: 0 40px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .filter-bar__pills {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .pill {
+    font-family: var(--font-body);
+    font-size: 14px;
+    border-radius: 999px;
+    padding: 9px 18px;
+    cursor: pointer;
+    border: 1px solid var(--color-ink);
+    background: transparent;
+    color: var(--color-ink);
+  }
+
+  .pill[aria-pressed='true'] {
+    border-color: var(--color-accent);
+    background: var(--color-accent);
+    color: var(--color-bg);
+  }
+
+  .filter-bar__count {
+    margin-left: auto;
+    font-size: 14px;
+    color: var(--color-ink-faint);
+  }
+
+  .product-grid {
+    padding-block: 0 96px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 40px 28px;
+  }
+
+  .empty-state {
+    padding-block: 0 96px;
+    color: var(--color-ink-faint);
+  }
+
+  @media (max-width: 960px) {
+    .product-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 560px) {
+    .intro {
+      padding-block: 48px 32px;
+    }
+
+    .intro h1 {
+      font-size: 34px;
+    }
+
+    .filter-bar {
+      padding-bottom: 28px;
+    }
+
+    .filter-bar__pills {
+      gap: 8px;
+    }
+
+    .pill {
+      padding: 8px 14px;
+    }
+
+    .filter-bar__count {
+      margin-left: 0;
+      width: 100%;
+    }
+
+    .product-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 32px 16px;
+    }
+  }
+</style>
+
+<script>
+  const pills = document.querySelectorAll<HTMLButtonElement>('.pill');
+  const cards = document.querySelectorAll<HTMLElement>('.product-card');
+  const countEl = document.querySelector<HTMLElement>('[data-result-count]');
+  const emptyEl = document.querySelector<HTMLElement>('[data-empty-state]');
+
+  function applyFilter(filterId: string) {
+    let visibleCount = 0;
+
+    cards.forEach((card) => {
+      const tags = (card.dataset.tags ?? '').split(' ').filter(Boolean);
+      const matches = filterId === 'all' || tags.includes(filterId);
+      card.hidden = !matches;
+      if (matches) visibleCount += 1;
+    });
+
+    if (countEl) {
+      const activeLabel = document.querySelector<HTMLElement>(`.pill[data-filter="${filterId}"]`)?.textContent?.trim();
+      const noun = visibleCount === 1 ? 'piece' : 'pieces';
+      countEl.textContent = filterId === 'all'
+        ? `${visibleCount} ${noun}`
+        : `${visibleCount} ${noun} · ${activeLabel}`;
+    }
+
+    if (emptyEl) {
+      emptyEl.hidden = visibleCount !== 0;
+    }
+  }
+
+  pills.forEach((pill) => {
+    pill.addEventListener('click', () => {
+      pills.forEach((p) => p.setAttribute('aria-pressed', 'false'));
+      pill.setAttribute('aria-pressed', 'true');
+      applyFilter(pill.dataset.filter ?? 'all');
+    });
+  });
+
+  applyFilter('all');
+</script>

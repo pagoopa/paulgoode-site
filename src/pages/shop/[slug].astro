@@ -1,0 +1,258 @@
+---
+import { render } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import ProductCard from '../../components/ProductCard.astro';
+import ProductGallery from '../../components/ProductGallery.astro';
+import { formatPrice, getProducts, type Product } from '../../lib/products';
+
+export async function getStaticPaths() {
+  const products = await getProducts();
+  return products.map((product, i) => {
+    // "You might also like": the next few pieces in shop order, wrapping around.
+    const related = [1, 2, 3, 4]
+      .map((offset) => products[(i + offset) % products.length])
+      .filter((p) => p.id !== product.id);
+    return { params: { slug: product.id }, props: { product, related } };
+  });
+}
+
+interface Props {
+  product: Product;
+  related: Product[];
+}
+
+const { product, related } = Astro.props;
+const { name, price, size, medium, signature, sold, gumroadUrl } = product.data;
+const { Content } = await render(product);
+const hasBody = Boolean(product.body?.trim());
+---
+
+<Layout title={name} description={`${name} — ${size} ${medium.toLowerCase()}, an original by Paul Goode.`}>
+  <div class="wrap product">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/shop/">Shop</a>
+      <span aria-hidden="true">/</span>
+      <span aria-current="page">{name}</span>
+    </nav>
+
+    <div class="product__layout">
+      <ProductGallery product={product} />
+
+      <section class="product__info">
+        <p class="eyebrow">{signature ? 'Signature Work' : 'Original'}</p>
+        <h1 class="product__name">{name}</h1>
+        <p class:list={['product__price', { 'is-sold': sold }]}>{formatPrice(price)}</p>
+
+        <dl class="product__specs">
+          <div>
+            <dt>Size</dt>
+            <dd>{size}</dd>
+          </div>
+          <div>
+            <dt>Medium</dt>
+            <dd>{medium}</dd>
+          </div>
+          <div>
+            <dt>Edition</dt>
+            <dd>One-of-a-kind original</dd>
+          </div>
+        </dl>
+
+        {sold ? (
+          <span class="btn btn-solid product__buy is-disabled" aria-disabled="true">Sold</span>
+        ) : gumroadUrl ? (
+          <a class="btn btn-solid product__buy" href={gumroadUrl} target="_blank" rel="noopener noreferrer">
+            Buy on Gumroad
+          </a>
+        ) : (
+          <span class="btn btn-solid product__buy is-disabled" aria-disabled="true">Checkout coming soon</span>
+        )}
+
+        <p class="product__note">
+          {sold
+            ? 'This piece has found a home. '
+            : 'Checkout is handled securely through Gumroad. Each piece ships once, direct from the studio. '}
+          Questions? <a href="mailto:hello@paulgoode.com">Email me</a>.
+        </p>
+
+        {signature && (
+          <p class="product__series">Part of the Signature Work series.</p>
+        )}
+
+        {hasBody && (
+          <div class="product__body">
+            <Content />
+          </div>
+        )}
+      </section>
+    </div>
+  </div>
+
+  <section class="wrap related" aria-labelledby="related-title">
+    <h2 id="related-title" class="related__title">You might also like</h2>
+    <div class="related__grid">
+      {related.map((p) => <ProductCard product={p} headingLevel="h3" />)}
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .product {
+    padding-block: 32px 96px;
+  }
+
+  .breadcrumb {
+    display: flex;
+    gap: 8px;
+    font-size: 14px;
+    color: var(--color-ink-faint);
+    margin-bottom: 32px;
+  }
+
+  .breadcrumb a:hover {
+    color: var(--color-accent);
+  }
+
+  .breadcrumb [aria-current] {
+    color: var(--color-ink);
+  }
+
+  .product__layout {
+    display: grid;
+    grid-template-columns: minmax(0, 560px) minmax(0, 1fr);
+    gap: 64px;
+    align-items: start;
+  }
+
+  .product__info {
+    position: sticky;
+    top: 32px;
+    max-width: 420px;
+  }
+
+  .product__name {
+    font-size: 48px;
+    margin-block: 12px 8px;
+  }
+
+  .product__price {
+    font-size: 22px;
+    color: var(--color-ink-muted);
+    margin-bottom: 28px;
+  }
+
+  .product__price.is-sold {
+    text-decoration: line-through;
+    color: var(--color-ink-faint);
+  }
+
+  .product__specs {
+    margin: 0 0 32px;
+    border-top: 1px solid var(--color-border);
+  }
+
+  .product__specs div {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding-block: 12px;
+    border-bottom: 1px solid var(--color-border);
+    font-size: 15px;
+  }
+
+  .product__specs dt {
+    color: var(--color-ink-faint);
+  }
+
+  .product__specs dd {
+    margin: 0;
+    text-align: right;
+  }
+
+  .product__buy {
+    width: 100%;
+    padding-block: 14px;
+    font-size: 15px;
+  }
+
+  .product__buy.is-disabled {
+    background: var(--color-border);
+    border-color: var(--color-border);
+    color: var(--color-ink-muted);
+    cursor: default;
+  }
+
+  .product__note {
+    margin-top: 16px;
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--color-ink-faint);
+  }
+
+  .product__note a {
+    color: var(--color-ink);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .product__series {
+    font-size: 14px;
+    color: var(--color-accent);
+    font-weight: 500;
+  }
+
+  .product__body {
+    margin-top: 24px;
+    color: var(--color-ink-muted);
+  }
+
+  .related {
+    padding-bottom: 32px;
+  }
+
+  .related__title {
+    font-size: 28px;
+    margin-bottom: 28px;
+  }
+
+  .related__grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 28px;
+  }
+
+  @media (max-width: 860px) {
+    .product__layout {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+
+    .product__info {
+      position: static;
+      max-width: none;
+    }
+
+    .related__grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 32px 16px;
+    }
+  }
+
+  @media (max-width: 560px) {
+    .product {
+      padding-block: 24px 64px;
+    }
+
+    .breadcrumb {
+      margin-bottom: 20px;
+    }
+
+    .product__name {
+      font-size: 34px;
+    }
+
+    .related__title {
+      font-size: 24px;
+    }
+  }
+</style>

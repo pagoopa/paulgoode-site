@@ -1,0 +1,508 @@
+---
+import { Image } from 'astro:assets';
+import type { Product } from '../lib/products';
+
+interface Props {
+  product: Product;
+}
+
+const { product } = Astro.props;
+const { name, size, medium, images } = product.data;
+const count = images.length;
+---
+
+<div class="gallery" data-gallery>
+  <div class="gallery__stage">
+    {images.map((img, i) => (
+      <button
+        type="button"
+        class="gallery__slide"
+        data-open={i}
+        hidden={i !== 0}
+        aria-label={`Open image ${i + 1} of ${count} in viewer`}
+      >
+        <Image
+          class="gallery__image"
+          src={img.src}
+          alt={img.alt}
+          widths={[480, 720, 960, 1200]}
+          sizes="(max-width: 860px) 100vw, 560px"
+          loading={i === 0 ? 'eager' : 'lazy'}
+        />
+      </button>
+    ))}
+    <span class="gallery__expand" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="16" height="16"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg>
+    </span>
+  </div>
+
+  {count > 1 && (
+    <div class="gallery__thumbs">
+      {images.map((img, i) => (
+        <button
+          type="button"
+          class="gallery__thumb"
+          data-show={i}
+          aria-pressed={i === 0 ? 'true' : 'false'}
+          aria-label={`Show image ${i + 1} of ${count}`}
+        >
+          <Image src={img.src} alt="" width={160} />
+        </button>
+      ))}
+    </div>
+  )}
+</div>
+
+<dialog class="lightbox" data-lightbox aria-label={`${name} — image viewer`}>
+  <div class="lightbox__bar">
+    <span class="lightbox__counter" data-counter aria-live="polite">1 / {count}</span>
+    <button type="button" class="lightbox__icon-btn" data-close aria-label="Close viewer">
+      <svg viewBox="0 0 24 24" width="24" height="24"><path d="M18 6 6 18M6 6l12 12" /></svg>
+    </button>
+  </div>
+
+  <div class="lightbox__stage">
+    {images.map((img, i) => (
+      <figure class="lightbox__slide" data-slide={i} hidden>
+        <Image
+          class="lightbox__image"
+          src={img.src}
+          alt={img.alt}
+          widths={[1000, 1600, 2000]}
+          sizes="100vw"
+          loading="lazy"
+          draggable="false"
+        />
+      </figure>
+    ))}
+  </div>
+
+  <div class="lightbox__footer">
+    <p class="lightbox__hint">
+      <svg viewBox="0 0 24 24" width="14" height="14"><circle cx="11" cy="11" r="7" /><path d="m20 20-4-4M11 8v6M8 11h6" /></svg>
+      <span class="lightbox__hint--pointer">Click the image to zoom</span>
+      <span class="lightbox__hint--touch">Double-tap to zoom · swipe for more</span>
+    </p>
+    <div class="lightbox__caption-row">
+      <button type="button" class="lightbox__nav" data-prev aria-label="Previous image" disabled={count < 2}>
+        <svg viewBox="0 0 24 24" width="20" height="20"><path d="m15 18-6-6 6-6" /></svg>
+      </button>
+      <div class="lightbox__caption">
+        <span class="lightbox__title">{name}</span>
+        <span class="lightbox__details">{size} &middot; {medium}</span>
+      </div>
+      <button type="button" class="lightbox__nav" data-next aria-label="Next image" disabled={count < 2}>
+        <svg viewBox="0 0 24 24" width="20" height="20"><path d="m9 18 6-6-6-6" /></svg>
+      </button>
+    </div>
+    {count > 1 && (
+      <div class="lightbox__thumbs">
+        {images.map((img, i) => (
+          <button
+            type="button"
+            class="lightbox__thumb"
+            data-goto={i}
+            aria-label={`Show image ${i + 1} of ${count}`}
+          >
+            <Image src={img.src} alt="" width={120} />
+          </button>
+        ))}
+      </div>
+    )}
+  </div>
+</dialog>
+
+<style>
+  svg {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  /* ---------- On-page gallery ---------- */
+
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .gallery__stage {
+    position: relative;
+  }
+
+  .gallery__slide {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    padding: 0;
+    border: 0;
+    border-radius: 4px;
+    overflow: hidden;
+    background: #fff;
+    cursor: zoom-in;
+  }
+
+  .gallery__slide[hidden] {
+    display: none;
+  }
+
+  .gallery__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .gallery__expand {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid var(--color-border);
+    color: var(--color-ink);
+    pointer-events: none;
+  }
+
+  .gallery__thumbs {
+    display: flex;
+    gap: 12px;
+  }
+
+  .gallery__thumb,
+  .lightbox__thumb {
+    padding: 0;
+    border: 0;
+    border-radius: 4px;
+    overflow: hidden;
+    background: #fff;
+    cursor: pointer;
+    outline-offset: 2px;
+  }
+
+  .gallery__thumb {
+    width: 72px;
+    height: 72px;
+    opacity: 0.55;
+  }
+
+  .gallery__thumb img,
+  .lightbox__thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .gallery__thumb[aria-pressed='true'] {
+    opacity: 1;
+    outline: 2px solid var(--color-accent);
+  }
+
+  /* ---------- Lightbox ---------- */
+
+  .lightbox {
+    width: 100vw;
+    height: 100dvh;
+    max-width: none;
+    max-height: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: #fff;
+    color: var(--color-ink);
+  }
+
+  .lightbox[open] {
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr) auto;
+  }
+
+  .lightbox::backdrop {
+    background: #fff;
+  }
+
+  .lightbox__bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 8px 8px 24px;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .lightbox__counter {
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    color: var(--color-ink-faint);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .lightbox__icon-btn,
+  .lightbox__nav {
+    display: grid;
+    place-items: center;
+    background: transparent;
+    color: var(--color-ink);
+    cursor: pointer;
+  }
+
+  .lightbox__icon-btn {
+    width: 48px;
+    height: 48px;
+    border: 0;
+  }
+
+  .lightbox__icon-btn:hover,
+  .lightbox__nav:hover:not(:disabled) {
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+  }
+
+  .lightbox__stage {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .lightbox__slide {
+    position: absolute;
+    inset: 0;
+    margin: 0;
+    overflow: hidden;
+    touch-action: pan-y pinch-zoom;
+  }
+
+  .lightbox__slide[hidden] {
+    display: none;
+  }
+
+  .lightbox__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    cursor: zoom-in;
+    user-select: none;
+    transition: transform 0.25s ease;
+  }
+
+  .lightbox__slide.is-zoomed {
+    touch-action: none;
+  }
+
+  .lightbox__slide.is-zoomed .lightbox__image {
+    transform: scale(2.4);
+    cursor: zoom-out;
+    transition: none;
+  }
+
+  .lightbox__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 24px 28px;
+  }
+
+  .lightbox__hint {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 0;
+    font-size: 12px;
+    color: var(--color-ink-faint);
+  }
+
+  .lightbox__hint--touch {
+    display: none;
+  }
+
+  @media (hover: none) {
+    .lightbox__hint--pointer {
+      display: none;
+    }
+
+    .lightbox__hint--touch {
+      display: inline;
+    }
+  }
+
+  .lightbox__caption-row {
+    width: 100%;
+    max-width: 560px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  .lightbox__nav {
+    width: 44px;
+    height: 44px;
+    flex: none;
+    border-radius: 999px;
+    border: 1px solid rgba(33, 29, 23, 0.35);
+  }
+
+  .lightbox__nav:disabled {
+    opacity: 0.3;
+    cursor: default;
+  }
+
+  .lightbox__caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    text-align: center;
+  }
+
+  .lightbox__title {
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .lightbox__details {
+    font-size: 13px;
+    color: var(--color-ink-faint);
+  }
+
+  .lightbox__thumbs {
+    display: flex;
+    gap: 10px;
+  }
+
+  .lightbox__thumb {
+    width: 56px;
+    height: 56px;
+    opacity: 0.5;
+  }
+
+  .lightbox__thumb[aria-current='true'] {
+    opacity: 1;
+    outline: 2px solid var(--color-accent);
+  }
+</style>
+
+<script>
+  const gallery = document.querySelector<HTMLElement>('[data-gallery]');
+  const dialog = document.querySelector<HTMLDialogElement>('[data-lightbox]');
+
+  if (gallery && dialog) {
+    const pageSlides = [...gallery.querySelectorAll<HTMLButtonElement>('[data-open]')];
+    const pageThumbs = [...gallery.querySelectorAll<HTMLButtonElement>('[data-show]')];
+    const slides = [...dialog.querySelectorAll<HTMLElement>('[data-slide]')];
+    const thumbs = [...dialog.querySelectorAll<HTMLButtonElement>('[data-goto]')];
+    const counter = dialog.querySelector<HTMLElement>('[data-counter]');
+    const count = slides.length;
+    let current = 0;
+
+    // ----- On-page gallery -----
+
+    function showOnPage(index: number) {
+      pageSlides.forEach((s, i) => (s.hidden = i !== index));
+      pageThumbs.forEach((t, i) => t.setAttribute('aria-pressed', String(i === index)));
+    }
+
+    pageThumbs.forEach((t) => t.addEventListener('click', () => showOnPage(Number(t.dataset.show))));
+    pageSlides.forEach((s) => s.addEventListener('click', () => open(Number(s.dataset.open))));
+
+    // ----- Lightbox -----
+
+    function show(index: number) {
+      current = (index + count) % count;
+      slides.forEach((s, i) => {
+        s.hidden = i !== current;
+        s.classList.remove('is-zoomed');
+      });
+      thumbs.forEach((t, i) => t.setAttribute('aria-current', String(i === current)));
+      if (counter) counter.textContent = `${current + 1} / ${count}`;
+    }
+
+    function open(index: number) {
+      show(index);
+      document.documentElement.style.overflow = 'hidden';
+      dialog!.showModal();
+    }
+
+    dialog.addEventListener('close', () => {
+      document.documentElement.style.overflow = '';
+      showOnPage(current);
+    });
+
+    dialog.querySelector('[data-close]')?.addEventListener('click', () => dialog.close());
+    dialog.querySelector('[data-prev]')?.addEventListener('click', () => show(current - 1));
+    dialog.querySelector('[data-next]')?.addEventListener('click', () => show(current + 1));
+    thumbs.forEach((t) => t.addEventListener('click', () => show(Number(t.dataset.goto))));
+
+    // Deep link: /shop/tuner/#image-2 opens the viewer on the second image.
+    const hashMatch = location.hash.match(/^#image-(\d+)$/);
+    if (hashMatch) {
+      const index = Number(hashMatch[1]) - 1;
+      if (index >= 0 && index < count) open(index);
+    }
+
+    dialog.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') show(current - 1);
+      if (e.key === 'ArrowRight') show(current + 1);
+    });
+
+    // ----- Zoom (click on desktop, double-tap on touch) and swipe -----
+
+    function setOrigin(slide: HTMLElement, e: PointerEvent) {
+      const img = slide.querySelector('img')!;
+      const rect = slide.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / rect.width) * 100;
+      const y = ((e.clientY - rect.top) / rect.height) * 100;
+      img.style.transformOrigin = `${x}% ${y}%`;
+    }
+
+    slides.forEach((slide) => {
+      let downX = 0;
+      let downY = 0;
+      let lastTap = 0;
+
+      slide.addEventListener('pointerdown', (e) => {
+        downX = e.clientX;
+        downY = e.clientY;
+      });
+
+      slide.addEventListener('pointermove', (e) => {
+        if (!slide.classList.contains('is-zoomed')) return;
+        if (e.pointerType === 'mouse' || e.buttons > 0 || e.pointerType === 'touch') setOrigin(slide, e);
+      });
+
+      slide.addEventListener('pointerup', (e) => {
+        const dx = e.clientX - downX;
+        const dy = e.clientY - downY;
+        const zoomed = slide.classList.contains('is-zoomed');
+
+        if (e.pointerType !== 'mouse') {
+          if (!zoomed && Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) {
+            show(current + (dx < 0 ? 1 : -1));
+            return;
+          }
+          const now = Date.now();
+          if (now - lastTap < 300) {
+            setOrigin(slide, e);
+            slide.classList.toggle('is-zoomed');
+            lastTap = 0;
+          } else {
+            lastTap = now;
+          }
+          return;
+        }
+
+        if (Math.abs(dx) < 5 && Math.abs(dy) < 5) {
+          setOrigin(slide, e);
+          slide.classList.toggle('is-zoomed');
+        }
+      });
+    });
+  }
+</script>
