@@ -3,18 +3,6 @@
   "children": [
     {
       "type": "frame",
-      "id": "bi8Au",
-      "x": 0,
-      "y": 0,
-      "name": "Frame",
-      "clip": true,
-      "width": 800,
-      "height": 600,
-      "fill": "#FFFFFF",
-      "layout": "none"
-    },
-    {
-      "type": "frame",
       "id": "J22AC",
       "x": 840,
       "y": 0,
@@ -2210,6 +2198,102 @@
                   }
                 }
               ]
+            },
+            {
+              "type": "frame",
+              "id": "a3fN08",
+              "name": "Hover States",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "fwzBv",
+                  "name": "Hover Title",
+                  "fill": "$ink-faint",
+                  "content": "HOVER STATES",
+                  "fontFamily": "$font-body",
+                  "fontSize": 11,
+                  "fontWeight": "600",
+                  "letterSpacing": 1.2
+                },
+                {
+                  "type": "frame",
+                  "id": "j9pP8K",
+                  "name": "Links",
+                  "gap": 20,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "B1BGug",
+                      "name": "Link Default",
+                      "fill": "$ink",
+                      "content": "Journal",
+                      "fontFamily": "$font-body",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "dKyp5",
+                      "name": "Link Hover",
+                      "fill": "$hover",
+                      "content": "Journal",
+                      "fontFamily": "$font-body",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "fsNco",
+                  "name": "Buttons",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "KCnLk",
+                      "type": "ref",
+                      "ref": "OVMC1",
+                      "name": "Button Solid Hover",
+                      "fill": "$hover",
+                      "descendants": {
+                        "S6QOX": {
+                          "content": "Buy now"
+                        }
+                      }
+                    },
+                    {
+                      "id": "xO1oP",
+                      "type": "ref",
+                      "ref": "WWjcI",
+                      "name": "Button Outline Hover",
+                      "stroke": "$hover",
+                      "descendants": {
+                        "MF5C4": {
+                          "content": "Button",
+                          "fill": "$hover"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "u6Bupt",
+                  "type": "ref",
+                  "ref": "a37r0",
+                  "name": "Product Card Hover",
+                  "width": "fill_container",
+                  "descendants": {
+                    "jLtD3": {
+                      "fill": "$hover"
+                    }
+                  }
+                }
+              ]
             }
           ]
         }
@@ -2219,7 +2303,7 @@
       "type": "frame",
       "id": "YxBDn",
       "x": 840,
-      "y": 6080,
+      "y": 6480,
       "name": "Product — Tuner — Desktop (1440)",
       "clip": true,
       "width": 1440,
@@ -2909,7 +2993,7 @@
       "type": "frame",
       "id": "y75sSr",
       "x": 2396,
-      "y": 6080,
+      "y": 6480,
       "name": "Product — Tuner — Tablet (768)",
       "clip": true,
       "width": 768,
@@ -3617,7 +3701,7 @@
       "type": "frame",
       "id": "J0zC7",
       "x": 3264,
-      "y": 6080,
+      "y": 6480,
       "name": "Product — Tuner — Mobile (390)",
       "clip": true,
       "width": 390,
@@ -4333,7 +4417,7 @@
       "type": "frame",
       "id": "RtCMe",
       "x": 840,
-      "y": 8983,
+      "y": 9383,
       "name": "Product — Tuner — Lightbox — Desktop (1440)",
       "clip": true,
       "width": 1440,
@@ -4638,7 +4722,7 @@
       "type": "frame",
       "id": "DACS3",
       "x": 2396,
-      "y": 8983,
+      "y": 9383,
       "name": "Product — Tuner — Lightbox — Tablet (768)",
       "clip": true,
       "width": 768,
@@ -4943,7 +5027,7 @@
       "type": "frame",
       "id": "o2Bq4Y",
       "x": 3264,
-      "y": 8983,
+      "y": 9383,
       "name": "Product — Tuner — Lightbox — Mobile (390)",
       "clip": true,
       "width": 390,
@@ -5281,6 +5365,10 @@
     "font-body": {
       "type": "string",
       "value": "Work Sans"
+    },
+    "hover": {
+      "type": "color",
+      "value": "#C1502E"
     }
   },
   "fileToken": "cc6f0c7a-c4c0-417e-803e-62337ed664fe"
