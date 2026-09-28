@@ -1,4 +1,7 @@
 ---
+import { Image } from 'astro:assets';
+import logo from '../assets/pg-main.png';
+
 const navItems = [
   { href: '/', label: 'Home' },
   { href: '/shop', label: 'Shop' },
@@ -17,7 +20,9 @@ function isActive(href: string) {
 
 <header class="site-header">
   <div class="wrap site-header__inner">
-    <a href="/" class="site-header__logo">Paul Goode</a>
+    <a href="/" class="site-header__logo" aria-label="Paul Goode — home">
+      <Image src={logo} alt="Paul Goode" height={118} loading="eager" />
+    </a>
     <nav class="site-header__nav" aria-label="Primary">
       {navItems.map((item) => (
         <a
@@ -45,11 +50,13 @@ function isActive(href: string) {
   }
 
   .site-header__logo {
-    font-family: var(--font-display);
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 0.01em;
-    white-space: nowrap;
+    display: block;
+    flex: none;
+  }
+
+  .site-header__logo img {
+    width: auto;
+    height: 59px;
   }
 
   .site-header__nav {
@@ -67,8 +74,12 @@ function isActive(href: string) {
   @media (max-width: 640px) {
     .site-header__inner {
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
       gap: 16px;
+    }
+
+    .site-header__logo img {
+      height: 54px;
     }
 
     .site-header__nav {
