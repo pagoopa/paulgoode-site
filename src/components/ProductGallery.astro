@@ -139,9 +139,9 @@ const count = images.length;
     aspect-ratio: 4 / 5;
     padding: 0;
     border: 0;
-    border-radius: 4px;
+    border-radius: var(--radius);
     overflow: hidden;
-    background: #fff;
+    background: var(--color-mat);
     cursor: zoom-in;
   }
 
@@ -163,7 +163,7 @@ const count = images.length;
     height: 36px;
     display: grid;
     place-items: center;
-    border-radius: 4px;
+    border-radius: var(--radius);
     background: rgba(255, 255, 255, 0.9);
     border: 1px solid var(--color-border);
     color: var(--color-ink);
@@ -179,9 +179,9 @@ const count = images.length;
   .lightbox__thumb {
     padding: 0;
     border: 0;
-    border-radius: 4px;
+    border-radius: var(--radius);
     overflow: hidden;
-    background: #fff;
+    background: var(--color-mat);
     cursor: pointer;
     outline-offset: 2px;
   }
@@ -214,7 +214,7 @@ const count = images.length;
     margin: 0;
     padding: 0;
     border: 0;
-    background: #fff;
+    background: var(--color-bg);
     color: var(--color-ink);
   }
 
@@ -224,7 +224,7 @@ const count = images.length;
   }
 
   .lightbox::backdrop {
-    background: #fff;
+    background: var(--color-bg);
   }
 
   .lightbox__bar {
@@ -236,7 +236,7 @@ const count = images.length;
   }
 
   .lightbox__counter {
-    font-size: 14px;
+    font-size: var(--text-small);
     letter-spacing: 0.04em;
     color: var(--color-ink-faint);
     font-variant-numeric: tabular-nums;
@@ -313,7 +313,7 @@ const count = images.length;
     align-items: center;
     gap: 6px;
     margin: 0;
-    font-size: 12px;
+    font-size: var(--text-caption);
     color: var(--color-ink-faint);
   }
 
@@ -344,7 +344,7 @@ const count = images.length;
     width: 44px;
     height: 44px;
     flex: none;
-    border-radius: 999px;
+    border-radius: var(--radius-pill);
     border: 1px solid rgba(33, 29, 23, 0.35);
   }
 
@@ -363,12 +363,12 @@ const count = images.length;
 
   .lightbox__title {
     font-family: var(--font-display);
-    font-size: 20px;
+    font-size: var(--text-title);
     font-weight: 500;
   }
 
   .lightbox__details {
-    font-size: 13px;
+    font-size: var(--text-meta);
     color: var(--color-ink-faint);
   }
 

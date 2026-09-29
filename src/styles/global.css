@@ -1,19 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&display=swap');
+@import './tokens.css';
 
 :root {
-  --color-bg: #ffffff;
-  --color-ink: #211d17;
-  --color-ink-muted: #4a443a;
-  --color-ink-faint: #857c6c;
-  --color-border: #e7e0d3;
-  --color-accent: #121212;
-  --color-hover: #c1502e;
-
-  --font-display: 'Fraunces', Georgia, serif;
-  --font-body: 'Work Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-
+  /* Colors, fonts and sizes come from tokens.css (generated from design/shop.pen). */
   --content-max: 900px;
-  --page-gutter: 64px;
+  --page-gutter: var(--space-gutter);
 }
 
 *,
@@ -32,7 +22,7 @@ body {
   background: var(--color-bg);
   color: var(--color-ink);
   font-family: var(--font-body);
-  font-size: 16px;
+  font-size: var(--text-body);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
@@ -72,7 +62,7 @@ img {
 
 .wrap {
   width: 100%;
-  max-width: 1200px;
+  max-width: var(--width-wide);
   margin-inline: auto;
   padding-inline: var(--page-gutter);
   box-sizing: border-box;
@@ -83,7 +73,7 @@ img {
 }
 
 .eyebrow {
-  font-size: 13px;
+  font-size: var(--text-meta);
   text-transform: uppercase;
   letter-spacing: 0.14em;
   color: var(--color-accent);
@@ -95,9 +85,9 @@ img {
   align-items: center;
   justify-content: center;
   border: 1px solid var(--color-ink);
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   padding: 10px 22px;
-  font-size: 14px;
+  font-size: var(--text-small);
   font-weight: 500;
   font-family: var(--font-body);
   background: transparent;
@@ -124,6 +114,6 @@ img {
 
 @media (max-width: 720px) {
   :root {
-    --page-gutter: 24px;
+    --page-gutter: var(--space-gutter-sm);
   }
 }

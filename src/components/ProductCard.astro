@@ -59,9 +59,9 @@ const filterKeys = [
   .product-card__mat {
     position: relative;
     aspect-ratio: 4 / 5;
-    border-radius: 4px;
+    border-radius: var(--radius);
     overflow: hidden;
-    background: #fff;
+    background: var(--color-mat);
   }
 
   .product-card__image {
@@ -81,12 +81,12 @@ const filterKeys = [
     left: 12px;
     background: var(--color-bg);
     color: var(--color-ink);
-    font-size: 11px;
+    font-size: var(--text-badge);
     font-weight: 600;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     padding: 5px 10px;
-    border-radius: 999px;
+    border-radius: var(--radius-pill);
   }
 
   .product-card__badge--sold {
@@ -108,7 +108,7 @@ const filterKeys = [
   }
 
   .product-card__name {
-    font-size: 19px;
+    font-size: var(--text-card);
     margin: 0;
   }
 
@@ -117,7 +117,7 @@ const filterKeys = [
   }
 
   .product-card__price {
-    font-size: 16px;
+    font-size: var(--text-body);
     color: var(--color-ink-muted);
   }
 
@@ -127,22 +127,22 @@ const filterKeys = [
   }
 
   .product-card__meta {
-    font-size: 13px;
+    font-size: var(--text-meta);
     color: var(--color-ink-faint);
     margin: 0;
   }
 
   @media (max-width: 560px) {
     .product-card__name {
-      font-size: 17px;
+      font-size: var(--text-card-sm);
     }
 
     .product-card__price {
-      font-size: 14px;
+      font-size: var(--text-small);
     }
 
     .product-card__meta {
-      font-size: 12px;
+      font-size: var(--text-caption);
     }
   }
 </style>

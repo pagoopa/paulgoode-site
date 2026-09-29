@@ -41,7 +41,7 @@
               "fill": "$accent",
               "content": "ORIGINALS",
               "fontFamily": "$font-body",
-              "fontSize": 13,
+              "fontSize": "$text-meta",
               "fontWeight": "600",
               "letterSpacing": 1.8
             },
@@ -55,7 +55,7 @@
               "content": "Drawing is thinking, framed.",
               "lineHeight": 1.15,
               "fontFamily": "$font-display",
-              "fontSize": 48,
+              "fontSize": "$text-display",
               "fontWeight": "500"
             },
             {
@@ -68,7 +68,7 @@
               "content": "One-of-a-kind acrylic and ink works on paper, 22″ × 30″. Checkout is handled securely through Stripe — each piece ships once, direct from the studio.",
               "lineHeight": 1.6,
               "fontFamily": "$font-body",
-              "fontSize": 17,
+              "fontSize": "$text-lede",
               "fontWeight": "normal"
             }
           ]
@@ -149,7 +149,7 @@
               "fill": "$ink-faint",
               "content": "10 pieces",
               "fontFamily": "$font-body",
-              "fontSize": 14,
+              "fontSize": "$text-small",
               "fontWeight": "normal"
             }
           ]
@@ -560,7 +560,7 @@
           "width": "fill_container",
           "padding": [
             24,
-            64
+            "$space-gutter"
           ]
         },
         {
@@ -572,9 +572,9 @@
           "gap": 14,
           "padding": [
             72,
-            64,
+            "$space-gutter",
             40,
-            64
+            "$space-gutter"
           ],
           "children": [
             {
@@ -584,7 +584,7 @@
               "fill": "$accent",
               "content": "ORIGINALS",
               "fontFamily": "$font-body",
-              "fontSize": 13,
+              "fontSize": "$text-meta",
               "fontWeight": "600",
               "letterSpacing": 1.8
             },
@@ -598,7 +598,7 @@
               "content": "Drawing is thinking, framed.",
               "lineHeight": 1.15,
               "fontFamily": "$font-display",
-              "fontSize": 48,
+              "fontSize": "$text-display",
               "fontWeight": "500"
             },
             {
@@ -611,7 +611,7 @@
               "content": "One-of-a-kind acrylic and ink works on paper, 22″ × 30″. Checkout is handled securely through Stripe — each piece ships once, direct from the studio.",
               "lineHeight": 1.6,
               "fontFamily": "$font-body",
-              "fontSize": 17,
+              "fontSize": "$text-lede",
               "fontWeight": "normal"
             }
           ]
@@ -623,9 +623,9 @@
           "width": "fill_container",
           "padding": [
             0,
-            64,
+            "$space-gutter",
             40,
-            64
+            "$space-gutter"
           ],
           "justifyContent": "space_between",
           "alignItems": "center",
@@ -692,7 +692,7 @@
               "fill": "$ink-faint",
               "content": "10 pieces",
               "fontFamily": "$font-body",
-              "fontSize": 14,
+              "fontSize": "$text-small",
               "fontWeight": "normal"
             }
           ]
@@ -706,9 +706,9 @@
           "gap": 40,
           "padding": [
             0,
-            64,
+            "$space-gutter",
             96,
-            64
+            "$space-gutter"
           ],
           "children": [
             {
@@ -1101,7 +1101,7 @@
           "width": "fill_container",
           "padding": [
             32,
-            64
+            "$space-gutter"
           ]
         }
       ]
@@ -1134,9 +1134,9 @@
           "gap": 12,
           "padding": [
             48,
-            24,
+            "$space-gutter-sm",
             32,
-            24
+            "$space-gutter-sm"
           ],
           "children": [
             {
@@ -1146,7 +1146,7 @@
               "fill": "$accent",
               "content": "ORIGINALS",
               "fontFamily": "$font-body",
-              "fontSize": 13,
+              "fontSize": "$text-meta",
               "fontWeight": "600",
               "letterSpacing": 1.8
             },
@@ -1160,7 +1160,7 @@
               "content": "Drawing is thinking, framed.",
               "lineHeight": 1.15,
               "fontFamily": "$font-display",
-              "fontSize": 34,
+              "fontSize": "$text-display-sm",
               "fontWeight": "500"
             },
             {
@@ -1173,7 +1173,7 @@
               "content": "One-of-a-kind acrylic and ink works on paper, 22″ × 30″. Checkout is handled securely through Stripe — each piece ships once, direct from the studio.",
               "lineHeight": 1.6,
               "fontFamily": "$font-body",
-              "fontSize": 17,
+              "fontSize": "$text-lede",
               "fontWeight": "normal"
             }
           ]
@@ -1187,9 +1187,9 @@
           "gap": 12,
           "padding": [
             0,
-            24,
+            "$space-gutter-sm",
             28,
-            24
+            "$space-gutter-sm"
           ],
           "children": [
             {
@@ -1270,7 +1270,7 @@
               "fill": "$ink-faint",
               "content": "10 pieces",
               "fontFamily": "$font-body",
-              "fontSize": 14,
+              "fontSize": "$text-small",
               "fontWeight": "normal"
             }
           ]
@@ -1284,9 +1284,9 @@
           "gap": 32,
           "padding": [
             0,
-            24,
+            "$space-gutter-sm",
             64,
-            24
+            "$space-gutter-sm"
           ],
           "children": [
             {
@@ -1320,15 +1320,15 @@
                     },
                     "jLtD3": {
                       "content": "Tuner",
-                      "fontSize": 17
+                      "fontSize": "$text-card-sm"
                     },
                     "oYimt": {
                       "content": "$250",
-                      "fontSize": 14
+                      "fontSize": "$text-small"
                     },
                     "illdB": {
                       "content": "22″ × 30″ · Acrylic on paper",
-                      "fontSize": 12
+                      "fontSize": "$text-caption"
                     }
                   }
                 },
@@ -1356,15 +1356,15 @@
                     },
                     "jLtD3": {
                       "content": "Waffle",
-                      "fontSize": 17
+                      "fontSize": "$text-card-sm"
                     },
                     "oYimt": {
                       "content": "$200",
-                      "fontSize": 14
+                      "fontSize": "$text-small"
                     },
                     "illdB": {
                       "content": "22″ × 30″ · Acrylic on paper",
-                      "fontSize": 12
+                      "fontSize": "$text-caption"
                     }
                   }
                 }
@@ -1401,15 +1401,15 @@
                     },
                     "jLtD3": {
                       "content": "Revelation",
-                      "fontSize": 17
+                      "fontSize": "$text-card-sm"
                     },
                     "oYimt": {
                       "content": "$200",
-                      "fontSize": 14
+                      "fontSize": "$text-small"
                     },
                     "illdB": {
                       "content": "22″ × 30″ · Ink on paper",
-                      "fontSize": 12
+                      "fontSize": "$text-caption"
                     }
                   }
                 },
@@ -1437,15 +1437,15 @@
                     },
                     "jLtD3": {
                       "content": "Orb",
-                      "fontSize": 17
+                      "fontSize": "$text-card-sm"
                     },
                     "oYimt": {
                       "content": "$200",
-                      "fontSize": 14
+                      "fontSize": "$text-small"
                     },
                     "illdB": {
                       "content": "22″ × 30″ · Acrylic on paper",
-                      "fontSize": 12
+                      "fontSize": "$text-caption"
                     }
                   }
                 }
@@ -1482,15 +1482,15 @@
                     },
                     "jLtD3": {
                       "content": "Lighthouse",
-                      "fontSize": 17
+                      "fontSize": "$text-card-sm"
                     },
                     "oYimt": {
                       "content": "$250",
-                      "fontSize": 14
+                      "fontSize": "$text-small"
                     },
                     "illdB": {
                       "content": "22″ × 30″ · Ink on paper",
-                      "fontSize": 12
+                      "fontSize": "$text-caption"
                     }
                   }
                 },
@@ -1518,15 +1518,15 @@
                     },
                     "jLtD3": {
                       "content": "Flower",
-                      "fontSize": 17
+                      "fontSize": "$text-card-sm"
                     },
                     "oYimt": {
                       "content": "$200",
-                      "fontSize": 14
+                      "fontSize": "$text-small"
                     },
                     "illdB": {
                       "content": "22″ × 30″ · Acrylic on paper",
-                      "fontSize": 12
+                      "fontSize": "$text-caption"
                     }
                   }
                 }
@@ -1563,15 +1563,15 @@
                     },
                     "jLtD3": {
                       "content": "Dude",
-                      "fontSize": 17
+                      "fontSize": "$text-card-sm"
                     },
                     "oYimt": {
                       "content": "$200",
-                      "fontSize": 14
+                      "fontSize": "$text-small"
                     },
                     "illdB": {
                       "content": "22″ × 30″ · Acrylic on paper",
-                      "fontSize": 12
+                      "fontSize": "$text-caption"
                     }
                   }
                 },
@@ -1599,15 +1599,15 @@
                     },
                     "jLtD3": {
                       "content": "Driver",
-                      "fontSize": 17
+                      "fontSize": "$text-card-sm"
                     },
                     "oYimt": {
                       "content": "$250",
-                      "fontSize": 14
+                      "fontSize": "$text-small"
                     },
                     "illdB": {
                       "content": "22″ × 30″ · Acrylic on paper",
-                      "fontSize": 12
+                      "fontSize": "$text-caption"
                     }
                   }
                 }
@@ -1644,15 +1644,15 @@
                     },
                     "jLtD3": {
                       "content": "Creature",
-                      "fontSize": 17
+                      "fontSize": "$text-card-sm"
                     },
                     "oYimt": {
                       "content": "$200",
-                      "fontSize": 14
+                      "fontSize": "$text-small"
                     },
                     "illdB": {
                       "content": "22″ × 30″ · Acrylic on paper",
-                      "fontSize": 12
+                      "fontSize": "$text-caption"
                     }
                   }
                 },
@@ -1680,15 +1680,15 @@
                     },
                     "jLtD3": {
                       "content": "Road Trip",
-                      "fontSize": 17
+                      "fontSize": "$text-card-sm"
                     },
                     "oYimt": {
                       "content": "$250",
-                      "fontSize": 14
+                      "fontSize": "$text-small"
                     },
                     "illdB": {
                       "content": "22″ × 30″ · Acrylic on paper",
-                      "fontSize": 12
+                      "fontSize": "$text-caption"
                     }
                   }
                 }
@@ -1704,7 +1704,7 @@
           "width": "fill_container",
           "padding": [
             32,
-            24
+            "$space-gutter-sm"
           ]
         }
       ]
@@ -1714,7 +1714,7 @@
       "id": "OoLkp",
       "x": 0,
       "y": 5127,
-      "name": "Components",
+      "name": "Design System — Components",
       "fill": "#FFFFFF",
       "gap": 80,
       "padding": 60,
@@ -1764,7 +1764,7 @@
                   "fill": "$ink",
                   "content": "Home",
                   "fontFamily": "$font-body",
-                  "fontSize": 15,
+                  "fontSize": "$text-ui",
                   "fontWeight": "normal"
                 },
                 {
@@ -1774,7 +1774,7 @@
                   "fill": "$accent",
                   "content": "Shop",
                   "fontFamily": "$font-body",
-                  "fontSize": 15,
+                  "fontSize": "$text-ui",
                   "fontWeight": "600"
                 },
                 {
@@ -1784,7 +1784,7 @@
                   "fill": "$ink",
                   "content": "Journal",
                   "fontFamily": "$font-body",
-                  "fontSize": 15,
+                  "fontSize": "$text-ui",
                   "fontWeight": "normal"
                 },
                 {
@@ -1794,7 +1794,7 @@
                   "fill": "$ink",
                   "content": "About",
                   "fontFamily": "$font-body",
-                  "fontSize": 15,
+                  "fontSize": "$text-ui",
                   "fontWeight": "normal"
                 },
                 {
@@ -1804,7 +1804,7 @@
                   "fill": "$ink",
                   "content": "Contact",
                   "fontFamily": "$font-body",
-                  "fontSize": 15,
+                  "fontSize": "$text-ui",
                   "fontWeight": "normal"
                 }
               ]
@@ -1854,7 +1854,7 @@
                   "fill": "$ink",
                   "content": "Home",
                   "fontFamily": "$font-body",
-                  "fontSize": 15,
+                  "fontSize": "$text-ui",
                   "fontWeight": "normal"
                 },
                 {
@@ -1864,7 +1864,7 @@
                   "fill": "$accent",
                   "content": "Shop",
                   "fontFamily": "$font-body",
-                  "fontSize": 15,
+                  "fontSize": "$text-ui",
                   "fontWeight": "600"
                 },
                 {
@@ -1874,7 +1874,7 @@
                   "fill": "$ink",
                   "content": "Journal",
                   "fontFamily": "$font-body",
-                  "fontSize": 15,
+                  "fontSize": "$text-ui",
                   "fontWeight": "normal"
                 },
                 {
@@ -1884,7 +1884,7 @@
                   "fill": "$ink",
                   "content": "About",
                   "fontFamily": "$font-body",
-                  "fontSize": 15,
+                  "fontSize": "$text-ui",
                   "fontWeight": "normal"
                 },
                 {
@@ -1894,7 +1894,7 @@
                   "fill": "$ink",
                   "content": "Contact",
                   "fontFamily": "$font-body",
-                  "fontSize": 15,
+                  "fontSize": "$text-ui",
                   "fontWeight": "normal"
                 }
               ]
@@ -1926,7 +1926,7 @@
               "fill": "$ink-faint",
               "content": "© 2026 Paul Goode",
               "fontFamily": "$font-body",
-              "fontSize": 14,
+              "fontSize": "$text-small",
               "fontWeight": "normal"
             },
             {
@@ -1942,7 +1942,7 @@
                   "fill": "$ink-faint",
                   "content": "Shop",
                   "fontFamily": "$font-body",
-                  "fontSize": 14,
+                  "fontSize": "$text-small",
                   "fontWeight": "normal"
                 },
                 {
@@ -1952,7 +1952,7 @@
                   "fill": "$ink-faint",
                   "content": "TikTok",
                   "fontFamily": "$font-body",
-                  "fontSize": 14,
+                  "fontSize": "$text-small",
                   "fontWeight": "normal"
                 },
                 {
@@ -1962,7 +1962,7 @@
                   "fill": "$ink-faint",
                   "content": "YouTube",
                   "fontFamily": "$font-body",
-                  "fontSize": 14,
+                  "fontSize": "$text-small",
                   "fontWeight": "normal"
                 }
               ]
@@ -2001,7 +2001,7 @@
                       "mode": "fill"
                     }
                   ],
-                  "cornerRadius": 4,
+                  "cornerRadius": "$radius",
                   "padding": 12,
                   "children": [
                     {
@@ -2009,7 +2009,7 @@
                       "id": "y2nBvr",
                       "name": "Badge",
                       "fill": "$bg",
-                      "cornerRadius": 999,
+                      "cornerRadius": "$radius-pill",
                       "stroke": "$accent",
                       "strokeWidth": 1,
                       "strokeAlignment": "inner",
@@ -2025,7 +2025,7 @@
                           "fill": "$ink",
                           "content": "SIGNATURE",
                           "fontFamily": "$font-body",
-                          "fontSize": 11,
+                          "fontSize": "$text-badge",
                           "fontWeight": "600",
                           "letterSpacing": 0.5
                         }
@@ -2057,7 +2057,7 @@
                           "fill": "$ink",
                           "content": "Tuner",
                           "fontFamily": "$font-display",
-                          "fontSize": 19,
+                          "fontSize": "$text-card",
                           "fontWeight": "500"
                         },
                         {
@@ -2067,7 +2067,7 @@
                           "fill": "$ink-muted",
                           "content": "$250",
                           "fontFamily": "$font-body",
-                          "fontSize": 16,
+                          "fontSize": "$text-body",
                           "fontWeight": "normal"
                         }
                       ]
@@ -2079,7 +2079,7 @@
                       "fill": "$ink-faint",
                       "content": "22″ × 30″ · Acrylic on paper",
                       "fontFamily": "$font-body",
-                      "fontSize": 13,
+                      "fontSize": "$text-meta",
                       "fontWeight": "normal"
                     }
                   ]
@@ -2092,7 +2092,7 @@
               "name": "Button Solid",
               "reusable": true,
               "fill": "$ink",
-              "cornerRadius": 999,
+              "cornerRadius": "$radius-pill",
               "gap": 8,
               "padding": [
                 10,
@@ -2108,7 +2108,7 @@
                   "fill": "$bg",
                   "content": "Buy now",
                   "fontFamily": "$font-body",
-                  "fontSize": 14,
+                  "fontSize": "$text-small",
                   "fontWeight": "500"
                 }
               ]
@@ -2118,7 +2118,7 @@
               "id": "WWjcI",
               "name": "Button Outline",
               "reusable": true,
-              "cornerRadius": 999,
+              "cornerRadius": "$radius-pill",
               "stroke": "$ink",
               "strokeWidth": 1,
               "gap": 8,
@@ -2136,7 +2136,7 @@
                   "fill": "$ink",
                   "content": "Button",
                   "fontFamily": "$font-body",
-                  "fontSize": 14,
+                  "fontSize": "$text-small",
                   "fontWeight": "500"
                 }
               ]
@@ -2146,7 +2146,7 @@
               "id": "S2cF9A",
               "name": "Filter Pill",
               "reusable": true,
-              "cornerRadius": 999,
+              "cornerRadius": "$radius-pill",
               "stroke": "$ink",
               "strokeWidth": 1,
               "padding": [
@@ -2161,7 +2161,7 @@
                   "fill": "$ink",
                   "content": "All",
                   "fontFamily": "$font-body",
-                  "fontSize": 14,
+                  "fontSize": "$text-small",
                   "fontWeight": "normal"
                 }
               ]
@@ -2198,6 +2198,179 @@
                   }
                 }
               ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "D6Gjf",
+          "name": "States",
+          "layout": "vertical",
+          "gap": 40,
+          "children": [
+            {
+              "type": "frame",
+              "id": "JvNUx",
+              "name": "Card States",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "RWFEJ",
+                  "name": "Group Title",
+                  "fill": "$ink-faint",
+                  "content": "PRODUCT CARD — SIGNATURE · ORIGINAL · SOLD",
+                  "fontFamily": "$font-body",
+                  "fontSize": "$text-badge",
+                  "fontWeight": "600",
+                  "letterSpacing": 1.2
+                },
+                {
+                  "type": "frame",
+                  "id": "PGrVN",
+                  "name": "Cards",
+                  "gap": 28,
+                  "children": [
+                    {
+                      "id": "uP5vJ",
+                      "type": "ref",
+                      "ref": "a37r0",
+                      "name": "Card Signature"
+                    },
+                    {
+                      "id": "ivhRM",
+                      "type": "ref",
+                      "ref": "a37r0",
+                      "name": "Card Original",
+                      "descendants": {
+                        "UIBA0": {
+                          "fill": [
+                            "$mat",
+                            {
+                              "type": "image",
+                              "enabled": true,
+                              "url": "products/waffle/cover.jpg",
+                              "mode": "fill"
+                            }
+                          ]
+                        },
+                        "y2nBvr": {
+                          "enabled": false
+                        },
+                        "jLtD3": {
+                          "content": "Waffle"
+                        },
+                        "oYimt": {
+                          "content": "$200"
+                        }
+                      }
+                    },
+                    {
+                      "id": "U4s5o",
+                      "type": "ref",
+                      "ref": "a37r0",
+                      "name": "Card Sold",
+                      "descendants": {
+                        "UIBA0": {
+                          "fill": [
+                            "$mat",
+                            {
+                              "type": "image",
+                              "enabled": true,
+                              "url": "products/orb/cover.jpg",
+                              "mode": "fill"
+                            }
+                          ]
+                        },
+                        "y2nBvr": {
+                          "fill": "$ink",
+                          "stroke": "$ink"
+                        },
+                        "N8r1N": {
+                          "content": "SOLD",
+                          "fill": "$bg"
+                        },
+                        "jLtD3": {
+                          "content": "Orb"
+                        },
+                        "oYimt": {
+                          "content": "$200",
+                          "fill": "$ink-faint"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "akSGd",
+              "name": "Button States",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Qr9c2",
+                  "name": "Group Title",
+                  "fill": "$ink-faint",
+                  "content": "BUY BUTTON — DEFAULT · HOVER · SOLD / NO PAYMENT LINK",
+                  "fontFamily": "$font-body",
+                  "fontSize": "$text-badge",
+                  "fontWeight": "600",
+                  "letterSpacing": 1.2
+                },
+                {
+                  "type": "frame",
+                  "id": "VAgGJ",
+                  "name": "Buttons",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "oOePv",
+                      "type": "ref",
+                      "ref": "OVMC1",
+                      "name": "Buy Default"
+                    },
+                    {
+                      "id": "LeORo",
+                      "type": "ref",
+                      "ref": "OVMC1",
+                      "name": "Buy Hover",
+                      "fill": "$hover"
+                    },
+                    {
+                      "id": "bzOTm",
+                      "type": "ref",
+                      "ref": "OVMC1",
+                      "name": "Buy Sold",
+                      "fill": "$border",
+                      "descendants": {
+                        "S6QOX": {
+                          "content": "Sold",
+                          "fill": "$ink-muted"
+                        }
+                      }
+                    },
+                    {
+                      "id": "r53BE",
+                      "type": "ref",
+                      "ref": "OVMC1",
+                      "name": "Buy Coming Soon",
+                      "fill": "$border",
+                      "descendants": {
+                        "S6QOX": {
+                          "content": "Checkout coming soon",
+                          "fill": "$ink-muted"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
             },
             {
               "type": "frame",
@@ -2214,7 +2387,7 @@
                   "fill": "$ink-faint",
                   "content": "HOVER STATES",
                   "fontFamily": "$font-body",
-                  "fontSize": 11,
+                  "fontSize": "$text-badge",
                   "fontWeight": "600",
                   "letterSpacing": 1.2
                 },
@@ -2232,7 +2405,7 @@
                       "fill": "$ink",
                       "content": "Journal",
                       "fontFamily": "$font-body",
-                      "fontSize": 15,
+                      "fontSize": "$text-ui",
                       "fontWeight": "normal"
                     },
                     {
@@ -2242,7 +2415,7 @@
                       "fill": "$hover",
                       "content": "Journal",
                       "fontFamily": "$font-body",
-                      "fontSize": 15,
+                      "fontSize": "$text-ui",
                       "fontWeight": "normal"
                     }
                   ]
@@ -2344,7 +2517,7 @@
                   "fill": "$ink-faint",
                   "content": "Shop",
                   "fontFamily": "$font-body",
-                  "fontSize": 14,
+                  "fontSize": "$text-small",
                   "fontWeight": "normal"
                 },
                 {
@@ -2354,7 +2527,7 @@
                   "fill": "$ink-faint",
                   "content": "/",
                   "fontFamily": "$font-body",
-                  "fontSize": 14,
+                  "fontSize": "$text-small",
                   "fontWeight": "normal"
                 },
                 {
@@ -2364,7 +2537,7 @@
                   "fill": "$ink",
                   "content": "Tuner",
                   "fontFamily": "$font-body",
-                  "fontSize": 14,
+                  "fontSize": "$text-small",
                   "fontWeight": "normal"
                 }
               ]
@@ -2399,7 +2572,7 @@
                           "mode": "fill"
                         }
                       ],
-                      "cornerRadius": 4,
+                      "cornerRadius": "$radius",
                       "layout": "none",
                       "children": [
                         {
@@ -2411,7 +2584,7 @@
                           "width": 36,
                           "height": 36,
                           "fill": "#FFFFFFE6",
-                          "cornerRadius": 4,
+                          "cornerRadius": "$radius",
                           "stroke": "$border",
                           "strokeWidth": 1,
                           "justifyContent": "center",
@@ -2460,7 +2633,7 @@
                             },
                             {
                               "type": "rectangle",
-                              "cornerRadius": 4,
+                              "cornerRadius": "$radius",
                               "id": "dm5R9",
                               "x": 0,
                               "y": 0,
@@ -2490,7 +2663,7 @@
                           "children": [
                             {
                               "type": "rectangle",
-                              "cornerRadius": 4,
+                              "cornerRadius": "$radius",
                               "id": "A0UZtu",
                               "x": 0,
                               "y": 0,
@@ -2536,7 +2709,7 @@
                           "fill": "$accent",
                           "content": "SIGNATURE WORK",
                           "fontFamily": "$font-body",
-                          "fontSize": 13,
+                          "fontSize": "$text-meta",
                           "fontWeight": "600",
                           "letterSpacing": 1.8
                         },
@@ -2550,7 +2723,7 @@
                           "content": "Tuner",
                           "lineHeight": 1.15,
                           "fontFamily": "$font-display",
-                          "fontSize": 48,
+                          "fontSize": "$text-display",
                           "fontWeight": "500"
                         },
                         {
@@ -2560,7 +2733,7 @@
                           "fill": "$ink-muted",
                           "content": "$250",
                           "fontFamily": "$font-body",
-                          "fontSize": 22,
+                          "fontSize": "$text-price",
                           "fontWeight": "normal"
                         }
                       ]
@@ -2609,7 +2782,7 @@
                                   "fill": "$ink-faint",
                                   "content": "Size",
                                   "fontFamily": "$font-body",
-                                  "fontSize": 15,
+                                  "fontSize": "$text-ui",
                                   "fontWeight": "normal"
                                 },
                                 {
@@ -2619,7 +2792,7 @@
                                   "fill": "$ink",
                                   "content": "22″ × 30″",
                                   "fontFamily": "$font-body",
-                                  "fontSize": 15,
+                                  "fontSize": "$text-ui",
                                   "fontWeight": "normal"
                                 }
                               ]
@@ -2648,7 +2821,7 @@
                                   "fill": "$ink-faint",
                                   "content": "Medium",
                                   "fontFamily": "$font-body",
-                                  "fontSize": 15,
+                                  "fontSize": "$text-ui",
                                   "fontWeight": "normal"
                                 },
                                 {
@@ -2658,7 +2831,7 @@
                                   "fill": "$ink",
                                   "content": "Acrylic on paper",
                                   "fontFamily": "$font-body",
-                                  "fontSize": 15,
+                                  "fontSize": "$text-ui",
                                   "fontWeight": "normal"
                                 }
                               ]
@@ -2687,7 +2860,7 @@
                                   "fill": "$ink-faint",
                                   "content": "Edition",
                                   "fontFamily": "$font-body",
-                                  "fontSize": 15,
+                                  "fontSize": "$text-ui",
                                   "fontWeight": "normal"
                                 },
                                 {
@@ -2697,7 +2870,7 @@
                                   "fill": "$ink",
                                   "content": "One-of-a-kind original",
                                   "fontFamily": "$font-body",
-                                  "fontSize": 15,
+                                  "fontSize": "$text-ui",
                                   "fontWeight": "normal"
                                 }
                               ]
@@ -2725,7 +2898,7 @@
                               "descendants": {
                                 "S6QOX": {
                                   "content": "Buy now",
-                                  "fontSize": 15
+                                  "fontSize": "$text-ui"
                                 }
                               }
                             },
@@ -2747,7 +2920,7 @@
                                   "content": "Checkout is handled securely through Stripe. Each piece ships once, direct from the studio.",
                                   "lineHeight": 1.5,
                                   "fontFamily": "$font-body",
-                                  "fontSize": 13,
+                                  "fontSize": "$text-meta",
                                   "fontWeight": "normal"
                                 },
                                 {
@@ -2764,7 +2937,7 @@
                                       "content": "Questions?",
                                       "lineHeight": 1.5,
                                       "fontFamily": "$font-body",
-                                      "fontSize": 13,
+                                      "fontSize": "$text-meta",
                                       "fontWeight": "normal"
                                     },
                                     {
@@ -2775,7 +2948,7 @@
                                       "content": "Email me",
                                       "lineHeight": 1.5,
                                       "fontFamily": "$font-body",
-                                      "fontSize": 13,
+                                      "fontSize": "$text-meta",
                                       "fontWeight": "normal"
                                     }
                                   ]
@@ -2789,7 +2962,7 @@
                               "fill": "$accent",
                               "content": "Part of the Signature Work series.",
                               "fontFamily": "$font-body",
-                              "fontSize": 14,
+                              "fontSize": "$text-small",
                               "fontWeight": "500"
                             }
                           ]
@@ -2824,7 +2997,7 @@
               "content": "You might also like",
               "lineHeight": 1.15,
               "fontFamily": "$font-display",
-              "fontSize": 28,
+              "fontSize": "$text-heading",
               "fontWeight": "500"
             },
             {
@@ -3008,7 +3181,7 @@
           "width": "fill_container",
           "padding": [
             24,
-            64
+            "$space-gutter"
           ]
         },
         {
@@ -3020,9 +3193,9 @@
           "gap": 32,
           "padding": [
             32,
-            64,
+            "$space-gutter",
             96,
-            64
+            "$space-gutter"
           ],
           "children": [
             {
@@ -3038,7 +3211,7 @@
                   "fill": "$ink-faint",
                   "content": "Shop",
                   "fontFamily": "$font-body",
-                  "fontSize": 14,
+                  "fontSize": "$text-small",
                   "fontWeight": "normal"
                 },
                 {
@@ -3048,7 +3221,7 @@
                   "fill": "$ink-faint",
                   "content": "/",
                   "fontFamily": "$font-body",
-                  "fontSize": 14,
+                  "fontSize": "$text-small",
                   "fontWeight": "normal"
                 },
                 {
@@ -3058,7 +3231,7 @@
                   "fill": "$ink",
                   "content": "Tuner",
                   "fontFamily": "$font-body",
-                  "fontSize": 14,
+                  "fontSize": "$text-small",
                   "fontWeight": "normal"
                 }
               ]
@@ -3094,7 +3267,7 @@
                           "mode": "fill"
                         }
                       ],
-                      "cornerRadius": 4,
+                      "cornerRadius": "$radius",
                       "layout": "none",
                       "children": [
                         {
@@ -3106,7 +3279,7 @@
                           "width": 36,
                           "height": 36,
                           "fill": "#FFFFFFE6",
-                          "cornerRadius": 4,
+                          "cornerRadius": "$radius",
                           "stroke": "$border",
                           "strokeWidth": 1,
                           "justifyContent": "center",
@@ -3155,7 +3328,7 @@
                             },
                             {
                               "type": "rectangle",
-                              "cornerRadius": 4,
+                              "cornerRadius": "$radius",
                               "id": "bzIq4",
                               "x": 0,
                               "y": 0,
@@ -3185,7 +3358,7 @@
                           "children": [
                             {
                               "type": "rectangle",
-                              "cornerRadius": 4,
+                              "cornerRadius": "$radius",
                               "id": "mkqCq",
                               "x": 0,
                               "y": 0,
@@ -3231,7 +3404,7 @@
                           "fill": "$accent",
                           "content": "SIGNATURE WORK",
                           "fontFamily": "$font-body",
-                          "fontSize": 13,
+                          "fontSize": "$text-meta",
                           "fontWeight": "600",
                           "letterSpacing": 1.8
                         },
@@ -3245,7 +3418,7 @@
                           "content": "Tuner",
                           "lineHeight": 1.15,
                           "fontFamily": "$font-display",
-                          "fontSize": 48,
+                          "fontSize": "$text-display",
                           "fontWeight": "500"
                         },
                         {
@@ -3255,7 +3428,7 @@
                           "fill": "$ink-muted",
                           "content": "$250",
                           "fontFamily": "$font-body",
-                          "fontSize": 22,
+                          "fontSize": "$text-price",
                           "fontWeight": "normal"
                         }
                       ]
@@ -3304,7 +3477,7 @@
                                   "fill": "$ink-faint",
                                   "content": "Size",
                                   "fontFamily": "$font-body",
-                                  "fontSize": 15,
+                                  "fontSize": "$text-ui",
                                   "fontWeight": "normal"
                                 },
                                 {
@@ -3314,7 +3487,7 @@
                                   "fill": "$ink",
                                   "content": "22″ × 30″",
                                   "fontFamily": "$font-body",
-                                  "fontSize": 15,
+                                  "fontSize": "$text-ui",
                                   "fontWeight": "normal"
                                 }
                               ]
@@ -3343,7 +3516,7 @@
                                   "fill": "$ink-faint",
                                   "content": "Medium",
                                   "fontFamily": "$font-body",
-                                  "fontSize": 15,
+                                  "fontSize": "$text-ui",
                                   "fontWeight": "normal"
                                 },
                                 {
@@ -3353,7 +3526,7 @@
                                   "fill": "$ink",
                                   "content": "Acrylic on paper",
                                   "fontFamily": "$font-body",
-                                  "fontSize": 15,
+                                  "fontSize": "$text-ui",
                                   "fontWeight": "normal"
                                 }
                               ]
@@ -3382,7 +3555,7 @@
                                   "fill": "$ink-faint",
                                   "content": "Edition",
                                   "fontFamily": "$font-body",
-                                  "fontSize": 15,
+                                  "fontSize": "$text-ui",
                                   "fontWeight": "normal"
                                 },
                                 {
@@ -3392,7 +3565,7 @@
                                   "fill": "$ink",
                                   "content": "One-of-a-kind original",
                                   "fontFamily": "$font-body",
-                                  "fontSize": 15,
+                                  "fontSize": "$text-ui",
                                   "fontWeight": "normal"
                                 }
                               ]
@@ -3420,7 +3593,7 @@
                               "descendants": {
                                 "S6QOX": {
                                   "content": "Buy now",
-                                  "fontSize": 15
+                                  "fontSize": "$text-ui"
                                 }
                               }
                             },
@@ -3442,7 +3615,7 @@
                                   "content": "Checkout is handled securely through Stripe. Each piece ships once, direct from the studio.",
                                   "lineHeight": 1.5,
                                   "fontFamily": "$font-body",
-                                  "fontSize": 13,
+                                  "fontSize": "$text-meta",
                                   "fontWeight": "normal"
                                 },
                                 {
@@ -3459,7 +3632,7 @@
                                       "content": "Questions?",
                                       "lineHeight": 1.5,
                                       "fontFamily": "$font-body",
-                                      "fontSize": 13,
+                                      "fontSize": "$text-meta",
                                       "fontWeight": "normal"
                                     },
                                     {
@@ -3470,7 +3643,7 @@
                                       "content": "Email me",
                                       "lineHeight": 1.5,
                                       "fontFamily": "$font-body",
-                                      "fontSize": 13,
+                                      "fontSize": "$text-meta",
                                       "fontWeight": "normal"
                                     }
                                   ]
@@ -3484,7 +3657,7 @@
                               "fill": "$accent",
                               "content": "Part of the Signature Work series.",
                               "fontFamily": "$font-body",
-                              "fontSize": 14,
+                              "fontSize": "$text-small",
                               "fontWeight": "500"
                             }
                           ]
@@ -3506,9 +3679,9 @@
           "gap": 28,
           "padding": [
             0,
-            64,
+            "$space-gutter",
             32,
-            64
+            "$space-gutter"
           ],
           "children": [
             {
@@ -3519,7 +3692,7 @@
               "content": "You might also like",
               "lineHeight": 1.15,
               "fontFamily": "$font-display",
-              "fontSize": 28,
+              "fontSize": "$text-heading",
               "fontWeight": "500"
             },
             {
@@ -3692,7 +3865,7 @@
           "width": "fill_container",
           "padding": [
             32,
-            64
+            "$space-gutter"
           ]
         }
       ]
@@ -3724,9 +3897,9 @@
           "gap": 20,
           "padding": [
             24,
-            24,
+            "$space-gutter-sm",
             64,
-            24
+            "$space-gutter-sm"
           ],
           "children": [
             {
@@ -3742,7 +3915,7 @@
                   "fill": "$ink-faint",
                   "content": "Shop",
                   "fontFamily": "$font-body",
-                  "fontSize": 14,
+                  "fontSize": "$text-small",
                   "fontWeight": "normal"
                 },
                 {
@@ -3752,7 +3925,7 @@
                   "fill": "$ink-faint",
                   "content": "/",
                   "fontFamily": "$font-body",
-                  "fontSize": 14,
+                  "fontSize": "$text-small",
                   "fontWeight": "normal"
                 },
                 {
@@ -3762,7 +3935,7 @@
                   "fill": "$ink",
                   "content": "Tuner",
                   "fontFamily": "$font-body",
-                  "fontSize": 14,
+                  "fontSize": "$text-small",
                   "fontWeight": "normal"
                 }
               ]
@@ -3798,7 +3971,7 @@
                           "mode": "fill"
                         }
                       ],
-                      "cornerRadius": 4,
+                      "cornerRadius": "$radius",
                       "layout": "none",
                       "children": [
                         {
@@ -3810,7 +3983,7 @@
                           "width": 36,
                           "height": 36,
                           "fill": "#FFFFFFE6",
-                          "cornerRadius": 4,
+                          "cornerRadius": "$radius",
                           "stroke": "$border",
                           "strokeWidth": 1,
                           "justifyContent": "center",
@@ -3859,7 +4032,7 @@
                             },
                             {
                               "type": "rectangle",
-                              "cornerRadius": 4,
+                              "cornerRadius": "$radius",
                               "id": "ws0v7",
                               "x": 0,
                               "y": 0,
@@ -3889,7 +4062,7 @@
                           "children": [
                             {
                               "type": "rectangle",
-                              "cornerRadius": 4,
+                              "cornerRadius": "$radius",
                               "id": "cFIAg",
                               "x": 0,
                               "y": 0,
@@ -3935,7 +4108,7 @@
                           "fill": "$accent",
                           "content": "SIGNATURE WORK",
                           "fontFamily": "$font-body",
-                          "fontSize": 13,
+                          "fontSize": "$text-meta",
                           "fontWeight": "600",
                           "letterSpacing": 1.8
                         },
@@ -3949,7 +4122,7 @@
                           "content": "Tuner",
                           "lineHeight": 1.15,
                           "fontFamily": "$font-display",
-                          "fontSize": 34,
+                          "fontSize": "$text-display-sm",
                           "fontWeight": "500"
                         },
                         {
@@ -3959,7 +4132,7 @@
                           "fill": "$ink-muted",
                           "content": "$250",
                           "fontFamily": "$font-body",
-                          "fontSize": 22,
+                          "fontSize": "$text-price",
                           "fontWeight": "normal"
                         }
                       ]
@@ -4008,7 +4181,7 @@
                                   "fill": "$ink-faint",
                                   "content": "Size",
                                   "fontFamily": "$font-body",
-                                  "fontSize": 15,
+                                  "fontSize": "$text-ui",
                                   "fontWeight": "normal"
                                 },
                                 {
@@ -4018,7 +4191,7 @@
                                   "fill": "$ink",
                                   "content": "22″ × 30″",
                                   "fontFamily": "$font-body",
-                                  "fontSize": 15,
+                                  "fontSize": "$text-ui",
                                   "fontWeight": "normal"
                                 }
                               ]
@@ -4047,7 +4220,7 @@
                                   "fill": "$ink-faint",
                                   "content": "Medium",
                                   "fontFamily": "$font-body",
-                                  "fontSize": 15,
+                                  "fontSize": "$text-ui",
                                   "fontWeight": "normal"
                                 },
                                 {
@@ -4057,7 +4230,7 @@
                                   "fill": "$ink",
                                   "content": "Acrylic on paper",
                                   "fontFamily": "$font-body",
-                                  "fontSize": 15,
+                                  "fontSize": "$text-ui",
                                   "fontWeight": "normal"
                                 }
                               ]
@@ -4086,7 +4259,7 @@
                                   "fill": "$ink-faint",
                                   "content": "Edition",
                                   "fontFamily": "$font-body",
-                                  "fontSize": 15,
+                                  "fontSize": "$text-ui",
                                   "fontWeight": "normal"
                                 },
                                 {
@@ -4096,7 +4269,7 @@
                                   "fill": "$ink",
                                   "content": "One-of-a-kind original",
                                   "fontFamily": "$font-body",
-                                  "fontSize": 15,
+                                  "fontSize": "$text-ui",
                                   "fontWeight": "normal"
                                 }
                               ]
@@ -4124,7 +4297,7 @@
                               "descendants": {
                                 "S6QOX": {
                                   "content": "Buy now",
-                                  "fontSize": 15
+                                  "fontSize": "$text-ui"
                                 }
                               }
                             },
@@ -4146,7 +4319,7 @@
                                   "content": "Checkout is handled securely through Stripe. Each piece ships once, direct from the studio.",
                                   "lineHeight": 1.5,
                                   "fontFamily": "$font-body",
-                                  "fontSize": 13,
+                                  "fontSize": "$text-meta",
                                   "fontWeight": "normal"
                                 },
                                 {
@@ -4163,7 +4336,7 @@
                                       "content": "Questions?",
                                       "lineHeight": 1.5,
                                       "fontFamily": "$font-body",
-                                      "fontSize": 13,
+                                      "fontSize": "$text-meta",
                                       "fontWeight": "normal"
                                     },
                                     {
@@ -4174,7 +4347,7 @@
                                       "content": "Email me",
                                       "lineHeight": 1.5,
                                       "fontFamily": "$font-body",
-                                      "fontSize": 13,
+                                      "fontSize": "$text-meta",
                                       "fontWeight": "normal"
                                     }
                                   ]
@@ -4188,7 +4361,7 @@
                               "fill": "$accent",
                               "content": "Part of the Signature Work series.",
                               "fontFamily": "$font-body",
-                              "fontSize": 14,
+                              "fontSize": "$text-small",
                               "fontWeight": "500"
                             }
                           ]
@@ -4210,9 +4383,9 @@
           "gap": 28,
           "padding": [
             0,
-            24,
+            "$space-gutter-sm",
             32,
-            24
+            "$space-gutter-sm"
           ],
           "children": [
             {
@@ -4223,7 +4396,7 @@
               "content": "You might also like",
               "lineHeight": 1.15,
               "fontFamily": "$font-display",
-              "fontSize": 24,
+              "fontSize": "$text-heading-sm",
               "fontWeight": "500"
             },
             {
@@ -4265,15 +4438,15 @@
                         },
                         "jLtD3": {
                           "content": "Waffle",
-                          "fontSize": 17
+                          "fontSize": "$text-card-sm"
                         },
                         "oYimt": {
                           "content": "$200",
-                          "fontSize": 14
+                          "fontSize": "$text-small"
                         },
                         "illdB": {
                           "content": "22″ × 30″ · Acrylic on paper",
-                          "fontSize": 12
+                          "fontSize": "$text-caption"
                         }
                       }
                     },
@@ -4301,15 +4474,15 @@
                         },
                         "jLtD3": {
                           "content": "Revelation",
-                          "fontSize": 17
+                          "fontSize": "$text-card-sm"
                         },
                         "oYimt": {
                           "content": "$200",
-                          "fontSize": 14
+                          "fontSize": "$text-small"
                         },
                         "illdB": {
                           "content": "22″ × 30″ · Ink on paper",
-                          "fontSize": 12
+                          "fontSize": "$text-caption"
                         }
                       }
                     }
@@ -4346,15 +4519,15 @@
                         },
                         "jLtD3": {
                           "content": "Orb",
-                          "fontSize": 17
+                          "fontSize": "$text-card-sm"
                         },
                         "oYimt": {
                           "content": "$200",
-                          "fontSize": 14
+                          "fontSize": "$text-small"
                         },
                         "illdB": {
                           "content": "22″ × 30″ · Acrylic on paper",
-                          "fontSize": 12
+                          "fontSize": "$text-caption"
                         }
                       }
                     },
@@ -4382,15 +4555,15 @@
                         },
                         "jLtD3": {
                           "content": "Lighthouse",
-                          "fontSize": 17
+                          "fontSize": "$text-card-sm"
                         },
                         "oYimt": {
                           "content": "$250",
-                          "fontSize": 14
+                          "fontSize": "$text-small"
                         },
                         "illdB": {
                           "content": "22″ × 30″ · Ink on paper",
-                          "fontSize": 12
+                          "fontSize": "$text-caption"
                         }
                       }
                     }
@@ -4408,7 +4581,7 @@
           "width": "fill_container",
           "padding": [
             32,
-            24
+            "$space-gutter-sm"
           ]
         }
       ]
@@ -4451,7 +4624,7 @@
               "fill": "$ink-faint",
               "content": "1 / 2",
               "fontFamily": "$font-body",
-              "fontSize": 14,
+              "fontSize": "$text-small",
               "fontWeight": "normal",
               "letterSpacing": 0.56
             },
@@ -4540,7 +4713,7 @@
                   "fill": "$ink-faint",
                   "content": "Click the image to zoom",
                   "fontFamily": "$font-body",
-                  "fontSize": 12,
+                  "fontSize": "$text-caption",
                   "fontWeight": "normal"
                 }
               ]
@@ -4560,7 +4733,7 @@
                   "name": "Previous Button",
                   "width": 44,
                   "height": 44,
-                  "cornerRadius": 999,
+                  "cornerRadius": "$radius-pill",
                   "stroke": "#211D1759",
                   "strokeWidth": 1,
                   "justifyContent": "center",
@@ -4593,7 +4766,7 @@
                       "fill": "$ink",
                       "content": "Tuner",
                       "fontFamily": "$font-display",
-                      "fontSize": 20,
+                      "fontSize": "$text-title",
                       "fontWeight": "500"
                     },
                     {
@@ -4603,7 +4776,7 @@
                       "fill": "$ink-faint",
                       "content": "22″ × 30″ · Acrylic on paper",
                       "fontFamily": "$font-body",
-                      "fontSize": 13,
+                      "fontSize": "$text-meta",
                       "fontWeight": "normal"
                     }
                   ]
@@ -4614,7 +4787,7 @@
                   "name": "Next Button",
                   "width": 44,
                   "height": 44,
-                  "cornerRadius": 999,
+                  "cornerRadius": "$radius-pill",
                   "stroke": "#211D1759",
                   "strokeWidth": 1,
                   "justifyContent": "center",
@@ -4663,7 +4836,7 @@
                     },
                     {
                       "type": "rectangle",
-                      "cornerRadius": 4,
+                      "cornerRadius": "$radius",
                       "id": "TkToE",
                       "x": 0,
                       "y": 0,
@@ -4693,7 +4866,7 @@
                   "children": [
                     {
                       "type": "rectangle",
-                      "cornerRadius": 4,
+                      "cornerRadius": "$radius",
                       "id": "U4MgK",
                       "x": 0,
                       "y": 0,
@@ -4756,7 +4929,7 @@
               "fill": "$ink-faint",
               "content": "1 / 2",
               "fontFamily": "$font-body",
-              "fontSize": 14,
+              "fontSize": "$text-small",
               "fontWeight": "normal",
               "letterSpacing": 0.56
             },
@@ -4845,7 +5018,7 @@
                   "fill": "$ink-faint",
                   "content": "Double-tap to zoom · swipe for more",
                   "fontFamily": "$font-body",
-                  "fontSize": 12,
+                  "fontSize": "$text-caption",
                   "fontWeight": "normal"
                 }
               ]
@@ -4865,7 +5038,7 @@
                   "name": "Previous Button",
                   "width": 44,
                   "height": 44,
-                  "cornerRadius": 999,
+                  "cornerRadius": "$radius-pill",
                   "stroke": "#211D1759",
                   "strokeWidth": 1,
                   "justifyContent": "center",
@@ -4898,7 +5071,7 @@
                       "fill": "$ink",
                       "content": "Tuner",
                       "fontFamily": "$font-display",
-                      "fontSize": 20,
+                      "fontSize": "$text-title",
                       "fontWeight": "500"
                     },
                     {
@@ -4908,7 +5081,7 @@
                       "fill": "$ink-faint",
                       "content": "22″ × 30″ · Acrylic on paper",
                       "fontFamily": "$font-body",
-                      "fontSize": 13,
+                      "fontSize": "$text-meta",
                       "fontWeight": "normal"
                     }
                   ]
@@ -4919,7 +5092,7 @@
                   "name": "Next Button",
                   "width": 44,
                   "height": 44,
-                  "cornerRadius": 999,
+                  "cornerRadius": "$radius-pill",
                   "stroke": "#211D1759",
                   "strokeWidth": 1,
                   "justifyContent": "center",
@@ -4968,7 +5141,7 @@
                     },
                     {
                       "type": "rectangle",
-                      "cornerRadius": 4,
+                      "cornerRadius": "$radius",
                       "id": "L7Gauw",
                       "x": 0,
                       "y": 0,
@@ -4998,7 +5171,7 @@
                   "children": [
                     {
                       "type": "rectangle",
-                      "cornerRadius": 4,
+                      "cornerRadius": "$radius",
                       "id": "oMsx2",
                       "x": 0,
                       "y": 0,
@@ -5061,7 +5234,7 @@
               "fill": "$ink-faint",
               "content": "1 / 2",
               "fontFamily": "$font-body",
-              "fontSize": 14,
+              "fontSize": "$text-small",
               "fontWeight": "normal",
               "letterSpacing": 0.56
             },
@@ -5150,7 +5323,7 @@
                   "fill": "$ink-faint",
                   "content": "Double-tap to zoom · swipe for more",
                   "fontFamily": "$font-body",
-                  "fontSize": 12,
+                  "fontSize": "$text-caption",
                   "fontWeight": "normal"
                 }
               ]
@@ -5170,7 +5343,7 @@
                   "name": "Previous Button",
                   "width": 44,
                   "height": 44,
-                  "cornerRadius": 999,
+                  "cornerRadius": "$radius-pill",
                   "stroke": "#211D1759",
                   "strokeWidth": 1,
                   "justifyContent": "center",
@@ -5203,7 +5376,7 @@
                       "fill": "$ink",
                       "content": "Tuner",
                       "fontFamily": "$font-display",
-                      "fontSize": 20,
+                      "fontSize": "$text-title",
                       "fontWeight": "500"
                     },
                     {
@@ -5213,7 +5386,7 @@
                       "fill": "$ink-faint",
                       "content": "22″ × 30″ · Acrylic on paper",
                       "fontFamily": "$font-body",
-                      "fontSize": 13,
+                      "fontSize": "$text-meta",
                       "fontWeight": "normal"
                     }
                   ]
@@ -5224,7 +5397,7 @@
                   "name": "Next Button",
                   "width": 44,
                   "height": 44,
-                  "cornerRadius": 999,
+                  "cornerRadius": "$radius-pill",
                   "stroke": "#211D1759",
                   "strokeWidth": 1,
                   "justifyContent": "center",
@@ -5273,7 +5446,7 @@
                     },
                     {
                       "type": "rectangle",
-                      "cornerRadius": 4,
+                      "cornerRadius": "$radius",
                       "id": "mNhHC",
                       "x": 0,
                       "y": 0,
@@ -5303,7 +5476,7 @@
                   "children": [
                     {
                       "type": "rectangle",
-                      "cornerRadius": 4,
+                      "cornerRadius": "$radius",
                       "id": "hUSsf",
                       "x": 0,
                       "y": 0,
@@ -5321,6 +5494,2345 @@
                       "height": 56
                     }
                   ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "n6thaY",
+      "x": 3800,
+      "y": 0,
+      "name": "Design System — Foundations",
+      "clip": true,
+      "width": 1440,
+      "fill": "$bg",
+      "layout": "vertical",
+      "gap": 72,
+      "padding": [
+        80,
+        96,
+        96,
+        96
+      ],
+      "children": [
+        {
+          "type": "frame",
+          "id": "nXdVg",
+          "name": "Intro",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 14,
+          "children": [
+            {
+              "type": "text",
+              "id": "Q3RU3H",
+              "name": "Eyebrow",
+              "fill": "$accent",
+              "content": "DESIGN SYSTEM",
+              "fontFamily": "$font-body",
+              "fontSize": "$text-meta",
+              "fontWeight": "600",
+              "letterSpacing": 1.8
+            },
+            {
+              "type": "text",
+              "id": "V0cbLz",
+              "name": "Title",
+              "fill": "$ink",
+              "content": "paulgoode.com foundations",
+              "lineHeight": 1.15,
+              "fontFamily": "$font-display",
+              "fontSize": "$text-display",
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "hTZD1",
+              "name": "Lede",
+              "fill": "$ink-muted",
+              "textGrowth": "fixed-width",
+              "width": 760,
+              "content": "Everything on this page is a variable. Change a value in the Variables panel and every screen in this file updates. Running npm run dev or npm run build copies the values into src/styles/tokens.css, so the site follows.",
+              "lineHeight": 1.6,
+              "fontFamily": "$font-body",
+              "fontSize": "$text-lede",
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "QDA5l",
+          "name": "Colors",
+          "width": "fill_container",
+          "stroke": "$border",
+          "strokeWidth": {
+            "top": 1
+          },
+          "strokeAlignment": "inner",
+          "layout": "vertical",
+          "gap": 28,
+          "padding": [
+            32,
+            0,
+            0,
+            0
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "etylY",
+              "name": "Colors Header",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 6,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Ygv7h",
+                  "name": "Section Title",
+                  "fill": "$ink",
+                  "content": "Color",
+                  "fontFamily": "$font-display",
+                  "fontSize": "$text-heading",
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "SzFeq",
+                  "name": "Section Note",
+                  "fill": "$ink-faint",
+                  "textGrowth": "fixed-width",
+                  "width": 760,
+                  "content": "Swatches are filled by the variable itself, so they always show the current value. CSS name in brackets.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-body",
+                  "fontSize": "$text-small",
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "PTUeo",
+              "name": "Swatch Row",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "BAxrD",
+                  "name": "Swatch bg",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": "$radius",
+                      "id": "k47l7",
+                      "name": "Chip",
+                      "fill": "$bg",
+                      "width": "fill_container",
+                      "height": 96,
+                      "stroke": "$border",
+                      "strokeWidth": 1,
+                      "strokeAlignment": "inner"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "qLHkN",
+                      "name": "Label",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 2,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "O8qze",
+                          "name": "Name",
+                          "fill": "$ink",
+                          "content": "bg",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$text-ui",
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "uV4y0",
+                          "name": "CSS",
+                          "fill": "$ink-faint",
+                          "content": "--color-bg",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$text-meta",
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "tAgm6",
+                          "name": "Use",
+                          "fill": "$ink-muted",
+                          "content": "Page background",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$text-meta",
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "NqrLn",
+                  "name": "Swatch ink",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": "$radius",
+                      "id": "DPfjR",
+                      "name": "Chip",
+                      "fill": "$ink",
+                      "width": "fill_container",
+                      "height": 96,
+                      "stroke": "$border",
+                      "strokeWidth": 1,
+                      "strokeAlignment": "inner"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "XFqeK",
+                      "name": "Label",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 2,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "QNE6g",
+                          "name": "Name",
+                          "fill": "$ink",
+                          "content": "ink",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$text-ui",
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "oqkAi",
+                          "name": "CSS",
+                          "fill": "$ink-faint",
+                          "content": "--color-ink",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$text-meta",
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "UUh3m",
+                          "name": "Use",
+                          "fill": "$ink-muted",
+                          "content": "Main text",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$text-meta",
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "F6PIkg",
+                  "name": "Swatch ink-muted",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": "$radius",
+                      "id": "D1MGa",
+                      "name": "Chip",
+                      "fill": "$ink-muted",
+                      "width": "fill_container",
+                      "height": 96,
+                      "stroke": "$border",
+                      "strokeWidth": 1,
+                      "strokeAlignment": "inner"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "a42p4",
+                      "name": "Label",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 2,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "wy8io",
+                          "name": "Name",
+                          "fill": "$ink",
+                          "content": "ink-muted",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$text-ui",
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "sDIWN",
+                          "name": "CSS",
+                          "fill": "$ink-faint",
+                          "content": "--color-ink-muted",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$text-meta",
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "aMWQI",
+                          "name": "Use",
+                          "fill": "$ink-muted",
+                          "content": "Secondary text, prices",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$text-meta",
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "MvxC8",
+                  "name": "Swatch ink-faint",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": "$radius",
+                      "id": "DbLyt",
+                      "name": "Chip",
+                      "fill": "$ink-faint",
+                      "width": "fill_container",
+                      "height": 96,
+                      "stroke": "$border",
+                      "strokeWidth": 1,
+                      "strokeAlignment": "inner"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "OBFFj",
+                      "name": "Label",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 2,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "XJWBg",
+                          "name": "Name",
+                          "fill": "$ink",
+                          "content": "ink-faint",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$text-ui",
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "etLEf",
+                          "name": "CSS",
+                          "fill": "$ink-faint",
+                          "content": "--color-ink-faint",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$text-meta",
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ZUbHW",
+                          "name": "Use",
+                          "fill": "$ink-muted",
+                          "content": "Labels, meta, captions",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$text-meta",
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "jf4sp",
+              "name": "Swatch Row",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "l12Iuf",
+                  "name": "Swatch border",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": "$radius",
+                      "id": "T3irgD",
+                      "name": "Chip",
+                      "fill": "$border",
+                      "width": "fill_container",
+                      "height": 96,
+                      "stroke": "$border",
+                      "strokeWidth": 1,
+                      "strokeAlignment": "inner"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ydIgD",
+                      "name": "Label",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 2,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Ibuzz",
+                          "name": "Name",
+                          "fill": "$ink",
+                          "content": "border",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$text-ui",
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "T3rMgN",
+                          "name": "CSS",
+                          "fill": "$ink-faint",
+                          "content": "--color-border",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$text-meta",
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "f5e13H",
+                          "name": "Use",
+                          "fill": "$ink-muted",
+                          "content": "Dividers, outlines",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$text-meta",
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "iijJe",
+                  "name": "Swatch accent",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": "$radius",
+                      "id": "YdZMh",
+                      "name": "Chip",
+                      "fill": "$accent",
+                      "width": "fill_container",
+                      "height": 96,
+                      "stroke": "$border",
+                      "strokeWidth": 1,
+                      "strokeAlignment": "inner"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "aqJJz",
+                      "name": "Label",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 2,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "I5necc",
+                          "name": "Name",
+                          "fill": "$ink",
+                          "content": "accent",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$text-ui",
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "cZrUY",
+                          "name": "CSS",
+                          "fill": "$ink-faint",
+                          "content": "--color-accent",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$text-meta",
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "QJp2A",
+                          "name": "Use",
+                          "fill": "$ink-muted",
+                          "content": "Labels, active nav, Signature",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$text-meta",
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "CyPfI",
+                  "name": "Swatch hover",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": "$radius",
+                      "id": "wHKRX",
+                      "name": "Chip",
+                      "fill": "$hover",
+                      "width": "fill_container",
+                      "height": 96,
+                      "stroke": "$border",
+                      "strokeWidth": 1,
+                      "strokeAlignment": "inner"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "h1GVoK",
+                      "name": "Label",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 2,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "fwzka",
+                          "name": "Name",
+                          "fill": "$ink",
+                          "content": "hover",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$text-ui",
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "qYdfQ",
+                          "name": "CSS",
+                          "fill": "$ink-faint",
+                          "content": "--color-hover",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$text-meta",
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "t0YcYr",
+                          "name": "Use",
+                          "fill": "$ink-muted",
+                          "content": "Hover on links & buttons",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$text-meta",
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "kwBne",
+                  "name": "Swatch mat",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": "$radius",
+                      "id": "iOWqw",
+                      "name": "Chip",
+                      "fill": "$mat",
+                      "width": "fill_container",
+                      "height": 96,
+                      "stroke": "$border",
+                      "strokeWidth": 1,
+                      "strokeAlignment": "inner"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "xQwgX",
+                      "name": "Label",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 2,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Zciqw",
+                          "name": "Name",
+                          "fill": "$ink",
+                          "content": "mat",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$text-ui",
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "W9rOI",
+                          "name": "CSS",
+                          "fill": "$ink-faint",
+                          "content": "--color-mat",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$text-meta",
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "NWxlI",
+                          "name": "Use",
+                          "fill": "$ink-muted",
+                          "content": "Behind artwork images",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$text-meta",
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "i9NWV",
+          "name": "Type",
+          "width": "fill_container",
+          "stroke": "$border",
+          "strokeWidth": {
+            "top": 1
+          },
+          "strokeAlignment": "inner",
+          "layout": "vertical",
+          "gap": 28,
+          "padding": [
+            32,
+            0,
+            0,
+            0
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "l0F4lT",
+              "name": "Type Header",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 6,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "OdLfT",
+                  "name": "Section Title",
+                  "fill": "$ink",
+                  "content": "Type",
+                  "fontFamily": "$font-display",
+                  "fontSize": "$text-heading",
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "LHgLO",
+                  "name": "Section Note",
+                  "fill": "$ink-faint",
+                  "textGrowth": "fixed-width",
+                  "width": 760,
+                  "content": "Two font variables drive every text style. Each sample below is set with its size variable.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-body",
+                  "fontSize": "$text-small",
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "f3wSY",
+              "name": "Font Families",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "DnjMi",
+                  "name": "Font font-display",
+                  "width": "fill_container",
+                  "fill": "$mat",
+                  "cornerRadius": "$radius",
+                  "stroke": "$border",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "D6xYi",
+                      "name": "Variable",
+                      "fill": "$ink-faint",
+                      "content": "font-display  ·  --font-display",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$text-meta",
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "nSAXd",
+                      "name": "Font Sample",
+                      "fill": "$ink",
+                      "content": "Aa  Drawing is thinking",
+                      "fontFamily": "Geologica",
+                      "fontSize": 40,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "S4mAqC",
+                      "name": "Use",
+                      "fill": "$ink-muted",
+                      "content": "Headings, product names, prices on cards",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$text-small",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "W86TYY",
+                  "name": "Font font-body",
+                  "width": "fill_container",
+                  "fill": "$mat",
+                  "cornerRadius": "$radius",
+                  "stroke": "$border",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "gW8Q6",
+                      "name": "Variable",
+                      "fill": "$ink-faint",
+                      "content": "font-body  ·  --font-body",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$text-meta",
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "qjsIN",
+                      "name": "Font Sample",
+                      "fill": "$ink",
+                      "content": "Aa  One-of-a-kind originals",
+                      "fontFamily": "Ubuntu",
+                      "fontSize": 40
+                    },
+                    {
+                      "type": "text",
+                      "id": "tbqhj",
+                      "name": "Use",
+                      "fill": "$ink-muted",
+                      "content": "Body text, nav, buttons, labels",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$text-small",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "IfoDj",
+              "name": "Type text-display",
+              "width": "fill_container",
+              "stroke": "$border",
+              "strokeWidth": {
+                "bottom": 1
+              },
+              "strokeAlignment": "inner",
+              "gap": 32,
+              "padding": [
+                0,
+                0,
+                16,
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "QZaDu",
+                  "name": "Meta",
+                  "width": 260,
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "l72m2o",
+                      "name": "Name",
+                      "fill": "$ink",
+                      "content": "text-display",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$text-ui",
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "w2AN0",
+                      "name": "Use",
+                      "fill": "$ink-faint",
+                      "content": "Shop title, product name",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$text-meta",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "pvaDK",
+                  "name": "Sample",
+                  "fill": "$ink",
+                  "content": "Drawing is thinking",
+                  "lineHeight": 1.15,
+                  "fontFamily": "$font-display",
+                  "fontSize": "$text-display",
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "w3Yh6S",
+              "name": "Type text-display-sm",
+              "width": "fill_container",
+              "stroke": "$border",
+              "strokeWidth": {
+                "bottom": 1
+              },
+              "strokeAlignment": "inner",
+              "gap": 32,
+              "padding": [
+                0,
+                0,
+                16,
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "HQ2Uq",
+                  "name": "Meta",
+                  "width": 260,
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "psgDQ",
+                      "name": "Name",
+                      "fill": "$ink",
+                      "content": "text-display-sm",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$text-ui",
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "c46LK",
+                      "name": "Use",
+                      "fill": "$ink-faint",
+                      "content": "Same, on phones",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$text-meta",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "ZH0CG",
+                  "name": "Sample",
+                  "fill": "$ink",
+                  "content": "Drawing is thinking",
+                  "lineHeight": 1.15,
+                  "fontFamily": "$font-display",
+                  "fontSize": "$text-display-sm",
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "j4ooI",
+              "name": "Type text-heading",
+              "width": "fill_container",
+              "stroke": "$border",
+              "strokeWidth": {
+                "bottom": 1
+              },
+              "strokeAlignment": "inner",
+              "gap": 32,
+              "padding": [
+                0,
+                0,
+                16,
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "c0JFqt",
+                  "name": "Meta",
+                  "width": 260,
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Uizbd",
+                      "name": "Name",
+                      "fill": "$ink",
+                      "content": "text-heading",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$text-ui",
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "PbwrK",
+                      "name": "Use",
+                      "fill": "$ink-faint",
+                      "content": "Section titles",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$text-meta",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "SZMA9",
+                  "name": "Sample",
+                  "fill": "$ink",
+                  "content": "Drawing is thinking",
+                  "lineHeight": 1.15,
+                  "fontFamily": "$font-display",
+                  "fontSize": "$text-heading",
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "C7Mt3",
+              "name": "Type text-heading-sm",
+              "width": "fill_container",
+              "stroke": "$border",
+              "strokeWidth": {
+                "bottom": 1
+              },
+              "strokeAlignment": "inner",
+              "gap": 32,
+              "padding": [
+                0,
+                0,
+                16,
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "WK7IT",
+                  "name": "Meta",
+                  "width": 260,
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "xun0s",
+                      "name": "Name",
+                      "fill": "$ink",
+                      "content": "text-heading-sm",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$text-ui",
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ZOTNP",
+                      "name": "Use",
+                      "fill": "$ink-faint",
+                      "content": "Section titles, phones",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$text-meta",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "Z3oeTg",
+                  "name": "Sample",
+                  "fill": "$ink",
+                  "content": "Drawing is thinking",
+                  "lineHeight": 1.15,
+                  "fontFamily": "$font-display",
+                  "fontSize": "$text-heading-sm",
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "hdmk9",
+              "name": "Type text-title",
+              "width": "fill_container",
+              "stroke": "$border",
+              "strokeWidth": {
+                "bottom": 1
+              },
+              "strokeAlignment": "inner",
+              "gap": 32,
+              "padding": [
+                0,
+                0,
+                16,
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "uSIC8",
+                  "name": "Meta",
+                  "width": 260,
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "EBMNh",
+                      "name": "Name",
+                      "fill": "$ink",
+                      "content": "text-title",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$text-ui",
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "syOMV",
+                      "name": "Use",
+                      "fill": "$ink-faint",
+                      "content": "Lightbox title",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$text-meta",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "ZuLpA",
+                  "name": "Sample",
+                  "fill": "$ink",
+                  "content": "Drawing is thinking",
+                  "lineHeight": 1.15,
+                  "fontFamily": "$font-display",
+                  "fontSize": "$text-title",
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Djw9x",
+              "name": "Type text-card",
+              "width": "fill_container",
+              "stroke": "$border",
+              "strokeWidth": {
+                "bottom": 1
+              },
+              "strokeAlignment": "inner",
+              "gap": 32,
+              "padding": [
+                0,
+                0,
+                16,
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "WklLY",
+                  "name": "Meta",
+                  "width": 260,
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "VLFEs",
+                      "name": "Name",
+                      "fill": "$ink",
+                      "content": "text-card",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$text-ui",
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "KTVWz",
+                      "name": "Use",
+                      "fill": "$ink-faint",
+                      "content": "Product card name",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$text-meta",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "y9mA2",
+                  "name": "Sample",
+                  "fill": "$ink",
+                  "content": "Drawing is thinking",
+                  "lineHeight": 1.15,
+                  "fontFamily": "$font-display",
+                  "fontSize": "$text-card",
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "a4XOje",
+              "name": "Type text-card-sm",
+              "width": "fill_container",
+              "stroke": "$border",
+              "strokeWidth": {
+                "bottom": 1
+              },
+              "strokeAlignment": "inner",
+              "gap": 32,
+              "padding": [
+                0,
+                0,
+                16,
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "JxP1y",
+                  "name": "Meta",
+                  "width": 260,
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ktmj7",
+                      "name": "Name",
+                      "fill": "$ink",
+                      "content": "text-card-sm",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$text-ui",
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "WHFW0",
+                      "name": "Use",
+                      "fill": "$ink-faint",
+                      "content": "Card name, phones",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$text-meta",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "G9ac4",
+                  "name": "Sample",
+                  "fill": "$ink",
+                  "content": "Drawing is thinking",
+                  "lineHeight": 1.15,
+                  "fontFamily": "$font-display",
+                  "fontSize": "$text-card-sm",
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "LrWrk",
+              "name": "Type text-price",
+              "width": "fill_container",
+              "stroke": "$border",
+              "strokeWidth": {
+                "bottom": 1
+              },
+              "strokeAlignment": "inner",
+              "gap": 32,
+              "padding": [
+                0,
+                0,
+                16,
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "EZ8DV",
+                  "name": "Meta",
+                  "width": 260,
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "mTd7j",
+                      "name": "Name",
+                      "fill": "$ink",
+                      "content": "text-price",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$text-ui",
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "lMsab",
+                      "name": "Use",
+                      "fill": "$ink-faint",
+                      "content": "Product page price",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$text-meta",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "f2L7f0",
+                  "name": "Sample",
+                  "fill": "$ink",
+                  "content": "One-of-a-kind originals, direct from the studio",
+                  "lineHeight": 1.4,
+                  "fontFamily": "$font-body",
+                  "fontSize": "$text-price",
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "UcOhn",
+              "name": "Type text-lede",
+              "width": "fill_container",
+              "stroke": "$border",
+              "strokeWidth": {
+                "bottom": 1
+              },
+              "strokeAlignment": "inner",
+              "gap": 32,
+              "padding": [
+                0,
+                0,
+                16,
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "IanRb",
+                  "name": "Meta",
+                  "width": 260,
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "mo7LW",
+                      "name": "Name",
+                      "fill": "$ink",
+                      "content": "text-lede",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$text-ui",
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "rzc6U",
+                      "name": "Use",
+                      "fill": "$ink-faint",
+                      "content": "Intro paragraphs",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$text-meta",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "f5gdCO",
+                  "name": "Sample",
+                  "fill": "$ink",
+                  "content": "One-of-a-kind originals, direct from the studio",
+                  "lineHeight": 1.4,
+                  "fontFamily": "$font-body",
+                  "fontSize": "$text-lede",
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "E9w3b9",
+              "name": "Type text-body",
+              "width": "fill_container",
+              "stroke": "$border",
+              "strokeWidth": {
+                "bottom": 1
+              },
+              "strokeAlignment": "inner",
+              "gap": 32,
+              "padding": [
+                0,
+                0,
+                16,
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "U2uzM",
+                  "name": "Meta",
+                  "width": 260,
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "yzW1p",
+                      "name": "Name",
+                      "fill": "$ink",
+                      "content": "text-body",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$text-ui",
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "brmHO",
+                      "name": "Use",
+                      "fill": "$ink-faint",
+                      "content": "Body text, card price",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$text-meta",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "Z2oF4c",
+                  "name": "Sample",
+                  "fill": "$ink",
+                  "content": "One-of-a-kind originals, direct from the studio",
+                  "lineHeight": 1.4,
+                  "fontFamily": "$font-body",
+                  "fontSize": "$text-body",
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "uGqb3",
+              "name": "Type text-ui",
+              "width": "fill_container",
+              "stroke": "$border",
+              "strokeWidth": {
+                "bottom": 1
+              },
+              "strokeAlignment": "inner",
+              "gap": 32,
+              "padding": [
+                0,
+                0,
+                16,
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "nU3M9",
+                  "name": "Meta",
+                  "width": 260,
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "wT2pn",
+                      "name": "Name",
+                      "fill": "$ink",
+                      "content": "text-ui",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$text-ui",
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "gErNZ",
+                      "name": "Use",
+                      "fill": "$ink-faint",
+                      "content": "Nav, spec rows, buttons (large)",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$text-meta",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "tuxiB",
+                  "name": "Sample",
+                  "fill": "$ink",
+                  "content": "One-of-a-kind originals, direct from the studio",
+                  "lineHeight": 1.4,
+                  "fontFamily": "$font-body",
+                  "fontSize": "$text-ui",
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "DieYS",
+              "name": "Type text-small",
+              "width": "fill_container",
+              "stroke": "$border",
+              "strokeWidth": {
+                "bottom": 1
+              },
+              "strokeAlignment": "inner",
+              "gap": 32,
+              "padding": [
+                0,
+                0,
+                16,
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "kWUN4",
+                  "name": "Meta",
+                  "width": 260,
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "IXycJ",
+                      "name": "Name",
+                      "fill": "$ink",
+                      "content": "text-small",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$text-ui",
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "K4t35",
+                      "name": "Use",
+                      "fill": "$ink-faint",
+                      "content": "Buttons, pills, footer, breadcrumb",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$text-meta",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "Bt8zD",
+                  "name": "Sample",
+                  "fill": "$ink",
+                  "content": "One-of-a-kind originals, direct from the studio",
+                  "lineHeight": 1.4,
+                  "fontFamily": "$font-body",
+                  "fontSize": "$text-small",
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "fCgSt",
+              "name": "Type text-meta",
+              "width": "fill_container",
+              "stroke": "$border",
+              "strokeWidth": {
+                "bottom": 1
+              },
+              "strokeAlignment": "inner",
+              "gap": 32,
+              "padding": [
+                0,
+                0,
+                16,
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "k763i",
+                  "name": "Meta",
+                  "width": 260,
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "fj6nk",
+                      "name": "Name",
+                      "fill": "$ink",
+                      "content": "text-meta",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$text-ui",
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ealBe",
+                      "name": "Use",
+                      "fill": "$ink-faint",
+                      "content": "Card meta, notes, eyebrow",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$text-meta",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "T0JKG",
+                  "name": "Sample",
+                  "fill": "$ink",
+                  "content": "One-of-a-kind originals, direct from the studio",
+                  "lineHeight": 1.4,
+                  "fontFamily": "$font-body",
+                  "fontSize": "$text-meta",
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "N7suLE",
+              "name": "Type text-caption",
+              "width": "fill_container",
+              "stroke": "$border",
+              "strokeWidth": {
+                "bottom": 1
+              },
+              "strokeAlignment": "inner",
+              "gap": 32,
+              "padding": [
+                0,
+                0,
+                16,
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "CVpVG",
+                  "name": "Meta",
+                  "width": 260,
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Po2OI",
+                      "name": "Name",
+                      "fill": "$ink",
+                      "content": "text-caption",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$text-ui",
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "LQRJ3",
+                      "name": "Use",
+                      "fill": "$ink-faint",
+                      "content": "Hints, meta on phones",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$text-meta",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "g2afOF",
+                  "name": "Sample",
+                  "fill": "$ink",
+                  "content": "One-of-a-kind originals, direct from the studio",
+                  "lineHeight": 1.4,
+                  "fontFamily": "$font-body",
+                  "fontSize": "$text-caption",
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Jispp",
+              "name": "Type text-badge",
+              "width": "fill_container",
+              "stroke": "$border",
+              "strokeWidth": {
+                "bottom": 1
+              },
+              "strokeAlignment": "inner",
+              "gap": 32,
+              "padding": [
+                0,
+                0,
+                16,
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "QwAoW",
+                  "name": "Meta",
+                  "width": 260,
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "EEsWv",
+                      "name": "Name",
+                      "fill": "$ink",
+                      "content": "text-badge",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$text-ui",
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "tSVuC",
+                      "name": "Use",
+                      "fill": "$ink-faint",
+                      "content": "Badges",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$text-meta",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "nFsmS",
+                  "name": "Sample",
+                  "fill": "$ink",
+                  "content": "One-of-a-kind originals, direct from the studio",
+                  "lineHeight": 1.4,
+                  "fontFamily": "$font-body",
+                  "fontSize": "$text-badge",
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "G3dwIw",
+          "name": "Spacing",
+          "width": "fill_container",
+          "stroke": "$border",
+          "strokeWidth": {
+            "top": 1
+          },
+          "strokeAlignment": "inner",
+          "layout": "vertical",
+          "gap": 28,
+          "padding": [
+            32,
+            0,
+            0,
+            0
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "nIssA",
+              "name": "Spacing Header",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 6,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Ve5Rr",
+                  "name": "Section Title",
+                  "fill": "$ink",
+                  "content": "Spacing, shape & layout",
+                  "fontFamily": "$font-display",
+                  "fontSize": "$text-heading",
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "u4Nbu4",
+                  "name": "Section Note",
+                  "fill": "$ink-faint",
+                  "textGrowth": "fixed-width",
+                  "width": 760,
+                  "content": "Bars and shapes are sized by their variables.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-body",
+                  "fontSize": "$text-small",
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "i7kjA",
+              "name": "Space space-gutter",
+              "width": "fill_container",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "XF14S",
+                  "name": "Meta",
+                  "width": 260,
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "mIaJe",
+                      "name": "Name",
+                      "fill": "$ink",
+                      "content": "space-gutter",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$text-ui",
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "PQJtT",
+                      "name": "Use",
+                      "fill": "$ink-faint",
+                      "content": "Page side margin (tablet & desktop)",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$text-meta",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "uln77",
+                  "name": "Bar",
+                  "fill": "$ink",
+                  "cornerRadius": 2,
+                  "padding": [
+                    0,
+                    "$space-gutter",
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "t9enS5",
+                      "name": "Spacer",
+                      "width": 0,
+                      "height": 24
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "u2ePtl",
+              "name": "Space space-gutter-sm",
+              "width": "fill_container",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ZtUzM",
+                  "name": "Meta",
+                  "width": 260,
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "NAKfJ",
+                      "name": "Name",
+                      "fill": "$ink",
+                      "content": "space-gutter-sm",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$text-ui",
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "er2fH",
+                      "name": "Use",
+                      "fill": "$ink-faint",
+                      "content": "Page side margin (phones)",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$text-meta",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "SgrC8",
+                  "name": "Bar",
+                  "fill": "$ink",
+                  "cornerRadius": 2,
+                  "padding": [
+                    0,
+                    "$space-gutter-sm",
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "FhX9r",
+                      "name": "Spacer",
+                      "width": 0,
+                      "height": 24
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ycUT5",
+              "name": "Shapes",
+              "width": "fill_container",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "RQXvb",
+                  "name": "Meta",
+                  "width": 260,
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "zhQ1E",
+                      "name": "Name",
+                      "fill": "$ink",
+                      "content": "radius · radius-pill",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$text-ui",
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "s4cAi",
+                      "name": "Use",
+                      "fill": "$ink-faint",
+                      "content": "Images & cards · buttons, pills, badges",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$text-meta",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": "$radius",
+                  "id": "h0mOM",
+                  "name": "Radius Sample",
+                  "fill": "$border",
+                  "width": 96,
+                  "height": 96
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": "$radius-pill",
+                  "id": "JTjNU",
+                  "name": "Pill Sample",
+                  "fill": "$border",
+                  "width": 160,
+                  "height": 40
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "jSJJl",
+              "name": "Width",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "c5P9l",
+                  "name": "Meta",
+                  "width": 260,
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "W9AxuP",
+                      "name": "Name",
+                      "fill": "$ink",
+                      "content": "width-wide",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$text-ui",
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "e8Gtpz",
+                      "name": "Use",
+                      "fill": "$ink-faint",
+                      "content": "Max content width (desktop)",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$text-meta",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "kvm8c",
+                  "name": "Width Bar",
+                  "fill": "$border",
+                  "cornerRadius": "$radius-pill",
+                  "padding": [
+                    0,
+                    "$width-wide",
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "g9vqd",
+                      "name": "Spacer",
+                      "width": 0,
+                      "height": 8
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "MJB1s",
+          "name": "Breakpoints",
+          "width": "fill_container",
+          "stroke": "$border",
+          "strokeWidth": {
+            "top": 1
+          },
+          "strokeAlignment": "inner",
+          "layout": "vertical",
+          "gap": 28,
+          "padding": [
+            32,
+            0,
+            0,
+            0
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "o3y3UJ",
+              "name": "Breakpoints Header",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 6,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "hqtez",
+                  "name": "Section Title",
+                  "fill": "$ink",
+                  "content": "Breakpoints",
+                  "fontFamily": "$font-display",
+                  "fontSize": "$text-heading",
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "d8Vah",
+                  "name": "Section Note",
+                  "fill": "$ink-faint",
+                  "textGrowth": "fixed-width",
+                  "width": 760,
+                  "content": "Design frames vs. where the code switches layout. These live in the code (not variables): ask Claude to change them.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-body",
+                  "fontSize": "$text-small",
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "f15i1a",
+              "name": "Breakpoint",
+              "width": "fill_container",
+              "stroke": "$border",
+              "strokeWidth": {
+                "bottom": 1
+              },
+              "strokeAlignment": "inner",
+              "gap": 32,
+              "padding": [
+                0,
+                0,
+                14,
+                0
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "amuSZ",
+                  "name": "When",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": 260,
+                  "content": "Desktop frame · 1440",
+                  "fontFamily": "$font-body",
+                  "fontSize": "$text-ui",
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "vYD70",
+                  "name": "What",
+                  "fill": "$ink-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Two columns: gallery + info. 4-up related products. Content max width-wide.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-body",
+                  "fontSize": "$text-ui",
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "XTq9X",
+              "name": "Breakpoint",
+              "width": "fill_container",
+              "stroke": "$border",
+              "strokeWidth": {
+                "bottom": 1
+              },
+              "strokeAlignment": "inner",
+              "gap": 32,
+              "padding": [
+                0,
+                0,
+                14,
+                0
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "nL7zI",
+                  "name": "When",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": 260,
+                  "content": "Below 960",
+                  "fontFamily": "$font-body",
+                  "fontSize": "$text-ui",
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "h69g2V",
+                  "name": "What",
+                  "fill": "$ink-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Shop grid drops to 3 columns.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-body",
+                  "fontSize": "$text-ui",
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "mkpp8",
+              "name": "Breakpoint",
+              "width": "fill_container",
+              "stroke": "$border",
+              "strokeWidth": {
+                "bottom": 1
+              },
+              "strokeAlignment": "inner",
+              "gap": 32,
+              "padding": [
+                0,
+                0,
+                14,
+                0
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "f9sGay",
+                  "name": "When",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": 260,
+                  "content": "Tablet frame · 768 — below 860",
+                  "fontFamily": "$font-body",
+                  "fontSize": "$text-ui",
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "A6UmY",
+                  "name": "What",
+                  "fill": "$ink-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Product page stacks to one column. Related products 2-up.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-body",
+                  "fontSize": "$text-ui",
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "hJCLD",
+              "name": "Breakpoint",
+              "width": "fill_container",
+              "stroke": "$border",
+              "strokeWidth": {
+                "bottom": 1
+              },
+              "strokeAlignment": "inner",
+              "gap": 32,
+              "padding": [
+                0,
+                0,
+                14,
+                0
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "nyrHE",
+                  "name": "When",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": 260,
+                  "content": "Below 720",
+                  "fontFamily": "$font-body",
+                  "fontSize": "$text-ui",
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "r8LOp",
+                  "name": "What",
+                  "fill": "$ink-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Page margin switches to space-gutter-sm.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-body",
+                  "fontSize": "$text-ui",
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "q7E0fC",
+              "name": "Breakpoint",
+              "width": "fill_container",
+              "stroke": "$border",
+              "strokeWidth": {
+                "bottom": 1
+              },
+              "strokeAlignment": "inner",
+              "gap": 32,
+              "padding": [
+                0,
+                0,
+                14,
+                0
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "jiwpm",
+                  "name": "When",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": 260,
+                  "content": "Below 640",
+                  "fontFamily": "$font-body",
+                  "fontSize": "$text-ui",
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "DFDcw",
+                  "name": "What",
+                  "fill": "$ink-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Header stacks: logo centered above nav.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-body",
+                  "fontSize": "$text-ui",
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "O4IL7S",
+              "name": "Breakpoint",
+              "width": "fill_container",
+              "stroke": "$border",
+              "strokeWidth": {
+                "bottom": 1
+              },
+              "strokeAlignment": "inner",
+              "gap": 32,
+              "padding": [
+                0,
+                0,
+                14,
+                0
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "BS0f7",
+                  "name": "When",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": 260,
+                  "content": "Mobile frame · 390 — below 560",
+                  "fontFamily": "$font-body",
+                  "fontSize": "$text-ui",
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "FJekr",
+                  "name": "What",
+                  "fill": "$ink-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Phone sizes: text-display-sm, text-heading-sm, text-card-sm. Shop grid 2-up.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-body",
+                  "fontSize": "$text-ui",
+                  "fontWeight": "normal"
                 }
               ]
             }
@@ -5369,6 +7881,86 @@
     "hover": {
       "type": "color",
       "value": "#C1502E"
+    },
+    "text-display": {
+      "type": "number",
+      "value": 48
+    },
+    "text-display-sm": {
+      "type": "number",
+      "value": 34
+    },
+    "text-heading": {
+      "type": "number",
+      "value": 28
+    },
+    "text-heading-sm": {
+      "type": "number",
+      "value": 24
+    },
+    "text-title": {
+      "type": "number",
+      "value": 20
+    },
+    "text-card": {
+      "type": "number",
+      "value": 19
+    },
+    "text-card-sm": {
+      "type": "number",
+      "value": 17
+    },
+    "text-price": {
+      "type": "number",
+      "value": 22
+    },
+    "text-lede": {
+      "type": "number",
+      "value": 17
+    },
+    "text-body": {
+      "type": "number",
+      "value": 16
+    },
+    "text-ui": {
+      "type": "number",
+      "value": 15
+    },
+    "text-small": {
+      "type": "number",
+      "value": 14
+    },
+    "text-meta": {
+      "type": "number",
+      "value": 13
+    },
+    "text-caption": {
+      "type": "number",
+      "value": 12
+    },
+    "text-badge": {
+      "type": "number",
+      "value": 11
+    },
+    "space-gutter": {
+      "type": "number",
+      "value": 64
+    },
+    "space-gutter-sm": {
+      "type": "number",
+      "value": 24
+    },
+    "width-wide": {
+      "type": "number",
+      "value": 1200
+    },
+    "radius": {
+      "type": "number",
+      "value": 4
+    },
+    "radius-pill": {
+      "type": "number",
+      "value": 999
     }
   },
   "fileToken": "cc6f0c7a-c4c0-417e-803e-62337ed664fe"
