@@ -1,0 +1,39 @@
+/* Generated from design/shop.pen by scripts/sync-tokens.mjs. Do not edit by hand:
+   change the variables in pen.dev, save, and run `npm run tokens` (or dev/build). */
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&display=swap');
+
+:root {
+  --color-bg: #ffffff;
+  --color-ink: #211d17;
+  --color-ink-muted: #4a443a;
+  --color-ink-faint: #857c6c;
+  --color-border: #e7e0d3;
+  --color-accent: #121212;
+  --color-mat: #ffffff;
+  --color-hover: #c1502e;
+
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Work Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --text-display: 48px;
+  --text-display-sm: 34px;
+  --text-heading: 28px;
+  --text-heading-sm: 24px;
+  --text-title: 20px;
+  --text-card: 19px;
+  --text-card-sm: 17px;
+  --text-price: 22px;
+  --text-lede: 17px;
+  --text-body: 16px;
+  --text-ui: 15px;
+  --text-small: 14px;
+  --text-meta: 13px;
+  --text-caption: 12px;
+  --text-badge: 11px;
+  --space-gutter: 64px;
+  --space-gutter-sm: 24px;
+  --width-wide: 1200px;
+  --radius: 4px;
+  --radius-pill: 999px;
+}

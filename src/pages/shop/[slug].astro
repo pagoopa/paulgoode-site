@@ -104,7 +104,7 @@ const hasBody = Boolean(product.body?.trim());
   .breadcrumb {
     display: flex;
     gap: 8px;
-    font-size: 14px;
+    font-size: var(--text-small);
     color: var(--color-ink-faint);
     margin-bottom: 32px;
   }
@@ -131,12 +131,12 @@ const hasBody = Boolean(product.body?.trim());
   }
 
   .product__name {
-    font-size: 48px;
+    font-size: var(--text-display);
     margin-block: 12px 8px;
   }
 
   .product__price {
-    font-size: 22px;
+    font-size: var(--text-price);
     color: var(--color-ink-muted);
     margin-bottom: 28px;
   }
@@ -157,7 +157,7 @@ const hasBody = Boolean(product.body?.trim());
     gap: 16px;
     padding-block: 12px;
     border-bottom: 1px solid var(--color-border);
-    font-size: 15px;
+    font-size: var(--text-ui);
   }
 
   .product__specs dt {
@@ -172,7 +172,7 @@ const hasBody = Boolean(product.body?.trim());
   .product__buy {
     width: 100%;
     padding-block: 14px;
-    font-size: 15px;
+    font-size: var(--text-ui);
   }
 
   .product__buy.is-disabled {
@@ -184,7 +184,7 @@ const hasBody = Boolean(product.body?.trim());
 
   .product__note {
     margin-top: 16px;
-    font-size: 13px;
+    font-size: var(--text-meta);
     line-height: 1.5;
     color: var(--color-ink-faint);
   }
@@ -196,7 +196,7 @@ const hasBody = Boolean(product.body?.trim());
   }
 
   .product__series {
-    font-size: 14px;
+    font-size: var(--text-small);
     color: var(--color-accent);
     font-weight: 500;
   }
@@ -211,7 +211,7 @@ const hasBody = Boolean(product.body?.trim());
   }
 
   .related__title {
-    font-size: 28px;
+    font-size: var(--text-heading);
     margin-bottom: 28px;
   }
 
@@ -248,11 +248,11 @@ const hasBody = Boolean(product.body?.trim());
     }
 
     .product__name {
-      font-size: 34px;
+      font-size: var(--text-display-sm);
     }
 
     .related__title {
-      font-size: 24px;
+      font-size: var(--text-heading-sm);
     }
   }
 </style>
