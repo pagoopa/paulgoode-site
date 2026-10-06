@@ -61,105 +61,93 @@ const filters = [
 </Layout>
 
 <style>
+  /* Section header / Left */
   .intro {
-    padding-block: 72px 40px;
+    padding-block: var(--space-section) var(--space-block);
   }
 
   .intro h1 {
-    font-size: 48px;
-    margin-block: 12px 14px;
+    font-size: var(--type-h2-size);
+    line-height: var(--type-h2-line-height);
+    margin-block: var(--space-stack);
   }
 
+  /* Body/p1-reg */
   .intro__lede {
-    font-size: 17px;
-    color: var(--color-ink-muted);
-    max-width: 640px;
+    font-size: var(--type-p1-size);
+    line-height: var(--type-p1-line-height);
+    color: var(--color-text-muted);
+    max-width: 720px;
   }
 
   .filter-bar {
-    padding-block: 0 40px;
+    padding-block: 0 var(--space-block);
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: var(--scale-300);
     flex-wrap: wrap;
   }
 
   .filter-bar__pills {
     display: flex;
-    gap: 12px;
+    gap: var(--scale-200);
     flex-wrap: wrap;
   }
 
+  /* Tag / Outline; the active filter is Tag / Yellow */
   .pill {
     font-family: var(--font-body);
-    font-size: 14px;
-    border-radius: 999px;
-    padding: 9px 18px;
+    font-size: var(--type-eyebrow3-size);
+    line-height: var(--type-eyebrow3-line-height);
+    letter-spacing: var(--type-eyebrow3-letter-spacing);
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: var(--radius-full);
+    padding: var(--scale-100) var(--scale-300);
     cursor: pointer;
-    border: 1px solid var(--color-ink);
+    border: 1px solid var(--color-border-strong);
     background: transparent;
-    color: var(--color-ink);
+    color: var(--color-text-default);
+  }
+
+  .pill:hover {
+    background: var(--color-surface-hover);
   }
 
   .pill[aria-pressed='true'] {
-    border-color: var(--color-accent);
-    background: var(--color-accent);
-    color: var(--color-bg);
+    border-color: var(--color-accent-yellow);
+    background: var(--color-accent-yellow);
+    color: var(--color-text-on-accent);
   }
 
   .filter-bar__count {
     margin-left: auto;
-    font-size: 14px;
-    color: var(--color-ink-faint);
+    font-size: var(--type-body2-size);
+    color: var(--color-text-muted);
   }
 
   .product-grid {
-    padding-block: 0 96px;
+    padding-block: 0 var(--space-section);
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 40px 28px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-block) var(--layout-gutter);
   }
 
   .empty-state {
-    padding-block: 0 96px;
-    color: var(--color-ink-faint);
+    padding-block: 0 var(--space-section);
+    color: var(--color-text-muted);
   }
 
-  @media (max-width: 960px) {
+  @media (max-width: 1023px) {
     .product-grid {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
 
-  @media (max-width: 560px) {
-    .intro {
-      padding-block: 48px 32px;
-    }
-
-    .intro h1 {
-      font-size: 34px;
-    }
-
-    .filter-bar {
-      padding-bottom: 28px;
-    }
-
-    .filter-bar__pills {
-      gap: 8px;
-    }
-
-    .pill {
-      padding: 8px 14px;
-    }
-
+  @media (max-width: 599px) {
     .filter-bar__count {
       margin-left: 0;
       width: 100%;
-    }
-
-    .product-grid {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 32px 16px;
     }
   }
 </style>

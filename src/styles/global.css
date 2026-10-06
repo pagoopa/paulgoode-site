@@ -1,19 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&display=swap');
+@import './tokens.css';
 
 :root {
-  --color-bg: #ffffff;
-  --color-ink: #211d17;
-  --color-ink-muted: #4a443a;
-  --color-ink-faint: #857c6c;
-  --color-border: #e7e0d3;
-  --color-accent: #121212;
-  --color-hover: #c1502e;
-
-  --font-display: 'Fraunces', Georgia, serif;
-  --font-body: 'Work Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-
+  /* Colors, fonts and sizes come from tokens.css (generated from design/shop.pen,
+     which mirrors the Figma "PG Library" variables). */
   --content-max: 900px;
-  --page-gutter: 64px;
 }
 
 *,
@@ -29,11 +19,11 @@ body {
 }
 
 body {
-  background: var(--color-bg);
-  color: var(--color-ink);
+  background: var(--color-surface-default);
+  color: var(--color-text-default);
   font-family: var(--font-body);
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: var(--type-p3-size);
+  line-height: var(--type-p3-line-height);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -41,9 +31,9 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: var(--font-display);
-  font-weight: 500;
-  line-height: 1.15;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.2;
   margin: 0 0 0.5em;
 }
 
@@ -57,7 +47,7 @@ a {
 }
 
 a:hover {
-  color: var(--color-hover);
+  color: var(--color-text-link);
 }
 
 img {
@@ -66,64 +56,79 @@ img {
 }
 
 ::selection {
-  background: var(--color-accent);
-  color: var(--color-bg);
+  background: var(--color-accent-yellow);
+  color: var(--color-text-on-accent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-border-focus);
+  outline-offset: 2px;
 }
 
 .wrap {
   width: 100%;
-  max-width: 1200px;
+  max-width: var(--layout-page-width);
   margin-inline: auto;
-  padding-inline: var(--page-gutter);
+  padding-inline: var(--layout-margin);
   box-sizing: border-box;
+}
+
+/* The tablet and mobile page widths are design sizes, not limits:
+   below desktop the content uses the whole viewport. */
+@media (max-width: 1023px) {
+  .wrap {
+    max-width: none;
+  }
 }
 
 .prose {
   max-width: var(--content-max);
 }
 
+/* Body/eyebrow2-md */
 .eyebrow {
-  font-size: 13px;
+  font-size: var(--type-eyebrow2-size);
+  line-height: var(--type-eyebrow2-line-height);
+  letter-spacing: var(--type-eyebrow2-letter-spacing);
   text-transform: uppercase;
-  letter-spacing: 0.14em;
-  color: var(--color-accent);
-  font-weight: 600;
+  color: var(--color-text-link);
+  font-weight: 500;
 }
 
+/* Button / Secondary / md */
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--color-ink);
-  border-radius: 999px;
-  padding: 10px 22px;
-  font-size: 14px;
+  gap: var(--scale-200);
+  border: 1px solid var(--color-border-emphasis);
+  border-radius: var(--radius-md);
+  padding: var(--scale-300) var(--scale-400);
+  font-size: var(--type-eyebrow2-size);
+  line-height: var(--type-eyebrow2-line-height);
+  letter-spacing: var(--type-eyebrow2-letter-spacing);
+  text-transform: uppercase;
   font-weight: 500;
   font-family: var(--font-body);
   background: transparent;
-  color: var(--color-ink);
+  color: var(--color-text-default);
   cursor: pointer;
 }
 
 .btn:hover {
-  border-color: var(--color-hover);
-  color: var(--color-hover);
+  background: var(--color-surface-hover);
+  color: var(--color-text-default);
 }
 
+/* Button / Primary / md */
 .btn-solid {
-  background: var(--color-ink);
-  color: var(--color-bg);
-  border-color: var(--color-ink);
+  background: var(--color-accent-yellow);
+  color: var(--color-text-on-accent);
+  border-color: var(--color-accent-yellow);
 }
 
 .btn-solid:hover {
-  background: var(--color-hover);
-  border-color: var(--color-hover);
-  color: var(--color-bg);
-}
-
-@media (max-width: 720px) {
-  :root {
-    --page-gutter: 24px;
-  }
+  background: var(--color-accent-yellow-hover);
+  border-color: var(--color-accent-yellow-hover);
+  color: var(--color-text-on-accent);
 }

@@ -20,29 +20,29 @@ import Layout from '../layouts/Layout.astro';
 
 <style>
   .hero {
-    padding-block: 96px 64px;
+    padding-block: var(--space-section) var(--space-block);
     max-width: 720px;
   }
 
+  /* Headings/Display 3 */
   .hero h1 {
-    font-size: 56px;
-    margin-block: 12px 20px;
+    font-family: var(--font-display);
+    font-size: var(--type-display-3-size);
+    line-height: var(--type-display-3-line-height);
+    letter-spacing: var(--type-display-3-letter-spacing);
+    margin-block: var(--space-stack);
   }
 
+  /* Body/p1-reg */
   .hero__lede {
-    font-size: 18px;
-    color: var(--color-ink-muted);
+    font-size: var(--type-p1-size);
+    line-height: var(--type-p1-line-height);
+    color: var(--color-text-muted);
   }
 
   .hero__actions {
     display: flex;
-    gap: 16px;
-    margin-top: 32px;
-  }
-
-  @media (max-width: 640px) {
-    .hero h1 {
-      font-size: 38px;
-    }
+    gap: var(--scale-400);
+    margin-top: var(--scale-800);
   }
 </style>
