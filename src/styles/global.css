@@ -1,9 +1,9 @@
 @import './tokens.css';
 
 :root {
-  /* Colors, fonts and sizes come from tokens.css (generated from design/shop.pen). */
+  /* Colors, fonts and sizes come from tokens.css (generated from design/shop.pen,
+     which mirrors the Figma "PG Library" variables). */
   --content-max: 900px;
-  --page-gutter: var(--space-gutter);
 }
 
 *,
@@ -19,11 +19,11 @@ body {
 }
 
 body {
-  background: var(--color-bg);
-  color: var(--color-ink);
+  background: var(--color-surface-default);
+  color: var(--color-text-default);
   font-family: var(--font-body);
-  font-size: var(--text-body);
-  line-height: 1.6;
+  font-size: var(--type-p3-size);
+  line-height: var(--type-p3-line-height);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -31,9 +31,9 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: var(--font-display);
-  font-weight: 500;
-  line-height: 1.15;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.2;
   margin: 0 0 0.5em;
 }
 
@@ -47,7 +47,7 @@ a {
 }
 
 a:hover {
-  color: var(--color-hover);
+  color: var(--color-text-link);
 }
 
 img {
@@ -56,64 +56,79 @@ img {
 }
 
 ::selection {
-  background: var(--color-accent);
-  color: var(--color-bg);
+  background: var(--color-accent-yellow);
+  color: var(--color-text-on-accent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-border-focus);
+  outline-offset: 2px;
 }
 
 .wrap {
   width: 100%;
-  max-width: var(--width-wide);
+  max-width: var(--layout-page-width);
   margin-inline: auto;
-  padding-inline: var(--page-gutter);
+  padding-inline: var(--layout-margin);
   box-sizing: border-box;
+}
+
+/* The tablet and mobile page widths are design sizes, not limits:
+   below desktop the content uses the whole viewport. */
+@media (max-width: 1023px) {
+  .wrap {
+    max-width: none;
+  }
 }
 
 .prose {
   max-width: var(--content-max);
 }
 
+/* Body/eyebrow2-md */
 .eyebrow {
-  font-size: var(--text-meta);
+  font-size: var(--type-eyebrow2-size);
+  line-height: var(--type-eyebrow2-line-height);
+  letter-spacing: var(--type-eyebrow2-letter-spacing);
   text-transform: uppercase;
-  letter-spacing: 0.14em;
-  color: var(--color-accent);
-  font-weight: 600;
+  color: var(--color-text-link);
+  font-weight: 500;
 }
 
+/* Button / Secondary / md */
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--color-ink);
-  border-radius: var(--radius-pill);
-  padding: 10px 22px;
-  font-size: var(--text-small);
+  gap: var(--scale-200);
+  border: 1px solid var(--color-border-emphasis);
+  border-radius: var(--radius-md);
+  padding: var(--scale-300) var(--scale-400);
+  font-size: var(--type-eyebrow2-size);
+  line-height: var(--type-eyebrow2-line-height);
+  letter-spacing: var(--type-eyebrow2-letter-spacing);
+  text-transform: uppercase;
   font-weight: 500;
   font-family: var(--font-body);
   background: transparent;
-  color: var(--color-ink);
+  color: var(--color-text-default);
   cursor: pointer;
 }
 
 .btn:hover {
-  border-color: var(--color-hover);
-  color: var(--color-hover);
+  background: var(--color-surface-hover);
+  color: var(--color-text-default);
 }
 
+/* Button / Primary / md */
 .btn-solid {
-  background: var(--color-ink);
-  color: var(--color-bg);
-  border-color: var(--color-ink);
+  background: var(--color-accent-yellow);
+  color: var(--color-text-on-accent);
+  border-color: var(--color-accent-yellow);
 }
 
 .btn-solid:hover {
-  background: var(--color-hover);
-  border-color: var(--color-hover);
-  color: var(--color-bg);
-}
-
-@media (max-width: 720px) {
-  :root {
-    --page-gutter: var(--space-gutter-sm);
-  }
+  background: var(--color-accent-yellow-hover);
+  border-color: var(--color-accent-yellow-hover);
+  color: var(--color-text-on-accent);
 }
