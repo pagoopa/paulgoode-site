@@ -14,24 +14,34 @@ const year = new Date().getFullYear();
 </footer>
 
 <style>
+  /* Footer / Inverse (bottom row) */
   .site-footer {
-    border-top: 1px solid var(--color-border);
-    margin-top: 96px;
+    background: var(--color-surface-inverse);
+    color: var(--color-text-inverse);
+    margin-top: var(--space-section);
   }
 
   .site-footer__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-block: 32px;
-    font-size: 14px;
-    color: var(--color-ink-faint);
+    padding-block: var(--space-block);
+    font-size: var(--type-body2-size);
+    line-height: var(--type-body2-line-height);
     flex-wrap: wrap;
-    gap: 16px;
+    gap: var(--scale-600);
   }
 
   .site-footer__links {
     display: flex;
-    gap: 28px;
+    gap: var(--scale-600);
+    font-size: var(--type-eyebrow2-size);
+    letter-spacing: var(--type-eyebrow2-letter-spacing);
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .site-footer a:hover {
+    color: var(--color-text-link-inverse);
   }
 </style>

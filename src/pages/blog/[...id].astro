@@ -32,13 +32,13 @@ const dateFmt = new Intl.DateTimeFormat('en-US', {
 
 <style>
   .post {
-    padding-block: 64px 96px;
+    padding-block: var(--space-block) var(--space-section);
   }
 
   .post__body {
-    margin-top: 32px;
-    font-size: 17px;
-    line-height: 1.7;
+    margin-top: var(--scale-800);
+    font-size: var(--type-p2-size);
+    line-height: var(--type-p2-line-height);
   }
 
   .post__body :global(p) {
