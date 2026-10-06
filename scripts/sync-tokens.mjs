@@ -54,8 +54,9 @@ function cssValue(name, type, v) {
     return `var(${cssName(ref, variables[ref]?.type)})`;
   }
   if (type === 'color') return v.toLowerCase();
-  // Line heights are ratios of the font size; columns are a count.
-  if (type === 'number') return /line-height|columns/.test(name) ? `${v}` : `${v}px`;
+  // Type style line heights are ratios of the font size, columns are a count and
+  // weights have no unit. The font-line-height-* primitives stay in px.
+  if (type === 'number') return /^type-.*-line-height$|columns|^font-weight-/.test(name) ? `${v}` : `${v}px`;
   return `'${v}', ${FONT_FALLBACKS[v] ?? 'sans-serif'}`;
 }
 

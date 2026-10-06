@@ -12,7 +12,8 @@
     "prebuild": "npm run tokens",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "figma:pen": "node scripts/figma-to-pen.mjs"
   },
   "dependencies": {
     "astro": "^7.3.5"
