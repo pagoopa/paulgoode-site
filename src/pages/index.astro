@@ -1,20 +1,20 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import PageActions from '../components/PageActions.astro';
+import { getPage } from '../lib/pages';
+
+// Copy lives in src/content/pages/home.md.
+const { data, Content } = await getPage('home');
 ---
 
-<Layout title="Home">
+<Layout title={data.title} description={data.description}>
   <section class="wrap hero">
-    <p class="eyebrow">Founder, Uplifting Ink</p>
-    <h1>Drawing is thinking.</h1>
-    <p class="hero__lede prose">
-      UX designer, artist, and musician working across product design and
-      original art. This is where the process is visible — sketches, shop
-      pieces, and the journal, all in one place.
-    </p>
-    <div class="hero__actions">
-      <a class="btn btn-solid" href="/shop">View the shop</a>
-      <a class="btn" href="/blog">Read the journal</a>
+    {data.eyebrow && <p class="eyebrow">{data.eyebrow}</p>}
+    <h1>{data.heading}</h1>
+    <div class="hero__lede prose">
+      <Content />
     </div>
+    <PageActions class="hero__actions" actions={data.actions} />
   </section>
 </Layout>
 
@@ -40,9 +40,11 @@ import Layout from '../layouts/Layout.astro';
     color: var(--color-text-muted);
   }
 
-  .hero__actions {
-    display: flex;
-    gap: var(--scale-400);
+  .hero__lede :global(p:last-child) {
+    margin-bottom: 0;
+  }
+
+  .hero :global(.hero__actions) {
     margin-top: var(--scale-800);
   }
 </style>

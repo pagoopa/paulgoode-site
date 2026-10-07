@@ -1,21 +1,18 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import PageActions from '../components/PageActions.astro';
+import { getPage } from '../lib/pages';
+
+// Copy lives in src/content/pages/about.md.
+const { data, Content } = await getPage('about');
 ---
 
-<Layout title="About" description="Paul Goode — senior UX designer, artist, and musician.">
+<Layout title={data.title} description={data.description}>
   <section class="wrap prose about">
-    <p class="eyebrow">About</p>
-    <h1>Paul Goode</h1>
-    <p>
-      Placeholder bio — replace with the real one. Senior UX designer and
-      visual thinker with a fine arts background (VCU, painting and
-      printmaking), working across enterprise and consumer product design.
-    </p>
-    <p>
-      Runs Uplifting Ink, a visual thinking company spanning products and
-      events, organized around one idea: Dream Out Loud — making process
-      visible and learning in public.
-    </p>
+    {data.eyebrow && <p class="eyebrow">{data.eyebrow}</p>}
+    <h1>{data.heading}</h1>
+    <Content />
+    <PageActions actions={data.actions} />
   </section>
 </Layout>
 

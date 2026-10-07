@@ -32,4 +32,24 @@ const products = defineCollection({
     }),
 });
 
-export const collections = { blog, products };
+// Copy for the one-off pages (home, about, contact). The file name is the page id.
+const pages = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/pages' }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string().optional(),
+    eyebrow: z.string().optional(),
+    heading: z.string(),
+    actions: z
+      .array(
+        z.object({
+          label: z.string(),
+          href: z.string(),
+          style: z.enum(['solid', 'outline']).default('outline'),
+        }),
+      )
+      .default([]),
+  }),
+});
+
+export const collections = { blog, products, pages };

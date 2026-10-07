@@ -73,3 +73,18 @@ Colors, fonts and sizes live in `design/shop.pen` and are copied into
 `src/styles/tokens.css` by `scripts/sync-tokens.mjs`. This runs automatically
 before `npm run dev` and `npm run build`; run `npm run tokens` to sync manually.
 Don't edit `tokens.css` by hand, because the next sync overwrites it.
+
+## Editing site copy
+
+The words on the site live in Markdown files under `src/content/`:
+
+| Folder | What it holds |
+| --- | --- |
+| `src/content/pages/` | Home, About and Contact (`home.md`, `about.md`, `contact.md`) |
+| `src/content/blog/` | Journal posts |
+| `src/content/products/` | Shop pieces |
+
+The block between the `---` lines at the top (the frontmatter) holds the
+heading, eyebrow, buttons and so on. Everything below it is the body text.
+Leave a blank line between paragraphs. `npm run build` flags a missing or
+misspelled field.

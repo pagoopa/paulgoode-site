@@ -1,13 +1,18 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import PageActions from '../components/PageActions.astro';
+import { getPage } from '../lib/pages';
+
+// Copy lives in src/content/pages/contact.md.
+const { data, Content } = await getPage('contact');
 ---
 
-<Layout title="Contact">
+<Layout title={data.title} description={data.description}>
   <section class="wrap prose contact">
-    <p class="eyebrow">Contact</p>
-    <h1>Get in touch</h1>
-    <p>Placeholder — wire this up to a real contact form or a mailto link once that's decided.</p>
-    <a class="btn btn-solid" href="mailto:hello@paulgoode.com">Email</a>
+    {data.eyebrow && <p class="eyebrow">{data.eyebrow}</p>}
+    <h1>{data.heading}</h1>
+    <Content />
+    <PageActions class="contact__actions" actions={data.actions} />
   </section>
 </Layout>
 
@@ -16,7 +21,7 @@ import Layout from '../layouts/Layout.astro';
     padding-block: 64px 96px;
   }
 
-  .contact .btn {
+  .contact :global(.contact__actions) {
     margin-top: 12px;
   }
 </style>
