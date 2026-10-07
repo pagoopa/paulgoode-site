@@ -88,3 +88,10 @@ The block between the `---` lines at the top (the frontmatter) holds the
 heading, eyebrow, buttons and so on. Everything below it is the body text.
 Leave a blank line between paragraphs. `npm run build` flags a missing or
 misspelled field.
+
+## Adding a shop piece
+
+Run `npm run new-product` and answer the questions. Drag the photos from
+Finder into the terminal when it asks for them; the first one is the main
+image. It copies the photos into `src/assets/products/<slug>/` and writes
+`src/content/products/<slug>.md`. To change anything afterward, edit that file.
