@@ -9179,16 +9179,18 @@
               "alignItems": "center",
               "children": [
                 {
-                  "type": "text",
-                  "id": "d4PTo",
+                  "id": "fYlvE",
+                  "type": "ref",
+                  "ref": "HXmMz",
                   "name": "Crumb Shop",
-                  "fill": "$text-link",
-                  "content": "Shop",
-                  "lineHeight": "$type-body2-line-height",
-                  "fontFamily": "$font-body",
-                  "fontSize": "$type-body2-size",
-                  "fontWeight": "500",
-                  "letterSpacing": "$type-body2-letter-spacing"
+                  "descendants": {
+                    "BSi7m": {
+                      "content": "Shop"
+                    },
+                    "J9QJBi": {
+                      "enabled": false
+                    }
+                  }
                 },
                 {
                   "type": "text",
@@ -9593,6 +9595,21 @@
                           }
                         }
                       ]
+                    },
+                    {
+                      "id": "mItv6",
+                      "type": "ref",
+                      "ref": "xAXzR",
+                      "name": "Series statement",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ZIg2b": {
+                          "height": 80
+                        },
+                        "T6UuDT": {
+                          "content": "Part of the Signature Work series."
+                        }
+                      }
                     }
                   ]
                 }
@@ -9606,131 +9623,22 @@
               "width": "fill_container"
             },
             {
-              "type": "frame",
-              "id": "IcaW8",
-              "name": "Related",
+              "id": "bqOl1",
+              "type": "ref",
+              "ref": "zSEE8",
+              "name": "Recommendations",
               "width": "fill_container",
-              "layout": "vertical",
-              "gap": "$space-stack",
-              "children": [
-                {
-                  "id": "WDqib",
-                  "type": "ref",
-                  "ref": "g7uira",
-                  "name": "Related Header",
-                  "width": "fill_container",
-                  "descendants": {
-                    "z9frDW": {
-                      "content": "MORE ORIGINALS"
-                    },
-                    "SqBTJ": {
-                      "content": "You might also like"
-                    },
-                    "zSXuD": {
-                      "enabled": false
-                    }
-                  }
+              "descendants": {
+                "p6wMh/FNrk8": {
+                  "height": 447
                 },
-                {
-                  "type": "frame",
-                  "id": "hCbR8",
-                  "name": "Related Grid",
-                  "width": "fill_container",
-                  "gap": "$layout-gutter",
-                  "children": [
-                    {
-                      "id": "O7cu6",
-                      "type": "ref",
-                      "ref": "z8b9d",
-                      "name": "Waffle",
-                      "width": "fill_container",
-                      "descendants": {
-                        "FNrk8": {
-                          "height": 447,
-                          "fill": [
-                            "$surface-subtle",
-                            {
-                              "type": "image",
-                              "enabled": true,
-                              "url": "products/waffle/cover.jpg",
-                              "mode": "cover"
-                            }
-                          ]
-                        },
-                        "C9426P": {
-                          "enabled": false
-                        },
-                        "rRRJn": {
-                          "content": "Waffle"
-                        },
-                        "FhZKD": {
-                          "content": "$200 · 22″ × 30″ · Acrylic on paper"
-                        }
-                      }
-                    },
-                    {
-                      "id": "EZn7m",
-                      "type": "ref",
-                      "ref": "z8b9d",
-                      "name": "Revelation",
-                      "width": "fill_container",
-                      "descendants": {
-                        "FNrk8": {
-                          "height": 447,
-                          "fill": [
-                            "$surface-subtle",
-                            {
-                              "type": "image",
-                              "enabled": true,
-                              "url": "products/revelation/cover.jpg",
-                              "mode": "cover"
-                            }
-                          ]
-                        },
-                        "C9426P": {
-                          "enabled": false
-                        },
-                        "rRRJn": {
-                          "content": "Revelation"
-                        },
-                        "FhZKD": {
-                          "content": "$200 · 22″ × 30″ · Ink on paper"
-                        }
-                      }
-                    },
-                    {
-                      "id": "QksRo",
-                      "type": "ref",
-                      "ref": "z8b9d",
-                      "name": "Orb",
-                      "width": "fill_container",
-                      "descendants": {
-                        "FNrk8": {
-                          "height": 447,
-                          "fill": [
-                            "$surface-subtle",
-                            {
-                              "type": "image",
-                              "enabled": true,
-                              "url": "products/orb/cover.jpg",
-                              "mode": "cover"
-                            }
-                          ]
-                        },
-                        "C9426P": {
-                          "enabled": false
-                        },
-                        "rRRJn": {
-                          "content": "Orb"
-                        },
-                        "FhZKD": {
-                          "content": "$200 · 22″ × 30″ · Acrylic on paper"
-                        }
-                      }
-                    }
-                  ]
+                "caqKO/FNrk8": {
+                  "height": 447
+                },
+                "phQV5/FNrk8": {
+                  "height": 447
                 }
-              ]
+              }
             }
           ]
         },
@@ -9811,16 +9719,18 @@
               "alignItems": "center",
               "children": [
                 {
-                  "type": "text",
-                  "id": "pkQgA",
+                  "id": "OMffE",
+                  "type": "ref",
+                  "ref": "HXmMz",
                   "name": "Crumb Shop",
-                  "fill": "$text-link",
-                  "content": "Shop",
-                  "lineHeight": "$type-body2-line-height",
-                  "fontFamily": "$font-body",
-                  "fontSize": "$type-body2-size",
-                  "fontWeight": "500",
-                  "letterSpacing": "$type-body2-letter-spacing"
+                  "descendants": {
+                    "BSi7m": {
+                      "content": "Shop"
+                    },
+                    "J9QJBi": {
+                      "enabled": false
+                    }
+                  }
                 },
                 {
                   "type": "text",
@@ -10226,6 +10136,21 @@
                           }
                         }
                       ]
+                    },
+                    {
+                      "id": "u2ygiW",
+                      "type": "ref",
+                      "ref": "xAXzR",
+                      "name": "Series statement",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ZIg2b": {
+                          "height": 36
+                        },
+                        "T6UuDT": {
+                          "content": "Part of the Signature Work series."
+                        }
+                      }
                     }
                   ]
                 }
@@ -10239,101 +10164,25 @@
               "width": "fill_container"
             },
             {
-              "type": "frame",
-              "id": "JD7QW",
-              "name": "Related",
+              "id": "FJyfy",
+              "type": "ref",
+              "ref": "zSEE8",
+              "name": "Recommendations",
               "width": "fill_container",
-              "layout": "vertical",
-              "gap": "$space-stack",
-              "children": [
-                {
-                  "id": "aw9l4",
-                  "type": "ref",
-                  "ref": "g7uira",
-                  "name": "Related Header",
-                  "width": "fill_container",
-                  "descendants": {
-                    "z9frDW": {
-                      "content": "MORE ORIGINALS"
-                    },
-                    "SqBTJ": {
-                      "content": "You might also like"
-                    },
-                    "zSXuD": {
-                      "enabled": false
-                    }
-                  }
+              "descendants": {
+                "p6wMh/FNrk8": {
+                  "height": 436
                 },
-                {
-                  "type": "frame",
-                  "id": "H3q33b",
-                  "name": "Related Grid",
-                  "width": "fill_container",
-                  "gap": "$layout-gutter",
-                  "children": [
-                    {
-                      "id": "fmmoe",
-                      "type": "ref",
-                      "ref": "z8b9d",
-                      "name": "Waffle",
-                      "width": "fill_container",
-                      "descendants": {
-                        "FNrk8": {
-                          "height": 436,
-                          "fill": [
-                            "$surface-subtle",
-                            {
-                              "type": "image",
-                              "enabled": true,
-                              "url": "products/waffle/cover.jpg",
-                              "mode": "cover"
-                            }
-                          ]
-                        },
-                        "C9426P": {
-                          "enabled": false
-                        },
-                        "rRRJn": {
-                          "content": "Waffle"
-                        },
-                        "FhZKD": {
-                          "content": "$200 · 22″ × 30″ · Acrylic on paper"
-                        }
-                      }
-                    },
-                    {
-                      "id": "nZ5NS",
-                      "type": "ref",
-                      "ref": "z8b9d",
-                      "name": "Revelation",
-                      "width": "fill_container",
-                      "descendants": {
-                        "FNrk8": {
-                          "height": 436,
-                          "fill": [
-                            "$surface-subtle",
-                            {
-                              "type": "image",
-                              "enabled": true,
-                              "url": "products/revelation/cover.jpg",
-                              "mode": "cover"
-                            }
-                          ]
-                        },
-                        "C9426P": {
-                          "enabled": false
-                        },
-                        "rRRJn": {
-                          "content": "Revelation"
-                        },
-                        "FhZKD": {
-                          "content": "$200 · 22″ × 30″ · Ink on paper"
-                        }
-                      }
-                    }
-                  ]
+                "caqKO/FNrk8": {
+                  "height": 436
+                },
+                "phQV5": {
+                  "enabled": false
+                },
+                "phQV5/FNrk8": {
+                  "height": 436
                 }
-              ]
+              }
             }
           ]
         },
@@ -10414,16 +10263,18 @@
               "alignItems": "center",
               "children": [
                 {
-                  "type": "text",
-                  "id": "mbSr9",
+                  "id": "zn575",
+                  "type": "ref",
+                  "ref": "HXmMz",
                   "name": "Crumb Shop",
-                  "fill": "$text-link",
-                  "content": "Shop",
-                  "lineHeight": "$type-body2-line-height",
-                  "fontFamily": "$font-body",
-                  "fontSize": "$type-body2-size",
-                  "fontWeight": "500",
-                  "letterSpacing": "$type-body2-letter-spacing"
+                  "descendants": {
+                    "BSi7m": {
+                      "content": "Shop"
+                    },
+                    "J9QJBi": {
+                      "enabled": false
+                    }
+                  }
                 },
                 {
                   "type": "text",
@@ -10842,101 +10693,25 @@
               "width": "fill_container"
             },
             {
-              "type": "frame",
-              "id": "k5Fbgt",
-              "name": "Related",
+              "id": "ko5a4",
+              "type": "ref",
+              "ref": "zSEE8",
+              "name": "Recommendations",
               "width": "fill_container",
-              "layout": "vertical",
-              "gap": "$space-stack",
-              "children": [
-                {
-                  "id": "wEcbG",
-                  "type": "ref",
-                  "ref": "g7uira",
-                  "name": "Related Header",
-                  "width": "fill_container",
-                  "descendants": {
-                    "z9frDW": {
-                      "content": "MORE ORIGINALS"
-                    },
-                    "SqBTJ": {
-                      "content": "You might also like"
-                    },
-                    "zSXuD": {
-                      "enabled": false
-                    }
-                  }
+              "descendants": {
+                "p6wMh/FNrk8": {
+                  "height": 204
                 },
-                {
-                  "type": "frame",
-                  "id": "ddNG0",
-                  "name": "Related Grid",
-                  "width": "fill_container",
-                  "gap": "$layout-gutter",
-                  "children": [
-                    {
-                      "id": "QdvPV",
-                      "type": "ref",
-                      "ref": "z8b9d",
-                      "name": "Waffle",
-                      "width": "fill_container",
-                      "descendants": {
-                        "FNrk8": {
-                          "height": 204,
-                          "fill": [
-                            "$surface-subtle",
-                            {
-                              "type": "image",
-                              "enabled": true,
-                              "url": "products/waffle/cover.jpg",
-                              "mode": "cover"
-                            }
-                          ]
-                        },
-                        "C9426P": {
-                          "enabled": false
-                        },
-                        "rRRJn": {
-                          "content": "Waffle"
-                        },
-                        "FhZKD": {
-                          "content": "$200 · 22″ × 30″ · Acrylic on paper"
-                        }
-                      }
-                    },
-                    {
-                      "id": "H9zQhu",
-                      "type": "ref",
-                      "ref": "z8b9d",
-                      "name": "Revelation",
-                      "width": "fill_container",
-                      "descendants": {
-                        "FNrk8": {
-                          "height": 204,
-                          "fill": [
-                            "$surface-subtle",
-                            {
-                              "type": "image",
-                              "enabled": true,
-                              "url": "products/revelation/cover.jpg",
-                              "mode": "cover"
-                            }
-                          ]
-                        },
-                        "C9426P": {
-                          "enabled": false
-                        },
-                        "rRRJn": {
-                          "content": "Revelation"
-                        },
-                        "FhZKD": {
-                          "content": "$200 · 22″ × 30″ · Ink on paper"
-                        }
-                      }
-                    }
-                  ]
+                "caqKO/FNrk8": {
+                  "height": 204
+                },
+                "phQV5": {
+                  "enabled": false
+                },
+                "phQV5/FNrk8": {
+                  "height": 204
                 }
-              ]
+              }
             }
           ]
         },
