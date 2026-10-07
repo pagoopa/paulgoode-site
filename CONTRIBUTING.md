@@ -95,3 +95,17 @@ Run `npm run new-product` and answer the questions. Drag the photos from
 Finder into the terminal when it asks for them; the first one is the main
 image. It copies the photos into `src/assets/products/<slug>/` and writes
 `src/content/products/<slug>.md`. To change anything afterward, edit that file.
+
+## Stripe checkout
+
+`scripts/stripe.mjs` connects the shop to Stripe. It reads `STRIPE_SECRET_KEY`
+from `.env`, which Git ignores, so the key never gets committed.
+
+- `npm run stripe-links` creates a Stripe Payment Link for every unsold piece
+  that doesn't have one yet and writes it into the piece's file. Each link
+  sells once, ships free within the US and adds sales tax with Stripe Tax.
+  With a live key it also replaces test-mode links.
+- `npm run stripe-sold` sets `sold: true` on pieces that have been paid for.
+
+Add `--dry-run` to either command to preview without changing anything, e.g.
+`npm run stripe-links -- --dry-run`.
