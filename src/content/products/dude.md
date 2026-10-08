@@ -10,7 +10,6 @@ images:
     alt: Dude, acrylic on paper by Paul Goode
   - src: ../../assets/products/dude/2.jpg
     alt: Dude hanging on the studio wall
-# Paste the Stripe Payment Link here to turn on the Buy button.
-# paymentLink: https://buy.stripe.com/...
+paymentLink: https://buy.stripe.com/5kQ8wP0LD1eb7ZwfF2gYU03
 sold: false
 ---

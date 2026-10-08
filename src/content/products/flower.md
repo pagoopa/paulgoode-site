@@ -10,7 +10,6 @@ images:
     alt: Flower, acrylic on paper by Paul Goode
   - src: ../../assets/products/flower/2.jpg
     alt: Flower hanging on the studio wall
-# Paste the Stripe Payment Link here to turn on the Buy button.
-# paymentLink: https://buy.stripe.com/...
+paymentLink: https://buy.stripe.com/3cIdR90LD0a71B8dwUgYU04
 sold: false
 ---
