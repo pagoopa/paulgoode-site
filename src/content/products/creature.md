@@ -10,7 +10,6 @@ images:
     alt: Creature, acrylic on paper by Paul Goode
   - src: ../../assets/products/creature/2.jpg
     alt: Creature hanging on the studio wall
-# Paste the Stripe Payment Link here to turn on the Buy button.
-# paymentLink: https://buy.stripe.com/...
+paymentLink: https://buy.stripe.com/7sY7sL8e5f51bbIgJ6gYU01
 sold: false
 ---

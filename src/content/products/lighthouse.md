@@ -10,7 +10,6 @@ images:
     alt: Lighthouse, ink on paper by Paul Goode
   - src: ../../assets/products/lighthouse/2.jpg
     alt: Lighthouse hanging on the studio wall
-# Paste the Stripe Payment Link here to turn on the Buy button.
-# paymentLink: https://buy.stripe.com/...
+paymentLink: https://buy.stripe.com/5kQ14n8e51ebdjQ3WkgYU05
 sold: false
 ---

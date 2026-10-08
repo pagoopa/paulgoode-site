@@ -10,7 +10,6 @@ images:
     alt: Road Trip, acrylic on paper by Paul Goode
   - src: ../../assets/products/road-trip/2.jpg
     alt: Road Trip hanging on the studio wall
-# Paste the Stripe Payment Link here to turn on the Buy button.
-# paymentLink: https://buy.stripe.com/...
+paymentLink: https://buy.stripe.com/14A3cv65XcWT1B850ogYU08
 sold: false
 ---
