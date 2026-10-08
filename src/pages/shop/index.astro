@@ -54,7 +54,7 @@ const filters = [
   </section>
 
   <section class="wrap product-grid">
-    {products.map((p) => <ProductCard product={p} />)}
+    {products.map((p, i) => <ProductCard product={p} eager={i < 3} priority={i === 0} />)}
   </section>
 
   <p class="wrap empty-state" data-empty-state hidden>No pieces match that filter yet.</p>
