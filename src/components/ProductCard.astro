@@ -6,9 +6,13 @@ interface Props {
   product: Product;
   /** Heading level for the product name, so cards fit the page outline. */
   headingLevel?: 'h2' | 'h3';
+  /** Load the image right away instead of lazily, for cards visible when the page opens. */
+  eager?: boolean;
+  /** Load the image ahead of everything else. Use on one card per page at most. */
+  priority?: boolean;
 }
 
-const { product, headingLevel: Heading = 'h2' } = Astro.props;
+const { product, headingLevel: Heading = 'h2', eager = false, priority = false } = Astro.props;
 const { name, price, size, medium, signature, sold, tags, images } = product.data;
 const cover = images[0];
 
@@ -28,6 +32,8 @@ const filterKeys = [
         alt={cover.alt}
         widths={[320, 480, 640]}
         sizes="(max-width: 560px) 50vw, (max-width: 960px) 33vw, 260px"
+        loading={eager ? 'eager' : 'lazy'}
+        priority={priority}
       />
       {sold ? (
         <span class="product-card__badge product-card__badge--sold">Sold</span>
