@@ -1,0 +1,28 @@
+---
+interface Props {
+  actions: { label: string; href: string; style: 'solid' | 'outline' }[];
+  class?: string;
+}
+
+const { actions, class: className } = Astro.props;
+---
+
+{
+  actions.length > 0 && (
+    <div class:list={['page-actions', className]}>
+      {actions.map((action) => (
+        <a class:list={['btn', { 'btn-solid': action.style === 'solid' }]} href={action.href}>
+          {action.label}
+        </a>
+      ))}
+    </div>
+  )
+}
+
+<style>
+  .page-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--scale-400);
+  }
+</style>

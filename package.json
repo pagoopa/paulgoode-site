@@ -13,7 +13,10 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "figma:pen": "node scripts/figma-to-pen.mjs"
+    "figma:pen": "node scripts/figma-to-pen.mjs",
+    "new-product": "node scripts/new-product.mjs",
+    "stripe-links": "node --env-file-if-exists=.env scripts/stripe.mjs links",
+    "stripe-sold": "node --env-file-if-exists=.env scripts/stripe.mjs sold"
   },
   "dependencies": {
     "astro": "^7.3.5"
