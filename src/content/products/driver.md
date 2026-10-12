@@ -10,7 +10,6 @@ images:
     alt: Driver, acrylic on paper by Paul Goode
   - src: ../../assets/products/driver/2.jpg
     alt: Driver hanging on the studio wall
-# Paste the Stripe Payment Link here to turn on the Buy button.
-# paymentLink: https://buy.stripe.com/...
+paymentLink: https://buy.stripe.com/8x2bJ1amdbSP7ZwfF2gYU02
 sold: false
 ---

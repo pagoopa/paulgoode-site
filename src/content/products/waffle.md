@@ -10,7 +10,6 @@ images:
     alt: Waffle, acrylic on paper by Paul Goode
   - src: ../../assets/products/waffle/2.jpg
     alt: Waffle hanging on the studio wall
-# Paste the Stripe Payment Link here to turn on the Buy button.
-# paymentLink: https://buy.stripe.com/...
+paymentLink: https://buy.stripe.com/eVqeVdeCtaOLcfMcsQgYU0a
 sold: false
 ---

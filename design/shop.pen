@@ -1,10 +1,10 @@
 {
-  "version": "2.20",
+  "version": "2.21",
   "children": [
     {
       "type": "frame",
       "id": "nyTCg",
-      "x": -4934,
+      "x": -6446,
       "y": -2600,
       "name": "Components",
       "theme": {
@@ -9114,8 +9114,8 @@
     {
       "type": "frame",
       "id": "FfcEt",
-      "x": 260,
-      "y": -2600,
+      "x": 509,
+      "y": -2590,
       "name": "Product — Tuner — Desktop (1200)",
       "theme": {
         "mode": "light",
@@ -9654,8 +9654,8 @@
     {
       "type": "frame",
       "id": "wYAMJ",
-      "x": 1580,
-      "y": -2600,
+      "x": 1829,
+      "y": -2590,
       "name": "Product — Tuner — Tablet (810)",
       "theme": {
         "mode": "light",
@@ -10198,8 +10198,8 @@
     {
       "type": "frame",
       "id": "qdUYS",
-      "x": 2510,
-      "y": -2600,
+      "x": 2759,
+      "y": -2590,
       "name": "Product — Tuner — Mobile (390)",
       "theme": {
         "mode": "light",
@@ -10740,8 +10740,8 @@
     {
       "type": "frame",
       "id": "DImCr",
-      "x": 3220,
-      "y": -2600,
+      "x": 3752,
+      "y": -2590,
       "name": "Product — Tuner — Lightbox — Desktop (1200)",
       "theme": {
         "mode": "dark",
@@ -11024,8 +11024,8 @@
     {
       "type": "frame",
       "id": "xehJc",
-      "x": 4540,
-      "y": -2600,
+      "x": 5072,
+      "y": -2590,
       "name": "Product — Tuner — Lightbox — Tablet (810)",
       "theme": {
         "mode": "dark",
@@ -11308,8 +11308,8 @@
     {
       "type": "frame",
       "id": "Teqif",
-      "x": 5470,
-      "y": -2600,
+      "x": 6002,
+      "y": -2590,
       "name": "Product — Tuner — Lightbox — Mobile (390)",
       "theme": {
         "mode": "dark",
@@ -11588,6 +11588,39 @@
           ]
         }
       ]
+    },
+    {
+      "type": "text",
+      "id": "VicdJ",
+      "x": 3752,
+      "y": -3114,
+      "fill": "#ffffff",
+      "content": "Lightbox",
+      "fontFamily": "Inter",
+      "fontSize": 200,
+      "fontWeight": "700"
+    },
+    {
+      "type": "text",
+      "id": "pjs1w",
+      "x": 509,
+      "y": -3114,
+      "fill": "#ffffff",
+      "content": "Shop Item",
+      "fontFamily": "Inter",
+      "fontSize": 200,
+      "fontWeight": "700"
+    },
+    {
+      "type": "text",
+      "id": "TZZfn",
+      "x": -2700,
+      "y": -3162,
+      "fill": "#ffffff",
+      "content": "Shop",
+      "fontFamily": "Inter",
+      "fontSize": 200,
+      "fontWeight": "700"
     }
   ],
   "themes": {
