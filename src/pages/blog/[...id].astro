@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { Image } from 'astro:assets';
 import { getCollection, render } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -12,6 +13,7 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await render(post);
+const { sidebarImage } = post.data;
 
 const dateFmt = new Intl.DateTimeFormat('en-US', {
   year: 'numeric',
@@ -21,18 +23,64 @@ const dateFmt = new Intl.DateTimeFormat('en-US', {
 ---
 
 <Layout title={post.data.title} description={post.data.description}>
-  <article class="wrap prose post">
-    <p class="eyebrow">{dateFmt.format(post.data.pubDate)}</p>
-    <h1>{post.data.title}</h1>
-    <div class="post__body">
-      <Content />
+  <div class="wrap post">
+    <div class:list={['post__content', { 'post__content--with-image': sidebarImage }]}>
+      {sidebarImage && (
+        <div class="post__aside">
+          <Image
+            class="post__image"
+            src={sidebarImage.src}
+            alt={sidebarImage.alt}
+            width={240}
+            widths={[240, 480]}
+            sizes="240px"
+            loading="eager"
+            priority
+          />
+        </div>
+      )}
+      <article class="post__article">
+        <p class="eyebrow">{dateFmt.format(post.data.pubDate)}</p>
+        <h1>{post.data.title}</h1>
+        <div class="post__body">
+          <Content />
+        </div>
+      </article>
     </div>
-  </article>
+  </div>
 </Layout>
 
 <style>
   .post {
     padding-block: var(--space-block) var(--space-section);
+  }
+
+  .post__content {
+    max-width: var(--content-max);
+    margin-inline: auto;
+  }
+
+  .post__content--with-image {
+    display: flex;
+    gap: var(--scale-600);
+  }
+
+  /* 240×300 portrait. On desktop it drops 40px to sit level with the title. */
+  .post__aside {
+    flex: none;
+    padding-top: 40px;
+  }
+
+  .post__image {
+    display: block;
+    width: 240px;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .post__article {
+    flex: 1;
+    min-width: 0;
   }
 
   .post__body {
@@ -43,5 +91,23 @@ const dateFmt = new Intl.DateTimeFormat('en-US', {
 
   .post__body :global(p) {
     margin-bottom: 1.4em;
+  }
+
+  @media (max-width: 1023px) {
+    .post__aside {
+      padding-top: 0;
+    }
+  }
+
+  /* Mobile: the image stacks above the entry, centered. */
+  @media (max-width: 599px) {
+    .post__content--with-image {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .post__article {
+      align-self: stretch;
+    }
   }
 </style>

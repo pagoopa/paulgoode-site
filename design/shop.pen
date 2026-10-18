@@ -4,8 +4,8 @@
     {
       "type": "frame",
       "id": "nyTCg",
-      "x": -6446,
-      "y": -2600,
+      "x": -10390,
+      "y": -2595,
       "name": "Components",
       "theme": {
         "mode": "light",
@@ -11621,6 +11621,1532 @@
       "fontFamily": "Inter",
       "fontSize": 200,
       "fontWeight": "700"
+    },
+    {
+      "type": "text",
+      "id": "bwhCH",
+      "x": -2700,
+      "y": 1038,
+      "fill": "#ffffff",
+      "content": "Journal",
+      "fontFamily": "Inter",
+      "fontSize": 200,
+      "fontWeight": "700"
+    },
+    {
+      "type": "frame",
+      "id": "O3QOKy",
+      "x": -2700,
+      "y": 1600,
+      "name": "Journal — Desktop (1200)",
+      "theme": {
+        "mode": "light",
+        "device": "desktop"
+      },
+      "clip": true,
+      "width": 1200,
+      "fill": "$surface-default",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "MKHzX",
+          "type": "ref",
+          "ref": "S5OtQe",
+          "name": "Header",
+          "width": "fill_container",
+          "descendants": {
+            "oekhv": {
+              "id": "r4BEYr",
+              "type": "ref",
+              "ref": "eFsWC",
+              "name": "Recent",
+              "descendants": {
+                "jynNC": {
+                  "content": "RECENT"
+                }
+              }
+            },
+            "S5GGB": {
+              "id": "auYf1",
+              "type": "ref",
+              "ref": "MusDs",
+              "name": "Journal",
+              "descendants": {
+                "t893f": {
+                  "content": "JOURNAL"
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "L78Vk",
+          "name": "Main",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            "$space-section",
+            "$layout-margin"
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "FnmnR",
+              "name": "Column",
+              "width": 720,
+              "layout": "vertical",
+              "gap": 40,
+              "children": [
+                {
+                  "id": "AqjBt",
+                  "type": "ref",
+                  "ref": "g7uira",
+                  "name": "Intro",
+                  "width": "fill_container",
+                  "descendants": {
+                    "z9frDW": {
+                      "content": "JOURNAL"
+                    },
+                    "SqBTJ": {
+                      "content": "Keep Going Sketchbook"
+                    },
+                    "zSXuD": {
+                      "content": "An open creative journal."
+                    }
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "aCKH2",
+                  "name": "Entry List",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "i6qPGK",
+                      "name": "Entry — Hello, out loud",
+                      "width": "fill_container",
+                      "stroke": "$border-default",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "strokeAlignment": "inner",
+                      "layout": "vertical",
+                      "gap": "$scale-200",
+                      "padding": [
+                        "$scale-600",
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "RIENh",
+                          "name": "Date",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "SEP 27, 2026",
+                          "lineHeight": "$type-eyebrow3-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-eyebrow3-size",
+                          "fontWeight": "500",
+                          "letterSpacing": "$type-eyebrow3-letter-spacing"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ykHtr",
+                          "name": "Title",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Hello, out loud",
+                          "lineHeight": "$type-h4-line-height",
+                          "fontFamily": "$font-heading",
+                          "fontSize": "$type-h4-size",
+                          "fontWeight": "700",
+                          "letterSpacing": "$type-h4-letter-spacing"
+                        },
+                        {
+                          "type": "text",
+                          "id": "WF2JU",
+                          "name": "Description",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "The first entry — why this journal exists and what Dream Out Loud means to me.",
+                          "lineHeight": "$type-p3-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-p3-size",
+                          "fontWeight": "normal",
+                          "letterSpacing": "$type-p3-letter-spacing"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "i8lWoE",
+                      "name": "Entry — Post title goes here",
+                      "width": "fill_container",
+                      "stroke": "$border-default",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "strokeAlignment": "inner",
+                      "layout": "vertical",
+                      "gap": "$scale-200",
+                      "padding": [
+                        "$scale-600",
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "DsVFH",
+                          "name": "Date",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "SEP 20, 2026",
+                          "lineHeight": "$type-eyebrow3-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-eyebrow3-size",
+                          "fontWeight": "500",
+                          "letterSpacing": "$type-eyebrow3-letter-spacing"
+                        },
+                        {
+                          "type": "text",
+                          "id": "UPk6N",
+                          "name": "Title",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Post title goes here",
+                          "lineHeight": "$type-h4-line-height",
+                          "fontFamily": "$font-heading",
+                          "fontSize": "$type-h4-size",
+                          "fontWeight": "700",
+                          "letterSpacing": "$type-h4-letter-spacing"
+                        },
+                        {
+                          "type": "text",
+                          "id": "J2rHpM",
+                          "name": "Description",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "A short description of the entry, enough to tell the reader what it is about and why it is worth opening.",
+                          "lineHeight": "$type-p3-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-p3-size",
+                          "fontWeight": "normal",
+                          "letterSpacing": "$type-p3-letter-spacing"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "VgFCh",
+                      "name": "Entry — Another sketchbook entry",
+                      "width": "fill_container",
+                      "stroke": "$border-default",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "strokeAlignment": "inner",
+                      "layout": "vertical",
+                      "gap": "$scale-200",
+                      "padding": [
+                        "$scale-600",
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "VsON8",
+                          "name": "Date",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "SEP 13, 2026",
+                          "lineHeight": "$type-eyebrow3-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-eyebrow3-size",
+                          "fontWeight": "500",
+                          "letterSpacing": "$type-eyebrow3-letter-spacing"
+                        },
+                        {
+                          "type": "text",
+                          "id": "I5lZY5",
+                          "name": "Title",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Another sketchbook entry",
+                          "lineHeight": "$type-h4-line-height",
+                          "fontFamily": "$font-heading",
+                          "fontSize": "$type-h4-size",
+                          "fontWeight": "700",
+                          "letterSpacing": "$type-h4-letter-spacing"
+                        },
+                        {
+                          "type": "text",
+                          "id": "U1PLE",
+                          "name": "Description",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "A short description of the entry, enough to tell the reader what it is about and why it is worth opening.",
+                          "lineHeight": "$type-p3-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-p3-size",
+                          "fontWeight": "normal",
+                          "letterSpacing": "$type-p3-letter-spacing"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "q43az3",
+          "type": "ref",
+          "ref": "E6haZ",
+          "name": "Footer",
+          "width": "fill_container"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "R8J5S",
+      "x": -1380,
+      "y": 1600,
+      "name": "Journal — Tablet (810)",
+      "theme": {
+        "mode": "light",
+        "device": "tablet"
+      },
+      "clip": true,
+      "width": 810,
+      "fill": "$surface-default",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "cjCUn",
+          "type": "ref",
+          "ref": "S5OtQe",
+          "name": "Header",
+          "width": "fill_container",
+          "descendants": {
+            "oekhv": {
+              "id": "empMD",
+              "type": "ref",
+              "ref": "eFsWC",
+              "name": "Recent",
+              "descendants": {
+                "jynNC": {
+                  "content": "RECENT"
+                }
+              }
+            },
+            "S5GGB": {
+              "id": "q4hwl",
+              "type": "ref",
+              "ref": "MusDs",
+              "name": "Journal",
+              "descendants": {
+                "t893f": {
+                  "content": "JOURNAL"
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "CKTD2",
+          "name": "Main",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            "$space-section",
+            "$layout-margin"
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "lCoFK",
+              "name": "Column",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 40,
+              "children": [
+                {
+                  "id": "WsVx5",
+                  "type": "ref",
+                  "ref": "g7uira",
+                  "name": "Intro",
+                  "width": "fill_container",
+                  "descendants": {
+                    "z9frDW": {
+                      "content": "JOURNAL"
+                    },
+                    "SqBTJ": {
+                      "content": "Keep Going Sketchbook"
+                    },
+                    "zSXuD": {
+                      "content": "An open creative journal."
+                    }
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "BGZ5x",
+                  "name": "Entry List",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Xjiza",
+                      "name": "Entry — Hello, out loud",
+                      "width": "fill_container",
+                      "stroke": "$border-default",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "strokeAlignment": "inner",
+                      "layout": "vertical",
+                      "gap": "$scale-200",
+                      "padding": [
+                        "$scale-600",
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "o0my8",
+                          "name": "Date",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "SEP 27, 2026",
+                          "lineHeight": "$type-eyebrow3-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-eyebrow3-size",
+                          "fontWeight": "500",
+                          "letterSpacing": "$type-eyebrow3-letter-spacing"
+                        },
+                        {
+                          "type": "text",
+                          "id": "SxdSr",
+                          "name": "Title",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Hello, out loud",
+                          "lineHeight": "$type-h4-line-height",
+                          "fontFamily": "$font-heading",
+                          "fontSize": "$type-h4-size",
+                          "fontWeight": "700",
+                          "letterSpacing": "$type-h4-letter-spacing"
+                        },
+                        {
+                          "type": "text",
+                          "id": "cx3JG",
+                          "name": "Description",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "The first entry — why this journal exists and what Dream Out Loud means to me.",
+                          "lineHeight": "$type-p3-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-p3-size",
+                          "fontWeight": "normal",
+                          "letterSpacing": "$type-p3-letter-spacing"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "hq69o",
+                      "name": "Entry — Post title goes here",
+                      "width": "fill_container",
+                      "stroke": "$border-default",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "strokeAlignment": "inner",
+                      "layout": "vertical",
+                      "gap": "$scale-200",
+                      "padding": [
+                        "$scale-600",
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "C41tw",
+                          "name": "Date",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "SEP 20, 2026",
+                          "lineHeight": "$type-eyebrow3-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-eyebrow3-size",
+                          "fontWeight": "500",
+                          "letterSpacing": "$type-eyebrow3-letter-spacing"
+                        },
+                        {
+                          "type": "text",
+                          "id": "xxLqe",
+                          "name": "Title",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Post title goes here",
+                          "lineHeight": "$type-h4-line-height",
+                          "fontFamily": "$font-heading",
+                          "fontSize": "$type-h4-size",
+                          "fontWeight": "700",
+                          "letterSpacing": "$type-h4-letter-spacing"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Ypeqe",
+                          "name": "Description",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "A short description of the entry, enough to tell the reader what it is about and why it is worth opening.",
+                          "lineHeight": "$type-p3-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-p3-size",
+                          "fontWeight": "normal",
+                          "letterSpacing": "$type-p3-letter-spacing"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "yQtd2",
+                      "name": "Entry — Another sketchbook entry",
+                      "width": "fill_container",
+                      "stroke": "$border-default",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "strokeAlignment": "inner",
+                      "layout": "vertical",
+                      "gap": "$scale-200",
+                      "padding": [
+                        "$scale-600",
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "W20Z9",
+                          "name": "Date",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "SEP 13, 2026",
+                          "lineHeight": "$type-eyebrow3-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-eyebrow3-size",
+                          "fontWeight": "500",
+                          "letterSpacing": "$type-eyebrow3-letter-spacing"
+                        },
+                        {
+                          "type": "text",
+                          "id": "GA5p8",
+                          "name": "Title",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Another sketchbook entry",
+                          "lineHeight": "$type-h4-line-height",
+                          "fontFamily": "$font-heading",
+                          "fontSize": "$type-h4-size",
+                          "fontWeight": "700",
+                          "letterSpacing": "$type-h4-letter-spacing"
+                        },
+                        {
+                          "type": "text",
+                          "id": "qj31J",
+                          "name": "Description",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "A short description of the entry, enough to tell the reader what it is about and why it is worth opening.",
+                          "lineHeight": "$type-p3-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-p3-size",
+                          "fontWeight": "normal",
+                          "letterSpacing": "$type-p3-letter-spacing"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "n4S5nK",
+          "type": "ref",
+          "ref": "E6haZ",
+          "name": "Footer",
+          "width": "fill_container"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "k5EJ8W",
+      "x": -450,
+      "y": 1600,
+      "name": "Journal — Mobile (390)",
+      "theme": {
+        "mode": "light",
+        "device": "mobile"
+      },
+      "clip": true,
+      "width": 390,
+      "fill": "$surface-default",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "f49AF3",
+          "type": "ref",
+          "ref": "S5OtQe",
+          "name": "Header",
+          "width": "fill_container",
+          "descendants": {
+            "oekhv": {
+              "id": "d0zGjn",
+              "type": "ref",
+              "ref": "eFsWC",
+              "name": "Recent",
+              "descendants": {
+                "jynNC": {
+                  "content": "RECENT"
+                }
+              }
+            },
+            "S5GGB": {
+              "id": "g034jt",
+              "type": "ref",
+              "ref": "MusDs",
+              "name": "Journal",
+              "descendants": {
+                "t893f": {
+                  "content": "JOURNAL"
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "FMZBZ",
+          "name": "Main",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            "$space-section",
+            "$layout-margin"
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "kuoQ3",
+              "name": "Column",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 40,
+              "children": [
+                {
+                  "id": "DmMEr",
+                  "type": "ref",
+                  "ref": "g7uira",
+                  "name": "Intro",
+                  "width": "fill_container",
+                  "descendants": {
+                    "z9frDW": {
+                      "content": "JOURNAL"
+                    },
+                    "SqBTJ": {
+                      "content": "Keep Going Sketchbook"
+                    },
+                    "zSXuD": {
+                      "content": "An open creative journal."
+                    }
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "sKcvU",
+                  "name": "Entry List",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "JR0w7",
+                      "name": "Entry — Hello, out loud",
+                      "width": "fill_container",
+                      "stroke": "$border-default",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "strokeAlignment": "inner",
+                      "layout": "vertical",
+                      "gap": "$scale-200",
+                      "padding": [
+                        "$scale-600",
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "eqchw",
+                          "name": "Date",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "SEP 27, 2026",
+                          "lineHeight": "$type-eyebrow3-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-eyebrow3-size",
+                          "fontWeight": "500",
+                          "letterSpacing": "$type-eyebrow3-letter-spacing"
+                        },
+                        {
+                          "type": "text",
+                          "id": "EYLPu",
+                          "name": "Title",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Hello, out loud",
+                          "lineHeight": "$type-h4-line-height",
+                          "fontFamily": "$font-heading",
+                          "fontSize": "$type-h4-size",
+                          "fontWeight": "700",
+                          "letterSpacing": "$type-h4-letter-spacing"
+                        },
+                        {
+                          "type": "text",
+                          "id": "HFeKd",
+                          "name": "Description",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "The first entry — why this journal exists and what Dream Out Loud means to me.",
+                          "lineHeight": "$type-p3-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-p3-size",
+                          "fontWeight": "normal",
+                          "letterSpacing": "$type-p3-letter-spacing"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "EXakH",
+                      "name": "Entry — Post title goes here",
+                      "width": "fill_container",
+                      "stroke": "$border-default",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "strokeAlignment": "inner",
+                      "layout": "vertical",
+                      "gap": "$scale-200",
+                      "padding": [
+                        "$scale-600",
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "V4Hnf",
+                          "name": "Date",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "SEP 20, 2026",
+                          "lineHeight": "$type-eyebrow3-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-eyebrow3-size",
+                          "fontWeight": "500",
+                          "letterSpacing": "$type-eyebrow3-letter-spacing"
+                        },
+                        {
+                          "type": "text",
+                          "id": "hfkM0",
+                          "name": "Title",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Post title goes here",
+                          "lineHeight": "$type-h4-line-height",
+                          "fontFamily": "$font-heading",
+                          "fontSize": "$type-h4-size",
+                          "fontWeight": "700",
+                          "letterSpacing": "$type-h4-letter-spacing"
+                        },
+                        {
+                          "type": "text",
+                          "id": "CXnIg",
+                          "name": "Description",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "A short description of the entry, enough to tell the reader what it is about and why it is worth opening.",
+                          "lineHeight": "$type-p3-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-p3-size",
+                          "fontWeight": "normal",
+                          "letterSpacing": "$type-p3-letter-spacing"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "FwCCt",
+                      "name": "Entry — Another sketchbook entry",
+                      "width": "fill_container",
+                      "stroke": "$border-default",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "strokeAlignment": "inner",
+                      "layout": "vertical",
+                      "gap": "$scale-200",
+                      "padding": [
+                        "$scale-600",
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Ks9px",
+                          "name": "Date",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "SEP 13, 2026",
+                          "lineHeight": "$type-eyebrow3-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-eyebrow3-size",
+                          "fontWeight": "500",
+                          "letterSpacing": "$type-eyebrow3-letter-spacing"
+                        },
+                        {
+                          "type": "text",
+                          "id": "PukR2",
+                          "name": "Title",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Another sketchbook entry",
+                          "lineHeight": "$type-h4-line-height",
+                          "fontFamily": "$font-heading",
+                          "fontSize": "$type-h4-size",
+                          "fontWeight": "700",
+                          "letterSpacing": "$type-h4-letter-spacing"
+                        },
+                        {
+                          "type": "text",
+                          "id": "h21sD",
+                          "name": "Description",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "A short description of the entry, enough to tell the reader what it is about and why it is worth opening.",
+                          "lineHeight": "$type-p3-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-p3-size",
+                          "fontWeight": "normal",
+                          "letterSpacing": "$type-p3-letter-spacing"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ATfu7",
+          "type": "ref",
+          "ref": "E6haZ",
+          "name": "Footer",
+          "width": "fill_container",
+          "descendants": {
+            "XEGUi": {
+              "layout": "vertical",
+              "alignItems": "start"
+            },
+            "rLPly": {
+              "layout": "vertical",
+              "alignItems": "start"
+            },
+            "m0Yiq": {
+              "gap": "$scale-400"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "T0hbG",
+      "x": 509,
+      "y": 1038,
+      "fill": "#ffffff",
+      "content": "Journal Entry",
+      "fontFamily": "Inter",
+      "fontSize": 200,
+      "fontWeight": "700"
+    },
+    {
+      "type": "frame",
+      "id": "n787B",
+      "x": 509,
+      "y": 1600,
+      "name": "Journal Entry — Hello, out loud — Desktop (1200)",
+      "theme": {
+        "mode": "light",
+        "device": "desktop"
+      },
+      "clip": true,
+      "width": 1200,
+      "fill": "$surface-default",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "TQmE7",
+          "type": "ref",
+          "ref": "S5OtQe",
+          "name": "Header",
+          "width": "fill_container",
+          "descendants": {
+            "oekhv": {
+              "id": "X3FWrP",
+              "type": "ref",
+              "ref": "eFsWC",
+              "name": "Recent",
+              "descendants": {
+                "jynNC": {
+                  "content": "RECENT"
+                }
+              }
+            },
+            "S5GGB": {
+              "id": "YPGV5",
+              "type": "ref",
+              "ref": "MusDs",
+              "name": "Journal",
+              "descendants": {
+                "t893f": {
+                  "content": "JOURNAL"
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "RrIKp",
+          "name": "Main",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            "$space-block",
+            "$layout-margin",
+            "$space-section",
+            "$layout-margin"
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "k4upK",
+              "name": "Content",
+              "width": 900,
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "X8BRGh",
+                  "name": "Img Container",
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": [
+                    40,
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "DmhAB",
+                      "name": "Img",
+                      "clip": true,
+                      "width": 240,
+                      "height": 300,
+                      "fill": "#c7c7c7ff",
+                      "layout": "none"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "zMNf9",
+                  "name": "Article",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": "$scale-800",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Rf7uE",
+                      "name": "Post Header",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": "$space-stack",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "PwNLe",
+                          "name": "Date",
+                          "fill": "$text-link",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "SEPTEMBER 27, 2026",
+                          "lineHeight": "$type-eyebrow2-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-eyebrow2-size",
+                          "fontWeight": "500",
+                          "letterSpacing": "$type-eyebrow2-letter-spacing"
+                        },
+                        {
+                          "type": "text",
+                          "id": "h9qeR",
+                          "name": "Title",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Hello, out loud",
+                          "lineHeight": "$type-h1-line-height",
+                          "fontFamily": "$font-heading",
+                          "fontSize": "$type-h1-size",
+                          "fontWeight": "700",
+                          "letterSpacing": "$type-h1-letter-spacing"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Molpo",
+                      "name": "Body",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 25,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Kq47r",
+                          "name": "Paragraph 1",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "This is the first post in the journal. Replace this with real writing whenever you're ready — the page and its layout are already wired up around whatever goes here.",
+                          "lineHeight": "$type-p2-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-p2-size",
+                          "fontWeight": "normal",
+                          "letterSpacing": "$type-p2-letter-spacing"
+                        },
+                        {
+                          "type": "text",
+                          "id": "R5CrgM",
+                          "name": "Paragraph 2",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
+                          "lineHeight": "$type-p2-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-p2-size",
+                          "fontWeight": "normal",
+                          "letterSpacing": "$type-p2-letter-spacing"
+                        },
+                        {
+                          "type": "text",
+                          "id": "sTAwF",
+                          "name": "Paragraph 3",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "A longer paragraph to show how body copy reads at full measure. Entries can run as long as they need to; the column stays at a comfortable reading width on desktop and uses the full width of the screen on tablet and phone.",
+                          "lineHeight": "$type-p2-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-p2-size",
+                          "fontWeight": "normal",
+                          "letterSpacing": "$type-p2-letter-spacing"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "MC5TS",
+          "type": "ref",
+          "ref": "E6haZ",
+          "name": "Footer",
+          "width": "fill_container"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "eTWec",
+      "x": 1829,
+      "y": 1600,
+      "name": "Journal Entry — Hello, out loud — Tablet (810)",
+      "theme": {
+        "mode": "light",
+        "device": "tablet"
+      },
+      "clip": true,
+      "width": 810,
+      "fill": "$surface-default",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "rmvaN",
+          "type": "ref",
+          "ref": "S5OtQe",
+          "name": "Header",
+          "width": "fill_container",
+          "descendants": {
+            "oekhv": {
+              "id": "LKHvH",
+              "type": "ref",
+              "ref": "eFsWC",
+              "name": "Recent",
+              "descendants": {
+                "jynNC": {
+                  "content": "RECENT"
+                }
+              }
+            },
+            "S5GGB": {
+              "id": "vFAEG",
+              "type": "ref",
+              "ref": "MusDs",
+              "name": "Journal",
+              "descendants": {
+                "t893f": {
+                  "content": "JOURNAL"
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "lEiAE",
+          "name": "Main",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            "$space-block",
+            "$layout-margin",
+            "$space-section",
+            "$layout-margin"
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "I3t42h",
+              "name": "Content",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "iuXmm",
+                  "name": "Img Container",
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "WE7i1",
+                      "name": "Img",
+                      "clip": true,
+                      "width": 240,
+                      "height": 300,
+                      "fill": "#c7c7c7ff",
+                      "layout": "none"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "kHgrr",
+                  "name": "Article",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": "$scale-800",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "j4FYU",
+                      "name": "Post Header",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": "$space-stack",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "qLjIp",
+                          "name": "Date",
+                          "fill": "$text-link",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "SEPTEMBER 27, 2026",
+                          "lineHeight": "$type-eyebrow2-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-eyebrow2-size",
+                          "fontWeight": "500",
+                          "letterSpacing": "$type-eyebrow2-letter-spacing"
+                        },
+                        {
+                          "type": "text",
+                          "id": "M5ZOPD",
+                          "name": "Title",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Hello, out loud",
+                          "lineHeight": "$type-h1-line-height",
+                          "fontFamily": "$font-heading",
+                          "fontSize": "$type-h1-size",
+                          "fontWeight": "700",
+                          "letterSpacing": "$type-h1-letter-spacing"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "i3LqsJ",
+                      "name": "Body",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 25,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "wAIaB",
+                          "name": "Paragraph 1",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "This is the first post in the journal. Replace this with real writing whenever you're ready — the page and its layout are already wired up around whatever goes here.",
+                          "lineHeight": "$type-p2-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-p2-size",
+                          "fontWeight": "normal",
+                          "letterSpacing": "$type-p2-letter-spacing"
+                        },
+                        {
+                          "type": "text",
+                          "id": "z057S",
+                          "name": "Paragraph 2",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
+                          "lineHeight": "$type-p2-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-p2-size",
+                          "fontWeight": "normal",
+                          "letterSpacing": "$type-p2-letter-spacing"
+                        },
+                        {
+                          "type": "text",
+                          "id": "n7073u",
+                          "name": "Paragraph 3",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "A longer paragraph to show how body copy reads at full measure. Entries can run as long as they need to; the column stays at a comfortable reading width on desktop and uses the full width of the screen on tablet and phone.",
+                          "lineHeight": "$type-p2-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-p2-size",
+                          "fontWeight": "normal",
+                          "letterSpacing": "$type-p2-letter-spacing"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "N1B8SZ",
+          "type": "ref",
+          "ref": "E6haZ",
+          "name": "Footer",
+          "width": "fill_container"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "kxRC5",
+      "x": 2759,
+      "y": 1600,
+      "name": "Journal Entry — Hello, out loud — Mobile (390)",
+      "theme": {
+        "mode": "light",
+        "device": "mobile"
+      },
+      "clip": true,
+      "width": 390,
+      "fill": "$surface-default",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "K9Mwhs",
+          "type": "ref",
+          "ref": "S5OtQe",
+          "name": "Header",
+          "width": "fill_container",
+          "descendants": {
+            "oekhv": {
+              "id": "y0k3X",
+              "type": "ref",
+              "ref": "eFsWC",
+              "name": "Recent",
+              "descendants": {
+                "jynNC": {
+                  "content": "RECENT"
+                }
+              }
+            },
+            "S5GGB": {
+              "id": "u43C0",
+              "type": "ref",
+              "ref": "MusDs",
+              "name": "Journal",
+              "descendants": {
+                "t893f": {
+                  "content": "JOURNAL"
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "EpDPJ",
+          "name": "Main",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            "$space-block",
+            "$layout-margin",
+            "$space-section",
+            "$layout-margin"
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "KvkHQ",
+              "name": "Content",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "m4HCEJ",
+                  "name": "Img Container",
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": [
+                    0,
+                    0,
+                    24,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "eSU2G",
+                      "name": "Img",
+                      "clip": true,
+                      "width": 240,
+                      "height": 300,
+                      "fill": "#c7c7c7ff",
+                      "layout": "none"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "eCPee",
+                  "name": "Article",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": "$scale-800",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "j7oGV",
+                      "name": "Post Header",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": "$space-stack",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "v61om",
+                          "name": "Date",
+                          "fill": "$text-link",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "SEPTEMBER 27, 2026",
+                          "lineHeight": "$type-eyebrow2-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-eyebrow2-size",
+                          "fontWeight": "500",
+                          "letterSpacing": "$type-eyebrow2-letter-spacing"
+                        },
+                        {
+                          "type": "text",
+                          "id": "c3Ln7",
+                          "name": "Title",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Hello, out loud",
+                          "lineHeight": "$type-h1-line-height",
+                          "fontFamily": "$font-heading",
+                          "fontSize": "$type-h1-size",
+                          "fontWeight": "700",
+                          "letterSpacing": "$type-h1-letter-spacing"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "YxhcR",
+                      "name": "Body",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 25,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "iYwen",
+                          "name": "Paragraph 1",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "This is the first post in the journal. Replace this with real writing whenever you're ready — the page and its layout are already wired up around whatever goes here.",
+                          "lineHeight": "$type-p2-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-p2-size",
+                          "fontWeight": "normal",
+                          "letterSpacing": "$type-p2-letter-spacing"
+                        },
+                        {
+                          "type": "text",
+                          "id": "yONjj",
+                          "name": "Paragraph 2",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
+                          "lineHeight": "$type-p2-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-p2-size",
+                          "fontWeight": "normal",
+                          "letterSpacing": "$type-p2-letter-spacing"
+                        },
+                        {
+                          "type": "text",
+                          "id": "iz4XW",
+                          "name": "Paragraph 3",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "A longer paragraph to show how body copy reads at full measure. Entries can run as long as they need to; the column stays at a comfortable reading width on desktop and uses the full width of the screen on tablet and phone.",
+                          "lineHeight": "$type-p2-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-p2-size",
+                          "fontWeight": "normal",
+                          "letterSpacing": "$type-p2-letter-spacing"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "l7uV54",
+          "type": "ref",
+          "ref": "E6haZ",
+          "name": "Footer",
+          "width": "fill_container",
+          "descendants": {
+            "XEGUi": {
+              "layout": "vertical",
+              "alignItems": "start"
+            },
+            "rLPly": {
+              "layout": "vertical",
+              "alignItems": "start"
+            },
+            "m0Yiq": {
+              "gap": "$scale-400"
+            }
+          }
+        }
+      ]
     }
   ],
   "themes": {
