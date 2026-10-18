@@ -9610,6 +9610,2016 @@
           }
         }
       ]
+    },
+    {
+      "type": "frame",
+      "id": "GfTVL",
+      "x": -10390,
+      "y": -4359,
+      "name": "Mobile Nav — Open / Close Interaction",
+      "fill": "$surface-subtle",
+      "layout": "vertical",
+      "gap": 48,
+      "padding": 64,
+      "children": [
+        {
+          "type": "frame",
+          "id": "oICr6",
+          "name": "Heading",
+          "layout": "vertical",
+          "gap": 8,
+          "children": [
+            {
+              "type": "text",
+              "id": "Uu3PH",
+              "name": "Title",
+              "fill": "$text-default",
+              "content": "Mobile nav — open / close",
+              "fontFamily": "$font-heading",
+              "fontSize": 32,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "gX9t3",
+              "name": "Subtitle",
+              "fill": "$text-muted",
+              "content": "Phone width (390). The menu starts closed, slides down from behind the nav bar while fading in, and slides back up while fading out.",
+              "fontFamily": "$font-body",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "fS0A5",
+          "name": "Steps",
+          "gap": 24,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "nT5we",
+              "name": "Step 1",
+              "width": 390,
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "vRN0v",
+                  "name": "Step label",
+                  "fill": "$text-default",
+                  "content": "1 · Closed",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "pAMGv",
+                  "name": "Phone",
+                  "theme": {
+                    "device": "mobile"
+                  },
+                  "clip": true,
+                  "width": 390,
+                  "height": 560,
+                  "fill": "$surface-default",
+                  "stroke": "$border-default",
+                  "strokeWidth": 1,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ifyLc",
+                      "x": 0,
+                      "y": 76,
+                      "name": "Page (Journal)",
+                      "width": 390,
+                      "layout": "vertical",
+                      "padding": [
+                        "$space-section",
+                        "$layout-margin"
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "uGhDN",
+                          "name": "Column",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 40,
+                          "children": [
+                            {
+                              "id": "kl9vN",
+                              "type": "ref",
+                              "ref": "g7uira",
+                              "name": "Intro",
+                              "width": "fill_container",
+                              "descendants": {
+                                "z9frDW": {
+                                  "content": "JOURNAL"
+                                },
+                                "SqBTJ": {
+                                  "content": "Keep Going Sketchbook"
+                                },
+                                "zSXuD": {
+                                  "content": "An open creative journal."
+                                }
+                              }
+                            },
+                            {
+                              "type": "frame",
+                              "id": "d63n8",
+                              "name": "Entry List",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "PW0df",
+                                  "name": "Entry — Hello, out loud",
+                                  "width": "fill_container",
+                                  "stroke": "$border-default",
+                                  "strokeWidth": {
+                                    "bottom": 1
+                                  },
+                                  "strokeAlignment": "inner",
+                                  "layout": "vertical",
+                                  "gap": "$scale-200",
+                                  "padding": [
+                                    "$scale-600",
+                                    0
+                                  ],
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "yv55p",
+                                      "name": "Date",
+                                      "fill": "$text-muted",
+                                      "textGrowth": "fixed-width",
+                                      "width": "fill_container",
+                                      "content": "SEP 27, 2026",
+                                      "lineHeight": "$type-eyebrow3-line-height",
+                                      "fontFamily": "$font-body",
+                                      "fontSize": "$type-eyebrow3-size",
+                                      "fontWeight": "500",
+                                      "letterSpacing": "$type-eyebrow3-letter-spacing"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "P1Clb",
+                                      "name": "Title",
+                                      "fill": "$text-default",
+                                      "textGrowth": "fixed-width",
+                                      "width": "fill_container",
+                                      "content": "Hello, out loud",
+                                      "lineHeight": "$type-h4-line-height",
+                                      "fontFamily": "$font-heading",
+                                      "fontSize": "$type-h4-size",
+                                      "fontWeight": "700",
+                                      "letterSpacing": "$type-h4-letter-spacing"
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "vGOyN",
+                                      "name": "Body",
+                                      "width": "fill_container",
+                                      "layout": "vertical",
+                                      "gap": "$scale-600",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "bxHAR",
+                                          "name": "Paragraph 1",
+                                          "fill": "$text-default",
+                                          "textGrowth": "fixed-width",
+                                          "width": "fill_container",
+                                          "content": "This is the first post in the journal. Replace this with real writing whenever you're ready — the page and its layout are already wired up around whatever goes here.",
+                                          "lineHeight": "$type-p2-line-height",
+                                          "fontFamily": "$font-body",
+                                          "fontSize": "$type-p2-size",
+                                          "fontWeight": "normal",
+                                          "letterSpacing": "$type-p2-letter-spacing"
+                                        },
+                                        {
+                                          "type": "text",
+                                          "id": "xVL7d",
+                                          "name": "Paragraph 2",
+                                          "fill": "$text-default",
+                                          "textGrowth": "fixed-width",
+                                          "width": "fill_container",
+                                          "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
+                                          "lineHeight": "$type-p2-line-height",
+                                          "fontFamily": "$font-body",
+                                          "fontSize": "$type-p2-size",
+                                          "fontWeight": "normal",
+                                          "letterSpacing": "$type-p2-letter-spacing"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "rjUlh",
+                                  "name": "Entry — Post title goes here",
+                                  "width": "fill_container",
+                                  "stroke": "$border-default",
+                                  "strokeWidth": {
+                                    "bottom": 1
+                                  },
+                                  "strokeAlignment": "inner",
+                                  "layout": "vertical",
+                                  "gap": "$scale-200",
+                                  "padding": [
+                                    "$scale-600",
+                                    0
+                                  ],
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "TiVgJ",
+                                      "name": "Date",
+                                      "fill": "$text-muted",
+                                      "textGrowth": "fixed-width",
+                                      "width": "fill_container",
+                                      "content": "SEP 20, 2026",
+                                      "lineHeight": "$type-eyebrow3-line-height",
+                                      "fontFamily": "$font-body",
+                                      "fontSize": "$type-eyebrow3-size",
+                                      "fontWeight": "500",
+                                      "letterSpacing": "$type-eyebrow3-letter-spacing"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "TD9yv",
+                                      "name": "Title",
+                                      "fill": "$text-default",
+                                      "textGrowth": "fixed-width",
+                                      "width": "fill_container",
+                                      "content": "Post title goes here",
+                                      "lineHeight": "$type-h4-line-height",
+                                      "fontFamily": "$font-heading",
+                                      "fontSize": "$type-h4-size",
+                                      "fontWeight": "700",
+                                      "letterSpacing": "$type-h4-letter-spacing"
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "v17nQG",
+                                      "name": "Body",
+                                      "width": "fill_container",
+                                      "layout": "vertical",
+                                      "gap": "$scale-600",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "n6TD8",
+                                          "name": "Paragraph 1",
+                                          "fill": "$text-default",
+                                          "textGrowth": "fixed-width",
+                                          "width": "fill_container",
+                                          "content": "A longer entry cut short with a more marker. Only the opening shows here on the journal page, so a long post doesn't push everything else down.",
+                                          "lineHeight": "$type-p2-line-height",
+                                          "fontFamily": "$font-body",
+                                          "fontSize": "$type-p2-size",
+                                          "fontWeight": "normal",
+                                          "letterSpacing": "$type-p2-letter-spacing"
+                                        },
+                                        {
+                                          "id": "EfsWq",
+                                          "type": "ref",
+                                          "ref": "HXmMz",
+                                          "name": "Read more",
+                                          "descendants": {
+                                            "BSi7m": {
+                                              "content": "Read more"
+                                            }
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "LCEKe",
+                                  "name": "Entry — Another sketchbook entry",
+                                  "width": "fill_container",
+                                  "stroke": "$border-default",
+                                  "strokeWidth": {
+                                    "bottom": 1
+                                  },
+                                  "strokeAlignment": "inner",
+                                  "layout": "vertical",
+                                  "gap": "$scale-200",
+                                  "padding": [
+                                    "$scale-600",
+                                    0
+                                  ],
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "hUq88",
+                                      "name": "Date",
+                                      "fill": "$text-muted",
+                                      "textGrowth": "fixed-width",
+                                      "width": "fill_container",
+                                      "content": "SEP 13, 2026",
+                                      "lineHeight": "$type-eyebrow3-line-height",
+                                      "fontFamily": "$font-body",
+                                      "fontSize": "$type-eyebrow3-size",
+                                      "fontWeight": "500",
+                                      "letterSpacing": "$type-eyebrow3-letter-spacing"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "JxQfC",
+                                      "name": "Title",
+                                      "fill": "$text-default",
+                                      "textGrowth": "fixed-width",
+                                      "width": "fill_container",
+                                      "content": "Another sketchbook entry",
+                                      "lineHeight": "$type-h4-line-height",
+                                      "fontFamily": "$font-heading",
+                                      "fontSize": "$type-h4-size",
+                                      "fontWeight": "700",
+                                      "letterSpacing": "$type-h4-letter-spacing"
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "fBbnq",
+                                      "name": "Body",
+                                      "width": "fill_container",
+                                      "layout": "vertical",
+                                      "gap": "$scale-600",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "ObP82",
+                                          "name": "Paragraph 1",
+                                          "fill": "$text-default",
+                                          "textGrowth": "fixed-width",
+                                          "width": "fill_container",
+                                          "content": "A short entry with no marker shows in full, the same way it reads on its own page.",
+                                          "lineHeight": "$type-p2-line-height",
+                                          "fontFamily": "$font-body",
+                                          "fontSize": "$type-p2-size",
+                                          "fontWeight": "normal",
+                                          "letterSpacing": "$type-p2-letter-spacing"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "MYi6u",
+                      "type": "ref",
+                      "ref": "S5OtQe",
+                      "name": "Nav bar (closed)",
+                      "x": 0,
+                      "y": 0,
+                      "width": 390,
+                      "theme": {
+                        "device": "mobile"
+                      }
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "r1Hcl",
+                      "x": 322,
+                      "y": 16,
+                      "name": "Tap target",
+                      "width": 44,
+                      "height": 44,
+                      "stroke": "$text-link",
+                      "strokeWidth": 2
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "y9Q5z",
+                  "name": "Note",
+                  "fill": "$text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Tap ☰ to open.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "q8TN1A",
+              "name": "Arrow",
+              "width": 24,
+              "height": 24,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "id": "W8hNIS",
+                  "type": "ref",
+                  "ref": "r3ntDW",
+                  "name": "Arrow icon",
+                  "width": 24,
+                  "height": 24,
+                  "stroke": "$text-muted"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "HlEDN",
+              "name": "Step 2",
+              "width": 390,
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Ed3d3",
+                  "name": "Step label",
+                  "fill": "$text-default",
+                  "content": "2 · Opening",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "EoZio",
+                  "name": "Phone",
+                  "theme": {
+                    "device": "mobile"
+                  },
+                  "clip": true,
+                  "width": 390,
+                  "height": 560,
+                  "fill": "$surface-default",
+                  "stroke": "$border-default",
+                  "strokeWidth": 1,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ippEw",
+                      "x": 0,
+                      "y": 76,
+                      "name": "Page (Journal)",
+                      "width": 390,
+                      "layout": "vertical",
+                      "padding": [
+                        "$space-section",
+                        "$layout-margin"
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "xNBmw",
+                          "name": "Column",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 40,
+                          "children": [
+                            {
+                              "id": "BZXYA",
+                              "type": "ref",
+                              "ref": "g7uira",
+                              "name": "Intro",
+                              "width": "fill_container",
+                              "descendants": {
+                                "z9frDW": {
+                                  "content": "JOURNAL"
+                                },
+                                "SqBTJ": {
+                                  "content": "Keep Going Sketchbook"
+                                },
+                                "zSXuD": {
+                                  "content": "An open creative journal."
+                                }
+                              }
+                            },
+                            {
+                              "type": "frame",
+                              "id": "VNdsH",
+                              "name": "Entry List",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "ow8eK",
+                                  "name": "Entry — Hello, out loud",
+                                  "width": "fill_container",
+                                  "stroke": "$border-default",
+                                  "strokeWidth": {
+                                    "bottom": 1
+                                  },
+                                  "strokeAlignment": "inner",
+                                  "layout": "vertical",
+                                  "gap": "$scale-200",
+                                  "padding": [
+                                    "$scale-600",
+                                    0
+                                  ],
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "LX4xV",
+                                      "name": "Date",
+                                      "fill": "$text-muted",
+                                      "textGrowth": "fixed-width",
+                                      "width": "fill_container",
+                                      "content": "SEP 27, 2026",
+                                      "lineHeight": "$type-eyebrow3-line-height",
+                                      "fontFamily": "$font-body",
+                                      "fontSize": "$type-eyebrow3-size",
+                                      "fontWeight": "500",
+                                      "letterSpacing": "$type-eyebrow3-letter-spacing"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "upzWZ",
+                                      "name": "Title",
+                                      "fill": "$text-default",
+                                      "textGrowth": "fixed-width",
+                                      "width": "fill_container",
+                                      "content": "Hello, out loud",
+                                      "lineHeight": "$type-h4-line-height",
+                                      "fontFamily": "$font-heading",
+                                      "fontSize": "$type-h4-size",
+                                      "fontWeight": "700",
+                                      "letterSpacing": "$type-h4-letter-spacing"
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "w6MwZ",
+                                      "name": "Body",
+                                      "width": "fill_container",
+                                      "layout": "vertical",
+                                      "gap": "$scale-600",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "q65u9b",
+                                          "name": "Paragraph 1",
+                                          "fill": "$text-default",
+                                          "textGrowth": "fixed-width",
+                                          "width": "fill_container",
+                                          "content": "This is the first post in the journal. Replace this with real writing whenever you're ready — the page and its layout are already wired up around whatever goes here.",
+                                          "lineHeight": "$type-p2-line-height",
+                                          "fontFamily": "$font-body",
+                                          "fontSize": "$type-p2-size",
+                                          "fontWeight": "normal",
+                                          "letterSpacing": "$type-p2-letter-spacing"
+                                        },
+                                        {
+                                          "type": "text",
+                                          "id": "Rqpg9",
+                                          "name": "Paragraph 2",
+                                          "fill": "$text-default",
+                                          "textGrowth": "fixed-width",
+                                          "width": "fill_container",
+                                          "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
+                                          "lineHeight": "$type-p2-line-height",
+                                          "fontFamily": "$font-body",
+                                          "fontSize": "$type-p2-size",
+                                          "fontWeight": "normal",
+                                          "letterSpacing": "$type-p2-letter-spacing"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "LifZo",
+                                  "name": "Entry — Post title goes here",
+                                  "width": "fill_container",
+                                  "stroke": "$border-default",
+                                  "strokeWidth": {
+                                    "bottom": 1
+                                  },
+                                  "strokeAlignment": "inner",
+                                  "layout": "vertical",
+                                  "gap": "$scale-200",
+                                  "padding": [
+                                    "$scale-600",
+                                    0
+                                  ],
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "blrke",
+                                      "name": "Date",
+                                      "fill": "$text-muted",
+                                      "textGrowth": "fixed-width",
+                                      "width": "fill_container",
+                                      "content": "SEP 20, 2026",
+                                      "lineHeight": "$type-eyebrow3-line-height",
+                                      "fontFamily": "$font-body",
+                                      "fontSize": "$type-eyebrow3-size",
+                                      "fontWeight": "500",
+                                      "letterSpacing": "$type-eyebrow3-letter-spacing"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "gtV5H",
+                                      "name": "Title",
+                                      "fill": "$text-default",
+                                      "textGrowth": "fixed-width",
+                                      "width": "fill_container",
+                                      "content": "Post title goes here",
+                                      "lineHeight": "$type-h4-line-height",
+                                      "fontFamily": "$font-heading",
+                                      "fontSize": "$type-h4-size",
+                                      "fontWeight": "700",
+                                      "letterSpacing": "$type-h4-letter-spacing"
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "uYISO",
+                                      "name": "Body",
+                                      "width": "fill_container",
+                                      "layout": "vertical",
+                                      "gap": "$scale-600",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "wgtz2",
+                                          "name": "Paragraph 1",
+                                          "fill": "$text-default",
+                                          "textGrowth": "fixed-width",
+                                          "width": "fill_container",
+                                          "content": "A longer entry cut short with a more marker. Only the opening shows here on the journal page, so a long post doesn't push everything else down.",
+                                          "lineHeight": "$type-p2-line-height",
+                                          "fontFamily": "$font-body",
+                                          "fontSize": "$type-p2-size",
+                                          "fontWeight": "normal",
+                                          "letterSpacing": "$type-p2-letter-spacing"
+                                        },
+                                        {
+                                          "id": "w88tvk",
+                                          "type": "ref",
+                                          "ref": "HXmMz",
+                                          "name": "Read more",
+                                          "descendants": {
+                                            "BSi7m": {
+                                              "content": "Read more"
+                                            }
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "YcW16",
+                                  "name": "Entry — Another sketchbook entry",
+                                  "width": "fill_container",
+                                  "stroke": "$border-default",
+                                  "strokeWidth": {
+                                    "bottom": 1
+                                  },
+                                  "strokeAlignment": "inner",
+                                  "layout": "vertical",
+                                  "gap": "$scale-200",
+                                  "padding": [
+                                    "$scale-600",
+                                    0
+                                  ],
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "febfh",
+                                      "name": "Date",
+                                      "fill": "$text-muted",
+                                      "textGrowth": "fixed-width",
+                                      "width": "fill_container",
+                                      "content": "SEP 13, 2026",
+                                      "lineHeight": "$type-eyebrow3-line-height",
+                                      "fontFamily": "$font-body",
+                                      "fontSize": "$type-eyebrow3-size",
+                                      "fontWeight": "500",
+                                      "letterSpacing": "$type-eyebrow3-letter-spacing"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "tQBUX",
+                                      "name": "Title",
+                                      "fill": "$text-default",
+                                      "textGrowth": "fixed-width",
+                                      "width": "fill_container",
+                                      "content": "Another sketchbook entry",
+                                      "lineHeight": "$type-h4-line-height",
+                                      "fontFamily": "$font-heading",
+                                      "fontSize": "$type-h4-size",
+                                      "fontWeight": "700",
+                                      "letterSpacing": "$type-h4-letter-spacing"
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "vsp3B",
+                                      "name": "Body",
+                                      "width": "fill_container",
+                                      "layout": "vertical",
+                                      "gap": "$scale-600",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "B9UO3",
+                                          "name": "Paragraph 1",
+                                          "fill": "$text-default",
+                                          "textGrowth": "fixed-width",
+                                          "width": "fill_container",
+                                          "content": "A short entry with no marker shows in full, the same way it reads on its own page.",
+                                          "lineHeight": "$type-p2-line-height",
+                                          "fontFamily": "$font-body",
+                                          "fontSize": "$type-p2-size",
+                                          "fontWeight": "normal",
+                                          "letterSpacing": "$type-p2-letter-spacing"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "uqdeT",
+                      "type": "ref",
+                      "ref": "M1J6l",
+                      "name": "Menu panel",
+                      "x": 0,
+                      "y": 64,
+                      "width": 390,
+                      "opacity": 0.5,
+                      "descendants": {
+                        "cUbmx": {
+                          "enabled": false
+                        },
+                        "GH6uk": {
+                          "id": "juojr",
+                          "type": "ref",
+                          "ref": "eFsWC",
+                          "name": "Home",
+                          "descendants": {
+                            "jynNC": {
+                              "content": "HOME"
+                            }
+                          }
+                        },
+                        "SJS3d": {
+                          "id": "dFYUM",
+                          "type": "ref",
+                          "ref": "eFsWC",
+                          "name": "Shop",
+                          "descendants": {
+                            "jynNC": {
+                              "content": "SHOP"
+                            }
+                          }
+                        },
+                        "WkgaE": {
+                          "id": "r95vWT",
+                          "type": "ref",
+                          "ref": "MusDs",
+                          "name": "Journal",
+                          "descendants": {
+                            "t893f": {
+                              "content": "JOURNAL"
+                            }
+                          }
+                        },
+                        "UUi7K": {
+                          "id": "HbHAW",
+                          "type": "ref",
+                          "ref": "eFsWC",
+                          "name": "About",
+                          "descendants": {
+                            "jynNC": {
+                              "content": "ABOUT"
+                            }
+                          }
+                        },
+                        "asfYu": {
+                          "id": "DNIyA",
+                          "type": "ref",
+                          "ref": "eFsWC",
+                          "name": "Contact",
+                          "descendants": {
+                            "jynNC": {
+                              "content": "CONTACT"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "id": "AZWiG",
+                      "type": "ref",
+                      "ref": "M1J6l",
+                      "name": "Nav bar (open)",
+                      "x": 0,
+                      "y": 0,
+                      "width": 390,
+                      "descendants": {
+                        "idINa": {
+                          "enabled": false
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "FNh2B",
+                  "name": "Note",
+                  "fill": "$text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Menu slides down 24px from behind the bar and fades 0 → 100%. Shown mid-way.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "RAv5z",
+              "name": "Arrow",
+              "width": 24,
+              "height": 24,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "id": "jVkgG",
+                  "type": "ref",
+                  "ref": "r3ntDW",
+                  "name": "Arrow icon",
+                  "width": 24,
+                  "height": 24,
+                  "stroke": "$text-muted"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "I1rMA",
+              "name": "Step 3",
+              "width": 390,
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "c98hII",
+                  "name": "Step label",
+                  "fill": "$text-default",
+                  "content": "3 · Open",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "pna2u",
+                  "name": "Phone",
+                  "theme": {
+                    "device": "mobile"
+                  },
+                  "clip": true,
+                  "width": 390,
+                  "height": 560,
+                  "fill": "$surface-default",
+                  "stroke": "$border-default",
+                  "strokeWidth": 1,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Bg8YP",
+                      "x": 0,
+                      "y": 76,
+                      "name": "Page (Journal)",
+                      "width": 390,
+                      "layout": "vertical",
+                      "padding": [
+                        "$space-section",
+                        "$layout-margin"
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "makHq",
+                          "name": "Column",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 40,
+                          "children": [
+                            {
+                              "id": "IV2AP",
+                              "type": "ref",
+                              "ref": "g7uira",
+                              "name": "Intro",
+                              "width": "fill_container",
+                              "descendants": {
+                                "z9frDW": {
+                                  "content": "JOURNAL"
+                                },
+                                "SqBTJ": {
+                                  "content": "Keep Going Sketchbook"
+                                },
+                                "zSXuD": {
+                                  "content": "An open creative journal."
+                                }
+                              }
+                            },
+                            {
+                              "type": "frame",
+                              "id": "E06Zbe",
+                              "name": "Entry List",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "m3mOY",
+                                  "name": "Entry — Hello, out loud",
+                                  "width": "fill_container",
+                                  "stroke": "$border-default",
+                                  "strokeWidth": {
+                                    "bottom": 1
+                                  },
+                                  "strokeAlignment": "inner",
+                                  "layout": "vertical",
+                                  "gap": "$scale-200",
+                                  "padding": [
+                                    "$scale-600",
+                                    0
+                                  ],
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "koFWy",
+                                      "name": "Date",
+                                      "fill": "$text-muted",
+                                      "textGrowth": "fixed-width",
+                                      "width": "fill_container",
+                                      "content": "SEP 27, 2026",
+                                      "lineHeight": "$type-eyebrow3-line-height",
+                                      "fontFamily": "$font-body",
+                                      "fontSize": "$type-eyebrow3-size",
+                                      "fontWeight": "500",
+                                      "letterSpacing": "$type-eyebrow3-letter-spacing"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "U7Jib",
+                                      "name": "Title",
+                                      "fill": "$text-default",
+                                      "textGrowth": "fixed-width",
+                                      "width": "fill_container",
+                                      "content": "Hello, out loud",
+                                      "lineHeight": "$type-h4-line-height",
+                                      "fontFamily": "$font-heading",
+                                      "fontSize": "$type-h4-size",
+                                      "fontWeight": "700",
+                                      "letterSpacing": "$type-h4-letter-spacing"
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "Y2qp0s",
+                                      "name": "Body",
+                                      "width": "fill_container",
+                                      "layout": "vertical",
+                                      "gap": "$scale-600",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "QdntK",
+                                          "name": "Paragraph 1",
+                                          "fill": "$text-default",
+                                          "textGrowth": "fixed-width",
+                                          "width": "fill_container",
+                                          "content": "This is the first post in the journal. Replace this with real writing whenever you're ready — the page and its layout are already wired up around whatever goes here.",
+                                          "lineHeight": "$type-p2-line-height",
+                                          "fontFamily": "$font-body",
+                                          "fontSize": "$type-p2-size",
+                                          "fontWeight": "normal",
+                                          "letterSpacing": "$type-p2-letter-spacing"
+                                        },
+                                        {
+                                          "type": "text",
+                                          "id": "l9N08",
+                                          "name": "Paragraph 2",
+                                          "fill": "$text-default",
+                                          "textGrowth": "fixed-width",
+                                          "width": "fill_container",
+                                          "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
+                                          "lineHeight": "$type-p2-line-height",
+                                          "fontFamily": "$font-body",
+                                          "fontSize": "$type-p2-size",
+                                          "fontWeight": "normal",
+                                          "letterSpacing": "$type-p2-letter-spacing"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "ScG8w",
+                                  "name": "Entry — Post title goes here",
+                                  "width": "fill_container",
+                                  "stroke": "$border-default",
+                                  "strokeWidth": {
+                                    "bottom": 1
+                                  },
+                                  "strokeAlignment": "inner",
+                                  "layout": "vertical",
+                                  "gap": "$scale-200",
+                                  "padding": [
+                                    "$scale-600",
+                                    0
+                                  ],
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "fdwcO",
+                                      "name": "Date",
+                                      "fill": "$text-muted",
+                                      "textGrowth": "fixed-width",
+                                      "width": "fill_container",
+                                      "content": "SEP 20, 2026",
+                                      "lineHeight": "$type-eyebrow3-line-height",
+                                      "fontFamily": "$font-body",
+                                      "fontSize": "$type-eyebrow3-size",
+                                      "fontWeight": "500",
+                                      "letterSpacing": "$type-eyebrow3-letter-spacing"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "H9Rf6",
+                                      "name": "Title",
+                                      "fill": "$text-default",
+                                      "textGrowth": "fixed-width",
+                                      "width": "fill_container",
+                                      "content": "Post title goes here",
+                                      "lineHeight": "$type-h4-line-height",
+                                      "fontFamily": "$font-heading",
+                                      "fontSize": "$type-h4-size",
+                                      "fontWeight": "700",
+                                      "letterSpacing": "$type-h4-letter-spacing"
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "dlzs1",
+                                      "name": "Body",
+                                      "width": "fill_container",
+                                      "layout": "vertical",
+                                      "gap": "$scale-600",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "JyEWO",
+                                          "name": "Paragraph 1",
+                                          "fill": "$text-default",
+                                          "textGrowth": "fixed-width",
+                                          "width": "fill_container",
+                                          "content": "A longer entry cut short with a more marker. Only the opening shows here on the journal page, so a long post doesn't push everything else down.",
+                                          "lineHeight": "$type-p2-line-height",
+                                          "fontFamily": "$font-body",
+                                          "fontSize": "$type-p2-size",
+                                          "fontWeight": "normal",
+                                          "letterSpacing": "$type-p2-letter-spacing"
+                                        },
+                                        {
+                                          "id": "VoHP4",
+                                          "type": "ref",
+                                          "ref": "HXmMz",
+                                          "name": "Read more",
+                                          "descendants": {
+                                            "BSi7m": {
+                                              "content": "Read more"
+                                            }
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "y8jWPx",
+                                  "name": "Entry — Another sketchbook entry",
+                                  "width": "fill_container",
+                                  "stroke": "$border-default",
+                                  "strokeWidth": {
+                                    "bottom": 1
+                                  },
+                                  "strokeAlignment": "inner",
+                                  "layout": "vertical",
+                                  "gap": "$scale-200",
+                                  "padding": [
+                                    "$scale-600",
+                                    0
+                                  ],
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "e92Q9",
+                                      "name": "Date",
+                                      "fill": "$text-muted",
+                                      "textGrowth": "fixed-width",
+                                      "width": "fill_container",
+                                      "content": "SEP 13, 2026",
+                                      "lineHeight": "$type-eyebrow3-line-height",
+                                      "fontFamily": "$font-body",
+                                      "fontSize": "$type-eyebrow3-size",
+                                      "fontWeight": "500",
+                                      "letterSpacing": "$type-eyebrow3-letter-spacing"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "hzmBd",
+                                      "name": "Title",
+                                      "fill": "$text-default",
+                                      "textGrowth": "fixed-width",
+                                      "width": "fill_container",
+                                      "content": "Another sketchbook entry",
+                                      "lineHeight": "$type-h4-line-height",
+                                      "fontFamily": "$font-heading",
+                                      "fontSize": "$type-h4-size",
+                                      "fontWeight": "700",
+                                      "letterSpacing": "$type-h4-letter-spacing"
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "zRlZv",
+                                      "name": "Body",
+                                      "width": "fill_container",
+                                      "layout": "vertical",
+                                      "gap": "$scale-600",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "IQD4q",
+                                          "name": "Paragraph 1",
+                                          "fill": "$text-default",
+                                          "textGrowth": "fixed-width",
+                                          "width": "fill_container",
+                                          "content": "A short entry with no marker shows in full, the same way it reads on its own page.",
+                                          "lineHeight": "$type-p2-line-height",
+                                          "fontFamily": "$font-body",
+                                          "fontSize": "$type-p2-size",
+                                          "fontWeight": "normal",
+                                          "letterSpacing": "$type-p2-letter-spacing"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "MxUoT",
+                      "type": "ref",
+                      "ref": "M1J6l",
+                      "name": "Menu panel",
+                      "x": 0,
+                      "y": 76,
+                      "width": 390,
+                      "opacity": 1,
+                      "descendants": {
+                        "cUbmx": {
+                          "enabled": false
+                        },
+                        "GH6uk": {
+                          "id": "GJ8U9",
+                          "type": "ref",
+                          "ref": "eFsWC",
+                          "name": "Home",
+                          "descendants": {
+                            "jynNC": {
+                              "content": "HOME"
+                            }
+                          }
+                        },
+                        "SJS3d": {
+                          "id": "OYCIQ",
+                          "type": "ref",
+                          "ref": "eFsWC",
+                          "name": "Shop",
+                          "descendants": {
+                            "jynNC": {
+                              "content": "SHOP"
+                            }
+                          }
+                        },
+                        "WkgaE": {
+                          "id": "BIY9L",
+                          "type": "ref",
+                          "ref": "MusDs",
+                          "name": "Journal",
+                          "descendants": {
+                            "t893f": {
+                              "content": "JOURNAL"
+                            }
+                          }
+                        },
+                        "UUi7K": {
+                          "id": "JlTx6",
+                          "type": "ref",
+                          "ref": "eFsWC",
+                          "name": "About",
+                          "descendants": {
+                            "jynNC": {
+                              "content": "ABOUT"
+                            }
+                          }
+                        },
+                        "asfYu": {
+                          "id": "KMhkU",
+                          "type": "ref",
+                          "ref": "eFsWC",
+                          "name": "Contact",
+                          "descendants": {
+                            "jynNC": {
+                              "content": "CONTACT"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "id": "U6YUfa",
+                      "type": "ref",
+                      "ref": "M1J6l",
+                      "name": "Nav bar (open)",
+                      "x": 0,
+                      "y": 0,
+                      "width": 390,
+                      "descendants": {
+                        "idINa": {
+                          "enabled": false
+                        }
+                      }
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "gpiQz",
+                      "x": 322,
+                      "y": 16,
+                      "name": "Tap target",
+                      "width": 44,
+                      "height": 44,
+                      "stroke": "$text-link",
+                      "strokeWidth": 2
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "EPhkq",
+                  "name": "Note",
+                  "fill": "$text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Tap ✕ to close.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "R3RrPF",
+              "name": "Arrow",
+              "width": 24,
+              "height": 24,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "id": "Qi0vs",
+                  "type": "ref",
+                  "ref": "r3ntDW",
+                  "name": "Arrow icon",
+                  "width": 24,
+                  "height": 24,
+                  "stroke": "$text-muted"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "FPG3c",
+              "name": "Step 4",
+              "width": 390,
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "P5T5UV",
+                  "name": "Step label",
+                  "fill": "$text-default",
+                  "content": "4 · Closing",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "O5cOm",
+                  "name": "Phone",
+                  "theme": {
+                    "device": "mobile"
+                  },
+                  "clip": true,
+                  "width": 390,
+                  "height": 560,
+                  "fill": "$surface-default",
+                  "stroke": "$border-default",
+                  "strokeWidth": 1,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "g3OZMh",
+                      "x": 0,
+                      "y": 76,
+                      "name": "Page (Journal)",
+                      "width": 390,
+                      "layout": "vertical",
+                      "padding": [
+                        "$space-section",
+                        "$layout-margin"
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "sRzSr",
+                          "name": "Column",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 40,
+                          "children": [
+                            {
+                              "id": "EcNt6",
+                              "type": "ref",
+                              "ref": "g7uira",
+                              "name": "Intro",
+                              "width": "fill_container",
+                              "descendants": {
+                                "z9frDW": {
+                                  "content": "JOURNAL"
+                                },
+                                "SqBTJ": {
+                                  "content": "Keep Going Sketchbook"
+                                },
+                                "zSXuD": {
+                                  "content": "An open creative journal."
+                                }
+                              }
+                            },
+                            {
+                              "type": "frame",
+                              "id": "hdFne",
+                              "name": "Entry List",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "R0RGy5",
+                                  "name": "Entry — Hello, out loud",
+                                  "width": "fill_container",
+                                  "stroke": "$border-default",
+                                  "strokeWidth": {
+                                    "bottom": 1
+                                  },
+                                  "strokeAlignment": "inner",
+                                  "layout": "vertical",
+                                  "gap": "$scale-200",
+                                  "padding": [
+                                    "$scale-600",
+                                    0
+                                  ],
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "DP0P3",
+                                      "name": "Date",
+                                      "fill": "$text-muted",
+                                      "textGrowth": "fixed-width",
+                                      "width": "fill_container",
+                                      "content": "SEP 27, 2026",
+                                      "lineHeight": "$type-eyebrow3-line-height",
+                                      "fontFamily": "$font-body",
+                                      "fontSize": "$type-eyebrow3-size",
+                                      "fontWeight": "500",
+                                      "letterSpacing": "$type-eyebrow3-letter-spacing"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "NrbQP",
+                                      "name": "Title",
+                                      "fill": "$text-default",
+                                      "textGrowth": "fixed-width",
+                                      "width": "fill_container",
+                                      "content": "Hello, out loud",
+                                      "lineHeight": "$type-h4-line-height",
+                                      "fontFamily": "$font-heading",
+                                      "fontSize": "$type-h4-size",
+                                      "fontWeight": "700",
+                                      "letterSpacing": "$type-h4-letter-spacing"
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "wq891",
+                                      "name": "Body",
+                                      "width": "fill_container",
+                                      "layout": "vertical",
+                                      "gap": "$scale-600",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "w2TPY",
+                                          "name": "Paragraph 1",
+                                          "fill": "$text-default",
+                                          "textGrowth": "fixed-width",
+                                          "width": "fill_container",
+                                          "content": "This is the first post in the journal. Replace this with real writing whenever you're ready — the page and its layout are already wired up around whatever goes here.",
+                                          "lineHeight": "$type-p2-line-height",
+                                          "fontFamily": "$font-body",
+                                          "fontSize": "$type-p2-size",
+                                          "fontWeight": "normal",
+                                          "letterSpacing": "$type-p2-letter-spacing"
+                                        },
+                                        {
+                                          "type": "text",
+                                          "id": "aXjt2",
+                                          "name": "Paragraph 2",
+                                          "fill": "$text-default",
+                                          "textGrowth": "fixed-width",
+                                          "width": "fill_container",
+                                          "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
+                                          "lineHeight": "$type-p2-line-height",
+                                          "fontFamily": "$font-body",
+                                          "fontSize": "$type-p2-size",
+                                          "fontWeight": "normal",
+                                          "letterSpacing": "$type-p2-letter-spacing"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "l0oOv",
+                                  "name": "Entry — Post title goes here",
+                                  "width": "fill_container",
+                                  "stroke": "$border-default",
+                                  "strokeWidth": {
+                                    "bottom": 1
+                                  },
+                                  "strokeAlignment": "inner",
+                                  "layout": "vertical",
+                                  "gap": "$scale-200",
+                                  "padding": [
+                                    "$scale-600",
+                                    0
+                                  ],
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "eWsDX",
+                                      "name": "Date",
+                                      "fill": "$text-muted",
+                                      "textGrowth": "fixed-width",
+                                      "width": "fill_container",
+                                      "content": "SEP 20, 2026",
+                                      "lineHeight": "$type-eyebrow3-line-height",
+                                      "fontFamily": "$font-body",
+                                      "fontSize": "$type-eyebrow3-size",
+                                      "fontWeight": "500",
+                                      "letterSpacing": "$type-eyebrow3-letter-spacing"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "apoaK",
+                                      "name": "Title",
+                                      "fill": "$text-default",
+                                      "textGrowth": "fixed-width",
+                                      "width": "fill_container",
+                                      "content": "Post title goes here",
+                                      "lineHeight": "$type-h4-line-height",
+                                      "fontFamily": "$font-heading",
+                                      "fontSize": "$type-h4-size",
+                                      "fontWeight": "700",
+                                      "letterSpacing": "$type-h4-letter-spacing"
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "lg8XU",
+                                      "name": "Body",
+                                      "width": "fill_container",
+                                      "layout": "vertical",
+                                      "gap": "$scale-600",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "tVw8R",
+                                          "name": "Paragraph 1",
+                                          "fill": "$text-default",
+                                          "textGrowth": "fixed-width",
+                                          "width": "fill_container",
+                                          "content": "A longer entry cut short with a more marker. Only the opening shows here on the journal page, so a long post doesn't push everything else down.",
+                                          "lineHeight": "$type-p2-line-height",
+                                          "fontFamily": "$font-body",
+                                          "fontSize": "$type-p2-size",
+                                          "fontWeight": "normal",
+                                          "letterSpacing": "$type-p2-letter-spacing"
+                                        },
+                                        {
+                                          "id": "CkKic",
+                                          "type": "ref",
+                                          "ref": "HXmMz",
+                                          "name": "Read more",
+                                          "descendants": {
+                                            "BSi7m": {
+                                              "content": "Read more"
+                                            }
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "L37pFx",
+                                  "name": "Entry — Another sketchbook entry",
+                                  "width": "fill_container",
+                                  "stroke": "$border-default",
+                                  "strokeWidth": {
+                                    "bottom": 1
+                                  },
+                                  "strokeAlignment": "inner",
+                                  "layout": "vertical",
+                                  "gap": "$scale-200",
+                                  "padding": [
+                                    "$scale-600",
+                                    0
+                                  ],
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "xLsPf",
+                                      "name": "Date",
+                                      "fill": "$text-muted",
+                                      "textGrowth": "fixed-width",
+                                      "width": "fill_container",
+                                      "content": "SEP 13, 2026",
+                                      "lineHeight": "$type-eyebrow3-line-height",
+                                      "fontFamily": "$font-body",
+                                      "fontSize": "$type-eyebrow3-size",
+                                      "fontWeight": "500",
+                                      "letterSpacing": "$type-eyebrow3-letter-spacing"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "i9LfD1",
+                                      "name": "Title",
+                                      "fill": "$text-default",
+                                      "textGrowth": "fixed-width",
+                                      "width": "fill_container",
+                                      "content": "Another sketchbook entry",
+                                      "lineHeight": "$type-h4-line-height",
+                                      "fontFamily": "$font-heading",
+                                      "fontSize": "$type-h4-size",
+                                      "fontWeight": "700",
+                                      "letterSpacing": "$type-h4-letter-spacing"
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "dS0n5",
+                                      "name": "Body",
+                                      "width": "fill_container",
+                                      "layout": "vertical",
+                                      "gap": "$scale-600",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "w3olCw",
+                                          "name": "Paragraph 1",
+                                          "fill": "$text-default",
+                                          "textGrowth": "fixed-width",
+                                          "width": "fill_container",
+                                          "content": "A short entry with no marker shows in full, the same way it reads on its own page.",
+                                          "lineHeight": "$type-p2-line-height",
+                                          "fontFamily": "$font-body",
+                                          "fontSize": "$type-p2-size",
+                                          "fontWeight": "normal",
+                                          "letterSpacing": "$type-p2-letter-spacing"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "h8B8K",
+                      "type": "ref",
+                      "ref": "M1J6l",
+                      "name": "Menu panel",
+                      "x": 0,
+                      "y": 64,
+                      "width": 390,
+                      "opacity": 0.5,
+                      "descendants": {
+                        "cUbmx": {
+                          "enabled": false
+                        },
+                        "GH6uk": {
+                          "id": "E3Ovml",
+                          "type": "ref",
+                          "ref": "eFsWC",
+                          "name": "Home",
+                          "descendants": {
+                            "jynNC": {
+                              "content": "HOME"
+                            }
+                          }
+                        },
+                        "SJS3d": {
+                          "id": "F1s7KJ",
+                          "type": "ref",
+                          "ref": "eFsWC",
+                          "name": "Shop",
+                          "descendants": {
+                            "jynNC": {
+                              "content": "SHOP"
+                            }
+                          }
+                        },
+                        "WkgaE": {
+                          "id": "IUqQI",
+                          "type": "ref",
+                          "ref": "MusDs",
+                          "name": "Journal",
+                          "descendants": {
+                            "t893f": {
+                              "content": "JOURNAL"
+                            }
+                          }
+                        },
+                        "UUi7K": {
+                          "id": "z1GWd",
+                          "type": "ref",
+                          "ref": "eFsWC",
+                          "name": "About",
+                          "descendants": {
+                            "jynNC": {
+                              "content": "ABOUT"
+                            }
+                          }
+                        },
+                        "asfYu": {
+                          "id": "aJhwh",
+                          "type": "ref",
+                          "ref": "eFsWC",
+                          "name": "Contact",
+                          "descendants": {
+                            "jynNC": {
+                              "content": "CONTACT"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "id": "Q4Yrpy",
+                      "type": "ref",
+                      "ref": "S5OtQe",
+                      "name": "Nav bar (closed)",
+                      "x": 0,
+                      "y": 0,
+                      "width": 390,
+                      "theme": {
+                        "device": "mobile"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "jGmyK",
+                  "name": "Note",
+                  "fill": "$text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Menu slides up 24px behind the bar and fades 100% → 0, then returns to 1.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "e8HCv0",
+          "name": "Specs",
+          "width": "fill_container",
+          "gap": 48,
+          "children": [
+            {
+              "type": "frame",
+              "id": "o80yID",
+              "name": "Spec — Open",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Zu6jn",
+                  "name": "Spec title",
+                  "fill": "$text-default",
+                  "content": "Open",
+                  "fontFamily": "$font-body",
+                  "fontSize": 16,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "NOXuH",
+                  "name": "Spec line",
+                  "fill": "$text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Trigger: tap ☰.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "SHtsS",
+                  "name": "Spec line",
+                  "fill": "$text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Icon swaps ☰ → ✕ immediately.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "QA8IZ",
+                  "name": "Spec line",
+                  "fill": "$text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Menu: moves down 24px to rest, opacity 0 → 100%.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "bdKlA",
+                  "name": "Spec line",
+                  "fill": "$text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Duration 240 ms, ease-out.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "bOLAl",
+                  "name": "Spec line",
+                  "fill": "$text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Layering: menu sits behind the nav bar and over the page.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "V5cmP",
+              "name": "Spec — Close",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "wuXLn",
+                  "name": "Spec title",
+                  "fill": "$text-default",
+                  "content": "Close",
+                  "fontFamily": "$font-body",
+                  "fontSize": 16,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "l2Plt",
+                  "name": "Spec line",
+                  "fill": "$text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Trigger: tap ✕.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "ZmLU5",
+                  "name": "Spec line",
+                  "fill": "$text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Icon swaps ✕ → ☰ immediately.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "foGvM",
+                  "name": "Spec line",
+                  "fill": "$text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Menu: moves up 24px, opacity 100% → 0.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "n8xWO9",
+                  "name": "Spec line",
+                  "fill": "$text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Duration 200 ms, ease-in.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "iCwyj",
+                  "name": "Spec line",
+                  "fill": "$text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Then hidden: links can't be tabbed to while closed.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "jLx9n",
+              "name": "Spec — Also",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "OMy71",
+                  "name": "Spec title",
+                  "fill": "$text-default",
+                  "content": "Also",
+                  "fontFamily": "$font-body",
+                  "fontSize": 16,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "jFQIT",
+                  "name": "Spec line",
+                  "fill": "$text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Also close on Esc, on tapping a link, and on tapping the page below.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "zQhuk",
+                  "name": "Spec line",
+                  "fill": "$text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Button label: \"Open menu\" / \"Close menu\", with aria-expanded.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "g27Fm",
+                  "name": "Spec line",
+                  "fill": "$text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Reduced motion setting: fade only, no movement.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "cDR3a",
+                  "name": "Spec line",
+                  "fill": "$text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Tablet and desktop keep the links in the bar; no menu button.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "themes": {
