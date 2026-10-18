@@ -1,7 +1,7 @@
 @import './tokens.css';
 
 :root {
-  /* Colors, fonts and sizes come from tokens.css (generated from design/shop.pen,
+  /* Colors, fonts and sizes come from tokens.css (generated from design/site.pen,
      which mirrors the Figma "PG Library" variables). */
   --content-max: 900px;
 }

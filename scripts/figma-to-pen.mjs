@@ -1,6 +1,6 @@
 // Turns the Figma variables snapshot (design/figma-variables.json, made with
 // scripts/figma-export.js) into pen.dev variables, and compares them with the
-// variables in design/shop.pen.
+// variables in design/site.pen.
 //
 //   npm run figma:pen            report what's added, changed or missing
 //   npm run figma:pen -- --json  print the added and changed variables as JSON,
@@ -13,7 +13,7 @@
 import { readFileSync } from 'node:fs';
 
 const SNAPSHOT = new URL('../design/figma-variables.json', import.meta.url);
-const PEN = new URL('../design/shop.pen', import.meta.url);
+const PEN = new URL('../design/site.pen', import.meta.url);
 
 const THEME_AXES = { Color: 'mode', Size: 'device' };
 
@@ -56,7 +56,7 @@ function penValue(name, path, collection, value, mode) {
     const size = c.variables[path.replace(/Line Height$/, 'Size')][mode];
     return round(resolve(value, mode) / resolve(size, mode));
   }
-  // Type styles keep plain numbers, as they always have in shop.pen.
+  // Type styles keep plain numbers, as they always have in site.pen.
   if (name.startsWith('type-')) return round(resolve(value, mode));
   if (typeof value === 'string' && value.startsWith('@')) {
     const [ref, ...rest] = value.slice(1).split('/');
@@ -107,10 +107,10 @@ if (process.argv.includes('--json')) {
     console.log(`${label}: ${names.length}`);
     for (const n of names) console.log(`  ${n}${show ? `  ${show(n)}` : ''}`);
   };
-  console.log(`figma:pen: ${Object.keys(target).length} Figma variables, ${Object.keys(pen).length} in shop.pen`);
-  list('Not in shop.pen yet', added);
-  list('Different in shop.pen', changed, (n) => `pen ${JSON.stringify(pen[n].value)} -> figma ${JSON.stringify(target[n].value)}`);
-  list('In shop.pen but not in Figma', extra);
+  console.log(`figma:pen: ${Object.keys(target).length} Figma variables, ${Object.keys(pen).length} in site.pen`);
+  list('Not in site.pen yet', added);
+  list('Different in site.pen', changed, (n) => `pen ${JSON.stringify(pen[n].value)} -> figma ${JSON.stringify(target[n].value)}`);
+  list('In site.pen but not in Figma', extra);
   for (const c of SKIP) {
     console.log(`Skipped the ${c} collection (${Object.keys(collections[c].variables).length} variables): merge by hand.`);
   }

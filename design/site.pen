@@ -4,8 +4,8 @@
     {
       "type": "frame",
       "id": "nyTCg",
-      "x": -6446,
-      "y": -2600,
+      "x": -10390,
+      "y": -2595,
       "name": "Components",
       "theme": {
         "mode": "light",
@@ -7541,11 +7541,22 @@
       ]
     },
     {
-      "type": "frame",
-      "id": "bk3VL",
+      "type": "text",
+      "id": "bwhCH",
       "x": -2700,
-      "y": -2600,
-      "name": "Shop — Desktop (1200)",
+      "y": 1038,
+      "fill": "#ffffff",
+      "content": "Journal",
+      "fontFamily": "Inter",
+      "fontSize": 200,
+      "fontWeight": "700"
+    },
+    {
+      "type": "frame",
+      "id": "O3QOKy",
+      "x": -2700,
+      "y": 1600,
+      "name": "Journal — Desktop (1200)",
       "theme": {
         "mode": "light",
         "device": "desktop"
@@ -7556,14 +7567,14 @@
       "layout": "vertical",
       "children": [
         {
-          "id": "smw3K",
+          "id": "MKHzX",
           "type": "ref",
           "ref": "S5OtQe",
           "name": "Header",
           "width": "fill_container",
           "descendants": {
             "oekhv": {
-              "id": "oL8K0",
+              "id": "r4BEYr",
               "type": "ref",
               "ref": "eFsWC",
               "name": "Recent",
@@ -7573,14 +7584,14 @@
                 }
               }
             },
-            "LglH1": {
-              "id": "V8MzVp",
+            "S5GGB": {
+              "id": "auYf1",
               "type": "ref",
               "ref": "MusDs",
-              "name": "Shop",
+              "name": "Journal",
               "descendants": {
                 "t893f": {
-                  "content": "SHOP"
+                  "content": "JOURNAL"
                 }
               }
             }
@@ -7588,465 +7599,231 @@
         },
         {
           "type": "frame",
-          "id": "BRkgK",
+          "id": "L78Vk",
           "name": "Main",
           "width": "fill_container",
           "layout": "vertical",
-          "gap": "$space-block",
           "padding": [
             "$space-section",
             "$layout-margin"
           ],
+          "alignItems": "center",
           "children": [
             {
-              "id": "yNMAH",
-              "type": "ref",
-              "ref": "g7uira",
-              "name": "Intro",
-              "width": "fill_container",
-              "descendants": {
-                "z9frDW": {
-                  "content": "ORIGINALS"
-                },
-                "SqBTJ": {
-                  "content": "Drawing is thinking, framed."
-                },
-                "zSXuD": {
-                  "content": "One-of-a-kind acrylic and ink works on paper, 22″ × 30″. Checkout is handled securely through Stripe — each piece ships once, direct from the studio."
-                }
-              }
-            },
-            {
               "type": "frame",
-              "id": "FE0DZ",
-              "name": "Filter Bar",
-              "width": "fill_container",
-              "gap": "$scale-300",
-              "justifyContent": "space_between",
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "BmHwC",
-                  "name": "Filters",
-                  "gap": "$scale-200",
-                  "alignItems": "center",
-                  "children": [
-                    {
-                      "id": "p0CVn",
-                      "type": "ref",
-                      "ref": "XZAZJ",
-                      "name": "All",
-                      "descendants": {
-                        "NxJmd": {
-                          "content": "ALL"
-                        }
-                      }
-                    },
-                    {
-                      "id": "t5fMI2",
-                      "type": "ref",
-                      "ref": "geYri",
-                      "name": "Signature Work",
-                      "descendants": {
-                        "SAIpz": {
-                          "content": "SIGNATURE WORK"
-                        }
-                      }
-                    },
-                    {
-                      "id": "G4GaI6",
-                      "type": "ref",
-                      "ref": "geYri",
-                      "name": "Acrylic",
-                      "descendants": {
-                        "SAIpz": {
-                          "content": "ACRYLIC"
-                        }
-                      }
-                    },
-                    {
-                      "id": "xFCOP",
-                      "type": "ref",
-                      "ref": "geYri",
-                      "name": "Ink",
-                      "descendants": {
-                        "SAIpz": {
-                          "content": "INK"
-                        }
-                      }
-                    }
-                  ]
-                },
-                {
-                  "type": "text",
-                  "id": "C0GbZh",
-                  "name": "Count",
-                  "fill": "$text-muted",
-                  "content": "10 pieces",
-                  "lineHeight": "$type-body2-line-height",
-                  "fontFamily": "$font-body",
-                  "fontSize": "$type-body2-size",
-                  "fontWeight": "normal",
-                  "letterSpacing": "$type-body2-letter-spacing"
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "Hgj50",
-              "name": "Product Grid",
-              "width": "fill_container",
+              "id": "FnmnR",
+              "name": "Column",
+              "width": 720,
               "layout": "vertical",
-              "gap": "$space-block",
+              "gap": 40,
               "children": [
                 {
-                  "type": "frame",
-                  "id": "YfSFQ",
-                  "name": "Row 1",
+                  "id": "AqjBt",
+                  "type": "ref",
+                  "ref": "g7uira",
+                  "name": "Intro",
                   "width": "fill_container",
-                  "gap": "$layout-gutter",
-                  "children": [
-                    {
-                      "id": "cLkry",
-                      "type": "ref",
-                      "ref": "z8b9d",
-                      "name": "Tuner",
-                      "width": "fill_container",
-                      "descendants": {
-                        "FNrk8": {
-                          "height": 447,
-                          "fill": [
-                            "$surface-subtle",
-                            {
-                              "type": "image",
-                              "enabled": true,
-                              "url": "products/tuner/cover.jpg",
-                              "mode": "cover"
-                            }
-                          ]
-                        },
-                        "C9426P": {
-                          "enabled": false
-                        },
-                        "rRRJn": {
-                          "content": "Tuner"
-                        },
-                        "FhZKD": {
-                          "content": "$250 · 22″ × 30″ · Acrylic on paper"
-                        }
-                      }
+                  "descendants": {
+                    "z9frDW": {
+                      "content": "JOURNAL"
                     },
-                    {
-                      "id": "eGKIu",
-                      "type": "ref",
-                      "ref": "z8b9d",
-                      "name": "Waffle",
-                      "width": "fill_container",
-                      "descendants": {
-                        "FNrk8": {
-                          "height": 447,
-                          "fill": [
-                            "$surface-subtle",
-                            {
-                              "type": "image",
-                              "enabled": true,
-                              "url": "products/waffle/cover.jpg",
-                              "mode": "cover"
-                            }
-                          ]
-                        },
-                        "C9426P": {
-                          "enabled": false
-                        },
-                        "rRRJn": {
-                          "content": "Waffle"
-                        },
-                        "FhZKD": {
-                          "content": "$200 · 22″ × 30″ · Acrylic on paper"
-                        }
-                      }
+                    "SqBTJ": {
+                      "content": "Keep Going Sketchbook"
                     },
-                    {
-                      "id": "icHdc",
-                      "type": "ref",
-                      "ref": "z8b9d",
-                      "name": "Revelation",
-                      "width": "fill_container",
-                      "descendants": {
-                        "FNrk8": {
-                          "height": 447,
-                          "fill": [
-                            "$surface-subtle",
-                            {
-                              "type": "image",
-                              "enabled": true,
-                              "url": "products/revelation/cover.jpg",
-                              "mode": "cover"
-                            }
-                          ]
-                        },
-                        "C9426P": {
-                          "enabled": false
-                        },
-                        "rRRJn": {
-                          "content": "Revelation"
-                        },
-                        "FhZKD": {
-                          "content": "$200 · 22″ × 30″ · Ink on paper"
-                        }
-                      }
+                    "zSXuD": {
+                      "content": "An open creative journal."
                     }
-                  ]
+                  }
                 },
                 {
                   "type": "frame",
-                  "id": "u4aJG",
-                  "name": "Row 2",
+                  "id": "aCKH2",
+                  "name": "Entry List",
                   "width": "fill_container",
-                  "gap": "$layout-gutter",
+                  "layout": "vertical",
                   "children": [
                     {
-                      "id": "Nw4QO",
-                      "type": "ref",
-                      "ref": "z8b9d",
-                      "name": "Orb",
+                      "type": "frame",
+                      "id": "i6qPGK",
+                      "name": "Entry — Hello, out loud",
                       "width": "fill_container",
-                      "descendants": {
-                        "FNrk8": {
-                          "height": 447,
-                          "fill": [
-                            "$surface-subtle",
-                            {
-                              "type": "image",
-                              "enabled": true,
-                              "url": "products/orb/cover.jpg",
-                              "mode": "cover"
-                            }
-                          ]
+                      "stroke": "$border-default",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "strokeAlignment": "inner",
+                      "layout": "vertical",
+                      "gap": "$scale-200",
+                      "padding": [
+                        "$scale-600",
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "RIENh",
+                          "name": "Date",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "SEP 27, 2026",
+                          "lineHeight": "$type-eyebrow3-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-eyebrow3-size",
+                          "fontWeight": "500",
+                          "letterSpacing": "$type-eyebrow3-letter-spacing"
                         },
-                        "C9426P": {
-                          "enabled": false
+                        {
+                          "type": "text",
+                          "id": "ykHtr",
+                          "name": "Title",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Hello, out loud",
+                          "lineHeight": "$type-h4-line-height",
+                          "fontFamily": "$font-heading",
+                          "fontSize": "$type-h4-size",
+                          "fontWeight": "700",
+                          "letterSpacing": "$type-h4-letter-spacing"
                         },
-                        "rRRJn": {
-                          "content": "Orb"
-                        },
-                        "FhZKD": {
-                          "content": "$200 · 22″ × 30″ · Acrylic on paper"
+                        {
+                          "type": "text",
+                          "id": "WF2JU",
+                          "name": "Description",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "The first entry — why this journal exists and what Dream Out Loud means to me.",
+                          "lineHeight": "$type-p3-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-p3-size",
+                          "fontWeight": "normal",
+                          "letterSpacing": "$type-p3-letter-spacing"
                         }
-                      }
-                    },
-                    {
-                      "id": "Blje7",
-                      "type": "ref",
-                      "ref": "z8b9d",
-                      "name": "Lighthouse",
-                      "width": "fill_container",
-                      "descendants": {
-                        "FNrk8": {
-                          "height": 447,
-                          "fill": [
-                            "$surface-subtle",
-                            {
-                              "type": "image",
-                              "enabled": true,
-                              "url": "products/lighthouse/cover.jpg",
-                              "mode": "cover"
-                            }
-                          ]
-                        },
-                        "C9426P": {
-                          "enabled": false
-                        },
-                        "rRRJn": {
-                          "content": "Lighthouse"
-                        },
-                        "FhZKD": {
-                          "content": "$250 · 22″ × 30″ · Ink on paper"
-                        }
-                      }
-                    },
-                    {
-                      "id": "w9QcmI",
-                      "type": "ref",
-                      "ref": "z8b9d",
-                      "name": "Flower",
-                      "width": "fill_container",
-                      "descendants": {
-                        "FNrk8": {
-                          "height": 447,
-                          "fill": [
-                            "$surface-subtle",
-                            {
-                              "type": "image",
-                              "enabled": true,
-                              "url": "products/flower/cover.jpg",
-                              "mode": "cover"
-                            }
-                          ]
-                        },
-                        "C9426P": {
-                          "enabled": false
-                        },
-                        "rRRJn": {
-                          "content": "Flower"
-                        },
-                        "FhZKD": {
-                          "content": "$200 · 22″ × 30″ · Acrylic on paper"
-                        }
-                      }
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "CBRMz",
-                  "name": "Row 3",
-                  "width": "fill_container",
-                  "gap": "$layout-gutter",
-                  "children": [
-                    {
-                      "id": "Cc5GU",
-                      "type": "ref",
-                      "ref": "z8b9d",
-                      "name": "Dude",
-                      "width": "fill_container",
-                      "descendants": {
-                        "FNrk8": {
-                          "height": 447,
-                          "fill": [
-                            "$surface-subtle",
-                            {
-                              "type": "image",
-                              "enabled": true,
-                              "url": "products/dude/cover.jpg",
-                              "mode": "cover"
-                            }
-                          ]
-                        },
-                        "C9426P": {
-                          "enabled": false
-                        },
-                        "rRRJn": {
-                          "content": "Dude"
-                        },
-                        "FhZKD": {
-                          "content": "$200 · 22″ × 30″ · Acrylic on paper"
-                        }
-                      }
-                    },
-                    {
-                      "id": "quu0T",
-                      "type": "ref",
-                      "ref": "z8b9d",
-                      "name": "Driver",
-                      "width": "fill_container",
-                      "descendants": {
-                        "FNrk8": {
-                          "height": 447,
-                          "fill": [
-                            "$surface-subtle",
-                            {
-                              "type": "image",
-                              "enabled": true,
-                              "url": "products/driver/cover.jpg",
-                              "mode": "cover"
-                            }
-                          ]
-                        },
-                        "C9426P": {
-                          "enabled": false
-                        },
-                        "rRRJn": {
-                          "content": "Driver"
-                        },
-                        "FhZKD": {
-                          "content": "$250 · 22″ × 30″ · Acrylic on paper"
-                        }
-                      }
-                    },
-                    {
-                      "id": "Drckr",
-                      "type": "ref",
-                      "ref": "z8b9d",
-                      "name": "Creature",
-                      "width": "fill_container",
-                      "descendants": {
-                        "FNrk8": {
-                          "height": 447,
-                          "fill": [
-                            "$surface-subtle",
-                            {
-                              "type": "image",
-                              "enabled": true,
-                              "url": "products/creature/cover.jpg",
-                              "mode": "cover"
-                            }
-                          ]
-                        },
-                        "C9426P": {
-                          "enabled": false
-                        },
-                        "rRRJn": {
-                          "content": "Creature"
-                        },
-                        "FhZKD": {
-                          "content": "$200 · 22″ × 30″ · Acrylic on paper"
-                        }
-                      }
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "O7rb8",
-                  "name": "Row 4",
-                  "width": "fill_container",
-                  "gap": "$layout-gutter",
-                  "children": [
-                    {
-                      "id": "HucSK",
-                      "type": "ref",
-                      "ref": "z8b9d",
-                      "name": "Road Trip",
-                      "width": "fill_container",
-                      "descendants": {
-                        "FNrk8": {
-                          "height": 447,
-                          "fill": [
-                            "$surface-subtle",
-                            {
-                              "type": "image",
-                              "enabled": true,
-                              "url": "products/road-trip/cover.jpg",
-                              "mode": "cover"
-                            }
-                          ]
-                        },
-                        "C9426P": {
-                          "enabled": false
-                        },
-                        "rRRJn": {
-                          "content": "Road Trip"
-                        },
-                        "FhZKD": {
-                          "content": "$250 · 22″ × 30″ · Acrylic on paper"
-                        }
-                      }
+                      ]
                     },
                     {
                       "type": "frame",
-                      "id": "nVQ48",
-                      "name": "Spacer",
+                      "id": "i8lWoE",
+                      "name": "Entry — Post title goes here",
                       "width": "fill_container",
-                      "height": 1
+                      "stroke": "$border-default",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "strokeAlignment": "inner",
+                      "layout": "vertical",
+                      "gap": "$scale-200",
+                      "padding": [
+                        "$scale-600",
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "DsVFH",
+                          "name": "Date",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "SEP 20, 2026",
+                          "lineHeight": "$type-eyebrow3-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-eyebrow3-size",
+                          "fontWeight": "500",
+                          "letterSpacing": "$type-eyebrow3-letter-spacing"
+                        },
+                        {
+                          "type": "text",
+                          "id": "UPk6N",
+                          "name": "Title",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Post title goes here",
+                          "lineHeight": "$type-h4-line-height",
+                          "fontFamily": "$font-heading",
+                          "fontSize": "$type-h4-size",
+                          "fontWeight": "700",
+                          "letterSpacing": "$type-h4-letter-spacing"
+                        },
+                        {
+                          "type": "text",
+                          "id": "J2rHpM",
+                          "name": "Description",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "A short description of the entry, enough to tell the reader what it is about and why it is worth opening.",
+                          "lineHeight": "$type-p3-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-p3-size",
+                          "fontWeight": "normal",
+                          "letterSpacing": "$type-p3-letter-spacing"
+                        }
+                      ]
                     },
                     {
                       "type": "frame",
-                      "id": "N7ZR8",
-                      "name": "Spacer",
+                      "id": "VgFCh",
+                      "name": "Entry — Another sketchbook entry",
                       "width": "fill_container",
-                      "height": 1
+                      "stroke": "$border-default",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "strokeAlignment": "inner",
+                      "layout": "vertical",
+                      "gap": "$scale-200",
+                      "padding": [
+                        "$scale-600",
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "VsON8",
+                          "name": "Date",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "SEP 13, 2026",
+                          "lineHeight": "$type-eyebrow3-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-eyebrow3-size",
+                          "fontWeight": "500",
+                          "letterSpacing": "$type-eyebrow3-letter-spacing"
+                        },
+                        {
+                          "type": "text",
+                          "id": "I5lZY5",
+                          "name": "Title",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Another sketchbook entry",
+                          "lineHeight": "$type-h4-line-height",
+                          "fontFamily": "$font-heading",
+                          "fontSize": "$type-h4-size",
+                          "fontWeight": "700",
+                          "letterSpacing": "$type-h4-letter-spacing"
+                        },
+                        {
+                          "type": "text",
+                          "id": "U1PLE",
+                          "name": "Description",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "A short description of the entry, enough to tell the reader what it is about and why it is worth opening.",
+                          "lineHeight": "$type-p3-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-p3-size",
+                          "fontWeight": "normal",
+                          "letterSpacing": "$type-p3-letter-spacing"
+                        }
+                      ]
                     }
                   ]
                 }
@@ -8055,7 +7832,7 @@
           ]
         },
         {
-          "id": "T0DmW",
+          "id": "q43az3",
           "type": "ref",
           "ref": "E6haZ",
           "name": "Footer",
@@ -8065,10 +7842,10 @@
     },
     {
       "type": "frame",
-      "id": "cJQI0",
+      "id": "R8J5S",
       "x": -1380,
-      "y": -2600,
-      "name": "Shop — Tablet (810)",
+      "y": 1600,
+      "name": "Journal — Tablet (810)",
       "theme": {
         "mode": "light",
         "device": "tablet"
@@ -8079,14 +7856,14 @@
       "layout": "vertical",
       "children": [
         {
-          "id": "kFSC6",
+          "id": "cjCUn",
           "type": "ref",
           "ref": "S5OtQe",
           "name": "Header",
           "width": "fill_container",
           "descendants": {
             "oekhv": {
-              "id": "BBlUN",
+              "id": "empMD",
               "type": "ref",
               "ref": "eFsWC",
               "name": "Recent",
@@ -8096,14 +7873,14 @@
                 }
               }
             },
-            "LglH1": {
-              "id": "OUBaV",
+            "S5GGB": {
+              "id": "q4hwl",
               "type": "ref",
               "ref": "MusDs",
-              "name": "Shop",
+              "name": "Journal",
               "descendants": {
                 "t893f": {
-                  "content": "SHOP"
+                  "content": "JOURNAL"
                 }
               }
             }
@@ -8111,460 +7888,231 @@
         },
         {
           "type": "frame",
-          "id": "i6s9yM",
+          "id": "CKTD2",
           "name": "Main",
           "width": "fill_container",
           "layout": "vertical",
-          "gap": "$space-block",
           "padding": [
             "$space-section",
             "$layout-margin"
           ],
+          "alignItems": "center",
           "children": [
             {
-              "id": "safSX",
-              "type": "ref",
-              "ref": "g7uira",
-              "name": "Intro",
-              "width": "fill_container",
-              "descendants": {
-                "z9frDW": {
-                  "content": "ORIGINALS"
-                },
-                "SqBTJ": {
-                  "content": "Drawing is thinking, framed."
-                },
-                "zSXuD": {
-                  "content": "One-of-a-kind acrylic and ink works on paper, 22″ × 30″. Checkout is handled securely through Stripe — each piece ships once, direct from the studio."
-                }
-              }
-            },
-            {
               "type": "frame",
-              "id": "gLiyi",
-              "name": "Filter Bar",
-              "width": "fill_container",
-              "gap": "$scale-300",
-              "justifyContent": "space_between",
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "q2BImr",
-                  "name": "Filters",
-                  "gap": "$scale-200",
-                  "alignItems": "center",
-                  "children": [
-                    {
-                      "id": "upXcO",
-                      "type": "ref",
-                      "ref": "XZAZJ",
-                      "name": "All",
-                      "descendants": {
-                        "NxJmd": {
-                          "content": "ALL"
-                        }
-                      }
-                    },
-                    {
-                      "id": "Ruys2",
-                      "type": "ref",
-                      "ref": "geYri",
-                      "name": "Signature Work",
-                      "descendants": {
-                        "SAIpz": {
-                          "content": "SIGNATURE WORK"
-                        }
-                      }
-                    },
-                    {
-                      "id": "M8gW5t",
-                      "type": "ref",
-                      "ref": "geYri",
-                      "name": "Acrylic",
-                      "descendants": {
-                        "SAIpz": {
-                          "content": "ACRYLIC"
-                        }
-                      }
-                    },
-                    {
-                      "id": "A1REoe",
-                      "type": "ref",
-                      "ref": "geYri",
-                      "name": "Ink",
-                      "descendants": {
-                        "SAIpz": {
-                          "content": "INK"
-                        }
-                      }
-                    }
-                  ]
-                },
-                {
-                  "type": "text",
-                  "id": "d32HD",
-                  "name": "Count",
-                  "fill": "$text-muted",
-                  "content": "10 pieces",
-                  "lineHeight": "$type-body2-line-height",
-                  "fontFamily": "$font-body",
-                  "fontSize": "$type-body2-size",
-                  "fontWeight": "normal",
-                  "letterSpacing": "$type-body2-letter-spacing"
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "h2TEEU",
-              "name": "Product Grid",
+              "id": "lCoFK",
+              "name": "Column",
               "width": "fill_container",
               "layout": "vertical",
-              "gap": "$space-block",
+              "gap": 40,
               "children": [
                 {
-                  "type": "frame",
-                  "id": "tthEz",
-                  "name": "Row 1",
+                  "id": "WsVx5",
+                  "type": "ref",
+                  "ref": "g7uira",
+                  "name": "Intro",
                   "width": "fill_container",
-                  "gap": "$layout-gutter",
-                  "children": [
-                    {
-                      "id": "F3O0V",
-                      "type": "ref",
-                      "ref": "z8b9d",
-                      "name": "Tuner",
-                      "width": "fill_container",
-                      "descendants": {
-                        "FNrk8": {
-                          "height": 436,
-                          "fill": [
-                            "$surface-subtle",
-                            {
-                              "type": "image",
-                              "enabled": true,
-                              "url": "products/tuner/cover.jpg",
-                              "mode": "cover"
-                            }
-                          ]
-                        },
-                        "C9426P": {
-                          "enabled": false
-                        },
-                        "rRRJn": {
-                          "content": "Tuner"
-                        },
-                        "FhZKD": {
-                          "content": "$250 · 22″ × 30″ · Acrylic on paper"
-                        }
-                      }
+                  "descendants": {
+                    "z9frDW": {
+                      "content": "JOURNAL"
                     },
-                    {
-                      "id": "JkysT",
-                      "type": "ref",
-                      "ref": "z8b9d",
-                      "name": "Waffle",
-                      "width": "fill_container",
-                      "descendants": {
-                        "FNrk8": {
-                          "height": 436,
-                          "fill": [
-                            "$surface-subtle",
-                            {
-                              "type": "image",
-                              "enabled": true,
-                              "url": "products/waffle/cover.jpg",
-                              "mode": "cover"
-                            }
-                          ]
-                        },
-                        "C9426P": {
-                          "enabled": false
-                        },
-                        "rRRJn": {
-                          "content": "Waffle"
-                        },
-                        "FhZKD": {
-                          "content": "$200 · 22″ × 30″ · Acrylic on paper"
-                        }
-                      }
+                    "SqBTJ": {
+                      "content": "Keep Going Sketchbook"
+                    },
+                    "zSXuD": {
+                      "content": "An open creative journal."
                     }
-                  ]
+                  }
                 },
                 {
                   "type": "frame",
-                  "id": "P3Oty",
-                  "name": "Row 2",
+                  "id": "BGZ5x",
+                  "name": "Entry List",
                   "width": "fill_container",
-                  "gap": "$layout-gutter",
+                  "layout": "vertical",
                   "children": [
                     {
-                      "id": "s5P9yj",
-                      "type": "ref",
-                      "ref": "z8b9d",
-                      "name": "Revelation",
+                      "type": "frame",
+                      "id": "Xjiza",
+                      "name": "Entry — Hello, out loud",
                       "width": "fill_container",
-                      "descendants": {
-                        "FNrk8": {
-                          "height": 436,
-                          "fill": [
-                            "$surface-subtle",
-                            {
-                              "type": "image",
-                              "enabled": true,
-                              "url": "products/revelation/cover.jpg",
-                              "mode": "cover"
-                            }
-                          ]
+                      "stroke": "$border-default",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "strokeAlignment": "inner",
+                      "layout": "vertical",
+                      "gap": "$scale-200",
+                      "padding": [
+                        "$scale-600",
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "o0my8",
+                          "name": "Date",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "SEP 27, 2026",
+                          "lineHeight": "$type-eyebrow3-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-eyebrow3-size",
+                          "fontWeight": "500",
+                          "letterSpacing": "$type-eyebrow3-letter-spacing"
                         },
-                        "C9426P": {
-                          "enabled": false
+                        {
+                          "type": "text",
+                          "id": "SxdSr",
+                          "name": "Title",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Hello, out loud",
+                          "lineHeight": "$type-h4-line-height",
+                          "fontFamily": "$font-heading",
+                          "fontSize": "$type-h4-size",
+                          "fontWeight": "700",
+                          "letterSpacing": "$type-h4-letter-spacing"
                         },
-                        "rRRJn": {
-                          "content": "Revelation"
-                        },
-                        "FhZKD": {
-                          "content": "$200 · 22″ × 30″ · Ink on paper"
+                        {
+                          "type": "text",
+                          "id": "cx3JG",
+                          "name": "Description",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "The first entry — why this journal exists and what Dream Out Loud means to me.",
+                          "lineHeight": "$type-p3-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-p3-size",
+                          "fontWeight": "normal",
+                          "letterSpacing": "$type-p3-letter-spacing"
                         }
-                      }
+                      ]
                     },
                     {
-                      "id": "HkakL",
-                      "type": "ref",
-                      "ref": "z8b9d",
-                      "name": "Orb",
+                      "type": "frame",
+                      "id": "hq69o",
+                      "name": "Entry — Post title goes here",
                       "width": "fill_container",
-                      "descendants": {
-                        "FNrk8": {
-                          "height": 436,
-                          "fill": [
-                            "$surface-subtle",
-                            {
-                              "type": "image",
-                              "enabled": true,
-                              "url": "products/orb/cover.jpg",
-                              "mode": "cover"
-                            }
-                          ]
+                      "stroke": "$border-default",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "strokeAlignment": "inner",
+                      "layout": "vertical",
+                      "gap": "$scale-200",
+                      "padding": [
+                        "$scale-600",
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "C41tw",
+                          "name": "Date",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "SEP 20, 2026",
+                          "lineHeight": "$type-eyebrow3-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-eyebrow3-size",
+                          "fontWeight": "500",
+                          "letterSpacing": "$type-eyebrow3-letter-spacing"
                         },
-                        "C9426P": {
-                          "enabled": false
+                        {
+                          "type": "text",
+                          "id": "xxLqe",
+                          "name": "Title",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Post title goes here",
+                          "lineHeight": "$type-h4-line-height",
+                          "fontFamily": "$font-heading",
+                          "fontSize": "$type-h4-size",
+                          "fontWeight": "700",
+                          "letterSpacing": "$type-h4-letter-spacing"
                         },
-                        "rRRJn": {
-                          "content": "Orb"
-                        },
-                        "FhZKD": {
-                          "content": "$200 · 22″ × 30″ · Acrylic on paper"
+                        {
+                          "type": "text",
+                          "id": "Ypeqe",
+                          "name": "Description",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "A short description of the entry, enough to tell the reader what it is about and why it is worth opening.",
+                          "lineHeight": "$type-p3-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-p3-size",
+                          "fontWeight": "normal",
+                          "letterSpacing": "$type-p3-letter-spacing"
                         }
-                      }
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "mlwEo",
-                  "name": "Row 3",
-                  "width": "fill_container",
-                  "gap": "$layout-gutter",
-                  "children": [
-                    {
-                      "id": "e01Cs",
-                      "type": "ref",
-                      "ref": "z8b9d",
-                      "name": "Lighthouse",
-                      "width": "fill_container",
-                      "descendants": {
-                        "FNrk8": {
-                          "height": 436,
-                          "fill": [
-                            "$surface-subtle",
-                            {
-                              "type": "image",
-                              "enabled": true,
-                              "url": "products/lighthouse/cover.jpg",
-                              "mode": "cover"
-                            }
-                          ]
-                        },
-                        "C9426P": {
-                          "enabled": false
-                        },
-                        "rRRJn": {
-                          "content": "Lighthouse"
-                        },
-                        "FhZKD": {
-                          "content": "$250 · 22″ × 30″ · Ink on paper"
-                        }
-                      }
+                      ]
                     },
                     {
-                      "id": "JKYMP",
-                      "type": "ref",
-                      "ref": "z8b9d",
-                      "name": "Flower",
+                      "type": "frame",
+                      "id": "yQtd2",
+                      "name": "Entry — Another sketchbook entry",
                       "width": "fill_container",
-                      "descendants": {
-                        "FNrk8": {
-                          "height": 436,
-                          "fill": [
-                            "$surface-subtle",
-                            {
-                              "type": "image",
-                              "enabled": true,
-                              "url": "products/flower/cover.jpg",
-                              "mode": "cover"
-                            }
-                          ]
+                      "stroke": "$border-default",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "strokeAlignment": "inner",
+                      "layout": "vertical",
+                      "gap": "$scale-200",
+                      "padding": [
+                        "$scale-600",
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "W20Z9",
+                          "name": "Date",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "SEP 13, 2026",
+                          "lineHeight": "$type-eyebrow3-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-eyebrow3-size",
+                          "fontWeight": "500",
+                          "letterSpacing": "$type-eyebrow3-letter-spacing"
                         },
-                        "C9426P": {
-                          "enabled": false
+                        {
+                          "type": "text",
+                          "id": "GA5p8",
+                          "name": "Title",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Another sketchbook entry",
+                          "lineHeight": "$type-h4-line-height",
+                          "fontFamily": "$font-heading",
+                          "fontSize": "$type-h4-size",
+                          "fontWeight": "700",
+                          "letterSpacing": "$type-h4-letter-spacing"
                         },
-                        "rRRJn": {
-                          "content": "Flower"
-                        },
-                        "FhZKD": {
-                          "content": "$200 · 22″ × 30″ · Acrylic on paper"
+                        {
+                          "type": "text",
+                          "id": "qj31J",
+                          "name": "Description",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "A short description of the entry, enough to tell the reader what it is about and why it is worth opening.",
+                          "lineHeight": "$type-p3-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-p3-size",
+                          "fontWeight": "normal",
+                          "letterSpacing": "$type-p3-letter-spacing"
                         }
-                      }
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "UknkP",
-                  "name": "Row 4",
-                  "width": "fill_container",
-                  "gap": "$layout-gutter",
-                  "children": [
-                    {
-                      "id": "I3j5Rg",
-                      "type": "ref",
-                      "ref": "z8b9d",
-                      "name": "Dude",
-                      "width": "fill_container",
-                      "descendants": {
-                        "FNrk8": {
-                          "height": 436,
-                          "fill": [
-                            "$surface-subtle",
-                            {
-                              "type": "image",
-                              "enabled": true,
-                              "url": "products/dude/cover.jpg",
-                              "mode": "cover"
-                            }
-                          ]
-                        },
-                        "C9426P": {
-                          "enabled": false
-                        },
-                        "rRRJn": {
-                          "content": "Dude"
-                        },
-                        "FhZKD": {
-                          "content": "$200 · 22″ × 30″ · Acrylic on paper"
-                        }
-                      }
-                    },
-                    {
-                      "id": "rzI5s",
-                      "type": "ref",
-                      "ref": "z8b9d",
-                      "name": "Driver",
-                      "width": "fill_container",
-                      "descendants": {
-                        "FNrk8": {
-                          "height": 436,
-                          "fill": [
-                            "$surface-subtle",
-                            {
-                              "type": "image",
-                              "enabled": true,
-                              "url": "products/driver/cover.jpg",
-                              "mode": "cover"
-                            }
-                          ]
-                        },
-                        "C9426P": {
-                          "enabled": false
-                        },
-                        "rRRJn": {
-                          "content": "Driver"
-                        },
-                        "FhZKD": {
-                          "content": "$250 · 22″ × 30″ · Acrylic on paper"
-                        }
-                      }
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "CkD17",
-                  "name": "Row 5",
-                  "width": "fill_container",
-                  "gap": "$layout-gutter",
-                  "children": [
-                    {
-                      "id": "ybBEq",
-                      "type": "ref",
-                      "ref": "z8b9d",
-                      "name": "Creature",
-                      "width": "fill_container",
-                      "descendants": {
-                        "FNrk8": {
-                          "height": 436,
-                          "fill": [
-                            "$surface-subtle",
-                            {
-                              "type": "image",
-                              "enabled": true,
-                              "url": "products/creature/cover.jpg",
-                              "mode": "cover"
-                            }
-                          ]
-                        },
-                        "C9426P": {
-                          "enabled": false
-                        },
-                        "rRRJn": {
-                          "content": "Creature"
-                        },
-                        "FhZKD": {
-                          "content": "$200 · 22″ × 30″ · Acrylic on paper"
-                        }
-                      }
-                    },
-                    {
-                      "id": "nvmmd",
-                      "type": "ref",
-                      "ref": "z8b9d",
-                      "name": "Road Trip",
-                      "width": "fill_container",
-                      "descendants": {
-                        "FNrk8": {
-                          "height": 436,
-                          "fill": [
-                            "$surface-subtle",
-                            {
-                              "type": "image",
-                              "enabled": true,
-                              "url": "products/road-trip/cover.jpg",
-                              "mode": "cover"
-                            }
-                          ]
-                        },
-                        "C9426P": {
-                          "enabled": false
-                        },
-                        "rRRJn": {
-                          "content": "Road Trip"
-                        },
-                        "FhZKD": {
-                          "content": "$250 · 22″ × 30″ · Acrylic on paper"
-                        }
-                      }
+                      ]
                     }
                   ]
                 }
@@ -8573,7 +8121,7 @@
           ]
         },
         {
-          "id": "WWUtD",
+          "id": "n4S5nK",
           "type": "ref",
           "ref": "E6haZ",
           "name": "Footer",
@@ -8583,10 +8131,10 @@
     },
     {
       "type": "frame",
-      "id": "oj46i",
+      "id": "k5EJ8W",
       "x": -450,
-      "y": -2600,
-      "name": "Shop — Mobile (390)",
+      "y": 1600,
+      "name": "Journal — Mobile (390)",
       "theme": {
         "mode": "light",
         "device": "mobile"
@@ -8597,14 +8145,14 @@
       "layout": "vertical",
       "children": [
         {
-          "id": "Tpaom",
+          "id": "f49AF3",
           "type": "ref",
           "ref": "S5OtQe",
           "name": "Header",
           "width": "fill_container",
           "descendants": {
             "oekhv": {
-              "id": "B4Kve",
+              "id": "d0zGjn",
               "type": "ref",
               "ref": "eFsWC",
               "name": "Recent",
@@ -8614,14 +8162,14 @@
                 }
               }
             },
-            "LglH1": {
-              "id": "Wn5aa",
+            "S5GGB": {
+              "id": "g034jt",
               "type": "ref",
               "ref": "MusDs",
-              "name": "Shop",
+              "name": "Journal",
               "descendants": {
                 "t893f": {
-                  "content": "SHOP"
+                  "content": "JOURNAL"
                 }
               }
             }
@@ -8629,459 +8177,231 @@
         },
         {
           "type": "frame",
-          "id": "PpSVL",
+          "id": "FMZBZ",
           "name": "Main",
           "width": "fill_container",
           "layout": "vertical",
-          "gap": "$space-block",
           "padding": [
             "$space-section",
             "$layout-margin"
           ],
+          "alignItems": "center",
           "children": [
             {
-              "id": "UUwVR",
-              "type": "ref",
-              "ref": "g7uira",
-              "name": "Intro",
-              "width": "fill_container",
-              "descendants": {
-                "z9frDW": {
-                  "content": "ORIGINALS"
-                },
-                "SqBTJ": {
-                  "content": "Drawing is thinking, framed."
-                },
-                "zSXuD": {
-                  "content": "One-of-a-kind acrylic and ink works on paper, 22″ × 30″. Checkout is handled securely through Stripe — each piece ships once, direct from the studio."
-                }
-              }
-            },
-            {
               "type": "frame",
-              "id": "H1rVo9",
-              "name": "Filter Bar",
+              "id": "kuoQ3",
+              "name": "Column",
               "width": "fill_container",
               "layout": "vertical",
-              "gap": "$scale-300",
+              "gap": 40,
               "children": [
                 {
-                  "type": "frame",
-                  "id": "X6QkMK",
-                  "name": "Filters",
-                  "gap": "$scale-200",
-                  "alignItems": "center",
-                  "children": [
-                    {
-                      "id": "rqThn",
-                      "type": "ref",
-                      "ref": "XZAZJ",
-                      "name": "All",
-                      "descendants": {
-                        "NxJmd": {
-                          "content": "ALL"
-                        }
-                      }
-                    },
-                    {
-                      "id": "od5Ih",
-                      "type": "ref",
-                      "ref": "geYri",
-                      "name": "Signature Work",
-                      "descendants": {
-                        "SAIpz": {
-                          "content": "SIGNATURE WORK"
-                        }
-                      }
-                    },
-                    {
-                      "id": "TjPsU",
-                      "type": "ref",
-                      "ref": "geYri",
-                      "name": "Acrylic",
-                      "descendants": {
-                        "SAIpz": {
-                          "content": "ACRYLIC"
-                        }
-                      }
-                    },
-                    {
-                      "id": "YuW9H",
-                      "type": "ref",
-                      "ref": "geYri",
-                      "name": "Ink",
-                      "descendants": {
-                        "SAIpz": {
-                          "content": "INK"
-                        }
-                      }
-                    }
-                  ]
-                },
-                {
-                  "type": "text",
-                  "id": "olh91",
-                  "name": "Count",
-                  "fill": "$text-muted",
-                  "content": "10 pieces",
-                  "lineHeight": "$type-body2-line-height",
-                  "fontFamily": "$font-body",
-                  "fontSize": "$type-body2-size",
-                  "fontWeight": "normal",
-                  "letterSpacing": "$type-body2-letter-spacing"
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "DDIcl",
-              "name": "Product Grid",
-              "width": "fill_container",
-              "layout": "vertical",
-              "gap": "$space-block",
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "OAYdR",
-                  "name": "Row 1",
+                  "id": "DmMEr",
+                  "type": "ref",
+                  "ref": "g7uira",
+                  "name": "Intro",
                   "width": "fill_container",
-                  "gap": "$layout-gutter",
-                  "children": [
-                    {
-                      "id": "z9iYoU",
-                      "type": "ref",
-                      "ref": "z8b9d",
-                      "name": "Tuner",
-                      "width": "fill_container",
-                      "descendants": {
-                        "FNrk8": {
-                          "height": 204,
-                          "fill": [
-                            "$surface-subtle",
-                            {
-                              "type": "image",
-                              "enabled": true,
-                              "url": "products/tuner/cover.jpg",
-                              "mode": "cover"
-                            }
-                          ]
-                        },
-                        "C9426P": {
-                          "enabled": false
-                        },
-                        "rRRJn": {
-                          "content": "Tuner"
-                        },
-                        "FhZKD": {
-                          "content": "$250 · 22″ × 30″ · Acrylic on paper"
-                        }
-                      }
+                  "descendants": {
+                    "z9frDW": {
+                      "content": "JOURNAL"
                     },
-                    {
-                      "id": "C9E641",
-                      "type": "ref",
-                      "ref": "z8b9d",
-                      "name": "Waffle",
-                      "width": "fill_container",
-                      "descendants": {
-                        "FNrk8": {
-                          "height": 204,
-                          "fill": [
-                            "$surface-subtle",
-                            {
-                              "type": "image",
-                              "enabled": true,
-                              "url": "products/waffle/cover.jpg",
-                              "mode": "cover"
-                            }
-                          ]
-                        },
-                        "C9426P": {
-                          "enabled": false
-                        },
-                        "rRRJn": {
-                          "content": "Waffle"
-                        },
-                        "FhZKD": {
-                          "content": "$200 · 22″ × 30″ · Acrylic on paper"
-                        }
-                      }
+                    "SqBTJ": {
+                      "content": "Keep Going Sketchbook"
+                    },
+                    "zSXuD": {
+                      "content": "An open creative journal."
                     }
-                  ]
+                  }
                 },
                 {
                   "type": "frame",
-                  "id": "sefbc",
-                  "name": "Row 2",
+                  "id": "sKcvU",
+                  "name": "Entry List",
                   "width": "fill_container",
-                  "gap": "$layout-gutter",
+                  "layout": "vertical",
                   "children": [
                     {
-                      "id": "GNSbO",
-                      "type": "ref",
-                      "ref": "z8b9d",
-                      "name": "Revelation",
+                      "type": "frame",
+                      "id": "JR0w7",
+                      "name": "Entry — Hello, out loud",
                       "width": "fill_container",
-                      "descendants": {
-                        "FNrk8": {
-                          "height": 204,
-                          "fill": [
-                            "$surface-subtle",
-                            {
-                              "type": "image",
-                              "enabled": true,
-                              "url": "products/revelation/cover.jpg",
-                              "mode": "cover"
-                            }
-                          ]
+                      "stroke": "$border-default",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "strokeAlignment": "inner",
+                      "layout": "vertical",
+                      "gap": "$scale-200",
+                      "padding": [
+                        "$scale-600",
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "eqchw",
+                          "name": "Date",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "SEP 27, 2026",
+                          "lineHeight": "$type-eyebrow3-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-eyebrow3-size",
+                          "fontWeight": "500",
+                          "letterSpacing": "$type-eyebrow3-letter-spacing"
                         },
-                        "C9426P": {
-                          "enabled": false
+                        {
+                          "type": "text",
+                          "id": "EYLPu",
+                          "name": "Title",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Hello, out loud",
+                          "lineHeight": "$type-h4-line-height",
+                          "fontFamily": "$font-heading",
+                          "fontSize": "$type-h4-size",
+                          "fontWeight": "700",
+                          "letterSpacing": "$type-h4-letter-spacing"
                         },
-                        "rRRJn": {
-                          "content": "Revelation"
-                        },
-                        "FhZKD": {
-                          "content": "$200 · 22″ × 30″ · Ink on paper"
+                        {
+                          "type": "text",
+                          "id": "HFeKd",
+                          "name": "Description",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "The first entry — why this journal exists and what Dream Out Loud means to me.",
+                          "lineHeight": "$type-p3-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-p3-size",
+                          "fontWeight": "normal",
+                          "letterSpacing": "$type-p3-letter-spacing"
                         }
-                      }
+                      ]
                     },
                     {
-                      "id": "un6dt",
-                      "type": "ref",
-                      "ref": "z8b9d",
-                      "name": "Orb",
+                      "type": "frame",
+                      "id": "EXakH",
+                      "name": "Entry — Post title goes here",
                       "width": "fill_container",
-                      "descendants": {
-                        "FNrk8": {
-                          "height": 204,
-                          "fill": [
-                            "$surface-subtle",
-                            {
-                              "type": "image",
-                              "enabled": true,
-                              "url": "products/orb/cover.jpg",
-                              "mode": "cover"
-                            }
-                          ]
+                      "stroke": "$border-default",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "strokeAlignment": "inner",
+                      "layout": "vertical",
+                      "gap": "$scale-200",
+                      "padding": [
+                        "$scale-600",
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "V4Hnf",
+                          "name": "Date",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "SEP 20, 2026",
+                          "lineHeight": "$type-eyebrow3-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-eyebrow3-size",
+                          "fontWeight": "500",
+                          "letterSpacing": "$type-eyebrow3-letter-spacing"
                         },
-                        "C9426P": {
-                          "enabled": false
+                        {
+                          "type": "text",
+                          "id": "hfkM0",
+                          "name": "Title",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Post title goes here",
+                          "lineHeight": "$type-h4-line-height",
+                          "fontFamily": "$font-heading",
+                          "fontSize": "$type-h4-size",
+                          "fontWeight": "700",
+                          "letterSpacing": "$type-h4-letter-spacing"
                         },
-                        "rRRJn": {
-                          "content": "Orb"
-                        },
-                        "FhZKD": {
-                          "content": "$200 · 22″ × 30″ · Acrylic on paper"
+                        {
+                          "type": "text",
+                          "id": "CXnIg",
+                          "name": "Description",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "A short description of the entry, enough to tell the reader what it is about and why it is worth opening.",
+                          "lineHeight": "$type-p3-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-p3-size",
+                          "fontWeight": "normal",
+                          "letterSpacing": "$type-p3-letter-spacing"
                         }
-                      }
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "UwAU3",
-                  "name": "Row 3",
-                  "width": "fill_container",
-                  "gap": "$layout-gutter",
-                  "children": [
-                    {
-                      "id": "hDJvS",
-                      "type": "ref",
-                      "ref": "z8b9d",
-                      "name": "Lighthouse",
-                      "width": "fill_container",
-                      "descendants": {
-                        "FNrk8": {
-                          "height": 204,
-                          "fill": [
-                            "$surface-subtle",
-                            {
-                              "type": "image",
-                              "enabled": true,
-                              "url": "products/lighthouse/cover.jpg",
-                              "mode": "cover"
-                            }
-                          ]
-                        },
-                        "C9426P": {
-                          "enabled": false
-                        },
-                        "rRRJn": {
-                          "content": "Lighthouse"
-                        },
-                        "FhZKD": {
-                          "content": "$250 · 22″ × 30″ · Ink on paper"
-                        }
-                      }
+                      ]
                     },
                     {
-                      "id": "H97vW",
-                      "type": "ref",
-                      "ref": "z8b9d",
-                      "name": "Flower",
+                      "type": "frame",
+                      "id": "FwCCt",
+                      "name": "Entry — Another sketchbook entry",
                       "width": "fill_container",
-                      "descendants": {
-                        "FNrk8": {
-                          "height": 204,
-                          "fill": [
-                            "$surface-subtle",
-                            {
-                              "type": "image",
-                              "enabled": true,
-                              "url": "products/flower/cover.jpg",
-                              "mode": "cover"
-                            }
-                          ]
+                      "stroke": "$border-default",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "strokeAlignment": "inner",
+                      "layout": "vertical",
+                      "gap": "$scale-200",
+                      "padding": [
+                        "$scale-600",
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Ks9px",
+                          "name": "Date",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "SEP 13, 2026",
+                          "lineHeight": "$type-eyebrow3-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-eyebrow3-size",
+                          "fontWeight": "500",
+                          "letterSpacing": "$type-eyebrow3-letter-spacing"
                         },
-                        "C9426P": {
-                          "enabled": false
+                        {
+                          "type": "text",
+                          "id": "PukR2",
+                          "name": "Title",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Another sketchbook entry",
+                          "lineHeight": "$type-h4-line-height",
+                          "fontFamily": "$font-heading",
+                          "fontSize": "$type-h4-size",
+                          "fontWeight": "700",
+                          "letterSpacing": "$type-h4-letter-spacing"
                         },
-                        "rRRJn": {
-                          "content": "Flower"
-                        },
-                        "FhZKD": {
-                          "content": "$200 · 22″ × 30″ · Acrylic on paper"
+                        {
+                          "type": "text",
+                          "id": "h21sD",
+                          "name": "Description",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "A short description of the entry, enough to tell the reader what it is about and why it is worth opening.",
+                          "lineHeight": "$type-p3-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-p3-size",
+                          "fontWeight": "normal",
+                          "letterSpacing": "$type-p3-letter-spacing"
                         }
-                      }
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "Q3fHF6",
-                  "name": "Row 4",
-                  "width": "fill_container",
-                  "gap": "$layout-gutter",
-                  "children": [
-                    {
-                      "id": "Ilycv",
-                      "type": "ref",
-                      "ref": "z8b9d",
-                      "name": "Dude",
-                      "width": "fill_container",
-                      "descendants": {
-                        "FNrk8": {
-                          "height": 204,
-                          "fill": [
-                            "$surface-subtle",
-                            {
-                              "type": "image",
-                              "enabled": true,
-                              "url": "products/dude/cover.jpg",
-                              "mode": "cover"
-                            }
-                          ]
-                        },
-                        "C9426P": {
-                          "enabled": false
-                        },
-                        "rRRJn": {
-                          "content": "Dude"
-                        },
-                        "FhZKD": {
-                          "content": "$200 · 22″ × 30″ · Acrylic on paper"
-                        }
-                      }
-                    },
-                    {
-                      "id": "oq4sq",
-                      "type": "ref",
-                      "ref": "z8b9d",
-                      "name": "Driver",
-                      "width": "fill_container",
-                      "descendants": {
-                        "FNrk8": {
-                          "height": 204,
-                          "fill": [
-                            "$surface-subtle",
-                            {
-                              "type": "image",
-                              "enabled": true,
-                              "url": "products/driver/cover.jpg",
-                              "mode": "cover"
-                            }
-                          ]
-                        },
-                        "C9426P": {
-                          "enabled": false
-                        },
-                        "rRRJn": {
-                          "content": "Driver"
-                        },
-                        "FhZKD": {
-                          "content": "$250 · 22″ × 30″ · Acrylic on paper"
-                        }
-                      }
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "LAXS9",
-                  "name": "Row 5",
-                  "width": "fill_container",
-                  "gap": "$layout-gutter",
-                  "children": [
-                    {
-                      "id": "xvIFp",
-                      "type": "ref",
-                      "ref": "z8b9d",
-                      "name": "Creature",
-                      "width": "fill_container",
-                      "descendants": {
-                        "FNrk8": {
-                          "height": 204,
-                          "fill": [
-                            "$surface-subtle",
-                            {
-                              "type": "image",
-                              "enabled": true,
-                              "url": "products/creature/cover.jpg",
-                              "mode": "cover"
-                            }
-                          ]
-                        },
-                        "C9426P": {
-                          "enabled": false
-                        },
-                        "rRRJn": {
-                          "content": "Creature"
-                        },
-                        "FhZKD": {
-                          "content": "$200 · 22″ × 30″ · Acrylic on paper"
-                        }
-                      }
-                    },
-                    {
-                      "id": "oVpZw",
-                      "type": "ref",
-                      "ref": "z8b9d",
-                      "name": "Road Trip",
-                      "width": "fill_container",
-                      "descendants": {
-                        "FNrk8": {
-                          "height": 204,
-                          "fill": [
-                            "$surface-subtle",
-                            {
-                              "type": "image",
-                              "enabled": true,
-                              "url": "products/road-trip/cover.jpg",
-                              "mode": "cover"
-                            }
-                          ]
-                        },
-                        "C9426P": {
-                          "enabled": false
-                        },
-                        "rRRJn": {
-                          "content": "Road Trip"
-                        },
-                        "FhZKD": {
-                          "content": "$250 · 22″ × 30″ · Acrylic on paper"
-                        }
-                      }
+                      ]
                     }
                   ]
                 }
@@ -9090,7 +8410,7 @@
           ]
         },
         {
-          "id": "xVXO0",
+          "id": "ATfu7",
           "type": "ref",
           "ref": "E6haZ",
           "name": "Footer",
@@ -9112,11 +8432,22 @@
       ]
     },
     {
-      "type": "frame",
-      "id": "FfcEt",
+      "type": "text",
+      "id": "T0hbG",
       "x": 509,
-      "y": -2590,
-      "name": "Product — Tuner — Desktop (1200)",
+      "y": 1038,
+      "fill": "#ffffff",
+      "content": "Journal Entry",
+      "fontFamily": "Inter",
+      "fontSize": 200,
+      "fontWeight": "700"
+    },
+    {
+      "type": "frame",
+      "id": "n787B",
+      "x": 509,
+      "y": 1600,
+      "name": "Journal Entry — Hello, out loud — Desktop (1200)",
       "theme": {
         "mode": "light",
         "device": "desktop"
@@ -9127,14 +8458,14 @@
       "layout": "vertical",
       "children": [
         {
-          "id": "j71Zw0",
+          "id": "TQmE7",
           "type": "ref",
           "ref": "S5OtQe",
           "name": "Header",
           "width": "fill_container",
           "descendants": {
             "oekhv": {
-              "id": "J98VNe",
+              "id": "X3FWrP",
               "type": "ref",
               "ref": "eFsWC",
               "name": "Recent",
@@ -9144,14 +8475,14 @@
                 }
               }
             },
-            "LglH1": {
-              "id": "VRov0",
+            "S5GGB": {
+              "id": "YPGV5",
               "type": "ref",
               "ref": "MusDs",
-              "name": "Shop",
+              "name": "Journal",
               "descendants": {
                 "t893f": {
-                  "content": "SHOP"
+                  "content": "JOURNAL"
                 }
               }
             }
@@ -9159,174 +8490,74 @@
         },
         {
           "type": "frame",
-          "id": "hnUkc",
+          "id": "RrIKp",
           "name": "Main",
           "width": "fill_container",
           "layout": "vertical",
-          "gap": "$space-block",
           "padding": [
             "$space-block",
             "$layout-margin",
             "$space-section",
             "$layout-margin"
           ],
+          "alignItems": "center",
           "children": [
             {
               "type": "frame",
-              "id": "v4OLd",
-              "name": "Breadcrumb",
-              "gap": "$scale-200",
-              "alignItems": "center",
-              "children": [
-                {
-                  "id": "fYlvE",
-                  "type": "ref",
-                  "ref": "HXmMz",
-                  "name": "Crumb Shop",
-                  "descendants": {
-                    "BSi7m": {
-                      "content": "Shop"
-                    },
-                    "J9QJBi": {
-                      "enabled": false
-                    }
-                  }
-                },
-                {
-                  "type": "text",
-                  "id": "fZJCh",
-                  "name": "Crumb Sep",
-                  "fill": "$text-muted",
-                  "content": "/",
-                  "lineHeight": "$type-body2-line-height",
-                  "fontFamily": "$font-body",
-                  "fontSize": "$type-body2-size",
-                  "fontWeight": "normal",
-                  "letterSpacing": "$type-body2-letter-spacing"
-                },
-                {
-                  "type": "text",
-                  "id": "TK76Y",
-                  "name": "Crumb Current",
-                  "fill": "$text-default",
-                  "content": "Tuner",
-                  "lineHeight": "$type-body2-line-height",
-                  "fontFamily": "$font-body",
-                  "fontSize": "$type-body2-size",
-                  "fontWeight": "normal",
-                  "letterSpacing": "$type-body2-letter-spacing"
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "TFXcj",
-              "name": "Product Layout",
-              "width": "fill_container",
-              "gap": "$space-block",
+              "id": "k4upK",
+              "name": "Content",
+              "width": 900,
+              "gap": 24,
               "children": [
                 {
                   "type": "frame",
-                  "id": "UBbOl",
-                  "name": "Gallery",
-                  "width": 600,
+                  "id": "X8BRGh",
+                  "name": "Img Container",
                   "layout": "vertical",
-                  "gap": "$scale-300",
+                  "gap": 10,
+                  "padding": [
+                    40,
+                    0,
+                    0,
+                    0
+                  ],
                   "children": [
                     {
                       "type": "frame",
-                      "id": "BRsGt",
-                      "name": "Stage",
+                      "id": "DmhAB",
+                      "name": "Img",
                       "clip": true,
-                      "width": "fill_container",
-                      "height": 750,
-                      "fill": [
-                        "$surface-subtle",
-                        {
-                          "type": "image",
-                          "enabled": true,
-                          "url": "products/tuner/cover.jpg",
-                          "mode": "cover"
-                        }
-                      ],
-                      "cornerRadius": "$radius-lg"
-                    },
-                    {
-                      "type": "frame",
-                      "id": "XdPFV",
-                      "name": "Thumbnails",
-                      "gap": "$scale-300",
-                      "children": [
-                        {
-                          "type": "frame",
-                          "id": "OtsZs",
-                          "name": "Thumb 1 (current)",
-                          "clip": true,
-                          "width": 72,
-                          "height": 72,
-                          "fill": [
-                            "$surface-subtle",
-                            {
-                              "type": "image",
-                              "enabled": true,
-                              "url": "products/tuner/cover.jpg",
-                              "mode": "cover"
-                            }
-                          ],
-                          "cornerRadius": "$radius-md",
-                          "stroke": "$border-emphasis",
-                          "strokeWidth": 2,
-                          "strokeAlignment": "inner"
-                        },
-                        {
-                          "type": "frame",
-                          "id": "v6U1e",
-                          "name": "Thumb 2",
-                          "clip": true,
-                          "width": 72,
-                          "height": 72,
-                          "fill": [
-                            "$surface-subtle",
-                            {
-                              "type": "image",
-                              "enabled": true,
-                              "url": "products/tuner/photo.jpg",
-                              "mode": "cover"
-                            }
-                          ],
-                          "cornerRadius": "$radius-md",
-                          "stroke": "$border-default",
-                          "strokeWidth": 1,
-                          "strokeAlignment": "inner"
-                        }
-                      ]
+                      "width": 240,
+                      "height": 300,
+                      "fill": "#c7c7c7ff",
+                      "layout": "none"
                     }
                   ]
                 },
                 {
                   "type": "frame",
-                  "id": "kP3Ql",
-                  "name": "Info",
+                  "id": "zMNf9",
+                  "name": "Article",
                   "width": "fill_container",
                   "layout": "vertical",
-                  "gap": "$scale-600",
+                  "gap": "$scale-800",
                   "children": [
                     {
                       "type": "frame",
-                      "id": "x0Nyos",
-                      "name": "Title Block",
+                      "id": "Rf7uE",
+                      "name": "Post Header",
                       "width": "fill_container",
                       "layout": "vertical",
-                      "gap": "$scale-200",
+                      "gap": "$space-stack",
                       "children": [
                         {
                           "type": "text",
-                          "id": "M8Usa",
-                          "name": "Eyebrow",
+                          "id": "PwNLe",
+                          "name": "Date",
                           "fill": "$text-link",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
-                          "content": "SIGNATURE WORK",
+                          "content": "SEPTEMBER 27, 2026",
                           "lineHeight": "$type-eyebrow2-line-height",
                           "fontFamily": "$font-body",
                           "fontSize": "$type-eyebrow2-size",
@@ -9335,315 +8566,80 @@
                         },
                         {
                           "type": "text",
-                          "id": "D0bvf",
-                          "name": "Name",
+                          "id": "h9qeR",
+                          "name": "Title",
                           "fill": "$text-default",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
-                          "content": "Tuner",
+                          "content": "Hello, out loud",
                           "lineHeight": "$type-h1-line-height",
                           "fontFamily": "$font-heading",
                           "fontSize": "$type-h1-size",
                           "fontWeight": "700",
                           "letterSpacing": "$type-h1-letter-spacing"
-                        },
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Molpo",
+                      "name": "Body",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 25,
+                      "children": [
                         {
                           "type": "text",
-                          "id": "pYiXn",
-                          "name": "Price",
+                          "id": "Kq47r",
+                          "name": "Paragraph 1",
                           "fill": "$text-default",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
-                          "content": "$250",
-                          "lineHeight": "$type-h4-line-height",
-                          "fontFamily": "$font-heading",
-                          "fontSize": "$type-h4-size",
-                          "fontWeight": "700",
-                          "letterSpacing": "$type-h4-letter-spacing"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "frame",
-                      "id": "vRZY5",
-                      "name": "Sticker Row",
-                      "gap": 40,
-                      "alignItems": "center",
-                      "children": [
-                        {
-                          "id": "TrVKk",
-                          "type": "ref",
-                          "ref": "Nt7oC"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "frame",
-                      "id": "X1Dmj",
-                      "name": "Specs",
-                      "width": "fill_container",
-                      "layout": "vertical",
-                      "children": [
-                        {
-                          "id": "pvxoW",
-                          "type": "ref",
-                          "ref": "GK9dQ",
-                          "name": "Divider",
-                          "width": "fill_container"
-                        },
-                        {
-                          "type": "frame",
-                          "id": "MkTA8",
-                          "name": "Size Row",
-                          "width": "fill_container",
-                          "padding": [
-                            "$scale-300",
-                            0
-                          ],
-                          "justifyContent": "space_between",
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "text",
-                              "id": "ZgDFE",
-                              "name": "Size Label",
-                              "fill": "$text-muted",
-                              "content": "Size",
-                              "lineHeight": "$type-body2-line-height",
-                              "fontFamily": "$font-body",
-                              "fontSize": "$type-body2-size",
-                              "fontWeight": "normal",
-                              "letterSpacing": "$type-body2-letter-spacing"
-                            },
-                            {
-                              "type": "text",
-                              "id": "cd9yS",
-                              "name": "Size Value",
-                              "fill": "$text-default",
-                              "content": "22″ × 30″",
-                              "lineHeight": "$type-body2-line-height",
-                              "fontFamily": "$font-body",
-                              "fontSize": "$type-body2-size",
-                              "fontWeight": "500",
-                              "letterSpacing": "$type-body2-letter-spacing"
-                            }
-                          ]
-                        },
-                        {
-                          "id": "P7gq1",
-                          "type": "ref",
-                          "ref": "GK9dQ",
-                          "name": "Divider",
-                          "width": "fill_container"
-                        },
-                        {
-                          "type": "frame",
-                          "id": "llBPN",
-                          "name": "Medium Row",
-                          "width": "fill_container",
-                          "padding": [
-                            "$scale-300",
-                            0
-                          ],
-                          "justifyContent": "space_between",
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "text",
-                              "id": "BIGyx",
-                              "name": "Medium Label",
-                              "fill": "$text-muted",
-                              "content": "Medium",
-                              "lineHeight": "$type-body2-line-height",
-                              "fontFamily": "$font-body",
-                              "fontSize": "$type-body2-size",
-                              "fontWeight": "normal",
-                              "letterSpacing": "$type-body2-letter-spacing"
-                            },
-                            {
-                              "type": "text",
-                              "id": "eTdeZ",
-                              "name": "Medium Value",
-                              "fill": "$text-default",
-                              "content": "Acrylic on paper",
-                              "lineHeight": "$type-body2-line-height",
-                              "fontFamily": "$font-body",
-                              "fontSize": "$type-body2-size",
-                              "fontWeight": "500",
-                              "letterSpacing": "$type-body2-letter-spacing"
-                            }
-                          ]
-                        },
-                        {
-                          "id": "OR2Nx",
-                          "type": "ref",
-                          "ref": "GK9dQ",
-                          "name": "Divider",
-                          "width": "fill_container"
-                        },
-                        {
-                          "type": "frame",
-                          "id": "HFg0S",
-                          "name": "Edition Row",
-                          "width": "fill_container",
-                          "padding": [
-                            "$scale-300",
-                            0
-                          ],
-                          "justifyContent": "space_between",
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "text",
-                              "id": "x3SjS5",
-                              "name": "Edition Label",
-                              "fill": "$text-muted",
-                              "content": "Edition",
-                              "lineHeight": "$type-body2-line-height",
-                              "fontFamily": "$font-body",
-                              "fontSize": "$type-body2-size",
-                              "fontWeight": "normal",
-                              "letterSpacing": "$type-body2-letter-spacing"
-                            },
-                            {
-                              "type": "text",
-                              "id": "uJoFy",
-                              "name": "Edition Value",
-                              "fill": "$text-default",
-                              "content": "One-of-a-kind original",
-                              "lineHeight": "$type-body2-line-height",
-                              "fontFamily": "$font-body",
-                              "fontSize": "$type-body2-size",
-                              "fontWeight": "500",
-                              "letterSpacing": "$type-body2-letter-spacing"
-                            }
-                          ]
-                        },
-                        {
-                          "id": "iBr0M",
-                          "type": "ref",
-                          "ref": "GK9dQ",
-                          "name": "Divider",
-                          "width": "fill_container"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "frame",
-                      "id": "omgyf",
-                      "name": "Purchase",
-                      "width": "fill_container",
-                      "layout": "vertical",
-                      "gap": "$scale-300",
-                      "children": [
-                        {
-                          "id": "zqErH",
-                          "type": "ref",
-                          "ref": "dOZxf",
-                          "name": "Buy now",
-                          "width": "fill_container",
-                          "descendants": {
-                            "wLOsh": {
-                              "content": "BUY NOW"
-                            }
-                          }
+                          "content": "This is the first post in the journal. Replace this with real writing whenever you're ready — the page and its layout are already wired up around whatever goes here.",
+                          "lineHeight": "$type-p2-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-p2-size",
+                          "fontWeight": "normal",
+                          "letterSpacing": "$type-p2-letter-spacing"
                         },
                         {
                           "type": "text",
-                          "id": "ip8uN",
-                          "name": "Note",
-                          "fill": "$text-muted",
+                          "id": "R5CrgM",
+                          "name": "Paragraph 2",
+                          "fill": "$text-default",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
-                          "content": "Checkout is handled securely through Stripe. Each piece ships once, direct from the studio.",
-                          "lineHeight": "$type-body2-line-height",
+                          "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
+                          "lineHeight": "$type-p2-line-height",
                           "fontFamily": "$font-body",
-                          "fontSize": "$type-body2-size",
+                          "fontSize": "$type-p2-size",
                           "fontWeight": "normal",
-                          "letterSpacing": "$type-body2-letter-spacing"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "frame",
-                      "id": "JyWJJ",
-                      "name": "Questions",
-                      "gap": "$scale-200",
-                      "alignItems": "center",
-                      "children": [
+                          "letterSpacing": "$type-p2-letter-spacing"
+                        },
                         {
                           "type": "text",
-                          "id": "p05hgU",
-                          "name": "Questions Label",
-                          "fill": "$text-muted",
-                          "content": "Questions?",
-                          "lineHeight": "$type-body1-line-height",
+                          "id": "sTAwF",
+                          "name": "Paragraph 3",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "A longer paragraph to show how body copy reads at full measure. Entries can run as long as they need to; the column stays at a comfortable reading width on desktop and uses the full width of the screen on tablet and phone.",
+                          "lineHeight": "$type-p2-line-height",
                           "fontFamily": "$font-body",
-                          "fontSize": "$type-body1-size",
+                          "fontSize": "$type-p2-size",
                           "fontWeight": "normal",
-                          "letterSpacing": "$type-body1-letter-spacing"
-                        },
-                        {
-                          "id": "UiakF",
-                          "type": "ref",
-                          "ref": "HXmMz",
-                          "name": "Email me",
-                          "descendants": {
-                            "BSi7m": {
-                              "content": "Email me"
-                            }
-                          }
+                          "letterSpacing": "$type-p2-letter-spacing"
                         }
                       ]
-                    },
-                    {
-                      "id": "mItv6",
-                      "type": "ref",
-                      "ref": "xAXzR",
-                      "name": "Series statement",
-                      "width": "fill_container",
-                      "descendants": {
-                        "ZIg2b": {
-                          "height": 80
-                        },
-                        "T6UuDT": {
-                          "content": "Part of the Signature Work series."
-                        }
-                      }
                     }
                   ]
                 }
               ]
-            },
-            {
-              "id": "F4c2IG",
-              "type": "ref",
-              "ref": "GK9dQ",
-              "name": "Divider",
-              "width": "fill_container"
-            },
-            {
-              "id": "bqOl1",
-              "type": "ref",
-              "ref": "zSEE8",
-              "name": "Recommendations",
-              "width": "fill_container",
-              "descendants": {
-                "p6wMh/FNrk8": {
-                  "height": 447
-                },
-                "caqKO/FNrk8": {
-                  "height": 447
-                },
-                "phQV5/FNrk8": {
-                  "height": 447
-                }
-              }
             }
           ]
         },
         {
-          "id": "u1oK1R",
+          "id": "MC5TS",
           "type": "ref",
           "ref": "E6haZ",
           "name": "Footer",
@@ -9653,10 +8649,10 @@
     },
     {
       "type": "frame",
-      "id": "wYAMJ",
+      "id": "eTWec",
       "x": 1829,
-      "y": -2590,
-      "name": "Product — Tuner — Tablet (810)",
+      "y": 1600,
+      "name": "Journal Entry — Hello, out loud — Tablet (810)",
       "theme": {
         "mode": "light",
         "device": "tablet"
@@ -9667,14 +8663,14 @@
       "layout": "vertical",
       "children": [
         {
-          "id": "VSZcz",
+          "id": "rmvaN",
           "type": "ref",
           "ref": "S5OtQe",
           "name": "Header",
           "width": "fill_container",
           "descendants": {
             "oekhv": {
-              "id": "D3SaQ",
+              "id": "LKHvH",
               "type": "ref",
               "ref": "eFsWC",
               "name": "Recent",
@@ -9684,14 +8680,14 @@
                 }
               }
             },
-            "LglH1": {
-              "id": "gCJdZ",
+            "S5GGB": {
+              "id": "vFAEG",
               "type": "ref",
               "ref": "MusDs",
-              "name": "Shop",
+              "name": "Journal",
               "descendants": {
                 "t893f": {
-                  "content": "SHOP"
+                  "content": "JOURNAL"
                 }
               }
             }
@@ -9699,175 +8695,68 @@
         },
         {
           "type": "frame",
-          "id": "eaHWo",
+          "id": "lEiAE",
           "name": "Main",
           "width": "fill_container",
           "layout": "vertical",
-          "gap": "$space-block",
           "padding": [
             "$space-block",
             "$layout-margin",
             "$space-section",
             "$layout-margin"
           ],
+          "alignItems": "center",
           "children": [
             {
               "type": "frame",
-              "id": "kRQHm",
-              "name": "Breadcrumb",
-              "gap": "$scale-200",
-              "alignItems": "center",
-              "children": [
-                {
-                  "id": "OMffE",
-                  "type": "ref",
-                  "ref": "HXmMz",
-                  "name": "Crumb Shop",
-                  "descendants": {
-                    "BSi7m": {
-                      "content": "Shop"
-                    },
-                    "J9QJBi": {
-                      "enabled": false
-                    }
-                  }
-                },
-                {
-                  "type": "text",
-                  "id": "ErTkq",
-                  "name": "Crumb Sep",
-                  "fill": "$text-muted",
-                  "content": "/",
-                  "lineHeight": "$type-body2-line-height",
-                  "fontFamily": "$font-body",
-                  "fontSize": "$type-body2-size",
-                  "fontWeight": "normal",
-                  "letterSpacing": "$type-body2-letter-spacing"
-                },
-                {
-                  "type": "text",
-                  "id": "puqgz",
-                  "name": "Crumb Current",
-                  "fill": "$text-default",
-                  "content": "Tuner",
-                  "lineHeight": "$type-body2-line-height",
-                  "fontFamily": "$font-body",
-                  "fontSize": "$type-body2-size",
-                  "fontWeight": "normal",
-                  "letterSpacing": "$type-body2-letter-spacing"
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "o00PY",
-              "name": "Product Layout",
+              "id": "I3t42h",
+              "name": "Content",
               "width": "fill_container",
-              "layout": "vertical",
-              "gap": "$space-block",
+              "gap": 24,
               "children": [
                 {
                   "type": "frame",
-                  "id": "ppp5u",
-                  "name": "Gallery",
-                  "width": "fill_container",
+                  "id": "iuXmm",
+                  "name": "Img Container",
                   "layout": "vertical",
-                  "gap": "$scale-300",
+                  "gap": 10,
                   "children": [
                     {
                       "type": "frame",
-                      "id": "Wzr2k",
-                      "name": "Stage",
+                      "id": "WE7i1",
+                      "name": "Img",
                       "clip": true,
-                      "width": "fill_container",
-                      "height": 893,
-                      "fill": [
-                        "$surface-subtle",
-                        {
-                          "type": "image",
-                          "enabled": true,
-                          "url": "products/tuner/cover.jpg",
-                          "mode": "cover"
-                        }
-                      ],
-                      "cornerRadius": "$radius-lg"
-                    },
-                    {
-                      "type": "frame",
-                      "id": "LDZpC",
-                      "name": "Thumbnails",
-                      "gap": "$scale-300",
-                      "children": [
-                        {
-                          "type": "frame",
-                          "id": "FQwoC",
-                          "name": "Thumb 1 (current)",
-                          "clip": true,
-                          "width": 72,
-                          "height": 72,
-                          "fill": [
-                            "$surface-subtle",
-                            {
-                              "type": "image",
-                              "enabled": true,
-                              "url": "products/tuner/cover.jpg",
-                              "mode": "cover"
-                            }
-                          ],
-                          "cornerRadius": "$radius-md",
-                          "stroke": "$border-emphasis",
-                          "strokeWidth": 2,
-                          "strokeAlignment": "inner"
-                        },
-                        {
-                          "type": "frame",
-                          "id": "PvSjH",
-                          "name": "Thumb 2",
-                          "clip": true,
-                          "width": 72,
-                          "height": 72,
-                          "fill": [
-                            "$surface-subtle",
-                            {
-                              "type": "image",
-                              "enabled": true,
-                              "url": "products/tuner/photo.jpg",
-                              "mode": "cover"
-                            }
-                          ],
-                          "cornerRadius": "$radius-md",
-                          "stroke": "$border-default",
-                          "strokeWidth": 1,
-                          "strokeAlignment": "inner"
-                        }
-                      ]
+                      "width": 240,
+                      "height": 300,
+                      "fill": "#c7c7c7ff",
+                      "layout": "none"
                     }
                   ]
                 },
                 {
                   "type": "frame",
-                  "id": "YysF6",
-                  "name": "Info",
+                  "id": "kHgrr",
+                  "name": "Article",
                   "width": "fill_container",
                   "layout": "vertical",
-                  "gap": "$scale-600",
+                  "gap": "$scale-800",
                   "children": [
                     {
                       "type": "frame",
-                      "id": "SgoFV",
-                      "name": "Title Block",
+                      "id": "j4FYU",
+                      "name": "Post Header",
                       "width": "fill_container",
                       "layout": "vertical",
-                      "gap": "$scale-200",
+                      "gap": "$space-stack",
                       "children": [
                         {
                           "type": "text",
-                          "id": "DnUK0",
-                          "name": "Eyebrow",
+                          "id": "qLjIp",
+                          "name": "Date",
                           "fill": "$text-link",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
-                          "content": "SIGNATURE WORK",
+                          "content": "SEPTEMBER 27, 2026",
                           "lineHeight": "$type-eyebrow2-line-height",
                           "fontFamily": "$font-body",
                           "fontSize": "$type-eyebrow2-size",
@@ -9876,318 +8765,80 @@
                         },
                         {
                           "type": "text",
-                          "id": "k4aDO",
-                          "name": "Name",
+                          "id": "M5ZOPD",
+                          "name": "Title",
                           "fill": "$text-default",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
-                          "content": "Tuner",
+                          "content": "Hello, out loud",
                           "lineHeight": "$type-h1-line-height",
                           "fontFamily": "$font-heading",
                           "fontSize": "$type-h1-size",
                           "fontWeight": "700",
                           "letterSpacing": "$type-h1-letter-spacing"
-                        },
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "i3LqsJ",
+                      "name": "Body",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 25,
+                      "children": [
                         {
                           "type": "text",
-                          "id": "hmmNw",
-                          "name": "Price",
+                          "id": "wAIaB",
+                          "name": "Paragraph 1",
                           "fill": "$text-default",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
-                          "content": "$250",
-                          "lineHeight": "$type-h4-line-height",
-                          "fontFamily": "$font-heading",
-                          "fontSize": "$type-h4-size",
-                          "fontWeight": "700",
-                          "letterSpacing": "$type-h4-letter-spacing"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "frame",
-                      "id": "qVYVN",
-                      "name": "Sticker Row",
-                      "gap": 40,
-                      "alignItems": "center",
-                      "children": [
-                        {
-                          "id": "abD7W",
-                          "type": "ref",
-                          "ref": "Nt7oC"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "frame",
-                      "id": "ixu20",
-                      "name": "Specs",
-                      "width": "fill_container",
-                      "layout": "vertical",
-                      "children": [
-                        {
-                          "id": "fXcmz",
-                          "type": "ref",
-                          "ref": "GK9dQ",
-                          "name": "Divider",
-                          "width": "fill_container"
-                        },
-                        {
-                          "type": "frame",
-                          "id": "qZazs",
-                          "name": "Size Row",
-                          "width": "fill_container",
-                          "padding": [
-                            "$scale-300",
-                            0
-                          ],
-                          "justifyContent": "space_between",
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "text",
-                              "id": "L03jc2",
-                              "name": "Size Label",
-                              "fill": "$text-muted",
-                              "content": "Size",
-                              "lineHeight": "$type-body2-line-height",
-                              "fontFamily": "$font-body",
-                              "fontSize": "$type-body2-size",
-                              "fontWeight": "normal",
-                              "letterSpacing": "$type-body2-letter-spacing"
-                            },
-                            {
-                              "type": "text",
-                              "id": "qBs7g",
-                              "name": "Size Value",
-                              "fill": "$text-default",
-                              "content": "22″ × 30″",
-                              "lineHeight": "$type-body2-line-height",
-                              "fontFamily": "$font-body",
-                              "fontSize": "$type-body2-size",
-                              "fontWeight": "500",
-                              "letterSpacing": "$type-body2-letter-spacing"
-                            }
-                          ]
-                        },
-                        {
-                          "id": "x1gFdw",
-                          "type": "ref",
-                          "ref": "GK9dQ",
-                          "name": "Divider",
-                          "width": "fill_container"
-                        },
-                        {
-                          "type": "frame",
-                          "id": "S1eoW",
-                          "name": "Medium Row",
-                          "width": "fill_container",
-                          "padding": [
-                            "$scale-300",
-                            0
-                          ],
-                          "justifyContent": "space_between",
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "text",
-                              "id": "fRArW",
-                              "name": "Medium Label",
-                              "fill": "$text-muted",
-                              "content": "Medium",
-                              "lineHeight": "$type-body2-line-height",
-                              "fontFamily": "$font-body",
-                              "fontSize": "$type-body2-size",
-                              "fontWeight": "normal",
-                              "letterSpacing": "$type-body2-letter-spacing"
-                            },
-                            {
-                              "type": "text",
-                              "id": "E9mnt9",
-                              "name": "Medium Value",
-                              "fill": "$text-default",
-                              "content": "Acrylic on paper",
-                              "lineHeight": "$type-body2-line-height",
-                              "fontFamily": "$font-body",
-                              "fontSize": "$type-body2-size",
-                              "fontWeight": "500",
-                              "letterSpacing": "$type-body2-letter-spacing"
-                            }
-                          ]
-                        },
-                        {
-                          "id": "paCHA",
-                          "type": "ref",
-                          "ref": "GK9dQ",
-                          "name": "Divider",
-                          "width": "fill_container"
-                        },
-                        {
-                          "type": "frame",
-                          "id": "LGcSY",
-                          "name": "Edition Row",
-                          "width": "fill_container",
-                          "padding": [
-                            "$scale-300",
-                            0
-                          ],
-                          "justifyContent": "space_between",
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "text",
-                              "id": "RKmsy",
-                              "name": "Edition Label",
-                              "fill": "$text-muted",
-                              "content": "Edition",
-                              "lineHeight": "$type-body2-line-height",
-                              "fontFamily": "$font-body",
-                              "fontSize": "$type-body2-size",
-                              "fontWeight": "normal",
-                              "letterSpacing": "$type-body2-letter-spacing"
-                            },
-                            {
-                              "type": "text",
-                              "id": "n5xEk",
-                              "name": "Edition Value",
-                              "fill": "$text-default",
-                              "content": "One-of-a-kind original",
-                              "lineHeight": "$type-body2-line-height",
-                              "fontFamily": "$font-body",
-                              "fontSize": "$type-body2-size",
-                              "fontWeight": "500",
-                              "letterSpacing": "$type-body2-letter-spacing"
-                            }
-                          ]
-                        },
-                        {
-                          "id": "dVa56",
-                          "type": "ref",
-                          "ref": "GK9dQ",
-                          "name": "Divider",
-                          "width": "fill_container"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "frame",
-                      "id": "xTcct",
-                      "name": "Purchase",
-                      "width": "fill_container",
-                      "layout": "vertical",
-                      "gap": "$scale-300",
-                      "children": [
-                        {
-                          "id": "Q26dU",
-                          "type": "ref",
-                          "ref": "dOZxf",
-                          "name": "Buy now",
-                          "width": "fill_container",
-                          "descendants": {
-                            "wLOsh": {
-                              "content": "BUY NOW"
-                            }
-                          }
+                          "content": "This is the first post in the journal. Replace this with real writing whenever you're ready — the page and its layout are already wired up around whatever goes here.",
+                          "lineHeight": "$type-p2-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-p2-size",
+                          "fontWeight": "normal",
+                          "letterSpacing": "$type-p2-letter-spacing"
                         },
                         {
                           "type": "text",
-                          "id": "r3tRhY",
-                          "name": "Note",
-                          "fill": "$text-muted",
+                          "id": "z057S",
+                          "name": "Paragraph 2",
+                          "fill": "$text-default",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
-                          "content": "Checkout is handled securely through Stripe. Each piece ships once, direct from the studio.",
-                          "lineHeight": "$type-body2-line-height",
+                          "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
+                          "lineHeight": "$type-p2-line-height",
                           "fontFamily": "$font-body",
-                          "fontSize": "$type-body2-size",
+                          "fontSize": "$type-p2-size",
                           "fontWeight": "normal",
-                          "letterSpacing": "$type-body2-letter-spacing"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "frame",
-                      "id": "ig8N2",
-                      "name": "Questions",
-                      "gap": "$scale-200",
-                      "alignItems": "center",
-                      "children": [
+                          "letterSpacing": "$type-p2-letter-spacing"
+                        },
                         {
                           "type": "text",
-                          "id": "ttkTt",
-                          "name": "Questions Label",
-                          "fill": "$text-muted",
-                          "content": "Questions?",
-                          "lineHeight": "$type-body1-line-height",
+                          "id": "n7073u",
+                          "name": "Paragraph 3",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "A longer paragraph to show how body copy reads at full measure. Entries can run as long as they need to; the column stays at a comfortable reading width on desktop and uses the full width of the screen on tablet and phone.",
+                          "lineHeight": "$type-p2-line-height",
                           "fontFamily": "$font-body",
-                          "fontSize": "$type-body1-size",
+                          "fontSize": "$type-p2-size",
                           "fontWeight": "normal",
-                          "letterSpacing": "$type-body1-letter-spacing"
-                        },
-                        {
-                          "id": "LfRI6",
-                          "type": "ref",
-                          "ref": "HXmMz",
-                          "name": "Email me",
-                          "descendants": {
-                            "BSi7m": {
-                              "content": "Email me"
-                            }
-                          }
+                          "letterSpacing": "$type-p2-letter-spacing"
                         }
                       ]
-                    },
-                    {
-                      "id": "u2ygiW",
-                      "type": "ref",
-                      "ref": "xAXzR",
-                      "name": "Series statement",
-                      "width": "fill_container",
-                      "descendants": {
-                        "ZIg2b": {
-                          "height": 36
-                        },
-                        "T6UuDT": {
-                          "content": "Part of the Signature Work series."
-                        }
-                      }
                     }
                   ]
                 }
               ]
-            },
-            {
-              "id": "qmaFa",
-              "type": "ref",
-              "ref": "GK9dQ",
-              "name": "Divider",
-              "width": "fill_container"
-            },
-            {
-              "id": "FJyfy",
-              "type": "ref",
-              "ref": "zSEE8",
-              "name": "Recommendations",
-              "width": "fill_container",
-              "descendants": {
-                "p6wMh/FNrk8": {
-                  "height": 436
-                },
-                "caqKO/FNrk8": {
-                  "height": 436
-                },
-                "phQV5": {
-                  "enabled": false
-                },
-                "phQV5/FNrk8": {
-                  "height": 436
-                }
-              }
             }
           ]
         },
         {
-          "id": "shKqP",
+          "id": "N1B8SZ",
           "type": "ref",
           "ref": "E6haZ",
           "name": "Footer",
@@ -10197,10 +8848,10 @@
     },
     {
       "type": "frame",
-      "id": "qdUYS",
+      "id": "kxRC5",
       "x": 2759,
-      "y": -2590,
-      "name": "Product — Tuner — Mobile (390)",
+      "y": 1600,
+      "name": "Journal Entry — Hello, out loud — Mobile (390)",
       "theme": {
         "mode": "light",
         "device": "mobile"
@@ -10211,14 +8862,14 @@
       "layout": "vertical",
       "children": [
         {
-          "id": "u1HDog",
+          "id": "K9Mwhs",
           "type": "ref",
           "ref": "S5OtQe",
           "name": "Header",
           "width": "fill_container",
           "descendants": {
             "oekhv": {
-              "id": "j4BfRV",
+              "id": "y0k3X",
               "type": "ref",
               "ref": "eFsWC",
               "name": "Recent",
@@ -10228,14 +8879,14 @@
                 }
               }
             },
-            "LglH1": {
-              "id": "aql9Q",
+            "S5GGB": {
+              "id": "u43C0",
               "type": "ref",
               "ref": "MusDs",
-              "name": "Shop",
+              "name": "Journal",
               "descendants": {
                 "t893f": {
-                  "content": "SHOP"
+                  "content": "JOURNAL"
                 }
               }
             }
@@ -10243,175 +8894,76 @@
         },
         {
           "type": "frame",
-          "id": "GhBYy",
+          "id": "EpDPJ",
           "name": "Main",
           "width": "fill_container",
           "layout": "vertical",
-          "gap": "$space-block",
           "padding": [
             "$space-block",
             "$layout-margin",
             "$space-section",
             "$layout-margin"
           ],
+          "alignItems": "center",
           "children": [
             {
               "type": "frame",
-              "id": "whyxa",
-              "name": "Breadcrumb",
-              "gap": "$scale-200",
+              "id": "KvkHQ",
+              "name": "Content",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 10,
               "alignItems": "center",
               "children": [
                 {
-                  "id": "zn575",
-                  "type": "ref",
-                  "ref": "HXmMz",
-                  "name": "Crumb Shop",
-                  "descendants": {
-                    "BSi7m": {
-                      "content": "Shop"
-                    },
-                    "J9QJBi": {
-                      "enabled": false
-                    }
-                  }
-                },
-                {
-                  "type": "text",
-                  "id": "x1Kx4",
-                  "name": "Crumb Sep",
-                  "fill": "$text-muted",
-                  "content": "/",
-                  "lineHeight": "$type-body2-line-height",
-                  "fontFamily": "$font-body",
-                  "fontSize": "$type-body2-size",
-                  "fontWeight": "normal",
-                  "letterSpacing": "$type-body2-letter-spacing"
-                },
-                {
-                  "type": "text",
-                  "id": "jex8R",
-                  "name": "Crumb Current",
-                  "fill": "$text-default",
-                  "content": "Tuner",
-                  "lineHeight": "$type-body2-line-height",
-                  "fontFamily": "$font-body",
-                  "fontSize": "$type-body2-size",
-                  "fontWeight": "normal",
-                  "letterSpacing": "$type-body2-letter-spacing"
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "Yy1dI",
-              "name": "Product Layout",
-              "width": "fill_container",
-              "layout": "vertical",
-              "gap": "$space-block",
-              "children": [
-                {
                   "type": "frame",
-                  "id": "fVYAO",
-                  "name": "Gallery",
-                  "width": "fill_container",
+                  "id": "m4HCEJ",
+                  "name": "Img Container",
                   "layout": "vertical",
-                  "gap": "$scale-300",
+                  "gap": 10,
+                  "padding": [
+                    0,
+                    0,
+                    24,
+                    0
+                  ],
                   "children": [
                     {
                       "type": "frame",
-                      "id": "T10br",
-                      "name": "Stage",
+                      "id": "eSU2G",
+                      "name": "Img",
                       "clip": true,
-                      "width": "fill_container",
-                      "height": 428,
-                      "fill": [
-                        "$surface-subtle",
-                        {
-                          "type": "image",
-                          "enabled": true,
-                          "url": "products/tuner/cover.jpg",
-                          "mode": "cover"
-                        }
-                      ],
-                      "cornerRadius": "$radius-lg"
-                    },
-                    {
-                      "type": "frame",
-                      "id": "F3bNVP",
-                      "name": "Thumbnails",
-                      "gap": "$scale-300",
-                      "children": [
-                        {
-                          "type": "frame",
-                          "id": "gZTRN",
-                          "name": "Thumb 1 (current)",
-                          "clip": true,
-                          "width": 72,
-                          "height": 72,
-                          "fill": [
-                            "$surface-subtle",
-                            {
-                              "type": "image",
-                              "enabled": true,
-                              "url": "products/tuner/cover.jpg",
-                              "mode": "cover"
-                            }
-                          ],
-                          "cornerRadius": "$radius-md",
-                          "stroke": "$border-emphasis",
-                          "strokeWidth": 2,
-                          "strokeAlignment": "inner"
-                        },
-                        {
-                          "type": "frame",
-                          "id": "VRQ6Z",
-                          "name": "Thumb 2",
-                          "clip": true,
-                          "width": 72,
-                          "height": 72,
-                          "fill": [
-                            "$surface-subtle",
-                            {
-                              "type": "image",
-                              "enabled": true,
-                              "url": "products/tuner/photo.jpg",
-                              "mode": "cover"
-                            }
-                          ],
-                          "cornerRadius": "$radius-md",
-                          "stroke": "$border-default",
-                          "strokeWidth": 1,
-                          "strokeAlignment": "inner"
-                        }
-                      ]
+                      "width": 240,
+                      "height": 300,
+                      "fill": "#c7c7c7ff",
+                      "layout": "none"
                     }
                   ]
                 },
                 {
                   "type": "frame",
-                  "id": "Mih94",
-                  "name": "Info",
+                  "id": "eCPee",
+                  "name": "Article",
                   "width": "fill_container",
                   "layout": "vertical",
-                  "gap": "$scale-600",
+                  "gap": "$scale-800",
                   "children": [
                     {
                       "type": "frame",
-                      "id": "QubdM",
-                      "name": "Title Block",
+                      "id": "j7oGV",
+                      "name": "Post Header",
                       "width": "fill_container",
                       "layout": "vertical",
-                      "gap": "$scale-200",
+                      "gap": "$space-stack",
                       "children": [
                         {
                           "type": "text",
-                          "id": "g9KJ1H",
-                          "name": "Eyebrow",
+                          "id": "v61om",
+                          "name": "Date",
                           "fill": "$text-link",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
-                          "content": "SIGNATURE WORK",
+                          "content": "SEPTEMBER 27, 2026",
                           "lineHeight": "$type-eyebrow2-line-height",
                           "fontFamily": "$font-body",
                           "fontSize": "$type-eyebrow2-size",
@@ -10420,303 +8972,80 @@
                         },
                         {
                           "type": "text",
-                          "id": "etIKE",
-                          "name": "Name",
+                          "id": "c3Ln7",
+                          "name": "Title",
                           "fill": "$text-default",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
-                          "content": "Tuner",
+                          "content": "Hello, out loud",
                           "lineHeight": "$type-h1-line-height",
                           "fontFamily": "$font-heading",
                           "fontSize": "$type-h1-size",
                           "fontWeight": "700",
                           "letterSpacing": "$type-h1-letter-spacing"
-                        },
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "YxhcR",
+                      "name": "Body",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 25,
+                      "children": [
                         {
                           "type": "text",
-                          "id": "XrCP2",
-                          "name": "Price",
+                          "id": "iYwen",
+                          "name": "Paragraph 1",
                           "fill": "$text-default",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
-                          "content": "$250",
-                          "lineHeight": "$type-h4-line-height",
-                          "fontFamily": "$font-heading",
-                          "fontSize": "$type-h4-size",
-                          "fontWeight": "700",
-                          "letterSpacing": "$type-h4-letter-spacing"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "frame",
-                      "id": "U2OUHf",
-                      "name": "Sticker Row",
-                      "gap": 40,
-                      "alignItems": "center",
-                      "children": [
-                        {
-                          "id": "JTjlk",
-                          "type": "ref",
-                          "ref": "Nt7oC"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "frame",
-                      "id": "ShBF9",
-                      "name": "Specs",
-                      "width": "fill_container",
-                      "layout": "vertical",
-                      "children": [
-                        {
-                          "id": "ydDT3",
-                          "type": "ref",
-                          "ref": "GK9dQ",
-                          "name": "Divider",
-                          "width": "fill_container"
-                        },
-                        {
-                          "type": "frame",
-                          "id": "UZYlW",
-                          "name": "Size Row",
-                          "width": "fill_container",
-                          "padding": [
-                            "$scale-300",
-                            0
-                          ],
-                          "justifyContent": "space_between",
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "text",
-                              "id": "C8yWP",
-                              "name": "Size Label",
-                              "fill": "$text-muted",
-                              "content": "Size",
-                              "lineHeight": "$type-body2-line-height",
-                              "fontFamily": "$font-body",
-                              "fontSize": "$type-body2-size",
-                              "fontWeight": "normal",
-                              "letterSpacing": "$type-body2-letter-spacing"
-                            },
-                            {
-                              "type": "text",
-                              "id": "A3aN6u",
-                              "name": "Size Value",
-                              "fill": "$text-default",
-                              "content": "22″ × 30″",
-                              "lineHeight": "$type-body2-line-height",
-                              "fontFamily": "$font-body",
-                              "fontSize": "$type-body2-size",
-                              "fontWeight": "500",
-                              "letterSpacing": "$type-body2-letter-spacing"
-                            }
-                          ]
-                        },
-                        {
-                          "id": "K4NeCp",
-                          "type": "ref",
-                          "ref": "GK9dQ",
-                          "name": "Divider",
-                          "width": "fill_container"
-                        },
-                        {
-                          "type": "frame",
-                          "id": "rvZ8k",
-                          "name": "Medium Row",
-                          "width": "fill_container",
-                          "padding": [
-                            "$scale-300",
-                            0
-                          ],
-                          "justifyContent": "space_between",
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "text",
-                              "id": "EMJZP",
-                              "name": "Medium Label",
-                              "fill": "$text-muted",
-                              "content": "Medium",
-                              "lineHeight": "$type-body2-line-height",
-                              "fontFamily": "$font-body",
-                              "fontSize": "$type-body2-size",
-                              "fontWeight": "normal",
-                              "letterSpacing": "$type-body2-letter-spacing"
-                            },
-                            {
-                              "type": "text",
-                              "id": "OvTtn",
-                              "name": "Medium Value",
-                              "fill": "$text-default",
-                              "content": "Acrylic on paper",
-                              "lineHeight": "$type-body2-line-height",
-                              "fontFamily": "$font-body",
-                              "fontSize": "$type-body2-size",
-                              "fontWeight": "500",
-                              "letterSpacing": "$type-body2-letter-spacing"
-                            }
-                          ]
-                        },
-                        {
-                          "id": "mX760",
-                          "type": "ref",
-                          "ref": "GK9dQ",
-                          "name": "Divider",
-                          "width": "fill_container"
-                        },
-                        {
-                          "type": "frame",
-                          "id": "D798Zt",
-                          "name": "Edition Row",
-                          "width": "fill_container",
-                          "padding": [
-                            "$scale-300",
-                            0
-                          ],
-                          "justifyContent": "space_between",
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "text",
-                              "id": "h1e5WR",
-                              "name": "Edition Label",
-                              "fill": "$text-muted",
-                              "content": "Edition",
-                              "lineHeight": "$type-body2-line-height",
-                              "fontFamily": "$font-body",
-                              "fontSize": "$type-body2-size",
-                              "fontWeight": "normal",
-                              "letterSpacing": "$type-body2-letter-spacing"
-                            },
-                            {
-                              "type": "text",
-                              "id": "OVjWj",
-                              "name": "Edition Value",
-                              "fill": "$text-default",
-                              "content": "One-of-a-kind original",
-                              "lineHeight": "$type-body2-line-height",
-                              "fontFamily": "$font-body",
-                              "fontSize": "$type-body2-size",
-                              "fontWeight": "500",
-                              "letterSpacing": "$type-body2-letter-spacing"
-                            }
-                          ]
-                        },
-                        {
-                          "id": "j7CqG",
-                          "type": "ref",
-                          "ref": "GK9dQ",
-                          "name": "Divider",
-                          "width": "fill_container"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "frame",
-                      "id": "OZzxp",
-                      "name": "Purchase",
-                      "width": "fill_container",
-                      "layout": "vertical",
-                      "gap": "$scale-300",
-                      "children": [
-                        {
-                          "id": "fOzBh",
-                          "type": "ref",
-                          "ref": "dOZxf",
-                          "name": "Buy now",
-                          "width": "fill_container",
-                          "descendants": {
-                            "wLOsh": {
-                              "content": "BUY NOW"
-                            }
-                          }
+                          "content": "This is the first post in the journal. Replace this with real writing whenever you're ready — the page and its layout are already wired up around whatever goes here.",
+                          "lineHeight": "$type-p2-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-p2-size",
+                          "fontWeight": "normal",
+                          "letterSpacing": "$type-p2-letter-spacing"
                         },
                         {
                           "type": "text",
-                          "id": "F1rxk4",
-                          "name": "Note",
-                          "fill": "$text-muted",
+                          "id": "yONjj",
+                          "name": "Paragraph 2",
+                          "fill": "$text-default",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
-                          "content": "Checkout is handled securely through Stripe. Each piece ships once, direct from the studio.",
-                          "lineHeight": "$type-body2-line-height",
+                          "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
+                          "lineHeight": "$type-p2-line-height",
                           "fontFamily": "$font-body",
-                          "fontSize": "$type-body2-size",
+                          "fontSize": "$type-p2-size",
                           "fontWeight": "normal",
-                          "letterSpacing": "$type-body2-letter-spacing"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "frame",
-                      "id": "X4Oun4",
-                      "name": "Questions",
-                      "gap": "$scale-200",
-                      "alignItems": "center",
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "EQcsY",
-                          "name": "Questions Label",
-                          "fill": "$text-muted",
-                          "content": "Questions?",
-                          "lineHeight": "$type-body1-line-height",
-                          "fontFamily": "$font-body",
-                          "fontSize": "$type-body1-size",
-                          "fontWeight": "normal",
-                          "letterSpacing": "$type-body1-letter-spacing"
+                          "letterSpacing": "$type-p2-letter-spacing"
                         },
                         {
-                          "id": "w7tzW",
-                          "type": "ref",
-                          "ref": "HXmMz",
-                          "name": "Email me",
-                          "descendants": {
-                            "BSi7m": {
-                              "content": "Email me"
-                            }
-                          }
+                          "type": "text",
+                          "id": "iz4XW",
+                          "name": "Paragraph 3",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "A longer paragraph to show how body copy reads at full measure. Entries can run as long as they need to; the column stays at a comfortable reading width on desktop and uses the full width of the screen on tablet and phone.",
+                          "lineHeight": "$type-p2-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-p2-size",
+                          "fontWeight": "normal",
+                          "letterSpacing": "$type-p2-letter-spacing"
                         }
                       ]
                     }
                   ]
                 }
               ]
-            },
-            {
-              "id": "A2hGqX",
-              "type": "ref",
-              "ref": "GK9dQ",
-              "name": "Divider",
-              "width": "fill_container"
-            },
-            {
-              "id": "ko5a4",
-              "type": "ref",
-              "ref": "zSEE8",
-              "name": "Recommendations",
-              "width": "fill_container",
-              "descendants": {
-                "p6wMh/FNrk8": {
-                  "height": 204
-                },
-                "caqKO/FNrk8": {
-                  "height": 204
-                },
-                "phQV5": {
-                  "enabled": false
-                },
-                "phQV5/FNrk8": {
-                  "height": 204
-                }
-              }
             }
           ]
         },
         {
-          "id": "i0LKFr",
+          "id": "l7uV54",
           "type": "ref",
           "ref": "E6haZ",
           "name": "Footer",
@@ -10736,891 +9065,6 @@
           }
         }
       ]
-    },
-    {
-      "type": "frame",
-      "id": "DImCr",
-      "x": 3752,
-      "y": -2590,
-      "name": "Product — Tuner — Lightbox — Desktop (1200)",
-      "theme": {
-        "mode": "dark",
-        "device": "desktop"
-      },
-      "clip": true,
-      "width": 1200,
-      "height": 800,
-      "fill": "$surface-default",
-      "layout": "vertical",
-      "children": [
-        {
-          "type": "frame",
-          "id": "U18DK",
-          "name": "Top Bar",
-          "width": "fill_container",
-          "padding": [
-            "$scale-300",
-            "$layout-margin"
-          ],
-          "justifyContent": "space_between",
-          "alignItems": "center",
-          "children": [
-            {
-              "type": "text",
-              "id": "rDKvp",
-              "name": "Counter",
-              "fill": "$text-muted",
-              "content": "1 / 2",
-              "lineHeight": "$type-body2-line-height",
-              "fontFamily": "$font-body",
-              "fontSize": "$type-body2-size",
-              "fontWeight": "500",
-              "letterSpacing": "$type-body2-letter-spacing"
-            },
-            {
-              "type": "frame",
-              "id": "P3hONa",
-              "name": "Close Button",
-              "width": 44,
-              "height": 44,
-              "cornerRadius": "$radius-full",
-              "justifyContent": "center",
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "icon",
-                  "id": "d26rUv",
-                  "name": "Icon",
-                  "width": 24,
-                  "height": 24,
-                  "icon": "x",
-                  "library": "lucide",
-                  "fill": "$text-default"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "oMtfY",
-          "name": "Stage",
-          "width": "fill_container",
-          "height": "fill_container",
-          "gap": "$scale-400",
-          "padding": [
-            0,
-            "$layout-margin"
-          ],
-          "justifyContent": "space_between",
-          "alignItems": "center",
-          "children": [
-            {
-              "type": "frame",
-              "id": "TkEds",
-              "name": "Previous",
-              "width": 44,
-              "height": 44,
-              "cornerRadius": "$radius-full",
-              "stroke": "$border-strong",
-              "strokeWidth": 1,
-              "strokeAlignment": "inner",
-              "justifyContent": "center",
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "icon",
-                  "id": "B0pSK",
-                  "name": "Icon",
-                  "width": 24,
-                  "height": 24,
-                  "icon": "chevron-left",
-                  "library": "lucide",
-                  "fill": "$text-default"
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "xzevP",
-              "name": "Artwork Image",
-              "width": "fill_container",
-              "height": "fill_container",
-              "fill": {
-                "type": "image",
-                "enabled": true,
-                "url": "products/tuner/cover.jpg",
-                "mode": "contain"
-              }
-            },
-            {
-              "type": "frame",
-              "id": "APXm2",
-              "name": "Next",
-              "width": 44,
-              "height": 44,
-              "cornerRadius": "$radius-full",
-              "stroke": "$border-strong",
-              "strokeWidth": 1,
-              "strokeAlignment": "inner",
-              "justifyContent": "center",
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "icon",
-                  "id": "J7pDp4",
-                  "name": "Icon",
-                  "width": 24,
-                  "height": 24,
-                  "icon": "chevron-right",
-                  "library": "lucide",
-                  "fill": "$text-default"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "C90IJA",
-          "name": "Footer",
-          "width": "fill_container",
-          "layout": "vertical",
-          "gap": "$scale-400",
-          "padding": [
-            "$scale-600",
-            "$layout-margin",
-            "$space-section",
-            "$layout-margin"
-          ],
-          "alignItems": "center",
-          "children": [
-            {
-              "type": "frame",
-              "id": "TDgKJ",
-              "name": "Zoom Hint",
-              "gap": "$scale-200",
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "icon",
-                  "id": "mWYD5",
-                  "name": "Icon",
-                  "width": 16,
-                  "height": 16,
-                  "icon": "zoom-in",
-                  "library": "lucide",
-                  "fill": "$text-muted"
-                },
-                {
-                  "type": "text",
-                  "id": "stOwk",
-                  "name": "Hint Text",
-                  "fill": "$text-muted",
-                  "content": "Click the image to zoom",
-                  "lineHeight": "$type-body2-line-height",
-                  "fontFamily": "$font-body",
-                  "fontSize": "$type-body2-size",
-                  "fontWeight": "normal",
-                  "letterSpacing": "$type-body2-letter-spacing"
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "XK9vM",
-              "name": "Caption",
-              "layout": "vertical",
-              "gap": "$scale-100",
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "uZubZ",
-                  "name": "Title",
-                  "fill": "$text-default",
-                  "content": "Tuner",
-                  "lineHeight": "$type-h5-line-height",
-                  "fontFamily": "$font-heading",
-                  "fontSize": "$type-h5-size",
-                  "fontWeight": "600",
-                  "letterSpacing": "$type-h5-letter-spacing"
-                },
-                {
-                  "type": "text",
-                  "id": "Zhtd6",
-                  "name": "Details",
-                  "fill": "$text-muted",
-                  "content": "22″ × 30″ · Acrylic on paper",
-                  "lineHeight": "$type-body2-line-height",
-                  "fontFamily": "$font-body",
-                  "fontSize": "$type-body2-size",
-                  "fontWeight": "normal",
-                  "letterSpacing": "$type-body2-letter-spacing"
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "qXBXF",
-              "name": "Thumbnail Nav",
-              "gap": "$scale-400",
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "NeVtt",
-                  "name": "Thumbnails",
-                  "gap": "$scale-200",
-                  "children": [
-                    {
-                      "type": "frame",
-                      "id": "MLhYS",
-                      "name": "Thumb 1 (current)",
-                      "clip": true,
-                      "width": 56,
-                      "height": 56,
-                      "fill": [
-                        "$surface-subtle",
-                        {
-                          "type": "image",
-                          "enabled": true,
-                          "url": "products/tuner/cover.jpg",
-                          "mode": "cover"
-                        }
-                      ],
-                      "cornerRadius": "$radius-md",
-                      "stroke": "$border-emphasis",
-                      "strokeWidth": 2,
-                      "strokeAlignment": "inner"
-                    },
-                    {
-                      "type": "frame",
-                      "id": "yZmuS",
-                      "name": "Thumb 2",
-                      "opacity": 0.6,
-                      "clip": true,
-                      "width": 56,
-                      "height": 56,
-                      "fill": [
-                        "$surface-subtle",
-                        {
-                          "type": "image",
-                          "enabled": true,
-                          "url": "products/tuner/photo.jpg",
-                          "mode": "cover"
-                        }
-                      ],
-                      "cornerRadius": "$radius-md"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "frame",
-      "id": "xehJc",
-      "x": 5072,
-      "y": -2590,
-      "name": "Product — Tuner — Lightbox — Tablet (810)",
-      "theme": {
-        "mode": "dark",
-        "device": "tablet"
-      },
-      "clip": true,
-      "width": 810,
-      "height": 1080,
-      "fill": "$surface-default",
-      "layout": "vertical",
-      "children": [
-        {
-          "type": "frame",
-          "id": "iAA8D",
-          "name": "Top Bar",
-          "width": "fill_container",
-          "padding": [
-            "$scale-300",
-            "$layout-margin"
-          ],
-          "justifyContent": "space_between",
-          "alignItems": "center",
-          "children": [
-            {
-              "type": "text",
-              "id": "y8jyEH",
-              "name": "Counter",
-              "fill": "$text-muted",
-              "content": "1 / 2",
-              "lineHeight": "$type-body2-line-height",
-              "fontFamily": "$font-body",
-              "fontSize": "$type-body2-size",
-              "fontWeight": "500",
-              "letterSpacing": "$type-body2-letter-spacing"
-            },
-            {
-              "type": "frame",
-              "id": "hQ7Wm",
-              "name": "Close Button",
-              "width": 44,
-              "height": 44,
-              "cornerRadius": "$radius-full",
-              "justifyContent": "center",
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "icon",
-                  "id": "c57sy",
-                  "name": "Icon",
-                  "width": 24,
-                  "height": 24,
-                  "icon": "x",
-                  "library": "lucide",
-                  "fill": "$text-default"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "sFjwK",
-          "name": "Stage",
-          "width": "fill_container",
-          "height": "fill_container",
-          "gap": "$scale-400",
-          "padding": [
-            0,
-            "$layout-margin"
-          ],
-          "justifyContent": "space_between",
-          "alignItems": "center",
-          "children": [
-            {
-              "type": "frame",
-              "id": "CyGLP",
-              "name": "Previous",
-              "width": 44,
-              "height": 44,
-              "cornerRadius": "$radius-full",
-              "stroke": "$border-strong",
-              "strokeWidth": 1,
-              "strokeAlignment": "inner",
-              "justifyContent": "center",
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "icon",
-                  "id": "J2ebs",
-                  "name": "Icon",
-                  "width": 24,
-                  "height": 24,
-                  "icon": "chevron-left",
-                  "library": "lucide",
-                  "fill": "$text-default"
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "iHAmB",
-              "name": "Artwork Image",
-              "width": "fill_container",
-              "height": "fill_container",
-              "fill": {
-                "type": "image",
-                "enabled": true,
-                "url": "products/tuner/cover.jpg",
-                "mode": "contain"
-              }
-            },
-            {
-              "type": "frame",
-              "id": "pzUGP",
-              "name": "Next",
-              "width": 44,
-              "height": 44,
-              "cornerRadius": "$radius-full",
-              "stroke": "$border-strong",
-              "strokeWidth": 1,
-              "strokeAlignment": "inner",
-              "justifyContent": "center",
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "icon",
-                  "id": "GIGl6",
-                  "name": "Icon",
-                  "width": 24,
-                  "height": 24,
-                  "icon": "chevron-right",
-                  "library": "lucide",
-                  "fill": "$text-default"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "eT80U",
-          "name": "Footer",
-          "width": "fill_container",
-          "layout": "vertical",
-          "gap": "$scale-400",
-          "padding": [
-            "$scale-600",
-            "$layout-margin",
-            "$space-section",
-            "$layout-margin"
-          ],
-          "alignItems": "center",
-          "children": [
-            {
-              "type": "frame",
-              "id": "iVXcF",
-              "name": "Zoom Hint",
-              "gap": "$scale-200",
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "icon",
-                  "id": "kNGOW",
-                  "name": "Icon",
-                  "width": 16,
-                  "height": 16,
-                  "icon": "zoom-in",
-                  "library": "lucide",
-                  "fill": "$text-muted"
-                },
-                {
-                  "type": "text",
-                  "id": "uELVg",
-                  "name": "Hint Text",
-                  "fill": "$text-muted",
-                  "content": "Click the image to zoom",
-                  "lineHeight": "$type-body2-line-height",
-                  "fontFamily": "$font-body",
-                  "fontSize": "$type-body2-size",
-                  "fontWeight": "normal",
-                  "letterSpacing": "$type-body2-letter-spacing"
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "Uun30",
-              "name": "Caption",
-              "layout": "vertical",
-              "gap": "$scale-100",
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "ipZI8",
-                  "name": "Title",
-                  "fill": "$text-default",
-                  "content": "Tuner",
-                  "lineHeight": "$type-h5-line-height",
-                  "fontFamily": "$font-heading",
-                  "fontSize": "$type-h5-size",
-                  "fontWeight": "600",
-                  "letterSpacing": "$type-h5-letter-spacing"
-                },
-                {
-                  "type": "text",
-                  "id": "P73e8O",
-                  "name": "Details",
-                  "fill": "$text-muted",
-                  "content": "22″ × 30″ · Acrylic on paper",
-                  "lineHeight": "$type-body2-line-height",
-                  "fontFamily": "$font-body",
-                  "fontSize": "$type-body2-size",
-                  "fontWeight": "normal",
-                  "letterSpacing": "$type-body2-letter-spacing"
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "GXFnu",
-              "name": "Thumbnail Nav",
-              "gap": "$scale-400",
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "R2btZ",
-                  "name": "Thumbnails",
-                  "gap": "$scale-200",
-                  "children": [
-                    {
-                      "type": "frame",
-                      "id": "C0L5wH",
-                      "name": "Thumb 1 (current)",
-                      "clip": true,
-                      "width": 56,
-                      "height": 56,
-                      "fill": [
-                        "$surface-subtle",
-                        {
-                          "type": "image",
-                          "enabled": true,
-                          "url": "products/tuner/cover.jpg",
-                          "mode": "cover"
-                        }
-                      ],
-                      "cornerRadius": "$radius-md",
-                      "stroke": "$border-emphasis",
-                      "strokeWidth": 2,
-                      "strokeAlignment": "inner"
-                    },
-                    {
-                      "type": "frame",
-                      "id": "Xukqt",
-                      "name": "Thumb 2",
-                      "opacity": 0.6,
-                      "clip": true,
-                      "width": 56,
-                      "height": 56,
-                      "fill": [
-                        "$surface-subtle",
-                        {
-                          "type": "image",
-                          "enabled": true,
-                          "url": "products/tuner/photo.jpg",
-                          "mode": "cover"
-                        }
-                      ],
-                      "cornerRadius": "$radius-md"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "frame",
-      "id": "Teqif",
-      "x": 6002,
-      "y": -2590,
-      "name": "Product — Tuner — Lightbox — Mobile (390)",
-      "theme": {
-        "mode": "dark",
-        "device": "mobile"
-      },
-      "clip": true,
-      "width": 390,
-      "height": 844,
-      "fill": "$surface-default",
-      "layout": "vertical",
-      "children": [
-        {
-          "type": "frame",
-          "id": "y8JiS",
-          "name": "Top Bar",
-          "width": "fill_container",
-          "padding": [
-            "$scale-300",
-            "$layout-margin"
-          ],
-          "justifyContent": "space_between",
-          "alignItems": "center",
-          "children": [
-            {
-              "type": "text",
-              "id": "b8hrHV",
-              "name": "Counter",
-              "fill": "$text-muted",
-              "content": "1 / 2",
-              "lineHeight": "$type-body2-line-height",
-              "fontFamily": "$font-body",
-              "fontSize": "$type-body2-size",
-              "fontWeight": "500",
-              "letterSpacing": "$type-body2-letter-spacing"
-            },
-            {
-              "type": "frame",
-              "id": "QNLio",
-              "name": "Close Button",
-              "width": 44,
-              "height": 44,
-              "cornerRadius": "$radius-full",
-              "justifyContent": "center",
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "icon",
-                  "id": "TX4uN",
-                  "name": "Icon",
-                  "width": 24,
-                  "height": 24,
-                  "icon": "x",
-                  "library": "lucide",
-                  "fill": "$text-default"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "TUpgz",
-          "name": "Stage",
-          "width": "fill_container",
-          "height": "fill_container",
-          "gap": "$scale-400",
-          "padding": [
-            0,
-            "$layout-margin"
-          ],
-          "justifyContent": "space_between",
-          "alignItems": "center",
-          "children": [
-            {
-              "type": "frame",
-              "id": "N7NP6e",
-              "name": "Artwork Image",
-              "width": "fill_container",
-              "height": "fill_container",
-              "fill": {
-                "type": "image",
-                "enabled": true,
-                "url": "products/tuner/cover.jpg",
-                "mode": "contain"
-              }
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "liTsg",
-          "name": "Footer",
-          "width": "fill_container",
-          "layout": "vertical",
-          "gap": "$scale-400",
-          "padding": [
-            "$scale-600",
-            "$layout-margin",
-            "$space-section",
-            "$layout-margin"
-          ],
-          "alignItems": "center",
-          "children": [
-            {
-              "type": "frame",
-              "id": "R3pj4g",
-              "name": "Zoom Hint",
-              "gap": "$scale-200",
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "icon",
-                  "id": "HnfxB",
-                  "name": "Icon",
-                  "width": 16,
-                  "height": 16,
-                  "icon": "zoom-in",
-                  "library": "lucide",
-                  "fill": "$text-muted"
-                },
-                {
-                  "type": "text",
-                  "id": "R8SZ7",
-                  "name": "Hint Text",
-                  "fill": "$text-muted",
-                  "content": "Pinch to zoom",
-                  "lineHeight": "$type-body2-line-height",
-                  "fontFamily": "$font-body",
-                  "fontSize": "$type-body2-size",
-                  "fontWeight": "normal",
-                  "letterSpacing": "$type-body2-letter-spacing"
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "ULIrR",
-              "name": "Caption",
-              "layout": "vertical",
-              "gap": "$scale-100",
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "bJeN3",
-                  "name": "Title",
-                  "fill": "$text-default",
-                  "content": "Tuner",
-                  "lineHeight": "$type-h5-line-height",
-                  "fontFamily": "$font-heading",
-                  "fontSize": "$type-h5-size",
-                  "fontWeight": "600",
-                  "letterSpacing": "$type-h5-letter-spacing"
-                },
-                {
-                  "type": "text",
-                  "id": "PZXlN",
-                  "name": "Details",
-                  "fill": "$text-muted",
-                  "content": "22″ × 30″ · Acrylic on paper",
-                  "lineHeight": "$type-body2-line-height",
-                  "fontFamily": "$font-body",
-                  "fontSize": "$type-body2-size",
-                  "fontWeight": "normal",
-                  "letterSpacing": "$type-body2-letter-spacing"
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "l7khCa",
-              "name": "Thumbnail Nav",
-              "gap": "$scale-400",
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "p66XpQ",
-                  "name": "Previous",
-                  "width": 44,
-                  "height": 44,
-                  "cornerRadius": "$radius-full",
-                  "stroke": "$border-strong",
-                  "strokeWidth": 1,
-                  "strokeAlignment": "inner",
-                  "justifyContent": "center",
-                  "alignItems": "center",
-                  "children": [
-                    {
-                      "type": "icon",
-                      "id": "rbEQy",
-                      "name": "Icon",
-                      "width": 24,
-                      "height": 24,
-                      "icon": "chevron-left",
-                      "library": "lucide",
-                      "fill": "$text-default"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "YJX3H",
-                  "name": "Thumbnails",
-                  "gap": "$scale-200",
-                  "children": [
-                    {
-                      "type": "frame",
-                      "id": "w0UF6",
-                      "name": "Thumb 1 (current)",
-                      "clip": true,
-                      "width": 56,
-                      "height": 56,
-                      "fill": [
-                        "$surface-subtle",
-                        {
-                          "type": "image",
-                          "enabled": true,
-                          "url": "products/tuner/cover.jpg",
-                          "mode": "cover"
-                        }
-                      ],
-                      "cornerRadius": "$radius-md",
-                      "stroke": "$border-emphasis",
-                      "strokeWidth": 2,
-                      "strokeAlignment": "inner"
-                    },
-                    {
-                      "type": "frame",
-                      "id": "m2aaUr",
-                      "name": "Thumb 2",
-                      "opacity": 0.6,
-                      "clip": true,
-                      "width": 56,
-                      "height": 56,
-                      "fill": [
-                        "$surface-subtle",
-                        {
-                          "type": "image",
-                          "enabled": true,
-                          "url": "products/tuner/photo.jpg",
-                          "mode": "cover"
-                        }
-                      ],
-                      "cornerRadius": "$radius-md"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "f9GPF2",
-                  "name": "Next",
-                  "width": 44,
-                  "height": 44,
-                  "cornerRadius": "$radius-full",
-                  "stroke": "$border-strong",
-                  "strokeWidth": 1,
-                  "strokeAlignment": "inner",
-                  "justifyContent": "center",
-                  "alignItems": "center",
-                  "children": [
-                    {
-                      "type": "icon",
-                      "id": "kezKp",
-                      "name": "Icon",
-                      "width": 24,
-                      "height": 24,
-                      "icon": "chevron-right",
-                      "library": "lucide",
-                      "fill": "$text-default"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "text",
-      "id": "VicdJ",
-      "x": 3752,
-      "y": -3114,
-      "fill": "#ffffff",
-      "content": "Lightbox",
-      "fontFamily": "Inter",
-      "fontSize": 200,
-      "fontWeight": "700"
-    },
-    {
-      "type": "text",
-      "id": "pjs1w",
-      "x": 509,
-      "y": -3114,
-      "fill": "#ffffff",
-      "content": "Shop Item",
-      "fontFamily": "Inter",
-      "fontSize": 200,
-      "fontWeight": "700"
-    },
-    {
-      "type": "text",
-      "id": "TZZfn",
-      "x": -2700,
-      "y": -3162,
-      "fill": "#ffffff",
-      "content": "Shop",
-      "fontFamily": "Inter",
-      "fontSize": 200,
-      "fontWeight": "700"
     }
   ],
   "themes": {
