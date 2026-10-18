@@ -6,7 +6,7 @@ heading: Drawing is thinking.
 # Buttons under the text. style: solid (yellow) or outline.
 actions:
   - label: View the shop
-    href: /shop
+    href: https://shop.paulgoode.com
     style: solid
   - label: Read the journal
     href: /blog
