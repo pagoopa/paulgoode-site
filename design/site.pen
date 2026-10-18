@@ -7574,24 +7574,57 @@
           "width": "fill_container",
           "descendants": {
             "oekhv": {
-              "id": "r4BEYr",
+              "id": "aNuLe",
               "type": "ref",
               "ref": "eFsWC",
-              "name": "Recent",
+              "name": "Home",
               "descendants": {
                 "jynNC": {
-                  "content": "RECENT"
+                  "content": "HOME"
                 }
               }
             },
             "S5GGB": {
-              "id": "auYf1",
+              "id": "Tc7Ru",
+              "type": "ref",
+              "ref": "eFsWC",
+              "name": "Shop",
+              "descendants": {
+                "jynNC": {
+                  "content": "SHOP"
+                }
+              }
+            },
+            "K3xO8N": {
+              "id": "P46l8",
               "type": "ref",
               "ref": "MusDs",
               "name": "Journal",
               "descendants": {
                 "t893f": {
                   "content": "JOURNAL"
+                }
+              }
+            },
+            "LglH1": {
+              "id": "Pxm10",
+              "type": "ref",
+              "ref": "eFsWC",
+              "name": "About",
+              "descendants": {
+                "jynNC": {
+                  "content": "ABOUT"
+                }
+              }
+            },
+            "ANNgX": {
+              "id": "JKoVl",
+              "type": "ref",
+              "ref": "eFsWC",
+              "name": "Contact",
+              "descendants": {
+                "jynNC": {
+                  "content": "CONTACT"
                 }
               }
             }
@@ -7688,18 +7721,42 @@
                           "letterSpacing": "$type-h4-letter-spacing"
                         },
                         {
-                          "type": "text",
-                          "id": "WF2JU",
-                          "name": "Description",
-                          "fill": "$text-muted",
-                          "textGrowth": "fixed-width",
+                          "type": "frame",
+                          "id": "C9hBr",
+                          "name": "Body",
                           "width": "fill_container",
-                          "content": "The first entry — why this journal exists and what Dream Out Loud means to me.",
-                          "lineHeight": "$type-p3-line-height",
-                          "fontFamily": "$font-body",
-                          "fontSize": "$type-p3-size",
-                          "fontWeight": "normal",
-                          "letterSpacing": "$type-p3-letter-spacing"
+                          "layout": "vertical",
+                          "gap": "$scale-600",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "o5GFN",
+                              "name": "Paragraph 1",
+                              "fill": "$text-default",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "This is the first post in the journal. Replace this with real writing whenever you're ready — the page and its layout are already wired up around whatever goes here.",
+                              "lineHeight": "$type-p2-line-height",
+                              "fontFamily": "$font-body",
+                              "fontSize": "$type-p2-size",
+                              "fontWeight": "normal",
+                              "letterSpacing": "$type-p2-letter-spacing"
+                            },
+                            {
+                              "type": "text",
+                              "id": "ARK63",
+                              "name": "Paragraph 2",
+                              "fill": "$text-default",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
+                              "lineHeight": "$type-p2-line-height",
+                              "fontFamily": "$font-body",
+                              "fontSize": "$type-p2-size",
+                              "fontWeight": "normal",
+                              "letterSpacing": "$type-p2-letter-spacing"
+                            }
+                          ]
                         }
                       ]
                     },
@@ -7749,18 +7806,39 @@
                           "letterSpacing": "$type-h4-letter-spacing"
                         },
                         {
-                          "type": "text",
-                          "id": "J2rHpM",
-                          "name": "Description",
-                          "fill": "$text-muted",
-                          "textGrowth": "fixed-width",
+                          "type": "frame",
+                          "id": "luxS4",
+                          "name": "Body",
                           "width": "fill_container",
-                          "content": "A short description of the entry, enough to tell the reader what it is about and why it is worth opening.",
-                          "lineHeight": "$type-p3-line-height",
-                          "fontFamily": "$font-body",
-                          "fontSize": "$type-p3-size",
-                          "fontWeight": "normal",
-                          "letterSpacing": "$type-p3-letter-spacing"
+                          "layout": "vertical",
+                          "gap": "$scale-600",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "EtWjm",
+                              "name": "Paragraph 1",
+                              "fill": "$text-default",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "A longer entry cut short with a more marker. Only the opening shows here on the journal page, so a long post doesn't push everything else down.",
+                              "lineHeight": "$type-p2-line-height",
+                              "fontFamily": "$font-body",
+                              "fontSize": "$type-p2-size",
+                              "fontWeight": "normal",
+                              "letterSpacing": "$type-p2-letter-spacing"
+                            },
+                            {
+                              "id": "T3DmG",
+                              "type": "ref",
+                              "ref": "HXmMz",
+                              "name": "Read more",
+                              "descendants": {
+                                "BSi7m": {
+                                  "content": "Read more"
+                                }
+                              }
+                            }
+                          ]
                         }
                       ]
                     },
@@ -7810,18 +7888,28 @@
                           "letterSpacing": "$type-h4-letter-spacing"
                         },
                         {
-                          "type": "text",
-                          "id": "U1PLE",
-                          "name": "Description",
-                          "fill": "$text-muted",
-                          "textGrowth": "fixed-width",
+                          "type": "frame",
+                          "id": "x4D4TT",
+                          "name": "Body",
                           "width": "fill_container",
-                          "content": "A short description of the entry, enough to tell the reader what it is about and why it is worth opening.",
-                          "lineHeight": "$type-p3-line-height",
-                          "fontFamily": "$font-body",
-                          "fontSize": "$type-p3-size",
-                          "fontWeight": "normal",
-                          "letterSpacing": "$type-p3-letter-spacing"
+                          "layout": "vertical",
+                          "gap": "$scale-600",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "lsp3j",
+                              "name": "Paragraph 1",
+                              "fill": "$text-default",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "A short entry with no marker shows in full, the same way it reads on its own page.",
+                              "lineHeight": "$type-p2-line-height",
+                              "fontFamily": "$font-body",
+                              "fontSize": "$type-p2-size",
+                              "fontWeight": "normal",
+                              "letterSpacing": "$type-p2-letter-spacing"
+                            }
+                          ]
                         }
                       ]
                     }
@@ -7836,7 +7924,36 @@
           "type": "ref",
           "ref": "E6haZ",
           "name": "Footer",
-          "width": "fill_container"
+          "width": "fill_container",
+          "descendants": {
+            "XEGUi": {
+              "enabled": false
+            },
+            "cEXbI": {
+              "enabled": false
+            },
+            "QxEgt": {
+              "name": "Shop"
+            },
+            "QxEgt/v3guN": {
+              "content": "SHOP"
+            },
+            "GrSaL": {
+              "name": "TikTok"
+            },
+            "GrSaL/v3guN": {
+              "content": "TIKTOK"
+            },
+            "tEF0T": {
+              "name": "YouTube"
+            },
+            "tEF0T/v3guN": {
+              "content": "YOUTUBE"
+            },
+            "dbeZH": {
+              "enabled": false
+            }
+          }
         }
       ]
     },
@@ -7863,24 +7980,57 @@
           "width": "fill_container",
           "descendants": {
             "oekhv": {
-              "id": "empMD",
+              "id": "NLHYr",
               "type": "ref",
               "ref": "eFsWC",
-              "name": "Recent",
+              "name": "Home",
               "descendants": {
                 "jynNC": {
-                  "content": "RECENT"
+                  "content": "HOME"
                 }
               }
             },
             "S5GGB": {
-              "id": "q4hwl",
+              "id": "A7Sbr6",
+              "type": "ref",
+              "ref": "eFsWC",
+              "name": "Shop",
+              "descendants": {
+                "jynNC": {
+                  "content": "SHOP"
+                }
+              }
+            },
+            "K3xO8N": {
+              "id": "BzUo7",
               "type": "ref",
               "ref": "MusDs",
               "name": "Journal",
               "descendants": {
                 "t893f": {
                   "content": "JOURNAL"
+                }
+              }
+            },
+            "LglH1": {
+              "id": "UO8MA",
+              "type": "ref",
+              "ref": "eFsWC",
+              "name": "About",
+              "descendants": {
+                "jynNC": {
+                  "content": "ABOUT"
+                }
+              }
+            },
+            "ANNgX": {
+              "id": "kbhJm",
+              "type": "ref",
+              "ref": "eFsWC",
+              "name": "Contact",
+              "descendants": {
+                "jynNC": {
+                  "content": "CONTACT"
                 }
               }
             }
@@ -7977,18 +8127,42 @@
                           "letterSpacing": "$type-h4-letter-spacing"
                         },
                         {
-                          "type": "text",
-                          "id": "cx3JG",
-                          "name": "Description",
-                          "fill": "$text-muted",
-                          "textGrowth": "fixed-width",
+                          "type": "frame",
+                          "id": "DGBS4",
+                          "name": "Body",
                           "width": "fill_container",
-                          "content": "The first entry — why this journal exists and what Dream Out Loud means to me.",
-                          "lineHeight": "$type-p3-line-height",
-                          "fontFamily": "$font-body",
-                          "fontSize": "$type-p3-size",
-                          "fontWeight": "normal",
-                          "letterSpacing": "$type-p3-letter-spacing"
+                          "layout": "vertical",
+                          "gap": "$scale-600",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "A0mbJ",
+                              "name": "Paragraph 1",
+                              "fill": "$text-default",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "This is the first post in the journal. Replace this with real writing whenever you're ready — the page and its layout are already wired up around whatever goes here.",
+                              "lineHeight": "$type-p2-line-height",
+                              "fontFamily": "$font-body",
+                              "fontSize": "$type-p2-size",
+                              "fontWeight": "normal",
+                              "letterSpacing": "$type-p2-letter-spacing"
+                            },
+                            {
+                              "type": "text",
+                              "id": "eCtN8",
+                              "name": "Paragraph 2",
+                              "fill": "$text-default",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
+                              "lineHeight": "$type-p2-line-height",
+                              "fontFamily": "$font-body",
+                              "fontSize": "$type-p2-size",
+                              "fontWeight": "normal",
+                              "letterSpacing": "$type-p2-letter-spacing"
+                            }
+                          ]
                         }
                       ]
                     },
@@ -8038,18 +8212,39 @@
                           "letterSpacing": "$type-h4-letter-spacing"
                         },
                         {
-                          "type": "text",
-                          "id": "Ypeqe",
-                          "name": "Description",
-                          "fill": "$text-muted",
-                          "textGrowth": "fixed-width",
+                          "type": "frame",
+                          "id": "kdbbx",
+                          "name": "Body",
                           "width": "fill_container",
-                          "content": "A short description of the entry, enough to tell the reader what it is about and why it is worth opening.",
-                          "lineHeight": "$type-p3-line-height",
-                          "fontFamily": "$font-body",
-                          "fontSize": "$type-p3-size",
-                          "fontWeight": "normal",
-                          "letterSpacing": "$type-p3-letter-spacing"
+                          "layout": "vertical",
+                          "gap": "$scale-600",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "heHz9",
+                              "name": "Paragraph 1",
+                              "fill": "$text-default",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "A longer entry cut short with a more marker. Only the opening shows here on the journal page, so a long post doesn't push everything else down.",
+                              "lineHeight": "$type-p2-line-height",
+                              "fontFamily": "$font-body",
+                              "fontSize": "$type-p2-size",
+                              "fontWeight": "normal",
+                              "letterSpacing": "$type-p2-letter-spacing"
+                            },
+                            {
+                              "id": "y5hBO",
+                              "type": "ref",
+                              "ref": "HXmMz",
+                              "name": "Read more",
+                              "descendants": {
+                                "BSi7m": {
+                                  "content": "Read more"
+                                }
+                              }
+                            }
+                          ]
                         }
                       ]
                     },
@@ -8099,18 +8294,28 @@
                           "letterSpacing": "$type-h4-letter-spacing"
                         },
                         {
-                          "type": "text",
-                          "id": "qj31J",
-                          "name": "Description",
-                          "fill": "$text-muted",
-                          "textGrowth": "fixed-width",
+                          "type": "frame",
+                          "id": "ic2p1",
+                          "name": "Body",
                           "width": "fill_container",
-                          "content": "A short description of the entry, enough to tell the reader what it is about and why it is worth opening.",
-                          "lineHeight": "$type-p3-line-height",
-                          "fontFamily": "$font-body",
-                          "fontSize": "$type-p3-size",
-                          "fontWeight": "normal",
-                          "letterSpacing": "$type-p3-letter-spacing"
+                          "layout": "vertical",
+                          "gap": "$scale-600",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "uDbtU",
+                              "name": "Paragraph 1",
+                              "fill": "$text-default",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "A short entry with no marker shows in full, the same way it reads on its own page.",
+                              "lineHeight": "$type-p2-line-height",
+                              "fontFamily": "$font-body",
+                              "fontSize": "$type-p2-size",
+                              "fontWeight": "normal",
+                              "letterSpacing": "$type-p2-letter-spacing"
+                            }
+                          ]
                         }
                       ]
                     }
@@ -8125,7 +8330,36 @@
           "type": "ref",
           "ref": "E6haZ",
           "name": "Footer",
-          "width": "fill_container"
+          "width": "fill_container",
+          "descendants": {
+            "XEGUi": {
+              "enabled": false
+            },
+            "cEXbI": {
+              "enabled": false
+            },
+            "QxEgt": {
+              "name": "Shop"
+            },
+            "QxEgt/v3guN": {
+              "content": "SHOP"
+            },
+            "GrSaL": {
+              "name": "TikTok"
+            },
+            "GrSaL/v3guN": {
+              "content": "TIKTOK"
+            },
+            "tEF0T": {
+              "name": "YouTube"
+            },
+            "tEF0T/v3guN": {
+              "content": "YOUTUBE"
+            },
+            "dbeZH": {
+              "enabled": false
+            }
+          }
         }
       ]
     },
@@ -8150,20 +8384,38 @@
           "ref": "S5OtQe",
           "name": "Header",
           "width": "fill_container",
+          "layout": "vertical",
+          "alignItems": "center",
+          "gap": "$scale-200",
           "descendants": {
+            "zfzcT": {
+              "enabled": true,
+              "gap": "$scale-300"
+            },
             "oekhv": {
-              "id": "d0zGjn",
+              "id": "umx6B",
               "type": "ref",
               "ref": "eFsWC",
-              "name": "Recent",
+              "name": "Home",
               "descendants": {
                 "jynNC": {
-                  "content": "RECENT"
+                  "content": "HOME"
                 }
               }
             },
             "S5GGB": {
-              "id": "g034jt",
+              "id": "UmZKr",
+              "type": "ref",
+              "ref": "eFsWC",
+              "name": "Shop",
+              "descendants": {
+                "jynNC": {
+                  "content": "SHOP"
+                }
+              }
+            },
+            "K3xO8N": {
+              "id": "qOigw",
               "type": "ref",
               "ref": "MusDs",
               "name": "Journal",
@@ -8172,6 +8424,31 @@
                   "content": "JOURNAL"
                 }
               }
+            },
+            "LglH1": {
+              "id": "bPBMf",
+              "type": "ref",
+              "ref": "eFsWC",
+              "name": "About",
+              "descendants": {
+                "jynNC": {
+                  "content": "ABOUT"
+                }
+              }
+            },
+            "ANNgX": {
+              "id": "jiYdV",
+              "type": "ref",
+              "ref": "eFsWC",
+              "name": "Contact",
+              "descendants": {
+                "jynNC": {
+                  "content": "CONTACT"
+                }
+              }
+            },
+            "F0YMjx": {
+              "enabled": false
             }
           }
         },
@@ -8266,18 +8543,42 @@
                           "letterSpacing": "$type-h4-letter-spacing"
                         },
                         {
-                          "type": "text",
-                          "id": "HFeKd",
-                          "name": "Description",
-                          "fill": "$text-muted",
-                          "textGrowth": "fixed-width",
+                          "type": "frame",
+                          "id": "r9WYFC",
+                          "name": "Body",
                           "width": "fill_container",
-                          "content": "The first entry — why this journal exists and what Dream Out Loud means to me.",
-                          "lineHeight": "$type-p3-line-height",
-                          "fontFamily": "$font-body",
-                          "fontSize": "$type-p3-size",
-                          "fontWeight": "normal",
-                          "letterSpacing": "$type-p3-letter-spacing"
+                          "layout": "vertical",
+                          "gap": "$scale-600",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "PnghU",
+                              "name": "Paragraph 1",
+                              "fill": "$text-default",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "This is the first post in the journal. Replace this with real writing whenever you're ready — the page and its layout are already wired up around whatever goes here.",
+                              "lineHeight": "$type-p2-line-height",
+                              "fontFamily": "$font-body",
+                              "fontSize": "$type-p2-size",
+                              "fontWeight": "normal",
+                              "letterSpacing": "$type-p2-letter-spacing"
+                            },
+                            {
+                              "type": "text",
+                              "id": "uoY7n",
+                              "name": "Paragraph 2",
+                              "fill": "$text-default",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
+                              "lineHeight": "$type-p2-line-height",
+                              "fontFamily": "$font-body",
+                              "fontSize": "$type-p2-size",
+                              "fontWeight": "normal",
+                              "letterSpacing": "$type-p2-letter-spacing"
+                            }
+                          ]
                         }
                       ]
                     },
@@ -8327,18 +8628,39 @@
                           "letterSpacing": "$type-h4-letter-spacing"
                         },
                         {
-                          "type": "text",
-                          "id": "CXnIg",
-                          "name": "Description",
-                          "fill": "$text-muted",
-                          "textGrowth": "fixed-width",
+                          "type": "frame",
+                          "id": "jnH41",
+                          "name": "Body",
                           "width": "fill_container",
-                          "content": "A short description of the entry, enough to tell the reader what it is about and why it is worth opening.",
-                          "lineHeight": "$type-p3-line-height",
-                          "fontFamily": "$font-body",
-                          "fontSize": "$type-p3-size",
-                          "fontWeight": "normal",
-                          "letterSpacing": "$type-p3-letter-spacing"
+                          "layout": "vertical",
+                          "gap": "$scale-600",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "XYMhv",
+                              "name": "Paragraph 1",
+                              "fill": "$text-default",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "A longer entry cut short with a more marker. Only the opening shows here on the journal page, so a long post doesn't push everything else down.",
+                              "lineHeight": "$type-p2-line-height",
+                              "fontFamily": "$font-body",
+                              "fontSize": "$type-p2-size",
+                              "fontWeight": "normal",
+                              "letterSpacing": "$type-p2-letter-spacing"
+                            },
+                            {
+                              "id": "Y2KUr8",
+                              "type": "ref",
+                              "ref": "HXmMz",
+                              "name": "Read more",
+                              "descendants": {
+                                "BSi7m": {
+                                  "content": "Read more"
+                                }
+                              }
+                            }
+                          ]
                         }
                       ]
                     },
@@ -8388,18 +8710,28 @@
                           "letterSpacing": "$type-h4-letter-spacing"
                         },
                         {
-                          "type": "text",
-                          "id": "h21sD",
-                          "name": "Description",
-                          "fill": "$text-muted",
-                          "textGrowth": "fixed-width",
+                          "type": "frame",
+                          "id": "EU7qg",
+                          "name": "Body",
                           "width": "fill_container",
-                          "content": "A short description of the entry, enough to tell the reader what it is about and why it is worth opening.",
-                          "lineHeight": "$type-p3-line-height",
-                          "fontFamily": "$font-body",
-                          "fontSize": "$type-p3-size",
-                          "fontWeight": "normal",
-                          "letterSpacing": "$type-p3-letter-spacing"
+                          "layout": "vertical",
+                          "gap": "$scale-600",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "VTZTH",
+                              "name": "Paragraph 1",
+                              "fill": "$text-default",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "A short entry with no marker shows in full, the same way it reads on its own page.",
+                              "lineHeight": "$type-p2-line-height",
+                              "fontFamily": "$font-body",
+                              "fontSize": "$type-p2-size",
+                              "fontWeight": "normal",
+                              "letterSpacing": "$type-p2-letter-spacing"
+                            }
+                          ]
                         }
                       ]
                     }
@@ -8418,14 +8750,40 @@
           "descendants": {
             "XEGUi": {
               "layout": "vertical",
-              "alignItems": "start"
+              "alignItems": "start",
+              "enabled": false
+            },
+            "cEXbI": {
+              "enabled": false
             },
             "rLPly": {
               "layout": "vertical",
-              "alignItems": "start"
+              "alignItems": "start",
+              "gap": "$scale-600"
             },
             "m0Yiq": {
               "gap": "$scale-400"
+            },
+            "QxEgt": {
+              "name": "Shop"
+            },
+            "QxEgt/v3guN": {
+              "content": "SHOP"
+            },
+            "GrSaL": {
+              "name": "TikTok"
+            },
+            "GrSaL/v3guN": {
+              "content": "TIKTOK"
+            },
+            "tEF0T": {
+              "name": "YouTube"
+            },
+            "tEF0T/v3guN": {
+              "content": "YOUTUBE"
+            },
+            "dbeZH": {
+              "enabled": false
             }
           }
         }
@@ -8465,24 +8823,57 @@
           "width": "fill_container",
           "descendants": {
             "oekhv": {
-              "id": "X3FWrP",
+              "id": "op62p",
               "type": "ref",
               "ref": "eFsWC",
-              "name": "Recent",
+              "name": "Home",
               "descendants": {
                 "jynNC": {
-                  "content": "RECENT"
+                  "content": "HOME"
                 }
               }
             },
             "S5GGB": {
-              "id": "YPGV5",
+              "id": "D9xEk1",
+              "type": "ref",
+              "ref": "eFsWC",
+              "name": "Shop",
+              "descendants": {
+                "jynNC": {
+                  "content": "SHOP"
+                }
+              }
+            },
+            "K3xO8N": {
+              "id": "S90lbn",
               "type": "ref",
               "ref": "MusDs",
               "name": "Journal",
               "descendants": {
                 "t893f": {
                   "content": "JOURNAL"
+                }
+              }
+            },
+            "LglH1": {
+              "id": "U79Gu",
+              "type": "ref",
+              "ref": "eFsWC",
+              "name": "About",
+              "descendants": {
+                "jynNC": {
+                  "content": "ABOUT"
+                }
+              }
+            },
+            "ANNgX": {
+              "id": "GnYxJ",
+              "type": "ref",
+              "ref": "eFsWC",
+              "name": "Contact",
+              "descendants": {
+                "jynNC": {
+                  "content": "CONTACT"
                 }
               }
             }
@@ -8515,12 +8906,6 @@
                   "name": "Img Container",
                   "layout": "vertical",
                   "gap": 10,
-                  "padding": [
-                    40,
-                    0,
-                    0,
-                    0
-                  ],
                   "children": [
                     {
                       "type": "frame",
@@ -8643,7 +9028,36 @@
           "type": "ref",
           "ref": "E6haZ",
           "name": "Footer",
-          "width": "fill_container"
+          "width": "fill_container",
+          "descendants": {
+            "XEGUi": {
+              "enabled": false
+            },
+            "cEXbI": {
+              "enabled": false
+            },
+            "QxEgt": {
+              "name": "Shop"
+            },
+            "QxEgt/v3guN": {
+              "content": "SHOP"
+            },
+            "GrSaL": {
+              "name": "TikTok"
+            },
+            "GrSaL/v3guN": {
+              "content": "TIKTOK"
+            },
+            "tEF0T": {
+              "name": "YouTube"
+            },
+            "tEF0T/v3guN": {
+              "content": "YOUTUBE"
+            },
+            "dbeZH": {
+              "enabled": false
+            }
+          }
         }
       ]
     },
@@ -8670,24 +9084,57 @@
           "width": "fill_container",
           "descendants": {
             "oekhv": {
-              "id": "LKHvH",
+              "id": "UejVY",
               "type": "ref",
               "ref": "eFsWC",
-              "name": "Recent",
+              "name": "Home",
               "descendants": {
                 "jynNC": {
-                  "content": "RECENT"
+                  "content": "HOME"
                 }
               }
             },
             "S5GGB": {
-              "id": "vFAEG",
+              "id": "KjKJo",
+              "type": "ref",
+              "ref": "eFsWC",
+              "name": "Shop",
+              "descendants": {
+                "jynNC": {
+                  "content": "SHOP"
+                }
+              }
+            },
+            "K3xO8N": {
+              "id": "Zbsxi",
               "type": "ref",
               "ref": "MusDs",
               "name": "Journal",
               "descendants": {
                 "t893f": {
                   "content": "JOURNAL"
+                }
+              }
+            },
+            "LglH1": {
+              "id": "q5vmeI",
+              "type": "ref",
+              "ref": "eFsWC",
+              "name": "About",
+              "descendants": {
+                "jynNC": {
+                  "content": "ABOUT"
+                }
+              }
+            },
+            "ANNgX": {
+              "id": "PBcnJ",
+              "type": "ref",
+              "ref": "eFsWC",
+              "name": "Contact",
+              "descendants": {
+                "jynNC": {
+                  "content": "CONTACT"
                 }
               }
             }
@@ -8842,7 +9289,36 @@
           "type": "ref",
           "ref": "E6haZ",
           "name": "Footer",
-          "width": "fill_container"
+          "width": "fill_container",
+          "descendants": {
+            "XEGUi": {
+              "enabled": false
+            },
+            "cEXbI": {
+              "enabled": false
+            },
+            "QxEgt": {
+              "name": "Shop"
+            },
+            "QxEgt/v3guN": {
+              "content": "SHOP"
+            },
+            "GrSaL": {
+              "name": "TikTok"
+            },
+            "GrSaL/v3guN": {
+              "content": "TIKTOK"
+            },
+            "tEF0T": {
+              "name": "YouTube"
+            },
+            "tEF0T/v3guN": {
+              "content": "YOUTUBE"
+            },
+            "dbeZH": {
+              "enabled": false
+            }
+          }
         }
       ]
     },
@@ -8867,20 +9343,38 @@
           "ref": "S5OtQe",
           "name": "Header",
           "width": "fill_container",
+          "layout": "vertical",
+          "alignItems": "center",
+          "gap": "$scale-200",
           "descendants": {
+            "zfzcT": {
+              "enabled": true,
+              "gap": "$scale-300"
+            },
             "oekhv": {
-              "id": "y0k3X",
+              "id": "EbH26",
               "type": "ref",
               "ref": "eFsWC",
-              "name": "Recent",
+              "name": "Home",
               "descendants": {
                 "jynNC": {
-                  "content": "RECENT"
+                  "content": "HOME"
                 }
               }
             },
             "S5GGB": {
-              "id": "u43C0",
+              "id": "sec1U",
+              "type": "ref",
+              "ref": "eFsWC",
+              "name": "Shop",
+              "descendants": {
+                "jynNC": {
+                  "content": "SHOP"
+                }
+              }
+            },
+            "K3xO8N": {
+              "id": "na2nZ",
               "type": "ref",
               "ref": "MusDs",
               "name": "Journal",
@@ -8889,6 +9383,31 @@
                   "content": "JOURNAL"
                 }
               }
+            },
+            "LglH1": {
+              "id": "qjKJS",
+              "type": "ref",
+              "ref": "eFsWC",
+              "name": "About",
+              "descendants": {
+                "jynNC": {
+                  "content": "ABOUT"
+                }
+              }
+            },
+            "ANNgX": {
+              "id": "x7QxUJ",
+              "type": "ref",
+              "ref": "eFsWC",
+              "name": "Contact",
+              "descendants": {
+                "jynNC": {
+                  "content": "CONTACT"
+                }
+              }
+            },
+            "F0YMjx": {
+              "enabled": false
             }
           }
         },
@@ -9053,16 +9572,320 @@
           "descendants": {
             "XEGUi": {
               "layout": "vertical",
-              "alignItems": "start"
+              "alignItems": "start",
+              "enabled": false
+            },
+            "cEXbI": {
+              "enabled": false
             },
             "rLPly": {
               "layout": "vertical",
-              "alignItems": "start"
+              "alignItems": "start",
+              "gap": "$scale-600"
             },
             "m0Yiq": {
               "gap": "$scale-400"
+            },
+            "QxEgt": {
+              "name": "Shop"
+            },
+            "QxEgt/v3guN": {
+              "content": "SHOP"
+            },
+            "GrSaL": {
+              "name": "TikTok"
+            },
+            "GrSaL/v3guN": {
+              "content": "TIKTOK"
+            },
+            "tEF0T": {
+              "name": "YouTube"
+            },
+            "tEF0T/v3guN": {
+              "content": "YOUTUBE"
+            },
+            "dbeZH": {
+              "enabled": false
             }
           }
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "i4r7Lf",
+      "x": 3189,
+      "y": -2595,
+      "name": "buy.stripe.com",
+      "context": "div",
+      "clip": true,
+      "width": 361.61,
+      "height": 127.09,
+      "fill": "#ffffff",
+      "justifyContent": "center",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "NgwLE",
+          "name": "div",
+          "context": "div",
+          "width": 361.61,
+          "layout": "vertical",
+          "padding": [
+            35,
+            0
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "R0qrAA",
+              "name": "div",
+              "context": "div",
+              "width": 291.61,
+              "height": 57.09,
+              "layout": "vertical",
+              "gap": 7,
+              "padding": [
+                0,
+                0,
+                8.39,
+                0
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "iHZHL",
+                  "name": "div",
+                  "context": "div",
+                  "width": "fill_container",
+                  "height": 19.86,
+                  "layout": "vertical",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "typRV",
+                      "name": "svg",
+                      "context": "svg",
+                      "clip": true,
+                      "width": 16.8,
+                      "height": 16.8,
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "group",
+                          "id": "VhO0r",
+                          "x": 0,
+                          "y": 0,
+                          "children": [
+                            {
+                              "type": "ellipse",
+                              "id": "dRNQT",
+                              "x": 7.000000000000001,
+                              "y": 13.720000000000002,
+                              "rotation": 180,
+                              "flipX": true,
+                              "fill": "#1a1a1ae6",
+                              "width": 2.8000000000000003,
+                              "height": 2.8000000000000003
+                            },
+                            {
+                              "type": "group",
+                              "id": "pGD0j",
+                              "x": 0,
+                              "y": 0,
+                              "children": [
+                                {
+                                  "type": "ellipse",
+                                  "id": "a0Ff4W",
+                                  "x": 0.7000000000000001,
+                                  "y": 16.1,
+                                  "rotation": 180,
+                                  "flipX": true,
+                                  "width": 15.400000000000002,
+                                  "height": 15.400000000000002,
+                                  "stroke": "#1a1a1ae6",
+                                  "strokeWidth": 1.4000000000000001
+                                },
+                                {
+                                  "type": "path",
+                                  "id": "E6fkCg",
+                                  "x": 8.4,
+                                  "y": 3.9200002670288088,
+                                  "geometry": "M0 0l0 3.2",
+                                  "fillRule": "evenodd",
+                                  "width": 0,
+                                  "height": 4.479999732971192,
+                                  "stroke": "#1a1a1ae6",
+                                  "strokeWidth": 1.4000000000000001,
+                                  "strokeLinejoin": "round",
+                                  "strokeLinecap": "round"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "F2JKji",
+                  "name": "Waffle has sold. Thank you for looking!",
+                  "context": "h1",
+                  "fill": "#1a1a1ae6",
+                  "content": "Waffle has sold. Thank you for looking!",
+                  "lineHeight": 1.3,
+                  "textAlign": "center",
+                  "fontFamily": "Roboto",
+                  "fontSize": 24,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "t93XoF",
+      "x": 3590.61,
+      "y": -2595,
+      "name": "buy.stripe.com",
+      "context": "div",
+      "clip": true,
+      "width": 361.61,
+      "height": 127.09,
+      "fill": "#ffffff",
+      "justifyContent": "center",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "m805f4",
+          "name": "div",
+          "context": "div",
+          "width": 361.61,
+          "layout": "vertical",
+          "padding": [
+            35,
+            0
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "h6217",
+              "name": "div",
+              "context": "div",
+              "width": 291.61,
+              "height": 57.09,
+              "layout": "vertical",
+              "gap": 7,
+              "padding": [
+                0,
+                0,
+                8.39,
+                0
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Qg7Qx",
+                  "name": "div",
+                  "context": "div",
+                  "width": "fill_container",
+                  "height": 19.86,
+                  "layout": "vertical",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "x6y9xS",
+                      "name": "svg",
+                      "context": "svg",
+                      "clip": true,
+                      "width": 16.8,
+                      "height": 16.8,
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "group",
+                          "id": "z0crG",
+                          "x": 0,
+                          "y": 0,
+                          "children": [
+                            {
+                              "type": "ellipse",
+                              "id": "nKS4a",
+                              "x": 7.000000000000001,
+                              "y": 13.720000000000002,
+                              "rotation": 180,
+                              "flipX": true,
+                              "fill": "#1a1a1ae6",
+                              "width": 2.8000000000000003,
+                              "height": 2.8000000000000003
+                            },
+                            {
+                              "type": "group",
+                              "id": "j34u4L",
+                              "x": 0,
+                              "y": 0,
+                              "children": [
+                                {
+                                  "type": "ellipse",
+                                  "id": "MWxX6",
+                                  "x": 0.7000000000000001,
+                                  "y": 16.1,
+                                  "rotation": 180,
+                                  "flipX": true,
+                                  "width": 15.400000000000002,
+                                  "height": 15.400000000000002,
+                                  "stroke": "#1a1a1ae6",
+                                  "strokeWidth": 1.4000000000000001
+                                },
+                                {
+                                  "type": "path",
+                                  "id": "GdhfU",
+                                  "x": 8.4,
+                                  "y": 3.9200002670288088,
+                                  "geometry": "M0 0l0 3.2",
+                                  "fillRule": "evenodd",
+                                  "width": 0,
+                                  "height": 4.479999732971192,
+                                  "stroke": "#1a1a1ae6",
+                                  "strokeWidth": 1.4000000000000001,
+                                  "strokeLinejoin": "round",
+                                  "strokeLinecap": "round"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "grkAd",
+                  "name": "Waffle has sold. Thank you for looking!",
+                  "context": "h1",
+                  "fill": "#1a1a1ae6",
+                  "content": "Waffle has sold. Thank you for looking!",
+                  "lineHeight": 1.3,
+                  "textAlign": "center",
+                  "fontFamily": "Roboto",
+                  "fontSize": 24,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
         }
       ]
     }
