@@ -67,11 +67,62 @@ A short guide to the Git and GitHub workflow for this project.
 - Committed work is very hard to lose. If something looks wrong, stop and ask
   before running `git reset`, `--force`, or `git branch -D`.
 
+## Design workflow: Figma and Pencil
+
+Each tool owns one layer of the design, and changes flow one way:
+Figma → `design/site.pen` → the Astro code.
+
+| Layer | Owned by | Examples |
+| --- | --- | --- |
+| The design system | Figma ("PG Library" file) | Colors, type, spacing, base components, style guide |
+| Everything built from it | Pencil (`design/site.pen`) and the code | Pages, layouts, flows, Astro components |
+
+**The rule:** changing the system? Start in Figma. Changing a page? Start in
+Pencil. Page work never goes back to Figma.
+
+### Which agent does what
+
+| | Figma | `site.pen` | Code |
+| --- | --- | --- | --- |
+| Claude Code (terminal) | ✅ | ✅ | ✅ |
+| The agent inside Pencil | ❌ | ✅ | ✅ |
+
+- **Anything that starts in Figma goes to Claude Code.** It reads Figma,
+  updates `site.pen` and the code in one pass, and commits.
+- **Anything that stays in Pencil can go to either agent.** Use Pencil's agent
+  when you're already working on the canvas.
+- **Pencil's agent doesn't need Figma.** It pulls from GitHub and finds the
+  updated variables and components in `site.pen`.
+- **Don't change system values (colors, fonts, sizes) in Pencil.** The next
+  Figma sync overwrites them. Change them in Figma, then sync.
+
+### The loop
+
+1. Change a component or variable in Figma.
+2. Ask Claude Code to "sync from Figma" (see Design tokens below).
+3. Pull in Pencil and build pages with the updated pieces.
+
+Both agents push to this repo, so **always pull before starting work.**
+
+### Figma code layers
+
+Figma's code layers (in beta) are for prototyping and reviewing interactions
+on the canvas. Don't connect them to this repo or let them push here. When a
+prototype is settled, Claude Code brings it in through the normal loop.
+
 ## Design tokens
 
-Colors, fonts and sizes live in `design/site.pen` and are copied into
-`src/styles/tokens.css` by `scripts/sync-tokens.mjs`. This runs automatically
-before `npm run dev` and `npm run build`; run `npm run tokens` to sync manually.
+Colors, fonts and sizes start in Figma and reach the site in three steps:
+
+1. **Figma → snapshot.** Claude Code runs `scripts/figma-export.js` inside
+   Figma and saves the result as `design/figma-variables.json`.
+2. **Snapshot → `site.pen`.** `npm run figma:pen` reports what's added, changed
+   or missing in `design/site.pen`, and `npm run figma:pen -- --json` prints
+   the changes ready to apply.
+3. **`site.pen` → CSS.** `scripts/sync-tokens.mjs` copies the variables into
+   `src/styles/tokens.css`. This runs automatically before `npm run dev` and
+   `npm run build`; run `npm run tokens` to sync manually.
+
 Don't edit `tokens.css` by hand, because the next sync overwrites it.
 
 ## Editing site copy
