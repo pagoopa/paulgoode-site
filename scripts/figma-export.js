@@ -2,7 +2,7 @@
 // This isn't a Node script: Claude runs it inside Figma through the Figma MCP
 // `use_figma` tool (file fhD5RfaBFvLbVNegqRAdDX), then saves the result as
 // design/figma-variables.json. `npm run figma:pen` turns that file into
-// shop.pen variables.
+// site.pen variables.
 //
 // The MCP tool truncates results over 20 KB, so set PART to 'variables' and
 // then 'styles' and merge the two results into one file.

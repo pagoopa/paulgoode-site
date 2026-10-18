@@ -48,7 +48,7 @@ A short guide to the Git and GitHub workflow for this project.
   A is merged afterward. (This happened with PRs #5 and #6.)
 - **One branch per task.** Merge it before starting the next.
 - **Keep PRs small.** They're easier to review and to undo.
-- **Merge often.** `design/shop.pen` is a large file, and merge conflicts in it
+- **Merge often.** `design/site.pen` is a large file, and merge conflicts in it
   are painful. Short-lived branches keep conflicts rare.
 
 ## Useful commands
@@ -69,7 +69,7 @@ A short guide to the Git and GitHub workflow for this project.
 
 ## Design tokens
 
-Colors, fonts and sizes live in `design/shop.pen` and are copied into
+Colors, fonts and sizes live in `design/site.pen` and are copied into
 `src/styles/tokens.css` by `scripts/sync-tokens.mjs`. This runs automatically
 before `npm run dev` and `npm run build`; run `npm run tokens` to sync manually.
 Don't edit `tokens.css` by hand, because the next sync overwrites it.

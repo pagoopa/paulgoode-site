@@ -1,4 +1,4 @@
-// Copies the design variables from design/shop.pen into src/styles/tokens.css,
+// Copies the design variables from design/site.pen into src/styles/tokens.css,
 // so the site's colors, fonts and sizes always match the design file.
 // Also builds the Google Fonts link from the font variables.
 // Runs automatically before `npm run dev` and `npm run build`.
@@ -10,7 +10,7 @@
 //   [data-theme="dark"] on any element.
 import { readFileSync, writeFileSync } from 'node:fs';
 
-const PEN = new URL('../design/shop.pen', import.meta.url);
+const PEN = new URL('../design/site.pen', import.meta.url);
 const OUT = new URL('../src/styles/tokens.css', import.meta.url);
 
 // Viewport widths where the tablet and mobile values take over.
@@ -98,7 +98,7 @@ const fontsUrl =
 const block = (selector, lines, indent = '') =>
   `${indent}${selector} {\n${lines.map((l) => indent + l).join('\n')}\n${indent}}`;
 
-const css = `/* Generated from design/shop.pen by scripts/sync-tokens.mjs. Do not edit by hand:
+const css = `/* Generated from design/site.pen by scripts/sync-tokens.mjs. Do not edit by hand:
    change the variables in pen.dev, save, and run \`npm run tokens\` (or dev/build). */
 
 @import url('${fontsUrl}');
