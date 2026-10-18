@@ -1,17 +1,23 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { getCollection } from 'astro:content';
+import PostExcerpt from '../../components/PostExcerpt.astro';
+import { getCollection, render } from 'astro:content';
 
 const isDev = import.meta.env.DEV;
 const allPosts = await getCollection('blog', ({ data }) => isDev || !data.draft);
 const posts = allPosts.sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
+const entries = await Promise.all(
+  posts.map(async (post) => ({ post, Content: (await render(post)).Content }))
+);
 
 const dateFmt = new Intl.DateTimeFormat('en-US', {
   year: 'numeric',
   month: 'long',
   day: 'numeric',
+  // pubDate is midnight UTC; without this it shows the day before in US time zones.
+  timeZone: 'UTC',
 });
 ---
 
@@ -23,13 +29,17 @@ const dateFmt = new Intl.DateTimeFormat('en-US', {
     {posts.length === 0 && <p class="prose">Nothing published yet.</p>}
 
     <ul class="journal__list">
-      {posts.map((post) => (
-        <li>
-          <a href={`/blog/${post.id}/`} class="journal__item">
-            <span class="journal__date">{dateFmt.format(post.data.pubDate)}</span>
-            <h2 class="journal__title">{post.data.title}</h2>
-            {post.data.description && <p class="journal__desc">{post.data.description}</p>}
-          </a>
+      {entries.map(({ post, Content }) => (
+        <li class="journal__item">
+          <span class="journal__date">{dateFmt.format(post.data.pubDate)}</span>
+          <h2 class="journal__title">
+            <a href={`/blog/${post.id}/`}>{post.data.title}</a>
+          </h2>
+          <div class="journal__body">
+            <PostExcerpt href={`/blog/${post.id}/`}>
+              <Content />
+            </PostExcerpt>
+          </div>
         </li>
       ))}
     </ul>
@@ -51,7 +61,6 @@ const dateFmt = new Intl.DateTimeFormat('en-US', {
   }
 
   .journal__item {
-    display: block;
     padding-block: var(--scale-600);
     border-bottom: 1px solid var(--color-border-default);
   }
@@ -73,8 +82,17 @@ const dateFmt = new Intl.DateTimeFormat('en-US', {
     margin: var(--scale-200) 0 var(--scale-200);
   }
 
-  .journal__desc {
-    color: var(--color-text-muted);
-    margin: 0;
+  /* Same body text as the post page */
+  .journal__body {
+    font-size: var(--type-p2-size);
+    line-height: var(--type-p2-line-height);
+  }
+
+  .journal__body :global(p) {
+    margin-bottom: 1.4em;
+  }
+
+  .journal__body :global(img) {
+    height: auto;
   }
 </style>

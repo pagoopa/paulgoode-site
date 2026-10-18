@@ -19,6 +19,8 @@ const dateFmt = new Intl.DateTimeFormat('en-US', {
   year: 'numeric',
   month: 'long',
   day: 'numeric',
+  // pubDate is midnight UTC; without this it shows the day before in US time zones.
+  timeZone: 'UTC',
 });
 ---
 

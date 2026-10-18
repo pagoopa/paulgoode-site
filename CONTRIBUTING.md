@@ -88,6 +88,13 @@ heading, eyebrow, buttons and so on. Everything below it is the body text.
 Leave a blank line between paragraphs. `npm run build` flags a missing or
 misspelled field.
 
+## Journal posts
+
+The journal page shows each post in full. To show only the start, put
+`<!-- more -->` on its own line, with a blank line above and below it.
+Everything above the line shows on the journal page, followed by a "Read
+more" link to the full post.
+
 ## The shop
 
 The shop lives on Big Cartel at https://shop.paulgoode.com, not in this
