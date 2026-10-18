@@ -18,27 +18,76 @@ function isActive(href: string) {
 }
 ---
 
-<header class="site-header">
+<header class="site-header" data-menu-open="false">
   <div class="wrap site-header__inner">
     <a href="/" class="site-header__logo" aria-label="Paul Goode — home">
       <Image src={logo} alt="Paul Goode" height={59} densities={[1, 2]} loading="eager" />
     </a>
-    <nav class="site-header__nav" aria-label="Primary">
-      {navItems.map((item) => (
-        <a
-          href={item.href}
-          class:list={['site-header__link', { 'is-active': isActive(item.href) }]}
-        >
-          {item.label}
-        </a>
-      ))}
+    <button
+      type="button"
+      class="site-header__menu-button"
+      aria-controls="site-nav"
+      aria-expanded="false"
+      aria-label="Open menu"
+    >
+      <svg class="site-header__icon site-header__icon--menu" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M4 7h16m-16 5h16m-16 5h16" />
+      </svg>
+      <svg class="site-header__icon site-header__icon--close" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6 6l12 12m0-12l-12 12" />
+      </svg>
+    </button>
+    <nav id="site-nav" class="site-header__nav" aria-label="Primary">
+      <div class="site-header__links">
+        {navItems.map((item) => (
+          <a
+            href={item.href}
+            class:list={['site-header__link', { 'is-active': isActive(item.href) }]}
+          >
+            {item.label}
+          </a>
+        ))}
+      </div>
     </nav>
   </div>
 </header>
 
+<script>
+  // Mobile menu: the button toggles data-menu-open on the header; CSS does the rest.
+  const header = document.querySelector<HTMLElement>('.site-header');
+  const button = header?.querySelector<HTMLButtonElement>('.site-header__menu-button');
+
+  if (header && button) {
+    const isOpen = () => header.dataset.menuOpen === 'true';
+    const setOpen = (open: boolean) => {
+      header.dataset.menuOpen = String(open);
+      button.setAttribute('aria-expanded', String(open));
+      button.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    };
+
+    button.addEventListener('click', () => setOpen(!isOpen()));
+
+    // Also close on Esc, on tapping a link, and on tapping the page outside the header.
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && isOpen()) {
+        setOpen(false);
+        button.focus();
+      }
+    });
+    header.querySelector('.site-header__nav')?.addEventListener('click', (event) => {
+      if ((event.target as Element).closest('a')) setOpen(false);
+    });
+    document.addEventListener('click', (event) => {
+      if (isOpen() && !header.contains(event.target as Node)) setOpen(false);
+    });
+  }
+</script>
+
 <style>
   /* Header / Left / Default */
   .site-header {
+    position: relative;
+    z-index: 10;
     background: var(--color-surface-default);
     border-bottom: 1px solid var(--color-border-default);
   }
@@ -61,16 +110,23 @@ function isActive(href: string) {
     height: 40px;
   }
 
+  .site-header__menu-button {
+    display: none;
+  }
+
   /* Link / Nav: Body/eyebrow2-md, current page underlined */
   .site-header__nav {
-    display: flex;
-    gap: var(--scale-600);
-    flex-wrap: wrap;
     font-size: var(--type-eyebrow2-size);
     line-height: var(--type-eyebrow2-line-height);
     letter-spacing: var(--type-eyebrow2-letter-spacing);
     text-transform: uppercase;
     font-weight: 500;
+  }
+
+  .site-header__links {
+    display: flex;
+    gap: var(--scale-600);
+    flex-wrap: wrap;
   }
 
   .site-header__link {
@@ -82,15 +138,86 @@ function isActive(href: string) {
     border-bottom-color: var(--color-text-default);
   }
 
+  /* Phones: Header / Left / Default (closed) and Menu Open. See the
+     "Mobile Nav — Open / Close Interaction" board in design/site.pen. */
   @media (max-width: 599px) {
-    .site-header__inner {
-      flex-direction: column;
+    .site-header__menu-button {
+      display: flex;
       align-items: center;
-      gap: var(--scale-200);
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      color: var(--color-text-default);
+      cursor: pointer;
     }
 
+    .site-header__icon {
+      width: 24px;
+      height: 24px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .site-header__icon--close,
+    .site-header[data-menu-open='true'] .site-header__icon--menu {
+      display: none;
+    }
+
+    .site-header[data-menu-open='true'] .site-header__icon--close {
+      display: block;
+    }
+
+    /* The nav clips the menu at the bar's bottom edge, so it slides out from behind the bar.
+       Hidden once the close animation ends, so the links can't be tabbed to while closed. */
     .site-header__nav {
-      gap: var(--scale-400);
+      position: absolute;
+      top: calc(100% + 1px);
+      left: 0;
+      right: 0;
+      overflow: hidden;
+      visibility: hidden;
+      transition: visibility 0s linear 200ms;
+    }
+
+    .site-header__links {
+      flex-direction: column;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+      gap: var(--scale-200);
+      padding: var(--scale-400) var(--layout-margin) var(--scale-600);
+      background: var(--color-surface-default);
+      border-bottom: 1px solid var(--color-border-default);
+      opacity: 0;
+      transform: translateY(-24px);
+      transition:
+        opacity 200ms ease-in,
+        transform 200ms ease-in;
+    }
+
+    .site-header[data-menu-open='true'] .site-header__nav {
+      visibility: visible;
+      transition: none;
+    }
+
+    .site-header[data-menu-open='true'] .site-header__links {
+      opacity: 1;
+      transform: none;
+      transition:
+        opacity 240ms ease-out,
+        transform 240ms ease-out;
+    }
+  }
+
+  /* Reduced motion: fade only. */
+  @media (max-width: 599px) and (prefers-reduced-motion: reduce) {
+    .site-header__links {
+      transform: none;
     }
   }
 </style>
