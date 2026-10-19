@@ -16,7 +16,7 @@ const blog = defineCollection({
     }),
 });
 
-// Copy for the one-off pages (home, about, contact). The file name is the page id.
+// Copy for the one-off pages (home, about, contact, projects). The file name is the page id.
 const pages = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/pages' }),
   schema: z.object({

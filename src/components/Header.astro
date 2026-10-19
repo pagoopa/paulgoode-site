@@ -1,19 +1,11 @@
 ---
 import { Image } from 'astro:assets';
 import logo from '../assets/pg-main.png';
-
-const navItems = [
-  { href: '/', label: 'Home' },
-  { href: 'https://shop.paulgoode.com', label: 'Shop' },
-  { href: '/blog', label: 'Journal' },
-  { href: '/about', label: 'About' },
-  { href: '/contact', label: 'Contact' },
-];
+import { navItems } from '../lib/nav';
 
 const currentPath = Astro.url.pathname;
 
 function isActive(href: string) {
-  if (href === '/') return currentPath === '/';
   return currentPath.startsWith(href);
 }
 ---
