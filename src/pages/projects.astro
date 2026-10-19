@@ -1,0 +1,23 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageActions from '../components/PageActions.astro';
+import { getPage } from '../lib/pages';
+
+// Copy lives in src/content/pages/projects.md.
+const { data, Content } = await getPage('projects');
+---
+
+<Layout title={data.title} description={data.description}>
+  <section class="wrap prose projects">
+    {data.eyebrow && <p class="eyebrow">{data.eyebrow}</p>}
+    <h1>{data.heading}</h1>
+    <Content />
+    <PageActions actions={data.actions} />
+  </section>
+</Layout>
+
+<style>
+  .projects {
+    padding-block: 64px 96px;
+  }
+</style>

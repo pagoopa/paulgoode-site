@@ -131,7 +131,7 @@ The words on the site live in Markdown files under `src/content/`:
 
 | Folder | What it holds |
 | --- | --- |
-| `src/content/pages/` | Home, About and Contact (`home.md`, `about.md`, `contact.md`) |
+| `src/content/pages/` | Home, About, Contact and Projects (`home.md`, `about.md`, `contact.md`, `projects.md`) |
 | `src/content/blog/` | Journal posts |
 
 The block between the `---` lines at the top (the frontmatter) holds the

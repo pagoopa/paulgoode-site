@@ -1,20 +1,23 @@
 ---
+import { Image } from 'astro:assets';
+import profile from '../assets/profile-circle.png';
+import { navItems } from '../lib/nav';
+
 const year = new Date().getFullYear();
 ---
 
 <footer class="site-footer">
   <div class="wrap site-footer__inner">
-    <div>&copy; {year} Paul Goode</div>
-    <div class="site-footer__links">
-      <a href="https://shop.paulgoode.com">Shop</a>
-      <a href="https://www.tiktok.com/@pagoopa" target="_blank" rel="noopener noreferrer">TikTok</a>
-      <a href="https://www.youtube.com/@paulgoode" target="_blank" rel="noopener noreferrer">YouTube</a>
-    </div>
+    <Image src={profile} alt="" class="site-footer__photo" width={120} height={120} />
+    <nav class="site-footer__links" aria-label="Footer">
+      {navItems.map((item) => <a href={item.href}>{item.label}</a>)}
+    </nav>
+    <p class="site-footer__copyright">&copy; {year} Paul Goode</p>
   </div>
 </footer>
 
 <style>
-  /* Footer / Inverse (bottom row) */
+  /* Footer / Inverse: profile circle, nav links and copyright, centered */
   .site-footer {
     background: var(--color-surface-inverse);
     color: var(--color-text-inverse);
@@ -23,25 +26,61 @@ const year = new Date().getFullYear();
 
   .site-footer__inner {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    gap: var(--scale-300);
     padding-block: var(--space-block);
-    font-size: var(--type-body2-size);
-    line-height: var(--type-body2-line-height);
-    flex-wrap: wrap;
-    gap: var(--scale-600);
   }
 
+  /* Profile / Circle with a 2px ring in the text colour */
+  .site-footer__photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    outline: 2px solid var(--color-text-inverse);
+    outline-offset: -2px;
+  }
+
+  /* Link / Nav / Default / Inverse; rows wrap on narrow screens */
   .site-footer__links {
     display: flex;
-    gap: var(--scale-600);
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 var(--scale-600);
+    padding-top: var(--scale-300);
     font-size: var(--type-eyebrow2-size);
+    line-height: var(--type-eyebrow2-line-height);
     letter-spacing: var(--type-eyebrow2-letter-spacing);
     text-transform: uppercase;
     font-weight: 500;
   }
 
-  .site-footer a:hover {
-    color: var(--color-text-link-inverse);
+  .site-footer__links a {
+    padding-block: var(--scale-200);
+    border-bottom: 2px solid transparent;
+  }
+
+  .site-footer__links a:hover {
+    border-bottom-color: var(--color-text-inverse);
+  }
+
+  .site-footer__copyright {
+    margin: 0;
+    font-size: var(--type-body2-size);
+    line-height: var(--type-body2-line-height);
+  }
+
+  @media (max-width: 1023px) {
+    .site-footer__photo {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  /* Phones: Blog and Projects on the first row, the rest on the second */
+  @media (max-width: 599px) {
+    .site-footer__links {
+      max-width: 252px;
+    }
   }
 </style>
