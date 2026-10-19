@@ -32,64 +32,7 @@
           "type": "ref",
           "ref": "S5OtQe",
           "name": "Header",
-          "width": "fill_container",
-          "descendants": {
-            "oekhv": {
-              "id": "aNuLe",
-              "type": "ref",
-              "ref": "eFsWC",
-              "name": "Home",
-              "descendants": {
-                "jynNC": {
-                  "content": "HOME"
-                }
-              }
-            },
-            "S5GGB": {
-              "id": "Tc7Ru",
-              "type": "ref",
-              "ref": "eFsWC",
-              "name": "Shop",
-              "descendants": {
-                "jynNC": {
-                  "content": "SHOP"
-                }
-              }
-            },
-            "K3xO8N": {
-              "id": "P46l8",
-              "type": "ref",
-              "ref": "MusDs",
-              "name": "Journal",
-              "descendants": {
-                "t893f": {
-                  "content": "JOURNAL"
-                }
-              }
-            },
-            "LglH1": {
-              "id": "Pxm10",
-              "type": "ref",
-              "ref": "eFsWC",
-              "name": "About",
-              "descendants": {
-                "jynNC": {
-                  "content": "ABOUT"
-                }
-              }
-            },
-            "ANNgX": {
-              "id": "JKoVl",
-              "type": "ref",
-              "ref": "eFsWC",
-              "name": "Contact",
-              "descendants": {
-                "jynNC": {
-                  "content": "CONTACT"
-                }
-              }
-            }
-          }
+          "width": "fill_container"
         },
         {
           "type": "frame",
@@ -385,36 +328,7 @@
           "type": "ref",
           "ref": "E6haZ",
           "name": "Footer",
-          "width": "fill_container",
-          "descendants": {
-            "XEGUi": {
-              "enabled": false
-            },
-            "cEXbI": {
-              "enabled": false
-            },
-            "QxEgt": {
-              "name": "Shop"
-            },
-            "QxEgt/v3guN": {
-              "content": "SHOP"
-            },
-            "GrSaL": {
-              "name": "TikTok"
-            },
-            "GrSaL/v3guN": {
-              "content": "TIKTOK"
-            },
-            "tEF0T": {
-              "name": "YouTube"
-            },
-            "tEF0T/v3guN": {
-              "content": "YOUTUBE"
-            },
-            "dbeZH": {
-              "enabled": false
-            }
-          }
+          "width": "fill_container"
         }
       ]
     },
@@ -438,64 +352,7 @@
           "type": "ref",
           "ref": "S5OtQe",
           "name": "Header",
-          "width": "fill_container",
-          "descendants": {
-            "oekhv": {
-              "id": "NLHYr",
-              "type": "ref",
-              "ref": "eFsWC",
-              "name": "Home",
-              "descendants": {
-                "jynNC": {
-                  "content": "HOME"
-                }
-              }
-            },
-            "S5GGB": {
-              "id": "A7Sbr6",
-              "type": "ref",
-              "ref": "eFsWC",
-              "name": "Shop",
-              "descendants": {
-                "jynNC": {
-                  "content": "SHOP"
-                }
-              }
-            },
-            "K3xO8N": {
-              "id": "BzUo7",
-              "type": "ref",
-              "ref": "MusDs",
-              "name": "Journal",
-              "descendants": {
-                "t893f": {
-                  "content": "JOURNAL"
-                }
-              }
-            },
-            "LglH1": {
-              "id": "UO8MA",
-              "type": "ref",
-              "ref": "eFsWC",
-              "name": "About",
-              "descendants": {
-                "jynNC": {
-                  "content": "ABOUT"
-                }
-              }
-            },
-            "ANNgX": {
-              "id": "kbhJm",
-              "type": "ref",
-              "ref": "eFsWC",
-              "name": "Contact",
-              "descendants": {
-                "jynNC": {
-                  "content": "CONTACT"
-                }
-              }
-            }
-          }
+          "width": "fill_container"
         },
         {
           "type": "frame",
@@ -793,32 +650,9 @@
           "name": "Footer",
           "width": "fill_container",
           "descendants": {
-            "XEGUi": {
-              "enabled": false
-            },
-            "cEXbI": {
-              "enabled": false
-            },
-            "QxEgt": {
-              "name": "Shop"
-            },
-            "QxEgt/v3guN": {
-              "content": "SHOP"
-            },
-            "GrSaL": {
-              "name": "TikTok"
-            },
-            "GrSaL/v3guN": {
-              "content": "TIKTOK"
-            },
-            "tEF0T": {
-              "name": "YouTube"
-            },
-            "tEF0T/v3guN": {
-              "content": "YOUTUBE"
-            },
-            "dbeZH": {
-              "enabled": false
+            "549hf": {
+              "width": 100,
+              "height": 100
             }
           }
         }
@@ -852,61 +686,6 @@
             "zfzcT": {
               "enabled": true,
               "gap": "$scale-300"
-            },
-            "oekhv": {
-              "id": "umx6B",
-              "type": "ref",
-              "ref": "eFsWC",
-              "name": "Home",
-              "descendants": {
-                "jynNC": {
-                  "content": "HOME"
-                }
-              }
-            },
-            "S5GGB": {
-              "id": "UmZKr",
-              "type": "ref",
-              "ref": "eFsWC",
-              "name": "Shop",
-              "descendants": {
-                "jynNC": {
-                  "content": "SHOP"
-                }
-              }
-            },
-            "K3xO8N": {
-              "id": "qOigw",
-              "type": "ref",
-              "ref": "MusDs",
-              "name": "Journal",
-              "descendants": {
-                "t893f": {
-                  "content": "JOURNAL"
-                }
-              }
-            },
-            "LglH1": {
-              "id": "bPBMf",
-              "type": "ref",
-              "ref": "eFsWC",
-              "name": "About",
-              "descendants": {
-                "jynNC": {
-                  "content": "ABOUT"
-                }
-              }
-            },
-            "ANNgX": {
-              "id": "jiYdV",
-              "type": "ref",
-              "ref": "eFsWC",
-              "name": "Contact",
-              "descendants": {
-                "jynNC": {
-                  "content": "CONTACT"
-                }
-              }
             },
             "F0YMjx": {
               "enabled": false
@@ -1209,42 +988,99 @@
           "name": "Footer",
           "width": "fill_container",
           "descendants": {
-            "XEGUi": {
+            "549hf": {
+              "width": 100,
+              "height": 100
+            },
+            "BWRrf": {
+              "id": "4oFn4",
+              "type": "frame",
+              "name": "Nav",
               "layout": "vertical",
-              "alignItems": "start",
-              "enabled": false
-            },
-            "cEXbI": {
-              "enabled": false
-            },
-            "rLPly": {
-              "layout": "vertical",
-              "alignItems": "start",
-              "gap": "$scale-600"
-            },
-            "m0Yiq": {
-              "gap": "$scale-400"
-            },
-            "QxEgt": {
-              "name": "Shop"
-            },
-            "QxEgt/v3guN": {
-              "content": "SHOP"
-            },
-            "GrSaL": {
-              "name": "TikTok"
-            },
-            "GrSaL/v3guN": {
-              "content": "TIKTOK"
-            },
-            "tEF0T": {
-              "name": "YouTube"
-            },
-            "tEF0T/v3guN": {
-              "content": "YOUTUBE"
-            },
-            "dbeZH": {
-              "enabled": false
+              "padding": [
+                "$scale-300",
+                0,
+                0,
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "oHOTg",
+                  "name": "Row",
+                  "gap": "$scale-600",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "mY7aF",
+                      "type": "ref",
+                      "ref": "Bbcv6",
+                      "name": "Blog",
+                      "descendants": {
+                        "v3guN": {
+                          "content": "BLOG"
+                        }
+                      }
+                    },
+                    {
+                      "id": "N4XIP",
+                      "type": "ref",
+                      "ref": "Bbcv6",
+                      "name": "Projects",
+                      "descendants": {
+                        "v3guN": {
+                          "content": "PROJECTS"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Q3wkJ",
+                  "name": "Row",
+                  "gap": "$scale-600",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "XoAlQ",
+                      "type": "ref",
+                      "ref": "Bbcv6",
+                      "name": "Newsletter",
+                      "descendants": {
+                        "v3guN": {
+                          "content": "NEWSLETTER"
+                        }
+                      }
+                    },
+                    {
+                      "id": "gbAm8",
+                      "type": "ref",
+                      "ref": "Bbcv6",
+                      "name": "Shop",
+                      "descendants": {
+                        "v3guN": {
+                          "content": "SHOP"
+                        }
+                      }
+                    },
+                    {
+                      "id": "z2Hl2",
+                      "type": "ref",
+                      "ref": "Bbcv6",
+                      "name": "About",
+                      "descendants": {
+                        "v3guN": {
+                          "content": "ABOUT"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
             }
           }
         }
@@ -1281,64 +1117,7 @@
           "type": "ref",
           "ref": "S5OtQe",
           "name": "Header",
-          "width": "fill_container",
-          "descendants": {
-            "oekhv": {
-              "id": "op62p",
-              "type": "ref",
-              "ref": "eFsWC",
-              "name": "Home",
-              "descendants": {
-                "jynNC": {
-                  "content": "HOME"
-                }
-              }
-            },
-            "S5GGB": {
-              "id": "D9xEk1",
-              "type": "ref",
-              "ref": "eFsWC",
-              "name": "Shop",
-              "descendants": {
-                "jynNC": {
-                  "content": "SHOP"
-                }
-              }
-            },
-            "K3xO8N": {
-              "id": "S90lbn",
-              "type": "ref",
-              "ref": "MusDs",
-              "name": "Journal",
-              "descendants": {
-                "t893f": {
-                  "content": "JOURNAL"
-                }
-              }
-            },
-            "LglH1": {
-              "id": "U79Gu",
-              "type": "ref",
-              "ref": "eFsWC",
-              "name": "About",
-              "descendants": {
-                "jynNC": {
-                  "content": "ABOUT"
-                }
-              }
-            },
-            "ANNgX": {
-              "id": "GnYxJ",
-              "type": "ref",
-              "ref": "eFsWC",
-              "name": "Contact",
-              "descendants": {
-                "jynNC": {
-                  "content": "CONTACT"
-                }
-              }
-            }
-          }
+          "width": "fill_container"
         },
         {
           "type": "frame",
@@ -1489,36 +1268,7 @@
           "type": "ref",
           "ref": "E6haZ",
           "name": "Footer",
-          "width": "fill_container",
-          "descendants": {
-            "XEGUi": {
-              "enabled": false
-            },
-            "cEXbI": {
-              "enabled": false
-            },
-            "QxEgt": {
-              "name": "Shop"
-            },
-            "QxEgt/v3guN": {
-              "content": "SHOP"
-            },
-            "GrSaL": {
-              "name": "TikTok"
-            },
-            "GrSaL/v3guN": {
-              "content": "TIKTOK"
-            },
-            "tEF0T": {
-              "name": "YouTube"
-            },
-            "tEF0T/v3guN": {
-              "content": "YOUTUBE"
-            },
-            "dbeZH": {
-              "enabled": false
-            }
-          }
+          "width": "fill_container"
         }
       ]
     },
@@ -1542,64 +1292,7 @@
           "type": "ref",
           "ref": "S5OtQe",
           "name": "Header",
-          "width": "fill_container",
-          "descendants": {
-            "oekhv": {
-              "id": "UejVY",
-              "type": "ref",
-              "ref": "eFsWC",
-              "name": "Home",
-              "descendants": {
-                "jynNC": {
-                  "content": "HOME"
-                }
-              }
-            },
-            "S5GGB": {
-              "id": "KjKJo",
-              "type": "ref",
-              "ref": "eFsWC",
-              "name": "Shop",
-              "descendants": {
-                "jynNC": {
-                  "content": "SHOP"
-                }
-              }
-            },
-            "K3xO8N": {
-              "id": "Zbsxi",
-              "type": "ref",
-              "ref": "MusDs",
-              "name": "Journal",
-              "descendants": {
-                "t893f": {
-                  "content": "JOURNAL"
-                }
-              }
-            },
-            "LglH1": {
-              "id": "q5vmeI",
-              "type": "ref",
-              "ref": "eFsWC",
-              "name": "About",
-              "descendants": {
-                "jynNC": {
-                  "content": "ABOUT"
-                }
-              }
-            },
-            "ANNgX": {
-              "id": "PBcnJ",
-              "type": "ref",
-              "ref": "eFsWC",
-              "name": "Contact",
-              "descendants": {
-                "jynNC": {
-                  "content": "CONTACT"
-                }
-              }
-            }
-          }
+          "width": "fill_container"
         },
         {
           "type": "frame",
@@ -1752,32 +1445,9 @@
           "name": "Footer",
           "width": "fill_container",
           "descendants": {
-            "XEGUi": {
-              "enabled": false
-            },
-            "cEXbI": {
-              "enabled": false
-            },
-            "QxEgt": {
-              "name": "Shop"
-            },
-            "QxEgt/v3guN": {
-              "content": "SHOP"
-            },
-            "GrSaL": {
-              "name": "TikTok"
-            },
-            "GrSaL/v3guN": {
-              "content": "TIKTOK"
-            },
-            "tEF0T": {
-              "name": "YouTube"
-            },
-            "tEF0T/v3guN": {
-              "content": "YOUTUBE"
-            },
-            "dbeZH": {
-              "enabled": false
+            "549hf": {
+              "width": 100,
+              "height": 100
             }
           }
         }
@@ -1811,61 +1481,6 @@
             "zfzcT": {
               "enabled": true,
               "gap": "$scale-300"
-            },
-            "oekhv": {
-              "id": "EbH26",
-              "type": "ref",
-              "ref": "eFsWC",
-              "name": "Home",
-              "descendants": {
-                "jynNC": {
-                  "content": "HOME"
-                }
-              }
-            },
-            "S5GGB": {
-              "id": "sec1U",
-              "type": "ref",
-              "ref": "eFsWC",
-              "name": "Shop",
-              "descendants": {
-                "jynNC": {
-                  "content": "SHOP"
-                }
-              }
-            },
-            "K3xO8N": {
-              "id": "na2nZ",
-              "type": "ref",
-              "ref": "MusDs",
-              "name": "Journal",
-              "descendants": {
-                "t893f": {
-                  "content": "JOURNAL"
-                }
-              }
-            },
-            "LglH1": {
-              "id": "qjKJS",
-              "type": "ref",
-              "ref": "eFsWC",
-              "name": "About",
-              "descendants": {
-                "jynNC": {
-                  "content": "ABOUT"
-                }
-              }
-            },
-            "ANNgX": {
-              "id": "x7QxUJ",
-              "type": "ref",
-              "ref": "eFsWC",
-              "name": "Contact",
-              "descendants": {
-                "jynNC": {
-                  "content": "CONTACT"
-                }
-              }
             },
             "F0YMjx": {
               "enabled": false
@@ -2031,42 +1646,99 @@
           "name": "Footer",
           "width": "fill_container",
           "descendants": {
-            "XEGUi": {
+            "549hf": {
+              "width": 100,
+              "height": 100
+            },
+            "BWRrf": {
+              "id": "26rPm",
+              "type": "frame",
+              "name": "Nav",
               "layout": "vertical",
-              "alignItems": "start",
-              "enabled": false
-            },
-            "cEXbI": {
-              "enabled": false
-            },
-            "rLPly": {
-              "layout": "vertical",
-              "alignItems": "start",
-              "gap": "$scale-600"
-            },
-            "m0Yiq": {
-              "gap": "$scale-400"
-            },
-            "QxEgt": {
-              "name": "Shop"
-            },
-            "QxEgt/v3guN": {
-              "content": "SHOP"
-            },
-            "GrSaL": {
-              "name": "TikTok"
-            },
-            "GrSaL/v3guN": {
-              "content": "TIKTOK"
-            },
-            "tEF0T": {
-              "name": "YouTube"
-            },
-            "tEF0T/v3guN": {
-              "content": "YOUTUBE"
-            },
-            "dbeZH": {
-              "enabled": false
+              "padding": [
+                "$scale-300",
+                0,
+                0,
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "1mj6Y",
+                  "name": "Row",
+                  "gap": "$scale-600",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "Tt0fz",
+                      "type": "ref",
+                      "ref": "Bbcv6",
+                      "name": "Blog",
+                      "descendants": {
+                        "v3guN": {
+                          "content": "BLOG"
+                        }
+                      }
+                    },
+                    {
+                      "id": "ZpjMB",
+                      "type": "ref",
+                      "ref": "Bbcv6",
+                      "name": "Projects",
+                      "descendants": {
+                        "v3guN": {
+                          "content": "PROJECTS"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "bO0Wr",
+                  "name": "Row",
+                  "gap": "$scale-600",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "kcBue",
+                      "type": "ref",
+                      "ref": "Bbcv6",
+                      "name": "Newsletter",
+                      "descendants": {
+                        "v3guN": {
+                          "content": "NEWSLETTER"
+                        }
+                      }
+                    },
+                    {
+                      "id": "sVwm9",
+                      "type": "ref",
+                      "ref": "Bbcv6",
+                      "name": "Shop",
+                      "descendants": {
+                        "v3guN": {
+                          "content": "SHOP"
+                        }
+                      }
+                    },
+                    {
+                      "id": "QLR65",
+                      "type": "ref",
+                      "ref": "Bbcv6",
+                      "name": "About",
+                      "descendants": {
+                        "v3guN": {
+                          "content": "ABOUT"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
             }
           }
         }
@@ -2839,61 +2511,6 @@
                       "descendants": {
                         "cUbmx": {
                           "enabled": false
-                        },
-                        "GH6uk": {
-                          "id": "juojr",
-                          "type": "ref",
-                          "ref": "eFsWC",
-                          "name": "Home",
-                          "descendants": {
-                            "jynNC": {
-                              "content": "HOME"
-                            }
-                          }
-                        },
-                        "SJS3d": {
-                          "id": "dFYUM",
-                          "type": "ref",
-                          "ref": "eFsWC",
-                          "name": "Shop",
-                          "descendants": {
-                            "jynNC": {
-                              "content": "SHOP"
-                            }
-                          }
-                        },
-                        "WkgaE": {
-                          "id": "r95vWT",
-                          "type": "ref",
-                          "ref": "MusDs",
-                          "name": "Journal",
-                          "descendants": {
-                            "t893f": {
-                              "content": "JOURNAL"
-                            }
-                          }
-                        },
-                        "UUi7K": {
-                          "id": "HbHAW",
-                          "type": "ref",
-                          "ref": "eFsWC",
-                          "name": "About",
-                          "descendants": {
-                            "jynNC": {
-                              "content": "ABOUT"
-                            }
-                          }
-                        },
-                        "asfYu": {
-                          "id": "DNIyA",
-                          "type": "ref",
-                          "ref": "eFsWC",
-                          "name": "Contact",
-                          "descendants": {
-                            "jynNC": {
-                              "content": "CONTACT"
-                            }
-                          }
                         }
                       }
                     },
@@ -3284,61 +2901,6 @@
                       "descendants": {
                         "cUbmx": {
                           "enabled": false
-                        },
-                        "GH6uk": {
-                          "id": "GJ8U9",
-                          "type": "ref",
-                          "ref": "eFsWC",
-                          "name": "Home",
-                          "descendants": {
-                            "jynNC": {
-                              "content": "HOME"
-                            }
-                          }
-                        },
-                        "SJS3d": {
-                          "id": "OYCIQ",
-                          "type": "ref",
-                          "ref": "eFsWC",
-                          "name": "Shop",
-                          "descendants": {
-                            "jynNC": {
-                              "content": "SHOP"
-                            }
-                          }
-                        },
-                        "WkgaE": {
-                          "id": "BIY9L",
-                          "type": "ref",
-                          "ref": "MusDs",
-                          "name": "Journal",
-                          "descendants": {
-                            "t893f": {
-                              "content": "JOURNAL"
-                            }
-                          }
-                        },
-                        "UUi7K": {
-                          "id": "JlTx6",
-                          "type": "ref",
-                          "ref": "eFsWC",
-                          "name": "About",
-                          "descendants": {
-                            "jynNC": {
-                              "content": "ABOUT"
-                            }
-                          }
-                        },
-                        "asfYu": {
-                          "id": "KMhkU",
-                          "type": "ref",
-                          "ref": "eFsWC",
-                          "name": "Contact",
-                          "descendants": {
-                            "jynNC": {
-                              "content": "CONTACT"
-                            }
-                          }
                         }
                       }
                     },
@@ -3740,61 +3302,6 @@
                       "descendants": {
                         "cUbmx": {
                           "enabled": false
-                        },
-                        "GH6uk": {
-                          "id": "E3Ovml",
-                          "type": "ref",
-                          "ref": "eFsWC",
-                          "name": "Home",
-                          "descendants": {
-                            "jynNC": {
-                              "content": "HOME"
-                            }
-                          }
-                        },
-                        "SJS3d": {
-                          "id": "F1s7KJ",
-                          "type": "ref",
-                          "ref": "eFsWC",
-                          "name": "Shop",
-                          "descendants": {
-                            "jynNC": {
-                              "content": "SHOP"
-                            }
-                          }
-                        },
-                        "WkgaE": {
-                          "id": "IUqQI",
-                          "type": "ref",
-                          "ref": "MusDs",
-                          "name": "Journal",
-                          "descendants": {
-                            "t893f": {
-                              "content": "JOURNAL"
-                            }
-                          }
-                        },
-                        "UUi7K": {
-                          "id": "z1GWd",
-                          "type": "ref",
-                          "ref": "eFsWC",
-                          "name": "About",
-                          "descendants": {
-                            "jynNC": {
-                              "content": "ABOUT"
-                            }
-                          }
-                        },
-                        "asfYu": {
-                          "id": "aJhwh",
-                          "type": "ref",
-                          "ref": "eFsWC",
-                          "name": "Contact",
-                          "descendants": {
-                            "jynNC": {
-                              "content": "CONTACT"
-                            }
-                          }
                         }
                       }
                     },
@@ -9349,10 +8856,10 @@
                               "id": "oekhv",
                               "type": "ref",
                               "ref": "MusDs",
-                              "name": "Recent",
+                              "name": "Blog",
                               "descendants": {
                                 "t893f": {
-                                  "content": "RECENT"
+                                  "content": "BLOG"
                                 }
                               }
                             },
@@ -9360,10 +8867,10 @@
                               "id": "S5GGB",
                               "type": "ref",
                               "ref": "eFsWC",
-                              "name": "Notes",
+                              "name": "Projects",
                               "descendants": {
                                 "jynNC": {
-                                  "content": "NOTES"
+                                  "content": "PROJECTS"
                                 }
                               }
                             },
@@ -9371,10 +8878,10 @@
                               "id": "K3xO8N",
                               "type": "ref",
                               "ref": "eFsWC",
-                              "name": "Projects",
+                              "name": "Newsletter",
                               "descendants": {
                                 "jynNC": {
-                                  "content": "PROJECTS"
+                                  "content": "NEWSLETTER"
                                 }
                               }
                             },
@@ -9488,10 +8995,10 @@
                               "id": "c7UL7",
                               "type": "ref",
                               "ref": "y9pZm",
-                              "name": "Recent",
+                              "name": "Blog",
                               "descendants": {
                                 "OVFYG": {
-                                  "content": "RECENT"
+                                  "content": "BLOG"
                                 }
                               }
                             },
@@ -9499,10 +9006,10 @@
                               "id": "aBgCT",
                               "type": "ref",
                               "ref": "Bbcv6",
-                              "name": "Notes",
+                              "name": "Projects",
                               "descendants": {
                                 "v3guN": {
-                                  "content": "NOTES"
+                                  "content": "PROJECTS"
                                 }
                               }
                             },
@@ -9510,10 +9017,10 @@
                               "id": "t1NDp",
                               "type": "ref",
                               "ref": "Bbcv6",
-                              "name": "Projects",
+                              "name": "Newsletter",
                               "descendants": {
                                 "v3guN": {
-                                  "content": "PROJECTS"
+                                  "content": "NEWSLETTER"
                                 }
                               }
                             },
@@ -9628,10 +9135,10 @@
                               "id": "k8xDa",
                               "type": "ref",
                               "ref": "MusDs",
-                              "name": "Recent",
+                              "name": "Blog",
                               "descendants": {
                                 "t893f": {
-                                  "content": "RECENT"
+                                  "content": "BLOG"
                                 }
                               }
                             },
@@ -9639,10 +9146,10 @@
                               "id": "szfRP",
                               "type": "ref",
                               "ref": "eFsWC",
-                              "name": "Notes",
+                              "name": "Projects",
                               "descendants": {
                                 "jynNC": {
-                                  "content": "NOTES"
+                                  "content": "PROJECTS"
                                 }
                               }
                             },
@@ -9650,10 +9157,10 @@
                               "id": "LBaOU",
                               "type": "ref",
                               "ref": "eFsWC",
-                              "name": "Projects",
+                              "name": "Newsletter",
                               "descendants": {
                                 "jynNC": {
-                                  "content": "PROJECTS"
+                                  "content": "NEWSLETTER"
                                 }
                               }
                             },
@@ -9768,10 +9275,10 @@
                               "id": "Awd7w",
                               "type": "ref",
                               "ref": "y9pZm",
-                              "name": "Recent",
+                              "name": "Blog",
                               "descendants": {
                                 "OVFYG": {
-                                  "content": "RECENT"
+                                  "content": "BLOG"
                                 }
                               }
                             },
@@ -9779,10 +9286,10 @@
                               "id": "Dsquv",
                               "type": "ref",
                               "ref": "Bbcv6",
-                              "name": "Notes",
+                              "name": "Projects",
                               "descendants": {
                                 "v3guN": {
-                                  "content": "NOTES"
+                                  "content": "PROJECTS"
                                 }
                               }
                             },
@@ -9790,10 +9297,10 @@
                               "id": "byuZV",
                               "type": "ref",
                               "ref": "Bbcv6",
-                              "name": "Projects",
+                              "name": "Newsletter",
                               "descendants": {
                                 "v3guN": {
-                                  "content": "PROJECTS"
+                                  "content": "NEWSLETTER"
                                 }
                               }
                             },
@@ -9961,10 +9468,10 @@
                           "id": "GH6uk",
                           "type": "ref",
                           "ref": "MusDs",
-                          "name": "Recent",
+                          "name": "Blog",
                           "descendants": {
                             "t893f": {
-                              "content": "RECENT"
+                              "content": "BLOG"
                             }
                           }
                         },
@@ -9972,10 +9479,10 @@
                           "id": "SJS3d",
                           "type": "ref",
                           "ref": "eFsWC",
-                          "name": "Notes",
+                          "name": "Projects",
                           "descendants": {
                             "jynNC": {
-                              "content": "NOTES"
+                              "content": "PROJECTS"
                             }
                           }
                         },
@@ -9983,10 +9490,10 @@
                           "id": "WkgaE",
                           "type": "ref",
                           "ref": "eFsWC",
-                          "name": "Projects",
+                          "name": "Newsletter",
                           "descendants": {
                             "jynNC": {
-                              "content": "PROJECTS"
+                              "content": "NEWSLETTER"
                             }
                           }
                         },
@@ -10109,10 +9616,10 @@
                           "id": "JUY70",
                           "type": "ref",
                           "ref": "y9pZm",
-                          "name": "Recent",
+                          "name": "Blog",
                           "descendants": {
                             "OVFYG": {
-                              "content": "RECENT"
+                              "content": "BLOG"
                             }
                           }
                         },
@@ -10120,10 +9627,10 @@
                           "id": "z1jU9Z",
                           "type": "ref",
                           "ref": "Bbcv6",
-                          "name": "Notes",
+                          "name": "Projects",
                           "descendants": {
                             "v3guN": {
-                              "content": "NOTES"
+                              "content": "PROJECTS"
                             }
                           }
                         },
@@ -10131,10 +9638,10 @@
                           "id": "jXmNh",
                           "type": "ref",
                           "ref": "Bbcv6",
-                          "name": "Projects",
+                          "name": "Newsletter",
                           "descendants": {
                             "v3guN": {
-                              "content": "PROJECTS"
+                              "content": "NEWSLETTER"
                             }
                           }
                         },
@@ -10259,10 +9766,10 @@
                           "id": "qbI4s",
                           "type": "ref",
                           "ref": "MusDs",
-                          "name": "Recent",
+                          "name": "Blog",
                           "descendants": {
                             "t893f": {
-                              "content": "RECENT"
+                              "content": "BLOG"
                             }
                           }
                         },
@@ -10270,10 +9777,10 @@
                           "id": "MAvPZ",
                           "type": "ref",
                           "ref": "eFsWC",
-                          "name": "Notes",
+                          "name": "Projects",
                           "descendants": {
                             "jynNC": {
-                              "content": "NOTES"
+                              "content": "PROJECTS"
                             }
                           }
                         },
@@ -10281,10 +9788,10 @@
                           "id": "T2XM7W",
                           "type": "ref",
                           "ref": "eFsWC",
-                          "name": "Projects",
+                          "name": "Newsletter",
                           "descendants": {
                             "jynNC": {
-                              "content": "PROJECTS"
+                              "content": "NEWSLETTER"
                             }
                           }
                         },
@@ -10409,10 +9916,10 @@
                           "id": "z1iWS",
                           "type": "ref",
                           "ref": "y9pZm",
-                          "name": "Recent",
+                          "name": "Blog",
                           "descendants": {
                             "OVFYG": {
-                              "content": "RECENT"
+                              "content": "BLOG"
                             }
                           }
                         },
@@ -10420,10 +9927,10 @@
                           "id": "ocvlq",
                           "type": "ref",
                           "ref": "Bbcv6",
-                          "name": "Notes",
+                          "name": "Projects",
                           "descendants": {
                             "v3guN": {
-                              "content": "NOTES"
+                              "content": "PROJECTS"
                             }
                           }
                         },
@@ -10431,10 +9938,10 @@
                           "id": "rDcMs",
                           "type": "ref",
                           "ref": "Bbcv6",
-                          "name": "Projects",
+                          "name": "Newsletter",
                           "descendants": {
                             "v3guN": {
-                              "content": "PROJECTS"
+                              "content": "NEWSLETTER"
                             }
                           }
                         },
@@ -10503,189 +10010,106 @@
                   "width": "fill_container",
                   "fill": "$surface-subtle",
                   "layout": "vertical",
-                  "gap": "$space-block",
+                  "gap": "$scale-300",
                   "padding": [
                     "$space-block",
                     "$layout-margin"
                   ],
+                  "alignItems": "center",
                   "children": [
                     {
+                      "id": "iFupJ",
+                      "type": "ref",
+                      "ref": "yUEsX",
+                      "name": "Profile / Circle",
+                      "width": 120,
+                      "height": 120,
+                      "stroke": "$text-default",
+                      "strokeWidth": 2,
+                      "strokeAlignment": "inner"
+                    },
+                    {
                       "type": "frame",
-                      "id": "p7cVo",
-                      "name": "Top",
-                      "width": "fill_container",
+                      "id": "Sg6W9",
+                      "name": "Nav",
                       "gap": "$scale-600",
-                      "justifyContent": "space_between",
+                      "padding": [
+                        "$scale-300",
+                        0,
+                        0,
+                        0
+                      ],
+                      "justifyContent": "center",
                       "alignItems": "center",
                       "children": [
                         {
-                          "type": "frame",
-                          "id": "p3X4HD",
-                          "name": "Brand",
-                          "layout": "vertical",
-                          "gap": "$scale-300",
-                          "children": [
-                            {
-                              "id": "rnvRq",
-                              "type": "ref",
-                              "ref": "IsBQe",
-                              "name": "Logo",
-                              "width": 76,
-                              "height": 48,
-                              "fill": "$text-default"
-                            },
-                            {
-                              "type": "text",
-                              "id": "a9wfG",
-                              "name": "Tagline",
-                              "fill": "$text-muted",
-                              "content": "Drawing is thinking.",
-                              "lineHeight": "$type-p2-line-height",
-                              "fontFamily": "$font-body",
-                              "fontSize": "$type-p2-size",
-                              "fontWeight": "normal",
-                              "letterSpacing": "$type-p2-letter-spacing"
+                          "id": "cFqQn",
+                          "type": "ref",
+                          "ref": "eFsWC",
+                          "name": "Blog",
+                          "descendants": {
+                            "jynNC": {
+                              "content": "BLOG"
                             }
-                          ]
+                          }
                         },
                         {
-                          "type": "frame",
-                          "id": "Sg6W9",
-                          "name": "Nav",
-                          "gap": "$scale-600",
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "id": "ai7Ww",
-                              "type": "ref",
-                              "ref": "eFsWC",
-                              "name": "Home",
-                              "descendants": {
-                                "jynNC": {
-                                  "content": "HOME"
-                                }
-                              }
-                            },
-                            {
-                              "id": "rEzw3",
-                              "type": "ref",
-                              "ref": "eFsWC",
-                              "name": "About",
-                              "descendants": {
-                                "jynNC": {
-                                  "content": "ABOUT"
-                                }
-                              }
-                            },
-                            {
-                              "id": "FwfPp",
-                              "type": "ref",
-                              "ref": "eFsWC",
-                              "name": "Work",
-                              "descendants": {
-                                "jynNC": {
-                                  "content": "WORK"
-                                }
-                              }
-                            },
-                            {
-                              "id": "bvwTU",
-                              "type": "ref",
-                              "ref": "eFsWC",
-                              "name": "Contact",
-                              "descendants": {
-                                "jynNC": {
-                                  "content": "CONTACT"
-                                }
-                              }
+                          "id": "TuE5m",
+                          "type": "ref",
+                          "ref": "eFsWC",
+                          "name": "Projects",
+                          "descendants": {
+                            "jynNC": {
+                              "content": "PROJECTS"
                             }
-                          ]
+                          }
+                        },
+                        {
+                          "id": "DhFq4",
+                          "type": "ref",
+                          "ref": "eFsWC",
+                          "name": "Newsletter",
+                          "descendants": {
+                            "jynNC": {
+                              "content": "NEWSLETTER"
+                            }
+                          }
+                        },
+                        {
+                          "id": "215sH",
+                          "type": "ref",
+                          "ref": "eFsWC",
+                          "name": "Shop",
+                          "descendants": {
+                            "jynNC": {
+                              "content": "SHOP"
+                            }
+                          }
+                        },
+                        {
+                          "id": "ngCmD",
+                          "type": "ref",
+                          "ref": "eFsWC",
+                          "name": "About",
+                          "descendants": {
+                            "jynNC": {
+                              "content": "ABOUT"
+                            }
+                          }
                         }
                       ]
                     },
                     {
-                      "type": "rectangle",
-                      "id": "HNQSG",
-                      "name": "Divider",
-                      "fill": "$border-default",
-                      "width": "fill_container",
-                      "height": 1
-                    },
-                    {
-                      "type": "frame",
-                      "id": "jq9OH",
-                      "name": "Bottom",
-                      "width": "fill_container",
-                      "gap": "$scale-600",
-                      "justifyContent": "space_between",
-                      "alignItems": "center",
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "o4zy0",
-                          "name": "Copyright",
-                          "fill": "$text-muted",
-                          "content": "© 2026 Paul Goode",
-                          "lineHeight": "$type-body2-line-height",
-                          "fontFamily": "$font-body",
-                          "fontSize": "$type-body2-size",
-                          "fontWeight": "normal",
-                          "letterSpacing": "$type-body2-letter-spacing"
-                        },
-                        {
-                          "type": "frame",
-                          "id": "qtu86",
-                          "name": "Social",
-                          "gap": "$scale-600",
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "id": "r76KW",
-                              "type": "ref",
-                              "ref": "eFsWC",
-                              "name": "LinkedIn",
-                              "descendants": {
-                                "jynNC": {
-                                  "content": "LINKEDIN"
-                                }
-                              }
-                            },
-                            {
-                              "id": "CeQkX",
-                              "type": "ref",
-                              "ref": "eFsWC",
-                              "name": "Substack",
-                              "descendants": {
-                                "jynNC": {
-                                  "content": "SUBSTACK"
-                                }
-                              }
-                            },
-                            {
-                              "id": "O9IZI",
-                              "type": "ref",
-                              "ref": "eFsWC",
-                              "name": "YouTube",
-                              "descendants": {
-                                "jynNC": {
-                                  "content": "YOUTUBE"
-                                }
-                              }
-                            },
-                            {
-                              "id": "vSODZ",
-                              "type": "ref",
-                              "ref": "eFsWC",
-                              "name": "TikTok",
-                              "descendants": {
-                                "jynNC": {
-                                  "content": "TIKTOK"
-                                }
-                              }
-                            }
-                          ]
-                        }
-                      ]
+                      "type": "text",
+                      "id": "o4zy0",
+                      "name": "Copyright",
+                      "fill": "$text-muted",
+                      "content": "© 2026 Paul Goode",
+                      "lineHeight": "$type-body2-line-height",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$type-body2-size",
+                      "fontWeight": "normal",
+                      "letterSpacing": "$type-body2-letter-spacing"
                     }
                   ]
                 },
@@ -10697,189 +10121,106 @@
                   "width": "fill_container",
                   "fill": "$surface-inverse",
                   "layout": "vertical",
-                  "gap": "$space-block",
+                  "gap": "$scale-300",
                   "padding": [
                     "$space-block",
                     "$layout-margin"
                   ],
+                  "alignItems": "center",
                   "children": [
                     {
+                      "id": "549hf",
+                      "type": "ref",
+                      "ref": "yUEsX",
+                      "name": "Profile / Circle",
+                      "width": 120,
+                      "height": 120,
+                      "stroke": "$text-inverse",
+                      "strokeWidth": 2,
+                      "strokeAlignment": "inner"
+                    },
+                    {
                       "type": "frame",
-                      "id": "XEGUi",
-                      "name": "Top",
-                      "width": "fill_container",
+                      "id": "BWRrf",
+                      "name": "Nav",
                       "gap": "$scale-600",
-                      "justifyContent": "space_between",
+                      "padding": [
+                        "$scale-300",
+                        0,
+                        0,
+                        0
+                      ],
+                      "justifyContent": "center",
                       "alignItems": "center",
                       "children": [
                         {
-                          "type": "frame",
-                          "id": "XQTw0",
-                          "name": "Brand",
-                          "layout": "vertical",
-                          "gap": "$scale-300",
-                          "children": [
-                            {
-                              "id": "AzTEi",
-                              "type": "ref",
-                              "ref": "IsBQe",
-                              "name": "Logo",
-                              "width": 76,
-                              "height": 48,
-                              "fill": "$text-inverse"
-                            },
-                            {
-                              "type": "text",
-                              "id": "cSeTt",
-                              "name": "Tagline",
-                              "fill": "$text-inverse",
-                              "content": "Drawing is thinking.",
-                              "lineHeight": "$type-p2-line-height",
-                              "fontFamily": "$font-body",
-                              "fontSize": "$type-p2-size",
-                              "fontWeight": "normal",
-                              "letterSpacing": "$type-p2-letter-spacing"
+                          "id": "8tqNC",
+                          "type": "ref",
+                          "ref": "Bbcv6",
+                          "name": "Blog",
+                          "descendants": {
+                            "v3guN": {
+                              "content": "BLOG"
                             }
-                          ]
+                          }
                         },
                         {
-                          "type": "frame",
-                          "id": "BWRrf",
-                          "name": "Nav",
-                          "gap": "$scale-600",
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "id": "qGSFE",
-                              "type": "ref",
-                              "ref": "Bbcv6",
-                              "name": "Home",
-                              "descendants": {
-                                "v3guN": {
-                                  "content": "HOME"
-                                }
-                              }
-                            },
-                            {
-                              "id": "Wugpq",
-                              "type": "ref",
-                              "ref": "Bbcv6",
-                              "name": "About",
-                              "descendants": {
-                                "v3guN": {
-                                  "content": "ABOUT"
-                                }
-                              }
-                            },
-                            {
-                              "id": "gaP6b",
-                              "type": "ref",
-                              "ref": "Bbcv6",
-                              "name": "Work",
-                              "descendants": {
-                                "v3guN": {
-                                  "content": "WORK"
-                                }
-                              }
-                            },
-                            {
-                              "id": "nxWPS",
-                              "type": "ref",
-                              "ref": "Bbcv6",
-                              "name": "Contact",
-                              "descendants": {
-                                "v3guN": {
-                                  "content": "CONTACT"
-                                }
-                              }
+                          "id": "a9toE",
+                          "type": "ref",
+                          "ref": "Bbcv6",
+                          "name": "Projects",
+                          "descendants": {
+                            "v3guN": {
+                              "content": "PROJECTS"
                             }
-                          ]
+                          }
+                        },
+                        {
+                          "id": "nDBoG",
+                          "type": "ref",
+                          "ref": "Bbcv6",
+                          "name": "Newsletter",
+                          "descendants": {
+                            "v3guN": {
+                              "content": "NEWSLETTER"
+                            }
+                          }
+                        },
+                        {
+                          "id": "BGQaH",
+                          "type": "ref",
+                          "ref": "Bbcv6",
+                          "name": "Shop",
+                          "descendants": {
+                            "v3guN": {
+                              "content": "SHOP"
+                            }
+                          }
+                        },
+                        {
+                          "id": "GD9Iy",
+                          "type": "ref",
+                          "ref": "Bbcv6",
+                          "name": "About",
+                          "descendants": {
+                            "v3guN": {
+                              "content": "ABOUT"
+                            }
+                          }
                         }
                       ]
                     },
                     {
-                      "type": "rectangle",
-                      "id": "cEXbI",
-                      "name": "Divider",
-                      "fill": "$surface-inverse-hover",
-                      "width": "fill_container",
-                      "height": 1
-                    },
-                    {
-                      "type": "frame",
-                      "id": "rLPly",
-                      "name": "Bottom",
-                      "width": "fill_container",
-                      "gap": "$scale-600",
-                      "justifyContent": "space_between",
-                      "alignItems": "center",
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "hG0R0",
-                          "name": "Copyright",
-                          "fill": "$text-inverse",
-                          "content": "© 2026 Paul Goode",
-                          "lineHeight": "$type-body2-line-height",
-                          "fontFamily": "$font-body",
-                          "fontSize": "$type-body2-size",
-                          "fontWeight": "normal",
-                          "letterSpacing": "$type-body2-letter-spacing"
-                        },
-                        {
-                          "type": "frame",
-                          "id": "m0Yiq",
-                          "name": "Social",
-                          "gap": "$scale-600",
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "id": "QxEgt",
-                              "type": "ref",
-                              "ref": "Bbcv6",
-                              "name": "LinkedIn",
-                              "descendants": {
-                                "v3guN": {
-                                  "content": "LINKEDIN"
-                                }
-                              }
-                            },
-                            {
-                              "id": "GrSaL",
-                              "type": "ref",
-                              "ref": "Bbcv6",
-                              "name": "Substack",
-                              "descendants": {
-                                "v3guN": {
-                                  "content": "SUBSTACK"
-                                }
-                              }
-                            },
-                            {
-                              "id": "tEF0T",
-                              "type": "ref",
-                              "ref": "Bbcv6",
-                              "name": "YouTube",
-                              "descendants": {
-                                "v3guN": {
-                                  "content": "YOUTUBE"
-                                }
-                              }
-                            },
-                            {
-                              "id": "dbeZH",
-                              "type": "ref",
-                              "ref": "Bbcv6",
-                              "name": "TikTok",
-                              "descendants": {
-                                "v3guN": {
-                                  "content": "TIKTOK"
-                                }
-                              }
-                            }
-                          ]
-                        }
-                      ]
+                      "type": "text",
+                      "id": "hG0R0",
+                      "name": "Copyright",
+                      "fill": "$text-inverse",
+                      "content": "© 2026 Paul Goode",
+                      "lineHeight": "$type-body2-line-height",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$type-body2-size",
+                      "fontWeight": "normal",
+                      "letterSpacing": "$type-body2-letter-spacing"
                     }
                   ]
                 }
