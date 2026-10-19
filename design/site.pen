@@ -68,7 +68,8 @@
                       "content": "Keep Going Sketchbook"
                     },
                     "zSXuD": {
-                      "content": "An open creative journal."
+                      "content": "An open creative journal.",
+                      "enabled": false
                     }
                   }
                 },
@@ -388,7 +389,8 @@
                       "content": "Keep Going Sketchbook"
                     },
                     "zSXuD": {
-                      "content": "An open creative journal."
+                      "content": "An open creative journal.",
+                      "enabled": false
                     }
                   }
                 },
@@ -674,23 +676,11 @@
       "layout": "vertical",
       "children": [
         {
-          "id": "f49AF3",
+          "id": "ljIOS",
           "type": "ref",
           "ref": "S5OtQe",
           "name": "Header",
-          "width": "fill_container",
-          "layout": "vertical",
-          "alignItems": "center",
-          "gap": "$scale-200",
-          "descendants": {
-            "zfzcT": {
-              "enabled": true,
-              "gap": "$scale-300"
-            },
-            "F0YMjx": {
-              "enabled": false
-            }
-          }
+          "width": "fill_container"
         },
         {
           "type": "frame",
@@ -726,7 +716,8 @@
                       "content": "Keep Going Sketchbook"
                     },
                     "zSXuD": {
-                      "content": "An open creative journal."
+                      "content": "An open creative journal.",
+                      "enabled": false
                     }
                   }
                 },
@@ -993,8 +984,8 @@
               "height": 100
             },
             "BWRrf": {
-              "id": "4oFn4",
               "type": "frame",
+              "id": "4oFn4",
               "name": "Nav",
               "layout": "vertical",
               "padding": [
@@ -1469,23 +1460,11 @@
       "layout": "vertical",
       "children": [
         {
-          "id": "K9Mwhs",
+          "id": "vc1tR",
           "type": "ref",
           "ref": "S5OtQe",
           "name": "Header",
-          "width": "fill_container",
-          "layout": "vertical",
-          "alignItems": "center",
-          "gap": "$scale-200",
-          "descendants": {
-            "zfzcT": {
-              "enabled": true,
-              "gap": "$scale-300"
-            },
-            "F0YMjx": {
-              "enabled": false
-            }
-          }
+          "width": "fill_container"
         },
         {
           "type": "frame",
@@ -1651,8 +1630,8 @@
               "height": 100
             },
             "BWRrf": {
-              "id": "26rPm",
               "type": "frame",
+              "id": "26rPm",
               "name": "Nav",
               "layout": "vertical",
               "padding": [
@@ -14324,6 +14303,791 @@
               ]
             }
           ]
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "Co3Ff",
+      "x": -3972,
+      "y": 1223,
+      "fill": "#ffffff",
+      "content": "Projects",
+      "fontFamily": "Inter",
+      "fontSize": 200,
+      "fontWeight": "700"
+    },
+    {
+      "type": "frame",
+      "id": "N3Wye",
+      "x": -3972,
+      "y": 1785,
+      "name": "Projects — Desktop (1200)",
+      "theme": {
+        "mode": "light",
+        "device": "desktop"
+      },
+      "clip": true,
+      "width": 1200,
+      "fill": "$surface-default",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "OdF1T",
+          "type": "ref",
+          "ref": "S5OtQe",
+          "name": "Header",
+          "width": "fill_container",
+          "descendants": {
+            "oekhv": {
+              "id": "wGWf6",
+              "type": "ref",
+              "ref": "eFsWC",
+              "name": "Blog",
+              "descendants": {
+                "jynNC": {
+                  "content": "BLOG"
+                }
+              }
+            },
+            "S5GGB": {
+              "id": "RpShT",
+              "type": "ref",
+              "ref": "MusDs",
+              "name": "Projects",
+              "descendants": {
+                "t893f": {
+                  "content": "PROJECTS"
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "WwciD",
+          "name": "Main",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            "$space-section",
+            "$layout-margin"
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "GYYwb",
+              "name": "Column",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": "$space-block",
+              "children": [
+                {
+                  "id": "rWv50",
+                  "type": "ref",
+                  "ref": "g7uira",
+                  "name": "Intro",
+                  "width": 720,
+                  "descendants": {
+                    "z9frDW": {
+                      "content": "PROJECTS"
+                    },
+                    "SqBTJ": {
+                      "content": "Projects"
+                    },
+                    "zSXuD": {
+                      "content": "Case studies and personal work: product design, original art, and the things in between."
+                    }
+                  }
+                },
+                {
+                  "id": "Snuso",
+                  "type": "ref",
+                  "ref": "y6vFR6",
+                  "name": "Featured — Uplifting Ink",
+                  "width": "fill_container",
+                  "descendants": {
+                    "W49He": {
+                      "content": "FEATURED · CASE STUDY"
+                    },
+                    "e41yZ": {
+                      "content": "Uplifting Ink"
+                    },
+                    "VYFHh": {
+                      "content": "Building a visual thinking company: the products, the workshops and the brand behind them."
+                    }
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "D0VaD",
+                  "name": "Grid",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": "$scale-600",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "c71VVd",
+                      "name": "Row 1",
+                      "width": "fill_container",
+                      "gap": "$scale-600",
+                      "children": [
+                        {
+                          "id": "P86FL5",
+                          "type": "ref",
+                          "ref": "ZwNI4",
+                          "name": "Project — Keep Going Sketchbook",
+                          "width": "fill_container",
+                          "descendants": {
+                            "Mng70": {
+                              "content": "PERSONAL PROJECT"
+                            },
+                            "QaGQc": {
+                              "content": "Keep Going Sketchbook"
+                            },
+                            "mlzay": {
+                              "content": "A daily drawing practice, shared openly while it happens."
+                            }
+                          }
+                        },
+                        {
+                          "id": "Cawke",
+                          "type": "ref",
+                          "ref": "ZwNI4",
+                          "name": "Project — Enterprise design system",
+                          "width": "fill_container",
+                          "descendants": {
+                            "Mng70": {
+                              "content": "CASE STUDY"
+                            },
+                            "QaGQc": {
+                              "content": "Enterprise design system"
+                            },
+                            "mlzay": {
+                              "content": "Bringing many product teams onto one shared set of components and tokens."
+                            }
+                          }
+                        },
+                        {
+                          "id": "IePng",
+                          "type": "ref",
+                          "ref": "ZwNI4",
+                          "name": "Project — Printmaking series",
+                          "width": "fill_container",
+                          "descendants": {
+                            "Mng70": {
+                              "content": "ART"
+                            },
+                            "QaGQc": {
+                              "content": "Printmaking series"
+                            },
+                            "mlzay": {
+                              "content": "Hand-pulled prints exploring pattern, landscape and small creatures."
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "wQt28",
+                      "name": "Row 2",
+                      "width": "fill_container",
+                      "gap": "$scale-600",
+                      "children": [
+                        {
+                          "id": "UiA3Z",
+                          "type": "ref",
+                          "ref": "ZwNI4",
+                          "name": "Project — Consumer onboarding",
+                          "width": "fill_container",
+                          "descendants": {
+                            "Mng70": {
+                              "content": "CASE STUDY"
+                            },
+                            "QaGQc": {
+                              "content": "Consumer onboarding"
+                            },
+                            "mlzay": {
+                              "content": "Rethinking the first few minutes of a consumer app so more people stay."
+                            }
+                          }
+                        },
+                        {
+                          "id": "rr1uO",
+                          "type": "ref",
+                          "ref": "ZwNI4",
+                          "name": "Project — Songs for drawing",
+                          "width": "fill_container",
+                          "descendants": {
+                            "Mng70": {
+                              "content": "MUSIC"
+                            },
+                            "QaGQc": {
+                              "content": "Songs for drawing"
+                            },
+                            "mlzay": {
+                              "content": "Short pieces written to draw to, recorded at home."
+                            }
+                          }
+                        },
+                        {
+                          "id": "UdaRr",
+                          "type": "ref",
+                          "ref": "ZwNI4",
+                          "name": "Project — Workshop toolkit",
+                          "width": "fill_container",
+                          "descendants": {
+                            "Mng70": {
+                              "content": "RESOURCE"
+                            },
+                            "QaGQc": {
+                              "content": "Workshop toolkit"
+                            },
+                            "mlzay": {
+                              "content": "Templates and exercises for teaching visual thinking."
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "y0BJx",
+          "type": "ref",
+          "ref": "E6haZ",
+          "name": "Footer",
+          "width": "fill_container"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "mVe2c",
+      "x": -2652,
+      "y": 1785,
+      "name": "Projects — Tablet (810)",
+      "theme": {
+        "mode": "light",
+        "device": "tablet"
+      },
+      "clip": true,
+      "width": 810,
+      "fill": "$surface-default",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "Q6RF3",
+          "type": "ref",
+          "ref": "S5OtQe",
+          "name": "Header",
+          "width": "fill_container",
+          "descendants": {
+            "oekhv": {
+              "id": "Yiyfl",
+              "type": "ref",
+              "ref": "eFsWC",
+              "name": "Blog",
+              "descendants": {
+                "jynNC": {
+                  "content": "BLOG"
+                }
+              }
+            },
+            "S5GGB": {
+              "id": "t1D6PB",
+              "type": "ref",
+              "ref": "MusDs",
+              "name": "Projects",
+              "descendants": {
+                "t893f": {
+                  "content": "PROJECTS"
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "MSxuy",
+          "name": "Main",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            "$space-section",
+            "$layout-margin"
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "ibdql",
+              "name": "Column",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": "$space-block",
+              "children": [
+                {
+                  "id": "MjkKM",
+                  "type": "ref",
+                  "ref": "g7uira",
+                  "name": "Intro",
+                  "width": "fill_container",
+                  "descendants": {
+                    "z9frDW": {
+                      "content": "PROJECTS"
+                    },
+                    "SqBTJ": {
+                      "content": "Projects"
+                    },
+                    "zSXuD": {
+                      "content": "Case studies and personal work: product design, original art, and the things in between."
+                    }
+                  }
+                },
+                {
+                  "id": "OwCCo",
+                  "type": "ref",
+                  "ref": "y6vFR6",
+                  "name": "Featured — Uplifting Ink",
+                  "width": "fill_container",
+                  "descendants": {
+                    "W49He": {
+                      "content": "FEATURED · CASE STUDY"
+                    },
+                    "e41yZ": {
+                      "content": "Uplifting Ink"
+                    },
+                    "VYFHh": {
+                      "content": "Building a visual thinking company: the products, the workshops and the brand behind them."
+                    }
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "DBZSX",
+                  "name": "Grid",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": "$scale-600",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ZcYrC",
+                      "name": "Row 1",
+                      "width": "fill_container",
+                      "gap": "$scale-600",
+                      "children": [
+                        {
+                          "id": "DNOVL",
+                          "type": "ref",
+                          "ref": "ZwNI4",
+                          "name": "Project — Keep Going Sketchbook",
+                          "width": "fill_container",
+                          "descendants": {
+                            "Mng70": {
+                              "content": "PERSONAL PROJECT"
+                            },
+                            "QaGQc": {
+                              "content": "Keep Going Sketchbook"
+                            },
+                            "mlzay": {
+                              "content": "A daily drawing practice, shared openly while it happens."
+                            }
+                          }
+                        },
+                        {
+                          "id": "oRLgL",
+                          "type": "ref",
+                          "ref": "ZwNI4",
+                          "name": "Project — Enterprise design system",
+                          "width": "fill_container",
+                          "descendants": {
+                            "Mng70": {
+                              "content": "CASE STUDY"
+                            },
+                            "QaGQc": {
+                              "content": "Enterprise design system"
+                            },
+                            "mlzay": {
+                              "content": "Bringing many product teams onto one shared set of components and tokens."
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "swdha",
+                      "name": "Row 2",
+                      "width": "fill_container",
+                      "gap": "$scale-600",
+                      "children": [
+                        {
+                          "id": "h298ml",
+                          "type": "ref",
+                          "ref": "ZwNI4",
+                          "name": "Project — Printmaking series",
+                          "width": "fill_container",
+                          "descendants": {
+                            "Mng70": {
+                              "content": "ART"
+                            },
+                            "QaGQc": {
+                              "content": "Printmaking series"
+                            },
+                            "mlzay": {
+                              "content": "Hand-pulled prints exploring pattern, landscape and small creatures."
+                            }
+                          }
+                        },
+                        {
+                          "id": "D2KGFe",
+                          "type": "ref",
+                          "ref": "ZwNI4",
+                          "name": "Project — Consumer onboarding",
+                          "width": "fill_container",
+                          "descendants": {
+                            "Mng70": {
+                              "content": "CASE STUDY"
+                            },
+                            "QaGQc": {
+                              "content": "Consumer onboarding"
+                            },
+                            "mlzay": {
+                              "content": "Rethinking the first few minutes of a consumer app so more people stay."
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a3l1nb",
+          "type": "ref",
+          "ref": "E6haZ",
+          "name": "Footer",
+          "width": "fill_container",
+          "descendants": {
+            "549hf": {
+              "width": 100,
+              "height": 100
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "ruVMb",
+      "x": -1722,
+      "y": 1785,
+      "name": "Projects — Mobile (390)",
+      "theme": {
+        "mode": "light",
+        "device": "mobile"
+      },
+      "clip": true,
+      "width": 390,
+      "fill": "$surface-default",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "iVBVt",
+          "type": "ref",
+          "ref": "S5OtQe",
+          "name": "Header",
+          "width": "fill_container",
+          "descendants": {
+            "oekhv": {
+              "id": "WDpO6",
+              "type": "ref",
+              "ref": "eFsWC",
+              "name": "Blog",
+              "descendants": {
+                "jynNC": {
+                  "content": "BLOG"
+                }
+              }
+            },
+            "S5GGB": {
+              "id": "kknPA",
+              "type": "ref",
+              "ref": "MusDs",
+              "name": "Projects",
+              "descendants": {
+                "t893f": {
+                  "content": "PROJECTS"
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "QDzCR",
+          "name": "Main",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            "$space-section",
+            "$layout-margin"
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "eaTq3",
+              "name": "Column",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": "$space-block",
+              "children": [
+                {
+                  "id": "X7BqgV",
+                  "type": "ref",
+                  "ref": "g7uira",
+                  "name": "Intro",
+                  "width": "fill_container",
+                  "descendants": {
+                    "z9frDW": {
+                      "content": "PROJECTS"
+                    },
+                    "SqBTJ": {
+                      "content": "Projects"
+                    },
+                    "zSXuD": {
+                      "content": "Case studies and personal work: product design, original art, and the things in between."
+                    }
+                  }
+                },
+                {
+                  "id": "v38jP9",
+                  "type": "ref",
+                  "ref": "ZwNI4",
+                  "name": "Project — Uplifting Ink",
+                  "width": "fill_container",
+                  "descendants": {
+                    "Mng70": {
+                      "content": "CASE STUDY"
+                    },
+                    "QaGQc": {
+                      "content": "Uplifting Ink"
+                    },
+                    "mlzay": {
+                      "content": "Building a visual thinking company: the products, the workshops and the brand behind them."
+                    }
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "e7RYow",
+                  "name": "Grid",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": "$scale-600",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "FoSKc",
+                      "name": "Row 1",
+                      "width": "fill_container",
+                      "gap": "$scale-600",
+                      "children": [
+                        {
+                          "id": "QOwVo",
+                          "type": "ref",
+                          "ref": "ZwNI4",
+                          "name": "Project — Keep Going Sketchbook",
+                          "width": "fill_container",
+                          "descendants": {
+                            "Mng70": {
+                              "content": "PERSONAL PROJECT"
+                            },
+                            "QaGQc": {
+                              "content": "Keep Going Sketchbook"
+                            },
+                            "mlzay": {
+                              "content": "A daily drawing practice, shared openly while it happens."
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "F9mlR",
+                      "name": "Row 2",
+                      "width": "fill_container",
+                      "gap": "$scale-600",
+                      "children": [
+                        {
+                          "id": "U1JWP",
+                          "type": "ref",
+                          "ref": "ZwNI4",
+                          "name": "Project — Enterprise design system",
+                          "width": "fill_container",
+                          "descendants": {
+                            "Mng70": {
+                              "content": "CASE STUDY"
+                            },
+                            "QaGQc": {
+                              "content": "Enterprise design system"
+                            },
+                            "mlzay": {
+                              "content": "Bringing many product teams onto one shared set of components and tokens."
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "wq80H",
+                      "name": "Row 3",
+                      "width": "fill_container",
+                      "gap": "$scale-600",
+                      "children": [
+                        {
+                          "id": "QgnkX",
+                          "type": "ref",
+                          "ref": "ZwNI4",
+                          "name": "Project — Printmaking series",
+                          "width": "fill_container",
+                          "descendants": {
+                            "Mng70": {
+                              "content": "ART"
+                            },
+                            "QaGQc": {
+                              "content": "Printmaking series"
+                            },
+                            "mlzay": {
+                              "content": "Hand-pulled prints exploring pattern, landscape and small creatures."
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "aqiKD",
+          "type": "ref",
+          "ref": "E6haZ",
+          "name": "Footer",
+          "width": "fill_container",
+          "descendants": {
+            "549hf": {
+              "width": 100,
+              "height": 100
+            },
+            "BWRrf": {
+              "type": "frame",
+              "id": "gA2HK",
+              "name": "Nav",
+              "layout": "vertical",
+              "padding": [
+                "$scale-300",
+                0,
+                0,
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "YLnYL",
+                  "name": "Row",
+                  "gap": "$scale-600",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "WyA8y",
+                      "type": "ref",
+                      "ref": "Bbcv6",
+                      "name": "Blog",
+                      "descendants": {
+                        "v3guN": {
+                          "content": "BLOG"
+                        }
+                      }
+                    },
+                    {
+                      "id": "hiyfn",
+                      "type": "ref",
+                      "ref": "Bbcv6",
+                      "name": "Projects",
+                      "descendants": {
+                        "v3guN": {
+                          "content": "PROJECTS"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "bFW6W",
+                  "name": "Row",
+                  "gap": "$scale-600",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "IUROP",
+                      "type": "ref",
+                      "ref": "Bbcv6",
+                      "name": "Newsletter",
+                      "descendants": {
+                        "v3guN": {
+                          "content": "NEWSLETTER"
+                        }
+                      }
+                    },
+                    {
+                      "id": "T17db",
+                      "type": "ref",
+                      "ref": "Bbcv6",
+                      "name": "Shop",
+                      "descendants": {
+                        "v3guN": {
+                          "content": "SHOP"
+                        }
+                      }
+                    },
+                    {
+                      "id": "HHWpp",
+                      "type": "ref",
+                      "ref": "Bbcv6",
+                      "name": "About",
+                      "descendants": {
+                        "v3guN": {
+                          "content": "ABOUT"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
         }
       ]
     }
