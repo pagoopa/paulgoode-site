@@ -132,3 +132,81 @@ img {
   border-color: var(--color-accent-yellow-hover);
   color: var(--color-text-on-accent);
 }
+
+/* Link / Nav: Body/eyebrow2-md in the surrounding text colour, so it works on
+   Default and Inverse surfaces. Underlined on hover and with .is-active. */
+.link-nav,
+.link-nav:hover {
+  position: relative;
+  padding-block: var(--scale-200);
+  font-size: var(--type-eyebrow2-size);
+  line-height: var(--type-eyebrow2-line-height);
+  letter-spacing: var(--type-eyebrow2-letter-spacing);
+  text-transform: uppercase;
+  font-weight: 500;
+  color: inherit;
+}
+
+/* The underline sits 4px below the label, inside the link's 8px padding. */
+.link-nav .link-label {
+  display: block;
+  padding-bottom: var(--scale-100);
+  border-bottom: 2px solid transparent;
+}
+
+.link-nav:hover .link-label,
+.link-nav.is-active .link-label {
+  border-bottom-color: currentColor;
+}
+
+/* Link / Standalone: Body/body1-md in Text/Link with an optional 20px icon.
+   On hover the text and icon turn Text/Default and the label is underlined. */
+.link-standalone {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--scale-200);
+  padding-block: var(--scale-100);
+  font-size: var(--type-body1-size);
+  line-height: var(--type-body1-line-height);
+  letter-spacing: var(--type-body1-letter-spacing);
+  font-weight: 500;
+  color: var(--color-text-link);
+}
+
+.link-standalone:hover {
+  color: var(--color-text-default);
+}
+
+.link-standalone .link-label {
+  padding-bottom: var(--scale-50);
+  border-bottom: 1px solid transparent;
+}
+
+.link-standalone:hover .link-label {
+  border-bottom-color: currentColor;
+}
+
+.link-standalone svg {
+  flex: none;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Link focus ring: 8px out to the sides, 2px above and below. */
+.link-nav:focus-visible,
+.link-standalone:focus-visible {
+  outline: none;
+}
+
+.link-nav:focus-visible::after,
+.link-standalone:focus-visible::after {
+  content: '';
+  position: absolute;
+  inset: -2px calc(-1 * var(--scale-200));
+  border: 2px solid var(--color-border-focus);
+  border-radius: var(--radius-sm);
+}

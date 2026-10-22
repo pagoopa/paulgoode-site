@@ -34,9 +34,9 @@ function isActive(href: string) {
         {navItems.map((item) => (
           <a
             href={item.href}
-            class:list={['site-header__link', { 'is-active': isActive(item.href) }]}
+            class:list={['link-nav', { 'is-active': isActive(item.href) }]}
           >
-            {item.label}
+            <span class="link-label">{item.label}</span>
           </a>
         ))}
       </div>
@@ -106,33 +106,21 @@ function isActive(href: string) {
     display: none;
   }
 
-  /* Link / Nav: Body/eyebrow2-md, current page underlined */
-  .site-header__nav {
-    font-size: var(--type-eyebrow2-size);
-    line-height: var(--type-eyebrow2-line-height);
-    letter-spacing: var(--type-eyebrow2-letter-spacing);
-    text-transform: uppercase;
-    font-weight: 500;
-  }
-
+  /* Link / Nav links; their styles are in global.css. */
   .site-header__links {
     display: flex;
     gap: var(--scale-600);
     flex-wrap: wrap;
   }
 
-  .site-header__link {
-    padding-block: var(--scale-200);
-    border-bottom: 2px solid transparent;
-  }
-
-  .site-header__link.is-active {
-    border-bottom-color: var(--color-text-default);
-  }
-
   /* Phones: Header / Left / Default (closed) and Menu Open. See the
      "Mobile Nav — Open / Close Interaction" board in design/site.pen. */
   @media (max-width: 599px) {
+    /* On phones the bar ends at the gutter, not the margin, next to the 44px menu button. */
+    .site-header__inner {
+      padding-inline-end: var(--layout-gutter);
+    }
+
     .site-header__menu-button {
       display: flex;
       align-items: center;
