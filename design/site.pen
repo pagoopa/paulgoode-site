@@ -1756,7 +1756,7 @@
               "id": "gX9t3",
               "name": "Subtitle",
               "fill": "$text-muted",
-              "content": "Phone width (390). The menu starts closed, slides down from behind the nav bar while fading in, and slides back up while fading out.",
+              "content": "Phone width (390). The menu starts closed, slides down from behind the nav bar while fading in, and slides back up while fading out. Open, it fills the screen below the bar.",
               "fontFamily": "$font-body",
               "fontSize": 16,
               "fontWeight": "normal"
@@ -1797,7 +1797,7 @@
                   },
                   "clip": true,
                   "width": 390,
-                  "height": 560,
+                  "height": 844,
                   "fill": "$surface-default",
                   "stroke": "$border-default",
                   "strokeWidth": 1,
@@ -2181,7 +2181,7 @@
                   },
                   "clip": true,
                   "width": 390,
-                  "height": 560,
+                  "height": 844,
                   "fill": "$surface-default",
                   "stroke": "$border-default",
                   "strokeWidth": 1,
@@ -2487,9 +2487,14 @@
                       "y": 64,
                       "width": 390,
                       "opacity": 0.5,
+                      "height": 780,
+                      "strokeWidth": 0,
                       "descendants": {
                         "cUbmx": {
                           "enabled": false
+                        },
+                        "idINa": {
+                          "height": "fill_container"
                         }
                       }
                     },
@@ -2571,7 +2576,7 @@
                   },
                   "clip": true,
                   "width": 390,
-                  "height": 560,
+                  "height": 844,
                   "fill": "$surface-default",
                   "stroke": "$border-default",
                   "strokeWidth": 1,
@@ -2877,9 +2882,14 @@
                       "y": 76,
                       "width": 390,
                       "opacity": 1,
+                      "height": 768,
+                      "strokeWidth": 0,
                       "descendants": {
                         "cUbmx": {
                           "enabled": false
+                        },
+                        "idINa": {
+                          "height": "fill_container"
                         }
                       }
                     },
@@ -2917,7 +2927,7 @@
                   "fill": "$text-muted",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
-                  "content": "Tap ✕ to close.",
+                  "content": "Links stay at the top; the menu fills the screen below the bar. Tap ✕ to close.",
                   "lineHeight": 1.5,
                   "fontFamily": "$font-body",
                   "fontSize": 14,
@@ -2972,7 +2982,7 @@
                   },
                   "clip": true,
                   "width": 390,
-                  "height": 560,
+                  "height": 844,
                   "fill": "$surface-default",
                   "stroke": "$border-default",
                   "strokeWidth": 1,
@@ -3278,9 +3288,14 @@
                       "y": 64,
                       "width": 390,
                       "opacity": 0.5,
+                      "height": 780,
+                      "strokeWidth": 0,
                       "descendants": {
                         "cUbmx": {
                           "enabled": false
+                        },
+                        "idINa": {
+                          "height": "fill_container"
                         }
                       }
                     },
@@ -3512,12 +3527,25 @@
                 },
                 {
                   "type": "text",
+                  "id": "qjr1u",
+                  "name": "Spec line",
+                  "fill": "$text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Open, the menu runs from the bar to the bottom of the screen; the page behind it doesn't scroll. If the links don't fit (phone held sideways), the menu scrolls.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
                   "id": "jFQIT",
                   "name": "Spec line",
                   "fill": "$text-muted",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
-                  "content": "Also close on Esc, on tapping a link, and on tapping the page below.",
+                  "content": "Also close on Esc and on tapping a link.",
                   "lineHeight": 1.5,
                   "fontFamily": "$font-body",
                   "fontSize": 14,
