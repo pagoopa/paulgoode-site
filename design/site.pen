@@ -9378,6 +9378,8 @@
                       "width": "fill_container",
                       "padding": [
                         "$scale-400",
+                        "$layout-gutter",
+                        "$scale-400",
                         "$layout-margin"
                       ],
                       "justifyContent": "space_between",
@@ -9525,6 +9527,8 @@
                       "name": "Bar",
                       "width": "fill_container",
                       "padding": [
+                        "$scale-400",
+                        "$layout-gutter",
                         "$scale-400",
                         "$layout-margin"
                       ],

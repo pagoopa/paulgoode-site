@@ -36,7 +36,7 @@ function isActive(href: string) {
             href={item.href}
             class:list={['site-header__link', { 'is-active': isActive(item.href) }]}
           >
-            {item.label}
+            <span class="site-header__label">{item.label}</span>
           </a>
         ))}
       </div>
@@ -106,7 +106,7 @@ function isActive(href: string) {
     display: none;
   }
 
-  /* Link / Nav: Body/eyebrow2-md, current page underlined */
+  /* Link / Nav: Body/eyebrow2-md, underlined on hover and on the current page */
   .site-header__nav {
     font-size: var(--type-eyebrow2-size);
     line-height: var(--type-eyebrow2-line-height);
@@ -121,18 +121,46 @@ function isActive(href: string) {
     flex-wrap: wrap;
   }
 
-  .site-header__link {
+  .site-header__link,
+  .site-header__link:hover {
+    position: relative;
     padding-block: var(--scale-200);
+    color: var(--color-text-default);
+  }
+
+  /* The underline sits 4px below the label, inside the link's 8px padding. */
+  .site-header__label {
+    display: block;
+    padding-bottom: var(--scale-100);
     border-bottom: 2px solid transparent;
   }
 
-  .site-header__link.is-active {
+  .site-header__link:hover .site-header__label,
+  .site-header__link.is-active .site-header__label {
     border-bottom-color: var(--color-text-default);
+  }
+
+  /* Focus ring: 8px out to the sides, 2px above and below. */
+  .site-header__link:focus-visible {
+    outline: none;
+  }
+
+  .site-header__link:focus-visible::after {
+    content: '';
+    position: absolute;
+    inset: -2px calc(-1 * var(--scale-200));
+    border: 2px solid var(--color-border-focus);
+    border-radius: var(--radius-sm);
   }
 
   /* Phones: Header / Left / Default (closed) and Menu Open. See the
      "Mobile Nav — Open / Close Interaction" board in design/site.pen. */
   @media (max-width: 599px) {
+    /* On phones the bar ends at the gutter, not the margin, next to the 44px menu button. */
+    .site-header__inner {
+      padding-inline-end: var(--layout-gutter);
+    }
+
     .site-header__menu-button {
       display: flex;
       align-items: center;
