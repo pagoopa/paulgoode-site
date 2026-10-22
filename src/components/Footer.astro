@@ -10,7 +10,11 @@ const year = new Date().getFullYear();
   <div class="wrap site-footer__inner">
     <Image src={profile} alt="" class="site-footer__photo" width={120} height={120} />
     <nav class="site-footer__links" aria-label="Footer">
-      {navItems.map((item) => <a href={item.href}>{item.label}</a>)}
+      {navItems.map((item) => (
+        <a href={item.href} class="link-nav">
+          <span class="link-label">{item.label}</span>
+        </a>
+      ))}
     </nav>
     <p class="site-footer__copyright">&copy; {year} Paul Goode</p>
   </div>
@@ -41,27 +45,13 @@ const year = new Date().getFullYear();
     outline-offset: -2px;
   }
 
-  /* Link / Nav / Default / Inverse; rows wrap on narrow screens */
+  /* Link / Nav / Default / Inverse (styles in global.css); rows wrap on narrow screens */
   .site-footer__links {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 0 var(--scale-600);
     padding-top: var(--scale-300);
-    font-size: var(--type-eyebrow2-size);
-    line-height: var(--type-eyebrow2-line-height);
-    letter-spacing: var(--type-eyebrow2-letter-spacing);
-    text-transform: uppercase;
-    font-weight: 500;
-  }
-
-  .site-footer__links a {
-    padding-block: var(--scale-200);
-    border-bottom: 2px solid transparent;
-  }
-
-  .site-footer__links a:hover {
-    border-bottom-color: var(--color-text-inverse);
   }
 
   .site-footer__copyright {

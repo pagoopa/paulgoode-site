@@ -14,38 +14,11 @@ const excerpt = cut === -1 ? html : html.slice(0, cut);
 <Fragment set:html={excerpt} />
 {
   cut !== -1 && (
-    <a class="read-more" href={href}>
-      Read more
+    <a class="link-standalone" href={href}>
+      <span class="link-label">Read more</span>
       <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
         <path d="M5 12h14m-6 6l6-6-6-6" />
       </svg>
     </a>
   )
 }
-
-<style>
-  /* Link / Standalone / Default */
-  .read-more {
-    display: inline-flex;
-    align-items: center;
-    gap: var(--scale-200);
-    padding-block: var(--scale-100);
-    color: var(--color-text-link);
-    font-size: var(--type-body1-size);
-    line-height: var(--type-body1-line-height);
-    letter-spacing: var(--type-body1-letter-spacing);
-    font-weight: 500;
-  }
-
-  .read-more svg {
-    fill: none;
-    stroke: currentColor;
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-  }
-
-  .read-more:hover {
-    text-decoration: underline;
-  }
-</style>
