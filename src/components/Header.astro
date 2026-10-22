@@ -52,6 +52,8 @@ function isActive(href: string) {
   if (header && button) {
     const isOpen = () => header.dataset.menuOpen === 'true';
     const setOpen = (open: boolean) => {
+      // The open menu runs from the bar's bottom edge (wherever it is on screen) to the bottom of the screen.
+      if (open) header.style.setProperty('--menu-top', `${header.getBoundingClientRect().bottom}px`);
       header.dataset.menuOpen = String(open);
       button.setAttribute('aria-expanded', String(open));
       button.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
@@ -153,26 +155,35 @@ function isActive(href: string) {
       display: block;
     }
 
-    /* The nav clips the menu at the bar's bottom edge, so it slides out from behind the bar.
+    /* The menu fills the screen below the bar. The nav clips it at the bar's bottom edge, so it
+       slides out from behind the bar, and scrolls if the links don't fit (phones held sideways).
        Hidden once the close animation ends, so the links can't be tabbed to while closed. */
     .site-header__nav {
-      position: absolute;
-      top: calc(100% + 1px);
+      position: fixed;
+      top: var(--menu-top, 0);
       left: 0;
       right: 0;
-      overflow: hidden;
+      bottom: 0;
+      overflow-y: auto;
+      overscroll-behavior: contain;
       visibility: hidden;
       transition: visibility 0s linear 200ms;
     }
 
+    /* The page behind the open menu doesn't scroll. */
+    :global(html:has(.site-header[data-menu-open='true'])) {
+      overflow: hidden;
+    }
+
+    /* The links stay at the top; the menu's background runs to the bottom of the screen. */
     .site-header__links {
       flex-direction: column;
       align-items: flex-start;
       flex-wrap: nowrap;
       gap: var(--scale-200);
+      min-height: 100%;
       padding: var(--scale-400) var(--layout-margin) var(--scale-600);
       background: var(--color-surface-default);
-      border-bottom: 1px solid var(--color-border-default);
       opacity: 0;
       transform: translateY(-24px);
       transition:
