@@ -6,7 +6,7 @@ import { navItems } from '../lib/nav';
 const year = new Date().getFullYear();
 ---
 
-<footer class="site-footer">
+<footer class="site-footer" data-theme="dark">
   <div class="wrap site-footer__inner">
     <Image src={profile} alt="" class="site-footer__photo" width={120} height={120} />
     <nav class="site-footer__links" aria-label="Footer">
@@ -21,10 +21,16 @@ const year = new Date().getFullYear();
 </footer>
 
 <style>
-  /* Footer / Inverse: profile circle, nav links and copyright, centered */
+  /* Footer / Dark: profile circle, nav links and copyright, centered.
+     data-theme="dark" switches the tokens, so the footer uses the same
+     surfaces and text colours as Footer / Light. */
   .site-footer {
-    background: var(--color-surface-inverse);
-    color: var(--color-text-inverse);
+    background: linear-gradient(
+      to bottom,
+      var(--color-surface-default) 0%,
+      var(--color-surface-subtle) 65.4%
+    );
+    color: var(--color-text-default);
     margin-top: var(--space-section);
   }
 
@@ -41,11 +47,11 @@ const year = new Date().getFullYear();
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    outline: 2px solid var(--color-text-inverse);
+    outline: 2px solid var(--color-text-default);
     outline-offset: -2px;
   }
 
-  /* Link / Nav / Default / Inverse (styles in global.css); rows wrap on narrow screens */
+  /* Link / Nav / Default (styles in global.css); rows wrap on narrow screens */
   .site-footer__links {
     display: flex;
     flex-wrap: wrap;
@@ -56,6 +62,7 @@ const year = new Date().getFullYear();
 
   .site-footer__copyright {
     margin: 0;
+    color: var(--color-text-muted);
     font-size: var(--type-body2-size);
     line-height: var(--type-body2-line-height);
   }

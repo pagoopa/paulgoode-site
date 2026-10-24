@@ -344,10 +344,7 @@
           "type": "ref",
           "ref": "E6haZ",
           "name": "Footer",
-          "width": "fill_container",
-          "theme": {
-            "mode": "light"
-          }
+          "width": "fill_container"
         }
       ]
     },
@@ -669,9 +666,6 @@
           "ref": "E6haZ",
           "name": "Footer",
           "width": "fill_container",
-          "theme": {
-            "mode": "light"
-          },
           "descendants": {
             "549hf": {
               "width": 100,
@@ -999,9 +993,6 @@
           "ref": "E6haZ",
           "name": "Footer",
           "width": "fill_container",
-          "theme": {
-            "mode": "light"
-          },
           "descendants": {
             "549hf": {
               "width": 100,
@@ -1031,10 +1022,10 @@
                     {
                       "id": "mY7aF",
                       "type": "ref",
-                      "ref": "Bbcv6",
+                      "ref": "eFsWC",
                       "name": "Blog",
                       "descendants": {
-                        "v3guN": {
+                        "jynNC": {
                           "content": "BLOG"
                         }
                       }
@@ -1042,10 +1033,10 @@
                     {
                       "id": "N4XIP",
                       "type": "ref",
-                      "ref": "Bbcv6",
+                      "ref": "eFsWC",
                       "name": "Projects",
                       "descendants": {
-                        "v3guN": {
+                        "jynNC": {
                           "content": "PROJECTS"
                         }
                       }
@@ -1063,10 +1054,10 @@
                     {
                       "id": "XoAlQ",
                       "type": "ref",
-                      "ref": "Bbcv6",
+                      "ref": "eFsWC",
                       "name": "Newsletter",
                       "descendants": {
-                        "v3guN": {
+                        "jynNC": {
                           "content": "NEWSLETTER"
                         }
                       }
@@ -1074,10 +1065,10 @@
                     {
                       "id": "gbAm8",
                       "type": "ref",
-                      "ref": "Bbcv6",
+                      "ref": "eFsWC",
                       "name": "Shop",
                       "descendants": {
-                        "v3guN": {
+                        "jynNC": {
                           "content": "SHOP"
                         }
                       }
@@ -1085,10 +1076,10 @@
                     {
                       "id": "z2Hl2",
                       "type": "ref",
-                      "ref": "Bbcv6",
+                      "ref": "eFsWC",
                       "name": "About",
                       "descendants": {
-                        "v3guN": {
+                        "jynNC": {
                           "content": "ABOUT"
                         }
                       }
@@ -8831,7 +8822,7 @@
                 {
                   "type": "frame",
                   "id": "S5OtQe",
-                  "name": "Header / Left / Default",
+                  "name": "Header / Left / Light",
                   "reusable": true,
                   "width": "fill_container",
                   "fill": "$surface-default",
@@ -8965,15 +8956,18 @@
                         }
                       ]
                     }
-                  ]
+                  ],
+                  "theme": {
+                    "mode": "light"
+                  }
                 },
                 {
                   "type": "frame",
                   "id": "kgrqX",
-                  "name": "Header / Left / Inverse",
+                  "name": "Header / Left / Dark",
                   "reusable": true,
                   "width": "fill_container",
-                  "fill": "$surface-inverse",
+                  "fill": "$surface-default",
                   "stroke": "$border-default",
                   "strokeWidth": {
                     "bottom": 1
@@ -8993,7 +8987,7 @@
                       "name": "Logo",
                       "width": 63,
                       "height": 40,
-                      "fill": "$text-inverse"
+                      "fill": "$text-default"
                     },
                     {
                       "type": "frame",
@@ -9013,10 +9007,10 @@
                             {
                               "id": "c7UL7",
                               "type": "ref",
-                              "ref": "y9pZm",
+                              "ref": "MusDs",
                               "name": "Blog",
                               "descendants": {
-                                "OVFYG": {
+                                "t893f": {
                                   "content": "BLOG"
                                 }
                               }
@@ -9024,10 +9018,10 @@
                             {
                               "id": "aBgCT",
                               "type": "ref",
-                              "ref": "Bbcv6",
+                              "ref": "eFsWC",
                               "name": "Projects",
                               "descendants": {
-                                "v3guN": {
+                                "jynNC": {
                                   "content": "PROJECTS"
                                 }
                               }
@@ -9035,10 +9029,10 @@
                             {
                               "id": "t1NDp",
                               "type": "ref",
-                              "ref": "Bbcv6",
+                              "ref": "eFsWC",
                               "name": "Newsletter",
                               "descendants": {
-                                "v3guN": {
+                                "jynNC": {
                                   "content": "NEWSLETTER"
                                 }
                               }
@@ -9046,10 +9040,10 @@
                             {
                               "id": "cuXm2",
                               "type": "ref",
-                              "ref": "Bbcv6",
+                              "ref": "eFsWC",
                               "name": "Shop",
                               "descendants": {
-                                "v3guN": {
+                                "jynNC": {
                                   "content": "SHOP"
                                 }
                               }
@@ -9057,10 +9051,10 @@
                             {
                               "id": "QSUrd",
                               "type": "ref",
-                              "ref": "Bbcv6",
+                              "ref": "eFsWC",
                               "name": "About",
                               "descendants": {
-                                "v3guN": {
+                                "jynNC": {
                                   "content": "ABOUT"
                                 }
                               }
@@ -9098,18 +9092,21 @@
                               "name": "Icon",
                               "width": 24,
                               "height": 24,
-                              "stroke": "$text-inverse"
+                              "stroke": "$text-default"
                             }
                           ]
                         }
                       ]
                     }
-                  ]
+                  ],
+                  "theme": {
+                    "mode": "dark"
+                  }
                 },
                 {
                   "type": "frame",
                   "id": "ue7Bt",
-                  "name": "Header / Center / Default",
+                  "name": "Header / Center / Light",
                   "reusable": true,
                   "width": "fill_container",
                   "fill": "$surface-default",
@@ -9244,15 +9241,18 @@
                         }
                       ]
                     }
-                  ]
+                  ],
+                  "theme": {
+                    "mode": "light"
+                  }
                 },
                 {
                   "type": "frame",
                   "id": "VCDrB",
-                  "name": "Header / Center / Inverse",
+                  "name": "Header / Center / Dark",
                   "reusable": true,
                   "width": "fill_container",
-                  "fill": "$surface-inverse",
+                  "fill": "$surface-default",
                   "stroke": "$border-default",
                   "strokeWidth": {
                     "bottom": 1
@@ -9273,7 +9273,7 @@
                       "name": "Logo",
                       "width": 200,
                       "height": 126,
-                      "fill": "$text-inverse"
+                      "fill": "$text-default"
                     },
                     {
                       "type": "frame",
@@ -9293,10 +9293,10 @@
                             {
                               "id": "Awd7w",
                               "type": "ref",
-                              "ref": "y9pZm",
+                              "ref": "MusDs",
                               "name": "Blog",
                               "descendants": {
-                                "OVFYG": {
+                                "t893f": {
                                   "content": "BLOG"
                                 }
                               }
@@ -9304,10 +9304,10 @@
                             {
                               "id": "Dsquv",
                               "type": "ref",
-                              "ref": "Bbcv6",
+                              "ref": "eFsWC",
                               "name": "Projects",
                               "descendants": {
-                                "v3guN": {
+                                "jynNC": {
                                   "content": "PROJECTS"
                                 }
                               }
@@ -9315,10 +9315,10 @@
                             {
                               "id": "byuZV",
                               "type": "ref",
-                              "ref": "Bbcv6",
+                              "ref": "eFsWC",
                               "name": "Newsletter",
                               "descendants": {
-                                "v3guN": {
+                                "jynNC": {
                                   "content": "NEWSLETTER"
                                 }
                               }
@@ -9326,10 +9326,10 @@
                             {
                               "id": "L8YxmZ",
                               "type": "ref",
-                              "ref": "Bbcv6",
+                              "ref": "eFsWC",
                               "name": "Shop",
                               "descendants": {
-                                "v3guN": {
+                                "jynNC": {
                                   "content": "SHOP"
                                 }
                               }
@@ -9337,10 +9337,10 @@
                             {
                               "id": "G572Pn",
                               "type": "ref",
-                              "ref": "Bbcv6",
+                              "ref": "eFsWC",
                               "name": "About",
                               "descendants": {
-                                "v3guN": {
+                                "jynNC": {
                                   "content": "ABOUT"
                                 }
                               }
@@ -9378,13 +9378,16 @@
                               "name": "Icon",
                               "width": 24,
                               "height": 24,
-                              "stroke": "$text-inverse"
+                              "stroke": "$text-default"
                             }
                           ]
                         }
                       ]
                     }
-                  ]
+                  ],
+                  "theme": {
+                    "mode": "dark"
+                  }
                 }
               ]
             },
@@ -9397,9 +9400,10 @@
                 {
                   "type": "frame",
                   "id": "M1J6l",
-                  "name": "Header / Left / Default / Menu Open",
+                  "name": "Header / Left / Light / Menu Open",
                   "theme": {
-                    "device": "sm"
+                    "device": "sm",
+                    "mode": "light"
                   },
                   "reusable": true,
                   "width": 390,
@@ -9547,13 +9551,14 @@
                 {
                   "type": "frame",
                   "id": "k3Sub",
-                  "name": "Header / Left / Inverse / Menu Open",
+                  "name": "Header / Left / Dark / Menu Open",
                   "theme": {
-                    "device": "sm"
+                    "device": "sm",
+                    "mode": "dark"
                   },
                   "reusable": true,
                   "width": 390,
-                  "fill": "$surface-inverse",
+                  "fill": "$surface-default",
                   "stroke": "$border-default",
                   "strokeWidth": {
                     "bottom": 1
@@ -9582,7 +9587,7 @@
                           "name": "Logo",
                           "width": 63,
                           "height": 40,
-                          "fill": "$text-inverse"
+                          "fill": "$text-default"
                         },
                         {
                           "type": "frame",
@@ -9608,7 +9613,7 @@
                                   "name": "Icon",
                                   "width": 24,
                                   "height": 24,
-                                  "stroke": "$text-inverse"
+                                  "stroke": "$text-default"
                                 }
                               ]
                             }
@@ -9638,10 +9643,10 @@
                         {
                           "id": "JUY70",
                           "type": "ref",
-                          "ref": "y9pZm",
+                          "ref": "MusDs",
                           "name": "Blog",
                           "descendants": {
-                            "OVFYG": {
+                            "t893f": {
                               "content": "BLOG"
                             }
                           }
@@ -9649,10 +9654,10 @@
                         {
                           "id": "z1jU9Z",
                           "type": "ref",
-                          "ref": "Bbcv6",
+                          "ref": "eFsWC",
                           "name": "Projects",
                           "descendants": {
-                            "v3guN": {
+                            "jynNC": {
                               "content": "PROJECTS"
                             }
                           }
@@ -9660,10 +9665,10 @@
                         {
                           "id": "jXmNh",
                           "type": "ref",
-                          "ref": "Bbcv6",
+                          "ref": "eFsWC",
                           "name": "Newsletter",
                           "descendants": {
-                            "v3guN": {
+                            "jynNC": {
                               "content": "NEWSLETTER"
                             }
                           }
@@ -9671,10 +9676,10 @@
                         {
                           "id": "v92XST",
                           "type": "ref",
-                          "ref": "Bbcv6",
+                          "ref": "eFsWC",
                           "name": "Shop",
                           "descendants": {
-                            "v3guN": {
+                            "jynNC": {
                               "content": "SHOP"
                             }
                           }
@@ -9682,10 +9687,10 @@
                         {
                           "id": "mJExL",
                           "type": "ref",
-                          "ref": "Bbcv6",
+                          "ref": "eFsWC",
                           "name": "About",
                           "descendants": {
-                            "v3guN": {
+                            "jynNC": {
                               "content": "ABOUT"
                             }
                           }
@@ -9697,9 +9702,10 @@
                 {
                   "type": "frame",
                   "id": "WkufV",
-                  "name": "Header / Center / Default / Menu Open",
+                  "name": "Header / Center / Light / Menu Open",
                   "theme": {
-                    "device": "sm"
+                    "device": "sm",
+                    "mode": "light"
                   },
                   "reusable": true,
                   "width": 390,
@@ -9847,13 +9853,14 @@
                 {
                   "type": "frame",
                   "id": "QRrD0",
-                  "name": "Header / Center / Inverse / Menu Open",
+                  "name": "Header / Center / Dark / Menu Open",
                   "theme": {
-                    "device": "sm"
+                    "device": "sm",
+                    "mode": "dark"
                   },
                   "reusable": true,
                   "width": 390,
-                  "fill": "$surface-inverse",
+                  "fill": "$surface-default",
                   "stroke": "$border-default",
                   "strokeWidth": {
                     "bottom": 1
@@ -9881,7 +9888,7 @@
                           "name": "Logo",
                           "width": 127,
                           "height": 80,
-                          "fill": "$text-inverse"
+                          "fill": "$text-default"
                         },
                         {
                           "type": "frame",
@@ -9907,7 +9914,7 @@
                                   "name": "Icon",
                                   "width": 24,
                                   "height": 24,
-                                  "stroke": "$text-inverse"
+                                  "stroke": "$text-default"
                                 }
                               ]
                             }
@@ -9938,10 +9945,10 @@
                         {
                           "id": "z1iWS",
                           "type": "ref",
-                          "ref": "y9pZm",
+                          "ref": "MusDs",
                           "name": "Blog",
                           "descendants": {
-                            "OVFYG": {
+                            "t893f": {
                               "content": "BLOG"
                             }
                           }
@@ -9949,10 +9956,10 @@
                         {
                           "id": "ocvlq",
                           "type": "ref",
-                          "ref": "Bbcv6",
+                          "ref": "eFsWC",
                           "name": "Projects",
                           "descendants": {
-                            "v3guN": {
+                            "jynNC": {
                               "content": "PROJECTS"
                             }
                           }
@@ -9960,10 +9967,10 @@
                         {
                           "id": "rDcMs",
                           "type": "ref",
-                          "ref": "Bbcv6",
+                          "ref": "eFsWC",
                           "name": "Newsletter",
                           "descendants": {
-                            "v3guN": {
+                            "jynNC": {
                               "content": "NEWSLETTER"
                             }
                           }
@@ -9971,10 +9978,10 @@
                         {
                           "id": "TFDOc",
                           "type": "ref",
-                          "ref": "Bbcv6",
+                          "ref": "eFsWC",
                           "name": "Shop",
                           "descendants": {
-                            "v3guN": {
+                            "jynNC": {
                               "content": "SHOP"
                             }
                           }
@@ -9982,10 +9989,10 @@
                         {
                           "id": "dWE5P",
                           "type": "ref",
-                          "ref": "Bbcv6",
+                          "ref": "eFsWC",
                           "name": "About",
                           "descendants": {
-                            "v3guN": {
+                            "jynNC": {
                               "content": "ABOUT"
                             }
                           }
@@ -10028,10 +10035,28 @@
                 {
                   "type": "frame",
                   "id": "vu6kH",
-                  "name": "Footer / Default",
+                  "name": "Footer / Light",
                   "reusable": true,
                   "width": "fill_container",
-                  "fill": "$surface-subtle",
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "rotation": 180,
+                    "size": {
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "$surface-default",
+                        "position": 0
+                      },
+                      {
+                        "color": "$surface-subtle",
+                        "position": 0.654
+                      }
+                    ]
+                  },
                   "layout": "vertical",
                   "gap": "$scale-300",
                   "padding": [
@@ -10134,15 +10159,36 @@
                       "fontWeight": "normal",
                       "letterSpacing": "$type-body2-letter-spacing"
                     }
-                  ]
+                  ],
+                  "theme": {
+                    "mode": "light"
+                  }
                 },
                 {
                   "type": "frame",
                   "id": "E6haZ",
-                  "name": "Footer / Inverse",
+                  "name": "Footer / Dark",
                   "reusable": true,
                   "width": "fill_container",
-                  "fill": "$surface-inverse",
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "rotation": 180,
+                    "size": {
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "$surface-default",
+                        "position": 0
+                      },
+                      {
+                        "color": "$surface-subtle",
+                        "position": 0.654
+                      }
+                    ]
+                  },
                   "layout": "vertical",
                   "gap": "$scale-300",
                   "padding": [
@@ -10158,7 +10204,7 @@
                       "name": "Profile / Circle",
                       "width": 120,
                       "height": 120,
-                      "stroke": "$text-inverse",
+                      "stroke": "$text-default",
                       "strokeWidth": 2,
                       "strokeAlignment": "inner"
                     },
@@ -10179,10 +10225,10 @@
                         {
                           "id": "8tqNC",
                           "type": "ref",
-                          "ref": "Bbcv6",
+                          "ref": "eFsWC",
                           "name": "Blog",
                           "descendants": {
-                            "v3guN": {
+                            "jynNC": {
                               "content": "BLOG"
                             }
                           }
@@ -10190,10 +10236,10 @@
                         {
                           "id": "a9toE",
                           "type": "ref",
-                          "ref": "Bbcv6",
+                          "ref": "eFsWC",
                           "name": "Projects",
                           "descendants": {
-                            "v3guN": {
+                            "jynNC": {
                               "content": "PROJECTS"
                             }
                           }
@@ -10201,10 +10247,10 @@
                         {
                           "id": "nDBoG",
                           "type": "ref",
-                          "ref": "Bbcv6",
+                          "ref": "eFsWC",
                           "name": "Newsletter",
                           "descendants": {
-                            "v3guN": {
+                            "jynNC": {
                               "content": "NEWSLETTER"
                             }
                           }
@@ -10212,10 +10258,10 @@
                         {
                           "id": "BGQaH",
                           "type": "ref",
-                          "ref": "Bbcv6",
+                          "ref": "eFsWC",
                           "name": "Shop",
                           "descendants": {
-                            "v3guN": {
+                            "jynNC": {
                               "content": "SHOP"
                             }
                           }
@@ -10223,10 +10269,10 @@
                         {
                           "id": "GD9Iy",
                           "type": "ref",
-                          "ref": "Bbcv6",
+                          "ref": "eFsWC",
                           "name": "About",
                           "descendants": {
-                            "v3guN": {
+                            "jynNC": {
                               "content": "ABOUT"
                             }
                           }
@@ -10237,7 +10283,7 @@
                       "type": "text",
                       "id": "hG0R0",
                       "name": "Copyright",
-                      "fill": "$text-inverse",
+                      "fill": "$text-muted",
                       "content": "© 2026 Paul Goode",
                       "lineHeight": "$type-body2-line-height",
                       "fontFamily": "$font-body",
@@ -10245,7 +10291,10 @@
                       "fontWeight": "normal",
                       "letterSpacing": "$type-body2-letter-spacing"
                     }
-                  ]
+                  ],
+                  "theme": {
+                    "mode": "dark"
+                  }
                 }
               ]
             }
@@ -15065,10 +15114,10 @@
                     {
                       "id": "WyA8y",
                       "type": "ref",
-                      "ref": "Bbcv6",
+                      "ref": "eFsWC",
                       "name": "Blog",
                       "descendants": {
-                        "v3guN": {
+                        "jynNC": {
                           "content": "BLOG"
                         }
                       }
@@ -15076,10 +15125,10 @@
                     {
                       "id": "hiyfn",
                       "type": "ref",
-                      "ref": "Bbcv6",
+                      "ref": "eFsWC",
                       "name": "Projects",
                       "descendants": {
-                        "v3guN": {
+                        "jynNC": {
                           "content": "PROJECTS"
                         }
                       }
@@ -15097,10 +15146,10 @@
                     {
                       "id": "IUROP",
                       "type": "ref",
-                      "ref": "Bbcv6",
+                      "ref": "eFsWC",
                       "name": "Newsletter",
                       "descendants": {
-                        "v3guN": {
+                        "jynNC": {
                           "content": "NEWSLETTER"
                         }
                       }
@@ -15108,10 +15157,10 @@
                     {
                       "id": "T17db",
                       "type": "ref",
-                      "ref": "Bbcv6",
+                      "ref": "eFsWC",
                       "name": "Shop",
                       "descendants": {
-                        "v3guN": {
+                        "jynNC": {
                           "content": "SHOP"
                         }
                       }
@@ -15119,10 +15168,10 @@
                     {
                       "id": "HHWpp",
                       "type": "ref",
-                      "ref": "Bbcv6",
+                      "ref": "eFsWC",
                       "name": "About",
                       "descendants": {
-                        "v3guN": {
+                        "jynNC": {
                           "content": "ABOUT"
                         }
                       }
