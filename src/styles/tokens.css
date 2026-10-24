@@ -121,6 +121,7 @@
   --font-size-80: 80px;
   --font-size-96: 96px;
   --layout-page-width: 1200px;
+  --layout-screen-width: 1200px;
   --layout-columns: 12;
   --layout-gutter: var(--scale-400);
   --layout-margin: var(--scale-1000);
@@ -223,6 +224,7 @@
 @media (max-width: 1023px) {
   :root {
     --layout-page-width: 810px;
+    --layout-screen-width: 810px;
     --space-section: var(--scale-900);
     --space-block: var(--scale-900);
     --type-display-1-size: 72px;
@@ -250,6 +252,7 @@
 @media (max-width: 599px) {
   :root {
     --layout-page-width: 390px;
+    --layout-screen-width: 390px;
     --layout-columns: 5;
     --layout-margin: var(--scale-600);
     --space-section: var(--scale-600);

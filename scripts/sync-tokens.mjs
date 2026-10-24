@@ -4,8 +4,9 @@
 // Runs automatically before `npm run dev` and `npm run build`.
 //
 // The variables mirror the Figma "PG Library" file and use two theme axes:
-// - device (desktop / tablet / mobile): desktop values go in :root, the others
-//   in the media queries below.
+// - device (sm / md / lg / xl, the Figma Size modes): lg values go in :root,
+//   md and sm in the media queries below. xl isn't used yet: it only differs
+//   from lg in layout-screen-width, which the site doesn't read.
 // - mode (light / dark): light is the default; dark applies under
 //   [data-theme="dark"] on any element.
 import { readFileSync, writeFileSync } from 'node:fs';
@@ -13,10 +14,10 @@ import { readFileSync, writeFileSync } from 'node:fs';
 const PEN = new URL('../design/site.pen', import.meta.url);
 const OUT = new URL('../src/styles/tokens.css', import.meta.url);
 
-// Viewport widths where the tablet and mobile values take over.
+// Viewport widths where the md (tablet) and sm (phone) values take over.
 const BREAKPOINTS = {
-  tablet: '(max-width: 1023px)',
-  mobile: '(max-width: 599px)',
+  md: '(max-width: 1023px)',
+  sm: '(max-width: 599px)',
 };
 
 // Fallback stacks appended to each font family while the web font loads.
@@ -34,7 +35,17 @@ const FONT_AXES = {
   Fraunces: 'opsz,wght@9..144,400;9..144,500;9..144,600',
 };
 
-const { variables = {} } = JSON.parse(readFileSync(PEN, 'utf8'));
+const { variables = {}, themes = {} } = JSON.parse(readFileSync(PEN, 'utf8'));
+
+// Stop if the device names change again, rather than quietly dropping the
+// tablet and phone values.
+const missingDevices = ['lg', 'md', 'sm'].filter((d) => !themes.device?.includes(d));
+if (missingDevices.length) {
+  throw new Error(
+    `tokens: site.pen has no "${missingDevices.join('", "')}" device theme (found: ${themes.device?.join(', ') || 'none'}). ` +
+      'Update BASE, VARIANTS and BREAKPOINTS in scripts/sync-tokens.mjs to match.',
+  );
+}
 
 function cssName(name, type) {
   return type === 'color' ? `--color-${name}` : `--${name}`;
@@ -60,15 +71,15 @@ function cssValue(name, type, v) {
   return `'${v}', ${FONT_FALLBACKS[v] ?? 'sans-serif'}`;
 }
 
-const BASE = { mode: 'light', device: 'desktop' };
+const BASE = { mode: 'light', device: 'lg' };
 const VARIANTS = {
-  tablet: { ...BASE, device: 'tablet' },
-  mobile: { ...BASE, device: 'mobile' },
+  md: { ...BASE, device: 'md' },
+  sm: { ...BASE, device: 'sm' },
   dark: { ...BASE, mode: 'dark' },
 };
 
 const groups = { color: [], font: [], other: [] };
-const overrides = { tablet: [], mobile: [], dark: [] };
+const overrides = { md: [], sm: [], dark: [] };
 const families = new Set();
 for (const [name, { type, value }] of Object.entries(variables)) {
   // CSS has no use for booleans (e.g. "show nav"); the layout handles those.
@@ -82,9 +93,9 @@ for (const [name, { type, value }] of Object.entries(variables)) {
   const vals = Object.fromEntries(
     Object.entries(VARIANTS).map(([variant, theme]) => [variant, cssValue(name, type, valueFor(value, theme))]),
   );
-  // Mobile widths also match the tablet query, so mobile only needs what differs from tablet.
-  if (vals.tablet !== base) overrides.tablet.push(line(vals.tablet));
-  if (vals.mobile !== vals.tablet) overrides.mobile.push(line(vals.mobile));
+  // Phone widths also match the md query, so sm only needs what differs from md.
+  if (vals.md !== base) overrides.md.push(line(vals.md));
+  if (vals.sm !== vals.md) overrides.sm.push(line(vals.sm));
   if (vals.dark !== base) overrides.dark.push(line(vals.dark));
 }
 
@@ -107,12 +118,12 @@ const css = `/* Generated from design/site.pen by scripts/sync-tokens.mjs. Do no
 ${[groups.color, groups.font, groups.other].filter((g) => g.length).map((g) => g.join('\n')).join('\n\n')}
 }
 
-@media ${BREAKPOINTS.tablet} {
-${block(':root', overrides.tablet, '  ')}
+@media ${BREAKPOINTS.md} {
+${block(':root', overrides.md, '  ')}
 }
 
-@media ${BREAKPOINTS.mobile} {
-${block(':root', overrides.mobile, '  ')}
+@media ${BREAKPOINTS.sm} {
+${block(':root', overrides.sm, '  ')}
 }
 
 ${block('[data-theme="dark"]', overrides.dark)}
