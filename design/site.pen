@@ -34,7 +34,7 @@
       "name": "Blog Landing — Desktop (1200)",
       "theme": {
         "mode": "light",
-        "device": "desktop"
+        "device": "lg"
       },
       "clip": true,
       "width": 1200,
@@ -355,7 +355,7 @@
       "name": "Blog Landing — Tablet (810)",
       "theme": {
         "mode": "light",
-        "device": "tablet"
+        "device": "md"
       },
       "clip": true,
       "width": 810,
@@ -682,7 +682,7 @@
       "name": "Blog Landing — Mobile (390)",
       "theme": {
         "mode": "light",
-        "device": "mobile"
+        "device": "sm"
       },
       "clip": true,
       "width": 390,
@@ -1124,7 +1124,7 @@
       "name": "Post — Desktop (1200)",
       "theme": {
         "mode": "light",
-        "device": "desktop"
+        "device": "lg"
       },
       "clip": true,
       "width": 1200,
@@ -1303,7 +1303,7 @@
       "name": "Post — Tablet (810)",
       "theme": {
         "mode": "light",
-        "device": "tablet"
+        "device": "md"
       },
       "clip": true,
       "width": 810,
@@ -1488,7 +1488,7 @@
       "name": "Post — Mobile (390)",
       "theme": {
         "mode": "light",
-        "device": "mobile"
+        "device": "sm"
       },
       "clip": true,
       "width": 390,
@@ -1825,7 +1825,7 @@
                   "id": "pAMGv",
                   "name": "Phone",
                   "theme": {
-                    "device": "mobile"
+                    "device": "sm"
                   },
                   "clip": true,
                   "width": 390,
@@ -2135,7 +2135,7 @@
                       "y": 0,
                       "width": 390,
                       "theme": {
-                        "device": "mobile"
+                        "device": "sm"
                       }
                     },
                     {
@@ -2209,7 +2209,7 @@
                   "id": "EoZio",
                   "name": "Phone",
                   "theme": {
-                    "device": "mobile"
+                    "device": "sm"
                   },
                   "clip": true,
                   "width": 390,
@@ -2604,7 +2604,7 @@
                   "id": "pna2u",
                   "name": "Phone",
                   "theme": {
-                    "device": "mobile"
+                    "device": "sm"
                   },
                   "clip": true,
                   "width": 390,
@@ -3010,7 +3010,7 @@
                   "id": "O5cOm",
                   "name": "Phone",
                   "theme": {
-                    "device": "mobile"
+                    "device": "sm"
                   },
                   "clip": true,
                   "width": 390,
@@ -3340,7 +3340,7 @@
                       "y": 0,
                       "width": 390,
                       "theme": {
-                        "device": "mobile"
+                        "device": "sm"
                       }
                     }
                   ]
@@ -3636,7 +3636,7 @@
       "name": "Components / Brand",
       "theme": {
         "mode": "light",
-        "device": "desktop"
+        "device": "lg"
       },
       "fill": "$surface-default",
       "layout": "vertical",
@@ -3784,7 +3784,7 @@
       "name": "Components / Button",
       "theme": {
         "mode": "light",
-        "device": "desktop"
+        "device": "lg"
       },
       "fill": "$surface-default",
       "layout": "vertical",
@@ -7080,7 +7080,7 @@
       "name": "Components / Card",
       "theme": {
         "mode": "light",
-        "device": "desktop"
+        "device": "lg"
       },
       "fill": "$surface-default",
       "layout": "vertical",
@@ -7791,7 +7791,7 @@
       "name": "Components / Navigation",
       "theme": {
         "mode": "light",
-        "device": "desktop"
+        "device": "lg"
       },
       "fill": "$surface-default",
       "layout": "vertical",
@@ -9419,7 +9419,7 @@
                   "id": "M1J6l",
                   "name": "Header / Left / Default / Menu Open",
                   "theme": {
-                    "device": "mobile"
+                    "device": "sm"
                   },
                   "reusable": true,
                   "width": 390,
@@ -9569,7 +9569,7 @@
                   "id": "k3Sub",
                   "name": "Header / Left / Inverse / Menu Open",
                   "theme": {
-                    "device": "mobile"
+                    "device": "sm"
                   },
                   "reusable": true,
                   "width": 390,
@@ -9719,7 +9719,7 @@
                   "id": "WkufV",
                   "name": "Header / Center / Default / Menu Open",
                   "theme": {
-                    "device": "mobile"
+                    "device": "sm"
                   },
                   "reusable": true,
                   "width": 390,
@@ -9869,7 +9869,7 @@
                   "id": "QRrD0",
                   "name": "Header / Center / Inverse / Menu Open",
                   "theme": {
-                    "device": "mobile"
+                    "device": "sm"
                   },
                   "reusable": true,
                   "width": 390,
@@ -10281,7 +10281,7 @@
       "name": "Components / Stickers",
       "theme": {
         "mode": "light",
-        "device": "desktop"
+        "device": "lg"
       },
       "fill": "$surface-default",
       "layout": "vertical",
@@ -13475,7 +13475,7 @@
       "name": "Components / Components",
       "theme": {
         "mode": "light",
-        "device": "desktop"
+        "device": "lg"
       },
       "fill": "$surface-default",
       "layout": "vertical",
@@ -14202,7 +14202,7 @@
       "name": "Components / Shop",
       "theme": {
         "mode": "light",
-        "device": "desktop"
+        "device": "lg"
       },
       "fill": "$surface-default",
       "layout": "vertical",
@@ -14389,7 +14389,7 @@
       "name": "Projects — Desktop (1200)",
       "theme": {
         "mode": "light",
-        "device": "desktop"
+        "device": "lg"
       },
       "clip": true,
       "width": 1200,
@@ -14640,7 +14640,7 @@
       "name": "Projects — Tablet (810)",
       "theme": {
         "mode": "light",
-        "device": "tablet"
+        "device": "md"
       },
       "clip": true,
       "width": 810,
@@ -14861,7 +14861,7 @@
       "name": "Projects — Mobile (390)",
       "theme": {
         "mode": "light",
-        "device": "mobile"
+        "device": "sm"
       },
       "clip": true,
       "width": 390,
@@ -15162,9 +15162,10 @@
       "dark"
     ],
     "device": [
-      "desktop",
-      "tablet",
-      "mobile"
+      "lg",
+      "md",
+      "sm",
+      "xl"
     ]
   },
   "variables": {
@@ -15955,19 +15956,54 @@
         {
           "value": 1200,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 810,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 390,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 1200,
+          "theme": {
+            "device": "xl"
+          }
+        }
+      ]
+    },
+    "layout-screen-width": {
+      "type": "number",
+      "value": [
+        {
+          "value": 1200,
+          "theme": {
+            "device": "lg"
+          }
+        },
+        {
+          "value": 810,
+          "theme": {
+            "device": "md"
+          }
+        },
+        {
+          "value": 390,
+          "theme": {
+            "device": "sm"
+          }
+        },
+        {
+          "value": 1440,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -15978,19 +16014,25 @@
         {
           "value": 12,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 12,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 5,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 12,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -16005,19 +16047,25 @@
         {
           "value": "$scale-1000",
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": "$scale-1000",
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": "$scale-600",
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": "$scale-1000",
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -16028,19 +16076,25 @@
         {
           "value": "$scale-1200",
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": "$scale-900",
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": "$scale-600",
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": "$scale-1200",
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -16051,19 +16105,25 @@
         {
           "value": "$scale-1000",
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": "$scale-900",
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": "$scale-600",
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": "$scale-1000",
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -16078,19 +16138,25 @@
         {
           "value": true,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": true,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": false,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": true,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -16101,19 +16167,25 @@
         {
           "value": false,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": false,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": true,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": false,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -16148,19 +16220,25 @@
         {
           "value": 96,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 72,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 48,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 96,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -16171,19 +16249,25 @@
         {
           "value": 1.0417,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 1.0556,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 1.0833,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 1.0417,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -16194,19 +16278,25 @@
         {
           "value": -1.92,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": -1.44,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": -0.96,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": -1.92,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -16217,19 +16307,25 @@
         {
           "value": 80,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 64,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 44,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 80,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -16240,19 +16336,25 @@
         {
           "value": 1.05,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 1.0625,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 1.0909,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 1.05,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -16263,19 +16365,25 @@
         {
           "value": -1.6,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": -1.28,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": -0.88,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": -1.6,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -16286,19 +16394,25 @@
         {
           "value": 64,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 48,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 40,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 64,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -16309,19 +16423,25 @@
         {
           "value": 1.125,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 1.1667,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 1.1,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 1.125,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -16332,19 +16452,25 @@
         {
           "value": -1.28,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": -0.96,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": -0.8,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": -1.28,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -16355,19 +16481,25 @@
         {
           "value": 48,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 40,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 32,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 48,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -16378,19 +16510,25 @@
         {
           "value": 1.1667,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 1.2,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 1.25,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 1.1667,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -16401,19 +16539,25 @@
         {
           "value": 0,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 0,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 0,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 0,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -16424,19 +16568,25 @@
         {
           "value": 40,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 32,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 28,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 40,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -16447,19 +16597,25 @@
         {
           "value": 1.2,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 1.25,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 1.2857,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 1.2,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -16470,19 +16626,25 @@
         {
           "value": 0,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 0,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 0,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 0,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -16493,19 +16655,25 @@
         {
           "value": 32,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 28,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 24,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 32,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -16516,19 +16684,25 @@
         {
           "value": 1.25,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 1.2857,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 1.3333,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 1.25,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -16539,19 +16713,25 @@
         {
           "value": 0,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 0,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 0,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 0,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -16562,19 +16742,25 @@
         {
           "value": 24,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 22,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 20,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 24,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -16585,19 +16771,25 @@
         {
           "value": 1.3333,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 1.2727,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 1.4,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 1.3333,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -16608,19 +16800,25 @@
         {
           "value": 0,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 0,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 0,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 0,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -16631,19 +16829,25 @@
         {
           "value": 20,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 18,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 18,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 20,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -16654,19 +16858,25 @@
         {
           "value": 1.4,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 1.3333,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 1.3333,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 1.4,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -16677,19 +16887,25 @@
         {
           "value": 0,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 0,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 0,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 0,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -16700,19 +16916,25 @@
         {
           "value": 16,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 16,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 16,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 16,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -16723,19 +16945,25 @@
         {
           "value": 1.5,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 1.5,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 1.5,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 1.5,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -16746,19 +16974,25 @@
         {
           "value": 0,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 0,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 0,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 0,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -16769,19 +17003,25 @@
         {
           "value": 20,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 20,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 18,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 20,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -16792,19 +17032,25 @@
         {
           "value": 1.6,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 1.6,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 1.5556,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 1.6,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -16815,19 +17061,25 @@
         {
           "value": 0,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 0,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 0,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 0,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -16838,19 +17090,25 @@
         {
           "value": 18,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 18,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 16,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 18,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -16861,19 +17119,25 @@
         {
           "value": 1.5556,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 1.5556,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 1.5,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 1.5556,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -16884,19 +17148,25 @@
         {
           "value": 0,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 0,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 0,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 0,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -16907,19 +17177,25 @@
         {
           "value": 16,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 16,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 14,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 16,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -16930,19 +17206,25 @@
         {
           "value": 1.5,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 1.5,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 1.4286,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 1.5,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -16953,19 +17235,25 @@
         {
           "value": 0,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 0,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 0,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 0,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -16976,19 +17264,25 @@
         {
           "value": 16,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 16,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 16,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 16,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -16999,19 +17293,25 @@
         {
           "value": 1.25,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 1.25,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 1.25,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 1.25,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -17022,19 +17322,25 @@
         {
           "value": 0,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 0,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 0,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 0,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -17045,19 +17351,25 @@
         {
           "value": 14,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 14,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 14,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 14,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -17068,19 +17380,25 @@
         {
           "value": 1.4286,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 1.4286,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 1.4286,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 1.4286,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -17091,19 +17409,25 @@
         {
           "value": 0,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 0,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 0,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 0,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -17114,19 +17438,25 @@
         {
           "value": 16,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 16,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 16,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 16,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -17137,19 +17467,25 @@
         {
           "value": 1.25,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 1.25,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 1.25,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 1.25,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -17160,19 +17496,25 @@
         {
           "value": 0.64,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 0.64,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 0.64,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 0.64,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -17183,19 +17525,25 @@
         {
           "value": 14,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 14,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 14,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 14,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -17206,19 +17554,25 @@
         {
           "value": 1.4286,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 1.4286,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 1.4286,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 1.4286,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -17229,19 +17583,25 @@
         {
           "value": 0.56,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 0.56,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 0.56,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 0.56,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -17252,19 +17612,25 @@
         {
           "value": 12,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 12,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 12,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 12,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -17275,19 +17641,25 @@
         {
           "value": 1.3333,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 1.3333,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 1.3333,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 1.3333,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
@@ -17298,19 +17670,25 @@
         {
           "value": 0.48,
           "theme": {
-            "device": "desktop"
+            "device": "lg"
           }
         },
         {
           "value": 0.48,
           "theme": {
-            "device": "tablet"
+            "device": "md"
           }
         },
         {
           "value": 0.48,
           "theme": {
-            "device": "mobile"
+            "device": "sm"
+          }
+        },
+        {
+          "value": 0.48,
+          "theme": {
+            "device": "xl"
           }
         }
       ]
