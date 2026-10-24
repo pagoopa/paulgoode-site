@@ -5,19 +5,33 @@
       "type": "text",
       "id": "bwhCH",
       "x": -10390,
-      "y": 1223,
-      "fill": "#ffffff",
-      "content": "Journal",
-      "fontFamily": "Inter",
-      "fontSize": 200,
-      "fontWeight": "700"
+      "y": 1558,
+      "fill": "#38eeffff",
+      "textGrowth": "fixed-width",
+      "width": 1200,
+      "content": "default",
+      "fontFamily": "Roboto Mono",
+      "fontSize": 48
+    },
+    {
+      "type": "text",
+      "id": "Okkix",
+      "x": -10390,
+      "y": 1443,
+      "fill": "#38eeffff",
+      "textGrowth": "fixed-width",
+      "width": 1200,
+      "content": "Blog Landing",
+      "fontFamily": "Roboto Mono",
+      "fontSize": 72,
+      "fontWeight": "600"
     },
     {
       "type": "frame",
       "id": "O3QOKy",
       "x": -10390,
       "y": 1785,
-      "name": "Journal — Desktop (1200)",
+      "name": "Blog Landing — Desktop (1200)",
       "theme": {
         "mode": "light",
         "device": "desktop"
@@ -338,7 +352,7 @@
       "id": "R8J5S",
       "x": -9070,
       "y": 1785,
-      "name": "Journal — Tablet (810)",
+      "name": "Blog Landing — Tablet (810)",
       "theme": {
         "mode": "light",
         "device": "tablet"
@@ -665,7 +679,7 @@
       "id": "k5EJ8W",
       "x": -8140,
       "y": 1785,
-      "name": "Journal — Mobile (390)",
+      "name": "Blog Landing — Mobile (390)",
       "theme": {
         "mode": "light",
         "device": "mobile"
@@ -1081,19 +1095,33 @@
       "type": "text",
       "id": "T0hbG",
       "x": -7181,
-      "y": 1223,
-      "fill": "#ffffff",
-      "content": "Journal Entry",
-      "fontFamily": "Inter",
-      "fontSize": 200,
-      "fontWeight": "700"
+      "y": 1558,
+      "fill": "#38eeffff",
+      "textGrowth": "fixed-width",
+      "width": 1200,
+      "content": "sidebarImage in front matter",
+      "fontFamily": "Roboto Mono",
+      "fontSize": 48
+    },
+    {
+      "type": "text",
+      "id": "W2B47",
+      "x": -7181,
+      "y": 1443,
+      "fill": "#38eeffff",
+      "textGrowth": "fixed-width",
+      "width": 1200,
+      "content": "Post Template",
+      "fontFamily": "Roboto Mono",
+      "fontSize": 72,
+      "fontWeight": "600"
     },
     {
       "type": "frame",
       "id": "n787B",
       "x": -7181,
       "y": 1785,
-      "name": "Journal Entry — Hello, out loud — Desktop (1200)",
+      "name": "Post — Desktop (1200)",
       "theme": {
         "mode": "light",
         "device": "desktop"
@@ -1128,23 +1156,27 @@
               "type": "frame",
               "id": "k4upK",
               "name": "Content",
-              "width": 900,
+              "width": 820,
+              "layout": "vertical",
               "gap": 24,
+              "alignItems": "center",
               "children": [
                 {
                   "type": "frame",
                   "id": "X8BRGh",
-                  "name": "Img Container",
+                  "name": "Sidebar Image",
+                  "width": "fill_container",
                   "layout": "vertical",
                   "gap": 10,
+                  "alignItems": "center",
                   "children": [
                     {
                       "type": "frame",
                       "id": "DmhAB",
                       "name": "Img",
                       "clip": true,
-                      "width": 240,
-                      "height": 300,
+                      "width": "fill_container",
+                      "height": 240,
                       "fill": "#c7c7c7ff",
                       "layout": "none"
                     }
@@ -1268,7 +1300,7 @@
       "id": "eTWec",
       "x": -5861,
       "y": 1785,
-      "name": "Journal Entry — Hello, out loud — Tablet (810)",
+      "name": "Post — Tablet (810)",
       "theme": {
         "mode": "light",
         "device": "tablet"
@@ -1304,22 +1336,26 @@
               "id": "I3t42h",
               "name": "Content",
               "width": "fill_container",
+              "layout": "vertical",
               "gap": 24,
+              "alignItems": "center",
               "children": [
                 {
                   "type": "frame",
                   "id": "iuXmm",
                   "name": "Img Container",
+                  "width": "fill_container",
                   "layout": "vertical",
                   "gap": 10,
+                  "alignItems": "center",
                   "children": [
                     {
                       "type": "frame",
                       "id": "WE7i1",
                       "name": "Img",
                       "clip": true,
-                      "width": 240,
-                      "height": 300,
+                      "width": "fill_container",
+                      "height": 180,
                       "fill": "#c7c7c7ff",
                       "layout": "none"
                     }
@@ -1449,7 +1485,7 @@
       "id": "kxRC5",
       "x": -4931,
       "y": 1785,
-      "name": "Journal Entry — Hello, out loud — Mobile (390)",
+      "name": "Post — Mobile (390)",
       "theme": {
         "mode": "light",
         "device": "mobile"
@@ -1486,29 +1522,25 @@
               "name": "Content",
               "width": "fill_container",
               "layout": "vertical",
-              "gap": 10,
+              "gap": 24,
               "alignItems": "center",
               "children": [
                 {
                   "type": "frame",
                   "id": "m4HCEJ",
                   "name": "Img Container",
+                  "width": "fill_container",
                   "layout": "vertical",
                   "gap": 10,
-                  "padding": [
-                    0,
-                    0,
-                    24,
-                    0
-                  ],
+                  "alignItems": "center",
                   "children": [
                     {
                       "type": "frame",
                       "id": "eSU2G",
                       "name": "Img",
                       "clip": true,
-                      "width": 240,
-                      "height": 300,
+                      "width": "fill_container",
+                      "height": 180,
                       "fill": "#c7c7c7ff",
                       "layout": "none"
                     }
