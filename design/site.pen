@@ -11,7 +11,8 @@
       "width": 1200,
       "content": "default",
       "fontFamily": "Roboto Mono",
-      "fontSize": 48
+      "fontSize": 48,
+      "fontWeight": "normal"
     },
     {
       "type": "text",
@@ -343,7 +344,10 @@
           "type": "ref",
           "ref": "E6haZ",
           "name": "Footer",
-          "width": "fill_container"
+          "width": "fill_container",
+          "theme": {
+            "mode": "light"
+          }
         }
       ]
     },
@@ -665,6 +669,9 @@
           "ref": "E6haZ",
           "name": "Footer",
           "width": "fill_container",
+          "theme": {
+            "mode": "light"
+          },
           "descendants": {
             "549hf": {
               "width": 100,
@@ -992,6 +999,9 @@
           "ref": "E6haZ",
           "name": "Footer",
           "width": "fill_container",
+          "theme": {
+            "mode": "light"
+          },
           "descendants": {
             "549hf": {
               "width": 100,
@@ -1101,7 +1111,8 @@
       "width": 1200,
       "content": "sidebarImage in front matter",
       "fontFamily": "Roboto Mono",
-      "fontSize": 48
+      "fontSize": 48,
+      "fontWeight": "normal"
     },
     {
       "type": "text",
@@ -1287,11 +1298,11 @@
           ]
         },
         {
-          "id": "MC5TS",
+          "id": "mOlYQ",
           "type": "ref",
-          "ref": "E6haZ",
-          "name": "Footer",
-          "width": "fill_container"
+          "ref": "vu6kH",
+          "x": 0,
+          "y": 856
         }
       ]
     },
@@ -1466,17 +1477,11 @@
           ]
         },
         {
-          "id": "N1B8SZ",
+          "id": "chNVB",
           "type": "ref",
-          "ref": "E6haZ",
-          "name": "Footer",
-          "width": "fill_container",
-          "descendants": {
-            "549hf": {
-              "width": 100,
-              "height": 100
-            }
-          }
+          "ref": "vu6kH",
+          "x": 0,
+          "y": 748
         }
       ]
     },
@@ -1651,103 +1656,78 @@
           ]
         },
         {
-          "id": "l7uV54",
+          "id": "FyFWY",
           "type": "ref",
-          "ref": "E6haZ",
-          "name": "Footer",
-          "width": "fill_container",
+          "ref": "vu6kH",
+          "x": 0,
+          "y": 846,
           "descendants": {
-            "549hf": {
-              "width": 100,
-              "height": 100
-            },
-            "BWRrf": {
-              "type": "frame",
-              "id": "26rPm",
-              "name": "Nav",
+            "Sg6W9": {
               "layout": "vertical",
-              "padding": [
-                "$scale-300",
-                0,
-                0,
-                0
-              ],
-              "alignItems": "center",
+              "gap": 0
+            },
+            "cFqQn": {
+              "type": "frame",
+              "id": "HbBOI",
+              "name": "Frame 2",
+              "layout": "vertical",
+              "gap": 10,
               "children": [
                 {
                   "type": "frame",
-                  "id": "1mj6Y",
-                  "name": "Row",
-                  "gap": "$scale-600",
-                  "justifyContent": "center",
-                  "alignItems": "center",
+                  "id": "vJDCE",
+                  "name": "Frame 1",
+                  "height": 42,
+                  "gap": 24,
                   "children": [
                     {
-                      "id": "Tt0fz",
+                      "id": "cFqQn",
                       "type": "ref",
-                      "ref": "Bbcv6",
-                      "name": "Blog",
-                      "descendants": {
-                        "v3guN": {
-                          "content": "BLOG"
-                        }
-                      }
+                      "ref": "cFqQn",
+                      "y": 0,
+                      "height": "fill_container"
                     },
                     {
-                      "id": "ZpjMB",
+                      "id": "TuE5m",
                       "type": "ref",
-                      "ref": "Bbcv6",
-                      "name": "Projects",
-                      "descendants": {
-                        "v3guN": {
-                          "content": "PROJECTS"
-                        }
-                      }
+                      "ref": "TuE5m",
+                      "y": 0,
+                      "height": "fill_container"
                     }
                   ]
+                }
+              ]
+            },
+            "TuE5m": {
+              "type": "frame",
+              "id": "Xh82x",
+              "name": "Frame 3",
+              "height": 42,
+              "gap": 24,
+              "children": [
+                {
+                  "id": "DhFq4",
+                  "type": "ref",
+                  "ref": "DhFq4",
+                  "x": 0,
+                  "y": 0,
+                  "height": "fill_container"
                 },
                 {
-                  "type": "frame",
-                  "id": "bO0Wr",
-                  "name": "Row",
-                  "gap": "$scale-600",
-                  "justifyContent": "center",
-                  "alignItems": "center",
-                  "children": [
-                    {
-                      "id": "kcBue",
-                      "type": "ref",
-                      "ref": "Bbcv6",
-                      "name": "Newsletter",
-                      "descendants": {
-                        "v3guN": {
-                          "content": "NEWSLETTER"
-                        }
-                      }
-                    },
-                    {
-                      "id": "sVwm9",
-                      "type": "ref",
-                      "ref": "Bbcv6",
-                      "name": "Shop",
-                      "descendants": {
-                        "v3guN": {
-                          "content": "SHOP"
-                        }
-                      }
-                    },
-                    {
-                      "id": "QLR65",
-                      "type": "ref",
-                      "ref": "Bbcv6",
-                      "name": "About",
-                      "descendants": {
-                        "v3guN": {
-                          "content": "ABOUT"
-                        }
-                      }
-                    }
-                  ]
+                  "id": "215sH",
+                  "type": "ref",
+                  "ref": "215sH",
+                  "x": 124,
+                  "y": 0,
+                  "height": "fill_container"
+                },
+                {
+                  "id": "ngCmD",
+                  "type": "ref",
+                  "ref": "ngCmD",
+                  "x": 190,
+                  "y": 0,
+                  "height": "fill_container"
                 }
               ]
             }
