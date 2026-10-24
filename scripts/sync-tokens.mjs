@@ -3,8 +3,8 @@
 // Also builds the Google Fonts link from the font variables.
 // Runs automatically before `npm run dev` and `npm run build`.
 //
-// The variables mirror the Figma "PG Library" file and use two theme axes:
-// - device (sm / md / lg / xl, the Figma Size modes): lg values go in :root,
+// site.pen is the source of truth for the variables, which use two theme axes:
+// - device (sm / md / lg / xl): lg values go in :root,
 //   md and sm in the media queries below. xl isn't used yet: it only differs
 //   from lg in layout-screen-width, which the site doesn't read.
 // - mode (light / dark): light is the default; dark applies under
