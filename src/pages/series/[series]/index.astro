@@ -1,7 +1,7 @@
 ---
 // Series landing ("Series Landing" boards in design/site.pen): the series
 // name and description, the latest entry, then every entry in number order.
-// URL: /series/<series>. The copy lives in src/content/series-info/<series>.md.
+// URL: /series/<series>. The copy lives in src/content/series/<series>.md.
 import Layout from '../../../layouts/Layout.astro';
 import SectionHeader from '../../../components/SectionHeader.astro';
 import ProjectCard from '../../../components/ProjectCard.astro';
@@ -9,7 +9,7 @@ import { getCollection } from 'astro:content';
 import { getSeriesEntries, entryUrl } from '../../../lib/series';
 
 export async function getStaticPaths() {
-  const allSeries = await getCollection('seriesInfo');
+  const allSeries = await getCollection('series');
   return allSeries.map((series) => ({ params: { series: series.id }, props: { series } }));
 }
 
