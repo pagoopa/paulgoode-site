@@ -11,6 +11,7 @@ image:
   src: ./artwork.jpg
   alt: "Ink drawing of four men standing beneath a cross in a church, one raising his hand as they pray. Captions read: Jesus has given us authority over demons and diseases. We use God's word to fight back."
   caption: "Ink on paper, 2022"
+thumbnail: ./thumbnail.jpg
 ---
 
 This is a placeholder write-up. Replace it with the story behind the drawing — the page and its layout are already wired up around whatever goes here.

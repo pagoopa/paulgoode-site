@@ -30,7 +30,7 @@ const latest = entries.toSorted((a, b) => b.data.pubDate.valueOf() - a.data.pubD
         title={latest.data.title}
         summary={latest.data.description}
         linkLabel="View entry"
-        image={latest.data.image.src}
+        image={latest.data.thumbnail ?? latest.data.image.src}
         loading="eager"
       />
     )}
@@ -45,7 +45,7 @@ const latest = entries.toSorted((a, b) => b.data.pubDate.valueOf() - a.data.pubD
               title={entry.data.title}
               summary={entry.data.description}
               linkLabel="View entry"
-              image={entry.data.image.src}
+              image={entry.data.thumbnail ?? entry.data.image.src}
             />
           </li>
         ))}

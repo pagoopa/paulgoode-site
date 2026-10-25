@@ -44,6 +44,9 @@ const series = defineCollection({
       location: z.string(),
       // Hero image at the top of the page. Path is relative to the .md file.
       image: z.object({ src: image(), alt: z.string(), caption: z.string().optional() }),
+      // Card image on the series page: 16:10 landscape, exported at 720 × 450.
+      // Optional; without it the card uses the artwork, cropped from the top.
+      thumbnail: image().optional(),
     }),
 });
 
