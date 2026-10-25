@@ -171,10 +171,10 @@ more" link to the full post.
 
 A series is a numbered set of artwork, like "Junk Drawer Journey".
 
-- **The series:** `src/content/series-info/<series>.md` holds its name and
+- **The series:** `src/content/series/<series>.md` holds its name and
   description. The file name is its URL: `junk-drawer-journey.md` →
   `/series/junk-drawer-journey`.
-- **An entry:** a folder in `src/content/series/` with an `index.md` and the
+- **An entry:** a folder in `src/content/entries/` with an `index.md` and the
   artwork. Set `series:` to the series file name, plus `number`, `year`,
   `location`, `image` (with `alt` and an optional `caption`), `title`,
   `description` and `pubDate`. It shows at `/series/<series>/<entry folder>`.
