@@ -1,6 +1,7 @@
 import { defineCollection, reference } from 'astro:content';
 import { z } from 'astro/zod';
 import { glob } from 'astro/loaders';
+import { domain, seriesStatus, thread } from './lib/labels';
 
 const blog = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/blog' }),
@@ -21,8 +22,18 @@ const blog = defineCollection({
 const series = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/series' }),
   schema: z.object({
-    name: z.string(),
+    title: z.string(),
+    // Landing intro. The premise is the one-line reason; this is the text the page shows today.
     description: z.string(),
+    // "An excuse to…". Optional until the sentence is written.
+    premise: z.string().optional(),
+    question: z.string().optional(),
+    domains: z.array(domain).min(1),
+    status: seriesStatus,
+    container: z.object({ kind: z.string(), target: z.number().int().positive().optional() }).optional(),
+    threads: z.array(thread).default([]),
+    started: z.coerce.date().optional(),
+    // cover, identity, substackSection, and promotedTo wait until something uses them.
   }),
 });
 
