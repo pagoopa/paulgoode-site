@@ -13947,6 +13947,7 @@
                       "width": "fill_container",
                       "content": "Caption describing the image",
                       "lineHeight": "$type-body2-line-height",
+                      "textAlign": "center",
                       "fontFamily": "$font-body",
                       "fontSize": "$type-body2-size",
                       "fontWeight": "normal",
@@ -13995,6 +13996,7 @@
                       "width": "fill_container",
                       "content": "Caption describing the image",
                       "lineHeight": "$type-body2-line-height",
+                      "textAlign": "center",
                       "fontFamily": "$font-body",
                       "fontSize": "$type-body2-size",
                       "fontWeight": "normal",
@@ -14043,6 +14045,7 @@
                       "width": "fill_container",
                       "content": "Caption describing the image",
                       "lineHeight": "$type-body2-line-height",
+                      "textAlign": "center",
                       "fontFamily": "$font-body",
                       "fontSize": "$type-body2-size",
                       "fontWeight": "normal",
@@ -14091,6 +14094,56 @@
                       "width": "fill_container",
                       "content": "Caption describing the image",
                       "lineHeight": "$type-body2-line-height",
+                      "textAlign": "center",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$type-body2-size",
+                      "fontWeight": "normal",
+                      "letterSpacing": "$type-body2-letter-spacing"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "iZort",
+                  "name": "Figure / Artwork",
+                  "context": "<figure> with an optional <figcaption>. The image keeps its own proportions and is never cropped; 522 wide on desktop, full width on smaller screens. Hide the caption when there isn't one. Code: src/components/Figure.astro.",
+                  "reusable": true,
+                  "width": 522,
+                  "layout": "vertical",
+                  "gap": "$scale-200",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "N3oF3o",
+                      "name": "Image",
+                      "clip": true,
+                      "width": "fill_container",
+                      "height": 897,
+                      "fill": "$surface-subtle",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "id": "MOlVq",
+                          "type": "ref",
+                          "ref": "zV7DP",
+                          "name": "Icon/Image",
+                          "width": 32,
+                          "height": 32,
+                          "stroke": "$text-muted"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "MTCY0",
+                      "name": "Caption (figcaption)",
+                      "fill": "$text-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Optional caption: title, medium, year",
+                      "lineHeight": "$type-body2-line-height",
+                      "textAlign": "center",
                       "fontFamily": "$font-body",
                       "fontSize": "$type-body2-size",
                       "fontWeight": "normal",
@@ -14246,8 +14299,8 @@
     {
       "type": "frame",
       "id": "SuqrM",
-      "x": -1285,
-      "y": -2595,
+      "x": -224,
+      "y": -2533,
       "name": "Components / Shop",
       "theme": {
         "mode": "light",
@@ -15268,16 +15321,10 @@
               "alignItems": "center",
               "children": [
                 {
-                  "type": "rectangle",
-                  "id": "PShFl",
-                  "fill": {
-                    "type": "image",
-                    "enabled": true,
-                    "url": "image.png",
-                    "mode": "cover"
-                  },
-                  "width": 522,
-                  "height": 897
+                  "id": "nHN3z",
+                  "type": "ref",
+                  "ref": "iZort",
+                  "name": "Figure"
                 },
                 {
                   "type": "frame",
@@ -15513,7 +15560,7 @@
           "name": "Footer",
           "width": "fill_container",
           "x": 0,
-          "y": 1656
+          "y": 1684
         }
       ]
     },
