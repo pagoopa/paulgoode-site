@@ -16,6 +16,27 @@ const blog = defineCollection({
     }),
 });
 
+// Series entries: one piece of artwork in a numbered series, with a write-up.
+// Each entry is a folder with an index.md and its image.
+const series = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/series' }),
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      description: z.string().optional(),
+      pubDate: z.coerce.date(),
+      draft: z.boolean().default(false),
+      // The series this entry belongs to, like a category.
+      series: z.string(),
+      // Shown with three digits: 1 → "001".
+      number: z.union([z.number().int(), z.string()]).transform((n) => String(n).padStart(3, '0')),
+      year: z.number().int(),
+      location: z.string(),
+      // Hero image at the top of the page. Path is relative to the .md file.
+      image: z.object({ src: image(), alt: z.string(), caption: z.string().optional() }),
+    }),
+});
+
 // Copy for the one-off pages (home, about, contact, projects). The file name is the page id.
 const pages = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/pages' }),
@@ -36,4 +57,4 @@ const pages = defineCollection({
   }),
 });
 
-export const collections = { blog, pages };
+export const collections = { blog, series, pages };

@@ -1,0 +1,101 @@
+---
+// Series entry page ("Series" board in design/site.pen): hero artwork, title
+// and date, the write-up, then the series details.
+import Layout from '../../layouts/Layout.astro';
+import Figure from '../../components/Figure.astro';
+import Detail from '../../components/Detail.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  // Drafts show while running the site locally, not on the live site.
+  const entries = await getCollection('series', ({ data }) => import.meta.env.DEV || !data.draft);
+  return entries.map((entry) => ({
+    params: { id: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const { title, description, pubDate, image, series, number, year, location } = entry.data;
+
+const dateFmt = new Intl.DateTimeFormat('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+  // pubDate is midnight UTC; without this it shows the day before in US time zones.
+  timeZone: 'UTC',
+});
+---
+
+<Layout title={title} description={description}>
+  <article class="wrap series">
+    <Figure src={image.src} alt={image.alt} caption={image.caption} loading="eager" />
+
+    <header class="series__header">
+      <h1 class="series__title">{title}</h1>
+      <p class="eyebrow series__date">{dateFmt.format(pubDate)}</p>
+    </header>
+
+    <div class="series__body">
+      <Content />
+    </div>
+
+    <div class="series__info">
+      <Detail rows={[{ label: 'Series', value: series }, { label: 'Number', value: number }]} />
+      <Detail rows={[{ label: 'Year', value: String(year) }, { label: 'Location', value: location }]} />
+    </div>
+  </article>
+</Layout>
+
+<style>
+  .series {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--scale-0400);
+    padding-block: var(--layout-margin) var(--scale-1000);
+  }
+
+  /* Title and date, centered above the write-up */
+  .series__header {
+    width: min(100%, 820px);
+    padding-bottom: var(--scale-0600);
+    text-align: center;
+  }
+
+  .series__title {
+    margin: 0 0 var(--scale-0100);
+    font-size: var(--type-h3-size);
+    line-height: var(--type-h1-line-height);
+    letter-spacing: var(--type-h1-letter-spacing);
+  }
+
+  .series__date {
+    margin: 0;
+  }
+
+  .series__body {
+    width: min(100%, 820px);
+    font-size: var(--type-p2-size);
+    line-height: var(--type-p2-line-height);
+  }
+
+  .series__body :global(p) {
+    margin: 0 0 1.4em;
+  }
+
+  .series__body :global(p:last-child) {
+    margin-bottom: 0;
+  }
+
+  /* Two Detail tables side by side; they stack when there isn't room. */
+  .series__info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--scale-0600);
+    width: 100%;
+    padding-top: var(--scale-0600);
+  }
+</style>

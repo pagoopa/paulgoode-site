@@ -1,0 +1,67 @@
+---
+// Detail: a bordered table of label / value rows (Detail and Detail / Item in
+// design/site.pen). Values stay on one line and end in "…" when too long;
+// the full value shows on hover.
+interface Props {
+  rows: { label: string; value: string }[];
+}
+
+const { rows } = Astro.props;
+---
+
+<dl class="detail">
+  {rows.map(({ label, value }) => (
+    <div class="detail__row">
+      <dt class="detail__label">{label}</dt>
+      <dd class="detail__value" title={value}>{value}</dd>
+    </div>
+  ))}
+</dl>
+
+<style>
+  .detail {
+    width: min(100%, 468px);
+    margin: 0;
+    border: 1px solid var(--color-border-strong);
+  }
+
+  .detail__row {
+    display: flex;
+  }
+
+  .detail__row + .detail__row {
+    border-top: 1px solid var(--color-border-strong);
+  }
+
+  .detail__label,
+  .detail__value {
+    margin: 0;
+    padding: var(--scale-0200);
+    color: var(--color-neutral-700);
+    font-weight: 500;
+  }
+
+  /* Label: Body/eyebrow2, in capitals */
+  .detail__label {
+    flex: none;
+    width: 90px;
+    background: var(--color-neutral-200);
+    border-right: 1px solid var(--color-border-strong);
+    font-size: var(--type-eyebrow2-size);
+    line-height: var(--type-eyebrow2-line-height);
+    letter-spacing: var(--type-eyebrow2-letter-spacing);
+    text-transform: uppercase;
+  }
+
+  /* Value: one line, cut off with an ellipsis */
+  .detail__value {
+    flex: 1;
+    min-width: 0;
+    background: var(--color-surface-default);
+    font-size: var(--font-size-014);
+    line-height: var(--type-eyebrow2-line-height);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+</style>
