@@ -14110,7 +14110,7 @@
                   "reusable": true,
                   "width": 522,
                   "layout": "vertical",
-                  "gap": "$scale-200",
+                  "gap": "$scale-0200",
                   "children": [
                     {
                       "type": "frame",
