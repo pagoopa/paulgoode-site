@@ -126,6 +126,22 @@ runs automatically before `npm run dev` and `npm run build`; run
 
 Don't edit `tokens.css` by hand, because the next sync overwrites it.
 
+## Where this is going
+
+`CONTENT_MODEL.md` is the target for notes, series, and projects. The
+sections below describe the site as it works today. When they disagree, the
+content model wins, and the code catches up in small pull requests.
+
+A few decisions are already settled. Notes will replace the journal, and
+`/blog` will redirect to `/notes`. A note's format chooses its layout. A
+format can gain its own layout later, when a real note needs a different
+one, and there is no second collection for that. Series entries keep their
+year, location, captioned hero image, and 16:10 thumbnail (the content
+model's cover), at `/series/<series>/<entry>`. Domain filters will be
+`/notes/domain/<domain>`, and threads will be `/threads/<thread>`. New
+components are designed in Pencil before they are coded. This repo does not
+deploy the site yet, so the Substack sync waits.
+
 ## Editing site copy
 
 The words on the site live in Markdown files under `src/content/`:
