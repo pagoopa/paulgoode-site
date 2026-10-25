@@ -8,8 +8,8 @@ number: 1
 year: 2022
 location: "San Antonio, TX"
 image:
-  src: ./artwork.png
-  alt: "Comic-style ink drawing: men lay hands on another man in prayer beneath a cross, with captions about authority over demons and diseases."
+  src: ./artwork.jpg
+  alt: "Ink drawing of four men standing beneath a cross in a church, one raising his hand as they pray. Captions read: Jesus has given us authority over demons and diseases. We use God's word to fight back."
   caption: "Ink on paper, 2022"
 ---
 
