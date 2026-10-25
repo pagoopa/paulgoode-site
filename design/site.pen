@@ -115,9 +115,9 @@
                       },
                       "strokeAlignment": "inner",
                       "layout": "vertical",
-                      "gap": "$scale-200",
+                      "gap": "$scale-0200",
                       "padding": [
-                        "$scale-600",
+                        "$scale-0600",
                         0
                       ],
                       "children": [
@@ -155,7 +155,7 @@
                           "name": "Body",
                           "width": "fill_container",
                           "layout": "vertical",
-                          "gap": "$scale-600",
+                          "gap": "$scale-0600",
                           "children": [
                             {
                               "type": "text",
@@ -200,9 +200,9 @@
                       },
                       "strokeAlignment": "inner",
                       "layout": "vertical",
-                      "gap": "$scale-200",
+                      "gap": "$scale-0200",
                       "padding": [
-                        "$scale-600",
+                        "$scale-0600",
                         0
                       ],
                       "children": [
@@ -240,7 +240,7 @@
                           "name": "Body",
                           "width": "fill_container",
                           "layout": "vertical",
-                          "gap": "$scale-600",
+                          "gap": "$scale-0600",
                           "children": [
                             {
                               "type": "text",
@@ -282,9 +282,9 @@
                       },
                       "strokeAlignment": "inner",
                       "layout": "vertical",
-                      "gap": "$scale-200",
+                      "gap": "$scale-0200",
                       "padding": [
-                        "$scale-600",
+                        "$scale-0600",
                         0
                       ],
                       "children": [
@@ -322,7 +322,7 @@
                           "name": "Body",
                           "width": "fill_container",
                           "layout": "vertical",
-                          "gap": "$scale-600",
+                          "gap": "$scale-0600",
                           "children": [
                             {
                               "type": "text",
@@ -436,9 +436,9 @@
                       },
                       "strokeAlignment": "inner",
                       "layout": "vertical",
-                      "gap": "$scale-200",
+                      "gap": "$scale-0200",
                       "padding": [
-                        "$scale-600",
+                        "$scale-0600",
                         0
                       ],
                       "children": [
@@ -476,7 +476,7 @@
                           "name": "Body",
                           "width": "fill_container",
                           "layout": "vertical",
-                          "gap": "$scale-600",
+                          "gap": "$scale-0600",
                           "children": [
                             {
                               "type": "text",
@@ -521,9 +521,9 @@
                       },
                       "strokeAlignment": "inner",
                       "layout": "vertical",
-                      "gap": "$scale-200",
+                      "gap": "$scale-0200",
                       "padding": [
-                        "$scale-600",
+                        "$scale-0600",
                         0
                       ],
                       "children": [
@@ -561,7 +561,7 @@
                           "name": "Body",
                           "width": "fill_container",
                           "layout": "vertical",
-                          "gap": "$scale-600",
+                          "gap": "$scale-0600",
                           "children": [
                             {
                               "type": "text",
@@ -603,9 +603,9 @@
                       },
                       "strokeAlignment": "inner",
                       "layout": "vertical",
-                      "gap": "$scale-200",
+                      "gap": "$scale-0200",
                       "padding": [
-                        "$scale-600",
+                        "$scale-0600",
                         0
                       ],
                       "children": [
@@ -643,7 +643,7 @@
                           "name": "Body",
                           "width": "fill_container",
                           "layout": "vertical",
-                          "gap": "$scale-600",
+                          "gap": "$scale-0600",
                           "children": [
                             {
                               "type": "text",
@@ -763,9 +763,9 @@
                       },
                       "strokeAlignment": "inner",
                       "layout": "vertical",
-                      "gap": "$scale-200",
+                      "gap": "$scale-0200",
                       "padding": [
-                        "$scale-600",
+                        "$scale-0600",
                         0
                       ],
                       "children": [
@@ -803,7 +803,7 @@
                           "name": "Body",
                           "width": "fill_container",
                           "layout": "vertical",
-                          "gap": "$scale-600",
+                          "gap": "$scale-0600",
                           "children": [
                             {
                               "type": "text",
@@ -848,9 +848,9 @@
                       },
                       "strokeAlignment": "inner",
                       "layout": "vertical",
-                      "gap": "$scale-200",
+                      "gap": "$scale-0200",
                       "padding": [
-                        "$scale-600",
+                        "$scale-0600",
                         0
                       ],
                       "children": [
@@ -888,7 +888,7 @@
                           "name": "Body",
                           "width": "fill_container",
                           "layout": "vertical",
-                          "gap": "$scale-600",
+                          "gap": "$scale-0600",
                           "children": [
                             {
                               "type": "text",
@@ -930,9 +930,9 @@
                       },
                       "strokeAlignment": "inner",
                       "layout": "vertical",
-                      "gap": "$scale-200",
+                      "gap": "$scale-0200",
                       "padding": [
-                        "$scale-600",
+                        "$scale-0600",
                         0
                       ],
                       "children": [
@@ -970,7 +970,7 @@
                           "name": "Body",
                           "width": "fill_container",
                           "layout": "vertical",
-                          "gap": "$scale-600",
+                          "gap": "$scale-0600",
                           "children": [
                             {
                               "type": "text",
@@ -1013,7 +1013,7 @@
               "name": "Nav",
               "layout": "vertical",
               "padding": [
-                "$scale-300",
+                "$scale-0300",
                 0,
                 0,
                 0
@@ -1024,7 +1024,7 @@
                   "type": "frame",
                   "id": "DHbrJ",
                   "name": "Row",
-                  "gap": "$scale-600",
+                  "gap": "$scale-0600",
                   "justifyContent": "center",
                   "alignItems": "center",
                   "children": [
@@ -1056,7 +1056,7 @@
                   "type": "frame",
                   "id": "ajNML",
                   "name": "Row",
-                  "gap": "$scale-600",
+                  "gap": "$scale-0600",
                   "justifyContent": "center",
                   "alignItems": "center",
                   "children": [
@@ -1199,7 +1199,7 @@
                   "name": "Article",
                   "width": "fill_container",
                   "layout": "vertical",
-                  "gap": "$scale-800",
+                  "gap": "$scale-0800",
                   "children": [
                     {
                       "type": "frame",
@@ -1378,7 +1378,7 @@
                   "name": "Article",
                   "width": "fill_container",
                   "layout": "vertical",
-                  "gap": "$scale-800",
+                  "gap": "$scale-0800",
                   "children": [
                     {
                       "type": "frame",
@@ -1563,7 +1563,7 @@
                   "name": "Article",
                   "width": "fill_container",
                   "layout": "vertical",
-                  "gap": "$scale-800",
+                  "gap": "$scale-0800",
                   "children": [
                     {
                       "type": "frame",
@@ -1678,7 +1678,7 @@
               "name": "Nav",
               "layout": "vertical",
               "padding": [
-                "$scale-300",
+                "$scale-0300",
                 0,
                 0,
                 0
@@ -1689,7 +1689,7 @@
                   "type": "frame",
                   "id": "IfSPz",
                   "name": "Row",
-                  "gap": "$scale-600",
+                  "gap": "$scale-0600",
                   "justifyContent": "center",
                   "alignItems": "center",
                   "children": [
@@ -1721,7 +1721,7 @@
                   "type": "frame",
                   "id": "mVGEr",
                   "name": "Row",
-                  "gap": "$scale-600",
+                  "gap": "$scale-0600",
                   "justifyContent": "center",
                   "alignItems": "center",
                   "children": [
@@ -1904,9 +1904,9 @@
                                   },
                                   "strokeAlignment": "inner",
                                   "layout": "vertical",
-                                  "gap": "$scale-200",
+                                  "gap": "$scale-0200",
                                   "padding": [
-                                    "$scale-600",
+                                    "$scale-0600",
                                     0
                                   ],
                                   "children": [
@@ -1944,7 +1944,7 @@
                                       "name": "Body",
                                       "width": "fill_container",
                                       "layout": "vertical",
-                                      "gap": "$scale-600",
+                                      "gap": "$scale-0600",
                                       "children": [
                                         {
                                           "type": "text",
@@ -1989,9 +1989,9 @@
                                   },
                                   "strokeAlignment": "inner",
                                   "layout": "vertical",
-                                  "gap": "$scale-200",
+                                  "gap": "$scale-0200",
                                   "padding": [
-                                    "$scale-600",
+                                    "$scale-0600",
                                     0
                                   ],
                                   "children": [
@@ -2029,7 +2029,7 @@
                                       "name": "Body",
                                       "width": "fill_container",
                                       "layout": "vertical",
-                                      "gap": "$scale-600",
+                                      "gap": "$scale-0600",
                                       "children": [
                                         {
                                           "type": "text",
@@ -2071,9 +2071,9 @@
                                   },
                                   "strokeAlignment": "inner",
                                   "layout": "vertical",
-                                  "gap": "$scale-200",
+                                  "gap": "$scale-0200",
                                   "padding": [
-                                    "$scale-600",
+                                    "$scale-0600",
                                     0
                                   ],
                                   "children": [
@@ -2111,7 +2111,7 @@
                                       "name": "Body",
                                       "width": "fill_container",
                                       "layout": "vertical",
-                                      "gap": "$scale-600",
+                                      "gap": "$scale-0600",
                                       "children": [
                                         {
                                           "type": "text",
@@ -2288,9 +2288,9 @@
                                   },
                                   "strokeAlignment": "inner",
                                   "layout": "vertical",
-                                  "gap": "$scale-200",
+                                  "gap": "$scale-0200",
                                   "padding": [
-                                    "$scale-600",
+                                    "$scale-0600",
                                     0
                                   ],
                                   "children": [
@@ -2328,7 +2328,7 @@
                                       "name": "Body",
                                       "width": "fill_container",
                                       "layout": "vertical",
-                                      "gap": "$scale-600",
+                                      "gap": "$scale-0600",
                                       "children": [
                                         {
                                           "type": "text",
@@ -2373,9 +2373,9 @@
                                   },
                                   "strokeAlignment": "inner",
                                   "layout": "vertical",
-                                  "gap": "$scale-200",
+                                  "gap": "$scale-0200",
                                   "padding": [
-                                    "$scale-600",
+                                    "$scale-0600",
                                     0
                                   ],
                                   "children": [
@@ -2413,7 +2413,7 @@
                                       "name": "Body",
                                       "width": "fill_container",
                                       "layout": "vertical",
-                                      "gap": "$scale-600",
+                                      "gap": "$scale-0600",
                                       "children": [
                                         {
                                           "type": "text",
@@ -2455,9 +2455,9 @@
                                   },
                                   "strokeAlignment": "inner",
                                   "layout": "vertical",
-                                  "gap": "$scale-200",
+                                  "gap": "$scale-0200",
                                   "padding": [
-                                    "$scale-600",
+                                    "$scale-0600",
                                     0
                                   ],
                                   "children": [
@@ -2495,7 +2495,7 @@
                                       "name": "Body",
                                       "width": "fill_container",
                                       "layout": "vertical",
-                                      "gap": "$scale-600",
+                                      "gap": "$scale-0600",
                                       "children": [
                                         {
                                           "type": "text",
@@ -2683,9 +2683,9 @@
                                   },
                                   "strokeAlignment": "inner",
                                   "layout": "vertical",
-                                  "gap": "$scale-200",
+                                  "gap": "$scale-0200",
                                   "padding": [
-                                    "$scale-600",
+                                    "$scale-0600",
                                     0
                                   ],
                                   "children": [
@@ -2723,7 +2723,7 @@
                                       "name": "Body",
                                       "width": "fill_container",
                                       "layout": "vertical",
-                                      "gap": "$scale-600",
+                                      "gap": "$scale-0600",
                                       "children": [
                                         {
                                           "type": "text",
@@ -2768,9 +2768,9 @@
                                   },
                                   "strokeAlignment": "inner",
                                   "layout": "vertical",
-                                  "gap": "$scale-200",
+                                  "gap": "$scale-0200",
                                   "padding": [
-                                    "$scale-600",
+                                    "$scale-0600",
                                     0
                                   ],
                                   "children": [
@@ -2808,7 +2808,7 @@
                                       "name": "Body",
                                       "width": "fill_container",
                                       "layout": "vertical",
-                                      "gap": "$scale-600",
+                                      "gap": "$scale-0600",
                                       "children": [
                                         {
                                           "type": "text",
@@ -2850,9 +2850,9 @@
                                   },
                                   "strokeAlignment": "inner",
                                   "layout": "vertical",
-                                  "gap": "$scale-200",
+                                  "gap": "$scale-0200",
                                   "padding": [
-                                    "$scale-600",
+                                    "$scale-0600",
                                     0
                                   ],
                                   "children": [
@@ -2890,7 +2890,7 @@
                                       "name": "Body",
                                       "width": "fill_container",
                                       "layout": "vertical",
-                                      "gap": "$scale-600",
+                                      "gap": "$scale-0600",
                                       "children": [
                                         {
                                           "type": "text",
@@ -3089,9 +3089,9 @@
                                   },
                                   "strokeAlignment": "inner",
                                   "layout": "vertical",
-                                  "gap": "$scale-200",
+                                  "gap": "$scale-0200",
                                   "padding": [
-                                    "$scale-600",
+                                    "$scale-0600",
                                     0
                                   ],
                                   "children": [
@@ -3129,7 +3129,7 @@
                                       "name": "Body",
                                       "width": "fill_container",
                                       "layout": "vertical",
-                                      "gap": "$scale-600",
+                                      "gap": "$scale-0600",
                                       "children": [
                                         {
                                           "type": "text",
@@ -3174,9 +3174,9 @@
                                   },
                                   "strokeAlignment": "inner",
                                   "layout": "vertical",
-                                  "gap": "$scale-200",
+                                  "gap": "$scale-0200",
                                   "padding": [
-                                    "$scale-600",
+                                    "$scale-0600",
                                     0
                                   ],
                                   "children": [
@@ -3214,7 +3214,7 @@
                                       "name": "Body",
                                       "width": "fill_container",
                                       "layout": "vertical",
-                                      "gap": "$scale-600",
+                                      "gap": "$scale-0600",
                                       "children": [
                                         {
                                           "type": "text",
@@ -3256,9 +3256,9 @@
                                   },
                                   "strokeAlignment": "inner",
                                   "layout": "vertical",
-                                  "gap": "$scale-200",
+                                  "gap": "$scale-0200",
                                   "padding": [
-                                    "$scale-600",
+                                    "$scale-0600",
                                     0
                                   ],
                                   "children": [
@@ -3296,7 +3296,7 @@
                                       "name": "Body",
                                       "width": "fill_container",
                                       "layout": "vertical",
-                                      "gap": "$scale-600",
+                                      "gap": "$scale-0600",
                                       "children": [
                                         {
                                           "type": "text",
@@ -3973,10 +3973,10 @@
                           "reusable": true,
                           "fill": "$accent-yellow",
                           "cornerRadius": "$radius-md",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-200",
-                            "$scale-300"
+                            "$scale-0200",
+                            "$scale-0300"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -4031,10 +4031,10 @@
                           "reusable": true,
                           "fill": "$accent-yellow-hover",
                           "cornerRadius": "$radius-md",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-200",
-                            "$scale-300"
+                            "$scale-0200",
+                            "$scale-0300"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -4089,10 +4089,10 @@
                           "reusable": true,
                           "fill": "$accent-yellow-pressed",
                           "cornerRadius": "$radius-md",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-200",
-                            "$scale-300"
+                            "$scale-0200",
+                            "$scale-0300"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -4147,10 +4147,10 @@
                           "reusable": true,
                           "fill": "$surface-disabled",
                           "cornerRadius": "$radius-md",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-200",
-                            "$scale-300"
+                            "$scale-0200",
+                            "$scale-0300"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -4233,10 +4233,10 @@
                           "reusable": true,
                           "fill": "$accent-yellow",
                           "cornerRadius": "$radius-md",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-300",
-                            "$scale-400"
+                            "$scale-0300",
+                            "$scale-0400"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -4291,10 +4291,10 @@
                           "reusable": true,
                           "fill": "$accent-yellow-hover",
                           "cornerRadius": "$radius-md",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-300",
-                            "$scale-400"
+                            "$scale-0300",
+                            "$scale-0400"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -4349,10 +4349,10 @@
                           "reusable": true,
                           "fill": "$accent-yellow-pressed",
                           "cornerRadius": "$radius-md",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-300",
-                            "$scale-400"
+                            "$scale-0300",
+                            "$scale-0400"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -4407,10 +4407,10 @@
                           "reusable": true,
                           "fill": "$surface-disabled",
                           "cornerRadius": "$radius-md",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-300",
-                            "$scale-400"
+                            "$scale-0300",
+                            "$scale-0400"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -4493,10 +4493,10 @@
                           "reusable": true,
                           "fill": "$accent-yellow",
                           "cornerRadius": "$radius-md",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-400",
-                            "$scale-600"
+                            "$scale-0400",
+                            "$scale-0600"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -4551,10 +4551,10 @@
                           "reusable": true,
                           "fill": "$accent-yellow-hover",
                           "cornerRadius": "$radius-md",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-400",
-                            "$scale-600"
+                            "$scale-0400",
+                            "$scale-0600"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -4609,10 +4609,10 @@
                           "reusable": true,
                           "fill": "$accent-yellow-pressed",
                           "cornerRadius": "$radius-md",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-400",
-                            "$scale-600"
+                            "$scale-0400",
+                            "$scale-0600"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -4667,10 +4667,10 @@
                           "reusable": true,
                           "fill": "$surface-disabled",
                           "cornerRadius": "$radius-md",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-400",
-                            "$scale-600"
+                            "$scale-0400",
+                            "$scale-0600"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -4755,10 +4755,10 @@
                           "stroke": "$border-emphasis",
                           "strokeWidth": 1,
                           "strokeAlignment": "inner",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-200",
-                            "$scale-300"
+                            "$scale-0200",
+                            "$scale-0300"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -4816,10 +4816,10 @@
                           "stroke": "$border-emphasis",
                           "strokeWidth": 1,
                           "strokeAlignment": "inner",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-200",
-                            "$scale-300"
+                            "$scale-0200",
+                            "$scale-0300"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -4877,10 +4877,10 @@
                           "stroke": "$border-emphasis",
                           "strokeWidth": 1,
                           "strokeAlignment": "inner",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-200",
-                            "$scale-300"
+                            "$scale-0200",
+                            "$scale-0300"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -4937,10 +4937,10 @@
                           "stroke": "$border-default",
                           "strokeWidth": 1,
                           "strokeAlignment": "inner",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-200",
-                            "$scale-300"
+                            "$scale-0200",
+                            "$scale-0300"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -5025,10 +5025,10 @@
                           "stroke": "$border-emphasis",
                           "strokeWidth": 1,
                           "strokeAlignment": "inner",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-300",
-                            "$scale-400"
+                            "$scale-0300",
+                            "$scale-0400"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -5086,10 +5086,10 @@
                           "stroke": "$border-emphasis",
                           "strokeWidth": 1,
                           "strokeAlignment": "inner",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-300",
-                            "$scale-400"
+                            "$scale-0300",
+                            "$scale-0400"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -5147,10 +5147,10 @@
                           "stroke": "$border-emphasis",
                           "strokeWidth": 1,
                           "strokeAlignment": "inner",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-300",
-                            "$scale-400"
+                            "$scale-0300",
+                            "$scale-0400"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -5207,10 +5207,10 @@
                           "stroke": "$border-default",
                           "strokeWidth": 1,
                           "strokeAlignment": "inner",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-300",
-                            "$scale-400"
+                            "$scale-0300",
+                            "$scale-0400"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -5295,10 +5295,10 @@
                           "stroke": "$border-emphasis",
                           "strokeWidth": 1,
                           "strokeAlignment": "inner",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-400",
-                            "$scale-600"
+                            "$scale-0400",
+                            "$scale-0600"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -5356,10 +5356,10 @@
                           "stroke": "$border-emphasis",
                           "strokeWidth": 1,
                           "strokeAlignment": "inner",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-400",
-                            "$scale-600"
+                            "$scale-0400",
+                            "$scale-0600"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -5417,10 +5417,10 @@
                           "stroke": "$border-emphasis",
                           "strokeWidth": 1,
                           "strokeAlignment": "inner",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-400",
-                            "$scale-600"
+                            "$scale-0400",
+                            "$scale-0600"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -5477,10 +5477,10 @@
                           "stroke": "$border-default",
                           "strokeWidth": 1,
                           "strokeAlignment": "inner",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-400",
-                            "$scale-600"
+                            "$scale-0400",
+                            "$scale-0600"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -5562,10 +5562,10 @@
                           "name": "Button / Tertiary / sm / Default",
                           "reusable": true,
                           "cornerRadius": "$radius-md",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-200",
-                            "$scale-300"
+                            "$scale-0200",
+                            "$scale-0300"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -5620,10 +5620,10 @@
                           "reusable": true,
                           "fill": "$surface-hover",
                           "cornerRadius": "$radius-md",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-200",
-                            "$scale-300"
+                            "$scale-0200",
+                            "$scale-0300"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -5678,10 +5678,10 @@
                           "reusable": true,
                           "fill": "$surface-pressed",
                           "cornerRadius": "$radius-md",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-200",
-                            "$scale-300"
+                            "$scale-0200",
+                            "$scale-0300"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -5735,10 +5735,10 @@
                           "name": "Button / Tertiary / sm / Disabled",
                           "reusable": true,
                           "cornerRadius": "$radius-md",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-200",
-                            "$scale-300"
+                            "$scale-0200",
+                            "$scale-0300"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -5820,10 +5820,10 @@
                           "name": "Button / Tertiary / md / Default",
                           "reusable": true,
                           "cornerRadius": "$radius-md",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-300",
-                            "$scale-400"
+                            "$scale-0300",
+                            "$scale-0400"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -5878,10 +5878,10 @@
                           "reusable": true,
                           "fill": "$surface-hover",
                           "cornerRadius": "$radius-md",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-300",
-                            "$scale-400"
+                            "$scale-0300",
+                            "$scale-0400"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -5936,10 +5936,10 @@
                           "reusable": true,
                           "fill": "$surface-pressed",
                           "cornerRadius": "$radius-md",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-300",
-                            "$scale-400"
+                            "$scale-0300",
+                            "$scale-0400"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -5993,10 +5993,10 @@
                           "name": "Button / Tertiary / md / Disabled",
                           "reusable": true,
                           "cornerRadius": "$radius-md",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-300",
-                            "$scale-400"
+                            "$scale-0300",
+                            "$scale-0400"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -6078,10 +6078,10 @@
                           "name": "Button / Tertiary / lg / Default",
                           "reusable": true,
                           "cornerRadius": "$radius-md",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-400",
-                            "$scale-600"
+                            "$scale-0400",
+                            "$scale-0600"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -6136,10 +6136,10 @@
                           "reusable": true,
                           "fill": "$surface-hover",
                           "cornerRadius": "$radius-md",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-400",
-                            "$scale-600"
+                            "$scale-0400",
+                            "$scale-0600"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -6194,10 +6194,10 @@
                           "reusable": true,
                           "fill": "$surface-pressed",
                           "cornerRadius": "$radius-md",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-400",
-                            "$scale-600"
+                            "$scale-0400",
+                            "$scale-0600"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -6251,10 +6251,10 @@
                           "name": "Button / Tertiary / lg / Disabled",
                           "reusable": true,
                           "cornerRadius": "$radius-md",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-400",
-                            "$scale-600"
+                            "$scale-0400",
+                            "$scale-0600"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -6337,10 +6337,10 @@
                           "reusable": true,
                           "fill": "$surface-inverse",
                           "cornerRadius": "$radius-md",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-200",
-                            "$scale-300"
+                            "$scale-0200",
+                            "$scale-0300"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -6395,10 +6395,10 @@
                           "reusable": true,
                           "fill": "$surface-inverse-hover",
                           "cornerRadius": "$radius-md",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-200",
-                            "$scale-300"
+                            "$scale-0200",
+                            "$scale-0300"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -6453,10 +6453,10 @@
                           "reusable": true,
                           "fill": "$surface-inverse-pressed",
                           "cornerRadius": "$radius-md",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-200",
-                            "$scale-300"
+                            "$scale-0200",
+                            "$scale-0300"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -6511,10 +6511,10 @@
                           "reusable": true,
                           "fill": "$surface-disabled",
                           "cornerRadius": "$radius-md",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-200",
-                            "$scale-300"
+                            "$scale-0200",
+                            "$scale-0300"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -6597,10 +6597,10 @@
                           "reusable": true,
                           "fill": "$surface-inverse",
                           "cornerRadius": "$radius-md",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-300",
-                            "$scale-400"
+                            "$scale-0300",
+                            "$scale-0400"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -6655,10 +6655,10 @@
                           "reusable": true,
                           "fill": "$surface-inverse-hover",
                           "cornerRadius": "$radius-md",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-300",
-                            "$scale-400"
+                            "$scale-0300",
+                            "$scale-0400"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -6713,10 +6713,10 @@
                           "reusable": true,
                           "fill": "$surface-inverse-pressed",
                           "cornerRadius": "$radius-md",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-300",
-                            "$scale-400"
+                            "$scale-0300",
+                            "$scale-0400"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -6771,10 +6771,10 @@
                           "reusable": true,
                           "fill": "$surface-disabled",
                           "cornerRadius": "$radius-md",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-300",
-                            "$scale-400"
+                            "$scale-0300",
+                            "$scale-0400"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -6857,10 +6857,10 @@
                           "reusable": true,
                           "fill": "$surface-inverse",
                           "cornerRadius": "$radius-md",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-400",
-                            "$scale-600"
+                            "$scale-0400",
+                            "$scale-0600"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -6915,10 +6915,10 @@
                           "reusable": true,
                           "fill": "$surface-inverse-hover",
                           "cornerRadius": "$radius-md",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-400",
-                            "$scale-600"
+                            "$scale-0400",
+                            "$scale-0600"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -6973,10 +6973,10 @@
                           "reusable": true,
                           "fill": "$surface-inverse-pressed",
                           "cornerRadius": "$radius-md",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-400",
-                            "$scale-600"
+                            "$scale-0400",
+                            "$scale-0600"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -7031,10 +7031,10 @@
                           "reusable": true,
                           "fill": "$surface-disabled",
                           "cornerRadius": "$radius-md",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
-                            "$scale-400",
-                            "$scale-600"
+                            "$scale-0400",
+                            "$scale-0600"
                           ],
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -7140,7 +7140,7 @@
                   "reusable": true,
                   "width": 360,
                   "layout": "vertical",
-                  "gap": "$scale-300",
+                  "gap": "$scale-0300",
                   "children": [
                     {
                       "type": "frame",
@@ -7171,7 +7171,7 @@
                       "name": "Caption",
                       "width": "fill_container",
                       "layout": "vertical",
-                      "gap": "$scale-100",
+                      "gap": "$scale-0100",
                       "children": [
                         {
                           "type": "text",
@@ -7256,8 +7256,8 @@
                       "name": "Content",
                       "width": "fill_container",
                       "layout": "vertical",
-                      "gap": "$scale-300",
-                      "padding": "$scale-600",
+                      "gap": "$scale-0300",
+                      "padding": "$scale-0600",
                       "children": [
                         {
                           "type": "text",
@@ -7305,7 +7305,7 @@
                           "type": "frame",
                           "id": "qXjIa",
                           "name": "Link",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
                             4,
                             0,
@@ -7363,8 +7363,8 @@
                     "blur": 2
                   },
                   "layout": "vertical",
-                  "gap": "$scale-300",
-                  "padding": "$scale-600",
+                  "gap": "$scale-0300",
+                  "padding": "$scale-0600",
                   "children": [
                     {
                       "type": "text",
@@ -7412,7 +7412,7 @@
                       "type": "frame",
                       "id": "ag2gY",
                       "name": "Link",
-                      "gap": "$scale-200",
+                      "gap": "$scale-0200",
                       "padding": [
                         4,
                         0,
@@ -7462,8 +7462,8 @@
                       "width": "fill_container",
                       "fill": "$surface-inverse",
                       "cornerRadius": "$radius-lg",
-                      "gap": "$scale-300",
-                      "padding": "$scale-600",
+                      "gap": "$scale-0300",
+                      "padding": "$scale-0600",
                       "children": [
                         {
                           "type": "rectangle",
@@ -7498,8 +7498,8 @@
                       "width": "fill_container",
                       "fill": "$surface-inverse",
                       "cornerRadius": "$radius-lg",
-                      "gap": "$scale-300",
-                      "padding": "$scale-600",
+                      "gap": "$scale-0300",
+                      "padding": "$scale-0600",
                       "children": [
                         {
                           "type": "rectangle",
@@ -7588,8 +7588,8 @@
                       "width": "fill_container",
                       "height": "fill_container",
                       "layout": "vertical",
-                      "gap": "$scale-300",
-                      "padding": "$scale-600",
+                      "gap": "$scale-0300",
+                      "padding": "$scale-0600",
                       "justifyContent": "center",
                       "children": [
                         {
@@ -7638,7 +7638,7 @@
                           "type": "frame",
                           "id": "Z1lja",
                           "name": "Link",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
                             4,
                             0,
@@ -7695,8 +7695,8 @@
                     },
                     "blur": 2
                   },
-                  "gap": "$scale-600",
-                  "padding": "$scale-600",
+                  "gap": "$scale-0600",
+                  "padding": "$scale-0600",
                   "children": [
                     {
                       "type": "text",
@@ -7718,7 +7718,7 @@
                       "name": "Content",
                       "width": "fill_container",
                       "layout": "vertical",
-                      "gap": "$scale-300",
+                      "gap": "$scale-0300",
                       "children": [
                         {
                           "type": "text",
@@ -7752,7 +7752,7 @@
                           "type": "frame",
                           "id": "o9gllH",
                           "name": "Link",
-                          "gap": "$scale-200",
+                          "gap": "$scale-0200",
                           "padding": [
                             4,
                             0,
@@ -7969,9 +7969,9 @@
                               "id": "eFsWC",
                               "name": "Link / Nav / Default / Default",
                               "reusable": true,
-                              "gap": "$scale-200",
+                              "gap": "$scale-0200",
                               "padding": [
-                                "$scale-200",
+                                "$scale-0200",
                                 0
                               ],
                               "alignItems": "center",
@@ -7981,7 +7981,7 @@
                                   "id": "FPnoy",
                                   "name": "Label group",
                                   "layout": "vertical",
-                                  "gap": "$scale-100",
+                                  "gap": "$scale-0100",
                                   "padding": [
                                     0,
                                     0,
@@ -8019,9 +8019,9 @@
                               "id": "qKpNU",
                               "name": "Link / Nav / Hover / Default",
                               "reusable": true,
-                              "gap": "$scale-200",
+                              "gap": "$scale-0200",
                               "padding": [
-                                "$scale-200",
+                                "$scale-0200",
                                 0
                               ],
                               "alignItems": "center",
@@ -8036,7 +8036,7 @@
                                   },
                                   "strokeAlignment": "inner",
                                   "layout": "vertical",
-                                  "gap": "$scale-100",
+                                  "gap": "$scale-0100",
                                   "padding": [
                                     0,
                                     0,
@@ -8074,9 +8074,9 @@
                               "id": "MusDs",
                               "name": "Link / Nav / Current / Default",
                               "reusable": true,
-                              "gap": "$scale-200",
+                              "gap": "$scale-0200",
                               "padding": [
-                                "$scale-200",
+                                "$scale-0200",
                                 0
                               ],
                               "alignItems": "center",
@@ -8091,7 +8091,7 @@
                                   },
                                   "strokeAlignment": "inner",
                                   "layout": "vertical",
-                                  "gap": "$scale-100",
+                                  "gap": "$scale-0100",
                                   "padding": [
                                     0,
                                     0,
@@ -8157,9 +8157,9 @@
                               "id": "HXmMz",
                               "name": "Link / Standalone / Default / Default",
                               "reusable": true,
-                              "gap": "$scale-200",
+                              "gap": "$scale-0200",
                               "padding": [
-                                "$scale-100",
+                                "$scale-0100",
                                 0
                               ],
                               "alignItems": "center",
@@ -8169,7 +8169,7 @@
                                   "id": "hzjkr",
                                   "name": "Label group",
                                   "layout": "vertical",
-                                  "gap": "$scale-50",
+                                  "gap": "$scale-0050",
                                   "padding": [
                                     0,
                                     0,
@@ -8216,9 +8216,9 @@
                               "id": "PN0Su",
                               "name": "Link / Standalone / Hover / Default",
                               "reusable": true,
-                              "gap": "$scale-200",
+                              "gap": "$scale-0200",
                               "padding": [
-                                "$scale-100",
+                                "$scale-0100",
                                 0
                               ],
                               "alignItems": "center",
@@ -8233,7 +8233,7 @@
                                   },
                                   "strokeAlignment": "inner",
                                   "layout": "vertical",
-                                  "gap": "$scale-50",
+                                  "gap": "$scale-0050",
                                   "padding": [
                                     0,
                                     0,
@@ -8280,9 +8280,9 @@
                               "id": "OYZS9",
                               "name": "Link / Standalone / Current / Default",
                               "reusable": true,
-                              "gap": "$scale-200",
+                              "gap": "$scale-0200",
                               "padding": [
-                                "$scale-100",
+                                "$scale-0100",
                                 0
                               ],
                               "alignItems": "center",
@@ -8297,7 +8297,7 @@
                                   },
                                   "strokeAlignment": "inner",
                                   "layout": "vertical",
-                                  "gap": "$scale-50",
+                                  "gap": "$scale-0050",
                                   "padding": [
                                     0,
                                     0,
@@ -8461,9 +8461,9 @@
                               "id": "Bbcv6",
                               "name": "Link / Nav / Default / Inverse",
                               "reusable": true,
-                              "gap": "$scale-200",
+                              "gap": "$scale-0200",
                               "padding": [
-                                "$scale-200",
+                                "$scale-0200",
                                 0
                               ],
                               "alignItems": "center",
@@ -8473,7 +8473,7 @@
                                   "id": "gaKpV",
                                   "name": "Label group",
                                   "layout": "vertical",
-                                  "gap": "$scale-100",
+                                  "gap": "$scale-0100",
                                   "padding": [
                                     0,
                                     0,
@@ -8511,9 +8511,9 @@
                               "id": "mDEYI",
                               "name": "Link / Nav / Hover / Inverse",
                               "reusable": true,
-                              "gap": "$scale-200",
+                              "gap": "$scale-0200",
                               "padding": [
-                                "$scale-200",
+                                "$scale-0200",
                                 0
                               ],
                               "alignItems": "center",
@@ -8528,7 +8528,7 @@
                                   },
                                   "strokeAlignment": "inner",
                                   "layout": "vertical",
-                                  "gap": "$scale-100",
+                                  "gap": "$scale-0100",
                                   "padding": [
                                     0,
                                     0,
@@ -8566,9 +8566,9 @@
                               "id": "y9pZm",
                               "name": "Link / Nav / Current / Inverse",
                               "reusable": true,
-                              "gap": "$scale-200",
+                              "gap": "$scale-0200",
                               "padding": [
-                                "$scale-200",
+                                "$scale-0200",
                                 0
                               ],
                               "alignItems": "center",
@@ -8583,7 +8583,7 @@
                                   },
                                   "strokeAlignment": "inner",
                                   "layout": "vertical",
-                                  "gap": "$scale-100",
+                                  "gap": "$scale-0100",
                                   "padding": [
                                     0,
                                     0,
@@ -8649,9 +8649,9 @@
                               "id": "xmnK2",
                               "name": "Link / Standalone / Default / Inverse",
                               "reusable": true,
-                              "gap": "$scale-200",
+                              "gap": "$scale-0200",
                               "padding": [
-                                "$scale-100",
+                                "$scale-0100",
                                 0
                               ],
                               "alignItems": "center",
@@ -8661,7 +8661,7 @@
                                   "id": "hSofN",
                                   "name": "Label group",
                                   "layout": "vertical",
-                                  "gap": "$scale-50",
+                                  "gap": "$scale-0050",
                                   "padding": [
                                     0,
                                     0,
@@ -8708,9 +8708,9 @@
                               "id": "PtNou",
                               "name": "Link / Standalone / Hover / Inverse",
                               "reusable": true,
-                              "gap": "$scale-200",
+                              "gap": "$scale-0200",
                               "padding": [
-                                "$scale-100",
+                                "$scale-0100",
                                 0
                               ],
                               "alignItems": "center",
@@ -8725,7 +8725,7 @@
                                   },
                                   "strokeAlignment": "inner",
                                   "layout": "vertical",
-                                  "gap": "$scale-50",
+                                  "gap": "$scale-0050",
                                   "padding": [
                                     0,
                                     0,
@@ -8772,9 +8772,9 @@
                               "id": "F4MNF2",
                               "name": "Link / Standalone / Current / Inverse",
                               "reusable": true,
-                              "gap": "$scale-200",
+                              "gap": "$scale-0200",
                               "padding": [
-                                "$scale-100",
+                                "$scale-0100",
                                 0
                               ],
                               "alignItems": "center",
@@ -8789,7 +8789,7 @@
                                   },
                                   "strokeAlignment": "inner",
                                   "layout": "vertical",
-                                  "gap": "$scale-50",
+                                  "gap": "$scale-0050",
                                   "padding": [
                                     0,
                                     0,
@@ -8870,7 +8870,7 @@
                   "width": "fill_container",
                   "fill": "$surface-default",
                   "padding": [
-                    "$scale-400",
+                    "$scale-0400",
                     "$layout-margin"
                   ],
                   "justifyContent": "space_between",
@@ -8889,7 +8889,7 @@
                       "type": "frame",
                       "id": "dznlF",
                       "name": "Actions",
-                      "gap": "$scale-600",
+                      "gap": "$scale-0600",
                       "alignItems": "center",
                       "children": [
                         {
@@ -8897,7 +8897,7 @@
                           "id": "zfzcT",
                           "name": "Nav",
                           "enabled": "$layout-show-nav",
-                          "gap": "$scale-600",
+                          "gap": "$scale-0600",
                           "alignItems": "center",
                           "children": [
                             {
@@ -9012,7 +9012,7 @@
                   },
                   "strokeAlignment": "inner",
                   "padding": [
-                    "$scale-400",
+                    "$scale-0400",
                     "$layout-margin"
                   ],
                   "justifyContent": "space_between",
@@ -9031,7 +9031,7 @@
                       "type": "frame",
                       "id": "oyw85",
                       "name": "Actions",
-                      "gap": "$scale-600",
+                      "gap": "$scale-0600",
                       "alignItems": "center",
                       "children": [
                         {
@@ -9039,7 +9039,7 @@
                           "id": "zN1NX",
                           "name": "Nav",
                           "enabled": "$layout-show-nav",
-                          "gap": "$scale-600",
+                          "gap": "$scale-0600",
                           "alignItems": "center",
                           "children": [
                             {
@@ -9149,9 +9149,9 @@
                   "width": "fill_container",
                   "fill": "$surface-default",
                   "layout": "vertical",
-                  "gap": "$scale-400",
+                  "gap": "$scale-0400",
                   "padding": [
-                    "$scale-600",
+                    "$scale-0600",
                     "$layout-margin"
                   ],
                   "alignItems": "center",
@@ -9169,7 +9169,7 @@
                       "type": "frame",
                       "id": "GPTaN",
                       "name": "Actions",
-                      "gap": "$scale-600",
+                      "gap": "$scale-0600",
                       "alignItems": "center",
                       "children": [
                         {
@@ -9177,7 +9177,7 @@
                           "id": "Xoz0V",
                           "name": "Nav",
                           "enabled": "$layout-show-nav",
-                          "gap": "$scale-600",
+                          "gap": "$scale-0600",
                           "alignItems": "center",
                           "children": [
                             {
@@ -9292,9 +9292,9 @@
                   },
                   "strokeAlignment": "inner",
                   "layout": "vertical",
-                  "gap": "$scale-400",
+                  "gap": "$scale-0400",
                   "padding": [
-                    "$scale-600",
+                    "$scale-0600",
                     "$layout-margin"
                   ],
                   "alignItems": "center",
@@ -9312,7 +9312,7 @@
                       "type": "frame",
                       "id": "U1Cpx",
                       "name": "Actions",
-                      "gap": "$scale-600",
+                      "gap": "$scale-0600",
                       "alignItems": "center",
                       "children": [
                         {
@@ -9320,7 +9320,7 @@
                           "id": "rKw0P",
                           "name": "Nav",
                           "enabled": "$layout-show-nav",
-                          "gap": "$scale-600",
+                          "gap": "$scale-0600",
                           "alignItems": "center",
                           "children": [
                             {
@@ -9446,9 +9446,9 @@
                       "name": "Bar",
                       "width": "fill_container",
                       "padding": [
-                        "$scale-400",
+                        "$scale-0400",
                         "$layout-gutter",
-                        "$scale-400",
+                        "$scale-0400",
                         "$layout-margin"
                       ],
                       "justifyContent": "space_between",
@@ -9467,7 +9467,7 @@
                           "type": "frame",
                           "id": "W1JcI",
                           "name": "Actions",
-                          "gap": "$scale-600",
+                          "gap": "$scale-0600",
                           "alignItems": "center",
                           "children": [
                             {
@@ -9501,11 +9501,11 @@
                       "name": "Menu",
                       "width": "fill_container",
                       "layout": "vertical",
-                      "gap": "$scale-200",
+                      "gap": "$scale-0200",
                       "padding": [
-                        "$scale-400",
+                        "$scale-0400",
                         "$layout-margin",
-                        "$scale-600",
+                        "$scale-0600",
                         "$layout-margin"
                       ],
                       "children": [
@@ -9592,9 +9592,9 @@
                       "name": "Bar",
                       "width": "fill_container",
                       "padding": [
-                        "$scale-400",
+                        "$scale-0400",
                         "$layout-gutter",
-                        "$scale-400",
+                        "$scale-0400",
                         "$layout-margin"
                       ],
                       "justifyContent": "space_between",
@@ -9613,7 +9613,7 @@
                           "type": "frame",
                           "id": "kl12j",
                           "name": "Actions",
-                          "gap": "$scale-600",
+                          "gap": "$scale-0600",
                           "alignItems": "center",
                           "children": [
                             {
@@ -9652,11 +9652,11 @@
                       },
                       "strokeAlignment": "inner",
                       "layout": "vertical",
-                      "gap": "$scale-200",
+                      "gap": "$scale-0200",
                       "padding": [
-                        "$scale-400",
+                        "$scale-0400",
                         "$layout-margin",
-                        "$scale-600",
+                        "$scale-0600",
                         "$layout-margin"
                       ],
                       "children": [
@@ -9743,9 +9743,9 @@
                       "name": "Bar",
                       "width": "fill_container",
                       "layout": "vertical",
-                      "gap": "$scale-400",
+                      "gap": "$scale-0400",
                       "padding": [
-                        "$scale-600",
+                        "$scale-0600",
                         "$layout-margin"
                       ],
                       "alignItems": "center",
@@ -9763,7 +9763,7 @@
                           "type": "frame",
                           "id": "h9OFq3",
                           "name": "Actions",
-                          "gap": "$scale-600",
+                          "gap": "$scale-0600",
                           "alignItems": "center",
                           "children": [
                             {
@@ -9802,11 +9802,11 @@
                       },
                       "strokeAlignment": "inner",
                       "layout": "vertical",
-                      "gap": "$scale-200",
+                      "gap": "$scale-0200",
                       "padding": [
-                        "$scale-400",
+                        "$scale-0400",
                         "$layout-margin",
-                        "$scale-600",
+                        "$scale-0600",
                         "$layout-margin"
                       ],
                       "alignItems": "center",
@@ -9894,9 +9894,9 @@
                       "name": "Bar",
                       "width": "fill_container",
                       "layout": "vertical",
-                      "gap": "$scale-400",
+                      "gap": "$scale-0400",
                       "padding": [
-                        "$scale-600",
+                        "$scale-0600",
                         "$layout-margin"
                       ],
                       "alignItems": "center",
@@ -9914,7 +9914,7 @@
                           "type": "frame",
                           "id": "tuZr9",
                           "name": "Actions",
-                          "gap": "$scale-600",
+                          "gap": "$scale-0600",
                           "alignItems": "center",
                           "children": [
                             {
@@ -9953,11 +9953,11 @@
                       },
                       "strokeAlignment": "inner",
                       "layout": "vertical",
-                      "gap": "$scale-200",
+                      "gap": "$scale-0200",
                       "padding": [
-                        "$scale-400",
+                        "$scale-0400",
                         "$layout-margin",
-                        "$scale-600",
+                        "$scale-0600",
                         "$layout-margin"
                       ],
                       "alignItems": "center",
@@ -10081,7 +10081,7 @@
                     ]
                   },
                   "layout": "vertical",
-                  "gap": "$scale-300",
+                  "gap": "$scale-0300",
                   "padding": [
                     "$space-block",
                     "$layout-margin"
@@ -10103,9 +10103,9 @@
                       "type": "frame",
                       "id": "Sg6W9",
                       "name": "Nav",
-                      "gap": "$scale-600",
+                      "gap": "$scale-0600",
                       "padding": [
-                        "$scale-300",
+                        "$scale-0300",
                         0,
                         0,
                         0
@@ -10213,7 +10213,7 @@
                     ]
                   },
                   "layout": "vertical",
-                  "gap": "$scale-300",
+                  "gap": "$scale-0300",
                   "padding": [
                     "$space-block",
                     "$layout-margin"
@@ -10235,9 +10235,9 @@
                       "type": "frame",
                       "id": "BWRrf",
                       "name": "Nav",
-                      "gap": "$scale-600",
+                      "gap": "$scale-0600",
                       "padding": [
-                        "$scale-300",
+                        "$scale-0300",
                         0,
                         0,
                         0
@@ -13700,8 +13700,8 @@
                   "fill": "$surface-subtle",
                   "cornerRadius": "$radius-full",
                   "padding": [
-                    "$scale-100",
-                    "$scale-300"
+                    "$scale-0100",
+                    "$scale-0300"
                   ],
                   "alignItems": "center",
                   "children": [
@@ -13729,8 +13729,8 @@
                   "strokeWidth": 1,
                   "strokeAlignment": "inner",
                   "padding": [
-                    "$scale-100",
-                    "$scale-300"
+                    "$scale-0100",
+                    "$scale-0300"
                   ],
                   "alignItems": "center",
                   "children": [
@@ -13756,8 +13756,8 @@
                   "fill": "$accent-blue",
                   "cornerRadius": "$radius-full",
                   "padding": [
-                    "$scale-100",
-                    "$scale-300"
+                    "$scale-0100",
+                    "$scale-0300"
                   ],
                   "alignItems": "center",
                   "children": [
@@ -13783,8 +13783,8 @@
                   "fill": "$accent-yellow",
                   "cornerRadius": "$radius-full",
                   "padding": [
-                    "$scale-100",
-                    "$scale-300"
+                    "$scale-0100",
+                    "$scale-0300"
                   ],
                   "alignItems": "center",
                   "children": [
@@ -13810,8 +13810,8 @@
                   "fill": "$accent-pink",
                   "cornerRadius": "$radius-full",
                   "padding": [
-                    "$scale-100",
-                    "$scale-300"
+                    "$scale-0100",
+                    "$scale-0300"
                   ],
                   "alignItems": "center",
                   "children": [
@@ -13913,7 +13913,7 @@
                   "reusable": true,
                   "width": 320,
                   "layout": "vertical",
-                  "gap": "$scale-200",
+                  "gap": "$scale-0200",
                   "children": [
                     {
                       "type": "frame",
@@ -13962,7 +13962,7 @@
                   "reusable": true,
                   "width": 320,
                   "layout": "vertical",
-                  "gap": "$scale-200",
+                  "gap": "$scale-0200",
                   "children": [
                     {
                       "type": "frame",
@@ -14011,7 +14011,7 @@
                   "reusable": true,
                   "width": 320,
                   "layout": "vertical",
-                  "gap": "$scale-200",
+                  "gap": "$scale-0200",
                   "children": [
                     {
                       "type": "frame",
@@ -14060,7 +14060,7 @@
                   "reusable": true,
                   "width": 320,
                   "layout": "vertical",
-                  "gap": "$scale-200",
+                  "gap": "$scale-0200",
                   "children": [
                     {
                       "type": "frame",
@@ -14591,14 +14591,14 @@
                   "name": "Grid",
                   "width": "fill_container",
                   "layout": "vertical",
-                  "gap": "$scale-600",
+                  "gap": "$scale-0600",
                   "children": [
                     {
                       "type": "frame",
                       "id": "c71VVd",
                       "name": "Row 1",
                       "width": "fill_container",
-                      "gap": "$scale-600",
+                      "gap": "$scale-0600",
                       "children": [
                         {
                           "id": "P86FL5",
@@ -14661,7 +14661,7 @@
                       "id": "wQt28",
                       "name": "Row 2",
                       "width": "fill_container",
-                      "gap": "$scale-600",
+                      "gap": "$scale-0600",
                       "children": [
                         {
                           "id": "UiA3Z",
@@ -14842,14 +14842,14 @@
                   "name": "Grid",
                   "width": "fill_container",
                   "layout": "vertical",
-                  "gap": "$scale-600",
+                  "gap": "$scale-0600",
                   "children": [
                     {
                       "type": "frame",
                       "id": "ZcYrC",
                       "name": "Row 1",
                       "width": "fill_container",
-                      "gap": "$scale-600",
+                      "gap": "$scale-0600",
                       "children": [
                         {
                           "id": "DNOVL",
@@ -14894,7 +14894,7 @@
                       "id": "swdha",
                       "name": "Row 2",
                       "width": "fill_container",
-                      "gap": "$scale-600",
+                      "gap": "$scale-0600",
                       "children": [
                         {
                           "id": "h298ml",
@@ -15063,14 +15063,14 @@
                   "name": "Grid",
                   "width": "fill_container",
                   "layout": "vertical",
-                  "gap": "$scale-600",
+                  "gap": "$scale-0600",
                   "children": [
                     {
                       "type": "frame",
                       "id": "FoSKc",
                       "name": "Row 1",
                       "width": "fill_container",
-                      "gap": "$scale-600",
+                      "gap": "$scale-0600",
                       "children": [
                         {
                           "id": "QOwVo",
@@ -15097,7 +15097,7 @@
                       "id": "F9mlR",
                       "name": "Row 2",
                       "width": "fill_container",
-                      "gap": "$scale-600",
+                      "gap": "$scale-0600",
                       "children": [
                         {
                           "id": "U1JWP",
@@ -15124,7 +15124,7 @@
                       "id": "wq80H",
                       "name": "Row 3",
                       "width": "fill_container",
-                      "gap": "$scale-600",
+                      "gap": "$scale-0600",
                       "children": [
                         {
                           "id": "QgnkX",
@@ -15169,7 +15169,7 @@
               "name": "Nav",
               "layout": "vertical",
               "padding": [
-                "$scale-300",
+                "$scale-0300",
                 0,
                 0,
                 0
@@ -15180,7 +15180,7 @@
                   "type": "frame",
                   "id": "a0c0w",
                   "name": "Row",
-                  "gap": "$scale-600",
+                  "gap": "$scale-0600",
                   "justifyContent": "center",
                   "alignItems": "center",
                   "children": [
@@ -15212,7 +15212,7 @@
                   "type": "frame",
                   "id": "fYQIi",
                   "name": "Row",
-                  "gap": "$scale-600",
+                  "gap": "$scale-0600",
                   "justifyContent": "center",
                   "alignItems": "center",
                   "children": [
@@ -15336,7 +15336,7 @@
                   "padding": [
                     0,
                     0,
-                    "$scale-600",
+                    "$scale-0600",
                     0
                   ],
                   "alignItems": "center",
@@ -15598,7 +15598,7 @@
           "id": "fHcSe",
           "name": "Frame 1",
           "layout": "vertical",
-          "gap": "$scale-100",
+          "gap": "$scale-0100",
           "alignItems": "center",
           "children": [
             {
@@ -15607,14 +15607,14 @@
               "fill": "$neutral-900",
               "content": "Junk Drawer Journey",
               "fontFamily": "$font-display",
-              "fontSize": "$font-size-14",
+              "fontSize": "$font-size-014",
               "fontWeight": "normal"
             },
             {
               "type": "frame",
               "id": "b2nha",
               "name": "Number",
-              "fill": "$yellow-50",
+              "fill": "$yellow-050",
               "cornerRadius": "$radius-md",
               "layout": "vertical",
               "gap": 10,
@@ -15628,7 +15628,7 @@
                   "fill": "$text-default",
                   "content": "001",
                   "fontFamily": "$font-display",
-                  "fontSize": "$font-size-12",
+                  "fontSize": "$font-size-012",
                   "fontWeight": "500"
                 }
               ]
@@ -15811,7 +15811,7 @@
                   "fill": "$neutral-700",
                   "content": "Detail of the Label",
                   "fontFamily": "$font-body",
-                  "fontSize": "$font-size-14",
+                  "fontSize": "$font-size-014",
                   "fontWeight": "500"
                 }
               ]
@@ -15895,51 +15895,51 @@
       "type": "string",
       "value": "Inter"
     },
-    "scale-0": {
+    "scale-0000": {
       "type": "number",
       "value": 0
     },
-    "scale-25": {
+    "scale-0025": {
       "type": "number",
       "value": 1
     },
-    "scale-50": {
+    "scale-0050": {
       "type": "number",
       "value": 2
     },
-    "scale-100": {
+    "scale-0100": {
       "type": "number",
       "value": 4
     },
-    "scale-200": {
+    "scale-0200": {
       "type": "number",
       "value": 8
     },
-    "scale-300": {
+    "scale-0300": {
       "type": "number",
       "value": 12
     },
-    "scale-400": {
+    "scale-0400": {
       "type": "number",
       "value": 16
     },
-    "scale-500": {
+    "scale-0500": {
       "type": "number",
       "value": 20
     },
-    "scale-600": {
+    "scale-0600": {
       "type": "number",
       "value": 24
     },
-    "scale-700": {
+    "scale-0700": {
       "type": "number",
       "value": 28
     },
-    "scale-800": {
+    "scale-0800": {
       "type": "number",
       "value": 32
     },
-    "scale-900": {
+    "scale-0900": {
       "type": "number",
       "value": 40
     },
@@ -15987,7 +15987,7 @@
       "type": "number",
       "value": 380
     },
-    "blue-50": {
+    "blue-050": {
       "type": "color",
       "value": "#eef9fe"
     },
@@ -16031,7 +16031,7 @@
       "type": "color",
       "value": "#0c1d25"
     },
-    "yellow-50": {
+    "yellow-050": {
       "type": "color",
       "value": "#f7f9e4"
     },
@@ -16075,7 +16075,7 @@
       "type": "color",
       "value": "#201a0b"
     },
-    "pink-50": {
+    "pink-050": {
       "type": "color",
       "value": "#fef4f6"
     },
@@ -16119,7 +16119,7 @@
       "type": "color",
       "value": "#2f0e18"
     },
-    "neutral-50": {
+    "neutral-050": {
       "type": "color",
       "value": "#f4f7f9"
     },
@@ -16163,71 +16163,71 @@
       "type": "color",
       "value": "#121c21"
     },
-    "font-size-12": {
+    "font-size-012": {
       "type": "number",
       "value": 12
     },
-    "font-size-13": {
+    "font-size-013": {
       "type": "number",
       "value": 13
     },
-    "font-size-14": {
+    "font-size-014": {
       "type": "number",
       "value": 14
     },
-    "font-size-16": {
+    "font-size-016": {
       "type": "number",
       "value": 16
     },
-    "font-size-18": {
+    "font-size-018": {
       "type": "number",
       "value": 18
     },
-    "font-size-20": {
+    "font-size-020": {
       "type": "number",
       "value": 20
     },
-    "font-size-22": {
+    "font-size-022": {
       "type": "number",
       "value": 22
     },
-    "font-size-24": {
+    "font-size-024": {
       "type": "number",
       "value": 24
     },
-    "font-size-28": {
+    "font-size-028": {
       "type": "number",
       "value": 28
     },
-    "font-size-32": {
+    "font-size-032": {
       "type": "number",
       "value": 32
     },
-    "font-size-40": {
+    "font-size-040": {
       "type": "number",
       "value": 40
     },
-    "font-size-44": {
+    "font-size-044": {
       "type": "number",
       "value": 44
     },
-    "font-size-48": {
+    "font-size-048": {
       "type": "number",
       "value": 48
     },
-    "font-size-64": {
+    "font-size-064": {
       "type": "number",
       "value": 64
     },
-    "font-size-72": {
+    "font-size-072": {
       "type": "number",
       "value": 72
     },
-    "font-size-80": {
+    "font-size-080": {
       "type": "number",
       "value": 80
     },
-    "font-size-96": {
+    "font-size-096": {
       "type": "number",
       "value": 96
     },
@@ -16239,7 +16239,7 @@
       "type": "color",
       "value": [
         {
-          "value": "$neutral-50",
+          "value": "$neutral-050",
           "theme": {
             "mode": "light"
           }
@@ -16273,7 +16273,7 @@
       "type": "color",
       "value": [
         {
-          "value": "$neutral-50",
+          "value": "$neutral-050",
           "theme": {
             "mode": "light"
           }
@@ -16296,7 +16296,7 @@
           }
         },
         {
-          "value": "$neutral-50",
+          "value": "$neutral-050",
           "theme": {
             "mode": "dark"
           }
@@ -16398,7 +16398,7 @@
           }
         },
         {
-          "value": "$neutral-50",
+          "value": "$neutral-050",
           "theme": {
             "mode": "dark"
           }
@@ -16426,7 +16426,7 @@
       "type": "color",
       "value": [
         {
-          "value": "$neutral-50",
+          "value": "$neutral-050",
           "theme": {
             "mode": "light"
           }
@@ -16551,7 +16551,7 @@
           }
         },
         {
-          "value": "$neutral-50",
+          "value": "$neutral-050",
           "theme": {
             "mode": "dark"
           }
@@ -16749,7 +16749,7 @@
     },
     "layout-gutter": {
       "type": "number",
-      "value": "$scale-400"
+      "value": "$scale-0400"
     },
     "layout-margin": {
       "type": "number",
@@ -16767,7 +16767,7 @@
           }
         },
         {
-          "value": "$scale-600",
+          "value": "$scale-0600",
           "theme": {
             "device": "sm"
           }
@@ -16790,13 +16790,13 @@
           }
         },
         {
-          "value": "$scale-900",
+          "value": "$scale-0900",
           "theme": {
             "device": "md"
           }
         },
         {
-          "value": "$scale-600",
+          "value": "$scale-0600",
           "theme": {
             "device": "sm"
           }
@@ -16819,13 +16819,13 @@
           }
         },
         {
-          "value": "$scale-900",
+          "value": "$scale-0900",
           "theme": {
             "device": "md"
           }
         },
         {
-          "value": "$scale-600",
+          "value": "$scale-0600",
           "theme": {
             "device": "sm"
           }
@@ -16840,7 +16840,7 @@
     },
     "space-stack": {
       "type": "number",
-      "value": "$scale-400"
+      "value": "$scale-0400"
     },
     "layout-show-nav": {
       "type": "boolean",
@@ -16902,23 +16902,23 @@
     },
     "radius-none": {
       "type": "number",
-      "value": "$scale-0"
+      "value": "$scale-0000"
     },
     "radius-sm": {
       "type": "number",
-      "value": "$scale-100"
+      "value": "$scale-0100"
     },
     "radius-md": {
       "type": "number",
-      "value": "$scale-200"
+      "value": "$scale-0200"
     },
     "radius-lg": {
       "type": "number",
-      "value": "$scale-300"
+      "value": "$scale-0300"
     },
     "radius-xl": {
       "type": "number",
-      "value": "$scale-400"
+      "value": "$scale-0400"
     },
     "radius-full": {
       "type": "number",
@@ -18419,43 +18419,43 @@
       "type": "number",
       "value": 700
     },
-    "font-line-height-16": {
+    "font-line-height-016": {
       "type": "number",
       "value": 16
     },
-    "font-line-height-20": {
+    "font-line-height-020": {
       "type": "number",
       "value": 20
     },
-    "font-line-height-24": {
+    "font-line-height-024": {
       "type": "number",
       "value": 24
     },
-    "font-line-height-28": {
+    "font-line-height-028": {
       "type": "number",
       "value": 28
     },
-    "font-line-height-32": {
+    "font-line-height-032": {
       "type": "number",
       "value": 32
     },
-    "font-line-height-36": {
+    "font-line-height-036": {
       "type": "number",
       "value": 36
     },
-    "font-line-height-40": {
+    "font-line-height-040": {
       "type": "number",
       "value": 40
     },
-    "font-line-height-48": {
+    "font-line-height-048": {
       "type": "number",
       "value": 48
     },
-    "font-line-height-56": {
+    "font-line-height-056": {
       "type": "number",
       "value": 56
     },
-    "font-line-height-72": {
+    "font-line-height-072": {
       "type": "number",
       "value": 72
     },
@@ -18471,7 +18471,7 @@
       "type": "number",
       "value": -1.92
     },
-    "font-line-height-76": {
+    "font-line-height-076": {
       "type": "number",
       "value": 76
     },
@@ -18479,7 +18479,7 @@
       "type": "number",
       "value": -0.4
     },
-    "font-line-height-44": {
+    "font-line-height-044": {
       "type": "number",
       "value": 44
     },
@@ -18487,7 +18487,7 @@
       "type": "number",
       "value": 100
     },
-    "font-line-height-52": {
+    "font-line-height-052": {
       "type": "number",
       "value": 52
     },
@@ -18499,11 +18499,11 @@
       "type": "number",
       "value": -0.96
     },
-    "font-line-height-84": {
+    "font-line-height-084": {
       "type": "number",
       "value": 84
     },
-    "font-line-height-68": {
+    "font-line-height-068": {
       "type": "number",
       "value": 68
     },
