@@ -175,7 +175,8 @@ A series is a numbered set of artwork, like "Junk Drawer Journey".
   description, plus `domains` (one or more of art, design, spirit, life,
   studio) and `status` (exploring, active, resting, complete, or promoted).
   Optional: `premise` (one line, "an excuse to…"), `question`, `started`,
-  `container`, and `threads`. The file name is its URL:
+  `container`, and `threads`. The series page shows `status` as a tag beside
+  the eyebrow. The file name is its URL:
   `junk-drawer-journey.md` → `/series/junk-drawer-journey`.
 - **An entry:** a folder in `src/content/entries/` with an `index.md` and the
   artwork. Set `series:` to the series file name, plus `number`, `year`,
