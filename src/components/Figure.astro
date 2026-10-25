@@ -1,0 +1,53 @@
+---
+// Figure / Artwork: an image in a <figure>, with an optional <figcaption>.
+// The image keeps its own proportions and is never cropped. It's `width`
+// wide (522px by default) and shrinks to fit on smaller screens.
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+
+interface Props {
+  src: ImageMetadata;
+  alt: string;
+  caption?: string;
+  width?: number;
+  loading?: 'eager' | 'lazy';
+}
+
+const { src, alt, caption, width = 522, loading = 'lazy' } = Astro.props;
+---
+
+<figure class="figure" style={`--figure-width: ${width}px`}>
+  <Image
+    class="figure__image"
+    src={src}
+    alt={alt}
+    width={width}
+    widths={[width, width * 2]}
+    sizes={`(max-width: ${width}px) 100vw, ${width}px`}
+    loading={loading}
+  />
+  {caption && <figcaption class="figure__caption">{caption}</figcaption>}
+</figure>
+
+<style>
+  .figure {
+    display: flex;
+    flex-direction: column;
+    gap: var(--scale-200);
+    width: min(100%, var(--figure-width));
+    margin: 0;
+  }
+
+  .figure__image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .figure__caption {
+    color: var(--color-text-muted);
+    font-size: var(--type-body2-size);
+    line-height: var(--type-body2-line-height);
+    letter-spacing: var(--type-body2-letter-spacing);
+  }
+</style>
