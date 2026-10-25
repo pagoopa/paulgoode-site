@@ -100,10 +100,10 @@ img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: var(--scale-200);
+  gap: var(--scale-0200);
   border: 1px solid var(--color-border-emphasis);
   border-radius: var(--radius-md);
-  padding: var(--scale-300) var(--scale-400);
+  padding: var(--scale-0300) var(--scale-0400);
   font-size: var(--type-eyebrow2-size);
   line-height: var(--type-eyebrow2-line-height);
   letter-spacing: var(--type-eyebrow2-letter-spacing);
@@ -138,7 +138,7 @@ img {
 .link-nav,
 .link-nav:hover {
   position: relative;
-  padding-block: var(--scale-200);
+  padding-block: var(--scale-0200);
   font-size: var(--type-eyebrow2-size);
   line-height: var(--type-eyebrow2-line-height);
   letter-spacing: var(--type-eyebrow2-letter-spacing);
@@ -150,7 +150,7 @@ img {
 /* The underline sits 4px below the label, inside the link's 8px padding. */
 .link-nav .link-label {
   display: block;
-  padding-bottom: var(--scale-100);
+  padding-bottom: var(--scale-0100);
   border-bottom: 2px solid transparent;
 }
 
@@ -165,8 +165,8 @@ img {
   position: relative;
   display: inline-flex;
   align-items: center;
-  gap: var(--scale-200);
-  padding-block: var(--scale-100);
+  gap: var(--scale-0200);
+  padding-block: var(--scale-0100);
   font-size: var(--type-body1-size);
   line-height: var(--type-body1-line-height);
   letter-spacing: var(--type-body1-letter-spacing);
@@ -179,7 +179,7 @@ img {
 }
 
 .link-standalone .link-label {
-  padding-bottom: var(--scale-50);
+  padding-bottom: var(--scale-0050);
   border-bottom: 1px solid transparent;
 }
 
@@ -206,7 +206,7 @@ img {
 .link-standalone:focus-visible::after {
   content: '';
   position: absolute;
-  inset: -2px calc(-1 * var(--scale-200));
+  inset: -2px calc(-1 * var(--scale-0200));
   border: 2px solid var(--color-border-focus);
   border-radius: var(--radius-sm);
 }
