@@ -18,9 +18,9 @@ const entries = await getSeriesEntries(series.id);
 const latest = entries.toSorted((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())[0];
 ---
 
-<Layout title={series.data.name} description={series.data.description}>
+<Layout title={series.data.title} description={series.data.description}>
   <div class="wrap series-landing">
-    <SectionHeader eyebrow="Series" title={series.data.name} intro={series.data.description} level="h1" />
+    <SectionHeader eyebrow="Series" title={series.data.title} intro={series.data.description} level="h1" />
 
     {latest && (
       <ProjectCard
