@@ -1,0 +1,14 @@
+---
+// Journal, page 2 onward: /blog/page/2, /blog/page/3, …
+import JournalPage from '../../../components/JournalPage.astro';
+import { getJournalPosts, POSTS_PER_PAGE } from '../../../lib/blog';
+
+export async function getStaticPaths() {
+  const pageCount = Math.ceil((await getJournalPosts()).length / POSTS_PER_PAGE);
+  return Array.from({ length: Math.max(0, pageCount - 1) }, (_, i) => ({ params: { page: String(i + 2) } }));
+}
+
+const page = Number(Astro.params.page);
+---
+
+<JournalPage page={page} />
