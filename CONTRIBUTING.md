@@ -147,6 +147,20 @@ The journal page shows each post in full. To show only the start, put
 Everything above the line shows on the journal page, followed by a "Read
 more" link to the full post.
 
+## Series
+
+A series is a numbered set of artwork, like "Junk Drawer Journey".
+
+- **The series:** `src/content/series-info/<series>.md` holds its name and
+  description. The file name is its URL: `junk-drawer-journey.md` →
+  `/series/junk-drawer-journey`.
+- **An entry:** a folder in `src/content/series/` with an `index.md` and the
+  artwork. Set `series:` to the series file name, plus `number`, `year`,
+  `location`, `image` (with `alt` and an optional `caption`), `title`,
+  `description` and `pubDate`. It shows at `/series/<series>/<entry folder>`.
+- The series page lists every entry in number order and features the newest.
+- `draft: true` keeps an entry off the live site; it still shows locally.
+
 ## The shop
 
 The shop lives on Big Cartel at https://shop.paulgoode.com, not in this
