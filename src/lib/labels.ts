@@ -7,3 +7,5 @@ export const domain = z.enum(['art', 'design', 'spirit', 'life', 'studio']);
 export const thread = z.string().regex(/^[a-z0-9-]+$/);
 
 export const seriesStatus = z.enum(['exploring', 'active', 'resting', 'complete', 'promoted']);
+
+export type SeriesStatus = z.infer<typeof seriesStatus>;

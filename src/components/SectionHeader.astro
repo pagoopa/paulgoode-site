@@ -13,7 +13,17 @@ const Heading = level;
 ---
 
 <header class="section-header">
-  {eyebrow && <p class="eyebrow">{eyebrow}</p>}
+  {
+    eyebrow &&
+      (Astro.slots.has('badge') ? (
+        <p class="section-header__eyebrow">
+          <span class="eyebrow">{eyebrow}</span>
+          <slot name="badge" />
+        </p>
+      ) : (
+        <p class="eyebrow">{eyebrow}</p>
+      ))
+  }
   <Heading class="section-header__title">{title}</Heading>
   {intro && <p class="section-header__intro">{intro}</p>}
 </header>
@@ -28,6 +38,12 @@ const Heading = level;
 
   .section-header > * {
     margin: 0;
+  }
+
+  .section-header__eyebrow {
+    display: flex;
+    align-items: center;
+    gap: var(--scale-0300);
   }
 
   .section-header__title {

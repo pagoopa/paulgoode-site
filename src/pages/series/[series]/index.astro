@@ -4,6 +4,7 @@
 // URL: /series/<series>. The copy lives in src/content/series/<series>.md.
 import Layout from '../../../layouts/Layout.astro';
 import SectionHeader from '../../../components/SectionHeader.astro';
+import StatusBadge from '../../../components/StatusBadge.astro';
 import ProjectCard from '../../../components/ProjectCard.astro';
 import { getCollection } from 'astro:content';
 import { getSeriesEntries, entryUrl } from '../../../lib/series';
@@ -20,7 +21,9 @@ const latest = entries.toSorted((a, b) => b.data.pubDate.valueOf() - a.data.pubD
 
 <Layout title={series.data.title} description={series.data.description}>
   <div class="wrap series-landing">
-    <SectionHeader eyebrow="Series" title={series.data.title} intro={series.data.description} level="h1" />
+    <SectionHeader eyebrow="Series" title={series.data.title} intro={series.data.description} level="h1">
+      <StatusBadge slot="badge" status={series.data.status} />
+    </SectionHeader>
 
     {latest && (
       <ProjectCard
