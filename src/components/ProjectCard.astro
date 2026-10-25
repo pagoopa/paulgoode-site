@@ -75,13 +75,18 @@ const {
     border-color: var(--color-border-strong);
   }
 
+  /* 16:10, the shape of a thumbnail (exported at 720 × 450). */
   .card__media {
-    height: 216px;
+    position: relative;
+    aspect-ratio: 16 / 10;
     background: var(--color-surface-subtle);
   }
 
-  /* Thumbnails fill the box; tall artwork is cropped from the top. */
+  /* Images fill the box without changing its size; anything taller, like full
+     artwork, is cropped from the top. */
   .card__image {
+    position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -154,17 +159,11 @@ const {
       min-height: 206px;
     }
 
-    /* The image fills the box without setting its height: the content does. */
+    /* The panel is as tall as the content beside it. */
     .card--side .card__media {
-      position: relative;
       flex: none;
       width: 280px;
-      height: auto;
-    }
-
-    .card--side .card__image {
-      position: absolute;
-      inset: 0;
+      aspect-ratio: auto;
     }
 
     .card--side .card__content {

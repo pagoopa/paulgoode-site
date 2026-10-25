@@ -165,6 +165,9 @@ A series is a numbered set of artwork, like "Junk Drawer Journey".
 - **Artwork size:** export it 1044px wide (twice the 522px it shows at), any
   height. JPG at high quality keeps it small; PNG for flat line art. Astro
   makes the smaller versions. Keep full-size masters outside the repo.
+- **Thumbnail (optional):** the card image on the series page. Export it 720 ×
+  450 (16:10) and add `thumbnail: ./thumbnail.jpg`. Without one, the card
+  uses the artwork, cropped from the top.
 - The series page lists every entry in number order and features the newest.
 - `draft: true` keeps an entry off the live site; it still shows locally.
 
