@@ -1,8 +1,9 @@
 ---
 title: "Deliverance in San Antonio"
+description: "Placeholder: a sentence or two about this drawing for the series page."
 pubDate: 2026-09-27
 draft: true
-series: "Junk Drawer Journey"
+series: junk-drawer-journey
 number: 1
 year: 2022
 location: "San Antonio, TX"

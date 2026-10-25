@@ -1,0 +1,96 @@
+---
+// Series landing ("Series Landing" boards in design/site.pen): the series
+// name and description, the latest entry, then every entry in number order.
+// URL: /series/<series>. The copy lives in src/content/series-info/<series>.md.
+import Layout from '../../../layouts/Layout.astro';
+import SectionHeader from '../../../components/SectionHeader.astro';
+import ProjectCard from '../../../components/ProjectCard.astro';
+import { getCollection } from 'astro:content';
+import { getSeriesEntries, entryUrl } from '../../../lib/series';
+
+export async function getStaticPaths() {
+  const allSeries = await getCollection('seriesInfo');
+  return allSeries.map((series) => ({ params: { series: series.id }, props: { series } }));
+}
+
+const { series } = Astro.props;
+const entries = await getSeriesEntries(series.id);
+const latest = entries.toSorted((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())[0];
+---
+
+<Layout title={series.data.name} description={series.data.description}>
+  <div class="wrap series-landing">
+    <SectionHeader eyebrow="Series" title={series.data.name} intro={series.data.description} level="h1" />
+
+    {latest && (
+      <ProjectCard
+        layout="side"
+        href={entryUrl(latest)}
+        eyebrow={`Latest · No. ${latest.data.number}`}
+        title={latest.data.title}
+        summary={latest.data.description}
+        linkLabel="View entry"
+        image={latest.data.image.src}
+        loading="eager"
+      />
+    )}
+
+    {entries.length > 0 ? (
+      <ul class="series-landing__grid">
+        {entries.map((entry) => (
+          <li>
+            <ProjectCard
+              href={entryUrl(entry)}
+              eyebrow={`No. ${entry.data.number} · ${entry.data.year}`}
+              title={entry.data.title}
+              summary={entry.data.description}
+              linkLabel="View entry"
+              image={entry.data.image.src}
+            />
+          </li>
+        ))}
+      </ul>
+    ) : (
+      <p>No entries yet.</p>
+    )}
+  </div>
+</Layout>
+
+<style>
+  .series-landing {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-block);
+    padding-block: var(--space-section);
+  }
+
+  /* Entries: three across on desktop, two on tablet, one on phones. */
+  .series-landing__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--scale-0600);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .series-landing__grid > li {
+    display: flex;
+  }
+
+  .series-landing__grid :global(.card) {
+    flex: 1;
+  }
+
+  @media (max-width: 1023px) {
+    .series-landing__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 599px) {
+    .series-landing__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

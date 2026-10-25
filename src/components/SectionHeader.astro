@@ -1,0 +1,45 @@
+---
+// Section header / Left: eyebrow, title and intro.
+interface Props {
+  eyebrow?: string;
+  title: string;
+  intro?: string;
+  // The page's main heading uses h1; sections further down use h2.
+  level?: 'h1' | 'h2';
+}
+
+const { eyebrow, title, intro, level = 'h2' } = Astro.props;
+const Heading = level;
+---
+
+<header class="section-header">
+  {eyebrow && <p class="eyebrow">{eyebrow}</p>}
+  <Heading class="section-header__title">{title}</Heading>
+  {intro && <p class="section-header__intro">{intro}</p>}
+</header>
+
+<style>
+  .section-header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-stack);
+    width: min(100%, 720px);
+  }
+
+  .section-header > * {
+    margin: 0;
+  }
+
+  .section-header__title {
+    font-size: var(--type-h2-size);
+    line-height: var(--type-h2-line-height);
+    letter-spacing: var(--type-h2-letter-spacing);
+  }
+
+  .section-header__intro {
+    color: var(--color-text-muted);
+    font-size: var(--type-p1-size);
+    line-height: var(--type-p1-line-height);
+    letter-spacing: var(--type-p1-letter-spacing);
+  }
+</style>

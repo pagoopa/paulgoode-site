@@ -1,4 +1,4 @@
-import { defineCollection } from 'astro:content';
+import { defineCollection, reference } from 'astro:content';
 import { z } from 'astro/zod';
 import { glob } from 'astro/loaders';
 
@@ -16,6 +16,16 @@ const blog = defineCollection({
     }),
 });
 
+// The series themselves: one file per series in src/content/series-info/.
+// The file name is the series id and its URL: junk-drawer-journey.md → /series/junk-drawer-journey.
+const seriesInfo = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/series-info' }),
+  schema: z.object({
+    name: z.string(),
+    description: z.string(),
+  }),
+});
+
 // Series entries: one piece of artwork in a numbered series, with a write-up.
 // Each entry is a folder with an index.md and its image.
 const series = defineCollection({
@@ -26,8 +36,8 @@ const series = defineCollection({
       description: z.string().optional(),
       pubDate: z.coerce.date(),
       draft: z.boolean().default(false),
-      // The series this entry belongs to, like a category.
-      series: z.string(),
+      // The series this entry belongs to: the id of a file in src/content/series-info/.
+      series: reference('seriesInfo'),
       // Shown with three digits: 1 → "001".
       number: z.union([z.number().int(), z.string()]).transform((n) => String(n).padStart(3, '0')),
       year: z.number().int(),
@@ -57,4 +67,4 @@ const pages = defineCollection({
   }),
 });
 
-export const collections = { blog, series, pages };
+export const collections = { blog, seriesInfo, series, pages };

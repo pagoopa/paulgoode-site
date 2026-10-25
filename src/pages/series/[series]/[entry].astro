@@ -1,23 +1,24 @@
 ---
-// Series entry page ("Series" board in design/site.pen): hero artwork, title
-// and date, the write-up, then the series details.
-import Layout from '../../layouts/Layout.astro';
-import Figure from '../../components/Figure.astro';
-import Detail from '../../components/Detail.astro';
-import { getCollection, render } from 'astro:content';
+// Series entry page ("Series" boards in design/site.pen): hero artwork, title
+// and date, the write-up, then the series details. URL: /series/<series>/<entry>.
+import Layout from '../../../layouts/Layout.astro';
+import Figure from '../../../components/Figure.astro';
+import Detail from '../../../components/Detail.astro';
+import { getEntry, render } from 'astro:content';
+import { getSeriesEntries } from '../../../lib/series';
 
 export async function getStaticPaths() {
-  // Drafts show while running the site locally, not on the live site.
-  const entries = await getCollection('series', ({ data }) => import.meta.env.DEV || !data.draft);
+  const entries = await getSeriesEntries();
   return entries.map((entry) => ({
-    params: { id: entry.id },
+    params: { series: entry.data.series.id, entry: entry.id },
     props: { entry },
   }));
 }
 
 const { entry } = Astro.props;
 const { Content } = await render(entry);
-const { title, description, pubDate, image, series, number, year, location } = entry.data;
+const { title, description, pubDate, image, number, year, location } = entry.data;
+const series = await getEntry(entry.data.series);
 
 const dateFmt = new Intl.DateTimeFormat('en-US', {
   year: 'numeric',
@@ -42,7 +43,7 @@ const dateFmt = new Intl.DateTimeFormat('en-US', {
     </div>
 
     <div class="series__info">
-      <Detail rows={[{ label: 'Series', value: series }, { label: 'Number', value: number }]} />
+      <Detail rows={[{ label: 'Series', value: series.data.name }, { label: 'Number', value: number }]} />
       <Detail rows={[{ label: 'Year', value: String(year) }, { label: 'Location', value: location }]} />
     </div>
   </article>

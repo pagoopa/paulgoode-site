@@ -4,8 +4,8 @@
     {
       "type": "rectangle",
       "id": "BChwa",
-      "x": -6965,
-      "y": 5048,
+      "x": -6741,
+      "y": -1419,
       "fill": "#CCCCCC",
       "width": 548,
       "height": 233
@@ -14736,6 +14736,272 @@
     },
     {
       "type": "frame",
+      "id": "x5KRR",
+      "x": -3972,
+      "y": 4520,
+      "name": "Series Landing — Desktop (1200)",
+      "theme": {
+        "mode": "light",
+        "device": "lg"
+      },
+      "clip": true,
+      "width": 1200,
+      "fill": "$surface-default",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "D096yz",
+          "type": "ref",
+          "ref": "S5OtQe",
+          "name": "Header",
+          "width": "fill_container",
+          "descendants": {
+            "oekhv": {
+              "id": "TcLnL",
+              "type": "ref",
+              "ref": "eFsWC",
+              "name": "Blog",
+              "descendants": {
+                "jynNC": {
+                  "content": "BLOG"
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "mjSa2",
+          "name": "Main",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            "$space-section",
+            "$layout-margin"
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "r8zmS1",
+              "name": "Column",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": "$space-block",
+              "children": [
+                {
+                  "id": "jPzny",
+                  "type": "ref",
+                  "ref": "g7uira",
+                  "name": "Intro",
+                  "width": 720,
+                  "descendants": {
+                    "z9frDW": {
+                      "content": "SERIES",
+                      "context": "This will just be a label that says, \"SERIES\""
+                    },
+                    "SqBTJ": {
+                      "content": "Junk Drawer Journey",
+                      "context": "Title of the series."
+                    },
+                    "zSXuD": {
+                      "content": "A short description of the series: what it is, where it started and what ties the pieces together.",
+                      "context": "Description of the series."
+                    }
+                  }
+                },
+                {
+                  "id": "ypyHh",
+                  "type": "ref",
+                  "ref": "y6vFR6",
+                  "name": "Featured — Latest entry",
+                  "width": "fill_container",
+                  "context": "The most recently published entry in this series.",
+                  "descendants": {
+                    "W49He": {
+                      "content": "LATEST · NO. 001"
+                    },
+                    "e41yZ": {
+                      "content": "Deliverance in San Antonio"
+                    },
+                    "VYFHh": {
+                      "content": "A sentence or two about the entry, from its description."
+                    },
+                    "Fk5nN": {
+                      "content": "View entry"
+                    }
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "TuNYI",
+                  "name": "Grid",
+                  "context": "Every entry in this series, in number order (001 first).",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": "$scale-0600",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "cKdAx",
+                      "name": "Row 1",
+                      "width": "fill_container",
+                      "gap": "$scale-0600",
+                      "children": [
+                        {
+                          "id": "EAaqv",
+                          "type": "ref",
+                          "ref": "ZwNI4",
+                          "name": "Entry — 001",
+                          "width": "fill_container",
+                          "descendants": {
+                            "Mng70": {
+                              "content": "NO. 001 · 2022"
+                            },
+                            "QaGQc": {
+                              "content": "Deliverance in San Antonio"
+                            },
+                            "mlzay": {
+                              "content": "A sentence or two about the entry, from its description."
+                            },
+                            "nAg9p": {
+                              "content": "View entry"
+                            }
+                          }
+                        },
+                        {
+                          "id": "sm6OG",
+                          "type": "ref",
+                          "ref": "ZwNI4",
+                          "name": "Entry — 002",
+                          "width": "fill_container",
+                          "descendants": {
+                            "Mng70": {
+                              "content": "NO. 002 · 2022"
+                            },
+                            "QaGQc": {
+                              "content": "Entry title"
+                            },
+                            "mlzay": {
+                              "content": "A sentence or two about the entry, from its description."
+                            },
+                            "nAg9p": {
+                              "content": "View entry"
+                            }
+                          }
+                        },
+                        {
+                          "id": "gVdYN",
+                          "type": "ref",
+                          "ref": "ZwNI4",
+                          "name": "Entry — 003",
+                          "width": "fill_container",
+                          "descendants": {
+                            "Mng70": {
+                              "content": "NO. 003 · 2023"
+                            },
+                            "QaGQc": {
+                              "content": "Entry title"
+                            },
+                            "mlzay": {
+                              "content": "A sentence or two about the entry, from its description."
+                            },
+                            "nAg9p": {
+                              "content": "View entry"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "I90rp",
+                      "name": "Row 2",
+                      "width": "fill_container",
+                      "gap": "$scale-0600",
+                      "children": [
+                        {
+                          "id": "PpGD1",
+                          "type": "ref",
+                          "ref": "ZwNI4",
+                          "name": "Entry — 004",
+                          "width": "fill_container",
+                          "descendants": {
+                            "Mng70": {
+                              "content": "NO. 004 · 2023"
+                            },
+                            "QaGQc": {
+                              "content": "Entry title"
+                            },
+                            "mlzay": {
+                              "content": "A sentence or two about the entry, from its description."
+                            },
+                            "nAg9p": {
+                              "content": "View entry"
+                            }
+                          }
+                        },
+                        {
+                          "id": "O7emk",
+                          "type": "ref",
+                          "ref": "ZwNI4",
+                          "name": "Entry — 005",
+                          "width": "fill_container",
+                          "descendants": {
+                            "Mng70": {
+                              "content": "NO. 005 · 2024"
+                            },
+                            "QaGQc": {
+                              "content": "Entry title"
+                            },
+                            "mlzay": {
+                              "content": "A sentence or two about the entry, from its description."
+                            },
+                            "nAg9p": {
+                              "content": "View entry"
+                            }
+                          }
+                        },
+                        {
+                          "id": "NPmO9",
+                          "type": "ref",
+                          "ref": "ZwNI4",
+                          "name": "Entry — 006",
+                          "width": "fill_container",
+                          "descendants": {
+                            "Mng70": {
+                              "content": "NO. 006 · 2024"
+                            },
+                            "QaGQc": {
+                              "content": "Entry title"
+                            },
+                            "mlzay": {
+                              "content": "A sentence or two about the entry, from its description."
+                            },
+                            "nAg9p": {
+                              "content": "View entry"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e8ke96",
+          "type": "ref",
+          "ref": "vu6kH",
+          "name": "Footer",
+          "width": "fill_container"
+        }
+      ]
+    },
+    {
+      "type": "frame",
       "id": "mVe2c",
       "x": -2652,
       "y": 1785,
@@ -15260,8 +15526,8 @@
     {
       "type": "rectangle",
       "id": "I8cNH",
-      "x": -6374,
-      "y": 4419,
+      "x": -8140,
+      "y": 8209,
       "name": "image 1",
       "fill": {
         "type": "image",
@@ -15274,8 +15540,8 @@
     {
       "type": "frame",
       "id": "F6FNm",
-      "x": -6698,
-      "y": 5491,
+      "x": -7181,
+      "y": 4520,
       "name": "Series — Desktop (1200)",
       "theme": {
         "mode": "light",
@@ -15570,8 +15836,8 @@
       "ref": "S5OtQe",
       "name": "Header",
       "width": "fill_container(1200)",
-      "x": -6662,
-      "y": 5328
+      "x": -6913,
+      "y": 8135
     },
     {
       "id": "vForv",
@@ -15585,8 +15851,8 @@
     {
       "type": "frame",
       "id": "CT0pC",
-      "x": -8087,
-      "y": 5688,
+      "x": -7809,
+      "y": 8128,
       "name": "Content",
       "width": 720,
       "layout": "vertical",
@@ -15747,8 +16013,8 @@
     {
       "type": "frame",
       "id": "spi1v",
-      "x": -6932,
-      "y": 5091,
+      "x": -6708,
+      "y": -1376,
       "name": "Detail / Item",
       "reusable": true,
       "clip": true,
@@ -15823,8 +16089,8 @@
     {
       "type": "frame",
       "id": "MAHBg",
-      "x": -6932,
-      "y": 5152,
+      "x": -6708,
+      "y": -1315,
       "name": "Detail",
       "reusable": true,
       "width": 468,
@@ -15868,8 +16134,8 @@
     {
       "type": "frame",
       "id": "Zksjh",
-      "x": -5378,
-      "y": 5491,
+      "x": -5861,
+      "y": 4520,
       "name": "Series — Tablet (810)",
       "theme": {
         "mode": "light",
@@ -16152,8 +16418,8 @@
     {
       "type": "frame",
       "id": "uABk5",
-      "x": -4448,
-      "y": 5491,
+      "x": -4931,
+      "y": 4520,
       "name": "Series — Mobile (390)",
       "theme": {
         "mode": "light",
@@ -16515,6 +16781,534 @@
                     },
                     {
                       "id": "KAOUH",
+                      "type": "ref",
+                      "ref": "eFsWC",
+                      "name": "About",
+                      "descendants": {
+                        "jynNC": {
+                          "content": "ABOUT"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "Uzp6g",
+      "x": -2652,
+      "y": 4520,
+      "name": "Series Landing — Tablet (810)",
+      "theme": {
+        "mode": "light",
+        "device": "md"
+      },
+      "clip": true,
+      "width": 810,
+      "fill": "$surface-default",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "Wq6eE",
+          "type": "ref",
+          "ref": "S5OtQe",
+          "name": "Header",
+          "width": "fill_container",
+          "descendants": {
+            "oekhv": {
+              "id": "YyEut",
+              "type": "ref",
+              "ref": "eFsWC",
+              "name": "Blog",
+              "descendants": {
+                "jynNC": {
+                  "content": "BLOG"
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "vSdAT",
+          "name": "Main",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            "$space-section",
+            "$layout-margin"
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "xJySq",
+              "name": "Column",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": "$space-block",
+              "children": [
+                {
+                  "id": "INVb4",
+                  "type": "ref",
+                  "ref": "g7uira",
+                  "name": "Intro",
+                  "width": "fill_container",
+                  "descendants": {
+                    "z9frDW": {
+                      "content": "SERIES"
+                    },
+                    "SqBTJ": {
+                      "content": "Junk Drawer Journey"
+                    },
+                    "zSXuD": {
+                      "content": "A short description of the series: what it is, where it started and what ties the pieces together."
+                    }
+                  }
+                },
+                {
+                  "id": "DfV5n",
+                  "type": "ref",
+                  "ref": "y6vFR6",
+                  "name": "Featured — Latest entry",
+                  "width": "fill_container",
+                  "descendants": {
+                    "W49He": {
+                      "content": "LATEST · NO. 001"
+                    },
+                    "e41yZ": {
+                      "content": "Deliverance in San Antonio"
+                    },
+                    "VYFHh": {
+                      "content": "A sentence or two about the entry, from its description."
+                    },
+                    "Fk5nN": {
+                      "content": "View entry"
+                    }
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "Zr5RH",
+                  "name": "Grid",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": "$scale-0600",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "u7PKZ",
+                      "name": "Row 1",
+                      "width": "fill_container",
+                      "gap": "$scale-0600",
+                      "children": [
+                        {
+                          "id": "BdEmT",
+                          "type": "ref",
+                          "ref": "ZwNI4",
+                          "name": "Entry — 001",
+                          "width": "fill_container",
+                          "descendants": {
+                            "Mng70": {
+                              "content": "NO. 001 · 2022"
+                            },
+                            "QaGQc": {
+                              "content": "Deliverance in San Antonio"
+                            },
+                            "mlzay": {
+                              "content": "A sentence or two about the entry, from its description."
+                            },
+                            "nAg9p": {
+                              "content": "View entry"
+                            }
+                          }
+                        },
+                        {
+                          "id": "Tpzwf",
+                          "type": "ref",
+                          "ref": "ZwNI4",
+                          "name": "Entry — 002",
+                          "width": "fill_container",
+                          "descendants": {
+                            "Mng70": {
+                              "content": "NO. 002 · 2022"
+                            },
+                            "QaGQc": {
+                              "content": "Entry title"
+                            },
+                            "mlzay": {
+                              "content": "A sentence or two about the entry, from its description."
+                            },
+                            "nAg9p": {
+                              "content": "View entry"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "z5sDD",
+                      "name": "Row 2",
+                      "width": "fill_container",
+                      "gap": "$scale-0600",
+                      "children": [
+                        {
+                          "id": "v1zqB",
+                          "type": "ref",
+                          "ref": "ZwNI4",
+                          "name": "Entry — 003",
+                          "width": "fill_container",
+                          "descendants": {
+                            "Mng70": {
+                              "content": "NO. 003 · 2023"
+                            },
+                            "QaGQc": {
+                              "content": "Entry title"
+                            },
+                            "mlzay": {
+                              "content": "A sentence or two about the entry, from its description."
+                            },
+                            "nAg9p": {
+                              "content": "View entry"
+                            }
+                          }
+                        },
+                        {
+                          "id": "KcqGS",
+                          "type": "ref",
+                          "ref": "ZwNI4",
+                          "name": "Entry — 004",
+                          "width": "fill_container",
+                          "descendants": {
+                            "Mng70": {
+                              "content": "NO. 004 · 2023"
+                            },
+                            "QaGQc": {
+                              "content": "Entry title"
+                            },
+                            "mlzay": {
+                              "content": "A sentence or two about the entry, from its description."
+                            },
+                            "nAg9p": {
+                              "content": "View entry"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "iUxUX",
+          "type": "ref",
+          "ref": "vu6kH",
+          "name": "Footer",
+          "width": "fill_container",
+          "descendants": {
+            "iFupJ": {
+              "width": 100,
+              "height": 100
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "NRNkh",
+      "x": -1722,
+      "y": 4520,
+      "name": "Series Landing — Mobile (390)",
+      "theme": {
+        "mode": "light",
+        "device": "sm"
+      },
+      "clip": true,
+      "width": 390,
+      "fill": "$surface-default",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "rVtf4",
+          "type": "ref",
+          "ref": "S5OtQe",
+          "name": "Header",
+          "width": "fill_container",
+          "descendants": {
+            "oekhv": {
+              "id": "sOGt5",
+              "type": "ref",
+              "ref": "eFsWC",
+              "name": "Blog",
+              "descendants": {
+                "jynNC": {
+                  "content": "BLOG"
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "E7vY7",
+          "name": "Main",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            "$space-section",
+            "$layout-margin"
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "Nodll",
+              "name": "Column",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": "$space-block",
+              "children": [
+                {
+                  "id": "yBfnR",
+                  "type": "ref",
+                  "ref": "g7uira",
+                  "name": "Intro",
+                  "width": "fill_container",
+                  "descendants": {
+                    "z9frDW": {
+                      "content": "SERIES"
+                    },
+                    "SqBTJ": {
+                      "content": "Junk Drawer Journey"
+                    },
+                    "zSXuD": {
+                      "content": "A short description of the series: what it is, where it started and what ties the pieces together."
+                    }
+                  }
+                },
+                {
+                  "id": "adOfx",
+                  "type": "ref",
+                  "ref": "ZwNI4",
+                  "name": "Featured — Latest entry",
+                  "width": "fill_container",
+                  "descendants": {
+                    "Mng70": {
+                      "content": "LATEST · NO. 001"
+                    },
+                    "QaGQc": {
+                      "content": "Deliverance in San Antonio"
+                    },
+                    "mlzay": {
+                      "content": "A sentence or two about the entry, from its description."
+                    },
+                    "nAg9p": {
+                      "content": "View entry"
+                    }
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "hJHtT",
+                  "name": "Grid",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": "$scale-0600",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Hg6Rn",
+                      "name": "Row 1",
+                      "width": "fill_container",
+                      "gap": "$scale-0600",
+                      "children": [
+                        {
+                          "id": "mUUsv",
+                          "type": "ref",
+                          "ref": "ZwNI4",
+                          "name": "Entry — 001",
+                          "width": "fill_container",
+                          "descendants": {
+                            "Mng70": {
+                              "content": "NO. 001 · 2022"
+                            },
+                            "QaGQc": {
+                              "content": "Deliverance in San Antonio"
+                            },
+                            "mlzay": {
+                              "content": "A sentence or two about the entry, from its description."
+                            },
+                            "nAg9p": {
+                              "content": "View entry"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "BYIyK",
+                      "name": "Row 2",
+                      "width": "fill_container",
+                      "gap": "$scale-0600",
+                      "children": [
+                        {
+                          "id": "j44vGO",
+                          "type": "ref",
+                          "ref": "ZwNI4",
+                          "name": "Entry — 002",
+                          "width": "fill_container",
+                          "descendants": {
+                            "Mng70": {
+                              "content": "NO. 002 · 2022"
+                            },
+                            "QaGQc": {
+                              "content": "Entry title"
+                            },
+                            "mlzay": {
+                              "content": "A sentence or two about the entry, from its description."
+                            },
+                            "nAg9p": {
+                              "content": "View entry"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "eI4GN",
+                      "name": "Row 3",
+                      "width": "fill_container",
+                      "gap": "$scale-0600",
+                      "children": [
+                        {
+                          "id": "jUk6Q",
+                          "type": "ref",
+                          "ref": "ZwNI4",
+                          "name": "Entry — 003",
+                          "width": "fill_container",
+                          "descendants": {
+                            "Mng70": {
+                              "content": "NO. 003 · 2023"
+                            },
+                            "QaGQc": {
+                              "content": "Entry title"
+                            },
+                            "mlzay": {
+                              "content": "A sentence or two about the entry, from its description."
+                            },
+                            "nAg9p": {
+                              "content": "View entry"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "vErlW",
+          "type": "ref",
+          "ref": "vu6kH",
+          "name": "Footer",
+          "width": "fill_container",
+          "descendants": {
+            "iFupJ": {
+              "width": 100,
+              "height": 100
+            },
+            "Sg6W9": {
+              "type": "frame",
+              "id": "v2pgZj",
+              "name": "Nav",
+              "layout": "vertical",
+              "padding": [
+                "$scale-0300",
+                0,
+                0,
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "KCYPo",
+                  "name": "Row",
+                  "gap": "$scale-0600",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "Hdgyu",
+                      "type": "ref",
+                      "ref": "eFsWC",
+                      "name": "Blog",
+                      "descendants": {
+                        "jynNC": {
+                          "content": "BLOG"
+                        }
+                      }
+                    },
+                    {
+                      "id": "MGuUE",
+                      "type": "ref",
+                      "ref": "eFsWC",
+                      "name": "Projects",
+                      "descendants": {
+                        "jynNC": {
+                          "content": "PROJECTS"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "g7lRbd",
+                  "name": "Row",
+                  "gap": "$scale-0600",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "JQ3AE",
+                      "type": "ref",
+                      "ref": "eFsWC",
+                      "name": "Newsletter",
+                      "descendants": {
+                        "jynNC": {
+                          "content": "NEWSLETTER"
+                        }
+                      }
+                    },
+                    {
+                      "id": "qhMp7",
+                      "type": "ref",
+                      "ref": "eFsWC",
+                      "name": "Shop",
+                      "descendants": {
+                        "jynNC": {
+                          "content": "SHOP"
+                        }
+                      }
+                    },
+                    {
+                      "id": "kGPSd",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "About",
