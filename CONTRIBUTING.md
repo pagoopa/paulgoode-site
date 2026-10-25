@@ -162,6 +162,9 @@ A series is a numbered set of artwork, like "Junk Drawer Journey".
   artwork. Set `series:` to the series file name, plus `number`, `year`,
   `location`, `image` (with `alt` and an optional `caption`), `title`,
   `description` and `pubDate`. It shows at `/series/<series>/<entry folder>`.
+- **Artwork size:** export it 1044px wide (twice the 522px it shows at), any
+  height. JPG at high quality keeps it small; PNG for flat line art. Astro
+  makes the smaller versions. Keep full-size masters outside the repo.
 - The series page lists every entry in number order and features the newest.
 - `draft: true` keeps an entry off the live site; it still shows locally.
 
