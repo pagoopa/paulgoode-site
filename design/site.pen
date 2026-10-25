@@ -101,6 +101,7 @@
                   "type": "frame",
                   "id": "aCKH2",
                   "name": "Entry List",
+                  "context": "Newest first, 5 posts per page. Older posts continue on /blog/page/2 and onward.",
                   "width": "fill_container",
                   "layout": "vertical",
                   "children": [
@@ -341,8 +342,163 @@
                           ]
                         }
                       ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "G80mP",
+                      "name": "Entry — A fourth sketchbook entry",
+                      "width": "fill_container",
+                      "stroke": "$border-default",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "strokeAlignment": "inner",
+                      "layout": "vertical",
+                      "gap": "$scale-0200",
+                      "padding": [
+                        "$scale-0600",
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "TgphN",
+                          "name": "Date",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "SEP 6, 2026",
+                          "lineHeight": "$type-eyebrow3-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-eyebrow3-size",
+                          "fontWeight": "500",
+                          "letterSpacing": "$type-eyebrow3-letter-spacing"
+                        },
+                        {
+                          "type": "text",
+                          "id": "j6akqu",
+                          "name": "Title",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "A fourth sketchbook entry",
+                          "lineHeight": "$type-h4-line-height",
+                          "fontFamily": "$font-heading",
+                          "fontSize": "$type-h4-size",
+                          "fontWeight": "700",
+                          "letterSpacing": "$type-h4-letter-spacing"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "CEL3R",
+                          "name": "Body",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": "$scale-0600",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "JuHH9",
+                              "name": "Paragraph 1",
+                              "fill": "$text-default",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "A short entry with no marker shows in full, the same way it reads on its own page.",
+                              "lineHeight": "$type-p2-line-height",
+                              "fontFamily": "$font-body",
+                              "fontSize": "$type-p2-size",
+                              "fontWeight": "normal",
+                              "letterSpacing": "$type-p2-letter-spacing"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "aR5M8",
+                      "name": "Entry — The fifth and oldest on this page",
+                      "width": "fill_container",
+                      "stroke": "$border-default",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "strokeAlignment": "inner",
+                      "layout": "vertical",
+                      "gap": "$scale-0200",
+                      "padding": [
+                        "$scale-0600",
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "WxM6a",
+                          "name": "Date",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "AUG 30, 2026",
+                          "lineHeight": "$type-eyebrow3-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-eyebrow3-size",
+                          "fontWeight": "500",
+                          "letterSpacing": "$type-eyebrow3-letter-spacing"
+                        },
+                        {
+                          "type": "text",
+                          "id": "mjQY4",
+                          "name": "Title",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "The fifth and oldest on this page",
+                          "lineHeight": "$type-h4-line-height",
+                          "fontFamily": "$font-heading",
+                          "fontSize": "$type-h4-size",
+                          "fontWeight": "700",
+                          "letterSpacing": "$type-h4-letter-spacing"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "y7ObDp",
+                          "name": "Body",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": "$scale-0600",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "ONSg9",
+                              "name": "Paragraph 1",
+                              "fill": "$text-default",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "A short entry with no marker shows in full, the same way it reads on its own page.",
+                              "lineHeight": "$type-p2-line-height",
+                              "fontFamily": "$font-body",
+                              "fontSize": "$type-p2-size",
+                              "fontWeight": "normal",
+                              "letterSpacing": "$type-p2-letter-spacing"
+                            }
+                          ]
+                        }
+                      ]
                     }
                   ]
+                },
+                {
+                  "id": "mwEmM",
+                  "type": "ref",
+                  "ref": "Rozdd",
+                  "name": "Pagination (page 1)",
+                  "width": "fill_container",
+                  "justifyContent": "end",
+                  "descendants": {
+                    "B5LPx": {
+                      "enabled": false
+                    }
+                  }
                 }
               ]
             }
@@ -422,6 +578,7 @@
                   "type": "frame",
                   "id": "BGZ5x",
                   "name": "Entry List",
+                  "context": "Newest first, 5 posts per page. Older posts continue on /blog/page/2 and onward.",
                   "width": "fill_container",
                   "layout": "vertical",
                   "children": [
@@ -662,8 +819,163 @@
                           ]
                         }
                       ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "usKJh",
+                      "name": "Entry — A fourth sketchbook entry",
+                      "width": "fill_container",
+                      "stroke": "$border-default",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "strokeAlignment": "inner",
+                      "layout": "vertical",
+                      "gap": "$scale-0200",
+                      "padding": [
+                        "$scale-0600",
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "zCQaw",
+                          "name": "Date",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "SEP 6, 2026",
+                          "lineHeight": "$type-eyebrow3-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-eyebrow3-size",
+                          "fontWeight": "500",
+                          "letterSpacing": "$type-eyebrow3-letter-spacing"
+                        },
+                        {
+                          "type": "text",
+                          "id": "XzjUE",
+                          "name": "Title",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "A fourth sketchbook entry",
+                          "lineHeight": "$type-h4-line-height",
+                          "fontFamily": "$font-heading",
+                          "fontSize": "$type-h4-size",
+                          "fontWeight": "700",
+                          "letterSpacing": "$type-h4-letter-spacing"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "H4EDo",
+                          "name": "Body",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": "$scale-0600",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "nmZA6",
+                              "name": "Paragraph 1",
+                              "fill": "$text-default",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "A short entry with no marker shows in full, the same way it reads on its own page.",
+                              "lineHeight": "$type-p2-line-height",
+                              "fontFamily": "$font-body",
+                              "fontSize": "$type-p2-size",
+                              "fontWeight": "normal",
+                              "letterSpacing": "$type-p2-letter-spacing"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "usxPF",
+                      "name": "Entry — The fifth and oldest on this page",
+                      "width": "fill_container",
+                      "stroke": "$border-default",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "strokeAlignment": "inner",
+                      "layout": "vertical",
+                      "gap": "$scale-0200",
+                      "padding": [
+                        "$scale-0600",
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "GjWX5",
+                          "name": "Date",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "AUG 30, 2026",
+                          "lineHeight": "$type-eyebrow3-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-eyebrow3-size",
+                          "fontWeight": "500",
+                          "letterSpacing": "$type-eyebrow3-letter-spacing"
+                        },
+                        {
+                          "type": "text",
+                          "id": "d1xmn",
+                          "name": "Title",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "The fifth and oldest on this page",
+                          "lineHeight": "$type-h4-line-height",
+                          "fontFamily": "$font-heading",
+                          "fontSize": "$type-h4-size",
+                          "fontWeight": "700",
+                          "letterSpacing": "$type-h4-letter-spacing"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "eCSiU",
+                          "name": "Body",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": "$scale-0600",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "wU4Ga",
+                              "name": "Paragraph 1",
+                              "fill": "$text-default",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "A short entry with no marker shows in full, the same way it reads on its own page.",
+                              "lineHeight": "$type-p2-line-height",
+                              "fontFamily": "$font-body",
+                              "fontSize": "$type-p2-size",
+                              "fontWeight": "normal",
+                              "letterSpacing": "$type-p2-letter-spacing"
+                            }
+                          ]
+                        }
+                      ]
                     }
                   ]
+                },
+                {
+                  "id": "R6Cqw7",
+                  "type": "ref",
+                  "ref": "Rozdd",
+                  "name": "Pagination (page 1)",
+                  "width": "fill_container",
+                  "justifyContent": "end",
+                  "descendants": {
+                    "B5LPx": {
+                      "enabled": false
+                    }
+                  }
                 }
               ]
             }
@@ -749,6 +1061,7 @@
                   "type": "frame",
                   "id": "sKcvU",
                   "name": "Entry List",
+                  "context": "Newest first, 5 posts per page. Older posts continue on /blog/page/2 and onward.",
                   "width": "fill_container",
                   "layout": "vertical",
                   "children": [
@@ -989,15 +1302,170 @@
                           ]
                         }
                       ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "YGzNZ",
+                      "name": "Entry — A fourth sketchbook entry",
+                      "width": "fill_container",
+                      "stroke": "$border-default",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "strokeAlignment": "inner",
+                      "layout": "vertical",
+                      "gap": "$scale-0200",
+                      "padding": [
+                        "$scale-0600",
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "sXybx",
+                          "name": "Date",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "SEP 6, 2026",
+                          "lineHeight": "$type-eyebrow3-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-eyebrow3-size",
+                          "fontWeight": "500",
+                          "letterSpacing": "$type-eyebrow3-letter-spacing"
+                        },
+                        {
+                          "type": "text",
+                          "id": "jFbwC",
+                          "name": "Title",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "A fourth sketchbook entry",
+                          "lineHeight": "$type-h4-line-height",
+                          "fontFamily": "$font-heading",
+                          "fontSize": "$type-h4-size",
+                          "fontWeight": "700",
+                          "letterSpacing": "$type-h4-letter-spacing"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "CgIoQ",
+                          "name": "Body",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": "$scale-0600",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Rov1T",
+                              "name": "Paragraph 1",
+                              "fill": "$text-default",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "A short entry with no marker shows in full, the same way it reads on its own page.",
+                              "lineHeight": "$type-p2-line-height",
+                              "fontFamily": "$font-body",
+                              "fontSize": "$type-p2-size",
+                              "fontWeight": "normal",
+                              "letterSpacing": "$type-p2-letter-spacing"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "UIApV",
+                      "name": "Entry — The fifth and oldest on this page",
+                      "width": "fill_container",
+                      "stroke": "$border-default",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "strokeAlignment": "inner",
+                      "layout": "vertical",
+                      "gap": "$scale-0200",
+                      "padding": [
+                        "$scale-0600",
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "jokhn",
+                          "name": "Date",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "AUG 30, 2026",
+                          "lineHeight": "$type-eyebrow3-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-eyebrow3-size",
+                          "fontWeight": "500",
+                          "letterSpacing": "$type-eyebrow3-letter-spacing"
+                        },
+                        {
+                          "type": "text",
+                          "id": "tlIYV",
+                          "name": "Title",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "The fifth and oldest on this page",
+                          "lineHeight": "$type-h4-line-height",
+                          "fontFamily": "$font-heading",
+                          "fontSize": "$type-h4-size",
+                          "fontWeight": "700",
+                          "letterSpacing": "$type-h4-letter-spacing"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "pxglI",
+                          "name": "Body",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": "$scale-0600",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "OTGbO",
+                              "name": "Paragraph 1",
+                              "fill": "$text-default",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "A short entry with no marker shows in full, the same way it reads on its own page.",
+                              "lineHeight": "$type-p2-line-height",
+                              "fontFamily": "$font-body",
+                              "fontSize": "$type-p2-size",
+                              "fontWeight": "normal",
+                              "letterSpacing": "$type-p2-letter-spacing"
+                            }
+                          ]
+                        }
+                      ]
                     }
                   ]
+                },
+                {
+                  "id": "kCciK",
+                  "type": "ref",
+                  "ref": "Rozdd",
+                  "name": "Pagination (page 1)",
+                  "width": "fill_container",
+                  "justifyContent": "end",
+                  "descendants": {
+                    "B5LPx": {
+                      "enabled": false
+                    }
+                  }
                 }
               ]
             }
           ]
         },
         {
-          "id": "rbQ7B",
+          "id": "Igbpy",
           "type": "ref",
           "ref": "vu6kH",
           "name": "Footer",
@@ -1009,7 +1477,7 @@
             },
             "Sg6W9": {
               "type": "frame",
-              "id": "HRcii",
+              "id": "SCTBW",
               "name": "Nav",
               "layout": "vertical",
               "padding": [
@@ -1022,14 +1490,14 @@
               "children": [
                 {
                   "type": "frame",
-                  "id": "DHbrJ",
+                  "id": "gB4vL",
                   "name": "Row",
                   "gap": "$scale-0600",
                   "justifyContent": "center",
                   "alignItems": "center",
                   "children": [
                     {
-                      "id": "Gkxnw",
+                      "id": "l4TPPQ",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Blog",
@@ -1040,13 +1508,13 @@
                       }
                     },
                     {
-                      "id": "B2oyXi",
+                      "id": "hqo6X",
                       "type": "ref",
                       "ref": "eFsWC",
-                      "name": "Projects",
+                      "name": "Series",
                       "descendants": {
                         "jynNC": {
-                          "content": "PROJECTS"
+                          "content": "SERIES"
                         }
                       }
                     }
@@ -1054,14 +1522,14 @@
                 },
                 {
                   "type": "frame",
-                  "id": "ajNML",
+                  "id": "wDUBT",
                   "name": "Row",
                   "gap": "$scale-0600",
                   "justifyContent": "center",
                   "alignItems": "center",
                   "children": [
                     {
-                      "id": "m4vyeE",
+                      "id": "Mo8xP",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Newsletter",
@@ -1072,7 +1540,7 @@
                       }
                     },
                     {
-                      "id": "lCL4x",
+                      "id": "GEljs",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Shop",
@@ -1083,7 +1551,7 @@
                       }
                     },
                     {
-                      "id": "Eq5Ut",
+                      "id": "TC8q6",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "About",
@@ -1662,7 +2130,7 @@
           ]
         },
         {
-          "id": "masJK",
+          "id": "gO6WY",
           "type": "ref",
           "ref": "vu6kH",
           "name": "Footer",
@@ -1674,7 +2142,7 @@
             },
             "Sg6W9": {
               "type": "frame",
-              "id": "kziCf",
+              "id": "uxfMm",
               "name": "Nav",
               "layout": "vertical",
               "padding": [
@@ -1687,14 +2155,14 @@
               "children": [
                 {
                   "type": "frame",
-                  "id": "IfSPz",
+                  "id": "UyPwa",
                   "name": "Row",
                   "gap": "$scale-0600",
                   "justifyContent": "center",
                   "alignItems": "center",
                   "children": [
                     {
-                      "id": "k0bBnp",
+                      "id": "G8h7KV",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Blog",
@@ -1705,13 +2173,13 @@
                       }
                     },
                     {
-                      "id": "qvLkk",
+                      "id": "B3aKd",
                       "type": "ref",
                       "ref": "eFsWC",
-                      "name": "Projects",
+                      "name": "Series",
                       "descendants": {
                         "jynNC": {
-                          "content": "PROJECTS"
+                          "content": "SERIES"
                         }
                       }
                     }
@@ -1719,14 +2187,14 @@
                 },
                 {
                   "type": "frame",
-                  "id": "mVGEr",
+                  "id": "SfEyS",
                   "name": "Row",
                   "gap": "$scale-0600",
                   "justifyContent": "center",
                   "alignItems": "center",
                   "children": [
                     {
-                      "id": "Kbkzy",
+                      "id": "qAhSj",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Newsletter",
@@ -1737,7 +2205,7 @@
                       }
                     },
                     {
-                      "id": "IGKAn",
+                      "id": "xxjvs",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Shop",
@@ -1748,7 +2216,7 @@
                       }
                     },
                     {
-                      "id": "HwZBQ",
+                      "id": "uyQPf",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "About",
@@ -8834,6 +9302,93 @@
         },
         {
           "type": "frame",
+          "id": "Rozdd",
+          "name": "Pagination",
+          "context": "Newer / older posts. Newer goes to the previous page (page 1 is /blog), Older to the next (/blog/page/2 …). Hide Newer on page 1 and Older on the last page; hide the whole row when everything fits on one page. 5 posts per page.",
+          "reusable": true,
+          "width": 720,
+          "padding": [
+            "$scale-0600",
+            0,
+            0,
+            0
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "B5LPx",
+              "name": "Newer",
+              "gap": "$scale-0200",
+              "padding": [
+                "$scale-0100",
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "id": "zDSv9",
+                  "type": "ref",
+                  "ref": "r3ntDW",
+                  "name": "Icon",
+                  "width": 20,
+                  "height": 20,
+                  "stroke": "$text-link",
+                  "flipX": true
+                },
+                {
+                  "type": "text",
+                  "id": "eqtno",
+                  "name": "Label",
+                  "fill": "$text-link",
+                  "content": "Newer posts",
+                  "lineHeight": "$type-body1-line-height",
+                  "fontFamily": "$font-body",
+                  "fontSize": "$type-body1-size",
+                  "fontWeight": "500",
+                  "letterSpacing": "$type-body1-letter-spacing"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "VmJ4x",
+              "name": "Older",
+              "gap": "$scale-0200",
+              "padding": [
+                "$scale-0100",
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "JnVs9",
+                  "name": "Label",
+                  "fill": "$text-link",
+                  "content": "Older posts",
+                  "lineHeight": "$type-body1-line-height",
+                  "fontFamily": "$font-body",
+                  "fontSize": "$type-body1-size",
+                  "fontWeight": "500",
+                  "letterSpacing": "$type-body1-letter-spacing"
+                },
+                {
+                  "id": "MaEqe",
+                  "type": "ref",
+                  "ref": "r3ntDW",
+                  "name": "Icon",
+                  "width": 20,
+                  "height": 20,
+                  "stroke": "$text-link"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
           "id": "U63lHR",
           "name": "Header",
           "layout": "vertical",
@@ -8915,10 +9470,10 @@
                               "id": "S5GGB",
                               "type": "ref",
                               "ref": "eFsWC",
-                              "name": "Projects",
+                              "name": "Series",
                               "descendants": {
                                 "jynNC": {
-                                  "content": "PROJECTS"
+                                  "content": "SERIES"
                                 }
                               }
                             },
@@ -9057,10 +9612,10 @@
                               "id": "aBgCT",
                               "type": "ref",
                               "ref": "eFsWC",
-                              "name": "Projects",
+                              "name": "Series",
                               "descendants": {
                                 "jynNC": {
-                                  "content": "PROJECTS"
+                                  "content": "SERIES"
                                 }
                               }
                             },
@@ -9195,10 +9750,10 @@
                               "id": "szfRP",
                               "type": "ref",
                               "ref": "eFsWC",
-                              "name": "Projects",
+                              "name": "Series",
                               "descendants": {
                                 "jynNC": {
-                                  "content": "PROJECTS"
+                                  "content": "SERIES"
                                 }
                               }
                             },
@@ -9338,10 +9893,10 @@
                               "id": "Dsquv",
                               "type": "ref",
                               "ref": "eFsWC",
-                              "name": "Projects",
+                              "name": "Series",
                               "descendants": {
                                 "jynNC": {
-                                  "content": "PROJECTS"
+                                  "content": "SERIES"
                                 }
                               }
                             },
@@ -9524,10 +10079,10 @@
                           "id": "SJS3d",
                           "type": "ref",
                           "ref": "eFsWC",
-                          "name": "Projects",
+                          "name": "Series",
                           "descendants": {
                             "jynNC": {
-                              "content": "PROJECTS"
+                              "content": "SERIES"
                             }
                           }
                         },
@@ -9675,10 +10230,10 @@
                           "id": "z1jU9Z",
                           "type": "ref",
                           "ref": "eFsWC",
-                          "name": "Projects",
+                          "name": "Series",
                           "descendants": {
                             "jynNC": {
-                              "content": "PROJECTS"
+                              "content": "SERIES"
                             }
                           }
                         },
@@ -9826,10 +10381,10 @@
                           "id": "MAvPZ",
                           "type": "ref",
                           "ref": "eFsWC",
-                          "name": "Projects",
+                          "name": "Series",
                           "descendants": {
                             "jynNC": {
-                              "content": "PROJECTS"
+                              "content": "SERIES"
                             }
                           }
                         },
@@ -9977,10 +10532,10 @@
                           "id": "ocvlq",
                           "type": "ref",
                           "ref": "eFsWC",
-                          "name": "Projects",
+                          "name": "Series",
                           "descendants": {
                             "jynNC": {
-                              "content": "PROJECTS"
+                              "content": "SERIES"
                             }
                           }
                         },
@@ -10128,10 +10683,10 @@
                           "id": "TuE5m",
                           "type": "ref",
                           "ref": "eFsWC",
-                          "name": "Projects",
+                          "name": "Series",
                           "descendants": {
                             "jynNC": {
-                              "content": "PROJECTS"
+                              "content": "SERIES"
                             }
                           }
                         },
@@ -10260,10 +10815,10 @@
                           "id": "a9toE",
                           "type": "ref",
                           "ref": "eFsWC",
-                          "name": "Projects",
+                          "name": "Series",
                           "descendants": {
                             "jynNC": {
-                              "content": "PROJECTS"
+                              "content": "SERIES"
                             }
                           }
                         },
@@ -14499,31 +15054,20 @@
       "layout": "vertical",
       "children": [
         {
-          "id": "OdF1T",
+          "id": "eE98P",
           "type": "ref",
           "ref": "S5OtQe",
           "name": "Header",
           "width": "fill_container",
           "descendants": {
             "oekhv": {
-              "id": "wGWf6",
+              "id": "ep79s",
               "type": "ref",
               "ref": "eFsWC",
               "name": "Blog",
               "descendants": {
                 "jynNC": {
                   "content": "BLOG"
-                }
-              }
-            },
-            "S5GGB": {
-              "id": "RpShT",
-              "type": "ref",
-              "ref": "MusDs",
-              "name": "Projects",
-              "descendants": {
-                "t893f": {
-                  "content": "PROJECTS"
                 }
               }
             }
@@ -14750,20 +15294,31 @@
       "layout": "vertical",
       "children": [
         {
-          "id": "D096yz",
+          "id": "WqmmN",
           "type": "ref",
           "ref": "S5OtQe",
           "name": "Header",
           "width": "fill_container",
           "descendants": {
             "oekhv": {
-              "id": "TcLnL",
+              "id": "j9ZYSE",
               "type": "ref",
               "ref": "eFsWC",
               "name": "Blog",
               "descendants": {
                 "jynNC": {
                   "content": "BLOG"
+                }
+              }
+            },
+            "S5GGB": {
+              "id": "wBDYx",
+              "type": "ref",
+              "ref": "MusDs",
+              "name": "Series",
+              "descendants": {
+                "t893f": {
+                  "content": "SERIES"
                 }
               }
             }
@@ -15016,31 +15571,20 @@
       "layout": "vertical",
       "children": [
         {
-          "id": "Q6RF3",
+          "id": "dhUGo",
           "type": "ref",
           "ref": "S5OtQe",
           "name": "Header",
           "width": "fill_container",
           "descendants": {
             "oekhv": {
-              "id": "Yiyfl",
+              "id": "L33uPj",
               "type": "ref",
               "ref": "eFsWC",
               "name": "Blog",
               "descendants": {
                 "jynNC": {
                   "content": "BLOG"
-                }
-              }
-            },
-            "S5GGB": {
-              "id": "t1D6PB",
-              "type": "ref",
-              "ref": "MusDs",
-              "name": "Projects",
-              "descendants": {
-                "t893f": {
-                  "content": "PROJECTS"
                 }
               }
             }
@@ -15237,31 +15781,20 @@
       "layout": "vertical",
       "children": [
         {
-          "id": "iVBVt",
+          "id": "UnKwQ",
           "type": "ref",
           "ref": "S5OtQe",
           "name": "Header",
           "width": "fill_container",
           "descendants": {
             "oekhv": {
-              "id": "WDpO6",
+              "id": "fuPPW",
               "type": "ref",
               "ref": "eFsWC",
               "name": "Blog",
               "descendants": {
                 "jynNC": {
                   "content": "BLOG"
-                }
-              }
-            },
-            "S5GGB": {
-              "id": "kknPA",
-              "type": "ref",
-              "ref": "MusDs",
-              "name": "Projects",
-              "descendants": {
-                "t893f": {
-                  "content": "PROJECTS"
                 }
               }
             }
@@ -15419,7 +15952,7 @@
           ]
         },
         {
-          "id": "fI8Cr",
+          "id": "yBFOA",
           "type": "ref",
           "ref": "vu6kH",
           "name": "Footer",
@@ -15431,7 +15964,7 @@
             },
             "Sg6W9": {
               "type": "frame",
-              "id": "XLjBL",
+              "id": "uVMi9",
               "name": "Nav",
               "layout": "vertical",
               "padding": [
@@ -15444,14 +15977,14 @@
               "children": [
                 {
                   "type": "frame",
-                  "id": "a0c0w",
+                  "id": "H9j949",
                   "name": "Row",
                   "gap": "$scale-0600",
                   "justifyContent": "center",
                   "alignItems": "center",
                   "children": [
                     {
-                      "id": "nU8rQ",
+                      "id": "cF3Qx",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Blog",
@@ -15462,13 +15995,13 @@
                       }
                     },
                     {
-                      "id": "tp47T",
+                      "id": "pzGim",
                       "type": "ref",
                       "ref": "eFsWC",
-                      "name": "Projects",
+                      "name": "Series",
                       "descendants": {
                         "jynNC": {
-                          "content": "PROJECTS"
+                          "content": "SERIES"
                         }
                       }
                     }
@@ -15476,14 +16009,14 @@
                 },
                 {
                   "type": "frame",
-                  "id": "fYQIi",
+                  "id": "MhpFl",
                   "name": "Row",
                   "gap": "$scale-0600",
                   "justifyContent": "center",
                   "alignItems": "center",
                   "children": [
                     {
-                      "id": "I32MN",
+                      "id": "jE7wi",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Newsletter",
@@ -15494,7 +16027,7 @@
                       }
                     },
                     {
-                      "id": "Y2wwI",
+                      "id": "ntQEt",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Shop",
@@ -15505,7 +16038,7 @@
                       }
                     },
                     {
-                      "id": "qO6wQ",
+                      "id": "K2BmC",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "About",
@@ -15553,13 +16086,35 @@
       "layout": "vertical",
       "children": [
         {
-          "id": "u3HgM",
+          "id": "r7bVw",
           "type": "ref",
           "ref": "S5OtQe",
           "name": "Header",
           "width": "fill_container",
-          "x": 0,
-          "y": 0
+          "descendants": {
+            "oekhv": {
+              "id": "uSDR0",
+              "type": "ref",
+              "ref": "eFsWC",
+              "name": "Blog",
+              "descendants": {
+                "jynNC": {
+                  "content": "BLOG"
+                }
+              }
+            },
+            "S5GGB": {
+              "id": "A2tYve",
+              "type": "ref",
+              "ref": "MusDs",
+              "name": "Series",
+              "descendants": {
+                "t893f": {
+                  "content": "SERIES"
+                }
+              }
+            }
+          }
         },
         {
           "type": "frame",
@@ -16147,13 +16702,35 @@
       "layout": "vertical",
       "children": [
         {
-          "id": "ybclb",
+          "id": "uNQfM",
           "type": "ref",
           "ref": "S5OtQe",
           "name": "Header",
           "width": "fill_container",
-          "x": 0,
-          "y": 0
+          "descendants": {
+            "oekhv": {
+              "id": "Z3L2OO",
+              "type": "ref",
+              "ref": "eFsWC",
+              "name": "Blog",
+              "descendants": {
+                "jynNC": {
+                  "content": "BLOG"
+                }
+              }
+            },
+            "S5GGB": {
+              "id": "L7wVy",
+              "type": "ref",
+              "ref": "MusDs",
+              "name": "Series",
+              "descendants": {
+                "t893f": {
+                  "content": "SERIES"
+                }
+              }
+            }
+          }
         },
         {
           "type": "frame",
@@ -16431,13 +17008,35 @@
       "layout": "vertical",
       "children": [
         {
-          "id": "CCXHO",
+          "id": "k1yWC",
           "type": "ref",
           "ref": "S5OtQe",
           "name": "Header",
           "width": "fill_container",
-          "x": 0,
-          "y": 0
+          "descendants": {
+            "oekhv": {
+              "id": "KGVX3",
+              "type": "ref",
+              "ref": "eFsWC",
+              "name": "Blog",
+              "descendants": {
+                "jynNC": {
+                  "content": "BLOG"
+                }
+              }
+            },
+            "S5GGB": {
+              "id": "uT3yP",
+              "type": "ref",
+              "ref": "MusDs",
+              "name": "Series",
+              "descendants": {
+                "t893f": {
+                  "content": "SERIES"
+                }
+              }
+            }
+          }
         },
         {
           "type": "frame",
@@ -16692,7 +17291,7 @@
           ]
         },
         {
-          "id": "G4TUw",
+          "id": "rPULB",
           "type": "ref",
           "ref": "vu6kH",
           "name": "Footer",
@@ -16706,7 +17305,7 @@
             },
             "Sg6W9": {
               "type": "frame",
-              "id": "iCH0d",
+              "id": "cLHDb",
               "name": "Nav",
               "layout": "vertical",
               "padding": [
@@ -16719,14 +17318,14 @@
               "children": [
                 {
                   "type": "frame",
-                  "id": "QcPVo",
+                  "id": "dQzhW",
                   "name": "Row",
                   "gap": "$scale-0600",
                   "justifyContent": "center",
                   "alignItems": "center",
                   "children": [
                     {
-                      "id": "DjQ7F",
+                      "id": "QKYMw",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Blog",
@@ -16737,13 +17336,13 @@
                       }
                     },
                     {
-                      "id": "Ts4Xm",
+                      "id": "jUn6U",
                       "type": "ref",
                       "ref": "eFsWC",
-                      "name": "Projects",
+                      "name": "Series",
                       "descendants": {
                         "jynNC": {
-                          "content": "PROJECTS"
+                          "content": "SERIES"
                         }
                       }
                     }
@@ -16751,14 +17350,14 @@
                 },
                 {
                   "type": "frame",
-                  "id": "DGGqv",
+                  "id": "YHhNk",
                   "name": "Row",
                   "gap": "$scale-0600",
                   "justifyContent": "center",
                   "alignItems": "center",
                   "children": [
                     {
-                      "id": "UXVkE",
+                      "id": "k8rGQ",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Newsletter",
@@ -16769,7 +17368,7 @@
                       }
                     },
                     {
-                      "id": "bnY3A",
+                      "id": "LCjek",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Shop",
@@ -16780,7 +17379,7 @@
                       }
                     },
                     {
-                      "id": "KAOUH",
+                      "id": "y1IxM6",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "About",
@@ -16814,20 +17413,31 @@
       "layout": "vertical",
       "children": [
         {
-          "id": "Wq6eE",
+          "id": "K6H58",
           "type": "ref",
           "ref": "S5OtQe",
           "name": "Header",
           "width": "fill_container",
           "descendants": {
             "oekhv": {
-              "id": "YyEut",
+              "id": "hOlWf",
               "type": "ref",
               "ref": "eFsWC",
               "name": "Blog",
               "descendants": {
                 "jynNC": {
                   "content": "BLOG"
+                }
+              }
+            },
+            "S5GGB": {
+              "id": "ePQSa",
+              "type": "ref",
+              "ref": "MusDs",
+              "name": "Series",
+              "descendants": {
+                "t893f": {
+                  "content": "SERIES"
                 }
               }
             }
@@ -17039,20 +17649,31 @@
       "layout": "vertical",
       "children": [
         {
-          "id": "rVtf4",
+          "id": "NCaFQ",
           "type": "ref",
           "ref": "S5OtQe",
           "name": "Header",
           "width": "fill_container",
           "descendants": {
             "oekhv": {
-              "id": "sOGt5",
+              "id": "y2W9oY",
               "type": "ref",
               "ref": "eFsWC",
               "name": "Blog",
               "descendants": {
                 "jynNC": {
                   "content": "BLOG"
+                }
+              }
+            },
+            "S5GGB": {
+              "id": "ank7E",
+              "type": "ref",
+              "ref": "MusDs",
+              "name": "Series",
+              "descendants": {
+                "t893f": {
+                  "content": "SERIES"
                 }
               }
             }
@@ -17222,7 +17843,7 @@
           ]
         },
         {
-          "id": "vErlW",
+          "id": "je4Cz",
           "type": "ref",
           "ref": "vu6kH",
           "name": "Footer",
@@ -17234,7 +17855,7 @@
             },
             "Sg6W9": {
               "type": "frame",
-              "id": "v2pgZj",
+              "id": "BbknN",
               "name": "Nav",
               "layout": "vertical",
               "padding": [
@@ -17247,14 +17868,14 @@
               "children": [
                 {
                   "type": "frame",
-                  "id": "KCYPo",
+                  "id": "l8cCtl",
                   "name": "Row",
                   "gap": "$scale-0600",
                   "justifyContent": "center",
                   "alignItems": "center",
                   "children": [
                     {
-                      "id": "Hdgyu",
+                      "id": "YfuuT",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Blog",
@@ -17265,13 +17886,13 @@
                       }
                     },
                     {
-                      "id": "MGuUE",
+                      "id": "P4xWaj",
                       "type": "ref",
                       "ref": "eFsWC",
-                      "name": "Projects",
+                      "name": "Series",
                       "descendants": {
                         "jynNC": {
-                          "content": "PROJECTS"
+                          "content": "SERIES"
                         }
                       }
                     }
@@ -17279,14 +17900,14 @@
                 },
                 {
                   "type": "frame",
-                  "id": "g7lRbd",
+                  "id": "SLYvL",
                   "name": "Row",
                   "gap": "$scale-0600",
                   "justifyContent": "center",
                   "alignItems": "center",
                   "children": [
                     {
-                      "id": "JQ3AE",
+                      "id": "BTH7W",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Newsletter",
@@ -17297,7 +17918,7 @@
                       }
                     },
                     {
-                      "id": "qhMp7",
+                      "id": "w2A1W",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Shop",
@@ -17308,7 +17929,7 @@
                       }
                     },
                     {
-                      "id": "kGPSd",
+                      "id": "FlLhy",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "About",
