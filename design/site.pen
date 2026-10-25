@@ -15310,7 +15310,7 @@
               "name": "Frame 3",
               "width": "fill_container",
               "layout": "vertical",
-              "gap": 10,
+              "gap": "$scale-0400",
               "padding": [
                 "$layout-margin",
                 "$scale-1000",
@@ -15560,7 +15560,7 @@
           "name": "Footer",
           "width": "fill_container",
           "x": 0,
-          "y": 1684
+          "y": 1696
         }
       ]
     },
