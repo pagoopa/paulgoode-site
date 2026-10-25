@@ -2,6 +2,15 @@
   "version": "2.21",
   "children": [
     {
+      "type": "rectangle",
+      "id": "BChwa",
+      "x": -6965,
+      "y": 5048,
+      "fill": "#CCCCCC",
+      "width": 548,
+      "height": 233
+    },
+    {
       "type": "text",
       "id": "bwhCH",
       "x": -10390,
@@ -340,9 +349,9 @@
           ]
         },
         {
-          "id": "q43az3",
+          "id": "q8jvB",
           "type": "ref",
-          "ref": "E6haZ",
+          "ref": "vu6kH",
           "name": "Footer",
           "width": "fill_container"
         }
@@ -661,13 +670,13 @@
           ]
         },
         {
-          "id": "n4S5nK",
+          "id": "B77K6",
           "type": "ref",
-          "ref": "E6haZ",
+          "ref": "vu6kH",
           "name": "Footer",
           "width": "fill_container",
           "descendants": {
-            "549hf": {
+            "iFupJ": {
               "width": 100,
               "height": 100
             }
@@ -988,19 +997,19 @@
           ]
         },
         {
-          "id": "ATfu7",
+          "id": "rbQ7B",
           "type": "ref",
-          "ref": "E6haZ",
+          "ref": "vu6kH",
           "name": "Footer",
           "width": "fill_container",
           "descendants": {
-            "549hf": {
+            "iFupJ": {
               "width": 100,
               "height": 100
             },
-            "BWRrf": {
+            "Sg6W9": {
               "type": "frame",
-              "id": "4oFn4",
+              "id": "HRcii",
               "name": "Nav",
               "layout": "vertical",
               "padding": [
@@ -1013,14 +1022,14 @@
               "children": [
                 {
                   "type": "frame",
-                  "id": "oHOTg",
+                  "id": "DHbrJ",
                   "name": "Row",
                   "gap": "$scale-600",
                   "justifyContent": "center",
                   "alignItems": "center",
                   "children": [
                     {
-                      "id": "mY7aF",
+                      "id": "Gkxnw",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Blog",
@@ -1031,7 +1040,7 @@
                       }
                     },
                     {
-                      "id": "N4XIP",
+                      "id": "B2oyXi",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Projects",
@@ -1045,14 +1054,14 @@
                 },
                 {
                   "type": "frame",
-                  "id": "Q3wkJ",
+                  "id": "ajNML",
                   "name": "Row",
                   "gap": "$scale-600",
                   "justifyContent": "center",
                   "alignItems": "center",
                   "children": [
                     {
-                      "id": "XoAlQ",
+                      "id": "m4vyeE",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Newsletter",
@@ -1063,7 +1072,7 @@
                       }
                     },
                     {
-                      "id": "gbAm8",
+                      "id": "lCL4x",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Shop",
@@ -1074,7 +1083,7 @@
                       }
                     },
                     {
-                      "id": "z2Hl2",
+                      "id": "Eq5Ut",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "About",
@@ -1158,7 +1167,7 @@
               "type": "frame",
               "id": "k4upK",
               "name": "Content",
-              "width": 820,
+              "width": 720,
               "layout": "vertical",
               "gap": 24,
               "alignItems": "center",
@@ -1289,11 +1298,11 @@
           ]
         },
         {
-          "id": "mOlYQ",
+          "id": "Wu36s",
           "type": "ref",
           "ref": "vu6kH",
-          "x": 0,
-          "y": 856
+          "name": "Footer",
+          "width": "fill_container"
         }
       ]
     },
@@ -1468,11 +1477,17 @@
           ]
         },
         {
-          "id": "chNVB",
+          "id": "g91Xv",
           "type": "ref",
           "ref": "vu6kH",
-          "x": 0,
-          "y": 748
+          "name": "Footer",
+          "width": "fill_container",
+          "descendants": {
+            "iFupJ": {
+              "width": 100,
+              "height": 100
+            }
+          }
         }
       ]
     },
@@ -1647,78 +1662,103 @@
           ]
         },
         {
-          "id": "FyFWY",
+          "id": "masJK",
           "type": "ref",
           "ref": "vu6kH",
-          "x": 0,
-          "y": 846,
+          "name": "Footer",
+          "width": "fill_container",
           "descendants": {
-            "Sg6W9": {
-              "layout": "vertical",
-              "gap": 0
+            "iFupJ": {
+              "width": 100,
+              "height": 100
             },
-            "cFqQn": {
+            "Sg6W9": {
               "type": "frame",
-              "id": "HbBOI",
-              "name": "Frame 2",
+              "id": "kziCf",
+              "name": "Nav",
               "layout": "vertical",
-              "gap": 10,
+              "padding": [
+                "$scale-300",
+                0,
+                0,
+                0
+              ],
+              "alignItems": "center",
               "children": [
                 {
                   "type": "frame",
-                  "id": "vJDCE",
-                  "name": "Frame 1",
-                  "height": 42,
-                  "gap": 24,
+                  "id": "IfSPz",
+                  "name": "Row",
+                  "gap": "$scale-600",
+                  "justifyContent": "center",
+                  "alignItems": "center",
                   "children": [
                     {
-                      "id": "cFqQn",
+                      "id": "k0bBnp",
                       "type": "ref",
-                      "ref": "cFqQn",
-                      "y": 0,
-                      "height": "fill_container"
+                      "ref": "eFsWC",
+                      "name": "Blog",
+                      "descendants": {
+                        "jynNC": {
+                          "content": "BLOG"
+                        }
+                      }
                     },
                     {
-                      "id": "TuE5m",
+                      "id": "qvLkk",
                       "type": "ref",
-                      "ref": "TuE5m",
-                      "y": 0,
-                      "height": "fill_container"
+                      "ref": "eFsWC",
+                      "name": "Projects",
+                      "descendants": {
+                        "jynNC": {
+                          "content": "PROJECTS"
+                        }
+                      }
                     }
                   ]
-                }
-              ]
-            },
-            "TuE5m": {
-              "type": "frame",
-              "id": "Xh82x",
-              "name": "Frame 3",
-              "height": 42,
-              "gap": 24,
-              "children": [
-                {
-                  "id": "DhFq4",
-                  "type": "ref",
-                  "ref": "DhFq4",
-                  "x": 0,
-                  "y": 0,
-                  "height": "fill_container"
                 },
                 {
-                  "id": "215sH",
-                  "type": "ref",
-                  "ref": "215sH",
-                  "x": 124,
-                  "y": 0,
-                  "height": "fill_container"
-                },
-                {
-                  "id": "ngCmD",
-                  "type": "ref",
-                  "ref": "ngCmD",
-                  "x": 190,
-                  "y": 0,
-                  "height": "fill_container"
+                  "type": "frame",
+                  "id": "mVGEr",
+                  "name": "Row",
+                  "gap": "$scale-600",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "Kbkzy",
+                      "type": "ref",
+                      "ref": "eFsWC",
+                      "name": "Newsletter",
+                      "descendants": {
+                        "jynNC": {
+                          "content": "NEWSLETTER"
+                        }
+                      }
+                    },
+                    {
+                      "id": "IGKAn",
+                      "type": "ref",
+                      "ref": "eFsWC",
+                      "name": "Shop",
+                      "descendants": {
+                        "jynNC": {
+                          "content": "SHOP"
+                        }
+                      }
+                    },
+                    {
+                      "id": "HwZBQ",
+                      "type": "ref",
+                      "ref": "eFsWC",
+                      "name": "About",
+                      "descendants": {
+                        "jynNC": {
+                          "content": "ABOUT"
+                        }
+                      }
+                    }
+                  ]
                 }
               ]
             }
@@ -8823,14 +8863,12 @@
                   "type": "frame",
                   "id": "S5OtQe",
                   "name": "Header / Left / Light",
+                  "theme": {
+                    "mode": "light"
+                  },
                   "reusable": true,
                   "width": "fill_container",
                   "fill": "$surface-default",
-                  "stroke": "$border-default",
-                  "strokeWidth": {
-                    "bottom": 1
-                  },
-                  "strokeAlignment": "inner",
                   "padding": [
                     "$scale-400",
                     "$layout-margin"
@@ -8956,15 +8994,15 @@
                         }
                       ]
                     }
-                  ],
-                  "theme": {
-                    "mode": "light"
-                  }
+                  ]
                 },
                 {
                   "type": "frame",
                   "id": "kgrqX",
                   "name": "Header / Left / Dark",
+                  "theme": {
+                    "mode": "dark"
+                  },
                   "reusable": true,
                   "width": "fill_container",
                   "fill": "$surface-default",
@@ -9098,23 +9136,18 @@
                         }
                       ]
                     }
-                  ],
-                  "theme": {
-                    "mode": "dark"
-                  }
+                  ]
                 },
                 {
                   "type": "frame",
                   "id": "ue7Bt",
                   "name": "Header / Center / Light",
+                  "theme": {
+                    "mode": "light"
+                  },
                   "reusable": true,
                   "width": "fill_container",
                   "fill": "$surface-default",
-                  "stroke": "$border-default",
-                  "strokeWidth": {
-                    "bottom": 1
-                  },
-                  "strokeAlignment": "inner",
                   "layout": "vertical",
                   "gap": "$scale-400",
                   "padding": [
@@ -9241,15 +9274,15 @@
                         }
                       ]
                     }
-                  ],
-                  "theme": {
-                    "mode": "light"
-                  }
+                  ]
                 },
                 {
                   "type": "frame",
                   "id": "VCDrB",
                   "name": "Header / Center / Dark",
+                  "theme": {
+                    "mode": "dark"
+                  },
                   "reusable": true,
                   "width": "fill_container",
                   "fill": "$surface-default",
@@ -9384,10 +9417,7 @@
                         }
                       ]
                     }
-                  ],
-                  "theme": {
-                    "mode": "dark"
-                  }
+                  ]
                 }
               ]
             },
@@ -9408,11 +9438,6 @@
                   "reusable": true,
                   "width": 390,
                   "fill": "$surface-default",
-                  "stroke": "$border-default",
-                  "strokeWidth": {
-                    "bottom": 1
-                  },
-                  "strokeAlignment": "inner",
                   "layout": "vertical",
                   "children": [
                     {
@@ -9475,11 +9500,6 @@
                       "id": "idINa",
                       "name": "Menu",
                       "width": "fill_container",
-                      "stroke": "$border-default",
-                      "strokeWidth": {
-                        "top": 1
-                      },
-                      "strokeAlignment": "inner",
                       "layout": "vertical",
                       "gap": "$scale-200",
                       "padding": [
@@ -10036,6 +10056,9 @@
                   "type": "frame",
                   "id": "vu6kH",
                   "name": "Footer / Light",
+                  "theme": {
+                    "mode": "light"
+                  },
                   "reusable": true,
                   "width": "fill_container",
                   "fill": {
@@ -10159,15 +10182,15 @@
                       "fontWeight": "normal",
                       "letterSpacing": "$type-body2-letter-spacing"
                     }
-                  ],
-                  "theme": {
-                    "mode": "light"
-                  }
+                  ]
                 },
                 {
                   "type": "frame",
                   "id": "E6haZ",
                   "name": "Footer / Dark",
+                  "theme": {
+                    "mode": "dark"
+                  },
                   "reusable": true,
                   "width": "fill_container",
                   "fill": {
@@ -10291,10 +10314,7 @@
                       "fontWeight": "normal",
                       "letterSpacing": "$type-body2-letter-spacing"
                     }
-                  ],
-                  "theme": {
-                    "mode": "dark"
-                  }
+                  ]
                 }
               ]
             }
@@ -14653,9 +14673,9 @@
           ]
         },
         {
-          "id": "y0BJx",
+          "id": "eM2zT",
           "type": "ref",
-          "ref": "E6haZ",
+          "ref": "vu6kH",
           "name": "Footer",
           "width": "fill_container"
         }
@@ -14868,13 +14888,13 @@
           ]
         },
         {
-          "id": "a3l1nb",
+          "id": "jBxZT",
           "type": "ref",
-          "ref": "E6haZ",
+          "ref": "vu6kH",
           "name": "Footer",
           "width": "fill_container",
           "descendants": {
-            "549hf": {
+            "iFupJ": {
               "width": 100,
               "height": 100
             }
@@ -15080,19 +15100,19 @@
           ]
         },
         {
-          "id": "aqiKD",
+          "id": "fI8Cr",
           "type": "ref",
-          "ref": "E6haZ",
+          "ref": "vu6kH",
           "name": "Footer",
           "width": "fill_container",
           "descendants": {
-            "549hf": {
+            "iFupJ": {
               "width": 100,
               "height": 100
             },
-            "BWRrf": {
+            "Sg6W9": {
               "type": "frame",
-              "id": "gA2HK",
+              "id": "XLjBL",
               "name": "Nav",
               "layout": "vertical",
               "padding": [
@@ -15105,14 +15125,14 @@
               "children": [
                 {
                   "type": "frame",
-                  "id": "YLnYL",
+                  "id": "a0c0w",
                   "name": "Row",
                   "gap": "$scale-600",
                   "justifyContent": "center",
                   "alignItems": "center",
                   "children": [
                     {
-                      "id": "WyA8y",
+                      "id": "nU8rQ",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Blog",
@@ -15123,7 +15143,7 @@
                       }
                     },
                     {
-                      "id": "hiyfn",
+                      "id": "tp47T",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Projects",
@@ -15137,14 +15157,14 @@
                 },
                 {
                   "type": "frame",
-                  "id": "bFW6W",
+                  "id": "fYQIi",
                   "name": "Row",
                   "gap": "$scale-600",
                   "justifyContent": "center",
                   "alignItems": "center",
                   "children": [
                     {
-                      "id": "IUROP",
+                      "id": "I32MN",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Newsletter",
@@ -15155,7 +15175,7 @@
                       }
                     },
                     {
-                      "id": "T17db",
+                      "id": "Y2wwI",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Shop",
@@ -15166,7 +15186,7 @@
                       }
                     },
                     {
-                      "id": "HHWpp",
+                      "id": "qO6wQ",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "About",
@@ -15181,6 +15201,620 @@
               ]
             }
           }
+        }
+      ]
+    },
+    {
+      "type": "rectangle",
+      "id": "I8cNH",
+      "x": -6374,
+      "y": 4419,
+      "name": "image 1",
+      "fill": {
+        "type": "image",
+        "enabled": true,
+        "mode": "cover"
+      },
+      "width": 340,
+      "height": 583
+    },
+    {
+      "type": "frame",
+      "id": "F6FNm",
+      "x": -6698,
+      "y": 5491,
+      "name": "Series",
+      "theme": {
+        "mode": "light",
+        "device": "lg"
+      },
+      "clip": true,
+      "width": 1200,
+      "fill": "$surface-default",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "u3HgM",
+          "type": "ref",
+          "ref": "S5OtQe",
+          "name": "Header",
+          "width": "fill_container",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "type": "frame",
+          "id": "JZy2r",
+          "name": "Frame 2",
+          "fill": "#ffffff",
+          "layout": "vertical",
+          "gap": 24,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "BsYMK",
+              "name": "Frame 3",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 10,
+              "padding": [
+                "$layout-margin",
+                "$scale-1000",
+                "$layout-margin",
+                "$layout-margin"
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "PShFl",
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "image.png",
+                    "mode": "cover"
+                  },
+                  "width": 522,
+                  "height": 897
+                },
+                {
+                  "type": "frame",
+                  "id": "qMFPu",
+                  "name": "Post Header",
+                  "width": 820,
+                  "layout": "vertical",
+                  "gap": "$space-stack",
+                  "padding": [
+                    0,
+                    0,
+                    "$scale-600",
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "nvXPu",
+                      "name": "Frame 4",
+                      "width": 1104,
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "X7VCj",
+                          "name": "Title",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Deliverance in San Antonio",
+                          "lineHeight": "$type-h1-line-height",
+                          "textAlign": "center",
+                          "fontFamily": "$font-heading",
+                          "fontSize": "$type-h3-size",
+                          "fontWeight": "700",
+                          "letterSpacing": "$type-h1-letter-spacing"
+                        },
+                        {
+                          "type": "text",
+                          "id": "MIO29",
+                          "name": "Date",
+                          "fill": "$text-link",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "SEPTEMBER 27, 2026",
+                          "lineHeight": "$type-eyebrow2-line-height",
+                          "textAlign": "center",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-eyebrow2-size",
+                          "fontWeight": "500",
+                          "letterSpacing": "$type-eyebrow2-letter-spacing"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "zgyaA",
+                  "name": "Body",
+                  "width": 820,
+                  "layout": "vertical",
+                  "gap": 25,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "j43ZT",
+                      "name": "Paragraph 1",
+                      "fill": "$text-default",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "This is the first post in the journal. Replace this with real writing whenever you're ready — the page and its layout are already wired up around whatever goes here.",
+                      "lineHeight": "$type-p2-line-height",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$type-p2-size",
+                      "fontWeight": "normal",
+                      "letterSpacing": "$type-p2-letter-spacing"
+                    },
+                    {
+                      "type": "text",
+                      "id": "W64dbP",
+                      "name": "Paragraph 2",
+                      "fill": "$text-default",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
+                      "lineHeight": "$type-p2-line-height",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$type-p2-size",
+                      "fontWeight": "normal",
+                      "letterSpacing": "$type-p2-letter-spacing"
+                    },
+                    {
+                      "type": "text",
+                      "id": "lujmz",
+                      "name": "Paragraph 3",
+                      "fill": "$text-default",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "A longer paragraph to show how body copy reads at full measure. Entries can run as long as they need to; the column stays at a comfortable reading width on desktop and uses the full width of the screen on tablet and phone.",
+                      "lineHeight": "$type-p2-line-height",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$type-p2-size",
+                      "fontWeight": "normal",
+                      "letterSpacing": "$type-p2-letter-spacing"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "BNdhi",
+              "name": "Info",
+              "width": 1200,
+              "stroke": {
+                "type": "color",
+                "color": "$border-strong",
+                "enabled": false
+              },
+              "strokeWidth": {
+                "top": 1,
+                "bottom": 1
+              },
+              "strokeAlignment": "outer",
+              "padding": [
+                24,
+                0,
+                "$scale-1000",
+                0
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ud962",
+                  "name": "Column",
+                  "width": "fill_container",
+                  "fill": {
+                    "type": "color",
+                    "color": "$neutral-100",
+                    "enabled": false
+                  },
+                  "layout": "vertical",
+                  "padding": [
+                    24,
+                    12,
+                    24,
+                    120
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "jx1UH",
+                      "type": "ref",
+                      "ref": "MAHBg",
+                      "x": 120,
+                      "y": 24,
+                      "descendants": {
+                        "Hzren/KqL7f": {
+                          "content": "SERIES"
+                        },
+                        "Hzren/b4BgZ": {
+                          "content": "Junk Drawer Journey"
+                        },
+                        "W68CW": {
+                          "enabled": false
+                        },
+                        "N7rbm/KqL7f": {
+                          "content": "NUMBER"
+                        },
+                        "N7rbm/b4BgZ": {
+                          "content": "001"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "bRPLX",
+                  "name": "Column",
+                  "width": "fill_container",
+                  "fill": {
+                    "type": "color",
+                    "color": "$neutral-100",
+                    "enabled": false
+                  },
+                  "layout": "vertical",
+                  "padding": [
+                    24,
+                    120,
+                    24,
+                    12
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "WeP1D",
+                      "type": "ref",
+                      "ref": "MAHBg",
+                      "x": 12,
+                      "y": 24,
+                      "descendants": {
+                        "Hzren/KqL7f": {
+                          "content": "YEAR"
+                        },
+                        "Hzren/b4BgZ": {
+                          "content": "2022"
+                        },
+                        "W68CW": {
+                          "enabled": false
+                        },
+                        "N7rbm/KqL7f": {
+                          "content": "LOCATION"
+                        },
+                        "N7rbm/b4BgZ": {
+                          "content": "San Antonio, TX"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gDzUL",
+          "type": "ref",
+          "ref": "vu6kH",
+          "name": "Footer",
+          "width": "fill_container",
+          "x": 0,
+          "y": 1656
+        }
+      ]
+    },
+    {
+      "id": "bQj20",
+      "type": "ref",
+      "ref": "S5OtQe",
+      "name": "Header",
+      "width": "fill_container(1200)",
+      "x": -6662,
+      "y": 5328
+    },
+    {
+      "id": "vForv",
+      "type": "ref",
+      "ref": "vu6kH",
+      "name": "Footer",
+      "width": "fill_container(1200)",
+      "x": -5651,
+      "y": 8128
+    },
+    {
+      "type": "frame",
+      "id": "CT0pC",
+      "x": -8087,
+      "y": 5688,
+      "name": "Content",
+      "width": 720,
+      "layout": "vertical",
+      "gap": 24,
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "fHcSe",
+          "name": "Frame 1",
+          "layout": "vertical",
+          "gap": "$scale-100",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "YpMhu",
+              "fill": "$neutral-900",
+              "content": "Junk Drawer Journey",
+              "fontFamily": "$font-display",
+              "fontSize": "$font-size-14",
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "b2nha",
+              "name": "Number",
+              "fill": "$yellow-50",
+              "cornerRadius": "$radius-md",
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 8,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "cWVuT",
+                  "fill": "$text-default",
+                  "content": "001",
+                  "fontFamily": "$font-display",
+                  "fontSize": "$font-size-12",
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "fQzV2",
+          "name": "image 1",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "mode": "cover"
+          },
+          "width": 340,
+          "height": 583
+        },
+        {
+          "type": "frame",
+          "id": "GhWkT",
+          "name": "Post Header",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": "$space-stack",
+          "children": [
+            {
+              "type": "text",
+              "id": "Hkq4B",
+              "name": "Date",
+              "fill": "$text-link",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "SEPTEMBER 27, 2026",
+              "lineHeight": "$type-eyebrow2-line-height",
+              "textAlign": "center",
+              "fontFamily": "$font-body",
+              "fontSize": "$type-eyebrow2-size",
+              "fontWeight": "500",
+              "letterSpacing": "$type-eyebrow2-letter-spacing"
+            },
+            {
+              "type": "text",
+              "id": "o0eiK",
+              "name": "Title",
+              "fill": "$text-default",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Deliverance in San Antonio",
+              "lineHeight": "$type-h1-line-height",
+              "textAlign": "center",
+              "fontFamily": "$font-heading",
+              "fontSize": "$type-h1-size",
+              "fontWeight": "700",
+              "letterSpacing": "$type-h1-letter-spacing"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "YTnej",
+          "name": "Body",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 25,
+          "children": [
+            {
+              "type": "text",
+              "id": "uHopk",
+              "name": "Paragraph 1",
+              "fill": "$text-default",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "This is the first post in the journal. Replace this with real writing whenever you're ready — the page and its layout are already wired up around whatever goes here.",
+              "lineHeight": "$type-p2-line-height",
+              "textAlign": "center",
+              "fontFamily": "$font-body",
+              "fontSize": "$type-p2-size",
+              "fontWeight": "normal",
+              "letterSpacing": "$type-p2-letter-spacing"
+            },
+            {
+              "type": "text",
+              "id": "N5lSX",
+              "name": "Paragraph 2",
+              "fill": "$text-default",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
+              "lineHeight": "$type-p2-line-height",
+              "textAlign": "center",
+              "fontFamily": "$font-body",
+              "fontSize": "$type-p2-size",
+              "fontWeight": "normal",
+              "letterSpacing": "$type-p2-letter-spacing"
+            },
+            {
+              "type": "text",
+              "id": "aJjIP",
+              "name": "Paragraph 3",
+              "fill": "$text-default",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "A longer paragraph to show how body copy reads at full measure. Entries can run as long as they need to; the column stays at a comfortable reading width on desktop and uses the full width of the screen on tablet and phone.",
+              "lineHeight": "$type-p2-line-height",
+              "textAlign": "center",
+              "fontFamily": "$font-body",
+              "fontSize": "$type-p2-size",
+              "fontWeight": "normal",
+              "letterSpacing": "$type-p2-letter-spacing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "spi1v",
+      "x": -6932,
+      "y": 5091,
+      "name": "Detail / Item",
+      "reusable": true,
+      "clip": true,
+      "width": "fill_container(468)",
+      "fill": "#FFFFFF",
+      "stroke": "$border-strong",
+      "strokeAlignment": "inner",
+      "children": [
+        {
+          "type": "frame",
+          "id": "m2Ozwp",
+          "name": "Left",
+          "width": 90,
+          "fill": "$neutral-200",
+          "stroke": "$border-strong",
+          "strokeWidth": {
+            "right": 1
+          },
+          "strokeAlignment": "inner",
+          "layout": "vertical",
+          "gap": 10,
+          "padding": 8,
+          "justifyContent": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "KqL7f",
+              "context": "Text Label that describes content in the cell on the right.",
+              "fill": "$neutral-700",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "LABEL",
+              "fontFamily": "$font-family-inter",
+              "fontSize": "$type-eyebrow2-size",
+              "fontWeight": "500"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "svx0O",
+          "name": "Right",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 10,
+          "padding": 8,
+          "justifyContent": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "wHPJT",
+              "name": "Single line (clip)",
+              "clip": true,
+              "width": "fill_container",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "b4BgZ",
+                  "context": "Text information used to describe the page. Always one line: if it's too long, cut it off at the end with an ellipsis (…). In code: white-space: nowrap; overflow: hidden; text-overflow: ellipsis.",
+                  "fill": "$neutral-700",
+                  "content": "Detail of the Label",
+                  "fontFamily": "$font-body",
+                  "fontSize": "$font-size-14",
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "MAHBg",
+      "x": -6932,
+      "y": 5152,
+      "name": "Detail",
+      "reusable": true,
+      "width": 468,
+      "stroke": "$border-strong",
+      "strokeWidth": 1,
+      "strokeAlignment": "outer",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "Hzren",
+          "type": "ref",
+          "ref": "spi1v",
+          "x": 0,
+          "y": 0,
+          "width": "fill_container",
+          "strokeWidth": {
+            "bottom": 1
+          }
+        },
+        {
+          "id": "W68CW",
+          "type": "ref",
+          "ref": "spi1v",
+          "x": 0,
+          "y": 33,
+          "width": "fill_container",
+          "strokeWidth": {
+            "bottom": 1
+          }
+        },
+        {
+          "id": "N7rbm",
+          "type": "ref",
+          "ref": "spi1v",
+          "x": 0,
+          "y": 66,
+          "width": "fill_container"
         }
       ]
     }

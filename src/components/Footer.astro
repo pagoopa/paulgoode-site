@@ -6,7 +6,7 @@ import { navItems } from '../lib/nav';
 const year = new Date().getFullYear();
 ---
 
-<footer class="site-footer" data-theme="dark">
+<footer class="site-footer">
   <div class="wrap site-footer__inner">
     <Image src={profile} alt="" class="site-footer__photo" width={120} height={120} />
     <nav class="site-footer__links" aria-label="Footer">
@@ -21,9 +21,9 @@ const year = new Date().getFullYear();
 </footer>
 
 <style>
-  /* Footer / Dark: profile circle, nav links and copyright, centered.
-     data-theme="dark" switches the tokens, so the footer uses the same
-     surfaces and text colours as Footer / Light. */
+  /* Footer / Light: profile circle, nav links and copyright, centered.
+     For Footer / Dark, add data-theme="dark" to the footer: it switches the
+     tokens, so the same styles give a dark background and light text. */
   .site-footer {
     background: linear-gradient(
       to bottom,
