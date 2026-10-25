@@ -15276,7 +15276,7 @@
       "id": "F6FNm",
       "x": -6698,
       "y": 5491,
-      "name": "Series",
+      "name": "Series — Desktop (1200)",
       "theme": {
         "mode": "light",
         "device": "lg"
@@ -15862,6 +15862,673 @@
           "x": 0,
           "y": 66,
           "width": "fill_container"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "Zksjh",
+      "x": -5378,
+      "y": 5491,
+      "name": "Series — Tablet (810)",
+      "theme": {
+        "mode": "light",
+        "device": "md"
+      },
+      "clip": true,
+      "width": 810,
+      "fill": "$surface-default",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "ybclb",
+          "type": "ref",
+          "ref": "S5OtQe",
+          "name": "Header",
+          "width": "fill_container",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "type": "frame",
+          "id": "Wobmz",
+          "name": "Frame 2",
+          "width": "fill_container",
+          "fill": "#ffffff",
+          "layout": "vertical",
+          "gap": 24,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "GPmE2",
+              "name": "Frame 3",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": "$scale-0400",
+              "padding": "$layout-margin",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "id": "E7ehA",
+                  "type": "ref",
+                  "ref": "iZort",
+                  "name": "Figure"
+                },
+                {
+                  "type": "frame",
+                  "id": "W5rdU0",
+                  "name": "Post Header",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": "$space-stack",
+                  "padding": [
+                    0,
+                    0,
+                    "$scale-0600",
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "S96RKs",
+                      "name": "Frame 4",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "hlBWa",
+                          "name": "Title",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Deliverance in San Antonio",
+                          "lineHeight": "$type-h1-line-height",
+                          "textAlign": "center",
+                          "fontFamily": "$font-heading",
+                          "fontSize": "$type-h3-size",
+                          "fontWeight": "700",
+                          "letterSpacing": "$type-h1-letter-spacing"
+                        },
+                        {
+                          "type": "text",
+                          "id": "e6uoqE",
+                          "name": "Date",
+                          "fill": "$text-link",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "SEPTEMBER 27, 2026",
+                          "lineHeight": "$type-eyebrow2-line-height",
+                          "textAlign": "center",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-eyebrow2-size",
+                          "fontWeight": "500",
+                          "letterSpacing": "$type-eyebrow2-letter-spacing"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "vOhXv",
+                  "name": "Body",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 25,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "L4gMxg",
+                      "name": "Paragraph 1",
+                      "fill": "$text-default",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "This is the first post in the journal. Replace this with real writing whenever you're ready — the page and its layout are already wired up around whatever goes here.",
+                      "lineHeight": "$type-p2-line-height",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$type-p2-size",
+                      "fontWeight": "normal",
+                      "letterSpacing": "$type-p2-letter-spacing"
+                    },
+                    {
+                      "type": "text",
+                      "id": "uphEl",
+                      "name": "Paragraph 2",
+                      "fill": "$text-default",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
+                      "lineHeight": "$type-p2-line-height",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$type-p2-size",
+                      "fontWeight": "normal",
+                      "letterSpacing": "$type-p2-letter-spacing"
+                    },
+                    {
+                      "type": "text",
+                      "id": "yQ4Hb",
+                      "name": "Paragraph 3",
+                      "fill": "$text-default",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "A longer paragraph to show how body copy reads at full measure. Entries can run as long as they need to; the column stays at a comfortable reading width on desktop and uses the full width of the screen on tablet and phone.",
+                      "lineHeight": "$type-p2-line-height",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$type-p2-size",
+                      "fontWeight": "normal",
+                      "letterSpacing": "$type-p2-letter-spacing"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "j7kkE",
+              "name": "Info",
+              "width": "fill_container",
+              "stroke": {
+                "type": "color",
+                "color": "$border-strong",
+                "enabled": false
+              },
+              "strokeWidth": {
+                "top": 1,
+                "bottom": 1
+              },
+              "strokeAlignment": "outer",
+              "layout": "vertical",
+              "gap": "$scale-0000",
+              "padding": [
+                "$scale-0600",
+                "$layout-margin",
+                "$scale-1000",
+                "$layout-margin"
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "XafSO",
+                  "name": "Column",
+                  "fill": {
+                    "type": "color",
+                    "color": "$neutral-100",
+                    "enabled": false
+                  },
+                  "layout": "vertical",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "g2w3e",
+                      "type": "ref",
+                      "ref": "MAHBg",
+                      "x": 0,
+                      "y": 0,
+                      "descendants": {
+                        "Hzren/KqL7f": {
+                          "content": "SERIES"
+                        },
+                        "Hzren/b4BgZ": {
+                          "content": "Junk Drawer Journey"
+                        },
+                        "W68CW": {
+                          "enabled": false
+                        },
+                        "N7rbm/KqL7f": {
+                          "content": "NUMBER"
+                        },
+                        "N7rbm/b4BgZ": {
+                          "content": "001"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "LPZNu",
+                  "name": "Column",
+                  "fill": {
+                    "type": "color",
+                    "color": "$neutral-100",
+                    "enabled": false
+                  },
+                  "layout": "vertical",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "jzmZM",
+                      "type": "ref",
+                      "ref": "MAHBg",
+                      "x": 0,
+                      "y": 0,
+                      "descendants": {
+                        "Hzren/KqL7f": {
+                          "content": "YEAR"
+                        },
+                        "Hzren/b4BgZ": {
+                          "content": "2022"
+                        },
+                        "W68CW": {
+                          "enabled": false
+                        },
+                        "N7rbm/KqL7f": {
+                          "content": "LOCATION"
+                        },
+                        "N7rbm/b4BgZ": {
+                          "content": "San Antonio, TX"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "LM9Kf",
+          "type": "ref",
+          "ref": "vu6kH",
+          "name": "Footer",
+          "width": "fill_container",
+          "x": 0,
+          "y": 1711,
+          "descendants": {
+            "iFupJ": {
+              "width": 100,
+              "height": 100
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "uABk5",
+      "x": -4448,
+      "y": 5491,
+      "name": "Series — Mobile (390)",
+      "theme": {
+        "mode": "light",
+        "device": "sm"
+      },
+      "clip": true,
+      "width": 390,
+      "fill": "$surface-default",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "CCXHO",
+          "type": "ref",
+          "ref": "S5OtQe",
+          "name": "Header",
+          "width": "fill_container",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "type": "frame",
+          "id": "bhQMb",
+          "name": "Frame 2",
+          "width": "fill_container",
+          "fill": "#ffffff",
+          "layout": "vertical",
+          "gap": 24,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "STqc4",
+              "name": "Frame 3",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": "$scale-0400",
+              "padding": "$layout-margin",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "id": "cHCVI",
+                  "type": "ref",
+                  "ref": "iZort",
+                  "width": "fill_container",
+                  "name": "Figure",
+                  "descendants": {
+                    "N3oF3o": {
+                      "height": 588
+                    }
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "xcNMF",
+                  "name": "Post Header",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": "$space-stack",
+                  "padding": [
+                    0,
+                    0,
+                    "$scale-0600",
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "H1hAfF",
+                      "name": "Frame 4",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "THm9Q",
+                          "name": "Title",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Deliverance in San Antonio",
+                          "lineHeight": "$type-h1-line-height",
+                          "textAlign": "center",
+                          "fontFamily": "$font-heading",
+                          "fontSize": "$type-h3-size",
+                          "fontWeight": "700",
+                          "letterSpacing": "$type-h1-letter-spacing"
+                        },
+                        {
+                          "type": "text",
+                          "id": "E7YuJn",
+                          "name": "Date",
+                          "fill": "$text-link",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "SEPTEMBER 27, 2026",
+                          "lineHeight": "$type-eyebrow2-line-height",
+                          "textAlign": "center",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-eyebrow2-size",
+                          "fontWeight": "500",
+                          "letterSpacing": "$type-eyebrow2-letter-spacing"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Twkuz",
+                  "name": "Body",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 25,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "swGqL",
+                      "name": "Paragraph 1",
+                      "fill": "$text-default",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "This is the first post in the journal. Replace this with real writing whenever you're ready — the page and its layout are already wired up around whatever goes here.",
+                      "lineHeight": "$type-p2-line-height",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$type-p2-size",
+                      "fontWeight": "normal",
+                      "letterSpacing": "$type-p2-letter-spacing"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ejS8h",
+                      "name": "Paragraph 2",
+                      "fill": "$text-default",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
+                      "lineHeight": "$type-p2-line-height",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$type-p2-size",
+                      "fontWeight": "normal",
+                      "letterSpacing": "$type-p2-letter-spacing"
+                    },
+                    {
+                      "type": "text",
+                      "id": "rjF0O",
+                      "name": "Paragraph 3",
+                      "fill": "$text-default",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "A longer paragraph to show how body copy reads at full measure. Entries can run as long as they need to; the column stays at a comfortable reading width on desktop and uses the full width of the screen on tablet and phone.",
+                      "lineHeight": "$type-p2-line-height",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$type-p2-size",
+                      "fontWeight": "normal",
+                      "letterSpacing": "$type-p2-letter-spacing"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "okoeu",
+              "name": "Info",
+              "width": "fill_container",
+              "stroke": {
+                "type": "color",
+                "color": "$border-strong",
+                "enabled": false
+              },
+              "strokeWidth": {
+                "top": 1,
+                "bottom": 1
+              },
+              "strokeAlignment": "outer",
+              "layout": "vertical",
+              "gap": "$scale-0000",
+              "padding": [
+                "$scale-0600",
+                "$layout-margin",
+                "$scale-1000",
+                "$layout-margin"
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "xacrk",
+                  "name": "Column",
+                  "width": "fill_container",
+                  "fill": {
+                    "type": "color",
+                    "color": "$neutral-100",
+                    "enabled": false
+                  },
+                  "layout": "vertical",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "HQtAh",
+                      "type": "ref",
+                      "ref": "MAHBg",
+                      "width": "fill_container",
+                      "x": 0,
+                      "y": 0,
+                      "descendants": {
+                        "Hzren/KqL7f": {
+                          "content": "SERIES"
+                        },
+                        "Hzren/b4BgZ": {
+                          "content": "Junk Drawer Journey"
+                        },
+                        "W68CW": {
+                          "enabled": false
+                        },
+                        "N7rbm/KqL7f": {
+                          "content": "NUMBER"
+                        },
+                        "N7rbm/b4BgZ": {
+                          "content": "001"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Cip47",
+                  "name": "Column",
+                  "width": "fill_container",
+                  "fill": {
+                    "type": "color",
+                    "color": "$neutral-100",
+                    "enabled": false
+                  },
+                  "layout": "vertical",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "Fuzpq",
+                      "type": "ref",
+                      "ref": "MAHBg",
+                      "width": "fill_container",
+                      "x": 0,
+                      "y": 0,
+                      "descendants": {
+                        "Hzren/KqL7f": {
+                          "content": "YEAR"
+                        },
+                        "Hzren/b4BgZ": {
+                          "content": "2022"
+                        },
+                        "W68CW": {
+                          "enabled": false
+                        },
+                        "N7rbm/KqL7f": {
+                          "content": "LOCATION"
+                        },
+                        "N7rbm/b4BgZ": {
+                          "content": "San Antonio, TX"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "G4TUw",
+          "type": "ref",
+          "ref": "vu6kH",
+          "name": "Footer",
+          "width": "fill_container",
+          "x": 0,
+          "y": 1488,
+          "descendants": {
+            "iFupJ": {
+              "width": 100,
+              "height": 100
+            },
+            "Sg6W9": {
+              "type": "frame",
+              "id": "iCH0d",
+              "name": "Nav",
+              "layout": "vertical",
+              "padding": [
+                "$scale-0300",
+                0,
+                0,
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "QcPVo",
+                  "name": "Row",
+                  "gap": "$scale-0600",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "DjQ7F",
+                      "type": "ref",
+                      "ref": "eFsWC",
+                      "name": "Blog",
+                      "descendants": {
+                        "jynNC": {
+                          "content": "BLOG"
+                        }
+                      }
+                    },
+                    {
+                      "id": "Ts4Xm",
+                      "type": "ref",
+                      "ref": "eFsWC",
+                      "name": "Projects",
+                      "descendants": {
+                        "jynNC": {
+                          "content": "PROJECTS"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "DGGqv",
+                  "name": "Row",
+                  "gap": "$scale-0600",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "UXVkE",
+                      "type": "ref",
+                      "ref": "eFsWC",
+                      "name": "Newsletter",
+                      "descendants": {
+                        "jynNC": {
+                          "content": "NEWSLETTER"
+                        }
+                      }
+                    },
+                    {
+                      "id": "bnY3A",
+                      "type": "ref",
+                      "ref": "eFsWC",
+                      "name": "Shop",
+                      "descendants": {
+                        "jynNC": {
+                          "content": "SHOP"
+                        }
+                      }
+                    },
+                    {
+                      "id": "KAOUH",
+                      "type": "ref",
+                      "ref": "eFsWC",
+                      "name": "About",
+                      "descendants": {
+                        "jynNC": {
+                          "content": "ABOUT"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
         }
       ]
     }
