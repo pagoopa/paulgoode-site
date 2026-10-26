@@ -1,7 +1,7 @@
 import { getCollection } from 'astro:content';
 
 /** How many posts the journal shows per page. */
-export const POSTS_PER_PAGE = 5;
+export const POSTS_PER_PAGE = 3;
 
 /** Published posts, newest first. Drafts only show while running the site locally. */
 export async function getJournalPosts() {

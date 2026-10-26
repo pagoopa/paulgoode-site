@@ -158,7 +158,7 @@ misspelled field.
 
 ## Journal posts
 
-The journal shows the 5 newest posts at `/blog`, with "Older posts" leading
+The journal shows the 3 newest posts at `/blog`, with "Older posts" leading
 to `/blog/page/2` and onward. Change `POSTS_PER_PAGE` in `src/lib/blog.ts`
 to show more or fewer.
 
