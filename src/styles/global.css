@@ -33,8 +33,32 @@ h3,
 h4 {
   font-family: var(--font-heading);
   font-weight: 700;
-  line-height: 1.2;
   margin: 0 0 0.5em;
+}
+
+/* Headings/H1–H4. Components that need a different size set their own. */
+h1 {
+  font-size: var(--type-h1-size);
+  line-height: var(--type-h1-line-height);
+  letter-spacing: var(--type-h1-letter-spacing);
+}
+
+h2 {
+  font-size: var(--type-h2-size);
+  line-height: var(--type-h2-line-height);
+  letter-spacing: var(--type-h2-letter-spacing);
+}
+
+h3 {
+  font-size: var(--type-h3-size);
+  line-height: var(--type-h3-line-height);
+  letter-spacing: var(--type-h3-letter-spacing);
+}
+
+h4 {
+  font-size: var(--type-h4-size);
+  line-height: var(--type-h4-line-height);
+  letter-spacing: var(--type-h4-letter-spacing);
 }
 
 p {

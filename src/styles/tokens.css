@@ -78,7 +78,7 @@
   --font-family-unbounded: 'Unbounded', Arial Black, sans-serif;
   --font-body: var(--font-family-inter);
   --font-family-inter: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-heading: var(--font-family-inter);
+  --font-heading: var(--font-family-unbounded);
 
   --scale-0000: 0px;
   --scale-0025: 1px;
