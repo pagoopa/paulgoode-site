@@ -20647,7 +20647,7 @@
     },
     "font-heading": {
       "type": "string",
-      "value": "$font-family-inter"
+      "value": "$font-family-unbounded"
     },
     "surface-default": {
       "type": "color",
