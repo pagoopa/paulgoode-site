@@ -5,8 +5,9 @@ import { navItems } from '../lib/nav';
 
 const currentPath = Astro.url.pathname;
 
+// Blog is the home page, so it's also current on every post and older page under /blog.
 function isActive(href: string) {
-  return currentPath.startsWith(href);
+  return href === '/' ? currentPath === '/' || currentPath.startsWith('/blog') : currentPath.startsWith(href);
 }
 ---
 

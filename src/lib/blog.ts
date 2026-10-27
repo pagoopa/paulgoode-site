@@ -9,7 +9,7 @@ export async function getJournalPosts() {
   return posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 }
 
-/** Page 1 is /blog; later pages are /blog/page/2, /blog/page/3, … */
+/** Page 1 is the home page; later pages are /blog/page/2, /blog/page/3, … */
 export function journalPageUrl(page: number) {
-  return page === 1 ? '/blog' : `/blog/page/${page}`;
+  return page === 1 ? '/' : `/blog/page/${page}`;
 }
