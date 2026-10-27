@@ -95,6 +95,13 @@ const dateFmt = new Intl.DateTimeFormat('en-US', {
     margin-bottom: 1.4em;
   }
 
+  /* Links inside the text are blue and underlined. */
+  .post__body :global(a) {
+    color: var(--color-text-link);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
+
   @media (max-width: 1023px) {
     .post__aside {
       padding-top: 0;
