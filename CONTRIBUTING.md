@@ -128,19 +128,16 @@ Don't edit `tokens.css` by hand, because the next sync overwrites it.
 
 ## Where this is going
 
-`CONTENT_MODEL.md` is the target for notes, series, and projects. The
+`CONTENT_MODEL.md` is the target for the journal, series, and projects. The
 sections below describe the site as it works today. When they disagree, the
 content model wins, and the code catches up in small pull requests.
 
-A few decisions are already settled. Notes will replace the journal, and
-`/blog` will redirect to `/notes`. A note's format chooses its layout. A
-format can gain its own layout later, when a real note needs a different
-one, and there is no second collection for that. Series entries keep their
-year, location, captioned hero image, and 16:10 thumbnail (the content
-model's cover), at `/series/<series>/<entry>`. Domain filters will be
-`/notes/domain/<domain>`, and threads will be `/threads/<thread>`. New
-components are designed in Pencil before they are coded. This repo does not
-deploy the site yet, so the Substack sync waits.
+A few decisions are already settled. Notes were dropped, so the journal stays
+at `/blog` and the nav item is "Blog". Series entries keep their year,
+location, captioned hero image, and 16:10 thumbnail (the content model's
+cover), at `/series/<series>/<entry>`. New components are designed in Pencil
+before they are coded. This repo does not deploy the site yet, so the
+Substack sync waits.
 
 ## Editing site copy
 
@@ -175,7 +172,7 @@ A series is a numbered set of artwork, like "Junk Drawer Journey".
   description, plus `domains` (one or more of art, design, spirit, life,
   studio) and `status` (exploring, active, resting, complete, or promoted).
   Optional: `premise` (one line, "an excuse to…"), `question`, `started`,
-  `container`, and `threads`. The series page shows `status` as a tag beside
+  and `container`. The series page shows `status` as a tag beside
   the eyebrow. The file name is its URL:
   `junk-drawer-journey.md` → `/series/junk-drawer-journey`.
 - **An entry:** a folder in `src/content/entries/` with an `index.md` and the

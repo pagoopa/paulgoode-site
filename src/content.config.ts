@@ -1,9 +1,7 @@
 import { defineCollection, reference } from 'astro:content';
 import { z } from 'astro/zod';
 import { glob } from 'astro/loaders';
-import { domain, seriesStatus, thread } from './lib/labels';
-
-const noteFormat = z.enum(['image', 'sketch', 'video', 'link', 'writing', 'process']);
+import { domain, seriesStatus } from './lib/labels';
 
 const blog = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/blog' }),
@@ -33,7 +31,6 @@ const series = defineCollection({
     domains: z.array(domain).min(1),
     status: seriesStatus,
     container: z.object({ kind: z.string(), target: z.number().int().positive().optional() }).optional(),
-    threads: z.array(thread).default([]),
     started: z.coerce.date().optional(),
     // cover, identity, substackSection, and promotedTo wait until something uses them.
   }),
@@ -83,23 +80,4 @@ const pages = defineCollection({
   }),
 });
 
-// Notes: loose updates. Sample files live in src/content/notes/.
-const notes = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/notes' }),
-  schema: ({ image }) =>
-    z.object({
-      title: z.string().optional(),
-      date: z.coerce.date(),
-      domain: domain.optional(),
-      format: noteFormat,
-      threads: z.array(thread).max(3).default([]),
-      series: reference('series').optional(),
-      images: z.array(z.object({ src: image(), alt: z.string().min(1) })).default([]),
-      video: z.string().url().optional(),
-      link: z.object({ url: z.string().url(), label: z.string().optional() }).optional(),
-      substackUrl: z.string().url().optional(),
-      draft: z.boolean().default(false),
-    }),
-});
-
-export const collections = { blog, series, entries, pages, notes };
+export const collections = { blog, series, entries, pages };
