@@ -1,6 +1,7 @@
 ---
-// One page of the journal: the newest posts first, POSTS_PER_PAGE at a time,
-// with Newer / Older links. Used by /blog and /blog/page/<n>.
+// One page of the journal, which is also the home page: the newest posts
+// first, POSTS_PER_PAGE at a time, with Newer / Older links. Used by / and
+// /blog/page/<n>. Matches the Blog Landing boards in design/site.pen.
 import Layout from '../layouts/Layout.astro';
 import PostExcerpt from './PostExcerpt.astro';
 import Pagination from './Pagination.astro';
@@ -20,64 +21,97 @@ const entries = await Promise.all(
 );
 
 const dateFmt = new Intl.DateTimeFormat('en-US', {
+  weekday: 'long',
   year: 'numeric',
-  month: 'long',
+  month: 'short',
   day: 'numeric',
   // pubDate is midnight UTC; without this it shows the day before in US time zones.
   timeZone: 'UTC',
 });
 ---
 
-<Layout
-  title={page === 1 ? 'Journal' : `Journal — Page ${page}`}
-  description="Keep Going Sketchbook — an open creative journal."
->
+<Layout title={page === 1 ? 'Journal' : `Journal — Page ${page}`}>
   <section class="wrap journal">
-    <p class="eyebrow">Journal</p>
-    <h1>Keep Going Sketchbook</h1>
+    <h1 class="sr-only">Paul Goode — Journal</h1>
 
-    {posts.length === 0 && <p class="prose">Nothing published yet.</p>}
+    <div class="journal__column">
+      {posts.length === 0 && <p class="prose">Nothing published yet.</p>}
 
-    <ul class="journal__list">
-      {entries.map(({ post, Content }) => (
-        <li class="journal__item">
-          <span class="journal__date">{dateFmt.format(post.data.pubDate)}</span>
-          <h2 class="journal__title">
-            <a href={`/blog/${post.id}/`}>{post.data.title}</a>
-          </h2>
-          <div class="journal__body">
-            <PostExcerpt href={`/blog/${post.id}/`}>
-              <Content />
-            </PostExcerpt>
-          </div>
-        </li>
-      ))}
-    </ul>
+      <ul class="journal__list">
+        {entries.map(({ post, Content }) => (
+          <li class="journal__item">
+            <h2 class="journal__title">
+              <a href={`/blog/${post.id}/`}>{post.data.title}</a>
+            </h2>
+            <time class="journal__date" datetime={post.data.pubDate.toISOString()}>
+              {dateFmt.format(post.data.pubDate)}
+            </time>
+            <div class="journal__body">
+              <PostExcerpt href={`/blog/${post.id}/`}>
+                <Content />
+              </PostExcerpt>
+            </div>
+          </li>
+        ))}
+      </ul>
 
-    <Pagination
-      newer={page > 1 ? journalPageUrl(page - 1) : undefined}
-      older={page < pageCount ? journalPageUrl(page + 1) : undefined}
-    />
+      <Pagination
+        newer={page > 1 ? journalPageUrl(page - 1) : undefined}
+        older={page < pageCount ? journalPageUrl(page + 1) : undefined}
+      />
+    </div>
   </section>
 </Layout>
 
 <style>
   .journal {
-    padding-block: 64px 96px;
-    max-width: 720px;
+    padding-block: var(--scale-0600) var(--space-section);
+  }
+
+  /* Column: 900 wide on desktop, with 40 of padding. Tablet and mobile use the full width. */
+  .journal__column {
+    max-width: 900px;
+    margin-inline: auto;
+    padding: var(--scale-0900);
+    display: flex;
+    flex-direction: column;
+    gap: var(--scale-0900);
+  }
+
+  @media (max-width: 1023px) {
+    .journal__column {
+      padding-inline: 0;
+    }
+  }
+
+  @media (max-width: 599px) {
+    .journal__column {
+      padding-block: var(--scale-0600);
+    }
   }
 
   .journal__list {
     list-style: none;
-    margin: 40px 0 0;
+    margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
+    gap: var(--scale-0400);
   }
 
   .journal__item {
-    padding-block: var(--scale-0600);
-    border-bottom: 1px solid var(--color-border-default);
+    display: flex;
+    flex-direction: column;
+    gap: var(--scale-0200);
+    padding-bottom: var(--scale-0600);
+  }
+
+  /* Headings/H1, in the heading font */
+  .journal__title {
+    font-size: var(--type-h1-size);
+    line-height: var(--type-h1-line-height);
+    letter-spacing: var(--type-h1-letter-spacing);
+    margin: 0;
   }
 
   /* Body/eyebrow3-md, as on Card / Post */
@@ -90,21 +124,20 @@ const dateFmt = new Intl.DateTimeFormat('en-US', {
     color: var(--color-text-muted);
   }
 
-  /* Headings/Header 4 */
-  .journal__title {
-    font-size: var(--type-h4-size);
-    line-height: var(--type-h4-line-height);
-    margin: var(--scale-0200) 0 var(--scale-0200);
-  }
-
-  /* Same body text as the post page */
+  /* The body sits between a 4px line above and a 2px line below. */
   .journal__body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--scale-0600);
+    padding-block: var(--scale-0600);
+    border-top: var(--scale-0100) solid var(--color-border-default);
+    border-bottom: var(--scale-0050) solid var(--color-border-default);
     font-size: var(--type-p2-size);
     line-height: var(--type-p2-line-height);
   }
 
-  .journal__body :global(p) {
-    margin-bottom: 1.4em;
+  .journal__body :global(> *) {
+    margin: 0;
   }
 
   .journal__body :global(img) {

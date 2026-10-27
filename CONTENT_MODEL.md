@@ -9,7 +9,7 @@ Notes, the loose-update layer in an earlier version of this model, were dropped 
 ## At a glance
 
 ```
-JOURNAL   standalone posts at /blog
+JOURNAL   standalone posts, shown on the home page
 
 SERIES ──(gate)──▶ PROJECTS
 
@@ -29,7 +29,7 @@ A journal post is a piece of writing: a title, a date, a body, and optionally im
 | Draft | Hidden from the live site while true |
 | Sidebar image | A portrait image beside the post, with alt text (optional) |
 
-The journal page shows 3 posts at a time, newest first, with Newer / Older links.
+The home page is the journal: 3 posts at a time, newest first, with Newer / Older links.
 
 ## Series
 
@@ -86,7 +86,7 @@ paulgoode.com is the home of record and holds all three layers. Substack is for 
 
 | Layer | paulgoode.com | Substack | Elsewhere |
 | --- | --- | --- | --- |
-| Journal | `/blog` | Newsletter posts | |
+| Journal | The home page, `/`, and `/blog/<post>` | Newsletter posts | |
 | Series | A page per series with its entries | Posts, one Section per series | Little books, prints |
 | Projects | A card and a short page with its origin, linking out | Announcement posts | The project's own site, events, store |
 
@@ -111,7 +111,7 @@ src/content/
   series/     ghost-man.md
   entries/    ghost-man/01-the-weight/index.md
   projects/   pagoopaloops.md
-  pages/      home.md
+  pages/      about.md
 src/content.config.ts
 src/pages/    blog/, series/, projects/
 ```
@@ -197,8 +197,8 @@ Add one build-time check in `src/lib/`: a series with `status: 'promoted'` must 
 
 | Route | Shows | Filters |
 | --- | --- | --- |
-| `/` | Latest journal posts, active series, live projects | none |
-| `/blog`, `/blog/page/[n]` | Journal posts, newest first, paginated (3 per page) | none |
+| `/`, `/blog/page/[n]` | The home page: journal posts, newest first, paginated (3 per page) | none |
+| `/blog` | Redirects to `/` | none |
 | `/blog/[slug]` | One post | none |
 | `/series` | Series grid | domain, status |
 | `/series/[slug]` | Premise, question, status, container progress, entries | none |
@@ -238,7 +238,8 @@ Comments, accounts, a CMS, full-text search, and syncing newsletter posts (see a
 
 - Domains are Art, Design, Spirit, Life, Studio.
 - Series entries are their own collection (`entries`).
-- Notes were dropped on Oct 26, 2026. The journal stays at `/blog`, and the nav item is "Blog". There are no threads or `/notes` routes.
+- Notes were dropped on Oct 26, 2026. There are no threads or `/notes` routes.
+- The home page is the journal, with multiple posts. `/blog` redirects to `/`, posts stay at `/blog/<post>`, and the nav item "Blog" links to `/`.
 - The journal shows 3 posts per page.
 - Series entries keep a year, a location, a hero image with a caption, and a 16:10 thumbnail. The thumbnail is `cover`. Entry URLs stay `/series/<series>/<entry>`.
 - Domain filters are static pages. They apply to series and projects.

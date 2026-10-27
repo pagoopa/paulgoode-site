@@ -132,8 +132,8 @@ Don't edit `tokens.css` by hand, because the next sync overwrites it.
 sections below describe the site as it works today. When they disagree, the
 content model wins, and the code catches up in small pull requests.
 
-A few decisions are already settled. Notes were dropped, so the journal stays
-at `/blog` and the nav item is "Blog". Series entries keep their year,
+A few decisions are already settled. Notes were dropped, and the journal is the
+home page: `/blog` redirects to `/`, and the nav item is "Blog". Series entries keep their year,
 location, captioned hero image, and 16:10 thumbnail (the content model's
 cover), at `/series/<series>/<entry>`. New components are designed in Pencil
 before they are coded. This repo does not deploy the site yet, so the
@@ -145,8 +145,8 @@ The words on the site live in Markdown files under `src/content/`:
 
 | Folder | What it holds |
 | --- | --- |
-| `src/content/pages/` | Home, About, Contact and Projects (`home.md`, `about.md`, `contact.md`, `projects.md`) |
-| `src/content/blog/` | Journal posts |
+| `src/content/pages/` | About, Contact and Projects (`about.md`, `contact.md`, `projects.md`) |
+| `src/content/blog/` | Journal posts, which make up the home page |
 
 The block between the `---` lines at the top (the frontmatter) holds the
 heading, eyebrow, buttons and so on. Everything below it is the body text.
@@ -155,13 +155,13 @@ misspelled field.
 
 ## Journal posts
 
-The journal shows the 3 newest posts at `/blog`, with "Older posts" leading
-to `/blog/page/2` and onward. Change `POSTS_PER_PAGE` in `src/lib/blog.ts`
+The home page is the journal. It shows the 3 newest posts, with "Older posts"
+leading to `/blog/page/2` and onward. A post lives at `/blog/<post>`. Change `POSTS_PER_PAGE` in `src/lib/blog.ts`
 to show more or fewer.
 
-The journal page shows each post in full. To show only the start, put
+The home page shows each post in full. To show only the start, put
 `<!-- more -->` on its own line, with a blank line above and below it.
-Everything above the line shows on the journal page, followed by a "Read
+Everything above the line shows on the home page, followed by a "Read
 more" link to the full post.
 
 ## Series
@@ -191,5 +191,5 @@ A series is a numbered set of artwork, like "Junk Drawer Journey".
 ## The shop
 
 The shop lives on Big Cartel at https://shop.paulgoode.com, not in this
-repo. The "Shop" links in the header, footer and home page point there.
+repo. The "Shop" links in the header and footer point there.
 Add and price pieces in Big Cartel.

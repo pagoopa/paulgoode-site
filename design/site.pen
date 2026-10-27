@@ -31,7 +31,7 @@
       "fill": "#38eeffff",
       "textGrowth": "fixed-width",
       "width": 1558,
-      "content": "Blog Landing",
+      "content": "Home",
       "fontFamily": "Roboto Mono",
       "fontSize": 200,
       "fontWeight": "600"
@@ -41,7 +41,7 @@
       "id": "O3QOKy",
       "x": -10251,
       "y": 4062,
-      "name": "Blog Landing — Desktop (1200)",
+      "name": "Home — Desktop (1200)",
       "theme": {
         "mode": "light",
         "device": "lg"
@@ -1256,7 +1256,7 @@
       "id": "R8J5S",
       "x": -8931,
       "y": 4062,
-      "name": "Blog Landing — Tablet (810)",
+      "name": "Home — Tablet (810)",
       "theme": {
         "mode": "light",
         "device": "md"
@@ -2169,7 +2169,7 @@
       "id": "k5EJ8W",
       "x": -8001,
       "y": 4062,
-      "name": "Blog Landing — Mobile (390)",
+      "name": "Home — Mobile (390)",
       "theme": {
         "mode": "light",
         "device": "sm"
