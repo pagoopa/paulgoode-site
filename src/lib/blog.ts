@@ -13,3 +13,13 @@ export async function getJournalPosts() {
 export function journalPageUrl(page: number) {
   return page === 1 ? '/' : `/blog/page/${page}`;
 }
+
+/** "Sunday, Sep 27, 2026": the date line on a post. */
+export const postDateFormat = new Intl.DateTimeFormat('en-US', {
+  weekday: 'long',
+  year: 'numeric',
+  month: 'short',
+  day: 'numeric',
+  // pubDate is midnight UTC; without this it shows the day before in US time zones.
+  timeZone: 'UTC',
+});

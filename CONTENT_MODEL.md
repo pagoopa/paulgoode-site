@@ -27,9 +27,8 @@ A journal post is a piece of writing: a title, a date, a body, and optionally im
 | Published | Date |
 | Updated | Date of the last edit (optional) |
 | Draft | Hidden from the live site while true |
-| Sidebar image | A portrait image beside the post, with alt text (optional) |
 
-The home page is the journal: 3 posts at a time, newest first, with Newer / Older links.
+The home page is the journal: 3 posts at a time, newest first, with Newer / Older links. A post's own page shows it in full, with links to the newer and older posts.
 
 ## Series
 
@@ -126,13 +125,12 @@ const domain = z.enum(['art', 'design', 'spirit', 'life', 'studio']);
 
 const blog = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/blog' }),
-  schema: ({ image }) => z.object({
+  schema: z.object({
     title: z.string(),
     description: z.string().optional(),
     pubDate: z.coerce.date(),
     updatedDate: z.coerce.date().optional(),
     draft: z.boolean().default(false),
-    sidebarImage: z.object({ src: image(), alt: z.string() }).optional(),
   }),
 });
 
@@ -199,7 +197,7 @@ Add one build-time check in `src/lib/`: a series with `status: 'promoted'` must 
 | --- | --- | --- |
 | `/`, `/blog/page/[n]` | The home page: journal posts, newest first, paginated (3 per page) | none |
 | `/blog` | Redirects to `/` | none |
-| `/blog/[slug]` | One post | none |
+| `/blog/[slug]` | One post in full, with Newer post / Older post links | none |
 | `/series` | Series grid | domain, status |
 | `/series/[slug]` | Premise, question, status, container progress, entries | none |
 | `/series/[slug]/[entry]` | One entry. This URL already exists and stays | none |

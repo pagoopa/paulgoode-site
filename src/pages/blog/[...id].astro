@@ -1,122 +1,50 @@
 ---
+// One journal post. Matches the Post boards in design/site.pen: the title, the
+// date, the body between two lines, then links to the newer and older posts.
 import Layout from '../../layouts/Layout.astro';
-import { Image } from 'astro:assets';
-import { getCollection, render } from 'astro:content';
+import Pagination from '../../components/Pagination.astro';
+import { render } from 'astro:content';
+import { getJournalPosts, postDateFormat } from '../../lib/blog';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blog');
-  return posts.map((post) => ({
+  // Newest first, so the post before this one is newer and the one after is older.
+  const posts = await getJournalPosts();
+  return posts.map((post, i) => ({
     params: { id: post.id },
-    props: { post },
+    props: { post, newer: posts[i - 1], older: posts[i + 1] },
   }));
 }
 
-const { post } = Astro.props;
+const { post, newer, older } = Astro.props;
 const { Content } = await render(post);
-const { sidebarImage } = post.data;
-
-const dateFmt = new Intl.DateTimeFormat('en-US', {
-  year: 'numeric',
-  month: 'long',
-  day: 'numeric',
-  // pubDate is midnight UTC; without this it shows the day before in US time zones.
-  timeZone: 'UTC',
-});
+const postUrl = (p: typeof post) => `/blog/${p.id}/`;
 ---
 
 <Layout title={post.data.title} description={post.data.description}>
   <div class="wrap post">
-    <div class:list={['post__content', { 'post__content--with-image': sidebarImage }]}>
-      {sidebarImage && (
-        <div class="post__aside">
-          <Image
-            class="post__image"
-            src={sidebarImage.src}
-            alt={sidebarImage.alt}
-            width={240}
-            widths={[240, 480]}
-            sizes="240px"
-            loading="eager"
-            priority
-          />
-        </div>
-      )}
-      <article class="post__article">
-        <p class="eyebrow">{dateFmt.format(post.data.pubDate)}</p>
-        <h1>{post.data.title}</h1>
-        <div class="post__body">
+    <div class="entry-column">
+      <article class="entry">
+        <h1 class="entry__title">{post.data.title}</h1>
+        <time class="entry__date" datetime={post.data.pubDate.toISOString()}>
+          {postDateFormat.format(post.data.pubDate)}
+        </time>
+        <div class="entry__body">
           <Content />
         </div>
       </article>
+
+      <Pagination
+        newer={newer && postUrl(newer)}
+        older={older && postUrl(older)}
+        newerLabel="Newer post"
+        olderLabel="Older post"
+      />
     </div>
   </div>
 </Layout>
 
 <style>
   .post {
-    padding-block: var(--space-block) var(--space-section);
-  }
-
-  .post__content {
-    max-width: var(--content-max);
-    margin-inline: auto;
-  }
-
-  .post__content--with-image {
-    display: flex;
-    gap: var(--scale-0600);
-  }
-
-  /* 240×300 portrait. On desktop it drops 40px to sit level with the title. */
-  .post__aside {
-    flex: none;
-    padding-top: 40px;
-  }
-
-  .post__image {
-    display: block;
-    width: 240px;
-    height: 300px;
-    object-fit: cover;
-  }
-
-  .post__article {
-    flex: 1;
-    min-width: 0;
-  }
-
-  .post__body {
-    margin-top: var(--scale-0800);
-    font-size: var(--type-p2-size);
-    line-height: var(--type-p2-line-height);
-  }
-
-  .post__body :global(p) {
-    margin-bottom: 1.4em;
-  }
-
-  /* Links inside the text are blue and underlined. */
-  .post__body :global(a) {
-    color: var(--color-text-link);
-    text-decoration: underline;
-    text-underline-offset: 0.2em;
-  }
-
-  @media (max-width: 1023px) {
-    .post__aside {
-      padding-top: 0;
-    }
-  }
-
-  /* Mobile: the image stacks above the entry, centered. */
-  @media (max-width: 599px) {
-    .post__content--with-image {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .post__article {
-      align-self: stretch;
-    }
+    padding-block: var(--scale-0600) var(--space-section);
   }
 </style>
