@@ -1,7 +1,7 @@
 import { defineCollection, reference } from 'astro:content';
 import { z } from 'astro/zod';
 import { glob } from 'astro/loaders';
-import { domain, seriesStatus } from './lib/labels';
+import { domain, seriesStatus, tag } from './lib/labels';
 
 const blog = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/blog' }),
@@ -11,6 +11,10 @@ const blog = defineCollection({
     pubDate: z.coerce.date(),
     updatedDate: z.coerce.date().optional(),
     draft: z.boolean().default(false),
+    // Exactly one of art, design, spirit, life, studio.
+    category: domain,
+    // Up to five, like ghost-boy.
+    tags: z.array(tag).max(5).default([]),
   }),
 });
 

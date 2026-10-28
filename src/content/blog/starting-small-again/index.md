@@ -2,6 +2,8 @@
 title: "Starting small (again)"
 description: "And you can too!"
 pubDate: 2026-09-13
+category: art
+tags: [thumbnails, ghost-boy, desert-dreams]
 ---
 
 Spent the weekend drafting some thumbnails for my next series. Made 58 total ideas as thumbnails.

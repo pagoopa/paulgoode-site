@@ -1,0 +1,31 @@
+---
+// A category's posts: /category/art/, then /category/art/page/2/, …
+import JournalPage from '../../../components/JournalPage.astro';
+import { categories, categoryLabel, categoryUrl, pageNumbers, postCount, postsInCategory } from '../../../lib/taxonomy';
+
+export async function getStaticPaths() {
+  const paths = [];
+  for (const category of categories) {
+    const posts = await postsInCategory(category);
+    for (const page of pageNumbers(posts)) {
+      paths.push({
+        params: { category, page: page === 1 ? undefined : `page/${page}` },
+        props: { category, posts, page },
+      });
+    }
+  }
+  return paths;
+}
+
+const { category, posts, page } = Astro.props;
+const label = categoryLabel(category);
+---
+
+<JournalPage
+  page={page}
+  posts={posts}
+  pageUrl={(n) => categoryUrl(category, n)}
+  title={page === 1 ? label : `${label} — Page ${page}`}
+  heading={{ eyebrow: 'Category', title: label, intro: `${postCount(posts.length)} filed under ${label}.` }}
+  emptyText="Nothing filed here yet."
+/>

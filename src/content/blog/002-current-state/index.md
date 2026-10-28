@@ -2,6 +2,8 @@
 title: "002 - Current State"
 description: "This graphic sums it up. Everything that I'm loosely thinking about and grappling with as a designer."
 pubDate: 2022-02-28
+category: design
+tags: [visual-thinking]
 ---
 
 Over the past week, I had a job interview (same company), but ended up dusting off my previous resumé brochure… which is actually a big drawing that maps out my career. It details snippets of my life, interests and jobs over the years.

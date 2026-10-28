@@ -2,6 +2,8 @@
 title: "Iterate the Things"
 description: "A little bit bigger"
 pubDate: 2026-08-19
+category: art
+tags: [thumbnails, tiktok, pagoopaloops]
 ---
 
 Hey 👋 — Added this thing on [TikTok](https://www.tiktok.com/t/ZP8WnFcKY/) and figured that uploading it here would be fine. (Aside from me looking like my shirt buttons are gonna fly off… it is a good one take.)

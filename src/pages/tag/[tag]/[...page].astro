@@ -1,0 +1,30 @@
+---
+// A tag's posts: /tag/ghost-boy/, then /tag/ghost-boy/page/2/, …
+// Only tags that a published post uses get a page.
+import JournalPage from '../../../components/JournalPage.astro';
+import { getTagCounts, pageNumbers, postCount, postsWithTag, tagUrl } from '../../../lib/taxonomy';
+
+export async function getStaticPaths() {
+  const paths = [];
+  for (const [tag] of await getTagCounts()) {
+    const posts = await postsWithTag(tag);
+    for (const page of pageNumbers(posts)) {
+      paths.push({
+        params: { tag, page: page === 1 ? undefined : `page/${page}` },
+        props: { tag, posts, page },
+      });
+    }
+  }
+  return paths;
+}
+
+const { tag, posts, page } = Astro.props;
+---
+
+<JournalPage
+  page={page}
+  posts={posts}
+  pageUrl={(n) => tagUrl(tag, n)}
+  title={page === 1 ? tag : `${tag} — Page ${page}`}
+  heading={{ eyebrow: 'Tag', title: tag, intro: `${postCount(posts.length)} tagged ${tag}.` }}
+/>

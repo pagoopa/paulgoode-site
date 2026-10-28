@@ -2,6 +2,8 @@
 title: "The Power of 10"
 description: "Had to add a UV-protecting varnish the last of the paintings."
 pubDate: 2026-08-30
+category: art
+tags: [make-10, painting]
 ---
 
 Had to add a UV-protecting varnish the last of the paintings. Took them outside. Laid them all out on the pavement. Realized there were 10 in all.

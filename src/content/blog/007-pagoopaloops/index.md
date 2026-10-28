@@ -2,6 +2,8 @@
 title: "007 - Pagoopaloops"
 description: "Updating daily to break through walls"
 pubDate: 2025-03-16
+category: art
+tags: [pagoopaloops, tiktok]
 ---
 
 I have a TikTok channel called [pagoopaloops](https://www.tiktok.com/@pagoopaloops) which is mostly my music + video creations. Today, the challenge was to create something in one day.

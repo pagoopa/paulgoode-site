@@ -1,0 +1,75 @@
+---
+// Every category and tag, with how many posts use each (Tags boards in design/site.pen).
+import Layout from '../layouts/Layout.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import TagChip from '../components/TagChip.astro';
+import { categoryLabel, categoryUrl, getCategoryCounts, getTagCounts, tagUrl } from '../lib/taxonomy';
+
+const categoryCounts = await getCategoryCounts();
+const tagCounts = await getTagCounts();
+---
+
+<Layout title="Categories and tags" description="Everything in the journal, by category or by tag.">
+  <section class="wrap tags">
+    <div class="entry-column">
+      <SectionHeader
+        eyebrow="Browse"
+        title="Categories and tags"
+        intro="Everything in the journal, by category or by tag."
+        level="h1"
+      />
+
+      <section class="tags__section" aria-labelledby="categories-heading">
+        <h2 id="categories-heading" class="tags__heading">Categories</h2>
+        <ul class="tags__chips">
+          {categoryCounts.map(([category, count]) => (
+            <li>
+              <TagChip kind="category" href={categoryUrl(category)}>{categoryLabel(category)} ({count})</TagChip>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section class="tags__section" aria-labelledby="tags-heading">
+        <h2 id="tags-heading" class="tags__heading">Tags</h2>
+        {tagCounts.length === 0 && <p class="prose">No tags yet.</p>}
+        <ul class="tags__chips">
+          {tagCounts.map(([tag, count]) => (
+            <li>
+              <TagChip kind="tag" href={tagUrl(tag)}>{tag} ({count})</TagChip>
+            </li>
+          ))}
+        </ul>
+      </section>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .tags {
+    padding-block: var(--scale-0600) var(--space-section);
+  }
+
+  .tags__section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--scale-0400);
+  }
+
+  /* Headings/H3 */
+  .tags__heading {
+    font-size: var(--type-h3-size);
+    line-height: var(--type-h3-line-height);
+    letter-spacing: var(--type-h3-letter-spacing);
+    margin: 0;
+  }
+
+  .tags__chips {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--scale-0200);
+  }
+</style>

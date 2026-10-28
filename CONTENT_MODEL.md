@@ -26,7 +26,11 @@ A journal post is a piece of writing: a title, a date, a body, and optionally im
 | Description | One line for search and previews (optional) |
 | Published | Date |
 | Updated | Date of the last edit (optional) |
+| Category | Exactly one of Art, Design, Spirit, Life, Studio (required) |
+| Tags | Up to five free-form tags, like `ghost-boy` (optional) |
 | Draft | Hidden from the live site while true |
+
+A category is a fixed list, the same five as a series' domains. A tag is a lowercase word, or words joined by hyphens. A category or tag page shows its posts the same way as the home page, and `/tags` lists every category and tag with how many posts use each.
 
 The home page is the journal: 3 posts at a time, newest first, with Newer / Older links. A post's own page shows it in full, with links to the newer and older posts.
 
@@ -131,6 +135,8 @@ const blog = defineCollection({
     pubDate: z.coerce.date(),
     updatedDate: z.coerce.date().optional(),
     draft: z.boolean().default(false),
+    category: domain,                        // exactly one
+    tags: z.array(z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/)).max(5).default([]),
   }),
 });
 
@@ -197,7 +203,10 @@ Add one build-time check in `src/lib/`: a series with `status: 'promoted'` must 
 | --- | --- | --- |
 | `/`, `/blog/page/[n]` | The home page: journal posts, newest first, paginated (3 per page) | none |
 | `/blog` | Redirects to `/` | none |
-| `/blog/[slug]` | One post in full, with Newer post / Older post links | none |
+| `/blog/[slug]` | One post in full, with its category and tags and Newer post / Older post links | none |
+| `/category/[category]`, `/category/[category]/page/[n]` | A category's posts, newest first (3 per page) | none |
+| `/tag/[tag]`, `/tag/[tag]/page/[n]` | A tag's posts, newest first. Only tags a published post uses get a page | none |
+| `/tags` | Every category and tag, with post counts | none |
 | `/series` | Series grid | domain, status |
 | `/series/[slug]` | Premise, question, status, container progress, entries | none |
 | `/series/[slug]/[entry]` | One entry. This URL already exists and stays | none |
@@ -240,7 +249,7 @@ Comments, accounts, a CMS, full-text search, and syncing newsletter posts (see a
 - The home page is the journal, with multiple posts. `/blog` redirects to `/`, posts stay at `/blog/<post>`, and the nav item "Blog" links to `/`.
 - The journal shows 3 posts per page.
 - Series entries keep a year, a location, a hero image with a caption, and a 16:10 thumbnail. The thumbnail is `cover`. Entry URLs stay `/series/<series>/<entry>`.
-- Domain filters are static pages. They apply to series and projects.
+- Journal posts have one required category (the five domains) and up to five optional tags. Categories and tags each get static pages, and `/tags` lists them all.
 - New components are designed in Pencil before they are coded.
 - Older "excuse to…" ideas are reserved names; no series or entries until one earns it.
 - First official series: Junk Drawer Journey.

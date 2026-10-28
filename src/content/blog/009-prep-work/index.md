@@ -2,6 +2,8 @@
 title: "009 - Prep Work"
 description: "Stretched some canvas. Preparing to be old."
 pubDate: 2025-03-20
+category: studio
+tags: [painting, notes]
 ---
 
 ## Why not paint?

@@ -159,6 +159,18 @@ The home page is the journal. It shows the 3 newest posts, with "Older posts"
 leading to `/blog/page/2` and onward. A post lives at `/blog/<post>`. Change `POSTS_PER_PAGE` in `src/lib/blog.ts`
 to show more or fewer.
 
+Every post needs a `category` (art, design, spirit, life or studio) and can
+have up to five `tags`, written in the frontmatter like this:
+
+```
+category: art
+tags: [thumbnails, ghost-boy]
+```
+
+Tags are lowercase words, joined by hyphens when there is more than one.
+`npm run build` flags a missing or unknown category and a badly written tag.
+Each category and tag gets its own page, and `/tags` lists them all.
+
 The home page shows each post in full. To show only the start, put
 `<!-- more -->` on its own line, with a blank line above and below it.
 Everything above the line shows on the home page, followed by a "Read

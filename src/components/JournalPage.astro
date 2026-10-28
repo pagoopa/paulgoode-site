@@ -1,19 +1,35 @@
 ---
-// One page of the journal, which is also the home page: the newest posts
-// first, POSTS_PER_PAGE at a time, with Newer / Older links. Used by / and
-// /blog/page/<n>. Matches the Blog Landing boards in design/site.pen.
+// One page of a list of journal posts: the newest first, POSTS_PER_PAGE at a
+// time, with Newer / Older links. By default it's the whole journal, which is
+// also the home page (/ and /blog/page/<n>). A category or tag page passes
+// its own posts, page links and heading. Matches the Blog Landing boards in
+// design/site.pen.
+import type { CollectionEntry } from 'astro:content';
 import Layout from '../layouts/Layout.astro';
 import PostExcerpt from './PostExcerpt.astro';
 import Pagination from './Pagination.astro';
+import SectionHeader from './SectionHeader.astro';
+import TagChip from './TagChip.astro';
 import { render } from 'astro:content';
 import { getJournalPosts, journalPageUrl, postDateFormat, POSTS_PER_PAGE } from '../lib/blog';
+import { categoryLabel, categoryUrl } from '../lib/taxonomy';
 
 interface Props {
   page: number;
+  /** The posts to list. Defaults to every published post. */
+  posts?: CollectionEntry<'blog'>[];
+  /** The URL of page n. Defaults to the home page and /blog/page/<n>. */
+  pageUrl?: (page: number) => string;
+  /** A visible page heading. Without it the page has a hidden h1. */
+  heading?: { eyebrow: string; title: string; intro: string };
+  title?: string;
+  emptyText?: string;
 }
 
-const { page } = Astro.props;
-const allPosts = await getJournalPosts();
+const { page, heading, emptyText = 'Nothing published yet.' } = Astro.props;
+const allPosts = Astro.props.posts ?? (await getJournalPosts());
+const pageUrl = Astro.props.pageUrl ?? journalPageUrl;
+const title = Astro.props.title ?? (page === 1 ? 'Journal' : `Journal — Page ${page}`);
 const pageCount = Math.max(1, Math.ceil(allPosts.length / POSTS_PER_PAGE));
 const posts = allPosts.slice((page - 1) * POSTS_PER_PAGE, page * POSTS_PER_PAGE);
 const entries = await Promise.all(
@@ -21,12 +37,14 @@ const entries = await Promise.all(
 );
 ---
 
-<Layout title={page === 1 ? 'Journal' : `Journal — Page ${page}`}>
+<Layout title={title}>
   <section class="wrap journal">
-    <h1 class="sr-only">Paul Goode — Journal</h1>
+    {!heading && <h1 class="sr-only">Paul Goode — Journal</h1>}
 
     <div class="entry-column">
-      {posts.length === 0 && <p class="prose">Nothing published yet.</p>}
+      {heading && <SectionHeader eyebrow={heading.eyebrow} title={heading.title} intro={heading.intro} level="h1" />}
+
+      {posts.length === 0 && <p class="prose">{emptyText}</p>}
 
       <ul class="journal__list">
         {entries.map(({ post, Content }) => (
@@ -34,9 +52,14 @@ const entries = await Promise.all(
             <h2 class="entry__title">
               <a href={`/blog/${post.id}/`}>{post.data.title}</a>
             </h2>
-            <time class="entry__date" datetime={post.data.pubDate.toISOString()}>
-              {postDateFormat.format(post.data.pubDate)}
-            </time>
+            <div class="entry__meta">
+              <time class="entry__date" datetime={post.data.pubDate.toISOString()}>
+                {postDateFormat.format(post.data.pubDate)}
+              </time>
+              <TagChip kind="category" href={categoryUrl(post.data.category)}>
+                {categoryLabel(post.data.category)}
+              </TagChip>
+            </div>
             <div class="entry__body">
               <PostExcerpt href={`/blog/${post.id}/`}>
                 <Content />
@@ -47,8 +70,8 @@ const entries = await Promise.all(
       </ul>
 
       <Pagination
-        newer={page > 1 ? journalPageUrl(page - 1) : undefined}
-        older={page < pageCount ? journalPageUrl(page + 1) : undefined}
+        newer={page > 1 ? pageUrl(page - 1) : undefined}
+        older={page < pageCount ? pageUrl(page + 1) : undefined}
       />
     </div>
   </section>
