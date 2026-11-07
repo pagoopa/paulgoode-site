@@ -52,9 +52,9 @@
       "layout": "vertical",
       "children": [
         {
-          "id": "aVefM",
+          "id": "v3MFYr",
           "type": "ref",
-          "ref": "S5OtQe",
+          "ref": "kgrqX",
           "x": 0,
           "y": 0
         },
@@ -992,9 +992,9 @@
           ]
         },
         {
-          "id": "Pu8lp",
+          "id": "z4gzq",
           "type": "ref",
-          "ref": "vu6kH",
+          "ref": "E6haZ",
           "x": 0,
           "y": 6695
         }
@@ -1017,9 +1017,9 @@
       "layout": "vertical",
       "children": [
         {
-          "id": "hNOXL",
+          "id": "dJMVE",
           "type": "ref",
-          "ref": "S5OtQe",
+          "ref": "kgrqX",
           "name": "Header",
           "width": "fill_container"
         },
@@ -1305,9 +1305,9 @@
           ]
         },
         {
-          "id": "O9Ftz",
+          "id": "D3MByN",
           "type": "ref",
-          "ref": "vu6kH",
+          "ref": "E6haZ",
           "name": "Footer",
           "width": "fill_container"
         }
@@ -1329,9 +1329,9 @@
       "layout": "vertical",
       "children": [
         {
-          "id": "cjCUn",
+          "id": "Z23f0",
           "type": "ref",
-          "ref": "S5OtQe",
+          "ref": "kgrqX",
           "name": "Header",
           "width": "fill_container"
         },
@@ -2272,13 +2272,13 @@
           ]
         },
         {
-          "id": "B77K6",
+          "id": "JFUS3",
           "type": "ref",
-          "ref": "vu6kH",
+          "ref": "E6haZ",
           "name": "Footer",
           "width": "fill_container",
           "descendants": {
-            "iFupJ": {
+            "549hf": {
               "width": 100,
               "height": 100
             }
@@ -2302,9 +2302,9 @@
       "layout": "vertical",
       "children": [
         {
-          "id": "ljIOS",
+          "id": "BysyI",
           "type": "ref",
-          "ref": "S5OtQe",
+          "ref": "kgrqX",
           "name": "Header",
           "width": "fill_container"
         },
@@ -3245,19 +3245,19 @@
           ]
         },
         {
-          "id": "Igbpy",
+          "id": "xHfxr",
           "type": "ref",
-          "ref": "vu6kH",
+          "ref": "E6haZ",
           "name": "Footer",
           "width": "fill_container",
           "descendants": {
-            "iFupJ": {
+            "549hf": {
               "width": 100,
               "height": 100
             },
-            "Sg6W9": {
+            "BWRrf": {
               "type": "frame",
-              "id": "SCTBW",
+              "id": "E1FaC",
               "name": "Nav",
               "layout": "vertical",
               "padding": [
@@ -3270,14 +3270,14 @@
               "children": [
                 {
                   "type": "frame",
-                  "id": "gB4vL",
+                  "id": "o1frkn",
                   "name": "Row",
                   "gap": "$scale-0600",
                   "justifyContent": "center",
                   "alignItems": "center",
                   "children": [
                     {
-                      "id": "l4TPPQ",
+                      "id": "ZB2kF",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Blog",
@@ -3288,7 +3288,7 @@
                       }
                     },
                     {
-                      "id": "hqo6X",
+                      "id": "sPacQ",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Series",
@@ -3302,14 +3302,14 @@
                 },
                 {
                   "type": "frame",
-                  "id": "wDUBT",
+                  "id": "uHha8",
                   "name": "Row",
                   "gap": "$scale-0600",
                   "justifyContent": "center",
                   "alignItems": "center",
                   "children": [
                     {
-                      "id": "Mo8xP",
+                      "id": "KemML",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Newsletter",
@@ -3320,7 +3320,7 @@
                       }
                     },
                     {
-                      "id": "GEljs",
+                      "id": "nkISr",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Shop",
@@ -3331,7 +3331,7 @@
                       }
                     },
                     {
-                      "id": "TC8q6",
+                      "id": "DUmmW",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "About",
@@ -3378,9 +3378,9 @@
       "layout": "vertical",
       "children": [
         {
-          "id": "GYn65",
+          "id": "onbHZ",
           "type": "ref",
-          "ref": "S5OtQe",
+          "ref": "kgrqX",
           "x": 0,
           "y": 0
         },
@@ -3807,9 +3807,9 @@
           ]
         },
         {
-          "id": "jXR5Q",
+          "id": "fEXho",
           "type": "ref",
-          "ref": "vu6kH",
+          "ref": "E6haZ",
           "x": 0,
           "y": 2674
         }
@@ -3831,9 +3831,9 @@
       "layout": "vertical",
       "children": [
         {
-          "id": "rmvaN",
+          "id": "I35pg",
           "type": "ref",
-          "ref": "S5OtQe",
+          "ref": "kgrqX",
           "name": "Header",
           "width": "fill_container"
         },
@@ -4263,13 +4263,13 @@
           ]
         },
         {
-          "id": "g91Xv",
+          "id": "UY1UC",
           "type": "ref",
-          "ref": "vu6kH",
+          "ref": "E6haZ",
           "name": "Footer",
           "width": "fill_container",
           "descendants": {
-            "iFupJ": {
+            "549hf": {
               "width": 100,
               "height": 100
             }
@@ -4293,9 +4293,9 @@
       "layout": "vertical",
       "children": [
         {
-          "id": "vc1tR",
+          "id": "lxdxW",
           "type": "ref",
-          "ref": "S5OtQe",
+          "ref": "kgrqX",
           "name": "Header",
           "width": "fill_container"
         },
@@ -4725,19 +4725,19 @@
           ]
         },
         {
-          "id": "gO6WY",
+          "id": "gTr15",
           "type": "ref",
-          "ref": "vu6kH",
+          "ref": "E6haZ",
           "name": "Footer",
           "width": "fill_container",
           "descendants": {
-            "iFupJ": {
+            "549hf": {
               "width": 100,
               "height": 100
             },
-            "Sg6W9": {
+            "BWRrf": {
               "type": "frame",
-              "id": "uxfMm",
+              "id": "d2vkq",
               "name": "Nav",
               "layout": "vertical",
               "padding": [
@@ -4750,14 +4750,14 @@
               "children": [
                 {
                   "type": "frame",
-                  "id": "UyPwa",
+                  "id": "WosF1",
                   "name": "Row",
                   "gap": "$scale-0600",
                   "justifyContent": "center",
                   "alignItems": "center",
                   "children": [
                     {
-                      "id": "G8h7KV",
+                      "id": "b8l0tM",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Blog",
@@ -4768,7 +4768,7 @@
                       }
                     },
                     {
-                      "id": "B3aKd",
+                      "id": "K6A6I",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Series",
@@ -4782,14 +4782,14 @@
                 },
                 {
                   "type": "frame",
-                  "id": "SfEyS",
+                  "id": "TQwqc",
                   "name": "Row",
                   "gap": "$scale-0600",
                   "justifyContent": "center",
                   "alignItems": "center",
                   "children": [
                     {
-                      "id": "qAhSj",
+                      "id": "EbX2y",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Newsletter",
@@ -4800,7 +4800,7 @@
                       }
                     },
                     {
-                      "id": "xxjvs",
+                      "id": "UgfF3",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Shop",
@@ -4811,7 +4811,7 @@
                       }
                     },
                     {
-                      "id": "uyQPf",
+                      "id": "yObJA",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "About",
@@ -5201,9 +5201,9 @@
                       ]
                     },
                     {
-                      "id": "MYi6u",
+                      "id": "eN5bU",
                       "type": "ref",
-                      "ref": "S5OtQe",
+                      "ref": "kgrqX",
                       "name": "Nav bar (closed)",
                       "x": 0,
                       "y": 0,
@@ -5585,9 +5585,9 @@
                       ]
                     },
                     {
-                      "id": "uqdeT",
+                      "id": "hh9WW",
                       "type": "ref",
-                      "ref": "M1J6l",
+                      "ref": "k3Sub",
                       "name": "Menu panel",
                       "x": 0,
                       "y": 64,
@@ -5596,24 +5596,24 @@
                       "height": 780,
                       "strokeWidth": 0,
                       "descendants": {
-                        "cUbmx": {
+                        "b5n7e": {
                           "enabled": false
                         },
-                        "idINa": {
+                        "BoqUc": {
                           "height": "fill_container"
                         }
                       }
                     },
                     {
-                      "id": "AZWiG",
+                      "id": "XCrLr",
                       "type": "ref",
-                      "ref": "M1J6l",
+                      "ref": "k3Sub",
                       "name": "Nav bar (open)",
                       "x": 0,
                       "y": 0,
                       "width": 390,
                       "descendants": {
-                        "idINa": {
+                        "BoqUc": {
                           "enabled": false
                         }
                       }
@@ -5980,9 +5980,9 @@
                       ]
                     },
                     {
-                      "id": "MxUoT",
+                      "id": "LYXU6",
                       "type": "ref",
-                      "ref": "M1J6l",
+                      "ref": "k3Sub",
                       "name": "Menu panel",
                       "x": 0,
                       "y": 76,
@@ -5991,24 +5991,24 @@
                       "height": 768,
                       "strokeWidth": 0,
                       "descendants": {
-                        "cUbmx": {
+                        "b5n7e": {
                           "enabled": false
                         },
-                        "idINa": {
+                        "BoqUc": {
                           "height": "fill_container"
                         }
                       }
                     },
                     {
-                      "id": "U6YUfa",
+                      "id": "LB1XJ",
                       "type": "ref",
-                      "ref": "M1J6l",
+                      "ref": "k3Sub",
                       "name": "Nav bar (open)",
                       "x": 0,
                       "y": 0,
                       "width": 390,
                       "descendants": {
-                        "idINa": {
+                        "BoqUc": {
                           "enabled": false
                         }
                       }
@@ -6386,9 +6386,9 @@
                       ]
                     },
                     {
-                      "id": "h8B8K",
+                      "id": "V1UcI",
                       "type": "ref",
-                      "ref": "M1J6l",
+                      "ref": "k3Sub",
                       "name": "Menu panel",
                       "x": 0,
                       "y": 64,
@@ -6397,18 +6397,18 @@
                       "height": 780,
                       "strokeWidth": 0,
                       "descendants": {
-                        "cUbmx": {
+                        "b5n7e": {
                           "enabled": false
                         },
-                        "idINa": {
+                        "BoqUc": {
                           "height": "fill_container"
                         }
                       }
                     },
                     {
-                      "id": "Q4Yrpy",
+                      "id": "Xdt7Q",
                       "type": "ref",
-                      "ref": "S5OtQe",
+                      "ref": "kgrqX",
                       "name": "Nav bar (closed)",
                       "x": 0,
                       "y": 0,
@@ -18850,14 +18850,14 @@
       "layout": "vertical",
       "children": [
         {
-          "id": "eE98P",
+          "id": "wg244",
           "type": "ref",
-          "ref": "S5OtQe",
+          "ref": "kgrqX",
           "name": "Header",
           "width": "fill_container",
           "descendants": {
-            "oekhv": {
-              "id": "ep79s",
+            "c7UL7": {
+              "id": "DSjv8",
               "type": "ref",
               "ref": "eFsWC",
               "name": "Blog",
@@ -19066,9 +19066,9 @@
           ]
         },
         {
-          "id": "eM2zT",
+          "id": "Iyx4H",
           "type": "ref",
-          "ref": "vu6kH",
+          "ref": "E6haZ",
           "name": "Footer",
           "width": "fill_container"
         }
@@ -19090,14 +19090,14 @@
       "layout": "vertical",
       "children": [
         {
-          "id": "WqmmN",
+          "id": "Vz2Vk",
           "type": "ref",
-          "ref": "S5OtQe",
+          "ref": "kgrqX",
           "name": "Header",
           "width": "fill_container",
           "descendants": {
-            "oekhv": {
-              "id": "j9ZYSE",
+            "c7UL7": {
+              "id": "niNBg",
               "type": "ref",
               "ref": "eFsWC",
               "name": "Blog",
@@ -19107,8 +19107,8 @@
                 }
               }
             },
-            "S5GGB": {
-              "id": "wBDYx",
+            "aBgCT": {
+              "id": "ZxPU4",
               "type": "ref",
               "ref": "MusDs",
               "name": "Series",
@@ -19372,9 +19372,9 @@
           ]
         },
         {
-          "id": "e8ke96",
+          "id": "TzXmE",
           "type": "ref",
-          "ref": "vu6kH",
+          "ref": "E6haZ",
           "name": "Footer",
           "width": "fill_container"
         }
@@ -19396,14 +19396,14 @@
       "layout": "vertical",
       "children": [
         {
-          "id": "dhUGo",
+          "id": "nZ3VT",
           "type": "ref",
-          "ref": "S5OtQe",
+          "ref": "kgrqX",
           "name": "Header",
           "width": "fill_container",
           "descendants": {
-            "oekhv": {
-              "id": "L33uPj",
+            "c7UL7": {
+              "id": "Q0rjV",
               "type": "ref",
               "ref": "eFsWC",
               "name": "Blog",
@@ -19576,13 +19576,13 @@
           ]
         },
         {
-          "id": "jBxZT",
+          "id": "gqvJM",
           "type": "ref",
-          "ref": "vu6kH",
+          "ref": "E6haZ",
           "name": "Footer",
           "width": "fill_container",
           "descendants": {
-            "iFupJ": {
+            "549hf": {
               "width": 100,
               "height": 100
             }
@@ -19606,14 +19606,14 @@
       "layout": "vertical",
       "children": [
         {
-          "id": "UnKwQ",
+          "id": "g6OoEH",
           "type": "ref",
-          "ref": "S5OtQe",
+          "ref": "kgrqX",
           "name": "Header",
           "width": "fill_container",
           "descendants": {
-            "oekhv": {
-              "id": "fuPPW",
+            "c7UL7": {
+              "id": "f8I5e",
               "type": "ref",
               "ref": "eFsWC",
               "name": "Blog",
@@ -19777,19 +19777,19 @@
           ]
         },
         {
-          "id": "yBFOA",
+          "id": "YB1fH",
           "type": "ref",
-          "ref": "vu6kH",
+          "ref": "E6haZ",
           "name": "Footer",
           "width": "fill_container",
           "descendants": {
-            "iFupJ": {
+            "549hf": {
               "width": 100,
               "height": 100
             },
-            "Sg6W9": {
+            "BWRrf": {
               "type": "frame",
-              "id": "uVMi9",
+              "id": "DwuRJ",
               "name": "Nav",
               "layout": "vertical",
               "padding": [
@@ -19802,14 +19802,14 @@
               "children": [
                 {
                   "type": "frame",
-                  "id": "H9j949",
+                  "id": "QbfqR",
                   "name": "Row",
                   "gap": "$scale-0600",
                   "justifyContent": "center",
                   "alignItems": "center",
                   "children": [
                     {
-                      "id": "cF3Qx",
+                      "id": "loYmn",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Blog",
@@ -19820,7 +19820,7 @@
                       }
                     },
                     {
-                      "id": "pzGim",
+                      "id": "r6qOE",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Series",
@@ -19834,14 +19834,14 @@
                 },
                 {
                   "type": "frame",
-                  "id": "MhpFl",
+                  "id": "X3U5W",
                   "name": "Row",
                   "gap": "$scale-0600",
                   "justifyContent": "center",
                   "alignItems": "center",
                   "children": [
                     {
-                      "id": "jE7wi",
+                      "id": "Em6vU",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Newsletter",
@@ -19852,7 +19852,7 @@
                       }
                     },
                     {
-                      "id": "ntQEt",
+                      "id": "TB92U",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Shop",
@@ -19863,7 +19863,7 @@
                       }
                     },
                     {
-                      "id": "K2BmC",
+                      "id": "zbGrX",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "About",
@@ -19897,14 +19897,14 @@
       "layout": "vertical",
       "children": [
         {
-          "id": "r7bVw",
+          "id": "ki2x2",
           "type": "ref",
-          "ref": "S5OtQe",
+          "ref": "kgrqX",
           "name": "Header",
           "width": "fill_container",
           "descendants": {
-            "oekhv": {
-              "id": "uSDR0",
+            "c7UL7": {
+              "id": "qAs3L",
               "type": "ref",
               "ref": "eFsWC",
               "name": "Blog",
@@ -19914,8 +19914,8 @@
                 }
               }
             },
-            "S5GGB": {
-              "id": "A2tYve",
+            "aBgCT": {
+              "id": "pZrfF",
               "type": "ref",
               "ref": "MusDs",
               "name": "Series",
@@ -20186,9 +20186,9 @@
           ]
         },
         {
-          "id": "gDzUL",
+          "id": "yN4x8",
           "type": "ref",
-          "ref": "vu6kH",
+          "ref": "E6haZ",
           "name": "Footer",
           "width": "fill_container",
           "x": 0,
@@ -20333,14 +20333,14 @@
       "layout": "vertical",
       "children": [
         {
-          "id": "uNQfM",
+          "id": "KF1Xh",
           "type": "ref",
-          "ref": "S5OtQe",
+          "ref": "kgrqX",
           "name": "Header",
           "width": "fill_container",
           "descendants": {
-            "oekhv": {
-              "id": "Z3L2OO",
+            "c7UL7": {
+              "id": "JVjq5",
               "type": "ref",
               "ref": "eFsWC",
               "name": "Blog",
@@ -20350,8 +20350,8 @@
                 }
               }
             },
-            "S5GGB": {
-              "id": "L7wVy",
+            "aBgCT": {
+              "id": "iM0vz",
               "type": "ref",
               "ref": "MusDs",
               "name": "Series",
@@ -20607,15 +20607,15 @@
           ]
         },
         {
-          "id": "LM9Kf",
+          "id": "ykPXl",
           "type": "ref",
-          "ref": "vu6kH",
+          "ref": "E6haZ",
           "name": "Footer",
           "width": "fill_container",
           "x": 0,
           "y": 1711,
           "descendants": {
-            "iFupJ": {
+            "549hf": {
               "width": 100,
               "height": 100
             }
@@ -20639,14 +20639,14 @@
       "layout": "vertical",
       "children": [
         {
-          "id": "k1yWC",
+          "id": "vWIBO",
           "type": "ref",
-          "ref": "S5OtQe",
+          "ref": "kgrqX",
           "name": "Header",
           "width": "fill_container",
           "descendants": {
-            "oekhv": {
-              "id": "KGVX3",
+            "c7UL7": {
+              "id": "U9ceX",
               "type": "ref",
               "ref": "eFsWC",
               "name": "Blog",
@@ -20656,8 +20656,8 @@
                 }
               }
             },
-            "S5GGB": {
-              "id": "uT3yP",
+            "aBgCT": {
+              "id": "wfEzR",
               "type": "ref",
               "ref": "MusDs",
               "name": "Series",
@@ -20922,21 +20922,21 @@
           ]
         },
         {
-          "id": "rPULB",
+          "id": "q2B5v",
           "type": "ref",
-          "ref": "vu6kH",
+          "ref": "E6haZ",
           "name": "Footer",
           "width": "fill_container",
           "x": 0,
           "y": 1518,
           "descendants": {
-            "iFupJ": {
+            "549hf": {
               "width": 100,
               "height": 100
             },
-            "Sg6W9": {
+            "BWRrf": {
               "type": "frame",
-              "id": "cLHDb",
+              "id": "elwTN",
               "name": "Nav",
               "layout": "vertical",
               "padding": [
@@ -20949,14 +20949,14 @@
               "children": [
                 {
                   "type": "frame",
-                  "id": "dQzhW",
+                  "id": "sWuDg",
                   "name": "Row",
                   "gap": "$scale-0600",
                   "justifyContent": "center",
                   "alignItems": "center",
                   "children": [
                     {
-                      "id": "QKYMw",
+                      "id": "wE7vM",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Blog",
@@ -20967,7 +20967,7 @@
                       }
                     },
                     {
-                      "id": "jUn6U",
+                      "id": "iPyFe",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Series",
@@ -20981,14 +20981,14 @@
                 },
                 {
                   "type": "frame",
-                  "id": "YHhNk",
+                  "id": "NbA9V",
                   "name": "Row",
                   "gap": "$scale-0600",
                   "justifyContent": "center",
                   "alignItems": "center",
                   "children": [
                     {
-                      "id": "k8rGQ",
+                      "id": "s2LDSp",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Newsletter",
@@ -20999,7 +20999,7 @@
                       }
                     },
                     {
-                      "id": "LCjek",
+                      "id": "M1JTx",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Shop",
@@ -21010,7 +21010,7 @@
                       }
                     },
                     {
-                      "id": "y1IxM6",
+                      "id": "rdPKZ",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "About",
@@ -21044,14 +21044,14 @@
       "layout": "vertical",
       "children": [
         {
-          "id": "K6H58",
+          "id": "t9lZh",
           "type": "ref",
-          "ref": "S5OtQe",
+          "ref": "kgrqX",
           "name": "Header",
           "width": "fill_container",
           "descendants": {
-            "oekhv": {
-              "id": "hOlWf",
+            "c7UL7": {
+              "id": "A6O2ky",
               "type": "ref",
               "ref": "eFsWC",
               "name": "Blog",
@@ -21061,8 +21061,8 @@
                 }
               }
             },
-            "S5GGB": {
-              "id": "ePQSa",
+            "aBgCT": {
+              "id": "N4xqhP",
               "type": "ref",
               "ref": "MusDs",
               "name": "Series",
@@ -21280,13 +21280,13 @@
           ]
         },
         {
-          "id": "iUxUX",
+          "id": "YgW8p",
           "type": "ref",
-          "ref": "vu6kH",
+          "ref": "E6haZ",
           "name": "Footer",
           "width": "fill_container",
           "descendants": {
-            "iFupJ": {
+            "549hf": {
               "width": 100,
               "height": 100
             }
@@ -21310,14 +21310,14 @@
       "layout": "vertical",
       "children": [
         {
-          "id": "NCaFQ",
+          "id": "kPAox",
           "type": "ref",
-          "ref": "S5OtQe",
+          "ref": "kgrqX",
           "name": "Header",
           "width": "fill_container",
           "descendants": {
-            "oekhv": {
-              "id": "y2W9oY",
+            "c7UL7": {
+              "id": "n9vgvc",
               "type": "ref",
               "ref": "eFsWC",
               "name": "Blog",
@@ -21327,8 +21327,8 @@
                 }
               }
             },
-            "S5GGB": {
-              "id": "ank7E",
+            "aBgCT": {
+              "id": "L0x16",
               "type": "ref",
               "ref": "MusDs",
               "name": "Series",
@@ -21534,19 +21534,19 @@
           ]
         },
         {
-          "id": "je4Cz",
+          "id": "ceTzt",
           "type": "ref",
-          "ref": "vu6kH",
+          "ref": "E6haZ",
           "name": "Footer",
           "width": "fill_container",
           "descendants": {
-            "iFupJ": {
+            "549hf": {
               "width": 100,
               "height": 100
             },
-            "Sg6W9": {
+            "BWRrf": {
               "type": "frame",
-              "id": "BbknN",
+              "id": "vfWnb",
               "name": "Nav",
               "layout": "vertical",
               "padding": [
@@ -21559,14 +21559,14 @@
               "children": [
                 {
                   "type": "frame",
-                  "id": "l8cCtl",
+                  "id": "uv5Dv",
                   "name": "Row",
                   "gap": "$scale-0600",
                   "justifyContent": "center",
                   "alignItems": "center",
                   "children": [
                     {
-                      "id": "YfuuT",
+                      "id": "Mkgne",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Blog",
@@ -21577,7 +21577,7 @@
                       }
                     },
                     {
-                      "id": "P4xWaj",
+                      "id": "HCIBv",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Series",
@@ -21591,14 +21591,14 @@
                 },
                 {
                   "type": "frame",
-                  "id": "SLYvL",
+                  "id": "oNAPR",
                   "name": "Row",
                   "gap": "$scale-0600",
                   "justifyContent": "center",
                   "alignItems": "center",
                   "children": [
                     {
-                      "id": "BTH7W",
+                      "id": "BkZWH",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Newsletter",
@@ -21609,7 +21609,7 @@
                       }
                     },
                     {
-                      "id": "w2A1W",
+                      "id": "pTq2P",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Shop",
@@ -21620,7 +21620,7 @@
                       }
                     },
                     {
-                      "id": "FlLhy",
+                      "id": "z2wsEi",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "About",
@@ -21996,9 +21996,9 @@
       "layout": "vertical",
       "children": [
         {
-          "id": "bqDIv",
+          "id": "XdbPu",
           "type": "ref",
-          "ref": "S5OtQe",
+          "ref": "kgrqX",
           "name": "Header",
           "width": "fill_container"
         },
@@ -22464,9 +22464,9 @@
           ]
         },
         {
-          "id": "lsjhQ",
+          "id": "DRdJj",
           "type": "ref",
-          "ref": "vu6kH",
+          "ref": "E6haZ",
           "name": "Footer",
           "width": "fill_container"
         }
@@ -22488,9 +22488,9 @@
       "layout": "vertical",
       "children": [
         {
-          "id": "DWWqt",
+          "id": "QaFwZ",
           "type": "ref",
-          "ref": "S5OtQe",
+          "ref": "kgrqX",
           "name": "Header",
           "width": "fill_container"
         },
@@ -22959,9 +22959,9 @@
           ]
         },
         {
-          "id": "trWQJ",
+          "id": "ABmuf",
           "type": "ref",
-          "ref": "vu6kH",
+          "ref": "E6haZ",
           "name": "Footer",
           "width": "fill_container"
         }
@@ -22983,9 +22983,9 @@
       "layout": "vertical",
       "children": [
         {
-          "id": "L8P2dj",
+          "id": "V3WBby",
           "type": "ref",
-          "ref": "S5OtQe",
+          "ref": "kgrqX",
           "name": "Header",
           "width": "fill_container"
         },
@@ -23454,9 +23454,9 @@
           ]
         },
         {
-          "id": "g1vio",
+          "id": "vVINk",
           "type": "ref",
-          "ref": "vu6kH",
+          "ref": "E6haZ",
           "name": "Footer",
           "width": "fill_container"
         }
@@ -23724,9 +23724,9 @@
       "layout": "vertical",
       "children": [
         {
-          "id": "NTrt8",
+          "id": "HWeEt",
           "type": "ref",
-          "ref": "S5OtQe",
+          "ref": "kgrqX",
           "x": 0,
           "y": 0
         },
@@ -24388,9 +24388,9 @@
           ]
         },
         {
-          "id": "gIzcK",
+          "id": "T4dipr",
           "type": "ref",
-          "ref": "vu6kH",
+          "ref": "E6haZ",
           "x": 0,
           "y": 4728
         }
@@ -24412,9 +24412,9 @@
       "layout": "vertical",
       "children": [
         {
-          "id": "WFoVU",
+          "id": "PWWLT",
           "type": "ref",
-          "ref": "S5OtQe",
+          "ref": "kgrqX",
           "name": "Header",
           "width": "fill_container"
         },
@@ -25079,13 +25079,13 @@
           ]
         },
         {
-          "id": "vxz4W",
+          "id": "s0F9DX",
           "type": "ref",
-          "ref": "vu6kH",
+          "ref": "E6haZ",
           "name": "Footer",
           "width": "fill_container",
           "descendants": {
-            "iFupJ": {
+            "549hf": {
               "width": 100,
               "height": 100
             }
@@ -25109,9 +25109,9 @@
       "layout": "vertical",
       "children": [
         {
-          "id": "ASIFq",
+          "id": "nkEpV",
           "type": "ref",
-          "ref": "S5OtQe",
+          "ref": "kgrqX",
           "name": "Header",
           "width": "fill_container"
         },
@@ -25776,19 +25776,19 @@
           ]
         },
         {
-          "id": "gCwPN",
+          "id": "pO5Pt",
           "type": "ref",
-          "ref": "vu6kH",
+          "ref": "E6haZ",
           "name": "Footer",
           "width": "fill_container",
           "descendants": {
-            "iFupJ": {
+            "549hf": {
               "width": 100,
               "height": 100
             },
-            "Sg6W9": {
+            "BWRrf": {
               "type": "frame",
-              "id": "qzfW4",
+              "id": "mUSVN",
               "name": "Nav",
               "layout": "vertical",
               "padding": [
@@ -25801,14 +25801,14 @@
               "children": [
                 {
                   "type": "frame",
-                  "id": "o7GRf",
+                  "id": "S3VwpL",
                   "name": "Row",
                   "gap": "$scale-0600",
                   "justifyContent": "center",
                   "alignItems": "center",
                   "children": [
                     {
-                      "id": "L7U9c",
+                      "id": "N4RT1q",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Blog",
@@ -25819,7 +25819,7 @@
                       }
                     },
                     {
-                      "id": "HssX2",
+                      "id": "Dmcgg",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Series",
@@ -25833,14 +25833,14 @@
                 },
                 {
                   "type": "frame",
-                  "id": "N0NJEC",
+                  "id": "ZOGGv",
                   "name": "Row",
                   "gap": "$scale-0600",
                   "justifyContent": "center",
                   "alignItems": "center",
                   "children": [
                     {
-                      "id": "qMXfZ",
+                      "id": "U87KK",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Newsletter",
@@ -25851,7 +25851,7 @@
                       }
                     },
                     {
-                      "id": "s6OMnx",
+                      "id": "OC5E2",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Shop",
@@ -25862,7 +25862,7 @@
                       }
                     },
                     {
-                      "id": "orIQb",
+                      "id": "g4Q0H7",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "About",
@@ -25896,9 +25896,9 @@
       "layout": "vertical",
       "children": [
         {
-          "id": "Rptau",
+          "id": "H7tmQ",
           "type": "ref",
-          "ref": "S5OtQe",
+          "ref": "kgrqX",
           "x": 0,
           "y": 0
         },
@@ -26560,9 +26560,9 @@
           ]
         },
         {
-          "id": "mR1JE",
+          "id": "rmNZQ",
           "type": "ref",
-          "ref": "vu6kH",
+          "ref": "E6haZ",
           "x": 0,
           "y": 4728
         }
@@ -26596,9 +26596,9 @@
       "layout": "vertical",
       "children": [
         {
-          "id": "lnYEL",
+          "id": "VwR1q",
           "type": "ref",
-          "ref": "S5OtQe",
+          "ref": "kgrqX",
           "name": "Header",
           "width": "fill_container"
         },
@@ -27024,13 +27024,13 @@
           ]
         },
         {
-          "id": "RZSIr",
+          "id": "R2dJs7",
           "type": "ref",
-          "ref": "vu6kH",
+          "ref": "E6haZ",
           "name": "Footer",
           "width": "fill_container",
           "descendants": {
-            "iFupJ": {
+            "549hf": {
               "width": 100,
               "height": 100
             }
@@ -27054,9 +27054,9 @@
       "layout": "vertical",
       "children": [
         {
-          "id": "ZNr20",
+          "id": "QFsJ4",
           "type": "ref",
-          "ref": "S5OtQe",
+          "ref": "kgrqX",
           "x": 0,
           "y": 0
         },
@@ -27470,9 +27470,9 @@
           ]
         },
         {
-          "id": "FsE54",
+          "id": "LcTIk",
           "type": "ref",
-          "ref": "vu6kH",
+          "ref": "E6haZ",
           "x": 0,
           "y": 690
         }
@@ -27494,9 +27494,9 @@
       "layout": "vertical",
       "children": [
         {
-          "id": "vVdAm",
+          "id": "QtqUm",
           "type": "ref",
-          "ref": "S5OtQe",
+          "ref": "kgrqX",
           "name": "Header",
           "width": "fill_container"
         },
@@ -27967,19 +27967,19 @@
           ]
         },
         {
-          "id": "A1THe",
+          "id": "Er6G3",
           "type": "ref",
-          "ref": "vu6kH",
+          "ref": "E6haZ",
           "name": "Footer",
           "width": "fill_container",
           "descendants": {
-            "iFupJ": {
+            "549hf": {
               "width": 100,
               "height": 100
             },
-            "Sg6W9": {
+            "BWRrf": {
               "type": "frame",
-              "id": "Y2r0E",
+              "id": "zHxKK",
               "name": "Nav",
               "layout": "vertical",
               "padding": [
@@ -27992,14 +27992,14 @@
               "children": [
                 {
                   "type": "frame",
-                  "id": "GxSXi",
+                  "id": "wjnsQ",
                   "name": "Row",
                   "gap": "$scale-0600",
                   "justifyContent": "center",
                   "alignItems": "center",
                   "children": [
                     {
-                      "id": "d4P0qT",
+                      "id": "IWs74",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Blog",
@@ -28010,7 +28010,7 @@
                       }
                     },
                     {
-                      "id": "fhTKi",
+                      "id": "opdPk",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Series",
@@ -28024,14 +28024,14 @@
                 },
                 {
                   "type": "frame",
-                  "id": "H4nbmF",
+                  "id": "wtzC6",
                   "name": "Row",
                   "gap": "$scale-0600",
                   "justifyContent": "center",
                   "alignItems": "center",
                   "children": [
                     {
-                      "id": "sxO1e",
+                      "id": "oRERJ",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Newsletter",
@@ -28042,7 +28042,7 @@
                       }
                     },
                     {
-                      "id": "FWpTH",
+                      "id": "fHotz",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "Shop",
@@ -28053,7 +28053,7 @@
                       }
                     },
                     {
-                      "id": "cqMiH",
+                      "id": "Nb5fb",
                       "type": "ref",
                       "ref": "eFsWC",
                       "name": "About",
