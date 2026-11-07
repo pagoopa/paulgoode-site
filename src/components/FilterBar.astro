@@ -1,0 +1,105 @@
+---
+// Filter (Filter / Default, Hover and Selected in design/site.pen): a row of chips that
+// shows only the items marked data-filter-type="<value>". "All" shows everything.
+// Items are always visible without JavaScript; the chips appear once the script runs.
+// The choice is kept in the address (?type=art) so a filtered view can be linked to.
+interface Props {
+  options: { value: string; label: string }[];
+  label?: string;
+}
+
+const { options, label = 'Filter by type' } = Astro.props;
+---
+
+<div class="filter-bar" role="group" aria-label={label} hidden>
+  <button type="button" class="filter-chip" data-filter-value="all" aria-pressed="true">All</button>
+  {
+    options.map((option) => (
+      <button type="button" class="filter-chip" data-filter-value={option.value} aria-pressed="false">
+        {option.label}
+      </button>
+    ))
+  }
+</div>
+
+<script>
+  const bar = document.querySelector<HTMLElement>('.filter-bar');
+
+  if (bar) {
+    const buttons = [...bar.querySelectorAll<HTMLButtonElement>('[data-filter-value]')];
+    const items = [...document.querySelectorAll<HTMLElement>('[data-filter-type]')];
+    const empty = document.querySelector<HTMLElement>('[data-filter-empty]');
+    const values = buttons.map((button) => button.dataset.filterValue ?? 'all');
+
+    const apply = (value: string) => {
+      let shown = 0;
+      for (const item of items) {
+        const match = value === 'all' || item.dataset.filterType === value;
+        item.hidden = !match;
+        if (match) shown += 1;
+      }
+      for (const button of buttons) {
+        button.setAttribute('aria-pressed', String(button.dataset.filterValue === value));
+      }
+      if (empty) empty.hidden = shown > 0;
+    };
+
+    bar.hidden = false;
+    const fromAddress = new URLSearchParams(location.search).get('type') ?? 'all';
+    apply(values.includes(fromAddress) ? fromAddress : 'all');
+
+    bar.addEventListener('click', (event) => {
+      const button = (event.target as Element).closest<HTMLButtonElement>('[data-filter-value]');
+      if (!button) return;
+      const value = button.dataset.filterValue ?? 'all';
+      apply(value);
+      const url = new URL(location.href);
+      if (value === 'all') url.searchParams.delete('type');
+      else url.searchParams.set('type', value);
+      history.replaceState(null, '', url);
+    });
+  }
+</script>
+
+<style>
+  .filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--scale-0200);
+  }
+
+  .filter-bar[hidden] {
+    display: none;
+  }
+
+  /* Body/eyebrow2-md in a pill with a 1px strong border. */
+  .filter-chip {
+    padding: var(--scale-0200) var(--scale-0400);
+    border: 1px solid var(--color-border-strong);
+    border-radius: var(--radius-full);
+    background: transparent;
+    color: var(--color-text-default);
+    font: inherit;
+    font-size: var(--type-eyebrow2-size);
+    line-height: var(--type-eyebrow2-line-height);
+    letter-spacing: var(--type-eyebrow2-letter-spacing);
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .filter-chip:hover {
+    background: var(--color-surface-hover);
+  }
+
+  .filter-chip:focus-visible {
+    outline: 2px solid var(--color-border-focus);
+    outline-offset: 2px;
+  }
+
+  .filter-chip[aria-pressed='true'] {
+    background: var(--color-surface-inverse);
+    border-color: var(--color-surface-inverse);
+    color: var(--color-text-inverse);
+  }
+</style>

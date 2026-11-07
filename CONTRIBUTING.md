@@ -201,6 +201,21 @@ A series is a numbered set of artwork, like "Junk Drawer Journey".
 - The series page lists every entry in number order and features the newest.
 - `draft: true` keeps an entry off the live site; it still shows locally.
 
+## Projects
+
+- **A project:** `src/content/projects/<project>.md` holds `title`, `summary`
+  (one or two sentences for the card), and `type` (personal, case-study, art,
+  music, or resource). The body is the project's own page at
+  `/projects/<project>`. The file name is its URL.
+- **Optional:** `featured: true` shows one project large above the grid (the
+  first by `order` if several are marked), `order` (lowest first; the rest
+  follow by title), `draft: true` (shows locally only), and `thumbnail`
+  (16:10, exported at 720 × 450, like a series entry).
+- **The filter** on `/projects` has one chip per type, and the choice is kept
+  in the address (`/projects?type=art`). To add a type, add it to
+  `projectType` and `projectTypes` in `src/lib/labels.ts` and to the Filter
+  bar in `design/site.pen`.
+
 ## The shop
 
 The shop lives on Big Cartel at https://shop.paulgoode.com, not in this
