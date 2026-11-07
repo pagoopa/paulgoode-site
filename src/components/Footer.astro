@@ -6,7 +6,7 @@ import { navItems } from '../lib/nav';
 const year = new Date().getFullYear();
 ---
 
-<footer class="site-footer" data-theme="dark">
+<footer class="site-footer">
   <div class="wrap site-footer__inner">
     <Image src={profile} alt="" class="site-footer__photo" width={120} height={120} />
     <nav class="site-footer__links" aria-label="Footer">
@@ -21,12 +21,12 @@ const year = new Date().getFullYear();
 </footer>
 
 <style>
-  /* Footer / Dark: profile circle, nav links and copyright, centered.
-     data-theme="dark" on the footer switches the tokens, so the same styles
-     give a dark background and light text. */
+  /* Footer: profile circle, nav links and copyright, centered, on the
+     Inverse tokens (dark background, light text). */
   .site-footer {
-    background: var(--color-surface-default);
-    color: var(--color-text-default);
+    --color-border-focus: var(--color-border-focus-inverse);
+    background: var(--color-surface-inverse);
+    color: var(--color-text-inverse);
     margin-top: var(--space-section);
   }
 
@@ -43,7 +43,7 @@ const year = new Date().getFullYear();
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    outline: 2px solid var(--color-text-default);
+    outline: 2px solid var(--color-text-inverse);
     outline-offset: -2px;
   }
 
@@ -58,7 +58,7 @@ const year = new Date().getFullYear();
 
   .site-footer__copyright {
     margin: 0;
-    color: var(--color-text-muted);
+    color: var(--color-text-inverse-muted);
     font-size: var(--type-body2-size);
     line-height: var(--type-body2-line-height);
   }

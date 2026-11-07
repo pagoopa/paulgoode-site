@@ -43,7 +43,6 @@
       "y": 4062,
       "name": "Home — Desktop (1200)",
       "theme": {
-        "mode": "light",
         "device": "lg"
       },
       "clip": true,
@@ -1007,7 +1006,6 @@
       "y": 14105,
       "name": "Blog Landing — Desktop (1200)",
       "theme": {
-        "mode": "light",
         "device": "lg"
       },
       "clip": true,
@@ -1320,7 +1318,6 @@
       "y": 4062,
       "name": "Home — Tablet (810)",
       "theme": {
-        "mode": "light",
         "device": "md"
       },
       "clip": true,
@@ -2293,7 +2290,6 @@
       "y": 4062,
       "name": "Home — Mobile (390)",
       "theme": {
-        "mode": "light",
         "device": "sm"
       },
       "clip": true,
@@ -3279,10 +3275,10 @@
                     {
                       "id": "ZB2kF",
                       "type": "ref",
-                      "ref": "eFsWC",
+                      "ref": "Bbcv6",
                       "name": "Blog",
                       "descendants": {
-                        "jynNC": {
+                        "v3guN": {
                           "content": "BLOG"
                         }
                       }
@@ -3290,10 +3286,10 @@
                     {
                       "id": "sPacQ",
                       "type": "ref",
-                      "ref": "eFsWC",
+                      "ref": "Bbcv6",
                       "name": "Series",
                       "descendants": {
-                        "jynNC": {
+                        "v3guN": {
                           "content": "PROJECTS"
                         }
                       }
@@ -3311,10 +3307,10 @@
                     {
                       "id": "KemML",
                       "type": "ref",
-                      "ref": "eFsWC",
+                      "ref": "Bbcv6",
                       "name": "Newsletter",
                       "descendants": {
-                        "jynNC": {
+                        "v3guN": {
                           "content": "NEWSLETTER"
                         }
                       }
@@ -3322,10 +3318,10 @@
                     {
                       "id": "nkISr",
                       "type": "ref",
-                      "ref": "eFsWC",
+                      "ref": "Bbcv6",
                       "name": "Shop",
                       "descendants": {
-                        "jynNC": {
+                        "v3guN": {
                           "content": "SHOP"
                         }
                       }
@@ -3333,10 +3329,10 @@
                     {
                       "id": "DUmmW",
                       "type": "ref",
-                      "ref": "eFsWC",
+                      "ref": "Bbcv6",
                       "name": "About",
                       "descendants": {
-                        "jynNC": {
+                        "v3guN": {
                           "content": "ABOUT"
                         }
                       }
@@ -3369,7 +3365,6 @@
       "y": 4062,
       "name": "Post — Desktop (1200)",
       "theme": {
-        "mode": "light",
         "device": "lg"
       },
       "clip": true,
@@ -3822,7 +3817,6 @@
       "y": 4062,
       "name": "Post — Tablet (810)",
       "theme": {
-        "mode": "light",
         "device": "md"
       },
       "clip": true,
@@ -4284,7 +4278,6 @@
       "y": 4062,
       "name": "Post — Mobile (390)",
       "theme": {
-        "mode": "light",
         "device": "sm"
       },
       "clip": true,
@@ -4759,10 +4752,10 @@
                     {
                       "id": "b8l0tM",
                       "type": "ref",
-                      "ref": "eFsWC",
+                      "ref": "Bbcv6",
                       "name": "Blog",
                       "descendants": {
-                        "jynNC": {
+                        "v3guN": {
                           "content": "BLOG"
                         }
                       }
@@ -4770,10 +4763,10 @@
                     {
                       "id": "K6A6I",
                       "type": "ref",
-                      "ref": "eFsWC",
+                      "ref": "Bbcv6",
                       "name": "Series",
                       "descendants": {
-                        "jynNC": {
+                        "v3guN": {
                           "content": "PROJECTS"
                         }
                       }
@@ -4791,10 +4784,10 @@
                     {
                       "id": "EbX2y",
                       "type": "ref",
-                      "ref": "eFsWC",
+                      "ref": "Bbcv6",
                       "name": "Newsletter",
                       "descendants": {
-                        "jynNC": {
+                        "v3guN": {
                           "content": "NEWSLETTER"
                         }
                       }
@@ -4802,10 +4795,10 @@
                     {
                       "id": "UgfF3",
                       "type": "ref",
-                      "ref": "eFsWC",
+                      "ref": "Bbcv6",
                       "name": "Shop",
                       "descendants": {
-                        "jynNC": {
+                        "v3guN": {
                           "content": "SHOP"
                         }
                       }
@@ -4813,10 +4806,10 @@
                     {
                       "id": "yObJA",
                       "type": "ref",
-                      "ref": "eFsWC",
+                      "ref": "Bbcv6",
                       "name": "About",
                       "descendants": {
-                        "jynNC": {
+                        "v3guN": {
                           "content": "ABOUT"
                         }
                       }
@@ -6709,7 +6702,6 @@
       "y": -2595,
       "name": "Components / Brand",
       "theme": {
-        "mode": "light",
         "device": "lg"
       },
       "fill": "$surface-default",
@@ -6857,7 +6849,6 @@
       "y": -2595,
       "name": "Components / Button",
       "theme": {
-        "mode": "light",
         "device": "lg"
       },
       "fill": "$surface-default",
@@ -10153,7 +10144,6 @@
       "y": -2595,
       "name": "Components / Card",
       "theme": {
-        "mode": "light",
         "device": "lg"
       },
       "fill": "$surface-default",
@@ -12070,7 +12060,6 @@
       "y": -2636,
       "name": "Components / Navigation",
       "theme": {
-        "mode": "light",
         "device": "lg"
       },
       "fill": "$surface-default",
@@ -13217,152 +13206,12 @@
               "children": [
                 {
                   "type": "frame",
-                  "id": "S5OtQe",
-                  "name": "Header / Left / Light",
-                  "theme": {
-                    "mode": "light"
-                  },
-                  "reusable": true,
-                  "width": "fill_container",
-                  "fill": "$surface-default",
-                  "padding": [
-                    "$scale-0400",
-                    "$layout-margin"
-                  ],
-                  "justifyContent": "space_between",
-                  "alignItems": "center",
-                  "children": [
-                    {
-                      "id": "VtURl",
-                      "type": "ref",
-                      "ref": "IsBQe",
-                      "name": "Logo",
-                      "width": 63,
-                      "height": 40,
-                      "fill": "$text-default"
-                    },
-                    {
-                      "type": "frame",
-                      "id": "dznlF",
-                      "name": "Actions",
-                      "gap": "$scale-0600",
-                      "alignItems": "center",
-                      "children": [
-                        {
-                          "type": "frame",
-                          "id": "zfzcT",
-                          "name": "Nav",
-                          "enabled": "$layout-show-nav",
-                          "gap": "$scale-0600",
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "id": "oekhv",
-                              "type": "ref",
-                              "ref": "MusDs",
-                              "name": "Blog",
-                              "descendants": {
-                                "t893f": {
-                                  "content": "BLOG"
-                                }
-                              }
-                            },
-                            {
-                              "id": "S5GGB",
-                              "type": "ref",
-                              "ref": "eFsWC",
-                              "name": "Series",
-                              "descendants": {
-                                "jynNC": {
-                                  "content": "PROJECTS"
-                                }
-                              }
-                            },
-                            {
-                              "id": "K3xO8N",
-                              "type": "ref",
-                              "ref": "eFsWC",
-                              "name": "Newsletter",
-                              "descendants": {
-                                "jynNC": {
-                                  "content": "NEWSLETTER"
-                                }
-                              }
-                            },
-                            {
-                              "id": "LglH1",
-                              "type": "ref",
-                              "ref": "eFsWC",
-                              "name": "Shop",
-                              "descendants": {
-                                "jynNC": {
-                                  "content": "SHOP"
-                                }
-                              }
-                            },
-                            {
-                              "id": "ANNgX",
-                              "type": "ref",
-                              "ref": "eFsWC",
-                              "name": "About",
-                              "descendants": {
-                                "jynNC": {
-                                  "content": "ABOUT"
-                                }
-                              }
-                            }
-                          ]
-                        },
-                        {
-                          "id": "QlgiA",
-                          "type": "ref",
-                          "ref": "N9s0tg",
-                          "name": "Call to action",
-                          "enabled": false,
-                          "descendants": {
-                            "v8b8B": {
-                              "content": "CONTACT"
-                            }
-                          }
-                        },
-                        {
-                          "type": "frame",
-                          "id": "F0YMjx",
-                          "x": 0,
-                          "y": 0,
-                          "name": "Menu button",
-                          "enabled": "$layout-show-menu-button",
-                          "width": 44,
-                          "height": 44,
-                          "justifyContent": "center",
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "id": "IR6iH",
-                              "type": "ref",
-                              "ref": "lTKuF",
-                              "name": "Icon",
-                              "width": 24,
-                              "height": 24,
-                              "stroke": "$text-default"
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
                   "id": "kgrqX",
-                  "name": "Header / Left / Dark",
-                  "theme": {
-                    "mode": "dark"
-                  },
+                  "name": "Header / Left",
                   "reusable": true,
                   "width": "fill_container",
-                  "fill": "$surface-default",
-                  "stroke": "$border-default",
+                  "fill": "$surface-inverse",
+                  "stroke": "$border-inverse",
                   "strokeWidth": {
                     "bottom": 1
                   },
@@ -13381,7 +13230,7 @@
                       "name": "Logo",
                       "width": 63,
                       "height": 40,
-                      "fill": "$text-default"
+                      "fill": "$text-inverse"
                     },
                     {
                       "type": "frame",
@@ -13401,10 +13250,10 @@
                             {
                               "id": "c7UL7",
                               "type": "ref",
-                              "ref": "MusDs",
+                              "ref": "y9pZm",
                               "name": "Blog",
                               "descendants": {
-                                "t893f": {
+                                "OVFYG": {
                                   "content": "BLOG"
                                 }
                               }
@@ -13412,10 +13261,10 @@
                             {
                               "id": "aBgCT",
                               "type": "ref",
-                              "ref": "eFsWC",
+                              "ref": "Bbcv6",
                               "name": "Series",
                               "descendants": {
-                                "jynNC": {
+                                "v3guN": {
                                   "content": "PROJECTS"
                                 }
                               }
@@ -13423,10 +13272,10 @@
                             {
                               "id": "t1NDp",
                               "type": "ref",
-                              "ref": "eFsWC",
+                              "ref": "Bbcv6",
                               "name": "Newsletter",
                               "descendants": {
-                                "jynNC": {
+                                "v3guN": {
                                   "content": "NEWSLETTER"
                                 }
                               }
@@ -13434,10 +13283,10 @@
                             {
                               "id": "cuXm2",
                               "type": "ref",
-                              "ref": "eFsWC",
+                              "ref": "Bbcv6",
                               "name": "Shop",
                               "descendants": {
-                                "jynNC": {
+                                "v3guN": {
                                   "content": "SHOP"
                                 }
                               }
@@ -13445,10 +13294,10 @@
                             {
                               "id": "QSUrd",
                               "type": "ref",
-                              "ref": "eFsWC",
+                              "ref": "Bbcv6",
                               "name": "About",
                               "descendants": {
-                                "jynNC": {
+                                "v3guN": {
                                   "content": "ABOUT"
                                 }
                               }
@@ -13486,145 +13335,7 @@
                               "name": "Icon",
                               "width": 24,
                               "height": 24,
-                              "stroke": "$text-default"
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "ue7Bt",
-                  "name": "Header / Center / Light",
-                  "theme": {
-                    "mode": "light"
-                  },
-                  "reusable": true,
-                  "width": "fill_container",
-                  "fill": "$surface-default",
-                  "layout": "vertical",
-                  "gap": "$scale-0400",
-                  "padding": [
-                    "$scale-0600",
-                    "$layout-margin"
-                  ],
-                  "alignItems": "center",
-                  "children": [
-                    {
-                      "id": "G181p",
-                      "type": "ref",
-                      "ref": "IsBQe",
-                      "name": "Logo",
-                      "width": 200,
-                      "height": 126,
-                      "fill": "$text-default"
-                    },
-                    {
-                      "type": "frame",
-                      "id": "GPTaN",
-                      "name": "Actions",
-                      "gap": "$scale-0600",
-                      "alignItems": "center",
-                      "children": [
-                        {
-                          "type": "frame",
-                          "id": "Xoz0V",
-                          "name": "Nav",
-                          "enabled": "$layout-show-nav",
-                          "gap": "$scale-0600",
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "id": "k8xDa",
-                              "type": "ref",
-                              "ref": "MusDs",
-                              "name": "Blog",
-                              "descendants": {
-                                "t893f": {
-                                  "content": "BLOG"
-                                }
-                              }
-                            },
-                            {
-                              "id": "szfRP",
-                              "type": "ref",
-                              "ref": "eFsWC",
-                              "name": "Series",
-                              "descendants": {
-                                "jynNC": {
-                                  "content": "PROJECTS"
-                                }
-                              }
-                            },
-                            {
-                              "id": "LBaOU",
-                              "type": "ref",
-                              "ref": "eFsWC",
-                              "name": "Newsletter",
-                              "descendants": {
-                                "jynNC": {
-                                  "content": "NEWSLETTER"
-                                }
-                              }
-                            },
-                            {
-                              "id": "TV3DY",
-                              "type": "ref",
-                              "ref": "eFsWC",
-                              "name": "Shop",
-                              "descendants": {
-                                "jynNC": {
-                                  "content": "SHOP"
-                                }
-                              }
-                            },
-                            {
-                              "id": "mvoN2",
-                              "type": "ref",
-                              "ref": "eFsWC",
-                              "name": "About",
-                              "descendants": {
-                                "jynNC": {
-                                  "content": "ABOUT"
-                                }
-                              }
-                            }
-                          ]
-                        },
-                        {
-                          "id": "Uywdy",
-                          "type": "ref",
-                          "ref": "N9s0tg",
-                          "name": "Call to action",
-                          "enabled": false,
-                          "descendants": {
-                            "v8b8B": {
-                              "content": "CONTACT"
-                            }
-                          }
-                        },
-                        {
-                          "type": "frame",
-                          "id": "v3f3g",
-                          "x": 0,
-                          "y": 0,
-                          "name": "Menu button",
-                          "enabled": "$layout-show-menu-button",
-                          "width": 44,
-                          "height": 44,
-                          "justifyContent": "center",
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "id": "KHScQ",
-                              "type": "ref",
-                              "ref": "lTKuF",
-                              "name": "Icon",
-                              "width": 24,
-                              "height": 24,
-                              "stroke": "$text-default"
+                              "stroke": "$text-inverse"
                             }
                           ]
                         }
@@ -13635,14 +13346,11 @@
                 {
                   "type": "frame",
                   "id": "VCDrB",
-                  "name": "Header / Center / Dark",
-                  "theme": {
-                    "mode": "dark"
-                  },
+                  "name": "Header / Center",
                   "reusable": true,
                   "width": "fill_container",
-                  "fill": "$surface-default",
-                  "stroke": "$border-default",
+                  "fill": "$surface-inverse",
+                  "stroke": "$border-inverse",
                   "strokeWidth": {
                     "bottom": 1
                   },
@@ -13662,7 +13370,7 @@
                       "name": "Logo",
                       "width": 200,
                       "height": 126,
-                      "fill": "$text-default"
+                      "fill": "$text-inverse"
                     },
                     {
                       "type": "frame",
@@ -13682,10 +13390,10 @@
                             {
                               "id": "Awd7w",
                               "type": "ref",
-                              "ref": "MusDs",
+                              "ref": "y9pZm",
                               "name": "Blog",
                               "descendants": {
-                                "t893f": {
+                                "OVFYG": {
                                   "content": "BLOG"
                                 }
                               }
@@ -13693,10 +13401,10 @@
                             {
                               "id": "Dsquv",
                               "type": "ref",
-                              "ref": "eFsWC",
+                              "ref": "Bbcv6",
                               "name": "Series",
                               "descendants": {
-                                "jynNC": {
+                                "v3guN": {
                                   "content": "PROJECTS"
                                 }
                               }
@@ -13704,10 +13412,10 @@
                             {
                               "id": "byuZV",
                               "type": "ref",
-                              "ref": "eFsWC",
+                              "ref": "Bbcv6",
                               "name": "Newsletter",
                               "descendants": {
-                                "jynNC": {
+                                "v3guN": {
                                   "content": "NEWSLETTER"
                                 }
                               }
@@ -13715,10 +13423,10 @@
                             {
                               "id": "L8YxmZ",
                               "type": "ref",
-                              "ref": "eFsWC",
+                              "ref": "Bbcv6",
                               "name": "Shop",
                               "descendants": {
-                                "jynNC": {
+                                "v3guN": {
                                   "content": "SHOP"
                                 }
                               }
@@ -13726,10 +13434,10 @@
                             {
                               "id": "G572Pn",
                               "type": "ref",
-                              "ref": "eFsWC",
+                              "ref": "Bbcv6",
                               "name": "About",
                               "descendants": {
-                                "jynNC": {
+                                "v3guN": {
                                   "content": "ABOUT"
                                 }
                               }
@@ -13767,7 +13475,7 @@
                               "name": "Icon",
                               "width": 24,
                               "height": 24,
-                              "stroke": "$text-default"
+                              "stroke": "$text-inverse"
                             }
                           ]
                         }
@@ -13785,157 +13493,15 @@
               "children": [
                 {
                   "type": "frame",
-                  "id": "M1J6l",
-                  "name": "Header / Left / Light / Menu Open",
-                  "theme": {
-                    "device": "sm",
-                    "mode": "light"
-                  },
-                  "reusable": true,
-                  "width": 390,
-                  "fill": "$surface-default",
-                  "layout": "vertical",
-                  "children": [
-                    {
-                      "type": "frame",
-                      "id": "cUbmx",
-                      "name": "Bar",
-                      "width": "fill_container",
-                      "padding": [
-                        "$scale-0400",
-                        "$layout-gutter",
-                        "$scale-0400",
-                        "$layout-margin"
-                      ],
-                      "justifyContent": "space_between",
-                      "alignItems": "center",
-                      "children": [
-                        {
-                          "id": "F3Mhe",
-                          "type": "ref",
-                          "ref": "IsBQe",
-                          "name": "Logo",
-                          "width": 63,
-                          "height": 40,
-                          "fill": "$text-default"
-                        },
-                        {
-                          "type": "frame",
-                          "id": "W1JcI",
-                          "name": "Actions",
-                          "gap": "$scale-0600",
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "frame",
-                              "id": "Or7fr",
-                              "name": "Menu button",
-                              "enabled": "$layout-show-menu-button",
-                              "width": 44,
-                              "height": 44,
-                              "justifyContent": "center",
-                              "alignItems": "center",
-                              "children": [
-                                {
-                                  "id": "Nsw8s",
-                                  "type": "ref",
-                                  "ref": "Cxapq",
-                                  "name": "Icon",
-                                  "width": 24,
-                                  "height": 24,
-                                  "stroke": "$text-default"
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "frame",
-                      "id": "idINa",
-                      "name": "Menu",
-                      "width": "fill_container",
-                      "layout": "vertical",
-                      "gap": "$scale-0200",
-                      "padding": [
-                        "$scale-0400",
-                        "$layout-margin",
-                        "$scale-0600",
-                        "$layout-margin"
-                      ],
-                      "children": [
-                        {
-                          "id": "GH6uk",
-                          "type": "ref",
-                          "ref": "MusDs",
-                          "name": "Blog",
-                          "descendants": {
-                            "t893f": {
-                              "content": "BLOG"
-                            }
-                          }
-                        },
-                        {
-                          "id": "SJS3d",
-                          "type": "ref",
-                          "ref": "eFsWC",
-                          "name": "Series",
-                          "descendants": {
-                            "jynNC": {
-                              "content": "PROJECTS"
-                            }
-                          }
-                        },
-                        {
-                          "id": "WkgaE",
-                          "type": "ref",
-                          "ref": "eFsWC",
-                          "name": "Newsletter",
-                          "descendants": {
-                            "jynNC": {
-                              "content": "NEWSLETTER"
-                            }
-                          }
-                        },
-                        {
-                          "id": "UUi7K",
-                          "type": "ref",
-                          "ref": "eFsWC",
-                          "name": "Shop",
-                          "descendants": {
-                            "jynNC": {
-                              "content": "SHOP"
-                            }
-                          }
-                        },
-                        {
-                          "id": "asfYu",
-                          "type": "ref",
-                          "ref": "eFsWC",
-                          "name": "About",
-                          "descendants": {
-                            "jynNC": {
-                              "content": "ABOUT"
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
                   "id": "k3Sub",
-                  "name": "Header / Left / Dark / Menu Open",
+                  "name": "Header / Left / Menu Open",
                   "theme": {
-                    "device": "sm",
-                    "mode": "dark"
+                    "device": "sm"
                   },
                   "reusable": true,
                   "width": 390,
-                  "fill": "$surface-default",
-                  "stroke": "$border-default",
+                  "fill": "$surface-inverse",
+                  "stroke": "$border-inverse",
                   "strokeWidth": {
                     "bottom": 1
                   },
@@ -13963,7 +13529,7 @@
                           "name": "Logo",
                           "width": 63,
                           "height": 40,
-                          "fill": "$text-default"
+                          "fill": "$text-inverse"
                         },
                         {
                           "type": "frame",
@@ -13989,7 +13555,7 @@
                                   "name": "Icon",
                                   "width": 24,
                                   "height": 24,
-                                  "stroke": "$text-default"
+                                  "stroke": "$text-inverse"
                                 }
                               ]
                             }
@@ -14002,7 +13568,7 @@
                       "id": "BoqUc",
                       "name": "Menu",
                       "width": "fill_container",
-                      "stroke": "$border-default",
+                      "stroke": "$border-inverse",
                       "strokeWidth": {
                         "top": 1
                       },
@@ -14019,10 +13585,10 @@
                         {
                           "id": "JUY70",
                           "type": "ref",
-                          "ref": "MusDs",
+                          "ref": "y9pZm",
                           "name": "Blog",
                           "descendants": {
-                            "t893f": {
+                            "OVFYG": {
                               "content": "BLOG"
                             }
                           }
@@ -14030,10 +13596,10 @@
                         {
                           "id": "z1jU9Z",
                           "type": "ref",
-                          "ref": "eFsWC",
+                          "ref": "Bbcv6",
                           "name": "Series",
                           "descendants": {
-                            "jynNC": {
+                            "v3guN": {
                               "content": "PROJECTS"
                             }
                           }
@@ -14041,10 +13607,10 @@
                         {
                           "id": "jXmNh",
                           "type": "ref",
-                          "ref": "eFsWC",
+                          "ref": "Bbcv6",
                           "name": "Newsletter",
                           "descendants": {
-                            "jynNC": {
+                            "v3guN": {
                               "content": "NEWSLETTER"
                             }
                           }
@@ -14052,10 +13618,10 @@
                         {
                           "id": "v92XST",
                           "type": "ref",
-                          "ref": "eFsWC",
+                          "ref": "Bbcv6",
                           "name": "Shop",
                           "descendants": {
-                            "jynNC": {
+                            "v3guN": {
                               "content": "SHOP"
                             }
                           }
@@ -14063,161 +13629,10 @@
                         {
                           "id": "mJExL",
                           "type": "ref",
-                          "ref": "eFsWC",
+                          "ref": "Bbcv6",
                           "name": "About",
                           "descendants": {
-                            "jynNC": {
-                              "content": "ABOUT"
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "WkufV",
-                  "name": "Header / Center / Light / Menu Open",
-                  "theme": {
-                    "device": "sm",
-                    "mode": "light"
-                  },
-                  "reusable": true,
-                  "width": 390,
-                  "fill": "$surface-default",
-                  "stroke": "$border-default",
-                  "strokeWidth": {
-                    "bottom": 1
-                  },
-                  "strokeAlignment": "inner",
-                  "layout": "vertical",
-                  "children": [
-                    {
-                      "type": "frame",
-                      "id": "xqn9t",
-                      "name": "Bar",
-                      "width": "fill_container",
-                      "layout": "vertical",
-                      "gap": "$scale-0400",
-                      "padding": [
-                        "$scale-0600",
-                        "$layout-margin"
-                      ],
-                      "alignItems": "center",
-                      "children": [
-                        {
-                          "id": "wDzLp",
-                          "type": "ref",
-                          "ref": "IsBQe",
-                          "name": "Logo",
-                          "width": 127,
-                          "height": 80,
-                          "fill": "$text-default"
-                        },
-                        {
-                          "type": "frame",
-                          "id": "h9OFq3",
-                          "name": "Actions",
-                          "gap": "$scale-0600",
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "frame",
-                              "id": "Vb5q8",
-                              "name": "Menu button",
-                              "enabled": "$layout-show-menu-button",
-                              "width": 44,
-                              "height": 44,
-                              "justifyContent": "center",
-                              "alignItems": "center",
-                              "children": [
-                                {
-                                  "id": "iyOii",
-                                  "type": "ref",
-                                  "ref": "Cxapq",
-                                  "name": "Icon",
-                                  "width": 24,
-                                  "height": 24,
-                                  "stroke": "$text-default"
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "frame",
-                      "id": "zfiiR",
-                      "name": "Menu",
-                      "width": "fill_container",
-                      "stroke": "$border-default",
-                      "strokeWidth": {
-                        "top": 1
-                      },
-                      "strokeAlignment": "inner",
-                      "layout": "vertical",
-                      "gap": "$scale-0200",
-                      "padding": [
-                        "$scale-0400",
-                        "$layout-margin",
-                        "$scale-0600",
-                        "$layout-margin"
-                      ],
-                      "alignItems": "center",
-                      "children": [
-                        {
-                          "id": "qbI4s",
-                          "type": "ref",
-                          "ref": "MusDs",
-                          "name": "Blog",
-                          "descendants": {
-                            "t893f": {
-                              "content": "BLOG"
-                            }
-                          }
-                        },
-                        {
-                          "id": "MAvPZ",
-                          "type": "ref",
-                          "ref": "eFsWC",
-                          "name": "Series",
-                          "descendants": {
-                            "jynNC": {
-                              "content": "PROJECTS"
-                            }
-                          }
-                        },
-                        {
-                          "id": "T2XM7W",
-                          "type": "ref",
-                          "ref": "eFsWC",
-                          "name": "Newsletter",
-                          "descendants": {
-                            "jynNC": {
-                              "content": "NEWSLETTER"
-                            }
-                          }
-                        },
-                        {
-                          "id": "NN3uI",
-                          "type": "ref",
-                          "ref": "eFsWC",
-                          "name": "Shop",
-                          "descendants": {
-                            "jynNC": {
-                              "content": "SHOP"
-                            }
-                          }
-                        },
-                        {
-                          "id": "ZTc5n",
-                          "type": "ref",
-                          "ref": "eFsWC",
-                          "name": "About",
-                          "descendants": {
-                            "jynNC": {
+                            "v3guN": {
                               "content": "ABOUT"
                             }
                           }
@@ -14229,15 +13644,14 @@
                 {
                   "type": "frame",
                   "id": "QRrD0",
-                  "name": "Header / Center / Dark / Menu Open",
+                  "name": "Header / Center / Menu Open",
                   "theme": {
-                    "device": "sm",
-                    "mode": "dark"
+                    "device": "sm"
                   },
                   "reusable": true,
                   "width": 390,
-                  "fill": "$surface-default",
-                  "stroke": "$border-default",
+                  "fill": "$surface-inverse",
+                  "stroke": "$border-inverse",
                   "strokeWidth": {
                     "bottom": 1
                   },
@@ -14264,7 +13678,7 @@
                           "name": "Logo",
                           "width": 127,
                           "height": 80,
-                          "fill": "$text-default"
+                          "fill": "$text-inverse"
                         },
                         {
                           "type": "frame",
@@ -14290,7 +13704,7 @@
                                   "name": "Icon",
                                   "width": 24,
                                   "height": 24,
-                                  "stroke": "$text-default"
+                                  "stroke": "$text-inverse"
                                 }
                               ]
                             }
@@ -14303,7 +13717,7 @@
                       "id": "t2SSv",
                       "name": "Menu",
                       "width": "fill_container",
-                      "stroke": "$border-default",
+                      "stroke": "$border-inverse",
                       "strokeWidth": {
                         "top": 1
                       },
@@ -14321,10 +13735,10 @@
                         {
                           "id": "z1iWS",
                           "type": "ref",
-                          "ref": "MusDs",
+                          "ref": "y9pZm",
                           "name": "Blog",
                           "descendants": {
-                            "t893f": {
+                            "OVFYG": {
                               "content": "BLOG"
                             }
                           }
@@ -14332,10 +13746,10 @@
                         {
                           "id": "ocvlq",
                           "type": "ref",
-                          "ref": "eFsWC",
+                          "ref": "Bbcv6",
                           "name": "Series",
                           "descendants": {
-                            "jynNC": {
+                            "v3guN": {
                               "content": "PROJECTS"
                             }
                           }
@@ -14343,10 +13757,10 @@
                         {
                           "id": "rDcMs",
                           "type": "ref",
-                          "ref": "eFsWC",
+                          "ref": "Bbcv6",
                           "name": "Newsletter",
                           "descendants": {
-                            "jynNC": {
+                            "v3guN": {
                               "content": "NEWSLETTER"
                             }
                           }
@@ -14354,10 +13768,10 @@
                         {
                           "id": "TFDOc",
                           "type": "ref",
-                          "ref": "eFsWC",
+                          "ref": "Bbcv6",
                           "name": "Shop",
                           "descendants": {
-                            "jynNC": {
+                            "v3guN": {
                               "content": "SHOP"
                             }
                           }
@@ -14365,10 +13779,10 @@
                         {
                           "id": "dWE5P",
                           "type": "ref",
-                          "ref": "eFsWC",
+                          "ref": "Bbcv6",
                           "name": "About",
                           "descendants": {
-                            "jynNC": {
+                            "v3guN": {
                               "content": "ABOUT"
                             }
                           }
@@ -14410,128 +13824,11 @@
               "children": [
                 {
                   "type": "frame",
-                  "id": "vu6kH",
-                  "name": "Footer / Light",
-                  "theme": {
-                    "mode": "light"
-                  },
-                  "reusable": true,
-                  "width": "fill_container",
-                  "fill": "$surface-default",
-                  "layout": "vertical",
-                  "gap": "$scale-0300",
-                  "padding": [
-                    "$space-block",
-                    "$layout-margin"
-                  ],
-                  "alignItems": "center",
-                  "children": [
-                    {
-                      "id": "iFupJ",
-                      "type": "ref",
-                      "ref": "yUEsX",
-                      "name": "Profile / Circle",
-                      "width": 120,
-                      "height": 120,
-                      "stroke": "$text-default",
-                      "strokeWidth": 2,
-                      "strokeAlignment": "inner"
-                    },
-                    {
-                      "type": "frame",
-                      "id": "Sg6W9",
-                      "name": "Nav",
-                      "gap": "$scale-0600",
-                      "padding": [
-                        "$scale-0300",
-                        0,
-                        0,
-                        0
-                      ],
-                      "justifyContent": "center",
-                      "alignItems": "center",
-                      "children": [
-                        {
-                          "id": "cFqQn",
-                          "type": "ref",
-                          "ref": "eFsWC",
-                          "name": "Blog",
-                          "descendants": {
-                            "jynNC": {
-                              "content": "BLOG"
-                            }
-                          }
-                        },
-                        {
-                          "id": "TuE5m",
-                          "type": "ref",
-                          "ref": "eFsWC",
-                          "name": "Series",
-                          "descendants": {
-                            "jynNC": {
-                              "content": "PROJECTS"
-                            }
-                          }
-                        },
-                        {
-                          "id": "DhFq4",
-                          "type": "ref",
-                          "ref": "eFsWC",
-                          "name": "Newsletter",
-                          "descendants": {
-                            "jynNC": {
-                              "content": "NEWSLETTER"
-                            }
-                          }
-                        },
-                        {
-                          "id": "215sH",
-                          "type": "ref",
-                          "ref": "eFsWC",
-                          "name": "Shop",
-                          "descendants": {
-                            "jynNC": {
-                              "content": "SHOP"
-                            }
-                          }
-                        },
-                        {
-                          "id": "ngCmD",
-                          "type": "ref",
-                          "ref": "eFsWC",
-                          "name": "About",
-                          "descendants": {
-                            "jynNC": {
-                              "content": "ABOUT"
-                            }
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "id": "o4zy0",
-                      "name": "Copyright",
-                      "fill": "$text-muted",
-                      "content": "© 2026 Paul Goode",
-                      "lineHeight": "$type-body2-line-height",
-                      "fontFamily": "$font-body",
-                      "fontSize": "$type-body2-size",
-                      "fontWeight": "normal",
-                      "letterSpacing": "$type-body2-letter-spacing"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
                   "id": "E6haZ",
-                  "name": "Footer / Dark",
-                  "theme": {
-                    "mode": "dark"
-                  },
+                  "name": "Footer",
                   "reusable": true,
                   "width": "fill_container",
-                  "fill": "$surface-default",
+                  "fill": "$surface-inverse",
                   "layout": "vertical",
                   "gap": "$scale-0300",
                   "padding": [
@@ -14547,7 +13844,7 @@
                       "name": "Profile / Circle",
                       "width": 120,
                       "height": 120,
-                      "stroke": "$text-default",
+                      "stroke": "$text-inverse",
                       "strokeWidth": 2,
                       "strokeAlignment": "inner"
                     },
@@ -14568,10 +13865,10 @@
                         {
                           "id": "8tqNC",
                           "type": "ref",
-                          "ref": "eFsWC",
+                          "ref": "Bbcv6",
                           "name": "Blog",
                           "descendants": {
-                            "jynNC": {
+                            "v3guN": {
                               "content": "BLOG"
                             }
                           }
@@ -14579,10 +13876,10 @@
                         {
                           "id": "a9toE",
                           "type": "ref",
-                          "ref": "eFsWC",
+                          "ref": "Bbcv6",
                           "name": "Series",
                           "descendants": {
-                            "jynNC": {
+                            "v3guN": {
                               "content": "PROJECTS"
                             }
                           }
@@ -14590,10 +13887,10 @@
                         {
                           "id": "nDBoG",
                           "type": "ref",
-                          "ref": "eFsWC",
+                          "ref": "Bbcv6",
                           "name": "Newsletter",
                           "descendants": {
-                            "jynNC": {
+                            "v3guN": {
                               "content": "NEWSLETTER"
                             }
                           }
@@ -14601,10 +13898,10 @@
                         {
                           "id": "BGQaH",
                           "type": "ref",
-                          "ref": "eFsWC",
+                          "ref": "Bbcv6",
                           "name": "Shop",
                           "descendants": {
-                            "jynNC": {
+                            "v3guN": {
                               "content": "SHOP"
                             }
                           }
@@ -14612,10 +13909,10 @@
                         {
                           "id": "GD9Iy",
                           "type": "ref",
-                          "ref": "eFsWC",
+                          "ref": "Bbcv6",
                           "name": "About",
                           "descendants": {
-                            "jynNC": {
+                            "v3guN": {
                               "content": "ABOUT"
                             }
                           }
@@ -14626,7 +13923,7 @@
                       "type": "text",
                       "id": "hG0R0",
                       "name": "Copyright",
-                      "fill": "$text-muted",
+                      "fill": "$text-inverse-muted",
                       "content": "© 2026 Paul Goode",
                       "lineHeight": "$type-body2-line-height",
                       "fontFamily": "$font-body",
@@ -14649,7 +13946,6 @@
       "y": -2636,
       "name": "Components / Stickers",
       "theme": {
-        "mode": "light",
         "device": "lg"
       },
       "fill": "$surface-default",
@@ -17843,7 +17139,6 @@
       "y": -2636,
       "name": "Components / Components",
       "theme": {
-        "mode": "light",
         "device": "lg"
       },
       "fill": "$surface-default",
@@ -18643,7 +17938,6 @@
       "y": -2533,
       "name": "Components / Shop",
       "theme": {
-        "mode": "light",
         "device": "lg"
       },
       "fill": "$surface-default",
@@ -18841,7 +18135,6 @@
       "y": 4062,
       "name": "Projects — Desktop (1200)",
       "theme": {
-        "mode": "light",
         "device": "lg"
       },
       "clip": true,
@@ -18859,10 +18152,10 @@
             "c7UL7": {
               "id": "DSjv8",
               "type": "ref",
-              "ref": "eFsWC",
+              "ref": "Bbcv6",
               "name": "Blog",
               "descendants": {
-                "jynNC": {
+                "v3guN": {
                   "content": "BLOG"
                 }
               }
@@ -19081,7 +18374,6 @@
       "y": 4062,
       "name": "Series Landing — Desktop (1200)",
       "theme": {
-        "mode": "light",
         "device": "lg"
       },
       "clip": true,
@@ -19099,10 +18391,10 @@
             "c7UL7": {
               "id": "niNBg",
               "type": "ref",
-              "ref": "eFsWC",
+              "ref": "Bbcv6",
               "name": "Blog",
               "descendants": {
-                "jynNC": {
+                "v3guN": {
                   "content": "BLOG"
                 }
               }
@@ -19110,10 +18402,10 @@
             "aBgCT": {
               "id": "ZxPU4",
               "type": "ref",
-              "ref": "MusDs",
+              "ref": "y9pZm",
               "name": "Series",
               "descendants": {
-                "t893f": {
+                "OVFYG": {
                   "content": "PROJECTS"
                 }
               }
@@ -19387,7 +18679,6 @@
       "y": 4062,
       "name": "Projects — Tablet (810)",
       "theme": {
-        "mode": "light",
         "device": "md"
       },
       "clip": true,
@@ -19405,10 +18696,10 @@
             "c7UL7": {
               "id": "Q0rjV",
               "type": "ref",
-              "ref": "eFsWC",
+              "ref": "Bbcv6",
               "name": "Blog",
               "descendants": {
-                "jynNC": {
+                "v3guN": {
                   "content": "BLOG"
                 }
               }
@@ -19597,7 +18888,6 @@
       "y": 4062,
       "name": "Projects — Mobile (390)",
       "theme": {
-        "mode": "light",
         "device": "sm"
       },
       "clip": true,
@@ -19615,10 +18905,10 @@
             "c7UL7": {
               "id": "f8I5e",
               "type": "ref",
-              "ref": "eFsWC",
+              "ref": "Bbcv6",
               "name": "Blog",
               "descendants": {
-                "jynNC": {
+                "v3guN": {
                   "content": "BLOG"
                 }
               }
@@ -19811,10 +19101,10 @@
                     {
                       "id": "loYmn",
                       "type": "ref",
-                      "ref": "eFsWC",
+                      "ref": "Bbcv6",
                       "name": "Blog",
                       "descendants": {
-                        "jynNC": {
+                        "v3guN": {
                           "content": "BLOG"
                         }
                       }
@@ -19822,10 +19112,10 @@
                     {
                       "id": "r6qOE",
                       "type": "ref",
-                      "ref": "eFsWC",
+                      "ref": "Bbcv6",
                       "name": "Series",
                       "descendants": {
-                        "jynNC": {
+                        "v3guN": {
                           "content": "PROJECTS"
                         }
                       }
@@ -19843,10 +19133,10 @@
                     {
                       "id": "Em6vU",
                       "type": "ref",
-                      "ref": "eFsWC",
+                      "ref": "Bbcv6",
                       "name": "Newsletter",
                       "descendants": {
-                        "jynNC": {
+                        "v3guN": {
                           "content": "NEWSLETTER"
                         }
                       }
@@ -19854,10 +19144,10 @@
                     {
                       "id": "TB92U",
                       "type": "ref",
-                      "ref": "eFsWC",
+                      "ref": "Bbcv6",
                       "name": "Shop",
                       "descendants": {
-                        "jynNC": {
+                        "v3guN": {
                           "content": "SHOP"
                         }
                       }
@@ -19865,10 +19155,10 @@
                     {
                       "id": "zbGrX",
                       "type": "ref",
-                      "ref": "eFsWC",
+                      "ref": "Bbcv6",
                       "name": "About",
                       "descendants": {
-                        "jynNC": {
+                        "v3guN": {
                           "content": "ABOUT"
                         }
                       }
@@ -19888,7 +19178,6 @@
       "y": 4062,
       "name": "Series — Desktop (1200)",
       "theme": {
-        "mode": "light",
         "device": "lg"
       },
       "clip": true,
@@ -19906,10 +19195,10 @@
             "c7UL7": {
               "id": "qAs3L",
               "type": "ref",
-              "ref": "eFsWC",
+              "ref": "Bbcv6",
               "name": "Blog",
               "descendants": {
-                "jynNC": {
+                "v3guN": {
                   "content": "BLOG"
                 }
               }
@@ -19917,10 +19206,10 @@
             "aBgCT": {
               "id": "pZrfF",
               "type": "ref",
-              "ref": "MusDs",
+              "ref": "y9pZm",
               "name": "Series",
               "descendants": {
-                "t893f": {
+                "OVFYG": {
                   "content": "PROJECTS"
                 }
               }
@@ -20324,7 +19613,6 @@
       "y": 4062,
       "name": "Series — Tablet (810)",
       "theme": {
-        "mode": "light",
         "device": "md"
       },
       "clip": true,
@@ -20342,10 +19630,10 @@
             "c7UL7": {
               "id": "JVjq5",
               "type": "ref",
-              "ref": "eFsWC",
+              "ref": "Bbcv6",
               "name": "Blog",
               "descendants": {
-                "jynNC": {
+                "v3guN": {
                   "content": "BLOG"
                 }
               }
@@ -20353,10 +19641,10 @@
             "aBgCT": {
               "id": "iM0vz",
               "type": "ref",
-              "ref": "MusDs",
+              "ref": "y9pZm",
               "name": "Series",
               "descendants": {
-                "t893f": {
+                "OVFYG": {
                   "content": "PROJECTS"
                 }
               }
@@ -20630,7 +19918,6 @@
       "y": 4062,
       "name": "Series — Mobile (390)",
       "theme": {
-        "mode": "light",
         "device": "sm"
       },
       "clip": true,
@@ -20648,10 +19935,10 @@
             "c7UL7": {
               "id": "U9ceX",
               "type": "ref",
-              "ref": "eFsWC",
+              "ref": "Bbcv6",
               "name": "Blog",
               "descendants": {
-                "jynNC": {
+                "v3guN": {
                   "content": "BLOG"
                 }
               }
@@ -20659,10 +19946,10 @@
             "aBgCT": {
               "id": "wfEzR",
               "type": "ref",
-              "ref": "MusDs",
+              "ref": "y9pZm",
               "name": "Series",
               "descendants": {
-                "t893f": {
+                "OVFYG": {
                   "content": "PROJECTS"
                 }
               }
@@ -20958,10 +20245,10 @@
                     {
                       "id": "wE7vM",
                       "type": "ref",
-                      "ref": "eFsWC",
+                      "ref": "Bbcv6",
                       "name": "Blog",
                       "descendants": {
-                        "jynNC": {
+                        "v3guN": {
                           "content": "BLOG"
                         }
                       }
@@ -20969,10 +20256,10 @@
                     {
                       "id": "iPyFe",
                       "type": "ref",
-                      "ref": "eFsWC",
+                      "ref": "Bbcv6",
                       "name": "Series",
                       "descendants": {
-                        "jynNC": {
+                        "v3guN": {
                           "content": "PROJECTS"
                         }
                       }
@@ -20990,10 +20277,10 @@
                     {
                       "id": "s2LDSp",
                       "type": "ref",
-                      "ref": "eFsWC",
+                      "ref": "Bbcv6",
                       "name": "Newsletter",
                       "descendants": {
-                        "jynNC": {
+                        "v3guN": {
                           "content": "NEWSLETTER"
                         }
                       }
@@ -21001,10 +20288,10 @@
                     {
                       "id": "M1JTx",
                       "type": "ref",
-                      "ref": "eFsWC",
+                      "ref": "Bbcv6",
                       "name": "Shop",
                       "descendants": {
-                        "jynNC": {
+                        "v3guN": {
                           "content": "SHOP"
                         }
                       }
@@ -21012,10 +20299,10 @@
                     {
                       "id": "rdPKZ",
                       "type": "ref",
-                      "ref": "eFsWC",
+                      "ref": "Bbcv6",
                       "name": "About",
                       "descendants": {
-                        "jynNC": {
+                        "v3guN": {
                           "content": "ABOUT"
                         }
                       }
@@ -21035,7 +20322,6 @@
       "y": 4062,
       "name": "Series Landing — Tablet (810)",
       "theme": {
-        "mode": "light",
         "device": "md"
       },
       "clip": true,
@@ -21053,10 +20339,10 @@
             "c7UL7": {
               "id": "A6O2ky",
               "type": "ref",
-              "ref": "eFsWC",
+              "ref": "Bbcv6",
               "name": "Blog",
               "descendants": {
-                "jynNC": {
+                "v3guN": {
                   "content": "BLOG"
                 }
               }
@@ -21064,10 +20350,10 @@
             "aBgCT": {
               "id": "N4xqhP",
               "type": "ref",
-              "ref": "MusDs",
+              "ref": "y9pZm",
               "name": "Series",
               "descendants": {
-                "t893f": {
+                "OVFYG": {
                   "content": "PROJECTS"
                 }
               }
@@ -21301,7 +20587,6 @@
       "y": 4062,
       "name": "Series Landing — Mobile (390)",
       "theme": {
-        "mode": "light",
         "device": "sm"
       },
       "clip": true,
@@ -21319,10 +20604,10 @@
             "c7UL7": {
               "id": "n9vgvc",
               "type": "ref",
-              "ref": "eFsWC",
+              "ref": "Bbcv6",
               "name": "Blog",
               "descendants": {
-                "jynNC": {
+                "v3guN": {
                   "content": "BLOG"
                 }
               }
@@ -21330,10 +20615,10 @@
             "aBgCT": {
               "id": "L0x16",
               "type": "ref",
-              "ref": "MusDs",
+              "ref": "y9pZm",
               "name": "Series",
               "descendants": {
-                "t893f": {
+                "OVFYG": {
                   "content": "PROJECTS"
                 }
               }
@@ -21568,10 +20853,10 @@
                     {
                       "id": "Mkgne",
                       "type": "ref",
-                      "ref": "eFsWC",
+                      "ref": "Bbcv6",
                       "name": "Blog",
                       "descendants": {
-                        "jynNC": {
+                        "v3guN": {
                           "content": "BLOG"
                         }
                       }
@@ -21579,10 +20864,10 @@
                     {
                       "id": "HCIBv",
                       "type": "ref",
-                      "ref": "eFsWC",
+                      "ref": "Bbcv6",
                       "name": "Series",
                       "descendants": {
-                        "jynNC": {
+                        "v3guN": {
                           "content": "PROJECTS"
                         }
                       }
@@ -21600,10 +20885,10 @@
                     {
                       "id": "BkZWH",
                       "type": "ref",
-                      "ref": "eFsWC",
+                      "ref": "Bbcv6",
                       "name": "Newsletter",
                       "descendants": {
-                        "jynNC": {
+                        "v3guN": {
                           "content": "NEWSLETTER"
                         }
                       }
@@ -21611,10 +20896,10 @@
                     {
                       "id": "pTq2P",
                       "type": "ref",
-                      "ref": "eFsWC",
+                      "ref": "Bbcv6",
                       "name": "Shop",
                       "descendants": {
-                        "jynNC": {
+                        "v3guN": {
                           "content": "SHOP"
                         }
                       }
@@ -21622,10 +20907,10 @@
                     {
                       "id": "z2wsEi",
                       "type": "ref",
-                      "ref": "eFsWC",
+                      "ref": "Bbcv6",
                       "name": "About",
                       "descendants": {
-                        "jynNC": {
+                        "v3guN": {
                           "content": "ABOUT"
                         }
                       }
@@ -21871,7 +21156,6 @@
       "name": "Note — Lightbox — Desktop (1200)",
       "context": "Opened by tapping a note image. Previous appears after the first photo. Close returns to the note.",
       "theme": {
-        "mode": "light",
         "device": "lg"
       },
       "clip": true,
@@ -21987,7 +21271,6 @@
       "y": 14105,
       "name": "Notes — Desktop (1200)",
       "theme": {
-        "mode": "light",
         "device": "lg"
       },
       "clip": true,
@@ -22479,7 +21762,6 @@
       "y": 14105,
       "name": "Notes — Tablet (810)",
       "theme": {
-        "mode": "light",
         "device": "md"
       },
       "clip": true,
@@ -22974,7 +22256,6 @@
       "y": 14105,
       "name": "Notes — Mobile (390)",
       "theme": {
-        "mode": "light",
         "device": "sm"
       },
       "clip": true,
@@ -23470,7 +22751,6 @@
       "name": "Note — Lightbox — Tablet (810)",
       "context": "Tablet lightbox. Previous appears after the first photo. Close returns to the note.",
       "theme": {
-        "mode": "light",
         "device": "md"
       },
       "clip": true,
@@ -23587,7 +22867,6 @@
       "name": "Note — Lightbox — Mobile (390)",
       "context": "Mobile lightbox. Arrows sit on the photo edges. Close returns to the note.",
       "theme": {
-        "mode": "light",
         "device": "sm"
       },
       "clip": true,
@@ -23715,7 +22994,6 @@
       "y": 18163,
       "name": "Category — Desktop (1200)",
       "theme": {
-        "mode": "light",
         "device": "lg"
       },
       "clip": true,
@@ -24403,7 +23681,6 @@
       "y": 18163,
       "name": "Category — Tablet (810)",
       "theme": {
-        "mode": "light",
         "device": "md"
       },
       "clip": true,
@@ -25100,7 +24377,6 @@
       "y": 18163,
       "name": "Category — Mobile (390)",
       "theme": {
-        "mode": "light",
         "device": "sm"
       },
       "clip": true,
@@ -25810,10 +25086,10 @@
                     {
                       "id": "N4RT1q",
                       "type": "ref",
-                      "ref": "eFsWC",
+                      "ref": "Bbcv6",
                       "name": "Blog",
                       "descendants": {
-                        "jynNC": {
+                        "v3guN": {
                           "content": "BLOG"
                         }
                       }
@@ -25821,10 +25097,10 @@
                     {
                       "id": "Dmcgg",
                       "type": "ref",
-                      "ref": "eFsWC",
+                      "ref": "Bbcv6",
                       "name": "Series",
                       "descendants": {
-                        "jynNC": {
+                        "v3guN": {
                           "content": "PROJECTS"
                         }
                       }
@@ -25842,10 +25118,10 @@
                     {
                       "id": "U87KK",
                       "type": "ref",
-                      "ref": "eFsWC",
+                      "ref": "Bbcv6",
                       "name": "Newsletter",
                       "descendants": {
-                        "jynNC": {
+                        "v3guN": {
                           "content": "NEWSLETTER"
                         }
                       }
@@ -25853,10 +25129,10 @@
                     {
                       "id": "OC5E2",
                       "type": "ref",
-                      "ref": "eFsWC",
+                      "ref": "Bbcv6",
                       "name": "Shop",
                       "descendants": {
-                        "jynNC": {
+                        "v3guN": {
                           "content": "SHOP"
                         }
                       }
@@ -25864,10 +25140,10 @@
                     {
                       "id": "g4Q0H7",
                       "type": "ref",
-                      "ref": "eFsWC",
+                      "ref": "Bbcv6",
                       "name": "About",
                       "descendants": {
-                        "jynNC": {
+                        "v3guN": {
                           "content": "ABOUT"
                         }
                       }
@@ -25887,7 +25163,6 @@
       "y": 18163,
       "name": "Tag — Desktop (1200)",
       "theme": {
-        "mode": "light",
         "device": "lg"
       },
       "clip": true,
@@ -26587,7 +25862,6 @@
       "y": 18163,
       "name": "Tags — Tablet (810)",
       "theme": {
-        "mode": "light",
         "device": "md"
       },
       "clip": true,
@@ -27045,7 +26319,6 @@
       "y": 18163,
       "name": "Tags — Desktop (1200)",
       "theme": {
-        "mode": "light",
         "device": "lg"
       },
       "clip": true,
@@ -27485,7 +26758,6 @@
       "y": 18163,
       "name": "Tags — Mobile (390)",
       "theme": {
-        "mode": "light",
         "device": "sm"
       },
       "clip": true,
@@ -28001,10 +27273,10 @@
                     {
                       "id": "IWs74",
                       "type": "ref",
-                      "ref": "eFsWC",
+                      "ref": "Bbcv6",
                       "name": "Blog",
                       "descendants": {
-                        "jynNC": {
+                        "v3guN": {
                           "content": "BLOG"
                         }
                       }
@@ -28012,10 +27284,10 @@
                     {
                       "id": "opdPk",
                       "type": "ref",
-                      "ref": "eFsWC",
+                      "ref": "Bbcv6",
                       "name": "Series",
                       "descendants": {
-                        "jynNC": {
+                        "v3guN": {
                           "content": "PROJECTS"
                         }
                       }
@@ -28033,10 +27305,10 @@
                     {
                       "id": "oRERJ",
                       "type": "ref",
-                      "ref": "eFsWC",
+                      "ref": "Bbcv6",
                       "name": "Newsletter",
                       "descendants": {
-                        "jynNC": {
+                        "v3guN": {
                           "content": "NEWSLETTER"
                         }
                       }
@@ -28044,10 +27316,10 @@
                     {
                       "id": "fHotz",
                       "type": "ref",
-                      "ref": "eFsWC",
+                      "ref": "Bbcv6",
                       "name": "Shop",
                       "descendants": {
-                        "jynNC": {
+                        "v3guN": {
                           "content": "SHOP"
                         }
                       }
@@ -28055,10 +27327,10 @@
                     {
                       "id": "Nb5fb",
                       "type": "ref",
-                      "ref": "eFsWC",
+                      "ref": "Bbcv6",
                       "name": "About",
                       "descendants": {
-                        "jynNC": {
+                        "v3guN": {
                           "content": "ABOUT"
                         }
                       }
@@ -31028,10 +30300,6 @@
     }
   ],
   "themes": {
-    "mode": [
-      "light",
-      "dark"
-    ],
     "device": [
       "lg",
       "md",
@@ -31398,428 +30666,103 @@
     },
     "surface-default": {
       "type": "color",
-      "value": [
-        {
-          "value": "$neutral-050",
-          "theme": {
-            "mode": "light"
-          }
-        },
-        {
-          "value": "$neutral-950",
-          "theme": {
-            "mode": "dark"
-          }
-        }
-      ]
+      "value": "$neutral-050"
     },
     "surface-subtle": {
       "type": "color",
-      "value": [
-        {
-          "value": "$neutral-100",
-          "theme": {
-            "mode": "light"
-          }
-        },
-        {
-          "value": "$neutral-900",
-          "theme": {
-            "mode": "dark"
-          }
-        }
-      ]
+      "value": "$neutral-100"
     },
     "surface-raised": {
       "type": "color",
-      "value": [
-        {
-          "value": "$neutral-050",
-          "theme": {
-            "mode": "light"
-          }
-        },
-        {
-          "value": "$neutral-800",
-          "theme": {
-            "mode": "dark"
-          }
-        }
-      ]
+      "value": "$neutral-050"
     },
     "surface-inverse": {
       "type": "color",
-      "value": [
-        {
-          "value": "$neutral-950",
-          "theme": {
-            "mode": "light"
-          }
-        },
-        {
-          "value": "$neutral-050",
-          "theme": {
-            "mode": "dark"
-          }
-        }
-      ]
+      "value": "$neutral-950"
     },
     "surface-hover": {
       "type": "color",
-      "value": [
-        {
-          "value": "$neutral-100",
-          "theme": {
-            "mode": "light"
-          }
-        },
-        {
-          "value": "$neutral-800",
-          "theme": {
-            "mode": "dark"
-          }
-        }
-      ]
+      "value": "$neutral-100"
     },
     "surface-pressed": {
       "type": "color",
-      "value": [
-        {
-          "value": "$neutral-200",
-          "theme": {
-            "mode": "light"
-          }
-        },
-        {
-          "value": "$neutral-700",
-          "theme": {
-            "mode": "dark"
-          }
-        }
-      ]
+      "value": "$neutral-200"
     },
     "surface-inverse-hover": {
       "type": "color",
-      "value": [
-        {
-          "value": "$neutral-800",
-          "theme": {
-            "mode": "light"
-          }
-        },
-        {
-          "value": "$neutral-200",
-          "theme": {
-            "mode": "dark"
-          }
-        }
-      ]
+      "value": "$neutral-800"
     },
     "surface-inverse-pressed": {
       "type": "color",
-      "value": [
-        {
-          "value": "$neutral-700",
-          "theme": {
-            "mode": "light"
-          }
-        },
-        {
-          "value": "$neutral-300",
-          "theme": {
-            "mode": "dark"
-          }
-        }
-      ]
+      "value": "$neutral-700"
     },
     "surface-disabled": {
       "type": "color",
-      "value": [
-        {
-          "value": "$neutral-200",
-          "theme": {
-            "mode": "light"
-          }
-        },
-        {
-          "value": "$neutral-800",
-          "theme": {
-            "mode": "dark"
-          }
-        }
-      ]
+      "value": "$neutral-200"
     },
     "text-default": {
       "type": "color",
-      "value": [
-        {
-          "value": "$neutral-950",
-          "theme": {
-            "mode": "light"
-          }
-        },
-        {
-          "value": "$neutral-050",
-          "theme": {
-            "mode": "dark"
-          }
-        }
-      ]
+      "value": "$neutral-950"
     },
     "text-muted": {
       "type": "color",
-      "value": [
-        {
-          "value": "$neutral-600",
-          "theme": {
-            "mode": "light"
-          }
-        },
-        {
-          "value": "$neutral-300",
-          "theme": {
-            "mode": "dark"
-          }
-        }
-      ]
+      "value": "$neutral-600"
     },
     "text-inverse": {
       "type": "color",
-      "value": [
-        {
-          "value": "$neutral-050",
-          "theme": {
-            "mode": "light"
-          }
-        },
-        {
-          "value": "$neutral-950",
-          "theme": {
-            "mode": "dark"
-          }
-        }
-      ]
+      "value": "$neutral-050"
     },
     "text-link": {
       "type": "color",
-      "value": [
-        {
-          "value": "$blue-600",
-          "theme": {
-            "mode": "light"
-          }
-        },
-        {
-          "value": "$blue-300",
-          "theme": {
-            "mode": "dark"
-          }
-        }
-      ]
+      "value": "$blue-600"
     },
     "text-link-inverse": {
       "type": "color",
-      "value": [
-        {
-          "value": "$blue-300",
-          "theme": {
-            "mode": "light"
-          }
-        },
-        {
-          "value": "$blue-600",
-          "theme": {
-            "mode": "dark"
-          }
-        }
-      ]
+      "value": "$blue-300"
     },
     "text-on-accent": {
       "type": "color",
-      "value": [
-        {
-          "value": "$neutral-950",
-          "theme": {
-            "mode": "light"
-          }
-        },
-        {
-          "value": "$neutral-950",
-          "theme": {
-            "mode": "dark"
-          }
-        }
-      ]
+      "value": "$neutral-950"
     },
     "text-disabled": {
       "type": "color",
-      "value": [
-        {
-          "value": "$neutral-400",
-          "theme": {
-            "mode": "light"
-          }
-        },
-        {
-          "value": "$neutral-600",
-          "theme": {
-            "mode": "dark"
-          }
-        }
-      ]
+      "value": "$neutral-400"
     },
     "border-default": {
       "type": "color",
-      "value": [
-        {
-          "value": "$neutral-200",
-          "theme": {
-            "mode": "light"
-          }
-        },
-        {
-          "value": "$neutral-800",
-          "theme": {
-            "mode": "dark"
-          }
-        }
-      ]
+      "value": "$neutral-200"
     },
     "border-strong": {
       "type": "color",
-      "value": [
-        {
-          "value": "$neutral-400",
-          "theme": {
-            "mode": "light"
-          }
-        },
-        {
-          "value": "$neutral-600",
-          "theme": {
-            "mode": "dark"
-          }
-        }
-      ]
+      "value": "$neutral-400"
     },
     "border-emphasis": {
       "type": "color",
-      "value": [
-        {
-          "value": "$neutral-950",
-          "theme": {
-            "mode": "light"
-          }
-        },
-        {
-          "value": "$neutral-050",
-          "theme": {
-            "mode": "dark"
-          }
-        }
-      ]
+      "value": "$neutral-950"
     },
     "border-focus": {
       "type": "color",
-      "value": [
-        {
-          "value": "$blue-500",
-          "theme": {
-            "mode": "light"
-          }
-        },
-        {
-          "value": "$blue-300",
-          "theme": {
-            "mode": "dark"
-          }
-        }
-      ]
+      "value": "$blue-500"
     },
     "accent-blue": {
       "type": "color",
-      "value": [
-        {
-          "value": "$blue-300",
-          "theme": {
-            "mode": "light"
-          }
-        },
-        {
-          "value": "$blue-300",
-          "theme": {
-            "mode": "dark"
-          }
-        }
-      ]
+      "value": "$blue-300"
     },
     "accent-yellow": {
       "type": "color",
-      "value": [
-        {
-          "value": "$yellow-100",
-          "theme": {
-            "mode": "light"
-          }
-        },
-        {
-          "value": "$yellow-100",
-          "theme": {
-            "mode": "dark"
-          }
-        }
-      ]
+      "value": "$yellow-100"
     },
     "accent-yellow-hover": {
       "type": "color",
-      "value": [
-        {
-          "value": "$yellow-200",
-          "theme": {
-            "mode": "light"
-          }
-        },
-        {
-          "value": "$yellow-200",
-          "theme": {
-            "mode": "dark"
-          }
-        }
-      ]
+      "value": "$yellow-200"
     },
     "accent-yellow-pressed": {
       "type": "color",
-      "value": [
-        {
-          "value": "$yellow-300",
-          "theme": {
-            "mode": "light"
-          }
-        },
-        {
-          "value": "$yellow-300",
-          "theme": {
-            "mode": "dark"
-          }
-        }
-      ]
+      "value": "$yellow-300"
     },
     "accent-pink": {
       "type": "color",
-      "value": [
-        {
-          "value": "$pink-500",
-          "theme": {
-            "mode": "light"
-          }
-        },
-        {
-          "value": "$pink-500",
-          "theme": {
-            "mode": "dark"
-          }
-        }
-      ]
+      "value": "$pink-500"
     },
     "layout-page-width": {
       "type": "number",
@@ -33702,20 +32645,19 @@
     },
     "tag-brush-neutral": {
       "type": "string",
-      "value": [
-        {
-          "value": "./images/tag-brush-neutral-light.png",
-          "theme": {
-            "mode": "light"
-          }
-        },
-        {
-          "value": "./images/tag-brush-neutral-dark.png",
-          "theme": {
-            "mode": "dark"
-          }
-        }
-      ]
+      "value": "./images/tag-brush-neutral-light.png"
+    },
+    "border-inverse": {
+      "type": "color",
+      "value": "$neutral-800"
+    },
+    "text-inverse-muted": {
+      "type": "color",
+      "value": "$neutral-300"
+    },
+    "border-focus-inverse": {
+      "type": "color",
+      "value": "$blue-300"
     }
   },
   "fileToken": "cc6f0c7a-c4c0-417e-803e-62337ed664fe"

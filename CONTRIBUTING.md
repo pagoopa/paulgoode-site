@@ -94,8 +94,10 @@ to match.
 - **Numbered variables are zero-padded** so they sort in order in Pencil's
   lists: `scale-0025` … `scale-2000`, `neutral-050` … `neutral-950`,
   `font-size-012`, `font-line-height-016`. Pad new ones the same way.
-- **Light and dark** describe a component's own background. Set the mode on
-  the instance; in code, `data-theme="dark"` does the same.
+- **There is no light/dark mode.** The header and footer are dark because they
+  use the Inverse tokens (`surface-inverse`, `text-inverse`, `border-inverse`,
+  `text-inverse-muted`) and the Inverse Link and Button components. Use those
+  on any dark surface.
 
 ### Keeping the canvas and the repo in step
 
