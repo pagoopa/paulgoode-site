@@ -11811,6 +11811,79 @@
                           ]
                         }
                       ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "QW0Tf",
+                      "name": "Back Row",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "bPV8G",
+                          "name": "Row Label",
+                          "width": 120,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "ho9xd",
+                              "name": "Row Label Text",
+                              "fill": "$text-muted",
+                              "content": "BACK",
+                              "lineHeight": "$type-eyebrow2-line-height",
+                              "fontFamily": "$font-body",
+                              "fontSize": "$type-eyebrow2-size",
+                              "fontWeight": "500",
+                              "letterSpacing": "$type-eyebrow2-letter-spacing"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "nkp2O",
+                          "name": "Default Cell",
+                          "width": 220,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "jkmbG",
+                              "name": "Link / Back",
+                              "reusable": true,
+                              "gap": "$scale-0200",
+                              "padding": [
+                                "$scale-0100",
+                                0
+                              ],
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "id": "FnWKs",
+                                  "type": "ref",
+                                  "ref": "r3ntDW",
+                                  "name": "Icon",
+                                  "width": 20,
+                                  "height": 20,
+                                  "stroke": "$text-link",
+                                  "flipX": true
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "eK7AK",
+                                  "name": "Label",
+                                  "fill": "$text-link",
+                                  "content": "Back",
+                                  "lineHeight": "$type-body1-line-height",
+                                  "fontFamily": "$font-body",
+                                  "fontSize": "$type-body1-size",
+                                  "fontWeight": "500",
+                                  "letterSpacing": "$type-body1-letter-spacing"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
                     }
                   ]
                 },
@@ -17225,6 +17298,17 @@
                       }
                     },
                     {
+                      "id": "d7EYme",
+                      "type": "ref",
+                      "ref": "drx5q",
+                      "name": "SERIES",
+                      "descendants": {
+                        "taLCI": {
+                          "content": "SERIES"
+                        }
+                      }
+                    },
+                    {
                       "id": "eUt81",
                       "type": "ref",
                       "ref": "drx5q",
@@ -17385,13 +17469,13 @@
                           "width": "fill_container",
                           "descendants": {
                             "Mng70": {
-                              "content": "CASE STUDY"
+                              "content": "SERIES"
                             },
                             "QaGQc": {
-                              "content": "Consumer onboarding"
+                              "content": "Junk Drawer Journey"
                             },
                             "mlzay": {
-                              "content": "Rethinking the first few minutes of a consumer app so more people stay."
+                              "content": "A numbered series of drawings, one piece at a time."
                             }
                           }
                         },
@@ -17513,6 +17597,17 @@
               "layout": "vertical",
               "gap": "$space-block",
               "children": [
+                {
+                  "id": "J65jfL",
+                  "type": "ref",
+                  "ref": "jkmbG",
+                  "name": "Back to Projects",
+                  "descendants": {
+                    "eK7AK": {
+                      "content": "Back to Projects"
+                    }
+                  }
+                },
                 {
                   "id": "jPzny",
                   "type": "ref",
@@ -17845,6 +17940,17 @@
                       }
                     },
                     {
+                      "id": "blea5",
+                      "type": "ref",
+                      "ref": "drx5q",
+                      "name": "SERIES",
+                      "descendants": {
+                        "taLCI": {
+                          "content": "SERIES"
+                        }
+                      }
+                    },
+                    {
                       "id": "si7rf",
                       "type": "ref",
                       "ref": "drx5q",
@@ -18005,13 +18111,13 @@
                           "width": "fill_container",
                           "descendants": {
                             "Mng70": {
-                              "content": "CASE STUDY"
+                              "content": "SERIES"
                             },
                             "QaGQc": {
-                              "content": "Consumer onboarding"
+                              "content": "Junk Drawer Journey"
                             },
                             "mlzay": {
-                              "content": "Rethinking the first few minutes of a consumer app so more people stay."
+                              "content": "A numbered series of drawings, one piece at a time."
                             }
                           }
                         }
@@ -18137,6 +18243,17 @@
                           }
                         },
                         {
+                          "id": "aRicK",
+                          "type": "ref",
+                          "ref": "drx5q",
+                          "name": "SERIES",
+                          "descendants": {
+                            "taLCI": {
+                              "content": "SERIES"
+                            }
+                          }
+                        },
+                        {
                           "id": "U54Spo",
                           "type": "ref",
                           "ref": "drx5q",
@@ -18144,17 +18261,6 @@
                           "descendants": {
                             "taLCI": {
                               "content": "PERSONAL"
-                            }
-                          }
-                        },
-                        {
-                          "id": "Z2ziZ",
-                          "type": "ref",
-                          "ref": "drx5q",
-                          "name": "CASE STUDY",
-                          "descendants": {
-                            "taLCI": {
-                              "content": "CASE STUDY"
                             }
                           }
                         }
@@ -18167,6 +18273,17 @@
                       "gap": "$scale-0200",
                       "alignItems": "center",
                       "children": [
+                        {
+                          "id": "Z2ziZ",
+                          "type": "ref",
+                          "ref": "drx5q",
+                          "name": "CASE STUDY",
+                          "descendants": {
+                            "taLCI": {
+                              "content": "CASE STUDY"
+                            }
+                          }
+                        },
                         {
                           "id": "MWRxZ",
                           "type": "ref",
@@ -18188,7 +18305,16 @@
                               "content": "MUSIC"
                             }
                           }
-                        },
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "K0fr7a",
+                      "name": "Row 3",
+                      "gap": "$scale-0200",
+                      "alignItems": "center",
+                      "children": [
                         {
                           "id": "k7FbVK",
                           "type": "ref",
@@ -18306,6 +18432,33 @@
                             },
                             "mlzay": {
                               "content": "Hand-pulled prints exploring pattern, landscape and small creatures."
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "v5tCLm",
+                      "name": "Row 4",
+                      "width": "fill_container",
+                      "gap": "$scale-0600",
+                      "children": [
+                        {
+                          "id": "i6gi5L",
+                          "type": "ref",
+                          "ref": "ZwNI4",
+                          "name": "Project — Junk Drawer Journey",
+                          "width": "fill_container",
+                          "descendants": {
+                            "Mng70": {
+                              "content": "SERIES"
+                            },
+                            "QaGQc": {
+                              "content": "Junk Drawer Journey"
+                            },
+                            "mlzay": {
+                              "content": "A numbered series of drawings, one piece at a time."
                             }
                           }
                         }
@@ -18469,8 +18622,34 @@
         },
         {
           "type": "frame",
+          "id": "MZIuX",
+          "name": "Back",
+          "width": "fill_container",
+          "padding": [
+            "$space-section",
+            "$layout-margin",
+            0,
+            "$layout-margin"
+          ],
+          "children": [
+            {
+              "id": "K4nh4I",
+              "type": "ref",
+              "ref": "jkmbG",
+              "name": "Back to Series",
+              "descendants": {
+                "eK7AK": {
+                  "content": "Back to Series"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
           "id": "JZy2r",
           "name": "Frame 2",
+          "width": "fill_container",
           "fill": "#ffffff",
           "layout": "vertical",
           "gap": 24,
@@ -18732,7 +18911,7 @@
           "name": "Footer",
           "width": "fill_container",
           "x": 0,
-          "y": 1696
+          "y": 1796
         }
       ]
     },
@@ -18901,6 +19080,31 @@
               }
             }
           }
+        },
+        {
+          "type": "frame",
+          "id": "xYZVS",
+          "name": "Back",
+          "width": "fill_container",
+          "padding": [
+            "$space-section",
+            "$layout-margin",
+            0,
+            "$layout-margin"
+          ],
+          "children": [
+            {
+              "id": "EGc4A",
+              "type": "ref",
+              "ref": "jkmbG",
+              "name": "Back to Series",
+              "descendants": {
+                "eK7AK": {
+                  "content": "Back to Series"
+                }
+              }
+            }
+          ]
         },
         {
           "type": "frame",
@@ -19152,7 +19356,7 @@
           "name": "Footer",
           "width": "fill_container",
           "x": 0,
-          "y": 1711,
+          "y": 1779,
           "descendants": {
             "549hf": {
               "width": 100,
@@ -19206,6 +19410,31 @@
               }
             }
           }
+        },
+        {
+          "type": "frame",
+          "id": "bmvJI",
+          "name": "Back",
+          "width": "fill_container",
+          "padding": [
+            "$space-section",
+            "$layout-margin",
+            0,
+            "$layout-margin"
+          ],
+          "children": [
+            {
+              "id": "Keb2i",
+              "type": "ref",
+              "ref": "jkmbG",
+              "name": "Back to Series",
+              "descendants": {
+                "eK7AK": {
+                  "content": "Back to Series"
+                }
+              }
+            }
+          ]
         },
         {
           "type": "frame",
@@ -19466,7 +19695,7 @@
           "name": "Footer",
           "width": "fill_container",
           "x": 0,
-          "y": 1518,
+          "y": 1570,
           "descendants": {
             "549hf": {
               "width": 100,
@@ -19631,6 +19860,17 @@
               "layout": "vertical",
               "gap": "$space-block",
               "children": [
+                {
+                  "id": "MrbdC",
+                  "type": "ref",
+                  "ref": "jkmbG",
+                  "name": "Back to Projects",
+                  "descendants": {
+                    "eK7AK": {
+                      "content": "Back to Projects"
+                    }
+                  }
+                },
                 {
                   "id": "INVb4",
                   "type": "ref",
@@ -19896,6 +20136,17 @@
               "layout": "vertical",
               "gap": "$space-block",
               "children": [
+                {
+                  "id": "qvoeQ",
+                  "type": "ref",
+                  "ref": "jkmbG",
+                  "name": "Back to Projects",
+                  "descendants": {
+                    "eK7AK": {
+                      "content": "Back to Projects"
+                    }
+                  }
+                },
                 {
                   "id": "yBfnR",
                   "type": "ref",
@@ -29866,6 +30117,17 @@
                           "descendants": {
                             "rhfC6": {
                               "content": "ALL"
+                            }
+                          }
+                        },
+                        {
+                          "id": "L6XOq",
+                          "type": "ref",
+                          "ref": "drx5q",
+                          "name": "SERIES",
+                          "descendants": {
+                            "taLCI": {
+                              "content": "SERIES"
                             }
                           }
                         },

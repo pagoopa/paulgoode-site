@@ -64,7 +64,7 @@ A project is a series that needs its own home: its own site, objective, and poss
 - **Objective beyond making:** sell, gather people, teach, raise support
 - **Needs infrastructure the site can't hold:** events, checkout, its own list or community
 
-On paulgoode.com, each project is a card and a short page with these fields: name, one-line objective, status (Planning, Live, Seasonal, Archived), domains, external link, and **origin**, the series it grew from. The page shows that as a "grew from the series ___" line.
+On paulgoode.com, `/projects` lists everything as cards with a type filter. A series is one of the types, so a series card links to the series' own landing page. Each other project is a card and a short page with these fields: name, one-line objective, status (Planning, Live, Seasonal, Archived), domains, external link, and **origin**, the series it grew from. The page shows that as a "grew from the series ___" line.
 
 Pagoopaloops already qualifies as a project: it has its own home on TikTok and YouTube.
 

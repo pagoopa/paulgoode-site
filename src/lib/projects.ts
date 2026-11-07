@@ -9,7 +9,7 @@ export async function getProjects() {
   return { all, featured, others: all.filter((p) => p !== featured) };
 }
 
-/** /projects/<project> */
+/** /projects/<project>, or the series' own landing page for a series project. */
 export function projectUrl(project: CollectionEntry<'projects'>) {
-  return `/projects/${project.id}`;
+  return project.data.series ? `/series/${project.data.series.id}` : `/projects/${project.id}`;
 }

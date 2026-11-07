@@ -72,6 +72,9 @@ const projects = defineCollection({
       summary: z.string(),
       // Sets the filter chip and the card eyebrow.
       type: projectType,
+      // For type: series, the series this project is: the id of a file in src/content/series/.
+      // The card links to that series' landing page instead of a page of its own.
+      series: reference('series').optional(),
       // The one project shown large above the grid. If several are marked, the first by order.
       featured: z.boolean().default(false),
       // Lowest first. Without it a project goes after the numbered ones, by title.
@@ -79,6 +82,9 @@ const projects = defineCollection({
       draft: z.boolean().default(false),
       // Card image: 16:10 landscape, exported at 720 × 450. Optional.
       thumbnail: image().optional(),
+    })
+    .refine((project) => (project.type === 'series') === Boolean(project.series), {
+      message: 'A series project needs `series:`, and other types must not have it.',
     }),
 });
 
