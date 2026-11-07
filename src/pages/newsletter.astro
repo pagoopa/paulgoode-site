@@ -1,0 +1,101 @@
+---
+// Newsletter ("Newsletter" boards in design/site.pen): the pitch, a subscribe
+// button, what you get, and a small note. Subscribing happens on Substack.
+// The copy lives in src/content/pages/newsletter.md.
+import Layout from '../layouts/Layout.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import StatementCard from '../components/StatementCard.astro';
+import { getPage } from '../lib/pages';
+import { substackUrl } from '../lib/nav';
+
+const { data } = await getPage('newsletter');
+---
+
+<Layout title={data.title} description={data.description}>
+  <div class="wrap newsletter">
+    <div class="newsletter__hero">
+      <SectionHeader title={data.heading} intro={data.description} level="h1" />
+      <div class="newsletter__actions">
+        <a class="btn btn-solid btn-lg" href={`${substackUrl}/subscribe`}>
+          Subscribe on Substack
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+            <path d="M5 12h14m-6-6 6 6-6 6" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    {data.highlights.length > 0 && (
+      <ul class="newsletter__highlights">
+        {data.highlights.map((text) => (
+          <li>
+            <StatementCard text={text} />
+          </li>
+        ))}
+      </ul>
+    )}
+
+    {data.note && <p class="newsletter__note">{data.note}</p>}
+  </div>
+</Layout>
+
+<style>
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-block);
+    padding-block: var(--space-section);
+  }
+
+  .newsletter__hero {
+    display: flex;
+    flex-direction: column;
+    gap: var(--scale-0600);
+  }
+
+  .newsletter__actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--scale-0400);
+  }
+
+  /* Three across on desktop; stacked on tablet and phones. */
+  .newsletter__highlights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--scale-0600);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .newsletter__highlights > li {
+    display: flex;
+  }
+
+  .newsletter__highlights :global(.statement) {
+    flex: 1;
+  }
+
+  .newsletter__note {
+    margin: 0;
+    color: var(--color-text-muted);
+    font-size: var(--type-p3-size);
+    line-height: var(--type-p3-line-height);
+    letter-spacing: var(--type-p3-letter-spacing);
+  }
+
+  @media (max-width: 1023px) {
+    .newsletter__highlights {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 599px) {
+    .newsletter__actions {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+</style>

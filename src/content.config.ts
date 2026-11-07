@@ -105,6 +105,10 @@ const pages = defineCollection({
         }),
       )
       .default([]),
+    // Short statements shown as cards (the newsletter page's "what you get"). Optional.
+    highlights: z.array(z.string()).default([]),
+    // A small line under the page's content. Optional.
+    note: z.string().optional(),
   }),
 });
 
