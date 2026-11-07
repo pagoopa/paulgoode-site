@@ -1,0 +1,48 @@
+---
+// A category or a tag (Tag / Blue and Tag / Outline in design/site.pen).
+// A category is the filled blue chip; a tag is the outlined one. Both are links.
+interface Props {
+  href: string;
+  kind: 'category' | 'tag';
+}
+
+const { href, kind } = Astro.props;
+---
+
+<a class:list={['chip', `chip--${kind}`]} href={href}><slot /></a>
+
+<style>
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    padding: var(--scale-0100) var(--scale-0300);
+    border-radius: var(--radius-full);
+    font-family: var(--font-body);
+    font-size: var(--type-eyebrow3-size);
+    line-height: var(--type-eyebrow3-line-height);
+    letter-spacing: var(--type-eyebrow3-letter-spacing);
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .chip--category {
+    background: var(--color-accent-blue);
+    color: var(--color-text-on-accent);
+  }
+
+  .chip--tag {
+    border: 1px solid var(--color-border-strong);
+    color: var(--color-text-default);
+  }
+
+  .chip--category:hover {
+    color: var(--color-text-on-accent);
+    filter: brightness(0.95);
+  }
+
+  .chip--tag:hover {
+    color: var(--color-text-default);
+    background: var(--color-surface-hover);
+  }
+</style>

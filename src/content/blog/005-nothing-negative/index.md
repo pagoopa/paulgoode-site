@@ -2,6 +2,8 @@
 title: "005 - Nothing Negative"
 description: "What if you had no fear?"
 pubDate: 2025-03-14
+category: spirit
+tags: [encouragement]
 ---
 
 Fear, Uncertainty & Doubt (FUD) can crush me. Honest. That’s why I love listening to people like [Graham Cooke](https://www.youtube.com/watch?v=RtVSTy7K7Do). (He has some more formal stuff on YouTube out there, but I like the older stuff… and the soaking talks.)

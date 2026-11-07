@@ -1,122 +1,80 @@
 ---
+// One journal post. Matches the Post boards in design/site.pen: the title, the
+// date and category, the body between two lines, the category and tags, then
+// links to the newer and older posts.
 import Layout from '../../layouts/Layout.astro';
-import { Image } from 'astro:assets';
-import { getCollection, render } from 'astro:content';
+import Pagination from '../../components/Pagination.astro';
+import TagChip from '../../components/TagChip.astro';
+import { render } from 'astro:content';
+import { getJournalPosts, postDateFormat } from '../../lib/blog';
+import { categoryLabel, categoryUrl, tagUrl } from '../../lib/taxonomy';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blog');
-  return posts.map((post) => ({
+  // Newest first, so the post before this one is newer and the one after is older.
+  const posts = await getJournalPosts();
+  return posts.map((post, i) => ({
     params: { id: post.id },
-    props: { post },
+    props: { post, newer: posts[i - 1], older: posts[i + 1] },
   }));
 }
 
-const { post } = Astro.props;
+const { post, newer, older } = Astro.props;
 const { Content } = await render(post);
-const { sidebarImage } = post.data;
-
-const dateFmt = new Intl.DateTimeFormat('en-US', {
-  year: 'numeric',
-  month: 'long',
-  day: 'numeric',
-  // pubDate is midnight UTC; without this it shows the day before in US time zones.
-  timeZone: 'UTC',
-});
+const postUrl = (p: typeof post) => `/blog/${p.id}/`;
+const { category, tags } = post.data;
 ---
 
 <Layout title={post.data.title} description={post.data.description}>
   <div class="wrap post">
-    <div class:list={['post__content', { 'post__content--with-image': sidebarImage }]}>
-      {sidebarImage && (
-        <div class="post__aside">
-          <Image
-            class="post__image"
-            src={sidebarImage.src}
-            alt={sidebarImage.alt}
-            width={240}
-            widths={[240, 480]}
-            sizes="240px"
-            loading="eager"
-            priority
-          />
+    <div class="entry-column">
+      <article class="entry">
+        <h1 class="entry__title">{post.data.title}</h1>
+        <div class="entry__meta">
+          <time class="entry__date" datetime={post.data.pubDate.toISOString()}>
+            {postDateFormat.format(post.data.pubDate)}
+          </time>
+          <TagChip kind="category" href={categoryUrl(category)}>{categoryLabel(category)}</TagChip>
         </div>
-      )}
-      <article class="post__article">
-        <p class="eyebrow">{dateFmt.format(post.data.pubDate)}</p>
-        <h1>{post.data.title}</h1>
-        <div class="post__body">
+        <div class="entry__body">
           <Content />
         </div>
+        <div class="entry__filed">
+          <div class="entry__filed-row">
+            <div class="entry__filed-group">
+              <span class="entry__filed-label">Filed under</span>
+              <TagChip kind="category" href={categoryUrl(category)}>{categoryLabel(category)}</TagChip>
+            </div>
+            <a class="link-standalone" href="/tags/">
+              <span class="link-label">All tags</span>
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                <path d="M5 12h14m-6 6l6-6-6-6" />
+              </svg>
+            </a>
+          </div>
+          {tags.length > 0 && (
+            <ul class="entry__tags" aria-label="Tags">
+              {tags.map((tag) => (
+                <li>
+                  <TagChip kind="tag" href={tagUrl(tag)}>{tag}</TagChip>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
       </article>
+
+      <Pagination
+        newer={newer && postUrl(newer)}
+        older={older && postUrl(older)}
+        newerLabel="Newer post"
+        olderLabel="Older post"
+      />
     </div>
   </div>
 </Layout>
 
 <style>
   .post {
-    padding-block: var(--space-block) var(--space-section);
-  }
-
-  .post__content {
-    max-width: var(--content-max);
-    margin-inline: auto;
-  }
-
-  .post__content--with-image {
-    display: flex;
-    gap: var(--scale-0600);
-  }
-
-  /* 240×300 portrait. On desktop it drops 40px to sit level with the title. */
-  .post__aside {
-    flex: none;
-    padding-top: 40px;
-  }
-
-  .post__image {
-    display: block;
-    width: 240px;
-    height: 300px;
-    object-fit: cover;
-  }
-
-  .post__article {
-    flex: 1;
-    min-width: 0;
-  }
-
-  .post__body {
-    margin-top: var(--scale-0800);
-    font-size: var(--type-p2-size);
-    line-height: var(--type-p2-line-height);
-  }
-
-  .post__body :global(p) {
-    margin-bottom: 1.4em;
-  }
-
-  /* Links inside the text are blue and underlined. */
-  .post__body :global(a) {
-    color: var(--color-text-link);
-    text-decoration: underline;
-    text-underline-offset: 0.2em;
-  }
-
-  @media (max-width: 1023px) {
-    .post__aside {
-      padding-top: 0;
-    }
-  }
-
-  /* Mobile: the image stacks above the entry, centered. */
-  @media (max-width: 599px) {
-    .post__content--with-image {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .post__article {
-      align-self: stretch;
-    }
+    padding-block: var(--scale-0600) var(--space-section);
   }
 </style>

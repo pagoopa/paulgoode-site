@@ -2,6 +2,8 @@
 title: "008 - Old Notes"
 description: "Rummaged through the backlog binder and scooped these cards out. Enjoy!"
 pubDate: 2025-03-18
+category: life
+tags: [notes]
 ---
 
 [Watch the video on YouTube](https://www.youtube.com/watch?v=tARDKRFowMw)

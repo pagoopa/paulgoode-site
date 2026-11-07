@@ -1,52 +1,66 @@
 ---
-// One page of the journal, which is also the home page: the newest posts
-// first, POSTS_PER_PAGE at a time, with Newer / Older links. Used by / and
-// /blog/page/<n>. Matches the Blog Landing boards in design/site.pen.
+// One page of a list of journal posts: the newest first, POSTS_PER_PAGE at a
+// time, with Newer / Older links. By default it's the whole journal, which is
+// also the home page (/ and /blog/page/<n>). A category or tag page passes
+// its own posts, page links and heading. Matches the Blog Landing boards in
+// design/site.pen.
+import type { CollectionEntry } from 'astro:content';
 import Layout from '../layouts/Layout.astro';
 import PostExcerpt from './PostExcerpt.astro';
 import Pagination from './Pagination.astro';
+import SectionHeader from './SectionHeader.astro';
+import TagChip from './TagChip.astro';
 import { render } from 'astro:content';
-import { getJournalPosts, journalPageUrl, POSTS_PER_PAGE } from '../lib/blog';
+import { getJournalPosts, journalPageUrl, postDateFormat, POSTS_PER_PAGE } from '../lib/blog';
+import { categoryLabel, categoryUrl } from '../lib/taxonomy';
 
 interface Props {
   page: number;
+  /** The posts to list. Defaults to every published post. */
+  posts?: CollectionEntry<'blog'>[];
+  /** The URL of page n. Defaults to the home page and /blog/page/<n>. */
+  pageUrl?: (page: number) => string;
+  /** A visible page heading. Without it the page has a hidden h1. */
+  heading?: { eyebrow: string; title: string; intro: string };
+  title?: string;
+  emptyText?: string;
 }
 
-const { page } = Astro.props;
-const allPosts = await getJournalPosts();
+const { page, heading, emptyText = 'Nothing published yet.' } = Astro.props;
+const allPosts = Astro.props.posts ?? (await getJournalPosts());
+const pageUrl = Astro.props.pageUrl ?? journalPageUrl;
+const title = Astro.props.title ?? (page === 1 ? 'Journal' : `Journal — Page ${page}`);
 const pageCount = Math.max(1, Math.ceil(allPosts.length / POSTS_PER_PAGE));
 const posts = allPosts.slice((page - 1) * POSTS_PER_PAGE, page * POSTS_PER_PAGE);
 const entries = await Promise.all(
   posts.map(async (post) => ({ post, Content: (await render(post)).Content }))
 );
-
-const dateFmt = new Intl.DateTimeFormat('en-US', {
-  weekday: 'long',
-  year: 'numeric',
-  month: 'short',
-  day: 'numeric',
-  // pubDate is midnight UTC; without this it shows the day before in US time zones.
-  timeZone: 'UTC',
-});
 ---
 
-<Layout title={page === 1 ? 'Journal' : `Journal — Page ${page}`}>
+<Layout title={title}>
   <section class="wrap journal">
-    <h1 class="sr-only">Paul Goode — Journal</h1>
+    {!heading && <h1 class="sr-only">Paul Goode — Journal</h1>}
 
-    <div class="journal__column">
-      {posts.length === 0 && <p class="prose">Nothing published yet.</p>}
+    <div class="entry-column">
+      {heading && <SectionHeader eyebrow={heading.eyebrow} title={heading.title} intro={heading.intro} level="h1" />}
+
+      {posts.length === 0 && <p class="prose">{emptyText}</p>}
 
       <ul class="journal__list">
         {entries.map(({ post, Content }) => (
-          <li class="journal__item">
-            <h2 class="journal__title">
+          <li class="entry">
+            <h2 class="entry__title">
               <a href={`/blog/${post.id}/`}>{post.data.title}</a>
             </h2>
-            <time class="journal__date" datetime={post.data.pubDate.toISOString()}>
-              {dateFmt.format(post.data.pubDate)}
-            </time>
-            <div class="journal__body">
+            <div class="entry__meta">
+              <time class="entry__date" datetime={post.data.pubDate.toISOString()}>
+                {postDateFormat.format(post.data.pubDate)}
+              </time>
+              <TagChip kind="category" href={categoryUrl(post.data.category)}>
+                {categoryLabel(post.data.category)}
+              </TagChip>
+            </div>
+            <div class="entry__body">
               <PostExcerpt href={`/blog/${post.id}/`}>
                 <Content />
               </PostExcerpt>
@@ -56,8 +70,8 @@ const dateFmt = new Intl.DateTimeFormat('en-US', {
       </ul>
 
       <Pagination
-        newer={page > 1 ? journalPageUrl(page - 1) : undefined}
-        older={page < pageCount ? journalPageUrl(page + 1) : undefined}
+        newer={page > 1 ? pageUrl(page - 1) : undefined}
+        older={page < pageCount ? pageUrl(page + 1) : undefined}
       />
     </div>
   </section>
@@ -68,28 +82,6 @@ const dateFmt = new Intl.DateTimeFormat('en-US', {
     padding-block: var(--scale-0600) var(--space-section);
   }
 
-  /* Column: 900 wide on desktop, with 40 of padding. Tablet and mobile use the full width. */
-  .journal__column {
-    max-width: 900px;
-    margin-inline: auto;
-    padding: var(--scale-0900);
-    display: flex;
-    flex-direction: column;
-    gap: var(--scale-0900);
-  }
-
-  @media (max-width: 1023px) {
-    .journal__column {
-      padding-inline: 0;
-    }
-  }
-
-  @media (max-width: 599px) {
-    .journal__column {
-      padding-block: var(--scale-0600);
-    }
-  }
-
   .journal__list {
     list-style: none;
     margin: 0;
@@ -97,57 +89,5 @@ const dateFmt = new Intl.DateTimeFormat('en-US', {
     display: flex;
     flex-direction: column;
     gap: var(--scale-0400);
-  }
-
-  .journal__item {
-    display: flex;
-    flex-direction: column;
-    gap: var(--scale-0200);
-    padding-bottom: var(--scale-0600);
-  }
-
-  /* Headings/H1, in the heading font */
-  .journal__title {
-    font-size: var(--type-h1-size);
-    line-height: var(--type-h1-line-height);
-    letter-spacing: var(--type-h1-letter-spacing);
-    margin: 0;
-  }
-
-  /* Body/eyebrow3-md, as on Card / Post */
-  .journal__date {
-    font-size: var(--type-eyebrow3-size);
-    line-height: var(--type-eyebrow3-line-height);
-    letter-spacing: var(--type-eyebrow3-letter-spacing);
-    text-transform: uppercase;
-    font-weight: 500;
-    color: var(--color-text-muted);
-  }
-
-  /* The body sits between a 4px line above and a 2px line below. */
-  .journal__body {
-    display: flex;
-    flex-direction: column;
-    gap: var(--scale-0600);
-    padding-block: var(--scale-0600);
-    border-top: var(--scale-0100) solid var(--color-border-default);
-    border-bottom: var(--scale-0050) solid var(--color-border-default);
-    font-size: var(--type-p2-size);
-    line-height: var(--type-p2-line-height);
-  }
-
-  .journal__body :global(> *) {
-    margin: 0;
-  }
-
-  .journal__body :global(img) {
-    height: auto;
-  }
-
-  /* Links inside the text are blue and underlined; "Read more" keeps its own style. */
-  .journal__body :global(a:not(.link-standalone)) {
-    color: var(--color-text-link);
-    text-decoration: underline;
-    text-underline-offset: 0.2em;
   }
 </style>

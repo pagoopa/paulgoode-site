@@ -2,6 +2,8 @@
 title: "Handmade Time"
 description: "The risk of not touching what you’re doing"
 pubDate: 2026-08-10
+category: art
+tags: [thumbnails, learning]
 ---
 
 ## Previously…

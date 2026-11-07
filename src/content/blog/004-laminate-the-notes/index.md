@@ -2,6 +2,8 @@
 title: "004 - Laminate the Notes"
 description: "Inspire yourself already"
 pubDate: 2025-03-13
+category: spirit
+tags: [notes, video, encouragement]
 ---
 
 Was looking at a few Bible Notes today and decided to make a video sharing how I laminate them.

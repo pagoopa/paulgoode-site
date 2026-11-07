@@ -2,6 +2,8 @@
 title: "Building the Orb"
 description: "It was the morning of Saturday."
 pubDate: 2026-08-22
+category: studio
+tags: [orb]
 ---
 
 It was the morning of Saturday. I had rolled out of bed after some intense dreams that are now halfway forgotten. (They come back when necessary.)

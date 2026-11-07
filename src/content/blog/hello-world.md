@@ -3,6 +3,8 @@ title: "Hello, out loud"
 description: "The first entry — why this journal exists and what Dream Out Loud means to me."
 pubDate: 2026-09-27
 draft: true
+category: life
+tags: [dream-out-loud]
 ---
 
 This is the first post in the journal. Replace this with real writing whenever you're ready — the page and its layout are already wired up around whatever goes here.

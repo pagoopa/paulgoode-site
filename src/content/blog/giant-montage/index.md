@@ -2,6 +2,8 @@
 title: "Giant Montage"
 description: "Everything dumped into one video"
 pubDate: 2026-06-14
+category: art
+tags: [video, soundtrack, ai-generated]
 ---
 
 [Watch the video on YouTube](https://www.youtube.com/watch?v=0edP3G6DBiE)

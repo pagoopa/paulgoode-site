@@ -109,6 +109,130 @@ img {
   max-width: var(--content-max);
 }
 
+/* A journal entry: each post on the home page, and the post page itself.
+   Matches the Blog Landing and Post boards in design/site.pen. */
+
+/* Column: 900 wide on desktop, with 40 of padding. Tablet and mobile use the full width. */
+.entry-column {
+  max-width: 900px;
+  margin-inline: auto;
+  padding: var(--scale-0900);
+  display: flex;
+  flex-direction: column;
+  gap: var(--scale-0900);
+}
+
+@media (max-width: 1023px) {
+  .entry-column {
+    padding-inline: 0;
+  }
+}
+
+@media (max-width: 599px) {
+  .entry-column {
+    padding-block: var(--scale-0600);
+  }
+}
+
+.entry {
+  display: flex;
+  flex-direction: column;
+  gap: var(--scale-0200);
+  padding-bottom: var(--scale-0600);
+}
+
+/* Headings/H1, in the heading font */
+.entry__title {
+  font-size: var(--type-h1-size);
+  line-height: var(--type-h1-line-height);
+  letter-spacing: var(--type-h1-letter-spacing);
+  margin: 0;
+}
+
+/* Body/eyebrow3-md, as on Card / Post */
+.entry__date {
+  font-size: var(--type-eyebrow3-size);
+  line-height: var(--type-eyebrow3-line-height);
+  letter-spacing: var(--type-eyebrow3-letter-spacing);
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--color-text-muted);
+}
+
+/* The date, then the category chip. */
+.entry__meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* The body sits between a 4px line above and a 2px line below. */
+.entry__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--scale-0600);
+  padding-block: var(--scale-0600);
+  border-top: var(--scale-0100) solid var(--color-border-default);
+  border-bottom: var(--scale-0050) solid var(--color-border-default);
+  font-size: var(--type-p2-size);
+  line-height: var(--type-p2-line-height);
+}
+
+.entry__body > * {
+  margin: 0;
+}
+
+.entry__body img {
+  height: auto;
+}
+
+/* After the post: the category and tags, and a link to every tag. */
+.entry__filed {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: var(--scale-0400);
+}
+
+.entry__filed-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.entry__filed-group,
+.entry__tags {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.entry__tags {
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body/eyebrow3-md, as the date */
+.entry__filed-label {
+  font-size: var(--type-eyebrow3-size);
+  line-height: var(--type-eyebrow3-line-height);
+  letter-spacing: var(--type-eyebrow3-letter-spacing);
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--color-text-muted);
+}
+
+/* Links inside the text are blue and underlined; "Read more" keeps its own style. */
+.entry__body a:not(.link-standalone) {
+  color: var(--color-text-link);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
 /* Hidden on screen, still read by screen readers and search engines. */
 .sr-only {
   position: absolute;

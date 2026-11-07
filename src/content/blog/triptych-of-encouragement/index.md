@@ -2,6 +2,8 @@
 title: "003 - Triptych of Encouragement"
 description: "Rolling back the years... and fears."
 pubDate: 2025-03-11
+category: spirit
+tags: [encouragement, notes]
 ---
 
 *Have you ever taken a quick break then realize you’ve been scrolling on your phone for 3 years? **Yeah, me too.** So, as I was saying…*
