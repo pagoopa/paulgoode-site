@@ -30328,10 +30328,6 @@
       "type": "number",
       "value": 0
     },
-    "scale-0025": {
-      "type": "number",
-      "value": 1
-    },
     "scale-0050": {
       "type": "number",
       "value": 2
@@ -30360,10 +30356,6 @@
       "type": "number",
       "value": 24
     },
-    "scale-0700": {
-      "type": "number",
-      "value": 28
-    },
     "scale-0800": {
       "type": "number",
       "value": 32
@@ -30376,53 +30368,9 @@
       "type": "number",
       "value": 48
     },
-    "scale-1100": {
-      "type": "number",
-      "value": 56
-    },
     "scale-1200": {
       "type": "number",
       "value": 72
-    },
-    "scale-1300": {
-      "type": "number",
-      "value": 96
-    },
-    "scale-1400": {
-      "type": "number",
-      "value": 112
-    },
-    "scale-1500": {
-      "type": "number",
-      "value": 140
-    },
-    "scale-1600": {
-      "type": "number",
-      "value": 164
-    },
-    "scale-1700": {
-      "type": "number",
-      "value": 204
-    },
-    "scale-1800": {
-      "type": "number",
-      "value": 260
-    },
-    "scale-1900": {
-      "type": "number",
-      "value": 340
-    },
-    "scale-2000": {
-      "type": "number",
-      "value": 380
-    },
-    "blue-050": {
-      "type": "color",
-      "value": "#eef9fe"
-    },
-    "blue-100": {
-      "type": "color",
-      "value": "#d9f1fd"
     },
     "blue-200": {
       "type": "color",
@@ -30432,10 +30380,6 @@
       "type": "color",
       "value": "#5aceff"
     },
-    "blue-400": {
-      "type": "color",
-      "value": "#36baed"
-    },
     "blue-500": {
       "type": "color",
       "value": "#2c9cc7"
@@ -30444,25 +30388,9 @@
       "type": "color",
       "value": "#267fa2"
     },
-    "blue-700": {
-      "type": "color",
-      "value": "#1f637e"
-    },
-    "blue-800": {
-      "type": "color",
-      "value": "#1b4b5f"
-    },
     "blue-900": {
       "type": "color",
       "value": "#153542"
-    },
-    "blue-950": {
-      "type": "color",
-      "value": "#0c1d25"
-    },
-    "yellow-050": {
-      "type": "color",
-      "value": "#f7f9e4"
     },
     "yellow-100": {
       "type": "color",
@@ -30476,77 +30404,9 @@
       "type": "color",
       "value": "#d3ce3a"
     },
-    "yellow-400": {
-      "type": "color",
-      "value": "#b9af30"
-    },
-    "yellow-500": {
-      "type": "color",
-      "value": "#9f9127"
-    },
-    "yellow-600": {
-      "type": "color",
-      "value": "#847521"
-    },
-    "yellow-700": {
-      "type": "color",
-      "value": "#685a1c"
-    },
-    "yellow-800": {
-      "type": "color",
-      "value": "#514418"
-    },
-    "yellow-900": {
-      "type": "color",
-      "value": "#392f13"
-    },
-    "yellow-950": {
-      "type": "color",
-      "value": "#201a0b"
-    },
-    "pink-050": {
-      "type": "color",
-      "value": "#fef4f6"
-    },
-    "pink-100": {
-      "type": "color",
-      "value": "#fde6eb"
-    },
-    "pink-200": {
-      "type": "color",
-      "value": "#fccfd9"
-    },
-    "pink-300": {
-      "type": "color",
-      "value": "#faafc2"
-    },
-    "pink-400": {
-      "type": "color",
-      "value": "#f87ea3"
-    },
     "pink-500": {
       "type": "color",
       "value": "#ff3d8a"
-    },
-    "pink-600": {
-      "type": "color",
-      "value": "#ca2a6b"
-    },
-    "pink-700": {
-      "type": "color",
-      "value": "#9d2353"
-    },
-    "pink-800": {
-      "type": "color",
-      "value": "#771e3f"
-    },
-    "pink-900": {
-      "type": "color",
-      "value": "#53182c"
-    },
-    "pink-950": {
-      "type": "color",
-      "value": "#2f0e18"
     },
     "neutral-050": {
       "type": "color",
@@ -30568,10 +30428,6 @@
       "type": "color",
       "value": "#a0adb4"
     },
-    "neutral-500": {
-      "type": "color",
-      "value": "#839299"
-    },
     "neutral-600": {
       "type": "color",
       "value": "#68777e"
@@ -30583,10 +30439,6 @@
     "neutral-800": {
       "type": "color",
       "value": "#3a474e"
-    },
-    "neutral-900": {
-      "type": "color",
-      "value": "#273238"
     },
     "neutral-950": {
       "type": "color",
@@ -32506,142 +32358,6 @@
           }
         }
       ]
-    },
-    "font-weight-inter-regular": {
-      "type": "number",
-      "value": 400
-    },
-    "font-weight-inter-medium": {
-      "type": "number",
-      "value": 500
-    },
-    "font-weight-inter-semi-bold": {
-      "type": "number",
-      "value": 600
-    },
-    "font-weight-inter-bold": {
-      "type": "number",
-      "value": 700
-    },
-    "font-line-height-016": {
-      "type": "number",
-      "value": 16
-    },
-    "font-line-height-020": {
-      "type": "number",
-      "value": 20
-    },
-    "font-line-height-024": {
-      "type": "number",
-      "value": 24
-    },
-    "font-line-height-028": {
-      "type": "number",
-      "value": 28
-    },
-    "font-line-height-032": {
-      "type": "number",
-      "value": 32
-    },
-    "font-line-height-036": {
-      "type": "number",
-      "value": 36
-    },
-    "font-line-height-040": {
-      "type": "number",
-      "value": 40
-    },
-    "font-line-height-048": {
-      "type": "number",
-      "value": 48
-    },
-    "font-line-height-056": {
-      "type": "number",
-      "value": 56
-    },
-    "font-line-height-072": {
-      "type": "number",
-      "value": 72
-    },
-    "font-letter-spacing-none": {
-      "type": "number",
-      "value": 0
-    },
-    "font-letter-spacing-tight-14": {
-      "type": "number",
-      "value": -0.28
-    },
-    "font-letter-spacing-tight-96": {
-      "type": "number",
-      "value": -1.92
-    },
-    "font-line-height-076": {
-      "type": "number",
-      "value": 76
-    },
-    "font-letter-spacing-slight-40": {
-      "type": "number",
-      "value": -0.4
-    },
-    "font-line-height-044": {
-      "type": "number",
-      "value": 44
-    },
-    "font-line-height-100": {
-      "type": "number",
-      "value": 100
-    },
-    "font-line-height-052": {
-      "type": "number",
-      "value": 52
-    },
-    "font-letter-spacing-tight-72": {
-      "type": "number",
-      "value": -1.44
-    },
-    "font-letter-spacing-tight-48": {
-      "type": "number",
-      "value": -0.96
-    },
-    "font-line-height-084": {
-      "type": "number",
-      "value": 84
-    },
-    "font-line-height-068": {
-      "type": "number",
-      "value": 68
-    },
-    "font-letter-spacing-tight-80": {
-      "type": "number",
-      "value": -1.6
-    },
-    "font-letter-spacing-tight-64": {
-      "type": "number",
-      "value": -1.28
-    },
-    "font-letter-spacing-tight-44": {
-      "type": "number",
-      "value": -0.88
-    },
-    "font-letter-spacing-tight-40": {
-      "type": "number",
-      "value": -0.8
-    },
-    "font-letter-spacing-wide-16": {
-      "type": "number",
-      "value": 0.64
-    },
-    "font-letter-spacing-wide-14": {
-      "type": "number",
-      "value": 0.56
-    },
-    "font-letter-spacing-wide-12": {
-      "type": "number",
-      "value": 0.48
-    },
-    "font-weight-unbounded-bold": {
-      "type": "number",
-      "value": 700
     },
     "tag-brush-neutral": {
       "type": "string",
