@@ -1,6 +1,6 @@
 ---
 // Tag from design/site.pen, used for a series status.
-// exploring is Tag / Outline, active is Yellow, resting is Neutral,
+// exploring is Tag / Outline, active is Yellow, resting is Neutral (dark),
 // complete is Blue, and promoted is Pink.
 import type { SeriesStatus } from '../lib/labels';
 
@@ -24,6 +24,7 @@ const { status } = Astro.props;
     'status',
     `status--${status}`,
     { 'tag-sticker': status === 'active' || status === 'complete' || status === 'promoted' },
+    { 'tag-sticker-quiet': status === 'resting' || status === 'exploring' },
   ]}>{labels[status]}</span
 >
 
@@ -57,12 +58,12 @@ const { status } = Astro.props;
   }
 
   .status--resting {
-    background: var(--color-surface-subtle);
-    color: var(--color-text-default);
+    background: var(--color-surface-inverse);
+    color: var(--color-text-inverse);
   }
 
   .status--exploring {
+    background: var(--color-surface-default);
     color: var(--color-text-default);
-    box-shadow: inset 0 0 0 1px var(--color-border-strong);
   }
 </style>

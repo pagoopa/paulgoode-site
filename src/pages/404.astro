@@ -1,0 +1,66 @@
+---
+// Page not found ("404" boards in design/site.pen): a big 404 with the doodle as the 0,
+// a line of copy, and two ways back. Astro builds this as 404.html.
+import { Image } from 'astro:assets';
+import Layout from '../layouts/Layout.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import doodle from '../assets/doodle.svg';
+---
+
+<Layout title="Page not found" description="That page wandered off.">
+  <div class="wrap not-found">
+    <p class="not-found__code" aria-hidden="true">
+      <span>4</span>
+      <Image class="not-found__doodle" src={doodle} alt="" width={74} height={74} />
+      <span>4</span>
+    </p>
+
+    <SectionHeader
+      title="That page wandered off."
+      intro="It may have moved, or maybe it never existed. Try one of these instead."
+      level="h1"
+      align="center"
+    />
+    <p class="sr-only">Error 404</p>
+
+    <div class="not-found__actions">
+      <a class="btn btn-solid btn-lg" href="/">Back home</a>
+      <a class="btn btn-lg" href="/projects">See projects</a>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--scale-0600);
+    padding-block: var(--space-section);
+  }
+
+  /* Display/1 numerals, with the doodle as the 0 at the same height. */
+  .not-found__code {
+    display: flex;
+    align-items: center;
+    gap: var(--scale-0300);
+    margin: 0;
+    font-family: var(--font-heading);
+    font-size: var(--type-display-1-size);
+    line-height: var(--type-display-1-line-height);
+    letter-spacing: var(--type-display-1-letter-spacing);
+    font-weight: 700;
+  }
+
+  .not-found__doodle {
+    width: 1em;
+    height: 1em;
+  }
+
+  .not-found__actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--scale-0400);
+  }
+</style>

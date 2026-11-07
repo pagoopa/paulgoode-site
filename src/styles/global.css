@@ -330,6 +330,14 @@ img {
     2px 2px 0 var(--color-border-emphasis);
 }
 
+/* The quieter sticker for the outlined and dark tags (Tag / Outline and Neutral): the same
+   outline, with the hard shadow in Border/Strong. */
+.tag-sticker-quiet {
+  box-shadow:
+    inset 0 0 0 1px var(--color-border-emphasis),
+    2px 2px 0 var(--color-border-strong);
+}
+
 /* Icons in a button are 20px line icons in the text colour. */
 .btn svg {
   flex: none;
