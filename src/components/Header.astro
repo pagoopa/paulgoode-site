@@ -11,7 +11,7 @@ function isActive(href: string) {
 }
 ---
 
-<header class="site-header" data-theme="dark" data-menu-open="false">
+<header class="site-header" data-menu-open="false">
   <div class="wrap site-header__inner">
     <a href="/" class="site-header__logo" aria-label="Paul Goode — home">
       <Image src={logo} alt="Paul Goode" height={59} densities={[1, 2]} loading="eager" />
@@ -79,14 +79,15 @@ function isActive(href: string) {
 </script>
 
 <style>
-  /* Header / Left / Dark: data-theme="dark" switches the tokens, so the same styles give a dark
-     background and light text. The logo image is black, so it's inverted to white. */
+  /* Header / Left: the Inverse tokens give a dark bar with light text. The logo image is black,
+     so it's inverted to white. */
   .site-header {
+    --color-border-focus: var(--color-border-focus-inverse);
     position: relative;
     z-index: 10;
-    background: var(--color-surface-default);
-    color: var(--color-text-default);
-    border-bottom: 1px solid var(--color-border-default);
+    background: var(--color-surface-inverse);
+    color: var(--color-text-inverse);
+    border-bottom: 1px solid var(--color-border-inverse);
   }
 
   .site-header__inner {
@@ -119,7 +120,7 @@ function isActive(href: string) {
     flex-wrap: wrap;
   }
 
-  /* Phones: Header / Left / Dark (closed) and Menu Open. See the
+  /* Phones: Header / Left (closed) and Menu Open. See the
      "Mobile Nav — Open / Close Interaction" board in design/site.pen. */
   @media (max-width: 599px) {
     /* On phones the bar ends at the gutter, not the margin, next to the 44px menu button. */
@@ -136,7 +137,7 @@ function isActive(href: string) {
       padding: 0;
       border: 0;
       background: transparent;
-      color: var(--color-text-default);
+      color: var(--color-text-inverse);
       cursor: pointer;
     }
 
@@ -187,7 +188,7 @@ function isActive(href: string) {
       gap: var(--scale-0200);
       min-height: 100%;
       padding: var(--scale-0400) var(--layout-margin) var(--scale-0600);
-      background: var(--color-surface-default);
+      background: var(--color-surface-inverse);
       opacity: 0;
       transform: translateY(-24px);
       transition:

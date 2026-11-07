@@ -3,12 +3,10 @@
 // Also builds the Google Fonts link from the font variables.
 // Runs automatically before `npm run dev` and `npm run build`.
 //
-// site.pen is the source of truth for the variables, which use two theme axes:
-// - device (sm / md / lg / xl): lg values go in :root,
-//   md and sm in the media queries below. xl isn't used yet: it only differs
-//   from lg in layout-screen-width, which the site doesn't read.
-// - mode (light / dark): light is the default; dark applies under
-//   [data-theme="dark"] on any element.
+// site.pen is the source of truth for the variables. They have one theme axis,
+// device (sm / md / lg / xl): lg values go in :root, md and sm in the media
+// queries below. xl isn't used yet: it only differs from lg in
+// layout-screen-width, which the site doesn't read.
 import { readFileSync, writeFileSync } from 'node:fs';
 
 const PEN = new URL('../design/site.pen', import.meta.url);
@@ -71,15 +69,14 @@ function cssValue(name, type, v) {
   return `'${v}', ${FONT_FALLBACKS[v] ?? 'sans-serif'}`;
 }
 
-const BASE = { mode: 'light', device: 'lg' };
+const BASE = { device: 'lg' };
 const VARIANTS = {
   md: { ...BASE, device: 'md' },
   sm: { ...BASE, device: 'sm' },
-  dark: { ...BASE, mode: 'dark' },
 };
 
 const groups = { color: [], font: [], other: [] };
-const overrides = { md: [], sm: [], dark: [] };
+const overrides = { md: [], sm: [] };
 const families = new Set();
 for (const [name, { type, value }] of Object.entries(variables)) {
   // CSS has no use for booleans (e.g. "show nav"); the layout handles those.
@@ -98,7 +95,6 @@ for (const [name, { type, value }] of Object.entries(variables)) {
   // Phone widths also match the md query, so sm only needs what differs from md.
   if (vals.md !== base) overrides.md.push(line(vals.md));
   if (vals.sm !== vals.md) overrides.sm.push(line(vals.sm));
-  if (vals.dark !== base) overrides.dark.push(line(vals.dark));
 }
 
 const fontsUrl =
@@ -127,8 +123,6 @@ ${block(':root', overrides.md, '  ')}
 @media ${BREAKPOINTS.sm} {
 ${block(':root', overrides.sm, '  ')}
 }
-
-${block('[data-theme="dark"]', overrides.dark)}
 `;
 
 writeFileSync(OUT, css);
