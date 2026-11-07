@@ -1,23 +1,101 @@
 ---
+// Projects ("Projects" boards in design/site.pen): the intro, a type filter,
+// the featured project, then a grid of the rest. The copy for the intro lives in
+// src/content/pages/projects.md and each project in src/content/projects/.
 import Layout from '../layouts/Layout.astro';
-import PageActions from '../components/PageActions.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import FilterBar from '../components/FilterBar.astro';
+import ProjectCard from '../components/ProjectCard.astro';
 import { getPage } from '../lib/pages';
+import { getProjects, projectUrl } from '../lib/projects';
+import { projectTypes } from '../lib/labels';
 
-// Copy lives in src/content/pages/projects.md.
-const { data, Content } = await getPage('projects');
+const { data } = await getPage('projects');
+const { featured, others } = await getProjects();
+
+const options = Object.entries(projectTypes).map(([value, { label }]) => ({ value, label }));
 ---
 
 <Layout title={data.title} description={data.description}>
-  <section class="wrap prose projects">
-    {data.eyebrow && <p class="eyebrow">{data.eyebrow}</p>}
-    <h1>{data.heading}</h1>
-    <Content />
-    <PageActions actions={data.actions} />
-  </section>
+  <div class="wrap projects">
+    <SectionHeader eyebrow={data.eyebrow} title={data.heading} intro={data.description} level="h1" />
+
+    <FilterBar options={options} />
+
+    {featured && (
+      <div data-filter-type={featured.data.type}>
+        <ProjectCard
+          layout="side"
+          href={projectUrl(featured)}
+          eyebrow={`Featured · ${projectTypes[featured.data.type].eyebrow}`}
+          title={featured.data.title}
+          summary={featured.data.summary}
+          linkLabel="View project"
+          image={featured.data.thumbnail}
+          loading="eager"
+        />
+      </div>
+    )}
+
+    <ul class="projects__grid">
+      {others.map((project) => (
+        <li data-filter-type={project.data.type}>
+          <ProjectCard
+            href={projectUrl(project)}
+            eyebrow={projectTypes[project.data.type].eyebrow}
+            title={project.data.title}
+            summary={project.data.summary}
+            linkLabel="View project"
+            image={project.data.thumbnail}
+          />
+        </li>
+      ))}
+    </ul>
+
+    <p data-filter-empty role="status" hidden>No projects of this type yet.</p>
+  </div>
 </Layout>
 
 <style>
   .projects {
-    padding-block: 64px 96px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-block);
+    padding-block: var(--space-section);
+  }
+
+  /* Three across on desktop, two on tablet, one on phones. */
+  .projects__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--scale-0600);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .projects__grid > li {
+    display: flex;
+  }
+
+  .projects__grid :global(.card) {
+    flex: 1;
+  }
+
+  /* hidden is overridden by display: flex above, so hide filtered-out cards explicitly. */
+  .projects__grid > li[hidden] {
+    display: none;
+  }
+
+  @media (max-width: 1023px) {
+    .projects__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 599px) {
+    .projects__grid {
+      grid-template-columns: 1fr;
+    }
   }
 </style>

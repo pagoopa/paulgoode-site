@@ -1,7 +1,7 @@
 import { defineCollection, reference } from 'astro:content';
 import { z } from 'astro/zod';
 import { glob } from 'astro/loaders';
-import { domain, seriesStatus, tag } from './lib/labels';
+import { domain, projectType, seriesStatus, tag } from './lib/labels';
 
 const blog = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/blog' }),
@@ -61,6 +61,27 @@ const entries = defineCollection({
     }),
 });
 
+// Projects: one file per project in src/content/projects/. The file name is its id and its URL:
+// uplifting-ink.md → /projects/uplifting-ink. The body is the project's own page.
+const projects = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/projects' }),
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      // One or two sentences, shown on the card and under the title on the project's page.
+      summary: z.string(),
+      // Sets the filter chip and the card eyebrow.
+      type: projectType,
+      // The one project shown large above the grid. If several are marked, the first by order.
+      featured: z.boolean().default(false),
+      // Lowest first. Without it a project goes after the numbered ones, by title.
+      order: z.number().int().optional(),
+      draft: z.boolean().default(false),
+      // Card image: 16:10 landscape, exported at 720 × 450. Optional.
+      thumbnail: image().optional(),
+    }),
+});
+
 // Copy for the one-off pages (home, about, contact, projects). The file name is the page id.
 const pages = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/pages' }),
@@ -81,4 +102,4 @@ const pages = defineCollection({
   }),
 });
 
-export const collections = { blog, series, entries, pages };
+export const collections = { blog, series, entries, projects, pages };
