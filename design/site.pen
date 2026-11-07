@@ -17199,9 +17199,20 @@
       "type": "text",
       "id": "uGbe0",
       "x": -460,
-      "y": 3497,
+      "y": 3333,
       "fill": "#38eeff",
-      "content": "Series",
+      "content": "Series - Landing",
+      "fontFamily": "Roboto Mono",
+      "fontSize": 200,
+      "fontWeight": "700"
+    },
+    {
+      "type": "text",
+      "id": "S2QEeA",
+      "x": -311,
+      "y": 7050,
+      "fill": "#38eeff",
+      "content": "Series - Page",
       "fontFamily": "Roboto Mono",
       "fontSize": 200,
       "fontWeight": "700"
@@ -17268,7 +17279,8 @@
                   "width": 720,
                   "descendants": {
                     "z9frDW": {
-                      "content": "PROJECTS"
+                      "content": "PROJECTS",
+                      "enabled": false
                     },
                     "SqBTJ": {
                       "content": "Projects"
@@ -17535,8 +17547,8 @@
     {
       "type": "frame",
       "id": "x5KRR",
-      "x": 2749,
-      "y": 4062,
+      "x": -460,
+      "y": 4090,
       "name": "Series Landing — Desktop (1200)",
       "theme": {
         "device": "lg"
@@ -17910,7 +17922,8 @@
                   "width": "fill_container",
                   "descendants": {
                     "z9frDW": {
-                      "content": "PROJECTS"
+                      "content": "PROJECTS",
+                      "enabled": false
                     },
                     "SqBTJ": {
                       "content": "Projects"
@@ -18206,7 +18219,8 @@
                   "width": "fill_container",
                   "descendants": {
                     "z9frDW": {
-                      "content": "PROJECTS"
+                      "content": "PROJECTS",
+                      "enabled": false
                     },
                     "SqBTJ": {
                       "content": "Projects"
@@ -18578,8 +18592,8 @@
     {
       "type": "frame",
       "id": "F6FNm",
-      "x": -460,
-      "y": 4062,
+      "x": -311,
+      "y": 7587,
       "name": "Series — Desktop (1200)",
       "theme": {
         "device": "lg"
@@ -19039,8 +19053,8 @@
     {
       "type": "frame",
       "id": "Zksjh",
-      "x": 860,
-      "y": 4062,
+      "x": 1009,
+      "y": 7587,
       "name": "Series — Tablet (810)",
       "theme": {
         "device": "md"
@@ -19369,8 +19383,8 @@
     {
       "type": "frame",
       "id": "uABk5",
-      "x": 1790,
-      "y": 4062,
+      "x": 1939,
+      "y": 7587,
       "name": "Series — Mobile (390)",
       "theme": {
         "device": "sm"
@@ -19798,8 +19812,8 @@
     {
       "type": "frame",
       "id": "Uzp6g",
-      "x": 4069,
-      "y": 4062,
+      "x": 860,
+      "y": 4090,
       "name": "Series Landing — Tablet (810)",
       "theme": {
         "device": "md"
@@ -20074,8 +20088,8 @@
     {
       "type": "frame",
       "id": "NRNkh",
-      "x": 4999,
-      "y": 4062,
+      "x": 1790,
+      "y": 4090,
       "name": "Series Landing — Mobile (390)",
       "theme": {
         "device": "sm"
@@ -30193,6 +30207,710 @@
               ]
             }
           ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "X64qQW",
+      "x": -3833,
+      "y": 7195,
+      "name": "Newsletter — Desktop (1200)",
+      "theme": {
+        "device": "lg"
+      },
+      "clip": true,
+      "width": 1200,
+      "fill": "$surface-default",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "PxFzH",
+          "type": "ref",
+          "ref": "kgrqX",
+          "name": "Header",
+          "width": "fill_container",
+          "descendants": {
+            "c7UL7": {
+              "id": "i2Gp8c",
+              "type": "ref",
+              "ref": "Bbcv6",
+              "name": "Blog",
+              "descendants": {
+                "v3guN": {
+                  "content": "BLOG"
+                }
+              }
+            },
+            "aBgCT": {
+              "id": "JWtvw",
+              "type": "ref",
+              "ref": "Bbcv6",
+              "name": "Series",
+              "descendants": {
+                "v3guN": {
+                  "content": "PROJECTS"
+                }
+              }
+            },
+            "t1NDp": {
+              "id": "uKTFH",
+              "type": "ref",
+              "ref": "y9pZm",
+              "name": "Newsletter",
+              "descendants": {
+                "OVFYG": {
+                  "content": "NEWSLETTER"
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "M3CzD",
+          "name": "Main",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            "$space-section",
+            "$layout-margin"
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "mf8Eu",
+              "name": "Column",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": "$space-block",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "y2109",
+                  "name": "Hero",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": "$scale-0600",
+                  "children": [
+                    {
+                      "id": "c2j7Nv",
+                      "type": "ref",
+                      "ref": "g7uira",
+                      "name": "Intro",
+                      "width": 720,
+                      "descendants": {
+                        "z9frDW": {
+                          "content": "NEWSLETTER",
+                          "enabled": false
+                        },
+                        "SqBTJ": {
+                          "content": "Newsletter"
+                        },
+                        "zSXuD": {
+                          "content": "You can sign up for weekly updates sent to you by email."
+                        }
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "nPMUJ",
+                      "name": "Actions",
+                      "gap": "$scale-0400",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "id": "TOMyX",
+                          "type": "ref",
+                          "ref": "dOZxf",
+                          "name": "Subscribe",
+                          "descendants": {
+                            "wLOsh": {
+                              "content": "SUBSCRIBE ON SUBSTACK"
+                            },
+                            "eqCZc": {
+                              "enabled": true
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "LwNoz",
+                  "name": "What you get",
+                  "width": "fill_container",
+                  "gap": "$scale-0600",
+                  "children": [
+                    {
+                      "id": "Xyl6B",
+                      "type": "ref",
+                      "ref": "zcutF",
+                      "name": "Statement 1",
+                      "width": "fill_container",
+                      "descendants": {
+                        "MlXts": {
+                          "content": "New drawings and works in progress, before they land anywhere else."
+                        }
+                      }
+                    },
+                    {
+                      "id": "KEHlg",
+                      "type": "ref",
+                      "ref": "zcutF",
+                      "name": "Statement 2",
+                      "width": "fill_container",
+                      "descendants": {
+                        "MlXts": {
+                          "content": "What I'm learning about design, art and making, out loud and as I go."
+                        }
+                      }
+                    },
+                    {
+                      "id": "MmBpg",
+                      "type": "ref",
+                      "ref": "zcutF",
+                      "name": "Statement 3",
+                      "width": "fill_container",
+                      "descendants": {
+                        "MlXts": {
+                          "content": "Updates from each series, so you can follow the ones you care about."
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "sQ7cj",
+                  "name": "Note",
+                  "fill": "$text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "One email when there's something worth sending. Unsubscribe any time.",
+                  "lineHeight": "$type-p3-line-height",
+                  "fontFamily": "$font-body",
+                  "fontSize": "$type-p3-size",
+                  "fontWeight": "normal",
+                  "letterSpacing": "$type-p3-letter-spacing"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "flTLt",
+          "type": "ref",
+          "ref": "E6haZ",
+          "name": "Footer",
+          "width": "fill_container"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "q5Ukv0",
+      "x": -2513,
+      "y": 7195,
+      "name": "Newsletter — Tablet (810)",
+      "theme": {
+        "device": "md"
+      },
+      "clip": true,
+      "width": 810,
+      "fill": "$surface-default",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "o1tla1",
+          "type": "ref",
+          "ref": "kgrqX",
+          "name": "Header",
+          "width": "fill_container",
+          "descendants": {
+            "c7UL7": {
+              "id": "M0hij",
+              "type": "ref",
+              "ref": "Bbcv6",
+              "name": "Blog",
+              "descendants": {
+                "v3guN": {
+                  "content": "BLOG"
+                }
+              }
+            },
+            "aBgCT": {
+              "id": "cproI",
+              "type": "ref",
+              "ref": "Bbcv6",
+              "name": "Series",
+              "descendants": {
+                "v3guN": {
+                  "content": "PROJECTS"
+                }
+              }
+            },
+            "t1NDp": {
+              "id": "R27x6s",
+              "type": "ref",
+              "ref": "y9pZm",
+              "name": "Newsletter",
+              "descendants": {
+                "OVFYG": {
+                  "content": "NEWSLETTER"
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "yXWfy",
+          "name": "Main",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            "$space-section",
+            "$layout-margin"
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "ht20Z",
+              "name": "Column",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": "$space-block",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "aqGcp",
+                  "name": "Hero",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": "$scale-0600",
+                  "children": [
+                    {
+                      "id": "WExSG",
+                      "type": "ref",
+                      "ref": "g7uira",
+                      "name": "Intro",
+                      "width": 714,
+                      "descendants": {
+                        "z9frDW": {
+                          "content": "NEWSLETTER",
+                          "enabled": false
+                        },
+                        "SqBTJ": {
+                          "content": "Newsletter"
+                        },
+                        "zSXuD": {
+                          "content": "You can sign up for weekly updates sent to you by email."
+                        }
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "DP8bI",
+                      "name": "Actions",
+                      "layout": "vertical",
+                      "gap": "$scale-0400",
+                      "children": [
+                        {
+                          "id": "eVoVE",
+                          "type": "ref",
+                          "ref": "dOZxf",
+                          "name": "Subscribe",
+                          "descendants": {
+                            "wLOsh": {
+                              "content": "SUBSCRIBE ON SUBSTACK"
+                            },
+                            "eqCZc": {
+                              "enabled": true
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "V55ub",
+                  "name": "What you get",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": "$scale-0600",
+                  "children": [
+                    {
+                      "id": "J0j6s",
+                      "type": "ref",
+                      "ref": "zcutF",
+                      "name": "Statement 1",
+                      "width": "fill_container",
+                      "descendants": {
+                        "MlXts": {
+                          "content": "New drawings and works in progress, before they land anywhere else."
+                        }
+                      }
+                    },
+                    {
+                      "id": "A2QFOY",
+                      "type": "ref",
+                      "ref": "zcutF",
+                      "name": "Statement 2",
+                      "width": "fill_container",
+                      "descendants": {
+                        "MlXts": {
+                          "content": "What I'm learning about design, art and making, out loud and as I go."
+                        }
+                      }
+                    },
+                    {
+                      "id": "v4qdh",
+                      "type": "ref",
+                      "ref": "zcutF",
+                      "name": "Statement 3",
+                      "width": "fill_container",
+                      "descendants": {
+                        "MlXts": {
+                          "content": "Updates from each series, so you can follow the ones you care about."
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "W4cqQ",
+                  "name": "Note",
+                  "fill": "$text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "One email when there's something worth sending. Unsubscribe any time.",
+                  "lineHeight": "$type-p3-line-height",
+                  "fontFamily": "$font-body",
+                  "fontSize": "$type-p3-size",
+                  "fontWeight": "normal",
+                  "letterSpacing": "$type-p3-letter-spacing"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "oTu7K",
+          "type": "ref",
+          "ref": "E6haZ",
+          "name": "Footer",
+          "width": "fill_container",
+          "descendants": {
+            "549hf": {
+              "width": 100,
+              "height": 100
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "OWvsF",
+      "x": -1583,
+      "y": 7195,
+      "name": "Newsletter — Mobile (390)",
+      "theme": {
+        "device": "sm"
+      },
+      "clip": true,
+      "width": 390,
+      "fill": "$surface-default",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "tSegX",
+          "type": "ref",
+          "ref": "kgrqX",
+          "name": "Header",
+          "width": "fill_container",
+          "descendants": {
+            "c7UL7": {
+              "id": "g0Dc1m",
+              "type": "ref",
+              "ref": "Bbcv6",
+              "name": "Blog",
+              "descendants": {
+                "v3guN": {
+                  "content": "BLOG"
+                }
+              }
+            },
+            "aBgCT": {
+              "id": "kB9tT",
+              "type": "ref",
+              "ref": "Bbcv6",
+              "name": "Series",
+              "descendants": {
+                "v3guN": {
+                  "content": "PROJECTS"
+                }
+              }
+            },
+            "t1NDp": {
+              "id": "XSAC7",
+              "type": "ref",
+              "ref": "y9pZm",
+              "name": "Newsletter",
+              "descendants": {
+                "OVFYG": {
+                  "content": "NEWSLETTER"
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "z1iqo",
+          "name": "Main",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            "$space-section",
+            "$layout-margin"
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "qodhi",
+              "name": "Column",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": "$space-block",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Y52GUq",
+                  "name": "Hero",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": "$scale-0600",
+                  "children": [
+                    {
+                      "id": "f88Je",
+                      "type": "ref",
+                      "ref": "g7uira",
+                      "name": "Intro",
+                      "width": 342,
+                      "descendants": {
+                        "z9frDW": {
+                          "content": "NEWSLETTER",
+                          "enabled": false
+                        },
+                        "SqBTJ": {
+                          "content": "Newsletter"
+                        },
+                        "zSXuD": {
+                          "content": "You can sign up for weekly updates sent to you by email."
+                        }
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "D0EyY",
+                      "name": "Actions",
+                      "layout": "vertical",
+                      "gap": "$scale-0400",
+                      "children": [
+                        {
+                          "id": "qTKMt",
+                          "type": "ref",
+                          "ref": "dOZxf",
+                          "name": "Subscribe",
+                          "descendants": {
+                            "wLOsh": {
+                              "content": "SUBSCRIBE ON SUBSTACK"
+                            },
+                            "eqCZc": {
+                              "enabled": true
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "JP1ns",
+                  "name": "What you get",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": "$scale-0600",
+                  "children": [
+                    {
+                      "id": "r4umO",
+                      "type": "ref",
+                      "ref": "zcutF",
+                      "name": "Statement 1",
+                      "width": "fill_container",
+                      "descendants": {
+                        "MlXts": {
+                          "content": "New drawings and works in progress, before they land anywhere else."
+                        }
+                      }
+                    },
+                    {
+                      "id": "R3wgS",
+                      "type": "ref",
+                      "ref": "zcutF",
+                      "name": "Statement 2",
+                      "width": "fill_container",
+                      "descendants": {
+                        "MlXts": {
+                          "content": "What I'm learning about design, art and making, out loud and as I go."
+                        }
+                      }
+                    },
+                    {
+                      "id": "FHeiB",
+                      "type": "ref",
+                      "ref": "zcutF",
+                      "name": "Statement 3",
+                      "width": "fill_container",
+                      "descendants": {
+                        "MlXts": {
+                          "content": "Updates from each series, so you can follow the ones you care about."
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "XjAeV",
+                  "name": "Note",
+                  "fill": "$text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "One email when there's something worth sending. Unsubscribe any time.",
+                  "lineHeight": "$type-p3-line-height",
+                  "fontFamily": "$font-body",
+                  "fontSize": "$type-p3-size",
+                  "fontWeight": "normal",
+                  "letterSpacing": "$type-p3-letter-spacing"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "aA4IG",
+          "type": "ref",
+          "ref": "E6haZ",
+          "name": "Footer",
+          "width": "fill_container",
+          "descendants": {
+            "549hf": {
+              "width": 100,
+              "height": 100
+            },
+            "BWRrf": {
+              "type": "frame",
+              "id": "vft7U",
+              "name": "Nav",
+              "layout": "vertical",
+              "padding": [
+                "$scale-0300",
+                0,
+                0,
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Xks7h",
+                  "name": "Row",
+                  "gap": "$scale-0600",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "ToDSC",
+                      "type": "ref",
+                      "ref": "Bbcv6",
+                      "name": "Blog",
+                      "descendants": {
+                        "v3guN": {
+                          "content": "BLOG"
+                        }
+                      }
+                    },
+                    {
+                      "id": "wYeFU",
+                      "type": "ref",
+                      "ref": "Bbcv6",
+                      "name": "Series",
+                      "descendants": {
+                        "v3guN": {
+                          "content": "PROJECTS"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Uy1QM",
+                  "name": "Row",
+                  "gap": "$scale-0600",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "nXPxT",
+                      "type": "ref",
+                      "ref": "Bbcv6",
+                      "name": "Newsletter",
+                      "descendants": {
+                        "v3guN": {
+                          "content": "NEWSLETTER"
+                        }
+                      }
+                    },
+                    {
+                      "id": "z9LFE",
+                      "type": "ref",
+                      "ref": "Bbcv6",
+                      "name": "Shop",
+                      "descendants": {
+                        "v3guN": {
+                          "content": "SHOP"
+                        }
+                      }
+                    },
+                    {
+                      "id": "RW30V",
+                      "type": "ref",
+                      "ref": "Bbcv6",
+                      "name": "About",
+                      "descendants": {
+                        "v3guN": {
+                          "content": "ABOUT"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
         }
       ]
     }

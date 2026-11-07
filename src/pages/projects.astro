@@ -18,7 +18,7 @@ const options = Object.entries(projectTypes).map(([value, { label }]) => ({ valu
 
 <Layout title={data.title} description={data.description}>
   <div class="wrap projects">
-    <SectionHeader eyebrow={data.eyebrow} title={data.heading} intro={data.description} level="h1" />
+    <SectionHeader title={data.heading} intro={data.description} level="h1" />
 
     <FilterBar options={options} />
 

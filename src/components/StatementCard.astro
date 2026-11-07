@@ -1,0 +1,35 @@
+---
+// Card / Statement / SM: a dark card with a blue accent bar and one statement.
+const { text } = Astro.props;
+---
+
+<div class="statement">
+  <span class="statement__bar" aria-hidden="true"></span>
+  <p class="statement__text">{text}</p>
+</div>
+
+<style>
+  .statement {
+    display: flex;
+    flex-direction: column;
+    gap: var(--scale-0300);
+    padding: var(--scale-0600);
+    background: var(--color-surface-inverse);
+    border-radius: var(--radius-lg);
+    color: var(--color-text-inverse);
+  }
+
+  .statement__bar {
+    width: 8px;
+    height: 64px;
+    border-radius: var(--radius-sm);
+    background: var(--color-accent-blue);
+  }
+
+  .statement__text {
+    margin: 0;
+    font-size: var(--type-p1-size);
+    line-height: var(--type-p1-line-height);
+    letter-spacing: var(--type-p1-letter-spacing);
+  }
+</style>
