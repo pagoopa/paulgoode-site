@@ -1,6 +1,7 @@
 ---
 // A category or a tag (Tag / Blue and Tag / Outline in design/site.pen).
-// A category is the filled blue chip; a tag is the outlined one. Both are links.
+// A category is the filled blue chip with the sticker outline and shadow; a tag is
+// the outlined one. Both are links.
 interface Props {
   href: string;
   kind: 'category' | 'tag';
@@ -9,7 +10,7 @@ interface Props {
 const { href, kind } = Astro.props;
 ---
 
-<a class:list={['chip', `chip--${kind}`]} href={href}><slot /></a>
+<a class:list={['chip', `chip--${kind}`, { 'tag-sticker': kind === 'category' }]} href={href}><slot /></a>
 
 <style>
   .chip {

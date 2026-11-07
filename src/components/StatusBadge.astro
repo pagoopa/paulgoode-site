@@ -19,7 +19,13 @@ const labels: Record<SeriesStatus, string> = {
 const { status } = Astro.props;
 ---
 
-<span class:list={['status', `status--${status}`]}>{labels[status]}</span>
+<span
+  class:list={[
+    'status',
+    `status--${status}`,
+    { 'tag-sticker': status === 'active' || status === 'complete' || status === 'promoted' },
+  ]}>{labels[status]}</span
+>
 
 <style>
   .status {
