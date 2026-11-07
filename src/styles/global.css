@@ -291,6 +291,14 @@ img {
   stroke-linejoin: round;
 }
 
+/* Button / Primary / sm: the smaller size, Body/eyebrow3. */
+.btn-sm {
+  padding: var(--scale-0200) var(--scale-0300);
+  font-size: var(--type-eyebrow3-size);
+  line-height: var(--type-eyebrow3-line-height);
+  letter-spacing: var(--type-eyebrow3-letter-spacing);
+}
+
 /* Button / Primary / lg: the larger size, Body/eyebrow1. */
 .btn-lg {
   padding: var(--scale-0400) var(--scale-0600);
