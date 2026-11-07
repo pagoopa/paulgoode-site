@@ -17218,6 +17218,28 @@
       "fontWeight": "700"
     },
     {
+      "type": "text",
+      "id": "avqvI",
+      "x": -3833,
+      "y": 7050,
+      "fill": "#38eeff",
+      "content": "Newsletter",
+      "fontFamily": "Roboto Mono",
+      "fontSize": 200,
+      "fontWeight": "700"
+    },
+    {
+      "type": "text",
+      "id": "uvV2k",
+      "x": -3833,
+      "y": 8960,
+      "fill": "#38eeff",
+      "content": "About",
+      "fontFamily": "Roboto Mono",
+      "fontSize": 200,
+      "fontWeight": "700"
+    },
+    {
       "type": "frame",
       "id": "N3Wye",
       "x": -3833,
@@ -18664,7 +18686,6 @@
           "id": "JZy2r",
           "name": "Frame 2",
           "width": "fill_container",
-          "fill": "#ffffff",
           "layout": "vertical",
           "gap": 24,
           "alignItems": "center",
@@ -19125,7 +19146,6 @@
           "id": "Wobmz",
           "name": "Frame 2",
           "width": "fill_container",
-          "fill": "#ffffff",
           "layout": "vertical",
           "gap": 24,
           "alignItems": "center",
@@ -19455,7 +19475,6 @@
           "id": "bhQMb",
           "name": "Frame 2",
           "width": "fill_container",
-          "fill": "#ffffff",
           "layout": "vertical",
           "gap": 24,
           "alignItems": "center",
@@ -30214,7 +30233,7 @@
       "type": "frame",
       "id": "X64qQW",
       "x": -3833,
-      "y": 7195,
+      "y": 7587,
       "name": "Newsletter — Desktop (1200)",
       "theme": {
         "device": "lg"
@@ -30414,7 +30433,7 @@
       "type": "frame",
       "id": "q5Ukv0",
       "x": -2513,
-      "y": 7195,
+      "y": 7587,
       "name": "Newsletter — Tablet (810)",
       "theme": {
         "device": "md"
@@ -30621,7 +30640,7 @@
       "type": "frame",
       "id": "OWvsF",
       "x": -1583,
-      "y": 7195,
+      "y": 7587,
       "name": "Newsletter — Mobile (390)",
       "theme": {
         "device": "sm"
@@ -30897,6 +30916,632 @@
                     },
                     {
                       "id": "RW30V",
+                      "type": "ref",
+                      "ref": "Bbcv6",
+                      "name": "About",
+                      "descendants": {
+                        "v3guN": {
+                          "content": "ABOUT"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "A5twDA",
+      "x": -3833,
+      "y": 9450,
+      "name": "About — Desktop (1200)",
+      "theme": {
+        "device": "lg"
+      },
+      "clip": true,
+      "width": 1200,
+      "fill": "$surface-default",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "DKtud",
+          "type": "ref",
+          "ref": "kgrqX",
+          "name": "Header",
+          "width": "fill_container",
+          "descendants": {
+            "c7UL7": {
+              "id": "LR36e",
+              "type": "ref",
+              "ref": "Bbcv6",
+              "name": "Blog",
+              "descendants": {
+                "v3guN": {
+                  "content": "BLOG"
+                }
+              }
+            },
+            "aBgCT": {
+              "id": "CyYRu",
+              "type": "ref",
+              "ref": "Bbcv6",
+              "name": "Series",
+              "descendants": {
+                "v3guN": {
+                  "content": "PROJECTS"
+                }
+              }
+            },
+            "t1NDp": {
+              "id": "ciC3g",
+              "type": "ref",
+              "ref": "Bbcv6",
+              "name": "Newsletter",
+              "descendants": {
+                "v3guN": {
+                  "content": "NEWSLETTER"
+                }
+              }
+            },
+            "QSUrd": {
+              "id": "Kvqtv",
+              "type": "ref",
+              "ref": "y9pZm",
+              "name": "About",
+              "descendants": {
+                "OVFYG": {
+                  "content": "ABOUT"
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "fGBy9",
+          "name": "Main",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            "$space-section",
+            "$layout-margin"
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "unytC",
+              "name": "Column",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": "$space-block",
+              "children": [
+                {
+                  "id": "r9qxY",
+                  "type": "ref",
+                  "ref": "g7uira",
+                  "name": "Intro",
+                  "width": 720,
+                  "descendants": {
+                    "z9frDW": {
+                      "content": "ABOUT",
+                      "enabled": false
+                    },
+                    "SqBTJ": {
+                      "content": "About"
+                    },
+                    "zSXuD": {
+                      "enabled": false
+                    }
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "ClZHR",
+                  "name": "Body",
+                  "width": "fill_container",
+                  "gap": "$scale-0800",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "nDLqb",
+                      "name": "Bio",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": "$scale-0400",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "M65tUm",
+                          "name": "Paragraph 1",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Placeholder bio — replace with the real one. Senior UX designer and visual thinker with a fine arts background (VCU, painting and printmaking), working across enterprise and consumer product design.",
+                          "lineHeight": "$type-p1-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-p1-size",
+                          "fontWeight": "normal",
+                          "letterSpacing": "$type-p1-letter-spacing"
+                        },
+                        {
+                          "type": "text",
+                          "id": "PUkDq",
+                          "name": "Paragraph 2",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Runs Uplifting Ink, a visual thinking company spanning products and events, organized around one idea: Dream Out Loud — making process visible and learning in public.",
+                          "lineHeight": "$type-p1-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-p1-size",
+                          "fontWeight": "normal",
+                          "letterSpacing": "$type-p1-letter-spacing"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "scxhY",
+                      "type": "ref",
+                      "ref": "yUEsX",
+                      "name": "Portrait",
+                      "width": 220,
+                      "height": 220
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c29IPl",
+          "type": "ref",
+          "ref": "E6haZ",
+          "name": "Footer",
+          "width": "fill_container"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "Fl7Ak",
+      "x": -2513,
+      "y": 9450,
+      "name": "About — Tablet (810)",
+      "theme": {
+        "device": "md"
+      },
+      "clip": true,
+      "width": 810,
+      "fill": "$surface-default",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "jCP1g",
+          "type": "ref",
+          "ref": "kgrqX",
+          "name": "Header",
+          "width": "fill_container",
+          "descendants": {
+            "c7UL7": {
+              "id": "G7zwev",
+              "type": "ref",
+              "ref": "Bbcv6",
+              "name": "Blog",
+              "descendants": {
+                "v3guN": {
+                  "content": "BLOG"
+                }
+              }
+            },
+            "aBgCT": {
+              "id": "nrXTZ",
+              "type": "ref",
+              "ref": "Bbcv6",
+              "name": "Series",
+              "descendants": {
+                "v3guN": {
+                  "content": "PROJECTS"
+                }
+              }
+            },
+            "t1NDp": {
+              "id": "G0S5J",
+              "type": "ref",
+              "ref": "Bbcv6",
+              "name": "Newsletter",
+              "descendants": {
+                "v3guN": {
+                  "content": "NEWSLETTER"
+                }
+              }
+            },
+            "QSUrd": {
+              "id": "G0bfz",
+              "type": "ref",
+              "ref": "y9pZm",
+              "name": "About",
+              "descendants": {
+                "OVFYG": {
+                  "content": "ABOUT"
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "U20MAb",
+          "name": "Main",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            "$space-section",
+            "$layout-margin"
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "t0mDbZ",
+              "name": "Column",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": "$space-block",
+              "children": [
+                {
+                  "id": "TBZs5",
+                  "type": "ref",
+                  "ref": "g7uira",
+                  "name": "Intro",
+                  "width": 714,
+                  "descendants": {
+                    "z9frDW": {
+                      "content": "ABOUT",
+                      "enabled": false
+                    },
+                    "SqBTJ": {
+                      "content": "About"
+                    },
+                    "zSXuD": {
+                      "enabled": false
+                    }
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "AuZbU",
+                  "name": "Body",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": "$scale-0800",
+                  "children": [
+                    {
+                      "id": "lbpfJ",
+                      "type": "ref",
+                      "ref": "yUEsX",
+                      "name": "Portrait",
+                      "width": 160,
+                      "height": 160
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ZPTey",
+                      "name": "Bio",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": "$scale-0400",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "iO7X6",
+                          "name": "Paragraph 1",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Placeholder bio — replace with the real one. Senior UX designer and visual thinker with a fine arts background (VCU, painting and printmaking), working across enterprise and consumer product design.",
+                          "lineHeight": "$type-p1-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-p1-size",
+                          "fontWeight": "normal",
+                          "letterSpacing": "$type-p1-letter-spacing"
+                        },
+                        {
+                          "type": "text",
+                          "id": "UDvOP",
+                          "name": "Paragraph 2",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Runs Uplifting Ink, a visual thinking company spanning products and events, organized around one idea: Dream Out Loud — making process visible and learning in public.",
+                          "lineHeight": "$type-p1-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-p1-size",
+                          "fontWeight": "normal",
+                          "letterSpacing": "$type-p1-letter-spacing"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "RStYU",
+          "type": "ref",
+          "ref": "E6haZ",
+          "name": "Footer",
+          "width": "fill_container",
+          "descendants": {
+            "549hf": {
+              "width": 100,
+              "height": 100
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "OY9Qa",
+      "x": -1583,
+      "y": 9450,
+      "name": "About — Mobile (390)",
+      "theme": {
+        "device": "sm"
+      },
+      "clip": true,
+      "width": 390,
+      "fill": "$surface-default",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "N5RHO",
+          "type": "ref",
+          "ref": "kgrqX",
+          "name": "Header",
+          "width": "fill_container",
+          "descendants": {
+            "c7UL7": {
+              "id": "IksSH",
+              "type": "ref",
+              "ref": "Bbcv6",
+              "name": "Blog",
+              "descendants": {
+                "v3guN": {
+                  "content": "BLOG"
+                }
+              }
+            },
+            "aBgCT": {
+              "id": "J9wCuJ",
+              "type": "ref",
+              "ref": "Bbcv6",
+              "name": "Series",
+              "descendants": {
+                "v3guN": {
+                  "content": "PROJECTS"
+                }
+              }
+            },
+            "t1NDp": {
+              "id": "W4mvjj",
+              "type": "ref",
+              "ref": "Bbcv6",
+              "name": "Newsletter",
+              "descendants": {
+                "v3guN": {
+                  "content": "NEWSLETTER"
+                }
+              }
+            },
+            "QSUrd": {
+              "id": "WDmze",
+              "type": "ref",
+              "ref": "y9pZm",
+              "name": "About",
+              "descendants": {
+                "OVFYG": {
+                  "content": "ABOUT"
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "Im2aM",
+          "name": "Main",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            "$space-section",
+            "$layout-margin"
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "L36nO",
+              "name": "Column",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": "$space-block",
+              "children": [
+                {
+                  "id": "FHNrB",
+                  "type": "ref",
+                  "ref": "g7uira",
+                  "name": "Intro",
+                  "width": 342,
+                  "descendants": {
+                    "z9frDW": {
+                      "content": "ABOUT",
+                      "enabled": false
+                    },
+                    "SqBTJ": {
+                      "content": "About"
+                    },
+                    "zSXuD": {
+                      "enabled": false
+                    }
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "ZL76I",
+                  "name": "Body",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": "$scale-0800",
+                  "children": [
+                    {
+                      "id": "b542C",
+                      "type": "ref",
+                      "ref": "yUEsX",
+                      "name": "Portrait",
+                      "width": 120,
+                      "height": 120
+                    },
+                    {
+                      "type": "frame",
+                      "id": "TyCVp",
+                      "name": "Bio",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": "$scale-0400",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "xinbc",
+                          "name": "Paragraph 1",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Placeholder bio — replace with the real one. Senior UX designer and visual thinker with a fine arts background (VCU, painting and printmaking), working across enterprise and consumer product design.",
+                          "lineHeight": "$type-p1-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-p1-size",
+                          "fontWeight": "normal",
+                          "letterSpacing": "$type-p1-letter-spacing"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Txy27",
+                          "name": "Paragraph 2",
+                          "fill": "$text-default",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Runs Uplifting Ink, a visual thinking company spanning products and events, organized around one idea: Dream Out Loud — making process visible and learning in public.",
+                          "lineHeight": "$type-p1-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-p1-size",
+                          "fontWeight": "normal",
+                          "letterSpacing": "$type-p1-letter-spacing"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "x2rXdN",
+          "type": "ref",
+          "ref": "E6haZ",
+          "name": "Footer",
+          "width": "fill_container",
+          "descendants": {
+            "549hf": {
+              "width": 100,
+              "height": 100
+            },
+            "BWRrf": {
+              "type": "frame",
+              "id": "LQUK5",
+              "name": "Nav",
+              "layout": "vertical",
+              "padding": [
+                "$scale-0300",
+                0,
+                0,
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "duhQc",
+                  "name": "Row",
+                  "gap": "$scale-0600",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "TWZsu",
+                      "type": "ref",
+                      "ref": "Bbcv6",
+                      "name": "Blog",
+                      "descendants": {
+                        "v3guN": {
+                          "content": "BLOG"
+                        }
+                      }
+                    },
+                    {
+                      "id": "YKqwb",
+                      "type": "ref",
+                      "ref": "Bbcv6",
+                      "name": "Series",
+                      "descendants": {
+                        "v3guN": {
+                          "content": "PROJECTS"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "eBZHP",
+                  "name": "Row",
+                  "gap": "$scale-0600",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "X40Yei",
+                      "type": "ref",
+                      "ref": "Bbcv6",
+                      "name": "Newsletter",
+                      "descendants": {
+                        "v3guN": {
+                          "content": "NEWSLETTER"
+                        }
+                      }
+                    },
+                    {
+                      "id": "jvtMW",
+                      "type": "ref",
+                      "ref": "Bbcv6",
+                      "name": "Shop",
+                      "descendants": {
+                        "v3guN": {
+                          "content": "SHOP"
+                        }
+                      }
+                    },
+                    {
+                      "id": "N0nJTc",
                       "type": "ref",
                       "ref": "Bbcv6",
                       "name": "About",

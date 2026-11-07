@@ -2,8 +2,7 @@
 # Browser tab title and search-engine description.
 title: About
 description: Paul Goode — senior UX designer, artist, and musician.
-eyebrow: About
-heading: Paul Goode
+heading: About
 ---
 
 Placeholder bio — replace with the real one. Senior UX designer and

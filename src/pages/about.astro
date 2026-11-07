@@ -1,23 +1,76 @@
 ---
+// About ("About" boards in design/site.pen): the title, then the bio beside a
+// portrait. The portrait goes above the bio on tablet and phones. The copy lives
+// in src/content/pages/about.md.
+import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
+import SectionHeader from '../components/SectionHeader.astro';
 import PageActions from '../components/PageActions.astro';
+import portrait from '../assets/profile-circle.png';
 import { getPage } from '../lib/pages';
 
-// Copy lives in src/content/pages/about.md.
 const { data, Content } = await getPage('about');
 ---
 
 <Layout title={data.title} description={data.description}>
-  <section class="wrap prose about">
-    {data.eyebrow && <p class="eyebrow">{data.eyebrow}</p>}
-    <h1>{data.heading}</h1>
-    <Content />
+  <div class="wrap about">
+    <SectionHeader title={data.heading} level="h1" />
+
+    <div class="about__body">
+      <div class="about__bio prose">
+        <Content />
+      </div>
+      <Image class="about__portrait" src={portrait} alt="Paul Goode" width={220} height={220} loading="eager" />
+    </div>
+
     <PageActions actions={data.actions} />
-  </section>
+  </div>
 </Layout>
 
 <style>
   .about {
-    padding-block: 64px 96px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-block);
+    padding-block: var(--space-section);
+  }
+
+  /* Bio on the left, portrait on the right. */
+  .about__body {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--scale-0800);
+  }
+
+  .about__bio {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .about__portrait {
+    flex: none;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+  }
+
+  /* Tablet and phones: the portrait goes above the bio, smaller. */
+  @media (max-width: 1023px) {
+    .about__body {
+      flex-direction: column;
+    }
+
+    .about__portrait {
+      order: -1;
+      width: 160px;
+      height: 160px;
+    }
+  }
+
+  @media (max-width: 599px) {
+    .about__portrait {
+      width: 120px;
+      height: 120px;
+    }
   }
 </style>
