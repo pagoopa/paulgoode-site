@@ -95,7 +95,7 @@ to match.
   lists: `scale-0100`, `neutral-050`, `font-size-012`. Pad new ones the same way.
 - **There is no light/dark mode.** The header and footer are dark because they
   use the Inverse tokens (`surface-inverse`, `text-inverse`, `border-inverse`,
-  `text-inverse-muted`) and the Inverse Link and Button components. Use those
+  `text-inverse-muted`) and the Inverse Nav links. Use those
   on any dark surface.
 
 ### Keeping the canvas and the repo in step
