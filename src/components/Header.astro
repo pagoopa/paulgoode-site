@@ -11,7 +11,7 @@ function isActive(href: string) {
 }
 ---
 
-<header class="site-header" data-menu-open="false">
+<header class="site-header" data-theme="dark" data-menu-open="false">
   <div class="wrap site-header__inner">
     <a href="/" class="site-header__logo" aria-label="Paul Goode — home">
       <Image src={logo} alt="Paul Goode" height={59} densities={[1, 2]} loading="eager" />
@@ -79,11 +79,13 @@ function isActive(href: string) {
 </script>
 
 <style>
-  /* Header / Left / Default */
+  /* Header / Left / Dark: data-theme="dark" switches the tokens, so the same styles give a dark
+     background and light text. The logo image is black, so it's inverted to white. */
   .site-header {
     position: relative;
     z-index: 10;
     background: var(--color-surface-default);
+    color: var(--color-text-default);
     border-bottom: 1px solid var(--color-border-default);
   }
 
@@ -103,6 +105,7 @@ function isActive(href: string) {
   .site-header__logo img {
     width: auto;
     height: 40px;
+    filter: invert(1);
   }
 
   .site-header__menu-button {
@@ -116,7 +119,7 @@ function isActive(href: string) {
     flex-wrap: wrap;
   }
 
-  /* Phones: Header / Left / Default (closed) and Menu Open. See the
+  /* Phones: Header / Left / Dark (closed) and Menu Open. See the
      "Mobile Nav — Open / Close Interaction" board in design/site.pen. */
   @media (max-width: 599px) {
     /* On phones the bar ends at the gutter, not the margin, next to the 44px menu button. */
