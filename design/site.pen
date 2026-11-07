@@ -17206,6 +17206,82 @@
                   }
                 },
                 {
+                  "type": "frame",
+                  "id": "G8TbO",
+                  "name": "Filters",
+                  "width": "fill_container",
+                  "gap": "$scale-0200",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "qJNVI",
+                      "type": "ref",
+                      "ref": "zQuWl",
+                      "name": "ALL",
+                      "descendants": {
+                        "rhfC6": {
+                          "content": "ALL"
+                        }
+                      }
+                    },
+                    {
+                      "id": "eUt81",
+                      "type": "ref",
+                      "ref": "drx5q",
+                      "name": "PERSONAL",
+                      "descendants": {
+                        "taLCI": {
+                          "content": "PERSONAL"
+                        }
+                      }
+                    },
+                    {
+                      "id": "U1gdxD",
+                      "type": "ref",
+                      "ref": "drx5q",
+                      "name": "CASE STUDY",
+                      "descendants": {
+                        "taLCI": {
+                          "content": "CASE STUDY"
+                        }
+                      }
+                    },
+                    {
+                      "id": "i7tCzj",
+                      "type": "ref",
+                      "ref": "drx5q",
+                      "name": "ART",
+                      "descendants": {
+                        "taLCI": {
+                          "content": "ART"
+                        }
+                      }
+                    },
+                    {
+                      "id": "aO0Uz",
+                      "type": "ref",
+                      "ref": "drx5q",
+                      "name": "MUSIC",
+                      "descendants": {
+                        "taLCI": {
+                          "content": "MUSIC"
+                        }
+                      }
+                    },
+                    {
+                      "id": "TlQDZ",
+                      "type": "ref",
+                      "ref": "drx5q",
+                      "name": "RESOURCE",
+                      "descendants": {
+                        "taLCI": {
+                          "content": "RESOURCE"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
                   "id": "Snuso",
                   "type": "ref",
                   "ref": "y6vFR6",
@@ -17750,6 +17826,82 @@
                   }
                 },
                 {
+                  "type": "frame",
+                  "id": "N5x6nu",
+                  "name": "Filters",
+                  "width": "fill_container",
+                  "gap": "$scale-0200",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "BBYbj",
+                      "type": "ref",
+                      "ref": "zQuWl",
+                      "name": "ALL",
+                      "descendants": {
+                        "rhfC6": {
+                          "content": "ALL"
+                        }
+                      }
+                    },
+                    {
+                      "id": "si7rf",
+                      "type": "ref",
+                      "ref": "drx5q",
+                      "name": "PERSONAL",
+                      "descendants": {
+                        "taLCI": {
+                          "content": "PERSONAL"
+                        }
+                      }
+                    },
+                    {
+                      "id": "CXCVL",
+                      "type": "ref",
+                      "ref": "drx5q",
+                      "name": "CASE STUDY",
+                      "descendants": {
+                        "taLCI": {
+                          "content": "CASE STUDY"
+                        }
+                      }
+                    },
+                    {
+                      "id": "fV0Oa",
+                      "type": "ref",
+                      "ref": "drx5q",
+                      "name": "ART",
+                      "descendants": {
+                        "taLCI": {
+                          "content": "ART"
+                        }
+                      }
+                    },
+                    {
+                      "id": "dymx1",
+                      "type": "ref",
+                      "ref": "drx5q",
+                      "name": "MUSIC",
+                      "descendants": {
+                        "taLCI": {
+                          "content": "MUSIC"
+                        }
+                      }
+                    },
+                    {
+                      "id": "U9j0j",
+                      "type": "ref",
+                      "ref": "drx5q",
+                      "name": "RESOURCE",
+                      "descendants": {
+                        "taLCI": {
+                          "content": "RESOURCE"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
                   "id": "OwCCo",
                   "type": "ref",
                   "ref": "y6vFR6",
@@ -17957,6 +18109,100 @@
                       "content": "Case studies and personal work: product design, original art, and the things in between."
                     }
                   }
+                },
+                {
+                  "type": "frame",
+                  "id": "g4yUd",
+                  "name": "Filters",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": "$scale-0200",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "N6ooB",
+                      "name": "Row 1",
+                      "gap": "$scale-0200",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "id": "TusiY",
+                          "type": "ref",
+                          "ref": "zQuWl",
+                          "name": "ALL",
+                          "descendants": {
+                            "rhfC6": {
+                              "content": "ALL"
+                            }
+                          }
+                        },
+                        {
+                          "id": "U54Spo",
+                          "type": "ref",
+                          "ref": "drx5q",
+                          "name": "PERSONAL",
+                          "descendants": {
+                            "taLCI": {
+                              "content": "PERSONAL"
+                            }
+                          }
+                        },
+                        {
+                          "id": "Z2ziZ",
+                          "type": "ref",
+                          "ref": "drx5q",
+                          "name": "CASE STUDY",
+                          "descendants": {
+                            "taLCI": {
+                              "content": "CASE STUDY"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "fSBkM",
+                      "name": "Row 2",
+                      "gap": "$scale-0200",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "id": "MWRxZ",
+                          "type": "ref",
+                          "ref": "drx5q",
+                          "name": "ART",
+                          "descendants": {
+                            "taLCI": {
+                              "content": "ART"
+                            }
+                          }
+                        },
+                        {
+                          "id": "CbKrS",
+                          "type": "ref",
+                          "ref": "drx5q",
+                          "name": "MUSIC",
+                          "descendants": {
+                            "taLCI": {
+                              "content": "MUSIC"
+                            }
+                          }
+                        },
+                        {
+                          "id": "k7FbVK",
+                          "type": "ref",
+                          "ref": "drx5q",
+                          "name": "RESOURCE",
+                          "descendants": {
+                            "taLCI": {
+                              "content": "RESOURCE"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
                 },
                 {
                   "id": "v38jP9",
@@ -29298,6 +29544,391 @@
               "fontFamily": "$font-body",
               "fontSize": 13,
               "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "BkwEp",
+      "x": -5624,
+      "y": -677,
+      "name": "Components / Filter",
+      "theme": {
+        "device": "lg"
+      },
+      "fill": "$surface-default",
+      "layout": "vertical",
+      "gap": 64,
+      "padding": 64,
+      "children": [
+        {
+          "type": "text",
+          "id": "KkDc8",
+          "name": "Board Title",
+          "fill": "$text-default",
+          "content": "Filter",
+          "fontFamily": "$font-body",
+          "fontSize": 40,
+          "fontWeight": "600"
+        },
+        {
+          "type": "frame",
+          "id": "qIbpt",
+          "name": "Filter",
+          "layout": "vertical",
+          "gap": 16,
+          "children": [
+            {
+              "type": "text",
+              "id": "dfNa5",
+              "name": "Section Label",
+              "fill": "$text-muted",
+              "content": "FILTER",
+              "lineHeight": "$type-eyebrow2-line-height",
+              "fontFamily": "$font-body",
+              "fontSize": "$type-eyebrow2-size",
+              "fontWeight": "500",
+              "letterSpacing": "$type-eyebrow2-letter-spacing"
+            },
+            {
+              "type": "frame",
+              "id": "k6vqDl",
+              "name": "State Grid",
+              "layout": "vertical",
+              "gap": 16,
+              "padding": [
+                16,
+                24
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "FJngN",
+                  "name": "State Header",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "p6a7nH",
+                      "name": "Spacer",
+                      "width": 120,
+                      "height": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "A9Gx6",
+                      "name": "Default Column",
+                      "width": 160,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "uLV4u",
+                          "name": "Default",
+                          "fill": "$text-muted",
+                          "content": "DEFAULT",
+                          "lineHeight": "$type-eyebrow2-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-eyebrow2-size",
+                          "fontWeight": "500",
+                          "letterSpacing": "$type-eyebrow2-letter-spacing"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ApGG7",
+                      "name": "Hover Column",
+                      "width": 160,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "avtUG",
+                          "name": "Hover",
+                          "fill": "$text-muted",
+                          "content": "HOVER",
+                          "lineHeight": "$type-eyebrow2-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-eyebrow2-size",
+                          "fontWeight": "500",
+                          "letterSpacing": "$type-eyebrow2-letter-spacing"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "T4FtLX",
+                      "name": "Selected Column",
+                      "width": 160,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "W1Zcf",
+                          "name": "Selected",
+                          "fill": "$text-muted",
+                          "content": "SELECTED",
+                          "lineHeight": "$type-eyebrow2-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-eyebrow2-size",
+                          "fontWeight": "500",
+                          "letterSpacing": "$type-eyebrow2-letter-spacing"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "nSASE",
+                  "name": "Chip Row",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "xpXh5",
+                      "name": "Row Label",
+                      "width": 120,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "wTjq1",
+                          "name": "Row Label Text",
+                          "fill": "$text-muted",
+                          "content": "CHIP",
+                          "lineHeight": "$type-eyebrow2-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-eyebrow2-size",
+                          "fontWeight": "500",
+                          "letterSpacing": "$type-eyebrow2-letter-spacing"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "uvjRf",
+                      "name": "Default Cell",
+                      "width": 160,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "drx5q",
+                          "name": "Filter / Default",
+                          "reusable": true,
+                          "cornerRadius": "$radius-full",
+                          "stroke": "$border-strong",
+                          "strokeWidth": 1,
+                          "strokeAlignment": "inner",
+                          "padding": [
+                            "$scale-0200",
+                            "$scale-0400"
+                          ],
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "taLCI",
+                              "name": "Label",
+                              "fill": "$text-default",
+                              "content": "FILTER",
+                              "lineHeight": "$type-eyebrow2-line-height",
+                              "fontFamily": "$font-body",
+                              "fontSize": "$type-eyebrow2-size",
+                              "fontWeight": "500",
+                              "letterSpacing": "$type-eyebrow2-letter-spacing"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "m94y4a",
+                      "name": "Hover Cell",
+                      "width": 160,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "ymTWq",
+                          "name": "Filter / Hover",
+                          "reusable": true,
+                          "fill": "$surface-hover",
+                          "cornerRadius": "$radius-full",
+                          "stroke": "$border-strong",
+                          "strokeWidth": 1,
+                          "strokeAlignment": "inner",
+                          "padding": [
+                            "$scale-0200",
+                            "$scale-0400"
+                          ],
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "plT96",
+                              "name": "Label",
+                              "fill": "$text-default",
+                              "content": "FILTER",
+                              "lineHeight": "$type-eyebrow2-line-height",
+                              "fontFamily": "$font-body",
+                              "fontSize": "$type-eyebrow2-size",
+                              "fontWeight": "500",
+                              "letterSpacing": "$type-eyebrow2-letter-spacing"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "rokNP",
+                      "name": "Selected Cell",
+                      "width": 160,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "zQuWl",
+                          "name": "Filter / Selected",
+                          "reusable": true,
+                          "fill": "$surface-inverse",
+                          "cornerRadius": "$radius-full",
+                          "stroke": "$surface-inverse",
+                          "strokeWidth": 1,
+                          "strokeAlignment": "inner",
+                          "padding": [
+                            "$scale-0200",
+                            "$scale-0400"
+                          ],
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "rhfC6",
+                              "name": "Label",
+                              "fill": "$text-inverse",
+                              "content": "FILTER",
+                              "lineHeight": "$type-eyebrow2-line-height",
+                              "fontFamily": "$font-body",
+                              "fontSize": "$type-eyebrow2-size",
+                              "fontWeight": "500",
+                              "letterSpacing": "$type-eyebrow2-letter-spacing"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "dJILk",
+                  "name": "Bar Row",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "l3cTQE",
+                      "name": "Row Label",
+                      "width": 120,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ugtFL",
+                          "name": "Row Label Text",
+                          "fill": "$text-muted",
+                          "content": "BAR",
+                          "lineHeight": "$type-eyebrow2-line-height",
+                          "fontFamily": "$font-body",
+                          "fontSize": "$type-eyebrow2-size",
+                          "fontWeight": "500",
+                          "letterSpacing": "$type-eyebrow2-letter-spacing"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "c5qiw",
+                      "name": "Filters",
+                      "gap": "$scale-0200",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "id": "SiAvR",
+                          "type": "ref",
+                          "ref": "zQuWl",
+                          "name": "ALL",
+                          "descendants": {
+                            "rhfC6": {
+                              "content": "ALL"
+                            }
+                          }
+                        },
+                        {
+                          "id": "vAdw8",
+                          "type": "ref",
+                          "ref": "drx5q",
+                          "name": "PERSONAL",
+                          "descendants": {
+                            "taLCI": {
+                              "content": "PERSONAL"
+                            }
+                          }
+                        },
+                        {
+                          "id": "t6v42",
+                          "type": "ref",
+                          "ref": "drx5q",
+                          "name": "CASE STUDY",
+                          "descendants": {
+                            "taLCI": {
+                              "content": "CASE STUDY"
+                            }
+                          }
+                        },
+                        {
+                          "id": "s5nq2W",
+                          "type": "ref",
+                          "ref": "drx5q",
+                          "name": "ART",
+                          "descendants": {
+                            "taLCI": {
+                              "content": "ART"
+                            }
+                          }
+                        },
+                        {
+                          "id": "U27iJ",
+                          "type": "ref",
+                          "ref": "drx5q",
+                          "name": "MUSIC",
+                          "descendants": {
+                            "taLCI": {
+                              "content": "MUSIC"
+                            }
+                          }
+                        },
+                        {
+                          "id": "bXerK",
+                          "type": "ref",
+                          "ref": "drx5q",
+                          "name": "RESOURCE",
+                          "descendants": {
+                            "taLCI": {
+                              "content": "RESOURCE"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
