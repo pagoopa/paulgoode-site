@@ -258,6 +258,9 @@ img {
 
 /* Button / Secondary / md */
 .btn {
+  /* The hard shadow is 3px (2px small, 4px large). Hover lifts the button and grows the
+     shadow; pressing sinks it onto the page. */
+  --btn-shadow: 3px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -271,14 +274,60 @@ img {
   text-transform: uppercase;
   font-weight: 500;
   font-family: var(--font-body);
-  background: transparent;
+  background: var(--color-surface-default);
   color: var(--color-text-default);
   cursor: pointer;
+  box-shadow: var(--btn-shadow) var(--btn-shadow) 0 var(--color-border-emphasis);
+  transition:
+    transform 120ms ease-out,
+    box-shadow 120ms ease-out;
 }
 
 .btn:hover {
   background: var(--color-surface-hover);
   color: var(--color-text-default);
+  transform: translate(-1px, -1px);
+  box-shadow: calc(var(--btn-shadow) + 2px) calc(var(--btn-shadow) + 2px) 0 var(--color-border-emphasis);
+}
+
+.btn:active {
+  background: var(--color-surface-pressed);
+  transform: translate(var(--btn-shadow), var(--btn-shadow));
+  box-shadow: 0 0 0 var(--color-border-emphasis);
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--color-border-focus);
+  outline-offset: 4px;
+}
+
+.btn:disabled,
+.btn[aria-disabled='true'] {
+  background: transparent;
+  border-color: var(--color-border-default);
+  color: var(--color-text-disabled);
+  box-shadow: none;
+  transform: none;
+  cursor: not-allowed;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn {
+    transition: none;
+  }
+
+  .btn:hover,
+  .btn:active {
+    transform: none;
+  }
+}
+
+/* Sticker look for the coloured tags (Tag / Blue, Yellow and Pink): a 1px outline drawn
+   inside, and a hard 2px shadow down and to the right, both in Border/Emphasis. */
+.tag-sticker {
+  box-shadow:
+    inset 0 0 0 1px var(--color-border-emphasis),
+    2px 2px 0 var(--color-border-emphasis);
 }
 
 /* Icons in a button are 20px line icons in the text colour. */
@@ -293,6 +342,7 @@ img {
 
 /* Button / Primary / sm: the smaller size, Body/eyebrow3. */
 .btn-sm {
+  --btn-shadow: 2px;
   padding: var(--scale-0200) var(--scale-0300);
   font-size: var(--type-eyebrow3-size);
   line-height: var(--type-eyebrow3-line-height);
@@ -301,6 +351,7 @@ img {
 
 /* Button / Primary / lg: the larger size, Body/eyebrow1. */
 .btn-lg {
+  --btn-shadow: 4px;
   padding: var(--scale-0400) var(--scale-0600);
   font-size: var(--type-eyebrow1-size);
   line-height: var(--type-eyebrow1-line-height);
@@ -311,13 +362,20 @@ img {
 .btn-solid {
   background: var(--color-accent-yellow);
   color: var(--color-text-on-accent);
-  border-color: var(--color-accent-yellow);
 }
 
 .btn-solid:hover {
   background: var(--color-accent-yellow-hover);
-  border-color: var(--color-accent-yellow-hover);
   color: var(--color-text-on-accent);
+}
+
+.btn-solid:active {
+  background: var(--color-accent-yellow-pressed);
+}
+
+.btn-solid:disabled,
+.btn-solid[aria-disabled='true'] {
+  background: var(--color-surface-disabled);
 }
 
 /* Link / Nav: Body/eyebrow2-md in the surrounding text colour, so it works on

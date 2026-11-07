@@ -1007,7 +1007,7 @@
           "type": "ref",
           "ref": "E6haZ",
           "x": 0,
-          "y": 6695
+          "y": 6677
         }
       ]
     },
@@ -3534,7 +3534,7 @@
           "type": "ref",
           "ref": "E6haZ",
           "x": 0,
-          "y": 2674
+          "y": 2669
         }
       ]
     },
@@ -5316,6 +5316,9 @@
                       "opacity": 0.5,
                       "height": 780,
                       "strokeWidth": 0,
+                      "theme": {
+                        "device": "sm"
+                      },
                       "descendants": {
                         "b5n7e": {
                           "enabled": false
@@ -5333,6 +5336,9 @@
                       "x": 0,
                       "y": 0,
                       "width": 390,
+                      "theme": {
+                        "device": "sm"
+                      },
                       "descendants": {
                         "BoqUc": {
                           "enabled": false
@@ -5711,6 +5717,9 @@
                       "opacity": 1,
                       "height": 768,
                       "strokeWidth": 0,
+                      "theme": {
+                        "device": "sm"
+                      },
                       "descendants": {
                         "b5n7e": {
                           "enabled": false
@@ -5728,6 +5737,9 @@
                       "x": 0,
                       "y": 0,
                       "width": 390,
+                      "theme": {
+                        "device": "sm"
+                      },
                       "descendants": {
                         "BoqUc": {
                           "enabled": false
@@ -6117,6 +6129,9 @@
                       "opacity": 0.5,
                       "height": 780,
                       "strokeWidth": 0,
+                      "theme": {
+                        "device": "sm"
+                      },
                       "descendants": {
                         "b5n7e": {
                           "enabled": false
@@ -6755,6 +6770,18 @@
                           "reusable": true,
                           "fill": "$accent-yellow",
                           "cornerRadius": "$radius-md",
+                          "stroke": "$border-emphasis",
+                          "strokeWidth": 1,
+                          "strokeAlignment": "inner",
+                          "effect": {
+                            "type": "shadow",
+                            "shadowType": "outer",
+                            "color": "$border-emphasis",
+                            "offset": {
+                              "x": 2,
+                              "y": 2
+                            }
+                          },
                           "gap": "$scale-0200",
                           "padding": [
                             "$scale-0200",
@@ -6813,6 +6840,18 @@
                           "reusable": true,
                           "fill": "$accent-yellow-hover",
                           "cornerRadius": "$radius-md",
+                          "stroke": "$border-emphasis",
+                          "strokeWidth": 1,
+                          "strokeAlignment": "inner",
+                          "effect": {
+                            "type": "shadow",
+                            "shadowType": "outer",
+                            "color": "$border-emphasis",
+                            "offset": {
+                              "x": 4,
+                              "y": 4
+                            }
+                          },
                           "gap": "$scale-0200",
                           "padding": [
                             "$scale-0200",
@@ -6871,6 +6910,9 @@
                           "reusable": true,
                           "fill": "$accent-yellow-pressed",
                           "cornerRadius": "$radius-md",
+                          "stroke": "$border-emphasis",
+                          "strokeWidth": 1,
+                          "strokeAlignment": "inner",
                           "gap": "$scale-0200",
                           "padding": [
                             "$scale-0200",
@@ -6929,6 +6971,9 @@
                           "reusable": true,
                           "fill": "$surface-disabled",
                           "cornerRadius": "$radius-md",
+                          "stroke": "$border-default",
+                          "strokeWidth": 1,
+                          "strokeAlignment": "inner",
                           "gap": "$scale-0200",
                           "padding": [
                             "$scale-0200",
@@ -7015,6 +7060,18 @@
                           "reusable": true,
                           "fill": "$accent-yellow",
                           "cornerRadius": "$radius-md",
+                          "stroke": "$border-emphasis",
+                          "strokeWidth": 1,
+                          "strokeAlignment": "inner",
+                          "effect": {
+                            "type": "shadow",
+                            "shadowType": "outer",
+                            "color": "$border-emphasis",
+                            "offset": {
+                              "x": 3,
+                              "y": 3
+                            }
+                          },
                           "gap": "$scale-0200",
                           "padding": [
                             "$scale-0300",
@@ -7073,6 +7130,18 @@
                           "reusable": true,
                           "fill": "$accent-yellow-hover",
                           "cornerRadius": "$radius-md",
+                          "stroke": "$border-emphasis",
+                          "strokeWidth": 1,
+                          "strokeAlignment": "inner",
+                          "effect": {
+                            "type": "shadow",
+                            "shadowType": "outer",
+                            "color": "$border-emphasis",
+                            "offset": {
+                              "x": 5,
+                              "y": 5
+                            }
+                          },
                           "gap": "$scale-0200",
                           "padding": [
                             "$scale-0300",
@@ -7131,6 +7200,9 @@
                           "reusable": true,
                           "fill": "$accent-yellow-pressed",
                           "cornerRadius": "$radius-md",
+                          "stroke": "$border-emphasis",
+                          "strokeWidth": 1,
+                          "strokeAlignment": "inner",
                           "gap": "$scale-0200",
                           "padding": [
                             "$scale-0300",
@@ -7189,6 +7261,9 @@
                           "reusable": true,
                           "fill": "$surface-disabled",
                           "cornerRadius": "$radius-md",
+                          "stroke": "$border-default",
+                          "strokeWidth": 1,
+                          "strokeAlignment": "inner",
                           "gap": "$scale-0200",
                           "padding": [
                             "$scale-0300",
@@ -7275,6 +7350,18 @@
                           "reusable": true,
                           "fill": "$accent-yellow",
                           "cornerRadius": "$radius-md",
+                          "stroke": "$border-emphasis",
+                          "strokeWidth": 1,
+                          "strokeAlignment": "inner",
+                          "effect": {
+                            "type": "shadow",
+                            "shadowType": "outer",
+                            "color": "$border-emphasis",
+                            "offset": {
+                              "x": 4,
+                              "y": 4
+                            }
+                          },
                           "gap": "$scale-0200",
                           "padding": [
                             "$scale-0400",
@@ -7333,6 +7420,18 @@
                           "reusable": true,
                           "fill": "$accent-yellow-hover",
                           "cornerRadius": "$radius-md",
+                          "stroke": "$border-emphasis",
+                          "strokeWidth": 1,
+                          "strokeAlignment": "inner",
+                          "effect": {
+                            "type": "shadow",
+                            "shadowType": "outer",
+                            "color": "$border-emphasis",
+                            "offset": {
+                              "x": 6,
+                              "y": 6
+                            }
+                          },
                           "gap": "$scale-0200",
                           "padding": [
                             "$scale-0400",
@@ -7391,6 +7490,9 @@
                           "reusable": true,
                           "fill": "$accent-yellow-pressed",
                           "cornerRadius": "$radius-md",
+                          "stroke": "$border-emphasis",
+                          "strokeWidth": 1,
+                          "strokeAlignment": "inner",
                           "gap": "$scale-0200",
                           "padding": [
                             "$scale-0400",
@@ -7449,6 +7551,9 @@
                           "reusable": true,
                           "fill": "$surface-disabled",
                           "cornerRadius": "$radius-md",
+                          "stroke": "$border-default",
+                          "strokeWidth": 1,
+                          "strokeAlignment": "inner",
                           "gap": "$scale-0200",
                           "padding": [
                             "$scale-0400",
@@ -7533,10 +7638,20 @@
                           "id": "fd36s",
                           "name": "Button / Secondary / sm / Default",
                           "reusable": true,
+                          "fill": "$surface-default",
                           "cornerRadius": "$radius-md",
                           "stroke": "$border-emphasis",
                           "strokeWidth": 1,
                           "strokeAlignment": "inner",
+                          "effect": {
+                            "type": "shadow",
+                            "shadowType": "outer",
+                            "color": "$border-emphasis",
+                            "offset": {
+                              "x": 2,
+                              "y": 2
+                            }
+                          },
                           "gap": "$scale-0200",
                           "padding": [
                             "$scale-0200",
@@ -7598,6 +7713,15 @@
                           "stroke": "$border-emphasis",
                           "strokeWidth": 1,
                           "strokeAlignment": "inner",
+                          "effect": {
+                            "type": "shadow",
+                            "shadowType": "outer",
+                            "color": "$border-emphasis",
+                            "offset": {
+                              "x": 4,
+                              "y": 4
+                            }
+                          },
                           "gap": "$scale-0200",
                           "padding": [
                             "$scale-0200",
@@ -7803,10 +7927,20 @@
                           "id": "ueX3i",
                           "name": "Button / Secondary / md / Default",
                           "reusable": true,
+                          "fill": "$surface-default",
                           "cornerRadius": "$radius-md",
                           "stroke": "$border-emphasis",
                           "strokeWidth": 1,
                           "strokeAlignment": "inner",
+                          "effect": {
+                            "type": "shadow",
+                            "shadowType": "outer",
+                            "color": "$border-emphasis",
+                            "offset": {
+                              "x": 3,
+                              "y": 3
+                            }
+                          },
                           "gap": "$scale-0200",
                           "padding": [
                             "$scale-0300",
@@ -7868,6 +8002,15 @@
                           "stroke": "$border-emphasis",
                           "strokeWidth": 1,
                           "strokeAlignment": "inner",
+                          "effect": {
+                            "type": "shadow",
+                            "shadowType": "outer",
+                            "color": "$border-emphasis",
+                            "offset": {
+                              "x": 5,
+                              "y": 5
+                            }
+                          },
                           "gap": "$scale-0200",
                           "padding": [
                             "$scale-0300",
@@ -8073,10 +8216,20 @@
                           "id": "RioyF",
                           "name": "Button / Secondary / lg / Default",
                           "reusable": true,
+                          "fill": "$surface-default",
                           "cornerRadius": "$radius-md",
                           "stroke": "$border-emphasis",
                           "strokeWidth": 1,
                           "strokeAlignment": "inner",
+                          "effect": {
+                            "type": "shadow",
+                            "shadowType": "outer",
+                            "color": "$border-emphasis",
+                            "offset": {
+                              "x": 4,
+                              "y": 4
+                            }
+                          },
                           "gap": "$scale-0200",
                           "padding": [
                             "$scale-0400",
@@ -8138,6 +8291,15 @@
                           "stroke": "$border-emphasis",
                           "strokeWidth": 1,
                           "strokeAlignment": "inner",
+                          "effect": {
+                            "type": "shadow",
+                            "shadowType": "outer",
+                            "color": "$border-emphasis",
+                            "offset": {
+                              "x": 6,
+                              "y": 6
+                            }
+                          },
                           "gap": "$scale-0200",
                           "padding": [
                             "$scale-0400",
@@ -16118,15 +16280,13 @@
                   "id": "w3QGm9",
                   "name": "Tag / Neutral",
                   "reusable": true,
-                  "fill": {
-                    "type": "image",
-                    "enabled": true,
-                    "url": "$tag-brush-neutral",
-                    "mode": "stretch"
-                  },
+                  "fill": "$surface-subtle",
+                  "cornerRadius": "$radius-full",
                   "padding": [
-                    "$scale-0200",
-                    "$scale-0500"
+                    6,
+                    "$scale-0300",
+                    4,
+                    "$scale-0300"
                   ],
                   "justifyContent": "center",
                   "alignItems": "center",
@@ -16155,7 +16315,9 @@
                   "strokeWidth": 1,
                   "strokeAlignment": "inner",
                   "padding": [
-                    "$scale-0100",
+                    6,
+                    "$scale-0300",
+                    4,
                     "$scale-0300"
                   ],
                   "alignItems": "center",
@@ -16179,15 +16341,25 @@
                   "id": "tGiW5",
                   "name": "Tag / Blue",
                   "reusable": true,
-                  "fill": {
-                    "type": "image",
-                    "enabled": true,
-                    "url": "images/tag-brush-blue.png",
-                    "mode": "stretch"
+                  "fill": "$accent-blue",
+                  "cornerRadius": "$radius-full",
+                  "stroke": "$border-emphasis",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "$border-emphasis",
+                    "offset": {
+                      "x": 2,
+                      "y": 2
+                    }
                   },
                   "padding": [
-                    "$scale-0200",
-                    "$scale-0500"
+                    6,
+                    "$scale-0300",
+                    4,
+                    "$scale-0300"
                   ],
                   "justifyContent": "center",
                   "alignItems": "center",
@@ -16211,15 +16383,25 @@
                   "id": "XZAZJ",
                   "name": "Tag / Yellow",
                   "reusable": true,
-                  "fill": {
-                    "type": "image",
-                    "enabled": true,
-                    "url": "images/tag-brush-yellow.png",
-                    "mode": "stretch"
+                  "fill": "$accent-yellow",
+                  "cornerRadius": "$radius-full",
+                  "stroke": "$border-emphasis",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "$border-emphasis",
+                    "offset": {
+                      "x": 2,
+                      "y": 2
+                    }
                   },
                   "padding": [
-                    "$scale-0200",
-                    "$scale-0500"
+                    6,
+                    "$scale-0300",
+                    4,
+                    "$scale-0300"
                   ],
                   "justifyContent": "center",
                   "alignItems": "center",
@@ -16243,15 +16425,25 @@
                   "id": "WZXX7",
                   "name": "Tag / Pink",
                   "reusable": true,
-                  "fill": {
-                    "type": "image",
-                    "enabled": true,
-                    "url": "images/tag-brush-pink.png",
-                    "mode": "stretch"
+                  "fill": "$accent-pink",
+                  "cornerRadius": "$radius-full",
+                  "stroke": "$border-emphasis",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "$border-emphasis",
+                    "offset": {
+                      "x": 2,
+                      "y": 2
+                    }
                   },
                   "padding": [
-                    "$scale-0200",
-                    "$scale-0500"
+                    6,
+                    "$scale-0300",
+                    4,
+                    "$scale-0300"
                   ],
                   "justifyContent": "center",
                   "alignItems": "center",
@@ -20331,7 +20523,7 @@
                   "id": "Gfryx",
                   "type": "ref",
                   "ref": "w3QGm9",
-                  "x": 78,
+                  "x": 62,
                   "y": 0,
                   "descendants": {
                     "UcYis": {
@@ -20343,7 +20535,7 @@
                   "id": "gWs6J",
                   "type": "ref",
                   "ref": "w3QGm9",
-                  "x": 156,
+                  "x": 124,
                   "y": 0,
                   "descendants": {
                     "UcYis": {
@@ -20355,7 +20547,7 @@
                   "id": "rA27P",
                   "type": "ref",
                   "ref": "w3QGm9",
-                  "x": 234,
+                  "x": 186,
                   "y": 0,
                   "descendants": {
                     "UcYis": {
@@ -22985,7 +23177,7 @@
           "type": "ref",
           "ref": "E6haZ",
           "x": 0,
-          "y": 4728
+          "y": 4716
         }
       ]
     },
@@ -25194,7 +25386,7 @@
           "type": "ref",
           "ref": "E6haZ",
           "x": 0,
-          "y": 4728
+          "y": 4716
         }
       ]
     },
@@ -26128,7 +26320,7 @@
           "type": "ref",
           "ref": "E6haZ",
           "x": 0,
-          "y": 690
+          "y": 692
         }
       ]
     },
@@ -33983,10 +34175,6 @@
           }
         }
       ]
-    },
-    "tag-brush-neutral": {
-      "type": "string",
-      "value": "./images/tag-brush-neutral-light.png"
     },
     "border-inverse": {
       "type": "color",
