@@ -4,6 +4,7 @@
 import Layout from '../../../layouts/Layout.astro';
 import Figure from '../../../components/Figure.astro';
 import Detail from '../../../components/Detail.astro';
+import BackLink from '../../../components/BackLink.astro';
 import { getEntry, render } from 'astro:content';
 import { getSeriesEntries } from '../../../lib/series';
 
@@ -30,6 +31,10 @@ const dateFmt = new Intl.DateTimeFormat('en-US', {
 ---
 
 <Layout title={title} description={description}>
+  <div class="wrap series__back">
+    <BackLink href={`/series/${series.id}`} label="Back to Series" />
+  </div>
+
   <article class="wrap series">
     <Figure src={image.src} alt={image.alt} caption={image.caption} loading="eager" />
 
@@ -56,6 +61,11 @@ const dateFmt = new Intl.DateTimeFormat('en-US', {
     align-items: center;
     gap: var(--scale-0400);
     padding-block: var(--layout-margin) var(--scale-1000);
+  }
+
+  /* Same place as Back to Projects on the series landing page: the page margin, a section space below the header. */
+  .series__back {
+    padding-top: var(--space-section);
   }
 
   /* Title and date, centered above the write-up */

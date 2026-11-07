@@ -204,9 +204,13 @@ A series is a numbered set of artwork, like "Junk Drawer Journey".
 ## Projects
 
 - **A project:** `src/content/projects/<project>.md` holds `title`, `summary`
-  (one or two sentences for the card), and `type` (personal, case-study, art,
-  music, or resource). The body is the project's own page at
+  (one or two sentences for the card), and `type` (series, personal,
+  case-study, art, music, or resource). The body is the project's own page at
   `/projects/<project>`. The file name is its URL.
+- **A series project:** set `type: series` and `series:` to the series file
+  name (see Series above). It has no page or body of its own: the card links
+  to the series landing page, `/series/<series>`. Its `title` and `summary`
+  are the card's copy. Other types must not set `series:`.
 - **Optional:** `featured: true` shows one project large above the grid (the
   first by `order` if several are marked), `order` (lowest first; the rest
   follow by title), `draft: true` (shows locally only), and `thumbnail`
