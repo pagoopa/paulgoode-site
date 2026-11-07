@@ -84,6 +84,8 @@ const families = new Set();
 for (const [name, { type, value }] of Object.entries(variables)) {
   // CSS has no use for booleans (e.g. "show nav"); the layout handles those.
   if (type === 'boolean') continue;
+  // String variables are font families (font-*). Others, like the tag brush image paths, aren't CSS tokens.
+  if (type === 'string' && !name.startsWith('font-')) continue;
   const base = cssValue(name, type, valueFor(value, BASE));
   const line = (v) => `  ${cssName(name, type)}: ${v};`;
   if (type === 'color') groups.color.push(line(base));
