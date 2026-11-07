@@ -72,11 +72,12 @@ const { options, label = 'Filter by type' } = Astro.props;
     display: none;
   }
 
-  /* Body/eyebrow2-md in a pill with a 1px strong border. */
+  /* Body/eyebrow2-md in a small rounded box with a 1px outline. Hover fills it; the selected
+     one is filled with a yellow to pink gradient. */
   .filter-chip {
     padding: var(--scale-0200) var(--scale-0400);
-    border: 1px solid var(--color-border-strong);
-    border-radius: var(--radius-full);
+    border: 1px solid var(--color-border-emphasis);
+    border-radius: 6px;
     background: transparent;
     color: var(--color-text-default);
     font: inherit;
@@ -98,8 +99,7 @@ const { options, label = 'Filter by type' } = Astro.props;
   }
 
   .filter-chip[aria-pressed='true'] {
-    background: var(--color-surface-inverse);
-    border-color: var(--color-surface-inverse);
-    color: var(--color-text-inverse);
+    background: linear-gradient(105deg, var(--color-accent-yellow), var(--color-accent-pink));
+    color: var(--color-text-on-accent);
   }
 </style>

@@ -6,13 +6,15 @@ interface Props {
   intro?: string;
   // The page's main heading uses h1; sections further down use h2.
   level?: 'h1' | 'h2';
+  // Section header / Left (default) or Section header / Center.
+  align?: 'left' | 'center';
 }
 
-const { eyebrow, title, intro, level = 'h2' } = Astro.props;
+const { eyebrow, title, intro, level = 'h2', align = 'left' } = Astro.props;
 const Heading = level;
 ---
 
-<header class="section-header">
+<header class:list={['section-header', { 'section-header--center': align === 'center' }]}>
   {
     eyebrow &&
       (Astro.slots.has('badge') ? (
@@ -57,5 +59,15 @@ const Heading = level;
     font-size: var(--type-p1-size);
     line-height: var(--type-p1-line-height);
     letter-spacing: var(--type-p1-letter-spacing);
+  }
+
+  .section-header--center {
+    align-items: center;
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  .section-header--center .section-header__eyebrow {
+    justify-content: center;
   }
 </style>

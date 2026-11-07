@@ -16280,8 +16280,20 @@
                   "id": "w3QGm9",
                   "name": "Tag / Neutral",
                   "reusable": true,
-                  "fill": "$surface-subtle",
+                  "fill": "$surface-inverse",
                   "cornerRadius": "$radius-full",
+                  "stroke": "$border-emphasis",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "$border-strong",
+                    "offset": {
+                      "x": 2,
+                      "y": 2
+                    }
+                  },
                   "padding": [
                     6,
                     "$scale-0300",
@@ -16295,7 +16307,7 @@
                       "type": "text",
                       "id": "UcYis",
                       "name": "Label",
-                      "fill": "$text-default",
+                      "fill": "$text-inverse",
                       "content": "TAG",
                       "lineHeight": "$type-eyebrow3-line-height",
                       "fontFamily": "$font-body",
@@ -16310,10 +16322,20 @@
                   "id": "geYri",
                   "name": "Tag / Outline",
                   "reusable": true,
+                  "fill": "$surface-default",
                   "cornerRadius": "$radius-full",
-                  "stroke": "$border-strong",
+                  "stroke": "$border-emphasis",
                   "strokeWidth": 1,
                   "strokeAlignment": "inner",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "$border-strong",
+                    "offset": {
+                      "x": 2,
+                      "y": 2
+                    }
+                  },
                   "padding": [
                     6,
                     "$scale-0300",
@@ -30052,8 +30074,9 @@
                           "id": "drx5q",
                           "name": "Filter / Default",
                           "reusable": true,
-                          "cornerRadius": "$radius-full",
-                          "stroke": "$border-strong",
+                          "fill": "#FFFFFF00",
+                          "cornerRadius": 6,
+                          "stroke": "$border-emphasis",
                           "strokeWidth": 1,
                           "strokeAlignment": "inner",
                           "padding": [
@@ -30092,9 +30115,9 @@
                           "name": "Filter / Hover",
                           "reusable": true,
                           "fill": "$surface-hover",
-                          "cornerRadius": "$radius-full",
-                          "stroke": "$border-strong",
-                          "strokeWidth": 1,
+                          "cornerRadius": 6,
+                          "stroke": "$border-emphasis",
+                          "strokeWidth": 2,
                           "strokeAlignment": "inner",
                           "padding": [
                             "$scale-0200",
@@ -30131,10 +30154,28 @@
                           "id": "zQuWl",
                           "name": "Filter / Selected",
                           "reusable": true,
-                          "fill": "$surface-inverse",
-                          "cornerRadius": "$radius-full",
-                          "stroke": "$surface-inverse",
-                          "strokeWidth": 1,
+                          "fill": {
+                            "type": "gradient",
+                            "gradientType": "linear",
+                            "enabled": true,
+                            "rotation": 255,
+                            "size": {
+                              "height": 1
+                            },
+                            "colors": [
+                              {
+                                "color": "$accent-yellow",
+                                "position": 0
+                              },
+                              {
+                                "color": "$blue-300",
+                                "position": 1
+                              }
+                            ]
+                          },
+                          "cornerRadius": 6,
+                          "stroke": "$border-emphasis",
+                          "strokeWidth": 2,
                           "strokeAlignment": "inner",
                           "padding": [
                             "$scale-0200",
@@ -30147,7 +30188,7 @@
                               "type": "text",
                               "id": "rhfC6",
                               "name": "Label",
-                              "fill": "$text-inverse",
+                              "fill": "$text-on-accent",
                               "content": "FILTER",
                               "lineHeight": "$type-eyebrow2-line-height",
                               "fontFamily": "$font-body",
@@ -32112,6 +32153,943 @@
               ]
             }
           ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "VFLOf",
+      "x": -3833,
+      "y": 10418,
+      "name": "404 — Desktop (1200)",
+      "theme": {
+        "device": "lg"
+      },
+      "clip": true,
+      "width": 1200,
+      "fill": "$surface-default",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "oRM21",
+          "type": "ref",
+          "ref": "kgrqX",
+          "name": "Header",
+          "width": "fill_container",
+          "descendants": {
+            "c7UL7": {
+              "id": "DNh8U",
+              "type": "ref",
+              "ref": "Bbcv6",
+              "name": "Blog",
+              "descendants": {
+                "v3guN": {
+                  "content": "BLOG"
+                }
+              }
+            },
+            "aBgCT": {
+              "id": "K7K1W",
+              "type": "ref",
+              "ref": "Bbcv6",
+              "name": "Series",
+              "descendants": {
+                "v3guN": {
+                  "content": "PROJECTS"
+                }
+              }
+            },
+            "t1NDp": {
+              "id": "EJDGk",
+              "type": "ref",
+              "ref": "Bbcv6",
+              "name": "Newsletter",
+              "descendants": {
+                "v3guN": {
+                  "content": "NEWSLETTER"
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "HtQ1g",
+          "name": "Main",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            "$space-section",
+            "$layout-margin"
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "KJroZ",
+              "name": "Column",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": "$scale-0600",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "gwQzT",
+                  "name": "404",
+                  "gap": "$scale-0300",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "JAVdV",
+                      "name": "Four",
+                      "fill": "$text-default",
+                      "content": "4",
+                      "lineHeight": "$type-display-1-line-height",
+                      "fontFamily": "$font-heading",
+                      "fontSize": "$type-display-1-size",
+                      "fontWeight": "700",
+                      "letterSpacing": "$type-display-1-letter-spacing"
+                    },
+                    {
+                      "id": "Qvm94",
+                      "type": "ref",
+                      "ref": "Ev83o",
+                      "name": "Doodle",
+                      "width": 96,
+                      "height": 96,
+                      "descendants": {
+                        "SztqI": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 96,
+                          "height": 96
+                        },
+                        "u1YDU": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 96,
+                          "height": 96
+                        },
+                        "XgXyj": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 96,
+                          "height": 96
+                        },
+                        "MNIEV": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 96,
+                          "height": 96
+                        },
+                        "vzs3z": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 96,
+                          "height": 96
+                        },
+                        "o3yiP": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 96,
+                          "height": 96
+                        },
+                        "KxDtY": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 96,
+                          "height": 96
+                        },
+                        "Eu4t8": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 96,
+                          "height": 96
+                        },
+                        "r0shYS": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 96,
+                          "height": 96
+                        },
+                        "R5f17": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 96,
+                          "height": 96
+                        },
+                        "S8UnGE": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 96,
+                          "height": 96
+                        },
+                        "hTnJ2": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 96,
+                          "height": 96
+                        },
+                        "qXDQd": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 96,
+                          "height": 96
+                        },
+                        "Iq30b": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 96,
+                          "height": 96
+                        },
+                        "BzFpX": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 96,
+                          "height": 96
+                        },
+                        "tcYxl": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 96,
+                          "height": 96
+                        }
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "id": "NRMqD",
+                      "name": "Four 2",
+                      "fill": "$text-default",
+                      "content": "4",
+                      "lineHeight": "$type-display-1-line-height",
+                      "fontFamily": "$font-heading",
+                      "fontSize": "$type-display-1-size",
+                      "fontWeight": "700",
+                      "letterSpacing": "$type-display-1-letter-spacing"
+                    }
+                  ]
+                },
+                {
+                  "id": "MWsWE",
+                  "type": "ref",
+                  "ref": "MpfhF",
+                  "name": "Intro",
+                  "width": 720,
+                  "descendants": {
+                    "iAR9S": {
+                      "enabled": false
+                    },
+                    "I0Rnwt": {
+                      "content": "That page wandered off."
+                    },
+                    "LiJ4N": {
+                      "content": "It may have moved, or maybe it never existed. Try one of these instead."
+                    }
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "C79EM",
+                  "name": "Actions",
+                  "gap": "$scale-0400",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "t8QPd",
+                      "type": "ref",
+                      "ref": "dOZxf",
+                      "name": "Back home",
+                      "descendants": {
+                        "wLOsh": {
+                          "content": "BACK HOME"
+                        }
+                      }
+                    },
+                    {
+                      "id": "oJaYR",
+                      "type": "ref",
+                      "ref": "RioyF",
+                      "name": "See projects",
+                      "descendants": {
+                        "fqUWJ": {
+                          "content": "SEE PROJECTS"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "x6VR0",
+          "type": "ref",
+          "ref": "E6haZ",
+          "name": "Footer",
+          "width": "fill_container"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "h5zhwZ",
+      "x": -2513,
+      "y": 10418,
+      "name": "404 — Tablet (810)",
+      "theme": {
+        "device": "md"
+      },
+      "clip": true,
+      "width": 810,
+      "fill": "$surface-default",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "ugPPN",
+          "type": "ref",
+          "ref": "kgrqX",
+          "name": "Header",
+          "width": "fill_container",
+          "descendants": {
+            "c7UL7": {
+              "id": "j9jQrA",
+              "type": "ref",
+              "ref": "Bbcv6",
+              "name": "Blog",
+              "descendants": {
+                "v3guN": {
+                  "content": "BLOG"
+                }
+              }
+            },
+            "aBgCT": {
+              "id": "xm5vX",
+              "type": "ref",
+              "ref": "Bbcv6",
+              "name": "Series",
+              "descendants": {
+                "v3guN": {
+                  "content": "PROJECTS"
+                }
+              }
+            },
+            "t1NDp": {
+              "id": "SqshH",
+              "type": "ref",
+              "ref": "Bbcv6",
+              "name": "Newsletter",
+              "descendants": {
+                "v3guN": {
+                  "content": "NEWSLETTER"
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "rKZGe",
+          "name": "Main",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            "$space-section",
+            "$layout-margin"
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "D5soNn",
+              "name": "Column",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": "$scale-0600",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "b1lbW",
+                  "name": "404",
+                  "gap": "$scale-0300",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "SiqON",
+                      "name": "Four",
+                      "fill": "$text-default",
+                      "content": "4",
+                      "lineHeight": "$type-display-1-line-height",
+                      "fontFamily": "$font-heading",
+                      "fontSize": "$type-display-1-size",
+                      "fontWeight": "700",
+                      "letterSpacing": "$type-display-1-letter-spacing"
+                    },
+                    {
+                      "id": "BvOlR",
+                      "type": "ref",
+                      "ref": "Ev83o",
+                      "name": "Doodle",
+                      "width": 72,
+                      "height": 72,
+                      "descendants": {
+                        "SztqI": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 72,
+                          "height": 72
+                        },
+                        "u1YDU": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 72,
+                          "height": 72
+                        },
+                        "XgXyj": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 72,
+                          "height": 72
+                        },
+                        "MNIEV": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 72,
+                          "height": 72
+                        },
+                        "vzs3z": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 72,
+                          "height": 72
+                        },
+                        "o3yiP": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 72,
+                          "height": 72
+                        },
+                        "KxDtY": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 72,
+                          "height": 72
+                        },
+                        "Eu4t8": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 72,
+                          "height": 72
+                        },
+                        "r0shYS": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 72,
+                          "height": 72
+                        },
+                        "R5f17": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 72,
+                          "height": 72
+                        },
+                        "S8UnGE": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 72,
+                          "height": 72
+                        },
+                        "hTnJ2": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 72,
+                          "height": 72
+                        },
+                        "qXDQd": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 72,
+                          "height": 72
+                        },
+                        "Iq30b": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 72,
+                          "height": 72
+                        },
+                        "BzFpX": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 72,
+                          "height": 72
+                        },
+                        "tcYxl": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 72,
+                          "height": 72
+                        }
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "id": "ywJdD",
+                      "name": "Four 2",
+                      "fill": "$text-default",
+                      "content": "4",
+                      "lineHeight": "$type-display-1-line-height",
+                      "fontFamily": "$font-heading",
+                      "fontSize": "$type-display-1-size",
+                      "fontWeight": "700",
+                      "letterSpacing": "$type-display-1-letter-spacing"
+                    }
+                  ]
+                },
+                {
+                  "id": "BHUoA",
+                  "type": "ref",
+                  "ref": "MpfhF",
+                  "name": "Intro",
+                  "width": 714,
+                  "descendants": {
+                    "iAR9S": {
+                      "enabled": false
+                    },
+                    "I0Rnwt": {
+                      "content": "That page wandered off."
+                    },
+                    "LiJ4N": {
+                      "content": "It may have moved, or maybe it never existed. Try one of these instead."
+                    }
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "whT7c",
+                  "name": "Actions",
+                  "gap": "$scale-0400",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "pWQUr",
+                      "type": "ref",
+                      "ref": "dOZxf",
+                      "name": "Back home",
+                      "descendants": {
+                        "wLOsh": {
+                          "content": "BACK HOME"
+                        }
+                      }
+                    },
+                    {
+                      "id": "JxuxP",
+                      "type": "ref",
+                      "ref": "RioyF",
+                      "name": "See projects",
+                      "descendants": {
+                        "fqUWJ": {
+                          "content": "SEE PROJECTS"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c6lrc",
+          "type": "ref",
+          "ref": "E6haZ",
+          "name": "Footer",
+          "width": "fill_container",
+          "descendants": {
+            "549hf": {
+              "width": 100,
+              "height": 100
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "Q6JxA",
+      "x": -1583,
+      "y": 10418,
+      "name": "404 — Mobile (390)",
+      "theme": {
+        "device": "sm"
+      },
+      "clip": true,
+      "width": 390,
+      "fill": "$surface-default",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "qJ6Wh",
+          "type": "ref",
+          "ref": "kgrqX",
+          "name": "Header",
+          "width": "fill_container",
+          "descendants": {
+            "c7UL7": {
+              "id": "me7bR",
+              "type": "ref",
+              "ref": "Bbcv6",
+              "name": "Blog",
+              "descendants": {
+                "v3guN": {
+                  "content": "BLOG"
+                }
+              }
+            },
+            "aBgCT": {
+              "id": "n6IGF9",
+              "type": "ref",
+              "ref": "Bbcv6",
+              "name": "Series",
+              "descendants": {
+                "v3guN": {
+                  "content": "PROJECTS"
+                }
+              }
+            },
+            "t1NDp": {
+              "id": "t44djw",
+              "type": "ref",
+              "ref": "Bbcv6",
+              "name": "Newsletter",
+              "descendants": {
+                "v3guN": {
+                  "content": "NEWSLETTER"
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "ZwdfE",
+          "name": "Main",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            "$space-section",
+            "$layout-margin"
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "ETsgY",
+              "name": "Column",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": "$scale-0600",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Rhih4",
+                  "name": "404",
+                  "gap": "$scale-0300",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Y6yyK",
+                      "name": "Four",
+                      "fill": "$text-default",
+                      "content": "4",
+                      "lineHeight": "$type-display-1-line-height",
+                      "fontFamily": "$font-heading",
+                      "fontSize": "$type-display-1-size",
+                      "fontWeight": "700",
+                      "letterSpacing": "$type-display-1-letter-spacing"
+                    },
+                    {
+                      "id": "XMd8U",
+                      "type": "ref",
+                      "ref": "Ev83o",
+                      "name": "Doodle",
+                      "width": 52,
+                      "height": 52,
+                      "descendants": {
+                        "SztqI": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 52,
+                          "height": 52
+                        },
+                        "u1YDU": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 52,
+                          "height": 52
+                        },
+                        "XgXyj": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 52,
+                          "height": 52
+                        },
+                        "MNIEV": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 52,
+                          "height": 52
+                        },
+                        "vzs3z": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 52,
+                          "height": 52
+                        },
+                        "o3yiP": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 52,
+                          "height": 52
+                        },
+                        "KxDtY": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 52,
+                          "height": 52
+                        },
+                        "Eu4t8": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 52,
+                          "height": 52
+                        },
+                        "r0shYS": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 52,
+                          "height": 52
+                        },
+                        "R5f17": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 52,
+                          "height": 52
+                        },
+                        "S8UnGE": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 52,
+                          "height": 52
+                        },
+                        "hTnJ2": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 52,
+                          "height": 52
+                        },
+                        "qXDQd": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 52,
+                          "height": 52
+                        },
+                        "Iq30b": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 52,
+                          "height": 52
+                        },
+                        "BzFpX": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 52,
+                          "height": 52
+                        },
+                        "tcYxl": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 52,
+                          "height": 52
+                        }
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "id": "p217u0",
+                      "name": "Four 2",
+                      "fill": "$text-default",
+                      "content": "4",
+                      "lineHeight": "$type-display-1-line-height",
+                      "fontFamily": "$font-heading",
+                      "fontSize": "$type-display-1-size",
+                      "fontWeight": "700",
+                      "letterSpacing": "$type-display-1-letter-spacing"
+                    }
+                  ]
+                },
+                {
+                  "id": "dBF96",
+                  "type": "ref",
+                  "ref": "MpfhF",
+                  "name": "Intro",
+                  "width": 342,
+                  "descendants": {
+                    "iAR9S": {
+                      "enabled": false
+                    },
+                    "I0Rnwt": {
+                      "content": "That page wandered off."
+                    },
+                    "LiJ4N": {
+                      "content": "It may have moved, or maybe it never existed. Try one of these instead."
+                    }
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "z6P4E",
+                  "name": "Actions",
+                  "layout": "vertical",
+                  "gap": "$scale-0400",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "GHhrt",
+                      "type": "ref",
+                      "ref": "dOZxf",
+                      "name": "Back home",
+                      "descendants": {
+                        "wLOsh": {
+                          "content": "BACK HOME"
+                        }
+                      }
+                    },
+                    {
+                      "id": "P8IQlj",
+                      "type": "ref",
+                      "ref": "RioyF",
+                      "name": "See projects",
+                      "descendants": {
+                        "fqUWJ": {
+                          "content": "SEE PROJECTS"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kZA7e",
+          "type": "ref",
+          "ref": "E6haZ",
+          "name": "Footer",
+          "width": "fill_container",
+          "descendants": {
+            "549hf": {
+              "width": 100,
+              "height": 100
+            },
+            "BWRrf": {
+              "type": "frame",
+              "id": "RLOqL",
+              "name": "Nav",
+              "layout": "vertical",
+              "padding": [
+                "$scale-0300",
+                0,
+                0,
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "MOT6z",
+                  "name": "Row",
+                  "gap": "$scale-0600",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "CmSEF",
+                      "type": "ref",
+                      "ref": "Bbcv6",
+                      "name": "Blog",
+                      "descendants": {
+                        "v3guN": {
+                          "content": "BLOG"
+                        }
+                      }
+                    },
+                    {
+                      "id": "Ww2je",
+                      "type": "ref",
+                      "ref": "Bbcv6",
+                      "name": "Series",
+                      "descendants": {
+                        "v3guN": {
+                          "content": "PROJECTS"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "sRso0",
+                  "name": "Row",
+                  "gap": "$scale-0600",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "VRc7g",
+                      "type": "ref",
+                      "ref": "Bbcv6",
+                      "name": "Newsletter",
+                      "descendants": {
+                        "v3guN": {
+                          "content": "NEWSLETTER"
+                        }
+                      }
+                    },
+                    {
+                      "id": "D8GcPn",
+                      "type": "ref",
+                      "ref": "Bbcv6",
+                      "name": "Shop",
+                      "descendants": {
+                        "v3guN": {
+                          "content": "SHOP"
+                        }
+                      }
+                    },
+                    {
+                      "id": "cBar1",
+                      "type": "ref",
+                      "ref": "Bbcv6",
+                      "name": "About",
+                      "descendants": {
+                        "v3guN": {
+                          "content": "ABOUT"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
         }
       ]
     }
