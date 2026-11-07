@@ -1,16 +1,20 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import Sidebar from '../components/Sidebar.astro';
 import '../styles/global.css';
 
 interface Props {
   title: string;
   description?: string;
+  // The blog sidebar: beside the content on desktop, below it on smaller screens.
+  sidebar?: boolean;
 }
 
 const {
   title,
   description = 'Paul Goode — UX designer, artist, and musician. Drawing is thinking.',
+  sidebar = false,
 } = Astro.props;
 ---
 
@@ -25,9 +29,39 @@ const {
   </head>
   <body>
     <Header />
-    <main>
-      <slot />
-    </main>
+    <div class:list={['page', { 'page--sidebar': sidebar }]}>
+      <main>
+        <slot />
+      </main>
+      {sidebar && <Sidebar />}
+    </div>
     <Footer />
   </body>
 </html>
+
+<style>
+  /* Content on the left, the sidebar (300 wide) on the right, as tall as the content. */
+  .page--sidebar {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 300px;
+  }
+
+  /* The sidebar runs down to the footer. */
+  .page--sidebar + :global(.site-footer) {
+    margin-top: 0;
+  }
+
+  /* The content area is 24 from each side, as on the boards. */
+  @media (min-width: 1024px) {
+    .page--sidebar :global(.wrap) {
+      padding-inline: var(--scale-0600);
+    }
+  }
+
+  /* Tablet and phones: the sidebar moves below the content. */
+  @media (max-width: 1023px) {
+    .page--sidebar {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+</style>

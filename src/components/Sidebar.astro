@@ -1,0 +1,163 @@
+---
+// Sidebar (Sidebar in design/site.pen): about, categories, the most-used tags and
+// the newsletter. Beside the content on desktop (300 wide, full height) and below
+// it on tablet and phones. Used on the home page and the pages that list posts.
+import { Image } from 'astro:assets';
+import portrait from '../assets/profile-circle.png';
+import TagChip from './TagChip.astro';
+import { categoryLabel, categoryUrl, getCategoryCounts, getTagCounts, tagUrl } from '../lib/taxonomy';
+
+const categories = (await getCategoryCounts()).filter(([, count]) => count > 0);
+// Six at most: the full list is on /tags.
+const tags = (await getTagCounts()).slice(0, 6);
+---
+
+<aside class="sidebar" aria-label="Sidebar">
+  <section class="sidebar__section" aria-labelledby="sidebar-about">
+    <h2 id="sidebar-about" class="sidebar__label">About</h2>
+    <div class="sidebar__person">
+      <Image class="sidebar__portrait" src={portrait} alt="" width={72} height={72} loading="lazy" />
+      <div>
+        <p class="sidebar__name">Paul Goode</p>
+        <p class="sidebar__role">Designer, artist and musician.</p>
+      </div>
+    </div>
+    <a class="link-standalone" href="/about">
+      <span class="link-label">More about me</span>
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+        <path d="M5 12h14m-6 6 6-6-6-6" />
+      </svg>
+    </a>
+  </section>
+
+  {
+    categories.length > 0 && (
+      <section class="sidebar__section" aria-labelledby="sidebar-categories">
+        <h2 id="sidebar-categories" class="sidebar__label">Categories</h2>
+        <ul class="sidebar__chips">
+          {categories.map(([category, count]) => (
+            <li>
+              <TagChip kind="category" href={categoryUrl(category)}>
+                {categoryLabel(category)} ({count})
+              </TagChip>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
+
+  {
+    tags.length > 0 && (
+      <section class="sidebar__section" aria-labelledby="sidebar-tags">
+        <h2 id="sidebar-tags" class="sidebar__label">Tags</h2>
+        <ul class="sidebar__chips">
+          {tags.map(([tag, count]) => (
+            <li>
+              <TagChip kind="tag" href={tagUrl(tag)}>
+                {tag} ({count})
+              </TagChip>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
+
+  <section class="sidebar__section" aria-labelledby="sidebar-newsletter">
+    <h2 id="sidebar-newsletter" class="sidebar__label">Newsletter</h2>
+    <p class="sidebar__text">New posts and drawings, by email.</p>
+    <div>
+      <a class="btn btn-solid btn-sm" href="/newsletter">Subscribe</a>
+    </div>
+  </section>
+</aside>
+
+<style>
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: var(--scale-0800);
+    padding: var(--scale-0600);
+    background: var(--color-surface-subtle);
+    border-left: 1px solid var(--color-border-default);
+  }
+
+  .sidebar__section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--scale-0400);
+  }
+
+  /* A line between sections. */
+  .sidebar__section + .sidebar__section {
+    padding-top: var(--scale-0800);
+    border-top: 1px solid var(--color-border-default);
+  }
+
+  /* Body/eyebrow2-md in the muted colour. */
+  .sidebar__label {
+    margin: 0;
+    color: var(--color-text-muted);
+    font-family: var(--font-body);
+    font-size: var(--type-eyebrow2-size);
+    line-height: var(--type-eyebrow2-line-height);
+    letter-spacing: var(--type-eyebrow2-letter-spacing);
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .sidebar__person {
+    display: flex;
+    align-items: center;
+    gap: var(--scale-0400);
+  }
+
+  .sidebar__portrait {
+    flex: none;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+  }
+
+  .sidebar__name {
+    margin: 0;
+    font-size: var(--type-p2-size);
+    line-height: var(--type-p2-line-height);
+    letter-spacing: var(--type-p2-letter-spacing);
+    font-weight: 600;
+  }
+
+  .sidebar__role {
+    margin: var(--scale-0100) 0 0;
+    color: var(--color-text-muted);
+    font-size: var(--type-p3-size);
+    line-height: var(--type-p3-line-height);
+    letter-spacing: var(--type-p3-letter-spacing);
+  }
+
+  .sidebar__text {
+    margin: 0;
+    font-size: var(--type-p2-size);
+    line-height: var(--type-p2-line-height);
+    letter-spacing: var(--type-p2-letter-spacing);
+  }
+
+  .sidebar__chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--scale-0300) var(--scale-0200);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  /* Tablet and phones: below the content, full width, a line on top. */
+  @media (max-width: 1023px) {
+    .sidebar {
+      padding: var(--scale-0800) var(--layout-margin);
+      border-left: 0;
+      border-top: 1px solid var(--color-border-default);
+    }
+  }
+</style>
