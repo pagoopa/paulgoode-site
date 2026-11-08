@@ -3,9 +3,11 @@
 // line, only the part above it is shown, followed by a "Read more" link.
 interface Props {
   href: string;
+  // The post's title, read out after "Read more" so the link makes sense on its own.
+  title?: string;
 }
 
-const { href } = Astro.props;
+const { href, title } = Astro.props;
 const html = await Astro.slots.render('default');
 const cut = html.search(/<!--\s*more\s*-->/);
 const excerpt = cut === -1 ? html : html.slice(0, cut);
@@ -15,7 +17,9 @@ const excerpt = cut === -1 ? html : html.slice(0, cut);
 {
   cut !== -1 && (
     <a class="link-standalone" href={href}>
-      <span class="link-label">Read more</span>
+      <span class="link-label">
+        Read more{title && <span class="sr-only">: {title}</span>}
+      </span>
       <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
         <path d="M5 12h14m-6 6l6-6-6-6" />
       </svg>

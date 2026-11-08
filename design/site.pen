@@ -33293,7 +33293,7 @@
     },
     "text-muted": {
       "type": "color",
-      "value": "$neutral-600"
+      "value": "$neutral-700"
     },
     "text-inverse": {
       "type": "color",
@@ -33301,7 +33301,7 @@
     },
     "text-link": {
       "type": "color",
-      "value": "$blue-600"
+      "value": "$blue-700"
     },
     "text-link-inverse": {
       "type": "color",
@@ -33329,7 +33329,7 @@
     },
     "border-focus": {
       "type": "color",
-      "value": "$blue-500"
+      "value": "$blue-600"
     },
     "accent-blue": {
       "type": "color",
@@ -35113,6 +35113,10 @@
     "font-mono": {
       "type": "string",
       "value": "$font-family-roboto-mono"
+    },
+    "blue-700": {
+      "type": "color",
+      "value": "#1f6f90"
     }
   },
   "fileToken": "cc6f0c7a-c4c0-417e-803e-62337ed664fe"

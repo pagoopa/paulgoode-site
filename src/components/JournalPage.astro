@@ -61,7 +61,7 @@ const entries = await Promise.all(
               </TagChip>
             </div>
             <div class="entry__body">
-              <PostExcerpt href={`/blog/${post.id}/`}>
+              <PostExcerpt href={`/blog/${post.id}/`} title={post.data.title}>
                 <Content />
               </PostExcerpt>
             </div>
