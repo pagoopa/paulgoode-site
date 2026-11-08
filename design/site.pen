@@ -1007,7 +1007,7 @@
           "type": "ref",
           "ref": "E6haZ",
           "x": 0,
-          "y": 6677
+          "y": 6723
         }
       ]
     },
@@ -3546,7 +3546,7 @@
           "type": "ref",
           "ref": "E6haZ",
           "x": 0,
-          "y": 2669
+          "y": 2715
         }
       ]
     },
@@ -10499,7 +10499,7 @@
                                   "padding": [
                                     0,
                                     0,
-                                    6,
+                                    10,
                                     0
                                   ],
                                   "children": [
@@ -10545,18 +10545,9 @@
                                   "id": "fbQv0",
                                   "name": "Label group",
                                   "stroke": "$text-inverse",
-                                  "strokeWidth": {
-                                    "bottom": 2
-                                  },
                                   "strokeAlignment": "inner",
                                   "layout": "vertical",
-                                  "gap": "$scale-0100",
-                                  "padding": [
-                                    0,
-                                    0,
-                                    6,
-                                    0
-                                  ],
+                                  "gap": 4,
                                   "children": [
                                     {
                                       "type": "text",
@@ -10569,6 +10560,25 @@
                                       "fontSize": "$type-eyebrow2-size",
                                       "fontWeight": "500",
                                       "letterSpacing": "$type-eyebrow2-letter-spacing"
+                                    },
+                                    {
+                                      "type": "path",
+                                      "id": "tkn4Y",
+                                      "name": "Squiggle",
+                                      "geometry": "M0 3q5-2 10 0 5 2 10 0 5-2 10 0 5 2 10 0 5-2 10 0 5 2 10 0 5-2 10 0 5 2 10 0 5-2 10 0",
+                                      "viewBox": [
+                                        0,
+                                        0,
+                                        90,
+                                        6
+                                      ],
+                                      "fill": "#00000000",
+                                      "width": "fill_container",
+                                      "height": 6,
+                                      "stroke": "$accent-blue",
+                                      "strokeWidth": 2,
+                                      "strokeLinejoin": "round",
+                                      "strokeLinecap": "round"
                                     }
                                   ]
                                 }
@@ -10600,18 +10610,9 @@
                                   "id": "dcssb",
                                   "name": "Label group",
                                   "stroke": "$text-inverse",
-                                  "strokeWidth": {
-                                    "bottom": 2
-                                  },
                                   "strokeAlignment": "inner",
                                   "layout": "vertical",
-                                  "gap": "$scale-0100",
-                                  "padding": [
-                                    0,
-                                    0,
-                                    6,
-                                    0
-                                  ],
+                                  "gap": 4,
                                   "children": [
                                     {
                                       "type": "text",
@@ -10624,6 +10625,25 @@
                                       "fontSize": "$type-eyebrow2-size",
                                       "fontWeight": "500",
                                       "letterSpacing": "$type-eyebrow2-letter-spacing"
+                                    },
+                                    {
+                                      "type": "path",
+                                      "id": "exSTP",
+                                      "name": "Squiggle",
+                                      "geometry": "M0 3q5-2 10 0 5 2 10 0 5-2 10 0 5 2 10 0 5-2 10 0 5 2 10 0 5-2 10 0 5 2 10 0 5-2 10 0",
+                                      "viewBox": [
+                                        0,
+                                        0,
+                                        90,
+                                        6
+                                      ],
+                                      "fill": "#00000000",
+                                      "width": "fill_container",
+                                      "height": 6,
+                                      "stroke": "$accent-pink",
+                                      "strokeWidth": 3,
+                                      "strokeLinejoin": "round",
+                                      "strokeLinecap": "round"
                                     }
                                   ]
                                 }
@@ -10759,6 +10779,7 @@
                   "name": "Header / Left",
                   "reusable": true,
                   "width": "fill_container",
+                  "height": 120,
                   "fill": "$surface-inverse",
                   "stroke": "$border-inverse",
                   "strokeWidth": {
@@ -10777,15 +10798,25 @@
                       "type": "ref",
                       "ref": "IsBQe",
                       "name": "Logo",
-                      "width": 63,
-                      "height": 40,
-                      "fill": "$text-inverse"
+                      "width": 82,
+                      "height": 52,
+                      "fill": "$text-inverse",
+                      "flipX": false,
+                      "flipY": false,
+                      "x": 48,
+                      "y": 34
                     },
                     {
                       "type": "frame",
                       "id": "oyw85",
                       "name": "Actions",
                       "gap": "$scale-0600",
+                      "padding": [
+                        12,
+                        0,
+                        0,
+                        0
+                      ],
                       "alignItems": "center",
                       "children": [
                         {
@@ -11062,6 +11093,7 @@
                       "id": "b5n7e",
                       "name": "Bar",
                       "width": "fill_container",
+                      "height": 120,
                       "padding": [
                         "$scale-0400",
                         "$layout-gutter",
@@ -11076,8 +11108,8 @@
                           "type": "ref",
                           "ref": "IsBQe",
                           "name": "Logo",
-                          "width": 63,
-                          "height": 40,
+                          "width": 82,
+                          "height": 52,
                           "fill": "$text-inverse"
                         },
                         {
@@ -11085,6 +11117,12 @@
                           "id": "kl12j",
                           "name": "Actions",
                           "gap": "$scale-0600",
+                          "padding": [
+                            12,
+                            0,
+                            0,
+                            0
+                          ],
                           "alignItems": "center",
                           "children": [
                             {
@@ -16135,17 +16173,6 @@
                   "content": "BLOG"
                 }
               }
-            },
-            "aBgCT": {
-              "id": "ZxPU4",
-              "type": "ref",
-              "ref": "y9pZm",
-              "name": "Series",
-              "descendants": {
-                "OVFYG": {
-                  "content": "PROJECTS"
-                }
-              }
             }
           }
         },
@@ -17222,17 +17249,6 @@
                   "content": "BLOG"
                 }
               }
-            },
-            "aBgCT": {
-              "id": "pZrfF",
-              "type": "ref",
-              "ref": "y9pZm",
-              "name": "Series",
-              "descendants": {
-                "OVFYG": {
-                  "content": "PROJECTS"
-                }
-              }
             }
           }
         },
@@ -17550,7 +17566,7 @@
           "name": "Footer",
           "width": "fill_container",
           "x": 0,
-          "y": 1796
+          "y": 1842
         }
       ]
     },
@@ -17704,17 +17720,6 @@
               "descendants": {
                 "v3guN": {
                   "content": "BLOG"
-                }
-              }
-            },
-            "aBgCT": {
-              "id": "iM0vz",
-              "type": "ref",
-              "ref": "y9pZm",
-              "name": "Series",
-              "descendants": {
-                "OVFYG": {
-                  "content": "PROJECTS"
                 }
               }
             }
@@ -18008,7 +18013,7 @@
           "name": "Footer",
           "width": "fill_container",
           "x": 0,
-          "y": 2543,
+          "y": 2589,
           "descendants": {
             "549hf": {
               "width": 100,
@@ -18047,17 +18052,6 @@
               "descendants": {
                 "v3guN": {
                   "content": "BLOG"
-                }
-              }
-            },
-            "aBgCT": {
-              "id": "wfEzR",
-              "type": "ref",
-              "ref": "y9pZm",
-              "name": "Series",
-              "descendants": {
-                "OVFYG": {
-                  "content": "PROJECTS"
                 }
               }
             }
@@ -18360,7 +18354,7 @@
           "name": "Footer",
           "width": "fill_container",
           "x": 0,
-          "y": 2330,
+          "y": 2374,
           "descendants": {
             "549hf": {
               "width": 100,
@@ -18489,17 +18483,6 @@
               "descendants": {
                 "v3guN": {
                   "content": "BLOG"
-                }
-              }
-            },
-            "aBgCT": {
-              "id": "N4xqhP",
-              "type": "ref",
-              "ref": "y9pZm",
-              "name": "Series",
-              "descendants": {
-                "OVFYG": {
-                  "content": "PROJECTS"
                 }
               }
             }
@@ -18779,17 +18762,6 @@
               "descendants": {
                 "v3guN": {
                   "content": "BLOG"
-                }
-              }
-            },
-            "aBgCT": {
-              "id": "L0x16",
-              "type": "ref",
-              "ref": "y9pZm",
-              "name": "Series",
-              "descendants": {
-                "OVFYG": {
-                  "content": "PROJECTS"
                 }
               }
             }
@@ -21917,7 +21889,7 @@
           "type": "ref",
           "ref": "E6haZ",
           "x": 0,
-          "y": 4716
+          "y": 4762
         }
       ]
     },
@@ -24126,7 +24098,7 @@
           "type": "ref",
           "ref": "E6haZ",
           "x": 0,
-          "y": 4716
+          "y": 4762
         }
       ]
     },
@@ -25060,7 +25032,7 @@
           "type": "ref",
           "ref": "E6haZ",
           "x": 0,
-          "y": 692
+          "y": 738
         }
       ]
     },
@@ -29082,17 +29054,6 @@
                   "content": "PROJECTS"
                 }
               }
-            },
-            "t1NDp": {
-              "id": "uKTFH",
-              "type": "ref",
-              "ref": "y9pZm",
-              "name": "Newsletter",
-              "descendants": {
-                "OVFYG": {
-                  "content": "NEWSLETTER"
-                }
-              }
             }
           }
         },
@@ -29303,17 +29264,6 @@
               "descendants": {
                 "v3guN": {
                   "content": "PROJECTS"
-                }
-              }
-            },
-            "t1NDp": {
-              "id": "R27x6s",
-              "type": "ref",
-              "ref": "y9pZm",
-              "name": "Newsletter",
-              "descendants": {
-                "OVFYG": {
-                  "content": "NEWSLETTER"
                 }
               }
             }
@@ -29532,17 +29482,6 @@
               "descendants": {
                 "v3guN": {
                   "content": "PROJECTS"
-                }
-              }
-            },
-            "t1NDp": {
-              "id": "XSAC7",
-              "type": "ref",
-              "ref": "y9pZm",
-              "name": "Newsletter",
-              "descendants": {
-                "OVFYG": {
-                  "content": "NEWSLETTER"
                 }
               }
             }
@@ -29864,17 +29803,6 @@
                   "content": "NEWSLETTER"
                 }
               }
-            },
-            "QSUrd": {
-              "id": "Kvqtv",
-              "type": "ref",
-              "ref": "y9pZm",
-              "name": "About",
-              "descendants": {
-                "OVFYG": {
-                  "content": "ABOUT"
-                }
-              }
             }
           }
         },
@@ -30059,17 +29987,6 @@
               "descendants": {
                 "v3guN": {
                   "content": "NEWSLETTER"
-                }
-              }
-            },
-            "QSUrd": {
-              "id": "G0bfz",
-              "type": "ref",
-              "ref": "y9pZm",
-              "name": "About",
-              "descendants": {
-                "OVFYG": {
-                  "content": "ABOUT"
                 }
               }
             }
@@ -30262,17 +30179,6 @@
               "descendants": {
                 "v3guN": {
                   "content": "NEWSLETTER"
-                }
-              }
-            },
-            "QSUrd": {
-              "id": "WDmze",
-              "type": "ref",
-              "ref": "y9pZm",
-              "name": "About",
-              "descendants": {
-                "OVFYG": {
-                  "content": "ABOUT"
                 }
               }
             }
@@ -33341,6 +33247,913 @@
               "height": 240
             }
           }
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "nnd8r",
+      "x": 2196,
+      "y": -2636,
+      "name": "Concepts / Header links",
+      "theme": {
+        "device": "lg"
+      },
+      "width": 1000,
+      "fill": "$surface-inverse",
+      "layout": "vertical",
+      "gap": 48,
+      "padding": 64,
+      "children": [
+        {
+          "type": "text",
+          "id": "C48bs",
+          "name": "Title",
+          "fill": "$text-inverse",
+          "content": "Header link concepts",
+          "fontFamily": "$font-body",
+          "fontSize": 40,
+          "fontWeight": "600"
+        },
+        {
+          "type": "frame",
+          "id": "ijKV3",
+          "name": "State header",
+          "gap": 32,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "u81h5",
+              "name": "Spacer",
+              "width": 280,
+              "height": 1
+            },
+            {
+              "type": "frame",
+              "id": "z1Lp96",
+              "name": "DEFAULT",
+              "width": 170,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "c2Mzg",
+                  "name": "Label",
+                  "fill": "$text-inverse-muted",
+                  "content": "DEFAULT",
+                  "lineHeight": "$type-eyebrow2-line-height",
+                  "fontFamily": "$font-body",
+                  "fontSize": "$type-eyebrow2-size",
+                  "fontWeight": "500",
+                  "letterSpacing": "$type-eyebrow2-letter-spacing"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "q2vPR0",
+              "name": "HOVER",
+              "width": 170,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "hpxFm",
+                  "name": "Label",
+                  "fill": "$text-inverse-muted",
+                  "content": "HOVER",
+                  "lineHeight": "$type-eyebrow2-line-height",
+                  "fontFamily": "$font-body",
+                  "fontSize": "$type-eyebrow2-size",
+                  "fontWeight": "500",
+                  "letterSpacing": "$type-eyebrow2-letter-spacing"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "wpCY9",
+              "name": "CURRENT",
+              "width": 170,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ib1hS",
+                  "name": "Label",
+                  "fill": "$text-inverse-muted",
+                  "content": "CURRENT",
+                  "lineHeight": "$type-eyebrow2-line-height",
+                  "fontFamily": "$font-body",
+                  "fontSize": "$type-eyebrow2-size",
+                  "fontWeight": "500",
+                  "letterSpacing": "$type-eyebrow2-letter-spacing"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "j7B61",
+          "name": "A · Colour line",
+          "gap": 32,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "v9se79",
+              "name": "Info",
+              "width": 280,
+              "layout": "vertical",
+              "gap": 6,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "b5Pyj",
+                  "name": "Name",
+                  "fill": "$text-inverse",
+                  "content": "A · Colour line",
+                  "fontFamily": "$font-body",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "i19xuj",
+                  "name": "Text",
+                  "fill": "$text-inverse-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Hover: a blue line draws in from the left (180ms). Current: a thicker yellow line stays.",
+                  "lineHeight": "$type-p3-line-height",
+                  "fontFamily": "$font-body",
+                  "fontSize": "$type-p3-size",
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "WPsxd",
+              "name": "Default",
+              "width": 170,
+              "height": 52,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "F4XFd",
+                  "name": "Link",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "g4qCt",
+                      "name": "Label",
+                      "fill": "$text-inverse",
+                      "content": "PROJECTS",
+                      "lineHeight": "$type-eyebrow2-line-height",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$type-eyebrow2-size",
+                      "fontWeight": "500",
+                      "letterSpacing": "$type-eyebrow2-letter-spacing"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "GMsW0",
+              "name": "Hover",
+              "width": 170,
+              "height": 52,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ydNwE",
+                  "name": "Link",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "G8U5k",
+                      "name": "Label",
+                      "fill": "$text-inverse",
+                      "content": "PROJECTS",
+                      "lineHeight": "$type-eyebrow2-line-height",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$type-eyebrow2-size",
+                      "fontWeight": "500",
+                      "letterSpacing": "$type-eyebrow2-letter-spacing"
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 2,
+                      "id": "r2zecw",
+                      "name": "Line",
+                      "fill": "$accent-blue",
+                      "width": "fill_container",
+                      "height": 2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "HwRIp",
+              "name": "Current",
+              "width": 170,
+              "height": 52,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "CiWdv",
+                  "name": "Link",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "EffYu",
+                      "name": "Label",
+                      "fill": "$text-inverse",
+                      "content": "PROJECTS",
+                      "lineHeight": "$type-eyebrow2-line-height",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$type-eyebrow2-size",
+                      "fontWeight": "500",
+                      "letterSpacing": "$type-eyebrow2-letter-spacing"
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 2,
+                      "id": "VzNBL",
+                      "name": "Line",
+                      "fill": "$accent-yellow",
+                      "width": "fill_container",
+                      "height": 3
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Ypf80",
+          "name": "B · Highlighter",
+          "gap": 32,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "YCAWb",
+              "name": "Info",
+              "width": 280,
+              "layout": "vertical",
+              "gap": 6,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "M5v3q",
+                  "name": "Name",
+                  "fill": "$text-inverse",
+                  "content": "B · Highlighter",
+                  "fontFamily": "$font-body",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "dh7g2",
+                  "name": "Text",
+                  "fill": "$text-inverse-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Hover: a blue marker rises from the bottom edge. Current: a full yellow marker with dark text.",
+                  "lineHeight": "$type-p3-line-height",
+                  "fontFamily": "$font-body",
+                  "fontSize": "$type-p3-size",
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "nHhoN",
+              "name": "Default",
+              "width": 170,
+              "height": 52,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "wPRHN",
+                  "name": "Link",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": [
+                    2,
+                    8
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "MRxN7",
+                      "name": "Label",
+                      "fill": "$text-inverse",
+                      "content": "PROJECTS",
+                      "lineHeight": "$type-eyebrow2-line-height",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$type-eyebrow2-size",
+                      "fontWeight": "500",
+                      "letterSpacing": "$type-eyebrow2-letter-spacing"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "NCQT1",
+              "name": "Hover",
+              "width": 170,
+              "height": 52,
+              "fill": "#00000000",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "owWx8",
+                  "name": "Link",
+                  "width": 90,
+                  "height": 26,
+                  "fill": "#00000000",
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 2,
+                      "id": "wLH8R",
+                      "x": 3,
+                      "y": 14,
+                      "name": "Marker",
+                      "fill": "$accent-blue",
+                      "width": 84,
+                      "height": 9
+                    },
+                    {
+                      "type": "text",
+                      "id": "ozxBF",
+                      "x": 8,
+                      "y": 3,
+                      "name": "Label",
+                      "fill": "$text-inverse",
+                      "content": "PROJECTS",
+                      "lineHeight": "$type-eyebrow2-line-height",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$type-eyebrow2-size",
+                      "fontWeight": "500",
+                      "letterSpacing": "$type-eyebrow2-letter-spacing"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "eJ5kp",
+              "name": "Current",
+              "width": 170,
+              "height": 52,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ROB7p",
+                  "name": "Link",
+                  "fill": "$accent-yellow",
+                  "cornerRadius": [
+                    3,
+                    10,
+                    3,
+                    10
+                  ],
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": [
+                    2,
+                    8
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "xMhzR",
+                      "name": "Label",
+                      "fill": "$text-on-accent",
+                      "content": "PROJECTS",
+                      "lineHeight": "$type-eyebrow2-line-height",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$type-eyebrow2-size",
+                      "fontWeight": "500",
+                      "letterSpacing": "$type-eyebrow2-letter-spacing"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "F1jRlN",
+          "name": "C · Hand-drawn squiggle",
+          "gap": 32,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "HTj1C",
+              "name": "Info",
+              "width": 280,
+              "layout": "vertical",
+              "gap": 6,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "XJHKg",
+                  "name": "Name",
+                  "fill": "$text-inverse",
+                  "content": "C · Hand-drawn squiggle",
+                  "fontFamily": "$font-body",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "Ct4es",
+                  "name": "Text",
+                  "fill": "$text-inverse-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Hover: a blue squiggle draws itself under the word. Current: a pink squiggle stays.",
+                  "lineHeight": "$type-p3-line-height",
+                  "fontFamily": "$font-body",
+                  "fontSize": "$type-p3-size",
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "dxwjc",
+              "name": "Default",
+              "width": 170,
+              "height": 52,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "AH443",
+                  "name": "Link",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "y7jAIu",
+                      "name": "Label",
+                      "fill": "$text-inverse",
+                      "content": "PROJECTS",
+                      "lineHeight": "$type-eyebrow2-line-height",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$type-eyebrow2-size",
+                      "fontWeight": "500",
+                      "letterSpacing": "$type-eyebrow2-letter-spacing"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "YtdEQ",
+              "name": "Hover",
+              "width": 170,
+              "height": 52,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "kAhpj",
+                  "name": "Link",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "gLfWb",
+                      "name": "Label",
+                      "fill": "$text-inverse",
+                      "content": "PROJECTS",
+                      "lineHeight": "$type-eyebrow2-line-height",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$type-eyebrow2-size",
+                      "fontWeight": "500",
+                      "letterSpacing": "$type-eyebrow2-letter-spacing"
+                    },
+                    {
+                      "type": "path",
+                      "id": "yGZE4",
+                      "name": "Squiggle",
+                      "geometry": "M0 3q5-3 10 0 5 3 10 0 5-3 10 0 5 3 10 0 5-3 10 0 5 3 10 0 5-3 10 0 5 3 10 0 5-3 10 0",
+                      "viewBox": [
+                        0,
+                        0,
+                        90,
+                        6
+                      ],
+                      "fill": "#00000000",
+                      "width": 88,
+                      "height": 6,
+                      "stroke": "$accent-blue",
+                      "strokeWidth": 2,
+                      "strokeLinecap": "round"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "soo38",
+              "name": "Current",
+              "width": 170,
+              "height": 52,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "JtktR",
+                  "name": "Link",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "i8mIO",
+                      "name": "Label",
+                      "fill": "$text-inverse",
+                      "content": "PROJECTS",
+                      "lineHeight": "$type-eyebrow2-line-height",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$type-eyebrow2-size",
+                      "fontWeight": "500",
+                      "letterSpacing": "$type-eyebrow2-letter-spacing"
+                    },
+                    {
+                      "type": "path",
+                      "id": "g7l6D",
+                      "name": "Squiggle",
+                      "geometry": "M0 3q5-3 10 0 5 3 10 0 5-3 10 0 5 3 10 0 5-3 10 0 5 3 10 0 5-3 10 0 5 3 10 0 5-3 10 0",
+                      "viewBox": [
+                        0,
+                        0,
+                        90,
+                        6
+                      ],
+                      "fill": "#00000000",
+                      "width": 88,
+                      "height": 6,
+                      "stroke": "$accent-pink",
+                      "strokeWidth": 3,
+                      "strokeLinecap": "round"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "F5uns",
+          "name": "D · Sticker pill",
+          "gap": 32,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "gtj9T",
+              "name": "Info",
+              "width": 280,
+              "layout": "vertical",
+              "gap": 6,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "jYLzp",
+                  "name": "Name",
+                  "fill": "$text-inverse",
+                  "content": "D · Sticker pill",
+                  "fontFamily": "$font-body",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "V6udR",
+                  "name": "Text",
+                  "fill": "$text-inverse-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Hover: an outline pill fades in. Current: a yellow pill with a thin outline, like the buttons.",
+                  "lineHeight": "$type-p3-line-height",
+                  "fontFamily": "$font-body",
+                  "fontSize": "$type-p3-size",
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "WpIRp",
+              "name": "Default",
+              "width": 170,
+              "height": 52,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "x6mD3v",
+                  "name": "Link",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": [
+                    6,
+                    14
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Mi96e",
+                      "name": "Label",
+                      "fill": "$text-inverse",
+                      "content": "PROJECTS",
+                      "lineHeight": "$type-eyebrow2-line-height",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$type-eyebrow2-size",
+                      "fontWeight": "500",
+                      "letterSpacing": "$type-eyebrow2-letter-spacing"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "rvpCo",
+              "name": "Hover",
+              "width": 170,
+              "height": 52,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "rVhHE",
+                  "name": "Link",
+                  "cornerRadius": 999,
+                  "stroke": "$text-inverse",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": [
+                    6,
+                    14
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "svE05",
+                      "name": "Label",
+                      "fill": "$text-inverse",
+                      "content": "PROJECTS",
+                      "lineHeight": "$type-eyebrow2-line-height",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$type-eyebrow2-size",
+                      "fontWeight": "500",
+                      "letterSpacing": "$type-eyebrow2-letter-spacing"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "VBwaz",
+              "name": "Current",
+              "width": 170,
+              "height": 52,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "qEWu6",
+                  "name": "Link",
+                  "fill": "$accent-yellow",
+                  "cornerRadius": 999,
+                  "stroke": "$border-emphasis",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": [
+                    6,
+                    14
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "qHq8e",
+                      "name": "Label",
+                      "fill": "$text-on-accent",
+                      "content": "PROJECTS",
+                      "lineHeight": "$type-eyebrow2-line-height",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$type-eyebrow2-size",
+                      "fontWeight": "500",
+                      "letterSpacing": "$type-eyebrow2-letter-spacing"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "lmI9r",
+          "name": "E · Colour roll",
+          "gap": 32,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "n4MS7",
+              "name": "Info",
+              "width": 280,
+              "layout": "vertical",
+              "gap": 6,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "pD10D",
+                  "name": "Name",
+                  "fill": "$text-inverse",
+                  "content": "E · Colour roll",
+                  "fontFamily": "$font-body",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "besMD",
+                  "name": "Text",
+                  "fill": "$text-inverse-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Hover: the label rolls up and a yellow copy rolls in (200ms). Current: yellow text with a short pink line.",
+                  "lineHeight": "$type-p3-line-height",
+                  "fontFamily": "$font-body",
+                  "fontSize": "$type-p3-size",
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "hEBcM",
+              "name": "Default",
+              "width": 170,
+              "height": 52,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "nbF1B",
+                  "name": "Link",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "k3DqQf",
+                      "name": "Label",
+                      "fill": "$text-inverse",
+                      "content": "PROJECTS",
+                      "lineHeight": "$type-eyebrow2-line-height",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$type-eyebrow2-size",
+                      "fontWeight": "500",
+                      "letterSpacing": "$type-eyebrow2-letter-spacing"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "VGbI1",
+              "name": "Hover",
+              "width": 170,
+              "height": 52,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "xhxIL",
+                  "name": "Link",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "i4rBdb",
+                      "name": "Label",
+                      "fill": "$accent-yellow",
+                      "content": "PROJECTS",
+                      "lineHeight": "$type-eyebrow2-line-height",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$type-eyebrow2-size",
+                      "fontWeight": "500",
+                      "letterSpacing": "$type-eyebrow2-letter-spacing"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "TBqES",
+              "name": "Current",
+              "width": 170,
+              "height": 52,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "FhRl1",
+                  "name": "Link",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "rcTfj",
+                      "name": "Label",
+                      "fill": "$accent-yellow",
+                      "content": "PROJECTS",
+                      "lineHeight": "$type-eyebrow2-line-height",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$type-eyebrow2-size",
+                      "fontWeight": "500",
+                      "letterSpacing": "$type-eyebrow2-letter-spacing"
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 2,
+                      "id": "dAK1A",
+                      "name": "Line",
+                      "fill": "$accent-pink",
+                      "width": "fill_container",
+                      "height": 4
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ]
     }
