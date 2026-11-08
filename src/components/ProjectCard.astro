@@ -36,11 +36,11 @@ const {
 const Heading = headingLevel;
 ---
 
-<a class:list={['card', `card--${layout}`]} href={href}>
+<a class:list={['card', 'card-motion', `card--${layout}`]} href={href}>
   <div class="card__media">
     {image && (
       <Image
-        class="card__image"
+        class="card__image card-motion__image"
         src={image}
         alt={imageAlt}
         widths={[360, 720]}
@@ -54,8 +54,8 @@ const Heading = headingLevel;
     <Heading class="card__title">{title}</Heading>
     {summary && <p class="card__summary">{summary}</p>}
     <span class="card__link">
-      {linkLabel}
-      <svg class="card__arrow" viewBox="0 0 24 24" aria-hidden="true">
+      <span class="card-motion__label">{linkLabel}</span>
+      <svg class="card__arrow card-motion__arrow" viewBox="0 0 24 24" aria-hidden="true">
         <path d="M5 12h14m-6-6 6 6-6 6" />
       </svg>
     </span>
@@ -72,11 +72,6 @@ const Heading = headingLevel;
     border-radius: var(--radius-xl);
     box-shadow: 0 1px 2px #121c2114;
     color: var(--color-text-default);
-  }
-
-  .card:hover {
-    color: var(--color-text-default);
-    border-color: var(--color-border-strong);
   }
 
   /* 16:10, the shape of a thumbnail (exported at 720 × 450). */
@@ -152,8 +147,8 @@ const Heading = headingLevel;
     stroke-linejoin: round;
   }
 
-  .card:hover .card__arrow {
-    transform: translateX(2px);
+  .card--side {
+    --card-zoom: 1.03;
   }
 
   /* Side: image on the left (280 wide), content on the right. */

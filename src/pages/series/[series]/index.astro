@@ -7,6 +7,7 @@ import SectionHeader from '../../../components/SectionHeader.astro';
 import StatusBadge from '../../../components/StatusBadge.astro';
 import BackLink from '../../../components/BackLink.astro';
 import ProjectCard from '../../../components/ProjectCard.astro';
+import CardReveal from '../../../components/CardReveal.astro';
 import { getCollection } from 'astro:content';
 import { getSeriesEntries, entryUrl } from '../../../lib/series';
 
@@ -33,23 +34,27 @@ const latest = entries.toSorted((a, b) => b.data.pubDate.valueOf() - a.data.pubD
       <StatusBadge slot="badge" status={series.data.status} />
     </SectionHeader>
 
+    <CardReveal />
+
     {latest && (
-      <ProjectCard
-        layout="side"
-        href={entryUrl(latest)}
-        eyebrow={`Latest · No. ${latest.data.number}`}
-        title={latest.data.title}
-        summary={latest.data.description}
-        linkLabel="View entry"
-        image={latest.data.thumbnail ?? latest.data.image.src}
-        loading="eager"
-      />
+      <div data-reveal>
+        <ProjectCard
+          layout="side"
+          href={entryUrl(latest)}
+          eyebrow={`Latest · No. ${latest.data.number}`}
+          title={latest.data.title}
+          summary={latest.data.description}
+          linkLabel="View entry"
+          image={latest.data.thumbnail ?? latest.data.image.src}
+          loading="eager"
+        />
+      </div>
     )}
 
     {entries.length > 0 ? (
       <ul class="series-landing__grid">
         {entries.map((entry) => (
-          <li>
+          <li data-reveal>
             <ProjectCard
               href={entryUrl(entry)}
               eyebrow={`No. ${entry.data.number} · ${entry.data.year}`}

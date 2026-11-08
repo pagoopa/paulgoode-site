@@ -348,6 +348,146 @@ main:focus {
   }
 }
 
+/* Card motion: shared by the post cards and the project and series cards (Components / Post card
+   and Project card, states, in design/site.pen). Put .card-motion on the card link,
+   .card-motion__image on its image, .card-motion__label on the link text and
+   .card-motion__arrow on the arrow. On a mouse the card lifts with a hard ink shadow like the
+   buttons, the image zooms, the arrow nudges and a blue squiggle draws under the label.
+   Pressing sinks it back. */
+.card-motion {
+  --card-zoom: 1.04;
+  transition:
+    transform 160ms ease-out,
+    box-shadow 160ms ease-out,
+    border-color 160ms ease-out;
+}
+
+/* Doubled class: it has to beat the card's own border and shadow, set in its component. */
+.card-motion.card-motion:hover {
+  color: var(--color-text-default);
+  border-color: var(--color-border-strong);
+}
+
+.card-motion:focus-visible {
+  outline: 2px solid var(--color-border-focus);
+  outline-offset: 4px;
+}
+
+.card-motion__image {
+  transition: transform 400ms ease-out;
+}
+
+.card-motion__label {
+  position: relative;
+  padding-bottom: 8px;
+}
+
+/* The same squiggle as the nav links, drawn left to right. */
+.card-motion__label::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 6px;
+  background: var(--color-accent-blue);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 90 6' preserveAspectRatio='none'%3E%3Cpath d='M0 3 Q5 1 10 3 Q15 5 20 3 Q25 1 30 3 Q35 5 40 3 Q45 1 50 3 Q55 5 60 3 Q65 1 70 3 Q75 5 80 3 Q85 1 90 3' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E") 0 0 / 100% 100% no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 90 6' preserveAspectRatio='none'%3E%3Cpath d='M0 3 Q5 1 10 3 Q15 5 20 3 Q25 1 30 3 Q35 5 40 3 Q45 1 50 3 Q55 5 60 3 Q65 1 70 3 Q75 5 80 3 Q85 1 90 3' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E") 0 0 / 100% 100% no-repeat;
+  clip-path: inset(0 100% 0 0);
+  transition: clip-path 240ms ease-out;
+}
+
+.card-motion__arrow {
+  transition: transform 120ms ease-out;
+}
+
+.card-motion:hover .card-motion__arrow {
+  transform: translateX(2px);
+}
+
+.card-motion:hover .card-motion__label::after {
+  clip-path: inset(0 0 0 0);
+}
+
+/* Hover is for mice, so a touch doesn't leave a card lifted. */
+@media (hover: hover) {
+  .card-motion.card-motion:hover {
+    border-color: var(--color-border-emphasis);
+    transform: translateY(-3px);
+    box-shadow: 6px 6px 0 var(--color-border-emphasis);
+  }
+
+  .card-motion:hover .card-motion__image {
+    transform: scale(var(--card-zoom));
+  }
+
+  .card-motion.card-motion:active {
+    transform: none;
+    box-shadow: 1px 1px 0 var(--color-border-emphasis);
+  }
+}
+
+/* Reduced motion: colour and shadow only; nothing moves or draws. */
+@media (prefers-reduced-motion: reduce) {
+  .card-motion,
+  .card-motion__image,
+  .card-motion__arrow,
+  .card-motion__label::after {
+    transition: none;
+  }
+
+  .card-motion:hover,
+  .card-motion:active,
+  .card-motion:hover .card-motion__image,
+  .card-motion:hover .card-motion__arrow {
+    transform: none;
+  }
+
+  .card-motion__label::after {
+    clip-path: none;
+    opacity: 0;
+  }
+
+  .card-motion:hover .card-motion__label::after {
+    opacity: 1;
+  }
+}
+
+/* Loading (see CardReveal.astro): cards marked data-reveal start 12px low and see-through, then
+   rise in as they scroll into view. The animation is a safety net: if the script never runs,
+   they appear after 2s anyway. */
+@media (prefers-reduced-motion: no-preference) {
+  html.js [data-reveal] {
+    transition:
+      opacity 360ms ease-out,
+      transform 360ms ease-out;
+  }
+
+  html.js [data-reveal]:not(.is-in) {
+    opacity: 0;
+    transform: translateY(12px);
+    animation: reveal-fallback 0s 2s forwards;
+  }
+
+  html.js .card-motion__image {
+    transition:
+      opacity 300ms ease-out,
+      transform 400ms ease-out;
+  }
+
+  html.js .card-motion__image:not(.is-loaded) {
+    opacity: 0;
+    animation: reveal-fallback 0s 2s forwards;
+  }
+}
+
+@keyframes reveal-fallback {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 /* Sticker look for the coloured tags (Tag / Blue, Yellow and Pink): a 1px outline drawn
    inside, and a hard 2px shadow down and to the right, both in Border/Emphasis. */
 .tag-sticker {
