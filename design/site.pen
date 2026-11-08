@@ -35346,7 +35346,7 @@
       "type": "frame",
       "id": "PsVGP",
       "x": -3833,
-      "y": 12100,
+      "y": 12595,
       "name": "Share image — 1200×630",
       "clip": true,
       "width": 1200,
@@ -44457,6 +44457,10 @@
       "type": "color",
       "value": "$blue-700"
     },
+    "blue-700": {
+      "type": "color",
+      "value": "#1f6f90"
+    },
     "text-link-inverse": {
       "type": "color",
       "value": "$blue-300"
@@ -46267,10 +46271,6 @@
     "font-mono": {
       "type": "string",
       "value": "$font-family-roboto-mono"
-    },
-    "blue-700": {
-      "type": "color",
-      "value": "#1f6f90"
     }
   },
   "fileToken": "cc6f0c7a-c4c0-417e-803e-62337ed664fe"
