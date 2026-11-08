@@ -191,6 +191,12 @@ in `design/site.pen`:
 - A few things need a little HTML, which Markdown allows:
   - **Pull quote:** `<blockquote class="pull-quote">Big line<cite>Who</cite></blockquote>`
   - **Callout:** `<aside class="callout"><span class="callout__tag">Note</span><p>Text</p></aside>`
+  - **Images and galleries:** every image in a post opens in a lightbox when clicked, with
+    previous and next buttons through all the images in the post. Nothing needs adding.
+    To show several images together as a grid, wrap them in a `<div class="gallery">` with a
+    blank line inside it above and below the images; they show three across (two on tablets,
+    one on phones), all the same size, and open in the same lightbox. An image inside a
+    link is left alone.
   - **Video:** `<div class="video-embed"><iframe src="…" title="…" allowfullscreen></iframe></div>`
     then `<p class="video-embed__caption">Caption</p>`
 

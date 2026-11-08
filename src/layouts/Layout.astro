@@ -1,6 +1,7 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import Lightbox from '../components/Lightbox.astro';
 import Sidebar from '../components/Sidebar.astro';
 import '../styles/global.css';
 import '../styles/prose.css';
@@ -78,6 +79,7 @@ const showSidebar = sidebar && sidebarSections.length > 0;
       {showSidebar && <Sidebar sections={sidebarSections} />}
     </div>
     <Footer />
+    <Lightbox />
   </body>
 </html>
 

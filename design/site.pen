@@ -50635,6 +50635,764 @@
           ]
         }
       ]
+    },
+    {
+      "type": "frame",
+      "id": "NRoVX",
+      "x": -3833,
+      "y": 26355,
+      "name": "Post images — Lightbox and gallery",
+      "fill": "$surface-subtle",
+      "layout": "vertical",
+      "gap": 72,
+      "padding": 64,
+      "children": [
+        {
+          "type": "text",
+          "id": "Y2Lwf",
+          "name": "Title",
+          "fill": "$text-default",
+          "content": "Post images: lightbox and gallery",
+          "lineHeight": 1.45,
+          "fontFamily": "$font-heading",
+          "fontSize": 40,
+          "fontWeight": "700"
+        },
+        {
+          "type": "text",
+          "id": "XYlZT",
+          "name": "Intro",
+          "fill": "$text-muted",
+          "textGrowth": "fixed-width",
+          "width": 1000,
+          "content": "Every image in a journal post or series entry opens in a lightbox, with nothing extra to write. Several images can also be grouped as a gallery. The lightbox shows one photo at a time and steps through all the images in the post.",
+          "lineHeight": 1.5,
+          "fontFamily": "$font-body",
+          "fontSize": 18,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "uLEVq",
+          "name": "1 · Gallery block in a post",
+          "layout": "vertical",
+          "gap": 24,
+          "children": [
+            {
+              "type": "text",
+              "id": "qiY01",
+              "name": "Section title",
+              "fill": "$text-default",
+              "content": "1 · Gallery block in a post",
+              "lineHeight": 1.45,
+              "fontFamily": "$font-heading",
+              "fontSize": 24,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "u8Zjg",
+              "name": "Post column",
+              "width": 852,
+              "fill": "$surface-default",
+              "cornerRadius": 12,
+              "layout": "vertical",
+              "gap": 16,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "jNaoU",
+                  "name": "Paragraph",
+                  "fill": "$text-default",
+                  "textGrowth": "fixed-width",
+                  "width": 804,
+                  "content": "Here are a few of the studies from the week. Click any photo to see it larger and step through the rest.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-body",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "u9P46",
+                  "name": "Gallery",
+                  "width": "fill_container",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Ob2IA",
+                      "name": "Photo",
+                      "width": "fill_container",
+                      "height": 190,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1690256523139-ecd630c20361?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI5NTkxMTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "cover"
+                      },
+                      "cornerRadius": 12
+                    },
+                    {
+                      "type": "frame",
+                      "id": "CG1L1",
+                      "name": "Photo (hover)",
+                      "width": "fill_container",
+                      "height": 190,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1690256523139-ecd630c20361?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI5NTkxMTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "cover"
+                      },
+                      "cornerRadius": 12,
+                      "stroke": "$border-emphasis",
+                      "strokeWidth": 1,
+                      "strokeAlignment": "inner",
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "$border-emphasis",
+                        "offset": {
+                          "x": 4,
+                          "y": 4
+                        }
+                      },
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "JSgo9",
+                          "layoutPosition": "absolute",
+                          "x": 214,
+                          "y": 10,
+                          "name": "Expand",
+                          "width": 32,
+                          "height": 32,
+                          "fill": "#0C1216CC",
+                          "cornerRadius": 16,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "N20dFC",
+                              "name": "Icon",
+                              "width": 16,
+                              "height": 16,
+                              "icon": "maximize-2",
+                              "library": "lucide",
+                              "fill": "#FFFFFF"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "LsyD9",
+                      "name": "Photo",
+                      "width": "fill_container",
+                      "height": 190,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1690256523139-ecd630c20361?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI5NTkxMTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "cover"
+                      },
+                      "cornerRadius": 12
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "NqBuz",
+                  "name": "Caption",
+                  "fill": "$text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": 804,
+                  "content": "Studies, spread out on the table. Three across on desktop, two on tablet, one on phones.",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "xHWPJ",
+          "name": "2 · Lightbox, desktop",
+          "layout": "vertical",
+          "gap": 24,
+          "children": [
+            {
+              "type": "text",
+              "id": "N6Qh7",
+              "name": "Section title",
+              "fill": "$text-default",
+              "content": "2 · Lightbox, desktop",
+              "lineHeight": 1.45,
+              "fontFamily": "$font-heading",
+              "fontSize": 24,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "dRLXN",
+              "name": "Lightbox — Desktop (1200)",
+              "clip": true,
+              "width": 1200,
+              "height": 860,
+              "fill": "#0C1216F2",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 8,
+                  "id": "yZQFU",
+                  "x": 160,
+                  "y": 60,
+                  "name": "Photo",
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "https://images.unsplash.com/photo-1690256523139-ecd630c20361?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI5NTkxMTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+                    "mode": "cover"
+                  },
+                  "width": 880,
+                  "height": 560
+                },
+                {
+                  "type": "text",
+                  "id": "zugr6",
+                  "x": 160,
+                  "y": 640,
+                  "name": "Counter",
+                  "fill": "#9AA5AD",
+                  "content": "3 / 12",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "500",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "eNQgL",
+                  "x": 160,
+                  "y": 666,
+                  "name": "Caption",
+                  "fill": "#F4F6F8",
+                  "textGrowth": "fixed-width",
+                  "width": 760,
+                  "content": "Thumbnails for the next series: the orb in three versions.",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$font-body",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "LEex9",
+                  "x": 1132,
+                  "y": 24,
+                  "name": "Close",
+                  "width": 44,
+                  "height": 44,
+                  "fill": "#0C1216",
+                  "cornerRadius": 22,
+                  "stroke": "#FFFFFF",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "$accent-yellow",
+                    "offset": {
+                      "x": 3,
+                      "y": 3
+                    }
+                  },
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "j6Oz5W",
+                      "name": "Icon",
+                      "width": 20,
+                      "height": 20,
+                      "icon": "x",
+                      "library": "lucide",
+                      "fill": "#FFFFFF"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "zEY2q",
+                  "x": 64,
+                  "y": 318,
+                  "name": "Previous",
+                  "width": 44,
+                  "height": 44,
+                  "fill": "#0C1216",
+                  "cornerRadius": 22,
+                  "stroke": "#FFFFFF",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#F4F6F8",
+                    "offset": {
+                      "x": 3,
+                      "y": 3
+                    }
+                  },
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "h9fgbH",
+                      "name": "Icon",
+                      "width": 20,
+                      "height": 20,
+                      "icon": "chevron-left",
+                      "library": "lucide",
+                      "fill": "#FFFFFF"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "JTk3i",
+                  "x": 1092,
+                  "y": 318,
+                  "name": "Next",
+                  "width": 44,
+                  "height": 44,
+                  "fill": "#0C1216",
+                  "cornerRadius": 22,
+                  "stroke": "#FFFFFF",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#F4F6F8",
+                    "offset": {
+                      "x": 3,
+                      "y": 3
+                    }
+                  },
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "U3Asa",
+                      "name": "Icon",
+                      "width": 20,
+                      "height": 20,
+                      "icon": "chevron-right",
+                      "library": "lucide",
+                      "fill": "#FFFFFF"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "uaCcV",
+                  "x": 160,
+                  "y": 740,
+                  "name": "Filmstrip",
+                  "width": 880,
+                  "gap": 12,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 6,
+                      "id": "oPmWp",
+                      "name": "Thumb",
+                      "opacity": 0.5,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1690256523139-ecd630c20361?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI5NTkxMTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "cover"
+                      },
+                      "width": 96,
+                      "height": 64
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 6,
+                      "id": "vubfp",
+                      "name": "Thumb",
+                      "opacity": 0.5,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1690256523139-ecd630c20361?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI5NTkxMTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "cover"
+                      },
+                      "width": 96,
+                      "height": 64
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 6,
+                      "id": "dc9aN",
+                      "name": "Thumb (current)",
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1690256523139-ecd630c20361?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI5NTkxMTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "cover"
+                      },
+                      "width": 96,
+                      "height": 64,
+                      "stroke": "#FFFFFF",
+                      "strokeWidth": 2,
+                      "strokeAlignment": "outer",
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "$accent-yellow",
+                        "offset": {
+                          "x": 3,
+                          "y": 3
+                        }
+                      }
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 6,
+                      "id": "RpkAJ",
+                      "name": "Thumb",
+                      "opacity": 0.5,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1690256523139-ecd630c20361?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI5NTkxMTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "cover"
+                      },
+                      "width": 96,
+                      "height": 64
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 6,
+                      "id": "DtOJv",
+                      "name": "Thumb",
+                      "opacity": 0.5,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1690256523139-ecd630c20361?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI5NTkxMTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "cover"
+                      },
+                      "width": 96,
+                      "height": 64
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 6,
+                      "id": "mBXSD",
+                      "name": "Thumb",
+                      "opacity": 0.5,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1690256523139-ecd630c20361?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI5NTkxMTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "cover"
+                      },
+                      "width": 96,
+                      "height": 64
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 6,
+                      "id": "pdfOO",
+                      "name": "Thumb",
+                      "opacity": 0.5,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1690256523139-ecd630c20361?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI5NTkxMTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "cover"
+                      },
+                      "width": 96,
+                      "height": 64
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 6,
+                      "id": "SCoIc",
+                      "name": "Thumb",
+                      "opacity": 0.5,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1690256523139-ecd630c20361?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI5NTkxMTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "cover"
+                      },
+                      "width": 96,
+                      "height": 64
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "H4ZHXX",
+          "name": "3 · Lightbox, phone",
+          "layout": "vertical",
+          "gap": 24,
+          "children": [
+            {
+              "type": "text",
+              "id": "vw6BO",
+              "name": "Section title",
+              "fill": "$text-default",
+              "content": "3 · Lightbox, phone",
+              "lineHeight": 1.45,
+              "fontFamily": "$font-heading",
+              "fontSize": 24,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "NZahh",
+              "name": "Lightbox — Mobile (390)",
+              "clip": true,
+              "width": 390,
+              "height": 844,
+              "fill": "#0C1216F2",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "ACD4R",
+                  "x": 0,
+                  "y": 252,
+                  "name": "Photo",
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "https://images.unsplash.com/photo-1690256523139-ecd630c20361?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI5NTkxMTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+                    "mode": "cover"
+                  },
+                  "width": 390,
+                  "height": 300
+                },
+                {
+                  "type": "frame",
+                  "id": "TnB4j",
+                  "x": 322,
+                  "y": 56,
+                  "name": "Close",
+                  "width": 44,
+                  "height": 44,
+                  "fill": "#0C1216",
+                  "cornerRadius": 22,
+                  "stroke": "#FFFFFF",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "$accent-yellow",
+                    "offset": {
+                      "x": 3,
+                      "y": 3
+                    }
+                  },
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "i3CY3",
+                      "name": "Icon",
+                      "width": 20,
+                      "height": 20,
+                      "icon": "x",
+                      "library": "lucide",
+                      "fill": "#FFFFFF"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "xKYcb",
+                  "x": 24,
+                  "y": 572,
+                  "name": "Counter",
+                  "fill": "#9AA5AD",
+                  "content": "3 / 12",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "500",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "u84Hmz",
+                  "x": 24,
+                  "y": 598,
+                  "name": "Caption",
+                  "fill": "#F4F6F8",
+                  "textGrowth": "fixed-width",
+                  "width": 342,
+                  "content": "Thumbnails for the next series: the orb in three versions.",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$font-body",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "UGF4i",
+                  "x": 24,
+                  "y": 760,
+                  "name": "Hint",
+                  "fill": "#9AA5AD",
+                  "textGrowth": "fixed-width",
+                  "width": 342,
+                  "content": "Swipe left or right for the next photo. Swipe down or tap the dark to close.",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "bQG1D",
+          "name": "4 · Behaviour",
+          "layout": "vertical",
+          "gap": 24,
+          "children": [
+            {
+              "type": "text",
+              "id": "Ybbz2",
+              "name": "Section title",
+              "fill": "$text-default",
+              "content": "4 · Behaviour",
+              "lineHeight": 1.45,
+              "fontFamily": "$font-heading",
+              "fontSize": 24,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "BmWg1",
+              "name": "Spec line",
+              "fill": "$text-muted",
+              "textGrowth": "fixed-width",
+              "width": 900,
+              "content": "Opens: tap or click any image in a post. The page dims (backdrop fades in, 200 ms) and the photo scales from 0.96 to 1 as it fades in (240 ms). Images are shown at full size, never cropped.",
+              "lineHeight": 1.45,
+              "fontFamily": "$font-body",
+              "fontSize": 15,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "cUaUQ",
+              "name": "Spec line",
+              "fill": "$text-muted",
+              "textGrowth": "fixed-width",
+              "width": 900,
+              "content": "Next and previous: the arrows, the left and right arrow keys, a swipe, or a click on a filmstrip thumbnail. Previous is hidden on the first photo and next on the last. Neighbouring photos load ahead of time.",
+              "lineHeight": 1.45,
+              "fontFamily": "$font-body",
+              "fontSize": 15,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "LEKOV",
+              "name": "Spec line",
+              "fill": "$text-muted",
+              "textGrowth": "fixed-width",
+              "width": 900,
+              "content": "Closes: the ✕, Esc, a tap on the dark, or a swipe down. Focus returns to the image you opened it from. The page behind doesn't scroll.",
+              "lineHeight": 1.45,
+              "fontFamily": "$font-body",
+              "fontSize": 15,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "FNUZ2",
+              "name": "Spec line",
+              "fill": "$text-muted",
+              "textGrowth": "fixed-width",
+              "width": 900,
+              "content": "Caption: the image's alt text (or its caption if it has one). The counter shows the place in the post: 3 / 12.",
+              "lineHeight": 1.45,
+              "fontFamily": "$font-body",
+              "fontSize": 15,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "aCz7B",
+              "name": "Spec line",
+              "fill": "$text-muted",
+              "textGrowth": "fixed-width",
+              "width": 900,
+              "content": "Hover on a post image (mouse only): the cursor turns to a magnifier and a small expand icon appears in the corner. In a gallery the photo also lifts with the hard ink shadow, like the cards.",
+              "lineHeight": 1.45,
+              "fontFamily": "$font-body",
+              "fontSize": 15,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "ndvPh",
+              "name": "Spec line",
+              "fill": "$text-muted",
+              "textGrowth": "fixed-width",
+              "width": 900,
+              "content": "Reduced motion: no scaling or fading, the lightbox simply appears. The filmstrip is desktop only.",
+              "lineHeight": 1.45,
+              "fontFamily": "$font-body",
+              "fontSize": 15,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "AT7AX",
+              "name": "Spec line",
+              "fill": "$text-muted",
+              "textGrowth": "fixed-width",
+              "width": 900,
+              "content": "Gallery block: wrap images in a div with class gallery. 3 across on desktop, 2 on tablet, 1 on phones, all the same height. Single images in a post open the same lightbox, they just aren't grouped.",
+              "lineHeight": 1.45,
+              "fontFamily": "$font-body",
+              "fontSize": 15,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
     }
   ],
   "themes": {
