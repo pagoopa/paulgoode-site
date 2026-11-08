@@ -149,7 +149,7 @@ img {
   margin: 0;
 }
 
-/* Body/eyebrow3-md, as on Card / Post */
+/* Body/eyebrow3-md, as on the Post boards */
 .entry__date {
   font-size: var(--type-eyebrow3-size);
   line-height: var(--type-eyebrow3-line-height);
