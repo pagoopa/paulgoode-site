@@ -22,6 +22,7 @@ const BREAKPOINTS = {
 const FONT_FALLBACKS = {
   Inter: '-apple-system, BlinkMacSystemFont, sans-serif',
   Unbounded: 'Arial Black, sans-serif',
+  'Roboto Mono': 'ui-monospace, Menlo, Consolas, monospace',
 };
 
 // Weights the site uses (400, 500, 600), plus 700 so fonts without a 600
