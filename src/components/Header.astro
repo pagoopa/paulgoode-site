@@ -53,23 +53,24 @@ const windowDecor = [
           </svg>
         </button>
         <div class="site-header__links">
-          {navItems.map((item) => (
+          {navItems.map((item, i) => (
             <a
               href={item.href}
               class:list={['link-nav', { 'is-active': isActive(item) }]}
+              style={`--i: ${i}`}
             >
               <span class="link-label">{item.label}</span>
             </a>
           ))}
         </div>
         <div class="site-header__panel-decor" aria-hidden="true">
-          {windowDecor.map((d) => (
+          {windowDecor.map((d, n) => (
             <img
               src={d.img.src}
               alt=""
               width={d.w}
               height={Math.round((d.w * d.img.height) / d.img.width)}
-              style={`left: ${(d.x / 318) * 100}%; top: ${d.y}px;`}
+              style={`left: ${(d.x / 318) * 100}%; top: ${d.y}px; --n: ${n}`}
               loading="lazy"
               decoding="async"
             />
@@ -89,11 +90,11 @@ const windowDecor = [
 
   if (header && button && nav && closeButton) {
     const isOpen = () => header.dataset.menuOpen === 'true';
-    const setOpen = (open: boolean) => {
+    const setOpen = (open: boolean, moveFocus = true) => {
       header.dataset.menuOpen = String(open);
       button.setAttribute('aria-expanded', String(open));
       // Focus moves into the window, and back to the button when it closes.
-      (open ? closeButton : button).focus();
+      if (moveFocus) (open ? closeButton : button).focus();
     };
 
     button.addEventListener('click', () => setOpen(true));
@@ -121,7 +122,11 @@ const windowDecor = [
         const items = [closeButton, ...nav.querySelectorAll<HTMLElement>('a')];
         const first = items[0];
         const last = items[items.length - 1];
-        if (event.shiftKey && document.activeElement === first) {
+        if (!nav.contains(document.activeElement)) {
+          // The window opened by itself, so focus is still on the page: Tab goes into it.
+          event.preventDefault();
+          first.focus();
+        } else if (event.shiftKey && document.activeElement === first) {
           event.preventDefault();
           last.focus();
         } else if (!event.shiftKey && document.activeElement === last) {
@@ -130,6 +135,25 @@ const windowDecor = [
         }
       }
     });
+
+    // On the first page load of a visit (Layout marks it with decor-intro), on a phone, the menu
+    // opens by itself once the header decorations have drawn in, unless you touch, scroll or
+    // press a key first. Focus stays put so it never steals your place. Not with reduced motion.
+    const firstLoad = document.documentElement.classList.contains('decor-intro');
+    const phone = window.matchMedia('(max-width: 599px)').matches;
+    const calm = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (firstLoad && phone && !calm) {
+      let interrupted = false;
+      const interrupt = () => {
+        interrupted = true;
+      };
+      for (const type of ['pointerdown', 'touchstart', 'keydown', 'wheel', 'scroll']) {
+        window.addEventListener(type, interrupt, { once: true, passive: true });
+      }
+      window.setTimeout(() => {
+        if (!interrupted && !isOpen()) setOpen(true, false);
+      }, 1500);
+    }
   }
 </script>
 
@@ -334,6 +358,38 @@ const windowDecor = [
     .site-header[data-menu-open='true'] .site-header__panel {
       transform: none;
       transition: transform 240ms ease-out;
+    }
+  }
+
+  /* When the window opens the links rise one by one and the splatters pop. */
+  @media (max-width: 599px) and (prefers-reduced-motion: no-preference) {
+    .site-header[data-menu-open='true'] .site-header__links .link-nav {
+      animation: menu-rise 300ms ease-out calc(120ms + var(--i, 0) * 50ms) backwards;
+    }
+
+    .site-header[data-menu-open='true'] .site-header__panel-decor img {
+      animation: menu-pop 320ms cubic-bezier(0.2, 0.9, 0.3, 1.3) calc(300ms + var(--n, 0) * 80ms) backwards;
+    }
+  }
+
+  @keyframes menu-rise {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+  }
+
+  @keyframes menu-pop {
+    0% {
+      opacity: 0;
+      transform: scale(0.4);
+    }
+    60% {
+      opacity: 1;
+      transform: scale(1.15);
+    }
+    100% {
+      transform: scale(1);
     }
   }
 
