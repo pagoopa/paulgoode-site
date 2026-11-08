@@ -1,7 +1,7 @@
 /* Generated from design/site.pen by scripts/sync-tokens.mjs. Do not edit by hand:
    change the variables in pen.dev, save, and run `npm run tokens` (or dev/build). */
 
-@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@400;500;600;700&display=swap');
 
 :root {
   --color-blue-200: #b5e5fc;
@@ -56,6 +56,8 @@
   --font-body: var(--font-family-inter);
   --font-family-inter: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-heading: var(--font-family-unbounded);
+  --font-family-roboto-mono: 'Roboto Mono', ui-monospace, Menlo, Consolas, monospace;
+  --font-mono: var(--font-family-roboto-mono);
 
   --scale-0000: 0px;
   --scale-0050: 2px;

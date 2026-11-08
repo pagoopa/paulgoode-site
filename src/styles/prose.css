@@ -1,0 +1,253 @@
+/* Article text: what a post, a series entry or a page body can contain. Matches the
+   Components / Prose board in design/site.pen. Applies inside .entry__body (a journal
+   post), .series__body (a series entry) and .prose (the other pages). */
+
+:is(.prose, .entry__body, .series__body) {
+  --prose-gap: var(--scale-0600);
+}
+
+/* Headings: H2 to H4 in the heading font. Space above them separates sections. */
+:is(.prose, .entry__body, .series__body) :is(h2, h3, h4) {
+  margin: var(--scale-0400) 0 0;
+}
+
+:is(.prose, .entry__body, .series__body) :is(h2, h3, h4):first-child {
+  margin-top: 0;
+}
+
+/* Links in text: blue and underlined. */
+:is(.prose, .entry__body, .series__body) a:not(.link-standalone, .btn) {
+  color: var(--color-text-link);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+/* Lists: the markers are blue. */
+:is(.prose, .entry__body, .series__body) :is(ul, ol) {
+  display: flex;
+  flex-direction: column;
+  gap: var(--scale-0200);
+  margin: 0 0 var(--prose-gap);
+  padding-left: 1.4em;
+}
+
+:is(.prose, .entry__body, .series__body) li::marker {
+  color: var(--color-text-link);
+  font-weight: 600;
+}
+
+:is(.prose, .entry__body, .series__body) li > :is(ul, ol) {
+  margin: var(--scale-0200) 0 0;
+}
+
+/* Prose / Blockquote: a pink bar, Body/p1 in italic, and a small citation. */
+:is(.prose, .entry__body, .series__body) blockquote {
+  margin: 0 0 var(--prose-gap);
+  padding-left: var(--scale-0600);
+  border-left: 4px solid var(--color-accent-pink);
+  font-size: var(--type-p1-size);
+  line-height: var(--type-p1-line-height);
+  letter-spacing: var(--type-p1-letter-spacing);
+  font-style: italic;
+}
+
+:is(.prose, .entry__body, .series__body) blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+:is(.prose, .entry__body, .series__body) blockquote :is(cite, footer) {
+  display: block;
+  margin-top: var(--scale-0300);
+  color: var(--color-text-muted);
+  font-size: var(--type-eyebrow3-size);
+  line-height: var(--type-eyebrow3-line-height);
+  letter-spacing: var(--type-eyebrow3-letter-spacing);
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* Prose / Pull quote: <blockquote class="pull-quote">. Big, centred, between two rules. */
+:is(.prose, .entry__body, .series__body) blockquote.pull-quote {
+  padding: var(--scale-0600) 0;
+  border-left: 0;
+  border-block: 2px solid var(--color-border-strong);
+  font-family: var(--font-heading);
+  font-size: var(--type-h3-size);
+  line-height: var(--type-h3-line-height);
+  letter-spacing: var(--type-h3-letter-spacing);
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+}
+
+:is(.prose, .entry__body, .series__body) blockquote.pull-quote :is(cite, footer) {
+  color: var(--color-text-link);
+  font-family: var(--font-body);
+  font-size: var(--type-eyebrow2-size);
+  line-height: var(--type-eyebrow2-line-height);
+  letter-spacing: var(--type-eyebrow2-letter-spacing);
+}
+
+/* Code: inline code in a soft box, code blocks dark. Roboto Mono comes from the font-mono variable. */
+:is(.prose, .entry__body, .series__body) code {
+  padding: 2px 6px;
+  background: var(--color-surface-subtle);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+}
+
+:is(.prose, .entry__body, .series__body) pre {
+  margin: 0 0 var(--prose-gap);
+  padding: var(--scale-0600);
+  overflow-x: auto;
+  background: var(--color-surface-inverse) !important;
+  border-radius: var(--radius-md);
+  color: var(--color-text-inverse);
+  font-family: var(--font-mono);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+:is(.prose, .entry__body, .series__body) pre code {
+  padding: 0;
+  background: none;
+  border-radius: 0;
+  color: inherit;
+  font-size: inherit;
+}
+
+/* A horizontal rule is the Divider. */
+:is(.prose, .entry__body, .series__body) hr {
+  height: 1px;
+  margin: 0 0 var(--prose-gap);
+  border: 0;
+  background: var(--color-border-default);
+}
+
+/* Prose / Table */
+:is(.prose, .entry__body, .series__body) table {
+  width: 100%;
+  margin: 0 0 var(--prose-gap);
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--radius-md);
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  font-size: var(--type-p3-size);
+  line-height: var(--type-p3-line-height);
+}
+
+:is(.prose, .entry__body, .series__body) :is(th, td) {
+  padding: var(--scale-0300) var(--scale-0400);
+  text-align: left;
+}
+
+:is(.prose, .entry__body, .series__body) th {
+  background: var(--color-surface-subtle);
+  color: var(--color-text-muted);
+  font-size: var(--type-eyebrow3-size);
+  line-height: var(--type-eyebrow3-line-height);
+  letter-spacing: var(--type-eyebrow3-letter-spacing);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+:is(.prose, .entry__body, .series__body) td {
+  border-top: 1px solid var(--color-border-default);
+}
+
+/* Images and captions (Media frame): rounded, with a muted caption underneath. */
+:is(.prose, .entry__body, .series__body) img {
+  border-radius: var(--radius-lg);
+}
+
+:is(.prose, .entry__body, .series__body) figure {
+  margin: 0 0 var(--prose-gap);
+}
+
+:is(.prose, .entry__body, .series__body) figcaption {
+  margin-top: var(--scale-0200);
+  color: var(--color-text-muted);
+  font-size: var(--type-p3-size);
+  line-height: var(--type-p3-line-height);
+}
+
+/* Prose / Video embed: <div class="video-embed"><iframe …></iframe></div>, then an optional
+   <p class="video-embed__caption">. Plays at 16:9. */
+:is(.prose, .entry__body, .series__body) .video-embed {
+  aspect-ratio: 16 / 9;
+  margin: 0 0 var(--scale-0200);
+  overflow: hidden;
+  background: var(--color-surface-inverse);
+  border-radius: var(--radius-lg);
+}
+
+:is(.prose, .entry__body, .series__body) .video-embed iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+:is(.prose, .entry__body, .series__body) .video-embed__caption {
+  margin: 0 0 var(--prose-gap);
+  color: var(--color-text-muted);
+  font-size: var(--type-p3-size);
+  line-height: var(--type-p3-line-height);
+}
+
+/* Prose / Callout: <aside class="callout"><span class="callout__tag tag-sticker">Note</span><p>…</p></aside> */
+:is(.prose, .entry__body, .series__body) .callout {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--scale-0300);
+  margin: 0 0 var(--prose-gap);
+  padding: var(--scale-0600);
+  background: var(--color-surface-default);
+  border: 1px solid var(--color-border-emphasis);
+  border-radius: var(--radius-md);
+  box-shadow: 3px 3px 0 var(--color-border-emphasis);
+}
+
+:is(.prose, .entry__body, .series__body) .callout > :last-child {
+  margin-bottom: 0;
+}
+
+:is(.prose, .entry__body, .series__body) .callout__tag {
+  padding: var(--scale-0100) var(--scale-0300);
+  background: var(--color-accent-yellow);
+  border-radius: var(--radius-full);
+  color: var(--color-text-on-accent);
+  font-size: var(--type-eyebrow3-size);
+  line-height: var(--type-eyebrow3-line-height);
+  letter-spacing: var(--type-eyebrow3-letter-spacing);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* Prose / Footnotes: the list the Markdown footnotes make, at the end of the post. */
+:is(.prose, .entry__body, .series__body) section[data-footnotes] {
+  padding-top: var(--scale-0300);
+  border-top: 1px solid var(--color-border-default);
+  color: var(--color-text-muted);
+  font-size: var(--type-p3-size);
+  line-height: var(--type-p3-line-height);
+}
+
+:is(.prose, .entry__body, .series__body) section[data-footnotes] :is(h2, .sr-only) {
+  /* Astro adds an "Footnotes" heading for screen readers. */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+:is(.prose, .entry__body, .series__body) section[data-footnotes] ol {
+  margin: 0;
+}

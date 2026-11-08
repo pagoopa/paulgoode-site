@@ -177,6 +177,22 @@ The home page shows each post in full. To show only the start, put
 Everything above the line shows on the home page, followed by a "Read
 more" link to the full post.
 
+## Writing a post: what you can use
+
+Posts are Markdown, and these are all styled to match the Components / Prose board
+in `design/site.pen`:
+
+- Headings `##` to `####`, **bold**, *italic*, links, bulleted and numbered lists.
+- `> a quote` is a blockquote (a pink bar). End it with `<cite>Name, source</cite>`
+  on the same line for a citation.
+- Inline `code`, fenced code blocks (with a language after the backticks), `---` for a
+  horizontal rule, tables, images (`![alt](./image.jpg)`) and footnotes (`[^1]`).
+- A few things need a little HTML, which Markdown allows:
+  - **Pull quote:** `<blockquote class="pull-quote">Big line<cite>Who</cite></blockquote>`
+  - **Callout:** `<aside class="callout"><span class="callout__tag">Note</span><p>Text</p></aside>`
+  - **Video:** `<div class="video-embed"><iframe src="…" title="…" allowfullscreen></iframe></div>`
+    then `<p class="video-embed__caption">Caption</p>`
+
 ## Series
 
 A series is a numbered set of artwork, like "Junk Drawer Journey".
