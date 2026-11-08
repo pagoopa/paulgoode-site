@@ -5737,6 +5737,45 @@
                   "fontFamily": "$font-body",
                   "fontSize": 14,
                   "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "KTSeK",
+                  "name": "Spec line",
+                  "fill": "$text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "First load of a visit (phones, motion allowed): the menu opens by itself 1.5 s after the page loads, after the header decorations have drawn in. Once per visit.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "d0Y8sI",
+                  "name": "Spec line",
+                  "fill": "$text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Cancelled if you touch, scroll or press a key first. Focus stays where it was, so it never steals your place.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "je5gs",
+                  "name": "Spec line",
+                  "fill": "$text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "When the window opens (by tap or by itself) the links rise one by one, 50 ms apart, and the splatters pop.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
                 }
               ]
             }
