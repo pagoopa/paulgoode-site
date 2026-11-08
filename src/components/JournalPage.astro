@@ -1,18 +1,16 @@
 ---
-// One page of a list of journal posts: the newest first, POSTS_PER_PAGE at a
-// time, with Newer / Older links. By default it's the whole journal, which is
+// One page of a list of journal posts as cards: the newest first as a wide lead card,
+// then two columns, POSTS_PER_PAGE at a time, with Newer / Older links. By default it's the whole journal, which is
 // also the home page (/ and /blog/page/<n>). A category or tag page passes
 // its own posts, page links and heading. Matches the Blog Landing boards in
 // design/site.pen.
 import type { CollectionEntry } from 'astro:content';
 import Layout from '../layouts/Layout.astro';
-import PostExcerpt from './PostExcerpt.astro';
+import PostCard from './PostCard.astro';
 import Pagination from './Pagination.astro';
 import SectionHeader from './SectionHeader.astro';
-import TagChip from './TagChip.astro';
-import { render } from 'astro:content';
-import { getJournalPosts, journalPageUrl, postDateFormat, POSTS_PER_PAGE } from '../lib/blog';
-import { categoryLabel, categoryUrl } from '../lib/taxonomy';
+import { getJournalPosts, journalPageUrl, postDateFormat, postSummary, POSTS_PER_PAGE } from '../lib/blog';
+import { categoryLabel } from '../lib/taxonomy';
 
 interface Props {
   page: number;
@@ -32,9 +30,6 @@ const pageUrl = Astro.props.pageUrl ?? journalPageUrl;
 const title = Astro.props.title ?? (page === 1 ? 'Journal' : `Journal — Page ${page}`);
 const pageCount = Math.max(1, Math.ceil(allPosts.length / POSTS_PER_PAGE));
 const posts = allPosts.slice((page - 1) * POSTS_PER_PAGE, page * POSTS_PER_PAGE);
-const entries = await Promise.all(
-  posts.map(async (post) => ({ post, Content: (await render(post)).Content }))
-);
 ---
 
 <Layout title={title}>
@@ -47,24 +42,19 @@ const entries = await Promise.all(
       {posts.length === 0 && <p class="prose">{emptyText}</p>}
 
       <ul class="journal__list">
-        {entries.map(({ post, Content }) => (
-          <li class="entry">
-            <h2 class="entry__title">
-              <a href={`/blog/${post.id}/`}>{post.data.title}</a>
-            </h2>
-            <div class="entry__meta">
-              <time class="entry__date" datetime={post.data.pubDate.toISOString()}>
-                {postDateFormat.format(post.data.pubDate)}
-              </time>
-              <TagChip kind="category" href={categoryUrl(post.data.category)}>
-                {categoryLabel(post.data.category)}
-              </TagChip>
-            </div>
-            <div class="entry__body">
-              <PostExcerpt href={`/blog/${post.id}/`} title={post.data.title}>
-                <Content />
-              </PostExcerpt>
-            </div>
+        {posts.map((post, i) => (
+          <li class:list={['journal__item', { 'journal__item--lead': i === 0 }]}>
+            <PostCard
+              href={`/blog/${post.id}/`}
+              date={post.data.pubDate}
+              dateText={postDateFormat.format(post.data.pubDate)}
+              category={categoryLabel(post.data.category)}
+              title={post.data.title}
+              summary={postSummary(post)}
+              image={post.data.thumbnail}
+              lead={i === 0}
+              loading={i < 3 ? 'eager' : 'lazy'}
+            />
           </li>
         ))}
       </ul>
@@ -82,12 +72,31 @@ const entries = await Promise.all(
     padding-block: var(--scale-0600) var(--space-section);
   }
 
+  /* The lead card spans the width; the rest sit in two columns, one on phones. */
   .journal__list {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: grid;
+    gap: var(--scale-0600);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .journal__item {
     display: flex;
-    flex-direction: column;
-    gap: var(--scale-0400);
+  }
+
+  .journal__item > :global(.post-card) {
+    flex: 1;
+  }
+
+  .journal__item--lead {
+    grid-column: 1 / -1;
+  }
+
+  @media (max-width: 599px) {
+    .journal__list {
+      grid-template-columns: minmax(0, 1fr);
+    }
   }
 </style>

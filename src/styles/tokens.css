@@ -35,6 +35,7 @@
   --color-text-muted: var(--color-neutral-700);
   --color-text-inverse: var(--color-neutral-050);
   --color-text-link: var(--color-blue-700);
+  --color-blue-700: #1f6f90;
   --color-text-link-inverse: var(--color-blue-300);
   --color-text-on-accent: var(--color-neutral-950);
   --color-text-disabled: var(--color-neutral-400);
@@ -50,7 +51,6 @@
   --color-border-inverse: var(--color-neutral-800);
   --color-text-inverse-muted: var(--color-neutral-300);
   --color-border-focus-inverse: var(--color-blue-300);
-  --color-blue-700: #1f6f90;
 
   --font-display: var(--font-family-unbounded);
   --font-family-unbounded: 'Unbounded', Arial Black, sans-serif;

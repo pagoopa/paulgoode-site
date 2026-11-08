@@ -1,7 +1,7 @@
-import { getCollection } from 'astro:content';
+import { getCollection, type CollectionEntry } from 'astro:content';
 
-/** How many posts the journal shows per page. */
-export const POSTS_PER_PAGE = 3;
+/** How many posts the journal shows per page: the lead card, then two rows of two. */
+export const POSTS_PER_PAGE = 5;
 
 /** Published posts, newest first. Drafts only show while running the site locally. */
 export async function getJournalPosts() {
@@ -23,3 +23,17 @@ export const postDateFormat = new Intl.DateTimeFormat('en-US', {
   // pubDate is midnight UTC; without this it shows the day before in US time zones.
   timeZone: 'UTC',
 });
+
+/** The card's summary: the post's description, or else the start of its first paragraph. */
+export function postSummary(post: CollectionEntry<'blog'>) {
+  if (post.data.description) return post.data.description;
+  const paragraph = (post.body ?? '')
+    .split(/\n\s*\n/)
+    .map((block) => block.trim())
+    .find((block) => block && !/^(#|!\[|<|>|[-*]\s|\d+\.\s|```)/.test(block));
+  const text = (paragraph ?? '')
+    .replace(/!?\[([^\]]*)\]\([^)]*\)/g, '$1')
+    .replace(/[*_`]/g, '')
+    .replace(/\s+/g, ' ');
+  return text.length > 160 ? `${text.slice(0, 157).replace(/\s+\S*$/, '')}…` : text;
+}
