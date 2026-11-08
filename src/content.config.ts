@@ -5,9 +5,12 @@ import { domain, projectType, seriesStatus, sidebarSettings, tag } from './lib/l
 
 const blog = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/blog' }),
-  schema: z.object({
+  schema: ({ image }) => z.object({
     title: z.string(),
+    // The card's summary on the journal pages. Without it, the start of the post is used.
     description: z.string().optional(),
+    // Card image: 16:10 landscape, exported at 748 × 468. Optional: the card shows a grey box without it.
+    thumbnail: image().optional(),
     pubDate: z.coerce.date(),
     updatedDate: z.coerce.date().optional(),
     draft: z.boolean().default(false),

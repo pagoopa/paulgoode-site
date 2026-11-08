@@ -156,9 +156,10 @@ misspelled field.
 
 ## Journal posts
 
-The home page is the journal. It shows the 3 newest posts, with "Older posts"
-leading to `/blog/page/2` and onward. A post lives at `/blog/<post>`. Change `POSTS_PER_PAGE` in `src/lib/blog.ts`
-to show more or fewer.
+The home page is the journal. It shows the 5 newest posts as cards, the newest as a
+wide lead card and the rest in two columns, with "Older posts" leading to
+`/blog/page/2` and onward. A post lives at `/blog/<post>`. Change `POSTS_PER_PAGE` in
+`src/lib/blog.ts` to show more or fewer (5 fills the grid; 3 or 7 would leave a gap).
 
 Every post needs a `category` (art, design, spirit, life or studio) and can
 have up to five `tags`, written in the frontmatter like this:
@@ -172,10 +173,10 @@ Tags are lowercase words, joined by hyphens when there is more than one.
 `npm run build` flags a missing or unknown category and a badly written tag.
 Each category and tag gets its own page, and `/tags` lists them all.
 
-The home page shows each post in full. To show only the start, put
-`<!-- more -->` on its own line, with a blank line above and below it.
-Everything above the line shows on the home page, followed by a "Read
-more" link to the full post.
+Each card shows the post's `description` as its summary (or the start of the post
+if there isn't one). Add a `thumbnail` for the card image: a landscape 16:10 image
+exported at 748 × 468, with a path relative to the post, like `thumbnail: ./cover.jpg`.
+Without one the card shows a grey box.
 
 ## Writing a post: what you can use
 
