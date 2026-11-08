@@ -1,5 +1,5 @@
 ---
-# Browser tab title and search-engine description.
+# Browser tab title (shown as "<title> - Paul Goode") and search-engine description.
 title: Newsletter
 description: "You can sign up for weekly updates sent to you by email."
 heading: Newsletter

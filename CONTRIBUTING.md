@@ -273,3 +273,11 @@ The site's icons come from the "Favicon Examples" board in `design/site.pen` and
 `icon-maskable-512.png` (the mark smaller, so Android can crop it) listed in
 `site.webmanifest`. They are exported from the board's frames; to change them, edit the
 board, export again and replace the files. The tab and theme colour is `#121c21`.
+
+## Page titles
+
+The title in the browser tab is always "<page> - Paul Goode". The home page uses the
+title of the newest post; a post uses its own title; About, Projects, Newsletter and Contact
+use the `title` in their file in `src/content/pages/`; a project uses its name. Category and
+tag pages read "Art posts" and "Posts tagged ghost-boy", and later pages add ", page 2". The
+same title is used for link previews. The pattern lives in `src/lib/title.ts`.

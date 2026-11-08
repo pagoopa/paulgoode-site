@@ -7,6 +7,7 @@ import '../styles/global.css';
 import '../styles/prose.css';
 import type { SidebarSection } from '../lib/labels';
 import { getSidebarSections } from '../lib/sidebar';
+import { pageTitle } from '../lib/title';
 
 interface Props {
   title: string;
@@ -28,6 +29,7 @@ const {
 } = Astro.props;
 
 // Address of this page and of the share image, for search results and link previews.
+const fullTitle = pageTitle(title);
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const shareImage = new URL('/og-image.png', Astro.site);
 
@@ -59,12 +61,12 @@ const showSidebar = sidebar && sidebarSections.length > 0;
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="theme-color" content="#121c21" />
     <meta name="description" content={description} />
-    <title>{title} | Paul Goode</title>
+    <title>{fullTitle}</title>
     <link rel="canonical" href={canonical} />
     <link rel="alternate" type="application/rss+xml" title="Paul Goode — Journal" href="/rss.xml" />
     <meta property="og:site_name" content="Paul Goode" />
     <meta property="og:type" content={ogType} />
-    <meta property="og:title" content={`${title} | Paul Goode`} />
+    <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={shareImage} />
