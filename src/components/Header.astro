@@ -92,10 +92,12 @@ function isActive(item: (typeof navItems)[number]) {
     border-bottom: 1px solid var(--color-border-inverse);
   }
 
+  /* The bar is 120px tall with its 1px bottom line, at every width. */
   .site-header__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 119px;
     padding-block: var(--scale-0400);
     gap: var(--scale-0600);
   }
@@ -107,7 +109,7 @@ function isActive(item: (typeof navItems)[number]) {
 
   .site-header__logo img {
     width: auto;
-    height: 40px;
+    height: 52px;
     filter: invert(1);
   }
 
@@ -115,11 +117,18 @@ function isActive(item: (typeof navItems)[number]) {
     display: none;
   }
 
-  /* Link / Nav links; their styles are in global.css. */
+  /* Link / Nav links; their styles are in global.css. The links sit 12px lower than the
+     bar's centre, which lines them up with the logo (Actions has 12px of top padding). */
   .site-header__links {
     display: flex;
     gap: var(--scale-0600);
     flex-wrap: wrap;
+  }
+
+  @media (min-width: 600px) {
+    .site-header__nav {
+      padding-top: 12px;
+    }
   }
 
   /* Phones: Header / Left (closed) and Menu Open. See the
@@ -136,6 +145,7 @@ function isActive(item: (typeof navItems)[number]) {
       justify-content: center;
       width: 44px;
       height: 44px;
+      margin-top: 12px;
       padding: 0;
       border: 0;
       background: transparent;
