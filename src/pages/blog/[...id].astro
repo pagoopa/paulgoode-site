@@ -24,7 +24,13 @@ const postUrl = (p: typeof post) => `/blog/${p.id}/`;
 const { category, tags } = post.data;
 ---
 
-<Layout title={post.data.title} ogType="article" description={post.data.description}>
+<Layout
+  title={post.data.title}
+  ogType="article"
+  description={post.data.description}
+  sidebar={post.data.sidebar}
+  sidebarHide={post.data.sidebarHide}
+>
   <div class="wrap post">
     <div class="entry-column">
       <article class="entry">

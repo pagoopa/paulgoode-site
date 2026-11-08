@@ -3112,420 +3112,432 @@
           "id": "vAPwM",
           "name": "Main",
           "width": "fill_container",
-          "layout": "vertical",
-          "padding": [
-            "$scale-0600",
-            "$layout-margin"
-          ],
-          "alignItems": "center",
           "children": [
             {
               "type": "frame",
-              "id": "a7OndT",
-              "name": "Column",
-              "width": 900,
-              "fill": "$surface-default",
-              "cornerRadius": "$radius-lg",
+              "id": "e0KfUS",
+              "name": "Content",
+              "width": "fill_container",
               "layout": "vertical",
-              "gap": 40,
-              "padding": "$scale-0900",
+              "padding": "$scale-0600",
+              "alignItems": "center",
               "children": [
                 {
                   "type": "frame",
-                  "id": "SSyav",
-                  "name": "Entry List",
-                  "context": "One post, shown in full. The title is the page heading; the body is the post's Markdown.",
+                  "id": "a7OndT",
+                  "name": "Column",
                   "width": "fill_container",
+                  "fill": "$surface-default",
+                  "cornerRadius": "$radius-lg",
                   "layout": "vertical",
-                  "gap": "$scale-0400",
+                  "gap": 40,
+                  "padding": "$scale-0900",
                   "children": [
                     {
                       "type": "frame",
-                      "id": "Sus6y",
-                      "name": "Entry — Hello, out loud",
+                      "id": "SSyav",
+                      "name": "Entry List",
+                      "context": "One post, shown in full. The title is the page heading; the body is the post's Markdown.",
                       "width": "fill_container",
                       "layout": "vertical",
-                      "gap": "$scale-0200",
-                      "padding": [
-                        "$scale-0000",
-                        0,
-                        "$scale-0600",
-                        0
-                      ],
+                      "gap": "$scale-0400",
                       "children": [
                         {
-                          "type": "text",
-                          "id": "R6JdpD",
-                          "name": "Title",
-                          "fill": "$text-default",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "Hello, out loud",
-                          "lineHeight": "$type-h1-line-height",
-                          "fontFamily": "$font-heading",
-                          "fontSize": "$type-h1-size",
-                          "fontWeight": "700",
-                          "letterSpacing": "$type-h1-letter-spacing"
-                        },
-                        {
                           "type": "frame",
-                          "id": "w9Lsts",
-                          "name": "Meta",
-                          "context": "The date, then the post's category. The category links to /category/<name>.",
+                          "id": "Sus6y",
+                          "name": "Entry — Hello, out loud",
                           "width": "fill_container",
-                          "gap": 12,
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "text",
-                              "id": "jQK8M",
-                              "name": "Date",
-                              "fill": "$text-muted",
-                              "content": "SUNDAY, SEP 27, 2026",
-                              "lineHeight": "$type-eyebrow3-line-height",
-                              "fontFamily": "$font-body",
-                              "fontSize": "$type-eyebrow3-size",
-                              "fontWeight": "500",
-                              "letterSpacing": "$type-eyebrow3-letter-spacing"
-                            },
-                            {
-                              "id": "KEVpY",
-                              "type": "ref",
-                              "ref": "tGiW5",
-                              "name": "Category",
-                              "descendants": {
-                                "tkj40": {
-                                  "content": "LIFE"
-                                }
-                              }
-                            }
-                          ]
-                        },
-                        {
-                          "type": "frame",
-                          "id": "GClF2",
-                          "name": "Body",
-                          "width": "fill_container",
-                          "stroke": "$border-default",
-                          "strokeWidth": {
-                            "top": "$scale-0100",
-                            "right": "$scale-0000",
-                            "bottom": "$scale-0050",
-                            "left": "$scale-0000"
-                          },
-                          "strokeAlignment": "inner",
                           "layout": "vertical",
-                          "gap": "$scale-0600",
+                          "gap": "$scale-0200",
                           "padding": [
+                            "$scale-0000",
+                            0,
                             "$scale-0600",
                             0
                           ],
                           "children": [
                             {
                               "type": "text",
-                              "id": "a5gKD",
-                              "name": "Paragraph 1",
-                              "fill": "$text-default",
-                              "textGrowth": "fixed-width",
-                              "width": "fill_container",
-                              "content": "This is the first post in the journal. Replace this with real writing whenever you're ready — the page and its layout are already wired up around whatever goes here.",
-                              "lineHeight": "$type-p2-line-height",
-                              "fontFamily": "$font-body",
-                              "fontSize": "$type-p2-size",
-                              "fontWeight": "normal",
-                              "letterSpacing": "$type-p2-letter-spacing"
-                            },
-                            {
-                              "type": "text",
-                              "id": "tMfyj",
-                              "name": "Paragraph 2",
-                              "fill": "$text-default",
-                              "textGrowth": "fixed-width",
-                              "width": "fill_container",
-                              "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
-                              "lineHeight": "$type-p2-line-height",
-                              "fontFamily": "$font-body",
-                              "fontSize": "$type-p2-size",
-                              "fontWeight": "normal",
-                              "letterSpacing": "$type-p2-letter-spacing"
-                            },
-                            {
-                              "type": "frame",
-                              "id": "sU4er",
-                              "name": "Media",
-                              "context": "Uses the same 16:10 thumbnail (720 × 450), filling this panel; a little is trimmed from the sides.",
-                              "width": "fill_container",
-                              "height": 420,
-                              "fill": "$surface-subtle",
-                              "justifyContent": "center",
-                              "alignItems": "center",
-                              "children": [
-                                {
-                                  "id": "OcQ3S",
-                                  "type": "ref",
-                                  "ref": "zV7DP",
-                                  "name": "Icon",
-                                  "width": 32,
-                                  "height": 32,
-                                  "stroke": "$text-muted"
-                                }
-                              ]
-                            },
-                            {
-                              "type": "frame",
-                              "id": "K1M9ZD",
-                              "name": "Media",
-                              "context": "Uses the same 16:10 thumbnail (720 × 450), filling this panel; a little is trimmed from the sides.",
-                              "width": "fill_container",
-                              "height": 420,
-                              "fill": "$surface-subtle",
-                              "justifyContent": "center",
-                              "alignItems": "center",
-                              "children": [
-                                {
-                                  "id": "xKiEY",
-                                  "type": "ref",
-                                  "ref": "zV7DP",
-                                  "name": "Icon",
-                                  "width": 32,
-                                  "height": 32,
-                                  "stroke": "$text-muted"
-                                }
-                              ]
-                            },
-                            {
-                              "type": "text",
-                              "id": "f0DsOr",
-                              "name": "Paragraph 2",
-                              "fill": "$text-default",
-                              "textGrowth": "fixed-width",
-                              "width": "fill_container",
-                              "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
-                              "lineHeight": "$type-p2-line-height",
-                              "fontFamily": "$font-body",
-                              "fontSize": "$type-p2-size",
-                              "fontWeight": "normal",
-                              "letterSpacing": "$type-p2-letter-spacing"
-                            },
-                            {
-                              "type": "text",
-                              "id": "ZZAyW",
+                              "id": "R6JdpD",
                               "name": "Title",
                               "fill": "$text-default",
                               "textGrowth": "fixed-width",
                               "width": "fill_container",
-                              "content": "This is another heading",
-                              "lineHeight": "$type-h2-line-height",
+                              "content": "Hello, out loud",
+                              "lineHeight": "$type-h1-line-height",
                               "fontFamily": "$font-heading",
-                              "fontSize": "$type-h2-size",
+                              "fontSize": "$type-h1-size",
                               "fontWeight": "700",
-                              "letterSpacing": "$type-h2-letter-spacing"
-                            },
-                            {
-                              "type": "text",
-                              "id": "k8EzB8",
-                              "name": "Paragraph 2",
-                              "fill": "$text-default",
-                              "textGrowth": "fixed-width",
-                              "width": "fill_container",
-                              "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
-                              "lineHeight": "$type-p2-line-height",
-                              "fontFamily": "$font-body",
-                              "fontSize": "$type-p2-size",
-                              "fontWeight": "normal",
-                              "letterSpacing": "$type-p2-letter-spacing"
+                              "letterSpacing": "$type-h1-letter-spacing"
                             },
                             {
                               "type": "frame",
-                              "id": "AU1dj",
-                              "name": "Media",
-                              "context": "Uses the same 16:10 thumbnail (720 × 450), filling this panel; a little is trimmed from the sides.",
+                              "id": "w9Lsts",
+                              "name": "Meta",
+                              "context": "The date, then the post's category. The category links to /category/<name>.",
                               "width": "fill_container",
-                              "height": 420,
-                              "fill": "$surface-subtle",
-                              "justifyContent": "center",
+                              "gap": 12,
                               "alignItems": "center",
                               "children": [
                                 {
-                                  "id": "umiXl",
+                                  "type": "text",
+                                  "id": "jQK8M",
+                                  "name": "Date",
+                                  "fill": "$text-muted",
+                                  "content": "SUNDAY, SEP 27, 2026",
+                                  "lineHeight": "$type-eyebrow3-line-height",
+                                  "fontFamily": "$font-body",
+                                  "fontSize": "$type-eyebrow3-size",
+                                  "fontWeight": "500",
+                                  "letterSpacing": "$type-eyebrow3-letter-spacing"
+                                },
+                                {
+                                  "id": "KEVpY",
                                   "type": "ref",
-                                  "ref": "zV7DP",
-                                  "name": "Icon",
-                                  "width": 32,
-                                  "height": 32,
-                                  "stroke": "$text-muted"
+                                  "ref": "tGiW5",
+                                  "name": "Category",
+                                  "descendants": {
+                                    "tkj40": {
+                                      "content": "LIFE"
+                                    }
+                                  }
                                 }
                               ]
                             },
                             {
-                              "type": "text",
-                              "id": "R2JGv",
-                              "name": "Paragraph 2",
-                              "fill": "$text-default",
-                              "textGrowth": "fixed-width",
-                              "width": "fill_container",
-                              "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically. Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically. Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
-                              "lineHeight": "$type-p2-line-height",
-                              "fontFamily": "$font-body",
-                              "fontSize": "$type-p2-size",
-                              "fontWeight": "normal",
-                              "letterSpacing": "$type-p2-letter-spacing"
-                            },
-                            {
-                              "type": "text",
-                              "id": "a6GNS",
-                              "name": "Paragraph 2",
-                              "fill": "$text-default",
-                              "textGrowth": "fixed-width",
-                              "width": "fill_container",
-                              "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
-                              "lineHeight": "$type-p2-line-height",
-                              "fontFamily": "$font-body",
-                              "fontSize": "$type-p2-size",
-                              "fontWeight": "normal",
-                              "letterSpacing": "$type-p2-letter-spacing"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "frame",
-                          "id": "xkSjr",
-                          "name": "Category and tags",
-                          "context": "Category links to /category/<name>; each tag links to /tag/<tag>. A post has one category and up to five tags. Tags are lowercase words joined by hyphens.",
-                          "width": "fill_container",
-                          "layout": "vertical",
-                          "gap": 12,
-                          "padding": [
-                            "$scale-0400",
-                            0,
-                            0,
-                            0
-                          ],
-                          "children": [
-                            {
                               "type": "frame",
-                              "id": "dZZVc",
-                              "name": "Filed under",
+                              "id": "GClF2",
+                              "name": "Body",
                               "width": "fill_container",
-                              "gap": 12,
-                              "justifyContent": "space_between",
-                              "alignItems": "center",
+                              "stroke": "$border-default",
+                              "strokeWidth": {
+                                "top": "$scale-0100",
+                                "right": "$scale-0000",
+                                "bottom": "$scale-0050",
+                                "left": "$scale-0000"
+                              },
+                              "strokeAlignment": "inner",
+                              "layout": "vertical",
+                              "gap": "$scale-0600",
+                              "padding": [
+                                "$scale-0600",
+                                0
+                              ],
                               "children": [
                                 {
+                                  "type": "text",
+                                  "id": "a5gKD",
+                                  "name": "Paragraph 1",
+                                  "fill": "$text-default",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "This is the first post in the journal. Replace this with real writing whenever you're ready — the page and its layout are already wired up around whatever goes here.",
+                                  "lineHeight": "$type-p2-line-height",
+                                  "fontFamily": "$font-body",
+                                  "fontSize": "$type-p2-size",
+                                  "fontWeight": "normal",
+                                  "letterSpacing": "$type-p2-letter-spacing"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "tMfyj",
+                                  "name": "Paragraph 2",
+                                  "fill": "$text-default",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
+                                  "lineHeight": "$type-p2-line-height",
+                                  "fontFamily": "$font-body",
+                                  "fontSize": "$type-p2-size",
+                                  "fontWeight": "normal",
+                                  "letterSpacing": "$type-p2-letter-spacing"
+                                },
+                                {
                                   "type": "frame",
-                                  "id": "BDakh",
-                                  "name": "Category",
-                                  "gap": 12,
+                                  "id": "sU4er",
+                                  "name": "Media",
+                                  "context": "Uses the same 16:10 thumbnail (720 × 450), filling this panel; a little is trimmed from the sides.",
+                                  "width": "fill_container",
+                                  "height": 420,
+                                  "fill": "$surface-subtle",
+                                  "justifyContent": "center",
                                   "alignItems": "center",
                                   "children": [
                                     {
-                                      "type": "text",
-                                      "id": "H1798b",
-                                      "name": "Label",
-                                      "fill": "$text-muted",
-                                      "content": "FILED UNDER",
-                                      "lineHeight": "$type-eyebrow3-line-height",
-                                      "fontFamily": "$font-body",
-                                      "fontSize": "$type-eyebrow3-size",
-                                      "fontWeight": "500",
-                                      "letterSpacing": "$type-eyebrow3-letter-spacing"
+                                      "id": "OcQ3S",
+                                      "type": "ref",
+                                      "ref": "zV7DP",
+                                      "name": "Icon",
+                                      "width": 32,
+                                      "height": 32,
+                                      "stroke": "$text-muted"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "K1M9ZD",
+                                  "name": "Media",
+                                  "context": "Uses the same 16:10 thumbnail (720 × 450), filling this panel; a little is trimmed from the sides.",
+                                  "width": "fill_container",
+                                  "height": 420,
+                                  "fill": "$surface-subtle",
+                                  "justifyContent": "center",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "id": "xKiEY",
+                                      "type": "ref",
+                                      "ref": "zV7DP",
+                                      "name": "Icon",
+                                      "width": 32,
+                                      "height": 32,
+                                      "stroke": "$text-muted"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "f0DsOr",
+                                  "name": "Paragraph 2",
+                                  "fill": "$text-default",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
+                                  "lineHeight": "$type-p2-line-height",
+                                  "fontFamily": "$font-body",
+                                  "fontSize": "$type-p2-size",
+                                  "fontWeight": "normal",
+                                  "letterSpacing": "$type-p2-letter-spacing"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "ZZAyW",
+                                  "name": "Title",
+                                  "fill": "$text-default",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "This is another heading",
+                                  "lineHeight": "$type-h2-line-height",
+                                  "fontFamily": "$font-heading",
+                                  "fontSize": "$type-h2-size",
+                                  "fontWeight": "700",
+                                  "letterSpacing": "$type-h2-letter-spacing"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "k8EzB8",
+                                  "name": "Paragraph 2",
+                                  "fill": "$text-default",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
+                                  "lineHeight": "$type-p2-line-height",
+                                  "fontFamily": "$font-body",
+                                  "fontSize": "$type-p2-size",
+                                  "fontWeight": "normal",
+                                  "letterSpacing": "$type-p2-letter-spacing"
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "AU1dj",
+                                  "name": "Media",
+                                  "context": "Uses the same 16:10 thumbnail (720 × 450), filling this panel; a little is trimmed from the sides.",
+                                  "width": "fill_container",
+                                  "height": 420,
+                                  "fill": "$surface-subtle",
+                                  "justifyContent": "center",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "id": "umiXl",
+                                      "type": "ref",
+                                      "ref": "zV7DP",
+                                      "name": "Icon",
+                                      "width": 32,
+                                      "height": 32,
+                                      "stroke": "$text-muted"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "R2JGv",
+                                  "name": "Paragraph 2",
+                                  "fill": "$text-default",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically. Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically. Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
+                                  "lineHeight": "$type-p2-line-height",
+                                  "fontFamily": "$font-body",
+                                  "fontSize": "$type-p2-size",
+                                  "fontWeight": "normal",
+                                  "letterSpacing": "$type-p2-letter-spacing"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "a6GNS",
+                                  "name": "Paragraph 2",
+                                  "fill": "$text-default",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
+                                  "lineHeight": "$type-p2-line-height",
+                                  "fontFamily": "$font-body",
+                                  "fontSize": "$type-p2-size",
+                                  "fontWeight": "normal",
+                                  "letterSpacing": "$type-p2-letter-spacing"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "xkSjr",
+                              "name": "Category and tags",
+                              "context": "Category links to /category/<name>; each tag links to /tag/<tag>. A post has one category and up to five tags. Tags are lowercase words joined by hyphens.",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 12,
+                              "padding": [
+                                "$scale-0400",
+                                0,
+                                0,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "dZZVc",
+                                  "name": "Filed under",
+                                  "width": "fill_container",
+                                  "gap": 12,
+                                  "justifyContent": "space_between",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "frame",
+                                      "id": "BDakh",
+                                      "name": "Category",
+                                      "gap": 12,
+                                      "alignItems": "center",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "H1798b",
+                                          "name": "Label",
+                                          "fill": "$text-muted",
+                                          "content": "FILED UNDER",
+                                          "lineHeight": "$type-eyebrow3-line-height",
+                                          "fontFamily": "$font-body",
+                                          "fontSize": "$type-eyebrow3-size",
+                                          "fontWeight": "500",
+                                          "letterSpacing": "$type-eyebrow3-letter-spacing"
+                                        },
+                                        {
+                                          "id": "qh27r",
+                                          "type": "ref",
+                                          "ref": "tGiW5",
+                                          "name": "Category",
+                                          "descendants": {
+                                            "tkj40": {
+                                              "content": "LIFE"
+                                            }
+                                          }
+                                        }
+                                      ]
                                     },
                                     {
-                                      "id": "qh27r",
+                                      "id": "Ie5Ly",
                                       "type": "ref",
-                                      "ref": "tGiW5",
-                                      "name": "Category",
+                                      "ref": "HXmMz",
+                                      "name": "All tags",
+                                      "context": "Links to /tags, the page listing every category and tag.",
                                       "descendants": {
-                                        "tkj40": {
-                                          "content": "LIFE"
+                                        "BSi7m": {
+                                          "content": "All tags"
                                         }
                                       }
                                     }
                                   ]
                                 },
                                 {
-                                  "id": "Ie5Ly",
-                                  "type": "ref",
-                                  "ref": "HXmMz",
-                                  "name": "All tags",
-                                  "context": "Links to /tags, the page listing every category and tag.",
-                                  "descendants": {
-                                    "BSi7m": {
-                                      "content": "All tags"
+                                  "type": "frame",
+                                  "id": "R69zQS",
+                                  "name": "Tags",
+                                  "gap": 8,
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "id": "um8eb",
+                                      "type": "ref",
+                                      "ref": "geYri",
+                                      "name": "Tag",
+                                      "descendants": {
+                                        "SAIpz": {
+                                          "content": "ORIGINS"
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "id": "nDwxc",
+                                      "type": "ref",
+                                      "ref": "geYri",
+                                      "name": "Tag",
+                                      "descendants": {
+                                        "SAIpz": {
+                                          "content": "JOURNAL"
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "id": "x6IjNY",
+                                      "type": "ref",
+                                      "ref": "geYri",
+                                      "name": "Tag",
+                                      "descendants": {
+                                        "SAIpz": {
+                                          "content": "FIRST-POST"
+                                        }
+                                      }
                                     }
-                                  }
-                                }
-                              ]
-                            },
-                            {
-                              "type": "frame",
-                              "id": "R69zQS",
-                              "name": "Tags",
-                              "gap": 8,
-                              "alignItems": "center",
-                              "children": [
-                                {
-                                  "id": "um8eb",
-                                  "type": "ref",
-                                  "ref": "geYri",
-                                  "name": "Tag",
-                                  "descendants": {
-                                    "SAIpz": {
-                                      "content": "ORIGINS"
-                                    }
-                                  }
-                                },
-                                {
-                                  "id": "nDwxc",
-                                  "type": "ref",
-                                  "ref": "geYri",
-                                  "name": "Tag",
-                                  "descendants": {
-                                    "SAIpz": {
-                                      "content": "JOURNAL"
-                                    }
-                                  }
-                                },
-                                {
-                                  "id": "x6IjNY",
-                                  "type": "ref",
-                                  "ref": "geYri",
-                                  "name": "Tag",
-                                  "descendants": {
-                                    "SAIpz": {
-                                      "content": "FIRST-POST"
-                                    }
-                                  }
+                                  ]
                                 }
                               ]
                             }
                           ]
                         }
                       ]
+                    },
+                    {
+                      "id": "wSTwD",
+                      "type": "ref",
+                      "ref": "Rozdd",
+                      "name": "Newer / older post",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "context": "Links to the neighbouring posts, newest first. The newest post has no Newer link and the oldest has no Older link.",
+                      "descendants": {
+                        "B5LPx": {
+                          "enabled": true
+                        },
+                        "eqtno": {
+                          "content": "Newer post"
+                        },
+                        "JnVs9": {
+                          "content": "Older post"
+                        }
+                      }
                     }
                   ]
-                },
-                {
-                  "id": "wSTwD",
-                  "type": "ref",
-                  "ref": "Rozdd",
-                  "name": "Newer / older post",
-                  "width": "fill_container",
-                  "justifyContent": "space_between",
-                  "context": "Links to the neighbouring posts, newest first. The newest post has no Newer link and the oldest has no Older link.",
-                  "descendants": {
-                    "B5LPx": {
-                      "enabled": true
-                    },
-                    "eqtno": {
-                      "content": "Newer post"
-                    },
-                    "JnVs9": {
-                      "content": "Older post"
-                    }
-                  }
                 }
               ]
+            },
+            {
+              "id": "E2Fg1",
+              "type": "ref",
+              "ref": "AJ8ld",
+              "name": "Sidebar",
+              "height": "fill_container"
             }
           ]
         },
@@ -3982,6 +3994,20 @@
                 }
               ]
             }
+          ]
+        },
+        {
+          "id": "VDN5B",
+          "type": "ref",
+          "ref": "AJ8ld",
+          "name": "Sidebar",
+          "width": "fill_container",
+          "strokeWidth": {
+            "top": 1
+          },
+          "padding": [
+            "$scale-0800",
+            "$layout-margin"
           ]
         },
         {
@@ -4443,6 +4469,20 @@
                 }
               ]
             }
+          ]
+        },
+        {
+          "id": "VliWo",
+          "type": "ref",
+          "ref": "AJ8ld",
+          "name": "Sidebar",
+          "width": "fill_container",
+          "strokeWidth": {
+            "top": 1
+          },
+          "padding": [
+            "$scale-0800",
+            "$layout-margin"
           ]
         },
         {
@@ -15761,282 +15801,297 @@
           "id": "WwciD",
           "name": "Main",
           "width": "fill_container",
-          "layout": "vertical",
-          "padding": [
-            "$space-section",
-            "$layout-margin"
-          ],
-          "alignItems": "center",
           "children": [
             {
               "type": "frame",
-              "id": "GYYwb",
-              "name": "Column",
+              "id": "A9lfMQ",
+              "name": "Content",
               "width": "fill_container",
               "layout": "vertical",
-              "gap": "$space-block",
+              "padding": [
+                "$space-section",
+                "$scale-0600"
+              ],
+              "alignItems": "center",
               "children": [
                 {
-                  "id": "rWv50",
-                  "type": "ref",
-                  "ref": "g7uira",
-                  "name": "Intro",
-                  "width": 720,
-                  "descendants": {
-                    "z9frDW": {
-                      "content": "PROJECTS",
-                      "enabled": false
-                    },
-                    "SqBTJ": {
-                      "content": "Projects"
-                    },
-                    "zSXuD": {
-                      "content": "Case studies and personal work: product design, original art, and the things in between."
-                    }
-                  }
-                },
-                {
                   "type": "frame",
-                  "id": "G8TbO",
-                  "name": "Filters",
-                  "width": "fill_container",
-                  "gap": "$scale-0200",
-                  "alignItems": "center",
-                  "children": [
-                    {
-                      "id": "qJNVI",
-                      "type": "ref",
-                      "ref": "zQuWl",
-                      "name": "ALL",
-                      "descendants": {
-                        "rhfC6": {
-                          "content": "ALL"
-                        }
-                      }
-                    },
-                    {
-                      "id": "d7EYme",
-                      "type": "ref",
-                      "ref": "drx5q",
-                      "name": "SERIES",
-                      "descendants": {
-                        "taLCI": {
-                          "content": "SERIES"
-                        }
-                      }
-                    },
-                    {
-                      "id": "eUt81",
-                      "type": "ref",
-                      "ref": "drx5q",
-                      "name": "PERSONAL",
-                      "descendants": {
-                        "taLCI": {
-                          "content": "PERSONAL"
-                        }
-                      }
-                    },
-                    {
-                      "id": "U1gdxD",
-                      "type": "ref",
-                      "ref": "drx5q",
-                      "name": "CASE STUDY",
-                      "descendants": {
-                        "taLCI": {
-                          "content": "CASE STUDY"
-                        }
-                      }
-                    },
-                    {
-                      "id": "i7tCzj",
-                      "type": "ref",
-                      "ref": "drx5q",
-                      "name": "ART",
-                      "descendants": {
-                        "taLCI": {
-                          "content": "ART"
-                        }
-                      }
-                    },
-                    {
-                      "id": "aO0Uz",
-                      "type": "ref",
-                      "ref": "drx5q",
-                      "name": "MUSIC",
-                      "descendants": {
-                        "taLCI": {
-                          "content": "MUSIC"
-                        }
-                      }
-                    },
-                    {
-                      "id": "TlQDZ",
-                      "type": "ref",
-                      "ref": "drx5q",
-                      "name": "RESOURCE",
-                      "descendants": {
-                        "taLCI": {
-                          "content": "RESOURCE"
-                        }
-                      }
-                    }
-                  ]
-                },
-                {
-                  "id": "Snuso",
-                  "type": "ref",
-                  "ref": "y6vFR6",
-                  "name": "Featured — Uplifting Ink",
-                  "width": "fill_container",
-                  "descendants": {
-                    "W49He": {
-                      "content": "FEATURED · CASE STUDY"
-                    },
-                    "e41yZ": {
-                      "content": "Uplifting Ink"
-                    },
-                    "VYFHh": {
-                      "content": "Building a visual thinking company: the products, the workshops and the brand behind them."
-                    }
-                  }
-                },
-                {
-                  "type": "frame",
-                  "id": "D0VaD",
-                  "name": "Grid",
+                  "id": "GYYwb",
+                  "name": "Column",
                   "width": "fill_container",
                   "layout": "vertical",
-                  "gap": "$scale-0600",
+                  "gap": "$space-block",
                   "children": [
                     {
+                      "id": "rWv50",
+                      "type": "ref",
+                      "ref": "g7uira",
+                      "name": "Intro",
+                      "width": 720,
+                      "descendants": {
+                        "z9frDW": {
+                          "content": "PROJECTS",
+                          "enabled": false
+                        },
+                        "SqBTJ": {
+                          "content": "Projects"
+                        },
+                        "zSXuD": {
+                          "content": "Case studies and personal work: product design, original art, and the things in between."
+                        }
+                      }
+                    },
+                    {
                       "type": "frame",
-                      "id": "c71VVd",
-                      "name": "Row 1",
+                      "id": "G8TbO",
+                      "name": "Filters",
                       "width": "fill_container",
-                      "gap": "$scale-0600",
+                      "gap": "$scale-0200",
+                      "alignItems": "center",
                       "children": [
                         {
-                          "id": "P86FL5",
+                          "id": "qJNVI",
                           "type": "ref",
-                          "ref": "ZwNI4",
-                          "name": "Project — Keep Going Sketchbook",
-                          "width": "fill_container",
+                          "ref": "zQuWl",
+                          "name": "ALL",
                           "descendants": {
-                            "Mng70": {
-                              "content": "PERSONAL PROJECT"
-                            },
-                            "QaGQc": {
-                              "content": "Keep Going Sketchbook"
-                            },
-                            "mlzay": {
-                              "content": "A daily drawing practice, shared openly while it happens."
+                            "rhfC6": {
+                              "content": "ALL"
                             }
                           }
                         },
                         {
-                          "id": "Cawke",
+                          "id": "d7EYme",
                           "type": "ref",
-                          "ref": "ZwNI4",
-                          "name": "Project — Enterprise design system",
-                          "width": "fill_container",
+                          "ref": "drx5q",
+                          "name": "SERIES",
                           "descendants": {
-                            "Mng70": {
+                            "taLCI": {
+                              "content": "SERIES"
+                            }
+                          }
+                        },
+                        {
+                          "id": "eUt81",
+                          "type": "ref",
+                          "ref": "drx5q",
+                          "name": "PERSONAL",
+                          "descendants": {
+                            "taLCI": {
+                              "content": "PERSONAL"
+                            }
+                          }
+                        },
+                        {
+                          "id": "U1gdxD",
+                          "type": "ref",
+                          "ref": "drx5q",
+                          "name": "CASE STUDY",
+                          "descendants": {
+                            "taLCI": {
                               "content": "CASE STUDY"
-                            },
-                            "QaGQc": {
-                              "content": "Enterprise design system"
-                            },
-                            "mlzay": {
-                              "content": "Bringing many product teams onto one shared set of components and tokens."
                             }
                           }
                         },
                         {
-                          "id": "IePng",
+                          "id": "i7tCzj",
                           "type": "ref",
-                          "ref": "ZwNI4",
-                          "name": "Project — Printmaking series",
-                          "width": "fill_container",
+                          "ref": "drx5q",
+                          "name": "ART",
                           "descendants": {
-                            "Mng70": {
+                            "taLCI": {
                               "content": "ART"
-                            },
-                            "QaGQc": {
-                              "content": "Printmaking series"
-                            },
-                            "mlzay": {
-                              "content": "Hand-pulled prints exploring pattern, landscape and small creatures."
+                            }
+                          }
+                        },
+                        {
+                          "id": "aO0Uz",
+                          "type": "ref",
+                          "ref": "drx5q",
+                          "name": "MUSIC",
+                          "descendants": {
+                            "taLCI": {
+                              "content": "MUSIC"
+                            }
+                          }
+                        },
+                        {
+                          "id": "TlQDZ",
+                          "type": "ref",
+                          "ref": "drx5q",
+                          "name": "RESOURCE",
+                          "descendants": {
+                            "taLCI": {
+                              "content": "RESOURCE"
                             }
                           }
                         }
                       ]
                     },
                     {
-                      "type": "frame",
-                      "id": "wQt28",
-                      "name": "Row 2",
+                      "id": "Snuso",
+                      "type": "ref",
+                      "ref": "y6vFR6",
+                      "name": "Featured — Uplifting Ink",
                       "width": "fill_container",
+                      "descendants": {
+                        "W49He": {
+                          "content": "FEATURED · CASE STUDY"
+                        },
+                        "e41yZ": {
+                          "content": "Uplifting Ink"
+                        },
+                        "VYFHh": {
+                          "content": "Building a visual thinking company: the products, the workshops and the brand behind them."
+                        }
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "D0VaD",
+                      "name": "Grid",
+                      "width": "fill_container",
+                      "layout": "vertical",
                       "gap": "$scale-0600",
                       "children": [
                         {
-                          "id": "UiA3Z",
-                          "type": "ref",
-                          "ref": "ZwNI4",
-                          "name": "Project — Consumer onboarding",
+                          "type": "frame",
+                          "id": "c71VVd",
+                          "name": "Row 1",
                           "width": "fill_container",
-                          "descendants": {
-                            "Mng70": {
-                              "content": "SERIES"
+                          "gap": "$scale-0600",
+                          "children": [
+                            {
+                              "id": "P86FL5",
+                              "type": "ref",
+                              "ref": "ZwNI4",
+                              "name": "Project — Keep Going Sketchbook",
+                              "width": "fill_container",
+                              "descendants": {
+                                "Mng70": {
+                                  "content": "PERSONAL PROJECT"
+                                },
+                                "QaGQc": {
+                                  "content": "Keep Going Sketchbook"
+                                },
+                                "mlzay": {
+                                  "content": "A daily drawing practice, shared openly while it happens."
+                                }
+                              }
                             },
-                            "QaGQc": {
-                              "content": "Junk Drawer Journey"
+                            {
+                              "id": "Cawke",
+                              "type": "ref",
+                              "ref": "ZwNI4",
+                              "name": "Project — Enterprise design system",
+                              "width": "fill_container",
+                              "descendants": {
+                                "Mng70": {
+                                  "content": "CASE STUDY"
+                                },
+                                "QaGQc": {
+                                  "content": "Enterprise design system"
+                                },
+                                "mlzay": {
+                                  "content": "Bringing many product teams onto one shared set of components and tokens."
+                                }
+                              }
                             },
-                            "mlzay": {
-                              "content": "A numbered series of drawings, one piece at a time."
+                            {
+                              "id": "IePng",
+                              "type": "ref",
+                              "ref": "ZwNI4",
+                              "name": "Project — Printmaking series",
+                              "width": "fill_container",
+                              "descendants": {
+                                "Mng70": {
+                                  "content": "ART"
+                                },
+                                "QaGQc": {
+                                  "content": "Printmaking series"
+                                },
+                                "mlzay": {
+                                  "content": "Hand-pulled prints exploring pattern, landscape and small creatures."
+                                }
+                              }
                             }
-                          }
+                          ]
                         },
                         {
-                          "id": "rr1uO",
-                          "type": "ref",
-                          "ref": "ZwNI4",
-                          "name": "Project — Songs for drawing",
+                          "type": "frame",
+                          "id": "wQt28",
+                          "name": "Row 2",
                           "width": "fill_container",
-                          "descendants": {
-                            "Mng70": {
-                              "content": "MUSIC"
+                          "gap": "$scale-0600",
+                          "children": [
+                            {
+                              "id": "UiA3Z",
+                              "type": "ref",
+                              "ref": "ZwNI4",
+                              "name": "Project — Consumer onboarding",
+                              "width": "fill_container",
+                              "descendants": {
+                                "Mng70": {
+                                  "content": "SERIES"
+                                },
+                                "QaGQc": {
+                                  "content": "Junk Drawer Journey"
+                                },
+                                "mlzay": {
+                                  "content": "A numbered series of drawings, one piece at a time."
+                                }
+                              }
                             },
-                            "QaGQc": {
-                              "content": "Songs for drawing"
+                            {
+                              "id": "rr1uO",
+                              "type": "ref",
+                              "ref": "ZwNI4",
+                              "name": "Project — Songs for drawing",
+                              "width": "fill_container",
+                              "descendants": {
+                                "Mng70": {
+                                  "content": "MUSIC"
+                                },
+                                "QaGQc": {
+                                  "content": "Songs for drawing"
+                                },
+                                "mlzay": {
+                                  "content": "Short pieces written to draw to, recorded at home."
+                                }
+                              }
                             },
-                            "mlzay": {
-                              "content": "Short pieces written to draw to, recorded at home."
+                            {
+                              "id": "UdaRr",
+                              "type": "ref",
+                              "ref": "ZwNI4",
+                              "name": "Project — Workshop toolkit",
+                              "width": "fill_container",
+                              "descendants": {
+                                "Mng70": {
+                                  "content": "RESOURCE"
+                                },
+                                "QaGQc": {
+                                  "content": "Workshop toolkit"
+                                },
+                                "mlzay": {
+                                  "content": "Templates and exercises for teaching visual thinking."
+                                }
+                              }
                             }
-                          }
-                        },
-                        {
-                          "id": "UdaRr",
-                          "type": "ref",
-                          "ref": "ZwNI4",
-                          "name": "Project — Workshop toolkit",
-                          "width": "fill_container",
-                          "descendants": {
-                            "Mng70": {
-                              "content": "RESOURCE"
-                            },
-                            "QaGQc": {
-                              "content": "Workshop toolkit"
-                            },
-                            "mlzay": {
-                              "content": "Templates and exercises for teaching visual thinking."
-                            }
-                          }
+                          ]
                         }
                       ]
                     }
                   ]
                 }
               ]
+            },
+            {
+              "id": "N8lbI",
+              "type": "ref",
+              "ref": "AJ8ld",
+              "name": "Sidebar",
+              "height": "fill_container"
             }
           ]
         },
@@ -16357,6 +16412,20 @@
           ]
         },
         {
+          "id": "oxH2Y",
+          "type": "ref",
+          "ref": "AJ8ld",
+          "name": "Sidebar",
+          "width": "fill_container",
+          "strokeWidth": {
+            "top": 1
+          },
+          "padding": [
+            "$scale-0800",
+            "$layout-margin"
+          ]
+        },
+        {
           "id": "TzXmE",
           "type": "ref",
           "ref": "E6haZ",
@@ -16645,6 +16714,20 @@
                 }
               ]
             }
+          ]
+        },
+        {
+          "id": "hvj6A",
+          "type": "ref",
+          "ref": "AJ8ld",
+          "name": "Sidebar",
+          "width": "fill_container",
+          "strokeWidth": {
+            "top": 1
+          },
+          "padding": [
+            "$scale-0800",
+            "$layout-margin"
           ]
         },
         {
@@ -16990,6 +17073,20 @@
           ]
         },
         {
+          "id": "Ohzcw",
+          "type": "ref",
+          "ref": "AJ8ld",
+          "name": "Sidebar",
+          "width": "fill_container",
+          "strokeWidth": {
+            "top": 1
+          },
+          "padding": [
+            "$scale-0800",
+            "$layout-margin"
+          ]
+        },
+        {
           "id": "YB1fH",
           "type": "ref",
           "ref": "E6haZ",
@@ -17141,284 +17238,308 @@
         },
         {
           "type": "frame",
-          "id": "MZIuX",
-          "name": "Back",
+          "id": "B98mCB",
+          "name": "Main",
           "width": "fill_container",
-          "padding": [
-            "$space-section",
-            "$layout-margin",
-            0,
-            "$layout-margin"
-          ],
-          "children": [
-            {
-              "id": "K4nh4I",
-              "type": "ref",
-              "ref": "jkmbG",
-              "name": "Back to Series",
-              "descendants": {
-                "eK7AK": {
-                  "content": "Back to Series"
-                }
-              }
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "JZy2r",
-          "name": "Frame 2",
-          "width": "fill_container",
-          "layout": "vertical",
-          "gap": 24,
-          "alignItems": "center",
           "children": [
             {
               "type": "frame",
-              "id": "BsYMK",
-              "name": "Frame 3",
+              "id": "ze15g",
+              "name": "Content",
               "width": "fill_container",
               "layout": "vertical",
-              "gap": "$scale-0400",
-              "padding": [
-                "$layout-margin",
-                "$scale-1000",
-                "$layout-margin",
-                "$layout-margin"
-              ],
-              "justifyContent": "center",
-              "alignItems": "center",
               "children": [
                 {
-                  "id": "nHN3z",
-                  "type": "ref",
-                  "ref": "iZort",
-                  "name": "Figure"
-                },
-                {
                   "type": "frame",
-                  "id": "qMFPu",
-                  "name": "Post Header",
-                  "width": 820,
-                  "layout": "vertical",
-                  "gap": "$space-stack",
+                  "id": "MZIuX",
+                  "name": "Back",
+                  "width": "fill_container",
                   "padding": [
+                    "$space-section",
+                    "$layout-margin",
                     0,
-                    0,
-                    "$scale-0600",
-                    0
+                    "$layout-margin"
                   ],
-                  "alignItems": "center",
                   "children": [
                     {
-                      "type": "frame",
-                      "id": "nvXPu",
-                      "name": "Frame 4",
-                      "width": 1104,
-                      "layout": "vertical",
-                      "gap": 4,
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "X7VCj",
-                          "name": "Title",
-                          "fill": "$text-default",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "Deliverance in San Antonio",
-                          "lineHeight": "$type-h1-line-height",
-                          "textAlign": "center",
-                          "fontFamily": "$font-heading",
-                          "fontSize": "$type-h3-size",
-                          "fontWeight": "700",
-                          "letterSpacing": "$type-h1-letter-spacing"
-                        },
-                        {
-                          "type": "text",
-                          "id": "MIO29",
-                          "name": "Date",
-                          "fill": "$text-link",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "SEPTEMBER 27, 2026",
-                          "lineHeight": "$type-eyebrow2-line-height",
-                          "textAlign": "center",
-                          "fontFamily": "$font-body",
-                          "fontSize": "$type-eyebrow2-size",
-                          "fontWeight": "500",
-                          "letterSpacing": "$type-eyebrow2-letter-spacing"
+                      "id": "K4nh4I",
+                      "type": "ref",
+                      "ref": "jkmbG",
+                      "name": "Back to Series",
+                      "descendants": {
+                        "eK7AK": {
+                          "content": "Back to Series"
                         }
-                      ]
+                      }
                     }
                   ]
                 },
                 {
                   "type": "frame",
-                  "id": "zgyaA",
-                  "name": "Body",
-                  "width": 820,
+                  "id": "JZy2r",
+                  "name": "Frame 2",
+                  "width": "fill_container",
                   "layout": "vertical",
-                  "gap": 25,
+                  "gap": 24,
+                  "alignItems": "center",
                   "children": [
                     {
-                      "type": "text",
-                      "id": "j43ZT",
-                      "name": "Paragraph 1",
-                      "fill": "$text-default",
-                      "textGrowth": "fixed-width",
+                      "type": "frame",
+                      "id": "BsYMK",
+                      "name": "Frame 3",
                       "width": "fill_container",
-                      "content": "This is the first post in the journal. Replace this with real writing whenever you're ready — the page and its layout are already wired up around whatever goes here.",
-                      "lineHeight": "$type-p2-line-height",
-                      "fontFamily": "$font-body",
-                      "fontSize": "$type-p2-size",
-                      "fontWeight": "normal",
-                      "letterSpacing": "$type-p2-letter-spacing"
+                      "layout": "vertical",
+                      "gap": "$scale-0400",
+                      "padding": [
+                        "$layout-margin",
+                        "$scale-1000",
+                        "$layout-margin",
+                        "$layout-margin"
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "id": "nHN3z",
+                          "type": "ref",
+                          "ref": "iZort",
+                          "name": "Figure"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "qMFPu",
+                          "name": "Post Header",
+                          "width": 820,
+                          "layout": "vertical",
+                          "gap": "$space-stack",
+                          "padding": [
+                            0,
+                            0,
+                            "$scale-0600",
+                            0
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "nvXPu",
+                              "name": "Frame 4",
+                              "width": 1104,
+                              "layout": "vertical",
+                              "gap": 4,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "X7VCj",
+                                  "name": "Title",
+                                  "fill": "$text-default",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Deliverance in San Antonio",
+                                  "lineHeight": "$type-h1-line-height",
+                                  "textAlign": "center",
+                                  "fontFamily": "$font-heading",
+                                  "fontSize": "$type-h3-size",
+                                  "fontWeight": "700",
+                                  "letterSpacing": "$type-h1-letter-spacing"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "MIO29",
+                                  "name": "Date",
+                                  "fill": "$text-link",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "SEPTEMBER 27, 2026",
+                                  "lineHeight": "$type-eyebrow2-line-height",
+                                  "textAlign": "center",
+                                  "fontFamily": "$font-body",
+                                  "fontSize": "$type-eyebrow2-size",
+                                  "fontWeight": "500",
+                                  "letterSpacing": "$type-eyebrow2-letter-spacing"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "zgyaA",
+                          "name": "Body",
+                          "width": 820,
+                          "layout": "vertical",
+                          "gap": 25,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "j43ZT",
+                              "name": "Paragraph 1",
+                              "fill": "$text-default",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "This is the first post in the journal. Replace this with real writing whenever you're ready — the page and its layout are already wired up around whatever goes here.",
+                              "lineHeight": "$type-p2-line-height",
+                              "fontFamily": "$font-body",
+                              "fontSize": "$type-p2-size",
+                              "fontWeight": "normal",
+                              "letterSpacing": "$type-p2-letter-spacing"
+                            },
+                            {
+                              "type": "text",
+                              "id": "W64dbP",
+                              "name": "Paragraph 2",
+                              "fill": "$text-default",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
+                              "lineHeight": "$type-p2-line-height",
+                              "fontFamily": "$font-body",
+                              "fontSize": "$type-p2-size",
+                              "fontWeight": "normal",
+                              "letterSpacing": "$type-p2-letter-spacing"
+                            },
+                            {
+                              "type": "text",
+                              "id": "lujmz",
+                              "name": "Paragraph 3",
+                              "fill": "$text-default",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "A longer paragraph to show how body copy reads at full measure. Entries can run as long as they need to; the column stays at a comfortable reading width on desktop and uses the full width of the screen on tablet and phone.",
+                              "lineHeight": "$type-p2-line-height",
+                              "fontFamily": "$font-body",
+                              "fontSize": "$type-p2-size",
+                              "fontWeight": "normal",
+                              "letterSpacing": "$type-p2-letter-spacing"
+                            }
+                          ]
+                        }
+                      ]
                     },
                     {
-                      "type": "text",
-                      "id": "W64dbP",
-                      "name": "Paragraph 2",
-                      "fill": "$text-default",
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container",
-                      "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
-                      "lineHeight": "$type-p2-line-height",
-                      "fontFamily": "$font-body",
-                      "fontSize": "$type-p2-size",
-                      "fontWeight": "normal",
-                      "letterSpacing": "$type-p2-letter-spacing"
-                    },
-                    {
-                      "type": "text",
-                      "id": "lujmz",
-                      "name": "Paragraph 3",
-                      "fill": "$text-default",
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container",
-                      "content": "A longer paragraph to show how body copy reads at full measure. Entries can run as long as they need to; the column stays at a comfortable reading width on desktop and uses the full width of the screen on tablet and phone.",
-                      "lineHeight": "$type-p2-line-height",
-                      "fontFamily": "$font-body",
-                      "fontSize": "$type-p2-size",
-                      "fontWeight": "normal",
-                      "letterSpacing": "$type-p2-letter-spacing"
+                      "type": "frame",
+                      "id": "BNdhi",
+                      "name": "Info",
+                      "width": 1200,
+                      "stroke": {
+                        "type": "color",
+                        "color": "$border-strong",
+                        "enabled": false
+                      },
+                      "strokeWidth": {
+                        "top": 1,
+                        "bottom": 1
+                      },
+                      "strokeAlignment": "outer",
+                      "padding": [
+                        24,
+                        0,
+                        "$scale-1000",
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "ud962",
+                          "name": "Column",
+                          "width": "fill_container",
+                          "fill": {
+                            "type": "color",
+                            "color": "$neutral-100",
+                            "enabled": false
+                          },
+                          "layout": "vertical",
+                          "padding": [
+                            24,
+                            12,
+                            24,
+                            120
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "id": "jx1UH",
+                              "type": "ref",
+                              "ref": "MAHBg",
+                              "x": 120,
+                              "y": 24,
+                              "descendants": {
+                                "Hzren/KqL7f": {
+                                  "content": "SERIES"
+                                },
+                                "Hzren/b4BgZ": {
+                                  "content": "Junk Drawer Journey"
+                                },
+                                "W68CW": {
+                                  "enabled": false
+                                },
+                                "N7rbm/KqL7f": {
+                                  "content": "NUMBER"
+                                },
+                                "N7rbm/b4BgZ": {
+                                  "content": "001"
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "bRPLX",
+                          "name": "Column",
+                          "width": "fill_container",
+                          "fill": {
+                            "type": "color",
+                            "color": "$neutral-100",
+                            "enabled": false
+                          },
+                          "layout": "vertical",
+                          "padding": [
+                            24,
+                            120,
+                            24,
+                            12
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "id": "WeP1D",
+                              "type": "ref",
+                              "ref": "MAHBg",
+                              "x": 12,
+                              "y": 24,
+                              "descendants": {
+                                "Hzren/KqL7f": {
+                                  "content": "YEAR"
+                                },
+                                "Hzren/b4BgZ": {
+                                  "content": "2022"
+                                },
+                                "W68CW": {
+                                  "enabled": false
+                                },
+                                "N7rbm/KqL7f": {
+                                  "content": "LOCATION"
+                                },
+                                "N7rbm/b4BgZ": {
+                                  "content": "San Antonio, TX"
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      ]
                     }
                   ]
                 }
               ]
             },
             {
-              "type": "frame",
-              "id": "BNdhi",
-              "name": "Info",
-              "width": 1200,
-              "stroke": {
-                "type": "color",
-                "color": "$border-strong",
-                "enabled": false
-              },
-              "strokeWidth": {
-                "top": 1,
-                "bottom": 1
-              },
-              "strokeAlignment": "outer",
-              "padding": [
-                24,
-                0,
-                "$scale-1000",
-                0
-              ],
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "ud962",
-                  "name": "Column",
-                  "width": "fill_container",
-                  "fill": {
-                    "type": "color",
-                    "color": "$neutral-100",
-                    "enabled": false
-                  },
-                  "layout": "vertical",
-                  "padding": [
-                    24,
-                    12,
-                    24,
-                    120
-                  ],
-                  "alignItems": "center",
-                  "children": [
-                    {
-                      "id": "jx1UH",
-                      "type": "ref",
-                      "ref": "MAHBg",
-                      "x": 120,
-                      "y": 24,
-                      "descendants": {
-                        "Hzren/KqL7f": {
-                          "content": "SERIES"
-                        },
-                        "Hzren/b4BgZ": {
-                          "content": "Junk Drawer Journey"
-                        },
-                        "W68CW": {
-                          "enabled": false
-                        },
-                        "N7rbm/KqL7f": {
-                          "content": "NUMBER"
-                        },
-                        "N7rbm/b4BgZ": {
-                          "content": "001"
-                        }
-                      }
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "bRPLX",
-                  "name": "Column",
-                  "width": "fill_container",
-                  "fill": {
-                    "type": "color",
-                    "color": "$neutral-100",
-                    "enabled": false
-                  },
-                  "layout": "vertical",
-                  "padding": [
-                    24,
-                    120,
-                    24,
-                    12
-                  ],
-                  "alignItems": "center",
-                  "children": [
-                    {
-                      "id": "WeP1D",
-                      "type": "ref",
-                      "ref": "MAHBg",
-                      "x": 12,
-                      "y": 24,
-                      "descendants": {
-                        "Hzren/KqL7f": {
-                          "content": "YEAR"
-                        },
-                        "Hzren/b4BgZ": {
-                          "content": "2022"
-                        },
-                        "W68CW": {
-                          "enabled": false
-                        },
-                        "N7rbm/KqL7f": {
-                          "content": "LOCATION"
-                        },
-                        "N7rbm/b4BgZ": {
-                          "content": "San Antonio, TX"
-                        }
-                      }
-                    }
-                  ]
-                }
-              ]
+              "id": "lZjKH",
+              "type": "ref",
+              "ref": "AJ8ld",
+              "name": "Sidebar",
+              "height": "fill_container"
             }
           ]
         },
@@ -17867,13 +17988,27 @@
           ]
         },
         {
+          "id": "bxGXl",
+          "type": "ref",
+          "ref": "AJ8ld",
+          "name": "Sidebar",
+          "width": "fill_container",
+          "strokeWidth": {
+            "top": 1
+          },
+          "padding": [
+            "$scale-0800",
+            "$layout-margin"
+          ]
+        },
+        {
           "id": "ykPXl",
           "type": "ref",
           "ref": "E6haZ",
           "name": "Footer",
           "width": "fill_container",
           "x": 0,
-          "y": 1779,
+          "y": 2543,
           "descendants": {
             "549hf": {
               "width": 100,
@@ -18205,13 +18340,27 @@
           ]
         },
         {
+          "id": "mPxVe",
+          "type": "ref",
+          "ref": "AJ8ld",
+          "name": "Sidebar",
+          "width": "fill_container",
+          "strokeWidth": {
+            "top": 1
+          },
+          "padding": [
+            "$scale-0800",
+            "$layout-margin"
+          ]
+        },
+        {
           "id": "q2B5v",
           "type": "ref",
           "ref": "E6haZ",
           "name": "Footer",
           "width": "fill_container",
           "x": 0,
-          "y": 1570,
+          "y": 2330,
           "descendants": {
             "549hf": {
               "width": 100,
@@ -18573,6 +18722,20 @@
           ]
         },
         {
+          "id": "ISd9U",
+          "type": "ref",
+          "ref": "AJ8ld",
+          "name": "Sidebar",
+          "width": "fill_container",
+          "strokeWidth": {
+            "top": 1
+          },
+          "padding": [
+            "$scale-0800",
+            "$layout-margin"
+          ]
+        },
+        {
           "id": "YgW8p",
           "type": "ref",
           "ref": "E6haZ",
@@ -18834,6 +18997,20 @@
                 }
               ]
             }
+          ]
+        },
+        {
+          "id": "PWeRG",
+          "type": "ref",
+          "ref": "AJ8ld",
+          "name": "Sidebar",
+          "width": "fill_container",
+          "strokeWidth": {
+            "top": 1
+          },
+          "padding": [
+            "$scale-0800",
+            "$layout-margin"
           ]
         },
         {
@@ -28924,133 +29101,156 @@
           "id": "M3CzD",
           "name": "Main",
           "width": "fill_container",
-          "layout": "vertical",
-          "padding": [
-            "$space-section",
-            "$layout-margin"
-          ],
-          "alignItems": "center",
           "children": [
             {
               "type": "frame",
-              "id": "mf8Eu",
-              "name": "Column",
+              "id": "kLh2R",
+              "name": "Content",
               "width": "fill_container",
               "layout": "vertical",
-              "gap": "$space-block",
+              "padding": [
+                "$space-section",
+                "$scale-0600"
+              ],
+              "alignItems": "center",
               "children": [
                 {
                   "type": "frame",
-                  "id": "y2109",
-                  "name": "Hero",
+                  "id": "mf8Eu",
+                  "name": "Column",
                   "width": "fill_container",
                   "layout": "vertical",
-                  "gap": "$scale-0600",
+                  "gap": "$space-block",
                   "children": [
                     {
-                      "id": "c2j7Nv",
-                      "type": "ref",
-                      "ref": "g7uira",
-                      "name": "Intro",
-                      "width": 720,
-                      "descendants": {
-                        "z9frDW": {
-                          "content": "NEWSLETTER",
-                          "enabled": false
+                      "type": "frame",
+                      "id": "y2109",
+                      "name": "Hero",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": "$scale-0600",
+                      "children": [
+                        {
+                          "id": "c2j7Nv",
+                          "type": "ref",
+                          "ref": "g7uira",
+                          "name": "Intro",
+                          "width": 720,
+                          "descendants": {
+                            "z9frDW": {
+                              "content": "NEWSLETTER",
+                              "enabled": false
+                            },
+                            "SqBTJ": {
+                              "content": "Newsletter"
+                            },
+                            "zSXuD": {
+                              "content": "You can sign up for weekly updates sent to you by email."
+                            }
+                          }
                         },
-                        "SqBTJ": {
-                          "content": "Newsletter"
-                        },
-                        "zSXuD": {
-                          "content": "You can sign up for weekly updates sent to you by email."
+                        {
+                          "type": "frame",
+                          "id": "nPMUJ",
+                          "name": "Actions",
+                          "gap": "$scale-0400",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "id": "TOMyX",
+                              "type": "ref",
+                              "ref": "dOZxf",
+                              "name": "Subscribe",
+                              "descendants": {
+                                "wLOsh": {
+                                  "content": "SUBSCRIBE ON SUBSTACK"
+                                },
+                                "eqCZc": {
+                                  "enabled": true
+                                }
+                              }
+                            }
+                          ]
                         }
-                      }
+                      ]
                     },
                     {
                       "type": "frame",
-                      "id": "nPMUJ",
-                      "name": "Actions",
-                      "gap": "$scale-0400",
-                      "alignItems": "center",
+                      "id": "LwNoz",
+                      "name": "What you get",
+                      "width": "fill_container",
+                      "gap": "$scale-0600",
                       "children": [
                         {
-                          "id": "TOMyX",
+                          "id": "Xyl6B",
                           "type": "ref",
-                          "ref": "dOZxf",
-                          "name": "Subscribe",
+                          "ref": "zcutF",
+                          "name": "Statement 1",
+                          "width": "fill_container",
                           "descendants": {
-                            "wLOsh": {
-                              "content": "SUBSCRIBE ON SUBSTACK"
-                            },
-                            "eqCZc": {
-                              "enabled": true
+                            "MlXts": {
+                              "content": "New drawings and works in progress, before they land anywhere else."
+                            }
+                          }
+                        },
+                        {
+                          "id": "KEHlg",
+                          "type": "ref",
+                          "ref": "zcutF",
+                          "name": "Statement 2",
+                          "width": "fill_container",
+                          "descendants": {
+                            "MlXts": {
+                              "content": "What I'm learning about design, art and making, out loud and as I go."
+                            }
+                          }
+                        },
+                        {
+                          "id": "MmBpg",
+                          "type": "ref",
+                          "ref": "zcutF",
+                          "name": "Statement 3",
+                          "width": "fill_container",
+                          "descendants": {
+                            "MlXts": {
+                              "content": "Updates from each series, so you can follow the ones you care about."
                             }
                           }
                         }
                       ]
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "LwNoz",
-                  "name": "What you get",
-                  "width": "fill_container",
-                  "gap": "$scale-0600",
-                  "children": [
-                    {
-                      "id": "Xyl6B",
-                      "type": "ref",
-                      "ref": "zcutF",
-                      "name": "Statement 1",
-                      "width": "fill_container",
-                      "descendants": {
-                        "MlXts": {
-                          "content": "New drawings and works in progress, before they land anywhere else."
-                        }
-                      }
                     },
                     {
-                      "id": "KEHlg",
-                      "type": "ref",
-                      "ref": "zcutF",
-                      "name": "Statement 2",
+                      "type": "text",
+                      "id": "sQ7cj",
+                      "name": "Note",
+                      "fill": "$text-muted",
+                      "textGrowth": "fixed-width",
                       "width": "fill_container",
-                      "descendants": {
-                        "MlXts": {
-                          "content": "What I'm learning about design, art and making, out loud and as I go."
-                        }
-                      }
-                    },
-                    {
-                      "id": "MmBpg",
-                      "type": "ref",
-                      "ref": "zcutF",
-                      "name": "Statement 3",
-                      "width": "fill_container",
-                      "descendants": {
-                        "MlXts": {
-                          "content": "Updates from each series, so you can follow the ones you care about."
-                        }
-                      }
+                      "content": "One email when there's something worth sending. Unsubscribe any time.",
+                      "lineHeight": "$type-p3-line-height",
+                      "fontFamily": "$font-body",
+                      "fontSize": "$type-p3-size",
+                      "fontWeight": "normal",
+                      "letterSpacing": "$type-p3-letter-spacing"
                     }
                   ]
-                },
-                {
-                  "type": "text",
-                  "id": "sQ7cj",
-                  "name": "Note",
-                  "fill": "$text-muted",
-                  "textGrowth": "fixed-width",
-                  "width": "fill_container",
-                  "content": "One email when there's something worth sending. Unsubscribe any time.",
-                  "lineHeight": "$type-p3-line-height",
-                  "fontFamily": "$font-body",
-                  "fontSize": "$type-p3-size",
-                  "fontWeight": "normal",
-                  "letterSpacing": "$type-p3-letter-spacing"
                 }
               ]
+            },
+            {
+              "id": "eKHne",
+              "type": "ref",
+              "ref": "AJ8ld",
+              "name": "Sidebar",
+              "height": "fill_container",
+              "descendants": {
+                "s6E50X": {
+                  "enabled": false
+                },
+                "EY5tH": {
+                  "enabled": false
+                }
+              }
             }
           ]
         },
@@ -29254,6 +29454,28 @@
               ]
             }
           ]
+        },
+        {
+          "id": "GaxnR",
+          "type": "ref",
+          "ref": "AJ8ld",
+          "name": "Sidebar",
+          "width": "fill_container",
+          "strokeWidth": {
+            "top": 1
+          },
+          "padding": [
+            "$scale-0800",
+            "$layout-margin"
+          ],
+          "descendants": {
+            "s6E50X": {
+              "enabled": false
+            },
+            "EY5tH": {
+              "enabled": false
+            }
+          }
         },
         {
           "id": "oTu7K",
@@ -29463,6 +29685,28 @@
           ]
         },
         {
+          "id": "T5t4W",
+          "type": "ref",
+          "ref": "AJ8ld",
+          "name": "Sidebar",
+          "width": "fill_container",
+          "strokeWidth": {
+            "top": 1
+          },
+          "padding": [
+            "$scale-0800",
+            "$layout-margin"
+          ],
+          "descendants": {
+            "s6E50X": {
+              "enabled": false
+            },
+            "EY5tH": {
+              "enabled": false
+            }
+          }
+        },
+        {
           "id": "aA4IG",
           "type": "ref",
           "ref": "E6haZ",
@@ -29639,96 +29883,119 @@
           "id": "fGBy9",
           "name": "Main",
           "width": "fill_container",
-          "layout": "vertical",
-          "padding": [
-            "$space-section",
-            "$layout-margin"
-          ],
-          "alignItems": "center",
           "children": [
             {
               "type": "frame",
-              "id": "unytC",
-              "name": "Column",
+              "id": "OK3D7",
+              "name": "Content",
               "width": "fill_container",
               "layout": "vertical",
-              "gap": "$space-block",
+              "padding": [
+                "$space-section",
+                "$scale-0600"
+              ],
+              "alignItems": "center",
               "children": [
                 {
-                  "id": "r9qxY",
-                  "type": "ref",
-                  "ref": "g7uira",
-                  "name": "Intro",
-                  "width": 720,
-                  "descendants": {
-                    "z9frDW": {
-                      "content": "ABOUT",
-                      "enabled": false
-                    },
-                    "SqBTJ": {
-                      "content": "About"
-                    },
-                    "zSXuD": {
-                      "enabled": false
-                    }
-                  }
-                },
-                {
                   "type": "frame",
-                  "id": "ClZHR",
-                  "name": "Body",
+                  "id": "unytC",
+                  "name": "Column",
                   "width": "fill_container",
-                  "gap": "$scale-0800",
+                  "layout": "vertical",
+                  "gap": "$space-block",
                   "children": [
                     {
-                      "type": "frame",
-                      "id": "nDLqb",
-                      "name": "Bio",
-                      "width": "fill_container",
-                      "layout": "vertical",
-                      "gap": "$scale-0400",
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "M65tUm",
-                          "name": "Paragraph 1",
-                          "fill": "$text-default",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "Placeholder bio — replace with the real one. Senior UX designer and visual thinker with a fine arts background (VCU, painting and printmaking), working across enterprise and consumer product design.",
-                          "lineHeight": "$type-p1-line-height",
-                          "fontFamily": "$font-body",
-                          "fontSize": "$type-p1-size",
-                          "fontWeight": "normal",
-                          "letterSpacing": "$type-p1-letter-spacing"
+                      "id": "r9qxY",
+                      "type": "ref",
+                      "ref": "g7uira",
+                      "name": "Intro",
+                      "width": 720,
+                      "descendants": {
+                        "z9frDW": {
+                          "content": "ABOUT",
+                          "enabled": false
                         },
-                        {
-                          "type": "text",
-                          "id": "PUkDq",
-                          "name": "Paragraph 2",
-                          "fill": "$text-default",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "Runs Uplifting Ink, a visual thinking company spanning products and events, organized around one idea: Dream Out Loud — making process visible and learning in public.",
-                          "lineHeight": "$type-p1-line-height",
-                          "fontFamily": "$font-body",
-                          "fontSize": "$type-p1-size",
-                          "fontWeight": "normal",
-                          "letterSpacing": "$type-p1-letter-spacing"
+                        "SqBTJ": {
+                          "content": "About"
+                        },
+                        "zSXuD": {
+                          "enabled": false
                         }
-                      ]
+                      }
                     },
                     {
-                      "id": "scxhY",
-                      "type": "ref",
-                      "ref": "yUEsX",
-                      "name": "Portrait",
-                      "width": 220,
-                      "height": 220
+                      "type": "frame",
+                      "id": "ClZHR",
+                      "name": "Body",
+                      "width": "fill_container",
+                      "gap": "$scale-0800",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "nDLqb",
+                          "name": "Bio",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": "$scale-0400",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "M65tUm",
+                              "name": "Paragraph 1",
+                              "fill": "$text-default",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Placeholder bio — replace with the real one. Senior UX designer and visual thinker with a fine arts background (VCU, painting and printmaking), working across enterprise and consumer product design.",
+                              "lineHeight": "$type-p1-line-height",
+                              "fontFamily": "$font-body",
+                              "fontSize": "$type-p1-size",
+                              "fontWeight": "normal",
+                              "letterSpacing": "$type-p1-letter-spacing"
+                            },
+                            {
+                              "type": "text",
+                              "id": "PUkDq",
+                              "name": "Paragraph 2",
+                              "fill": "$text-default",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Runs Uplifting Ink, a visual thinking company spanning products and events, organized around one idea: Dream Out Loud — making process visible and learning in public.",
+                              "lineHeight": "$type-p1-line-height",
+                              "fontFamily": "$font-body",
+                              "fontSize": "$type-p1-size",
+                              "fontWeight": "normal",
+                              "letterSpacing": "$type-p1-letter-spacing"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "scxhY",
+                          "type": "ref",
+                          "ref": "yUEsX",
+                          "name": "Portrait",
+                          "width": 220,
+                          "height": 220
+                        }
+                      ]
                     }
                   ]
                 }
               ]
+            },
+            {
+              "id": "cnZcv",
+              "type": "ref",
+              "ref": "AJ8ld",
+              "name": "Sidebar",
+              "height": "fill_container",
+              "descendants": {
+                "VtFut": {
+                  "enabled": false
+                },
+                "nM6xe": {
+                  "enabled": false
+                }
+              }
             }
           ]
         },
@@ -29906,6 +30173,28 @@
               ]
             }
           ]
+        },
+        {
+          "id": "usnZY",
+          "type": "ref",
+          "ref": "AJ8ld",
+          "name": "Sidebar",
+          "width": "fill_container",
+          "strokeWidth": {
+            "top": 1
+          },
+          "padding": [
+            "$scale-0800",
+            "$layout-margin"
+          ],
+          "descendants": {
+            "VtFut": {
+              "enabled": false
+            },
+            "nM6xe": {
+              "enabled": false
+            }
+          }
         },
         {
           "id": "RStYU",
@@ -30087,6 +30376,28 @@
               ]
             }
           ]
+        },
+        {
+          "id": "GqvKX",
+          "type": "ref",
+          "ref": "AJ8ld",
+          "name": "Sidebar",
+          "width": "fill_container",
+          "strokeWidth": {
+            "top": 1
+          },
+          "padding": [
+            "$scale-0800",
+            "$layout-margin"
+          ],
+          "descendants": {
+            "VtFut": {
+              "enabled": false
+            },
+            "nM6xe": {
+              "enabled": false
+            }
+          }
         },
         {
           "id": "x2rXdN",

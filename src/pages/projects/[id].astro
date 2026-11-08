@@ -19,7 +19,7 @@ const { Content } = await render(project);
 const { title, summary, type } = project.data;
 ---
 
-<Layout title={title} description={summary}>
+<Layout title={title} description={summary} sidebar={project.data.sidebar} sidebarHide={project.data.sidebarHide}>
   <article class="wrap project">
     <SectionHeader eyebrow={projectTypes[type].eyebrow} title={title} intro={summary} level="h1" />
     <div class="prose">

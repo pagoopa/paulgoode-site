@@ -193,6 +193,22 @@ in `design/site.pen`:
   - **Video:** `<div class="video-embed"><iframe src="…" title="…" allowfullscreen></iframe></div>`
     then `<p class="video-embed__caption">Caption</p>`
 
+## The sidebar
+
+Every page has the sidebar (about, categories, tags, newsletter) except the 404 page.
+It sits beside the content on desktop and below it on smaller screens.
+
+- **Hide it on a page:** add `sidebar: false` to that page's front matter (a post, a
+  series, a series entry, a project, or a page in `src/content/pages/`).
+- **Hide some sections:** add `sidebarHide: [tags, newsletter]`. The sections are `about`,
+  `categories`, `tags` and `newsletter`. If you hide them all, the sidebar goes away.
+- **Automatic:** a section that links to the page you're on is left out, so `/about` has no
+  About section and `/newsletter` has no Newsletter section.
+- **In code:** `Layout` takes `sidebar` and `sidebarHide` props. The 404 page passes
+  `sidebar={false}`.
+- **In Pencil:** the Sidebar component's sections can be switched off on an instance (see
+  the About and Newsletter boards).
+
 ## Series
 
 A series is a numbered set of artwork, like "Junk Drawer Journey".
