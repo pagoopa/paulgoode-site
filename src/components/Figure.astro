@@ -2,7 +2,7 @@
 // Figure / Artwork: an image in a <figure>, with an optional <figcaption>.
 // The image keeps its own proportions and is never cropped. It's `width`
 // wide (522px by default) and shrinks to fit on smaller screens.
-import { Image } from 'astro:assets';
+import { Image, getImage } from 'astro:assets';
 import type { ImageMetadata } from 'astro';
 
 interface Props {
@@ -14,6 +14,8 @@ interface Props {
 }
 
 const { src, alt, caption, width = 522, loading = 'lazy' } = Astro.props;
+// A larger copy for the lightbox (the picture on the page is only `width` wide).
+const full = await getImage({ src, width: 1800 });
 ---
 
 <figure class="figure" style={`--figure-width: ${width}px`}>
@@ -25,6 +27,7 @@ const { src, alt, caption, width = 522, loading = 'lazy' } = Astro.props;
     widths={[width, width * 2]}
     sizes={`(max-width: ${width}px) 100vw, ${width}px`}
     loading={loading}
+    data-full={full.src}
   />
   {caption && <figcaption class="figure__caption">{caption}</figcaption>}
 </figure>

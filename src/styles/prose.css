@@ -251,3 +251,61 @@
 :is(.prose, .entry__body, .series__body) section[data-footnotes] ol {
   margin: 0;
 }
+
+/* Gallery: wrap images in <div class="gallery"> (leave a blank line inside it, above and below the
+   images, so they are still Markdown) to show them as a grid of same-size photos: three across,
+   two on tablets and one on phones. Each one opens in the lightbox. */
+:is(.prose, .entry__body, .series__body) .gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--scale-0300);
+  margin: 0 0 var(--prose-gap);
+}
+
+:is(.prose, .entry__body, .series__body) .gallery > p {
+  display: contents;
+}
+
+:is(.prose, .entry__body, .series__body) .gallery .lightbox-trigger {
+  display: block;
+  width: 100%;
+}
+
+:is(.prose, .entry__body, .series__body) .gallery img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+/* A photo in a gallery lifts with the hard ink shadow, like the cards. */
+@media (hover: hover) {
+  :is(.prose, .entry__body, .series__body) .gallery .lightbox-trigger:hover {
+    transform: translateY(-3px);
+    box-shadow: 4px 4px 0 var(--color-border-emphasis);
+  }
+
+  :is(.prose, .entry__body, .series__body) .gallery .lightbox-trigger:active {
+    transform: none;
+    box-shadow: 1px 1px 0 var(--color-border-emphasis);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :is(.prose, .entry__body, .series__body) .gallery .lightbox-trigger:hover,
+  :is(.prose, .entry__body, .series__body) .gallery .lightbox-trigger:active {
+    transform: none;
+  }
+}
+
+@media (max-width: 1023px) {
+  :is(.prose, .entry__body, .series__body) .gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 599px) {
+  :is(.prose, .entry__body, .series__body) .gallery {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
