@@ -225,7 +225,7 @@ Filters work without JavaScript: domain and status filters are static pages firs
 
 ### Substack sync (later)
 
-The repo does not deploy the site yet, so this waits. When it does, a scheduled job copies newsletter posts from the RSS feed (`https://www.paulgoode.com/feed`) into the repo and opens a pull request for review. A post in a series' Substack Section becomes an `entries` file; other posts are handled case by case. Keep all of its logic in one module (`scripts/sync/`), fail loudly on an unexpected response, never overwrite a file that was edited on the site, and skip posts already in the repo (`substackUrl` is the dedupe key).
+The repo does not deploy the site yet, so this waits. When it does, a scheduled job copies newsletter posts from the RSS feed (`https://paulgoode.substack.com/feed`) into the repo and opens a pull request for review. A post in a series' Substack Section becomes an `entries` file; other posts are handled case by case. Keep all of its logic in one module (`scripts/sync/`), fail loudly on an unexpected response, never overwrite a file that was edited on the site, and skip posts already in the repo (`substackUrl` is the dedupe key).
 
 ### Studio editor (later)
 
