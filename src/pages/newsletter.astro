@@ -11,7 +11,12 @@ import { substackUrl } from '../lib/nav';
 const { data } = await getPage('newsletter');
 ---
 
-<Layout title={data.title} description={data.description}>
+<Layout
+  title={data.title}
+  description={data.description}
+  sidebar={data.sidebar}
+  sidebarHide={data.sidebarHide}
+>
   <div class="wrap newsletter">
     <div class="newsletter__hero">
       <SectionHeader title={data.heading} intro={data.description} level="h1" />

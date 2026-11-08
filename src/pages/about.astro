@@ -12,7 +12,12 @@ import { getPage } from '../lib/pages';
 const { data, Content } = await getPage('about');
 ---
 
-<Layout title={data.title} description={data.description}>
+<Layout
+  title={data.title}
+  description={data.description}
+  sidebar={data.sidebar}
+  sidebarHide={data.sidebarHide}
+>
   <div class="wrap about">
     <SectionHeader title={data.heading} level="h1" />
 

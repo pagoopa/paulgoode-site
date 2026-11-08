@@ -1,11 +1,19 @@
 ---
 // Sidebar (Sidebar in design/site.pen): about, categories, the most-used tags and
 // the newsletter. Beside the content on desktop (300 wide, full height) and below
-// it on tablet and phones. Used on the home page and the pages that list posts.
+// it on tablet and phones. Layout decides which sections to pass: a page can hide the
+// sidebar or some sections (see "The sidebar" in CONTRIBUTING.md).
 import { Image } from 'astro:assets';
 import portrait from '../assets/profile-circle.png';
 import TagChip from './TagChip.astro';
 import { categoryLabel, categoryUrl, getCategoryCounts, getTagCounts, tagUrl } from '../lib/taxonomy';
+import type { SidebarSection } from '../lib/labels';
+
+interface Props {
+  sections: SidebarSection[];
+}
+
+const show = new Set(Astro.props.sections);
 
 const categories = (await getCategoryCounts()).filter(([, count]) => count > 0);
 // Six at most: the full list is on /tags.
@@ -13,6 +21,8 @@ const tags = (await getTagCounts()).slice(0, 6);
 ---
 
 <aside class="sidebar" aria-label="Sidebar">
+  {
+    show.has('about') && (
   <section class="sidebar__section" aria-labelledby="sidebar-about">
     <h2 id="sidebar-about" class="sidebar__label">About</h2>
     <div class="sidebar__person">
@@ -29,9 +39,11 @@ const tags = (await getTagCounts()).slice(0, 6);
       </svg>
     </a>
   </section>
+    )
+  }
 
   {
-    categories.length > 0 && (
+    show.has('categories') && categories.length > 0 && (
       <section class="sidebar__section" aria-labelledby="sidebar-categories">
         <h2 id="sidebar-categories" class="sidebar__label">Categories</h2>
         <ul class="sidebar__chips">
@@ -48,7 +60,7 @@ const tags = (await getTagCounts()).slice(0, 6);
   }
 
   {
-    tags.length > 0 && (
+    show.has('tags') && tags.length > 0 && (
       <section class="sidebar__section" aria-labelledby="sidebar-tags">
         <h2 id="sidebar-tags" class="sidebar__label">Tags</h2>
         <ul class="sidebar__chips">
@@ -64,6 +76,8 @@ const tags = (await getTagCounts()).slice(0, 6);
     )
   }
 
+  {
+    show.has('newsletter') && (
   <section class="sidebar__section" aria-labelledby="sidebar-newsletter">
     <h2 id="sidebar-newsletter" class="sidebar__label">Newsletter</h2>
     <p class="sidebar__text">New posts and drawings, by email.</p>
@@ -71,6 +85,8 @@ const tags = (await getTagCounts()).slice(0, 6);
       <a class="btn btn-solid btn-sm" href="/newsletter">Subscribe</a>
     </div>
   </section>
+    )
+  }
 </aside>
 
 <style>

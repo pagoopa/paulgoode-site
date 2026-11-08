@@ -20,7 +20,12 @@ const entries = await getSeriesEntries(series.id);
 const latest = entries.toSorted((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())[0];
 ---
 
-<Layout title={series.data.title} description={series.data.description}>
+<Layout
+  title={series.data.title}
+  description={series.data.description}
+  sidebar={series.data.sidebar}
+  sidebarHide={series.data.sidebarHide}
+>
   <div class="wrap series-landing">
     <div><BackLink href="/projects" label="Back to Projects" /></div>
 

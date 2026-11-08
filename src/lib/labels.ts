@@ -25,3 +25,17 @@ export const projectTypes: Record<ProjectType, { label: string; eyebrow: string 
   music: { label: 'Music', eyebrow: 'Music' },
   resource: { label: 'Resource', eyebrow: 'Resource' },
 };
+
+/** The sections of the sidebar, in order. */
+export const sidebarSection = z.enum(['about', 'categories', 'tags', 'newsletter']);
+
+export type SidebarSection = z.infer<typeof sidebarSection>;
+
+/**
+ * Sidebar settings for a page, spread into a collection's schema. `sidebar: false`
+ * hides the sidebar on that page; `sidebarHide` hides only the sections listed.
+ */
+export const sidebarSettings = {
+  sidebar: z.boolean().default(true),
+  sidebarHide: z.array(sidebarSection).default([]),
+};

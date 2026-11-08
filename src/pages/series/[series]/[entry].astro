@@ -30,7 +30,7 @@ const dateFmt = new Intl.DateTimeFormat('en-US', {
 });
 ---
 
-<Layout title={title} description={description}>
+<Layout title={title} description={description} sidebar={entry.data.sidebar} sidebarHide={entry.data.sidebarHide}>
   <div class="wrap series__back">
     <BackLink href={`/series/${series.id}`} label="Back to Series" />
   </div>

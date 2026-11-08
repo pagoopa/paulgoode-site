@@ -16,7 +16,12 @@ const { featured, others } = await getProjects();
 const options = Object.entries(projectTypes).map(([value, { label }]) => ({ value, label }));
 ---
 
-<Layout title={data.title} description={data.description}>
+<Layout
+  title={data.title}
+  description={data.description}
+  sidebar={data.sidebar}
+  sidebarHide={data.sidebarHide}
+>
   <div class="wrap projects">
     <SectionHeader title={data.heading} intro={data.description} level="h1" />
 

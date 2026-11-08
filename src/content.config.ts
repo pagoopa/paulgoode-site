@@ -1,7 +1,7 @@
 import { defineCollection, reference } from 'astro:content';
 import { z } from 'astro/zod';
 import { glob } from 'astro/loaders';
-import { domain, projectType, seriesStatus, tag } from './lib/labels';
+import { domain, projectType, seriesStatus, sidebarSettings, tag } from './lib/labels';
 
 const blog = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/blog' }),
@@ -15,6 +15,7 @@ const blog = defineCollection({
     category: domain,
     // Up to five, like ghost-boy.
     tags: z.array(tag).max(5).default([]),
+    ...sidebarSettings,
   }),
 });
 
@@ -34,6 +35,7 @@ const series = defineCollection({
     container: z.object({ kind: z.string(), target: z.number().int().positive().optional() }).optional(),
     started: z.coerce.date().optional(),
     // cover, identity, substackSection, and promotedTo wait until something uses them.
+    ...sidebarSettings,
   }),
 });
 
@@ -58,6 +60,7 @@ const entries = defineCollection({
       // Card image on the series page: 16:10 landscape, exported at 720 × 450.
       // Optional; without it the card uses the artwork, cropped from the top.
       thumbnail: image().optional(),
+      ...sidebarSettings,
     }),
 });
 
@@ -82,6 +85,7 @@ const projects = defineCollection({
       draft: z.boolean().default(false),
       // Card image: 16:10 landscape, exported at 720 × 450. Optional.
       thumbnail: image().optional(),
+      ...sidebarSettings,
     })
     .refine((project) => (project.type === 'series') === Boolean(project.series), {
       message: 'A series project needs `series:`, and other types must not have it.',
@@ -109,6 +113,7 @@ const pages = defineCollection({
     highlights: z.array(z.string()).default([]),
     // A small line under the page's content. Optional.
     note: z.string().optional(),
+    ...sidebarSettings,
   }),
 });
 
