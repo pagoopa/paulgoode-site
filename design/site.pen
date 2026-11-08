@@ -48267,6 +48267,2335 @@
           ]
         }
       ]
+    },
+    {
+      "type": "frame",
+      "id": "SWv5C",
+      "x": -3833,
+      "y": 22802,
+      "name": "Post — Reading squiggle",
+      "fill": "$surface-subtle",
+      "layout": "vertical",
+      "gap": 48,
+      "padding": 64,
+      "children": [
+        {
+          "type": "text",
+          "id": "F9Ms6",
+          "name": "Title",
+          "fill": "$text-default",
+          "content": "Reading squiggle",
+          "fontFamily": "$font-heading",
+          "fontSize": 40,
+          "fontWeight": "700"
+        },
+        {
+          "type": "text",
+          "id": "q3XKXn",
+          "name": "Intro",
+          "fill": "$text-muted",
+          "textGrowth": "fixed-width",
+          "width": 1000,
+          "content": "On a journal post, a thin pink squiggle is drawn along the very top of the screen as you read: it reaches the right edge when the end of the post reaches the bottom of the screen. It sits above the page, never over the text, and has no track behind it: it's just there when you've started. At the end, a pink splatter pops at its tip. Scrolling back up un-draws it. Reduced motion: the squiggle still follows your scroll (it's information, not decoration), but the splatter doesn't pop.",
+          "lineHeight": 1.5,
+          "fontFamily": "$font-body",
+          "fontSize": 18,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "yzdti",
+          "name": "Step 0%",
+          "gap": 32,
+          "children": [
+            {
+              "type": "frame",
+              "id": "pjYZh",
+              "name": "Label",
+              "width": 220,
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "F0hyHy",
+                  "name": "Progress",
+                  "fill": "$text-default",
+                  "content": "0%",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 28,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "cMdSp",
+                  "name": "Note",
+                  "fill": "$text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": 220,
+                  "content": "Top of the page: nothing yet.",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "EhDaf",
+              "name": "Viewport",
+              "clip": true,
+              "width": 1200,
+              "height": 700,
+              "fill": "$surface-default",
+              "cornerRadius": 8,
+              "stroke": "$border-default",
+              "strokeWidth": 1,
+              "strokeAlignment": "inner",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "qbILM",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Post",
+                  "theme": {
+                    "device": "lg"
+                  },
+                  "clip": true,
+                  "width": 1200,
+                  "fill": "$surface-default",
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "id": "t4pDK3",
+                      "type": "ref",
+                      "ref": "kgrqX",
+                      "x": 0,
+                      "y": 0
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Yrf0b",
+                      "name": "Main",
+                      "width": "fill_container",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "FsA5N",
+                          "name": "Content",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "padding": "$scale-0600",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "BtiwW",
+                              "name": "Column",
+                              "width": "fill_container",
+                              "fill": "$surface-default",
+                              "cornerRadius": "$radius-lg",
+                              "layout": "vertical",
+                              "gap": 40,
+                              "padding": "$scale-0900",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "VqaG0",
+                                  "name": "Entry List",
+                                  "context": "One post, shown in full. The title is the page heading; the body is the post's Markdown.",
+                                  "width": "fill_container",
+                                  "layout": "vertical",
+                                  "gap": "$scale-0400",
+                                  "children": [
+                                    {
+                                      "type": "frame",
+                                      "id": "V0oat",
+                                      "name": "Entry — Hello, out loud",
+                                      "width": "fill_container",
+                                      "layout": "vertical",
+                                      "gap": "$scale-0200",
+                                      "padding": [
+                                        "$scale-0000",
+                                        0,
+                                        "$scale-0600",
+                                        0
+                                      ],
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "i0jdy",
+                                          "name": "Title",
+                                          "fill": "$text-default",
+                                          "textGrowth": "fixed-width",
+                                          "width": "fill_container",
+                                          "content": "Hello, out loud",
+                                          "lineHeight": "$type-h1-line-height",
+                                          "fontFamily": "$font-heading",
+                                          "fontSize": "$type-h1-size",
+                                          "fontWeight": "700",
+                                          "letterSpacing": "$type-h1-letter-spacing"
+                                        },
+                                        {
+                                          "type": "frame",
+                                          "id": "fbG13",
+                                          "name": "Meta",
+                                          "context": "The date, then the post's category. The category links to /category/<name>.",
+                                          "width": "fill_container",
+                                          "gap": 12,
+                                          "alignItems": "center",
+                                          "children": [
+                                            {
+                                              "type": "text",
+                                              "id": "ma3T2",
+                                              "name": "Date",
+                                              "fill": "$text-muted",
+                                              "content": "SUNDAY, SEP 27, 2026",
+                                              "lineHeight": "$type-eyebrow3-line-height",
+                                              "fontFamily": "$font-body",
+                                              "fontSize": "$type-eyebrow3-size",
+                                              "fontWeight": "500",
+                                              "letterSpacing": "$type-eyebrow3-letter-spacing"
+                                            },
+                                            {
+                                              "id": "OkZsE",
+                                              "type": "ref",
+                                              "ref": "tGiW5",
+                                              "name": "Category",
+                                              "descendants": {
+                                                "tkj40": {
+                                                  "content": "LIFE"
+                                                }
+                                              }
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "frame",
+                                          "id": "x2e72b",
+                                          "name": "Body",
+                                          "width": "fill_container",
+                                          "stroke": "$border-default",
+                                          "strokeWidth": {
+                                            "top": "$scale-0100",
+                                            "right": "$scale-0000",
+                                            "bottom": "$scale-0050",
+                                            "left": "$scale-0000"
+                                          },
+                                          "strokeAlignment": "inner",
+                                          "layout": "vertical",
+                                          "gap": "$scale-0600",
+                                          "padding": [
+                                            "$scale-0600",
+                                            0
+                                          ],
+                                          "children": [
+                                            {
+                                              "type": "text",
+                                              "id": "pgbJr",
+                                              "name": "Paragraph 1",
+                                              "fill": "$text-default",
+                                              "textGrowth": "fixed-width",
+                                              "width": "fill_container",
+                                              "content": "This is the first post in the journal. Replace this with real writing whenever you're ready — the page and its layout are already wired up around whatever goes here.",
+                                              "lineHeight": "$type-p2-line-height",
+                                              "fontFamily": "$font-body",
+                                              "fontSize": "$type-p2-size",
+                                              "fontWeight": "normal",
+                                              "letterSpacing": "$type-p2-letter-spacing"
+                                            },
+                                            {
+                                              "type": "text",
+                                              "id": "XrczJ",
+                                              "name": "Paragraph 2",
+                                              "fill": "$text-default",
+                                              "textGrowth": "fixed-width",
+                                              "width": "fill_container",
+                                              "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
+                                              "lineHeight": "$type-p2-line-height",
+                                              "fontFamily": "$font-body",
+                                              "fontSize": "$type-p2-size",
+                                              "fontWeight": "normal",
+                                              "letterSpacing": "$type-p2-letter-spacing"
+                                            },
+                                            {
+                                              "type": "frame",
+                                              "id": "GctG4",
+                                              "name": "Media",
+                                              "context": "Uses the same 16:10 thumbnail (720 × 450), filling this panel; a little is trimmed from the sides.",
+                                              "width": "fill_container",
+                                              "height": 420,
+                                              "fill": "$surface-subtle",
+                                              "justifyContent": "center",
+                                              "alignItems": "center",
+                                              "children": [
+                                                {
+                                                  "id": "k6vhp",
+                                                  "type": "ref",
+                                                  "ref": "zV7DP",
+                                                  "name": "Icon",
+                                                  "width": 32,
+                                                  "height": 32,
+                                                  "stroke": "$text-muted"
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "type": "frame",
+                                              "id": "aTh6U",
+                                              "name": "Media",
+                                              "context": "Uses the same 16:10 thumbnail (720 × 450), filling this panel; a little is trimmed from the sides.",
+                                              "width": "fill_container",
+                                              "height": 420,
+                                              "fill": "$surface-subtle",
+                                              "justifyContent": "center",
+                                              "alignItems": "center",
+                                              "children": [
+                                                {
+                                                  "id": "ngnqK",
+                                                  "type": "ref",
+                                                  "ref": "zV7DP",
+                                                  "name": "Icon",
+                                                  "width": 32,
+                                                  "height": 32,
+                                                  "stroke": "$text-muted"
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "type": "text",
+                                              "id": "plLjz",
+                                              "name": "Paragraph 2",
+                                              "fill": "$text-default",
+                                              "textGrowth": "fixed-width",
+                                              "width": "fill_container",
+                                              "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
+                                              "lineHeight": "$type-p2-line-height",
+                                              "fontFamily": "$font-body",
+                                              "fontSize": "$type-p2-size",
+                                              "fontWeight": "normal",
+                                              "letterSpacing": "$type-p2-letter-spacing"
+                                            },
+                                            {
+                                              "type": "text",
+                                              "id": "KHYrL",
+                                              "name": "Title",
+                                              "fill": "$text-default",
+                                              "textGrowth": "fixed-width",
+                                              "width": "fill_container",
+                                              "content": "This is another heading",
+                                              "lineHeight": "$type-h2-line-height",
+                                              "fontFamily": "$font-heading",
+                                              "fontSize": "$type-h2-size",
+                                              "fontWeight": "700",
+                                              "letterSpacing": "$type-h2-letter-spacing"
+                                            },
+                                            {
+                                              "type": "text",
+                                              "id": "D5Qff",
+                                              "name": "Paragraph 2",
+                                              "fill": "$text-default",
+                                              "textGrowth": "fixed-width",
+                                              "width": "fill_container",
+                                              "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
+                                              "lineHeight": "$type-p2-line-height",
+                                              "fontFamily": "$font-body",
+                                              "fontSize": "$type-p2-size",
+                                              "fontWeight": "normal",
+                                              "letterSpacing": "$type-p2-letter-spacing"
+                                            },
+                                            {
+                                              "type": "frame",
+                                              "id": "Jd61J",
+                                              "name": "Media",
+                                              "context": "Uses the same 16:10 thumbnail (720 × 450), filling this panel; a little is trimmed from the sides.",
+                                              "width": "fill_container",
+                                              "height": 420,
+                                              "fill": "$surface-subtle",
+                                              "justifyContent": "center",
+                                              "alignItems": "center",
+                                              "children": [
+                                                {
+                                                  "id": "j8gS0w",
+                                                  "type": "ref",
+                                                  "ref": "zV7DP",
+                                                  "name": "Icon",
+                                                  "width": 32,
+                                                  "height": 32,
+                                                  "stroke": "$text-muted"
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "type": "text",
+                                              "id": "mQhbk",
+                                              "name": "Paragraph 2",
+                                              "fill": "$text-default",
+                                              "textGrowth": "fixed-width",
+                                              "width": "fill_container",
+                                              "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically. Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically. Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
+                                              "lineHeight": "$type-p2-line-height",
+                                              "fontFamily": "$font-body",
+                                              "fontSize": "$type-p2-size",
+                                              "fontWeight": "normal",
+                                              "letterSpacing": "$type-p2-letter-spacing"
+                                            },
+                                            {
+                                              "type": "text",
+                                              "id": "sXYLR",
+                                              "name": "Paragraph 2",
+                                              "fill": "$text-default",
+                                              "textGrowth": "fixed-width",
+                                              "width": "fill_container",
+                                              "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
+                                              "lineHeight": "$type-p2-line-height",
+                                              "fontFamily": "$font-body",
+                                              "fontSize": "$type-p2-size",
+                                              "fontWeight": "normal",
+                                              "letterSpacing": "$type-p2-letter-spacing"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "frame",
+                                          "id": "aBRLd",
+                                          "name": "Category and tags",
+                                          "context": "Category links to /category/<name>; each tag links to /tag/<tag>. A post has one category and up to five tags. Tags are lowercase words joined by hyphens.",
+                                          "width": "fill_container",
+                                          "layout": "vertical",
+                                          "gap": 12,
+                                          "padding": [
+                                            "$scale-0400",
+                                            0,
+                                            0,
+                                            0
+                                          ],
+                                          "children": [
+                                            {
+                                              "type": "frame",
+                                              "id": "IFoIW",
+                                              "name": "Filed under",
+                                              "width": "fill_container",
+                                              "gap": 12,
+                                              "justifyContent": "space_between",
+                                              "alignItems": "center",
+                                              "children": [
+                                                {
+                                                  "type": "frame",
+                                                  "id": "GMhcB",
+                                                  "name": "Category",
+                                                  "gap": 12,
+                                                  "alignItems": "center",
+                                                  "children": [
+                                                    {
+                                                      "type": "text",
+                                                      "id": "b608fK",
+                                                      "name": "Label",
+                                                      "fill": "$text-muted",
+                                                      "content": "FILED UNDER",
+                                                      "lineHeight": "$type-eyebrow3-line-height",
+                                                      "fontFamily": "$font-body",
+                                                      "fontSize": "$type-eyebrow3-size",
+                                                      "fontWeight": "500",
+                                                      "letterSpacing": "$type-eyebrow3-letter-spacing"
+                                                    },
+                                                    {
+                                                      "id": "j06v47",
+                                                      "type": "ref",
+                                                      "ref": "tGiW5",
+                                                      "name": "Category",
+                                                      "descendants": {
+                                                        "tkj40": {
+                                                          "content": "LIFE"
+                                                        }
+                                                      }
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "id": "bB9sr",
+                                                  "type": "ref",
+                                                  "ref": "HXmMz",
+                                                  "name": "All tags",
+                                                  "context": "Links to /tags, the page listing every category and tag.",
+                                                  "descendants": {
+                                                    "BSi7m": {
+                                                      "content": "All tags"
+                                                    }
+                                                  }
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "type": "frame",
+                                              "id": "VLXsH",
+                                              "name": "Tags",
+                                              "gap": 8,
+                                              "alignItems": "center",
+                                              "children": [
+                                                {
+                                                  "id": "j2DBVd",
+                                                  "type": "ref",
+                                                  "ref": "geYri",
+                                                  "name": "Tag",
+                                                  "descendants": {
+                                                    "SAIpz": {
+                                                      "content": "ORIGINS"
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "id": "X9sHKc",
+                                                  "type": "ref",
+                                                  "ref": "geYri",
+                                                  "name": "Tag",
+                                                  "descendants": {
+                                                    "SAIpz": {
+                                                      "content": "JOURNAL"
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "id": "ac4Ix",
+                                                  "type": "ref",
+                                                  "ref": "geYri",
+                                                  "name": "Tag",
+                                                  "descendants": {
+                                                    "SAIpz": {
+                                                      "content": "FIRST-POST"
+                                                    }
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "Jp9pI",
+                                  "type": "ref",
+                                  "ref": "Rozdd",
+                                  "name": "Newer / older post",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "context": "Links to the neighbouring posts, newest first. The newest post has no Newer link and the oldest has no Older link.",
+                                  "descendants": {
+                                    "B5LPx": {
+                                      "enabled": true
+                                    },
+                                    "eqtno": {
+                                      "content": "Newer post"
+                                    },
+                                    "JnVs9": {
+                                      "content": "Older post"
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "SSSEc",
+                          "type": "ref",
+                          "ref": "AJ8ld",
+                          "name": "Sidebar",
+                          "height": "fill_container"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "cTahy",
+                      "type": "ref",
+                      "ref": "E6haZ",
+                      "x": 0,
+                      "y": 2715
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "y1HFn",
+          "name": "Step 30%",
+          "gap": 32,
+          "children": [
+            {
+              "type": "frame",
+              "id": "lZPMh",
+              "name": "Label",
+              "width": 220,
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "rDqP1",
+                  "name": "Progress",
+                  "fill": "$text-default",
+                  "content": "30%",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 28,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "m7NXQ",
+                  "name": "Note",
+                  "fill": "$text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": 220,
+                  "content": "The squiggle has started. 6px tall, pink, a hand-drawn wave like the nav links.",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "zNZI5",
+              "name": "Viewport",
+              "clip": true,
+              "width": 1200,
+              "height": 700,
+              "fill": "$surface-default",
+              "cornerRadius": 8,
+              "stroke": "$border-default",
+              "strokeWidth": 1,
+              "strokeAlignment": "inner",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "CJ3OW",
+                  "x": 0,
+                  "y": -600,
+                  "name": "Post",
+                  "theme": {
+                    "device": "lg"
+                  },
+                  "clip": true,
+                  "width": 1200,
+                  "fill": "$surface-default",
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "id": "bHvzk",
+                      "type": "ref",
+                      "ref": "kgrqX",
+                      "x": 0,
+                      "y": 0
+                    },
+                    {
+                      "type": "frame",
+                      "id": "zy4t8",
+                      "name": "Main",
+                      "width": "fill_container",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "lRTzf",
+                          "name": "Content",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "padding": "$scale-0600",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "y5fxQ",
+                              "name": "Column",
+                              "width": "fill_container",
+                              "fill": "$surface-default",
+                              "cornerRadius": "$radius-lg",
+                              "layout": "vertical",
+                              "gap": 40,
+                              "padding": "$scale-0900",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "Z9iCR",
+                                  "name": "Entry List",
+                                  "context": "One post, shown in full. The title is the page heading; the body is the post's Markdown.",
+                                  "width": "fill_container",
+                                  "layout": "vertical",
+                                  "gap": "$scale-0400",
+                                  "children": [
+                                    {
+                                      "type": "frame",
+                                      "id": "dpeG4",
+                                      "name": "Entry — Hello, out loud",
+                                      "width": "fill_container",
+                                      "layout": "vertical",
+                                      "gap": "$scale-0200",
+                                      "padding": [
+                                        "$scale-0000",
+                                        0,
+                                        "$scale-0600",
+                                        0
+                                      ],
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "XnLZw",
+                                          "name": "Title",
+                                          "fill": "$text-default",
+                                          "textGrowth": "fixed-width",
+                                          "width": "fill_container",
+                                          "content": "Hello, out loud",
+                                          "lineHeight": "$type-h1-line-height",
+                                          "fontFamily": "$font-heading",
+                                          "fontSize": "$type-h1-size",
+                                          "fontWeight": "700",
+                                          "letterSpacing": "$type-h1-letter-spacing"
+                                        },
+                                        {
+                                          "type": "frame",
+                                          "id": "BOfqP",
+                                          "name": "Meta",
+                                          "context": "The date, then the post's category. The category links to /category/<name>.",
+                                          "width": "fill_container",
+                                          "gap": 12,
+                                          "alignItems": "center",
+                                          "children": [
+                                            {
+                                              "type": "text",
+                                              "id": "kbJnj",
+                                              "name": "Date",
+                                              "fill": "$text-muted",
+                                              "content": "SUNDAY, SEP 27, 2026",
+                                              "lineHeight": "$type-eyebrow3-line-height",
+                                              "fontFamily": "$font-body",
+                                              "fontSize": "$type-eyebrow3-size",
+                                              "fontWeight": "500",
+                                              "letterSpacing": "$type-eyebrow3-letter-spacing"
+                                            },
+                                            {
+                                              "id": "YYtUc",
+                                              "type": "ref",
+                                              "ref": "tGiW5",
+                                              "name": "Category",
+                                              "descendants": {
+                                                "tkj40": {
+                                                  "content": "LIFE"
+                                                }
+                                              }
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "frame",
+                                          "id": "njHPr",
+                                          "name": "Body",
+                                          "width": "fill_container",
+                                          "stroke": "$border-default",
+                                          "strokeWidth": {
+                                            "top": "$scale-0100",
+                                            "right": "$scale-0000",
+                                            "bottom": "$scale-0050",
+                                            "left": "$scale-0000"
+                                          },
+                                          "strokeAlignment": "inner",
+                                          "layout": "vertical",
+                                          "gap": "$scale-0600",
+                                          "padding": [
+                                            "$scale-0600",
+                                            0
+                                          ],
+                                          "children": [
+                                            {
+                                              "type": "text",
+                                              "id": "rGisP",
+                                              "name": "Paragraph 1",
+                                              "fill": "$text-default",
+                                              "textGrowth": "fixed-width",
+                                              "width": "fill_container",
+                                              "content": "This is the first post in the journal. Replace this with real writing whenever you're ready — the page and its layout are already wired up around whatever goes here.",
+                                              "lineHeight": "$type-p2-line-height",
+                                              "fontFamily": "$font-body",
+                                              "fontSize": "$type-p2-size",
+                                              "fontWeight": "normal",
+                                              "letterSpacing": "$type-p2-letter-spacing"
+                                            },
+                                            {
+                                              "type": "text",
+                                              "id": "cYsY6",
+                                              "name": "Paragraph 2",
+                                              "fill": "$text-default",
+                                              "textGrowth": "fixed-width",
+                                              "width": "fill_container",
+                                              "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
+                                              "lineHeight": "$type-p2-line-height",
+                                              "fontFamily": "$font-body",
+                                              "fontSize": "$type-p2-size",
+                                              "fontWeight": "normal",
+                                              "letterSpacing": "$type-p2-letter-spacing"
+                                            },
+                                            {
+                                              "type": "frame",
+                                              "id": "DnmYH",
+                                              "name": "Media",
+                                              "context": "Uses the same 16:10 thumbnail (720 × 450), filling this panel; a little is trimmed from the sides.",
+                                              "width": "fill_container",
+                                              "height": 420,
+                                              "fill": "$surface-subtle",
+                                              "justifyContent": "center",
+                                              "alignItems": "center",
+                                              "children": [
+                                                {
+                                                  "id": "g9ZcP",
+                                                  "type": "ref",
+                                                  "ref": "zV7DP",
+                                                  "name": "Icon",
+                                                  "width": 32,
+                                                  "height": 32,
+                                                  "stroke": "$text-muted"
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "type": "frame",
+                                              "id": "jRksp",
+                                              "name": "Media",
+                                              "context": "Uses the same 16:10 thumbnail (720 × 450), filling this panel; a little is trimmed from the sides.",
+                                              "width": "fill_container",
+                                              "height": 420,
+                                              "fill": "$surface-subtle",
+                                              "justifyContent": "center",
+                                              "alignItems": "center",
+                                              "children": [
+                                                {
+                                                  "id": "J5krfb",
+                                                  "type": "ref",
+                                                  "ref": "zV7DP",
+                                                  "name": "Icon",
+                                                  "width": 32,
+                                                  "height": 32,
+                                                  "stroke": "$text-muted"
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "type": "text",
+                                              "id": "L4SUmA",
+                                              "name": "Paragraph 2",
+                                              "fill": "$text-default",
+                                              "textGrowth": "fixed-width",
+                                              "width": "fill_container",
+                                              "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
+                                              "lineHeight": "$type-p2-line-height",
+                                              "fontFamily": "$font-body",
+                                              "fontSize": "$type-p2-size",
+                                              "fontWeight": "normal",
+                                              "letterSpacing": "$type-p2-letter-spacing"
+                                            },
+                                            {
+                                              "type": "text",
+                                              "id": "AvPdv",
+                                              "name": "Title",
+                                              "fill": "$text-default",
+                                              "textGrowth": "fixed-width",
+                                              "width": "fill_container",
+                                              "content": "This is another heading",
+                                              "lineHeight": "$type-h2-line-height",
+                                              "fontFamily": "$font-heading",
+                                              "fontSize": "$type-h2-size",
+                                              "fontWeight": "700",
+                                              "letterSpacing": "$type-h2-letter-spacing"
+                                            },
+                                            {
+                                              "type": "text",
+                                              "id": "Ve064",
+                                              "name": "Paragraph 2",
+                                              "fill": "$text-default",
+                                              "textGrowth": "fixed-width",
+                                              "width": "fill_container",
+                                              "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
+                                              "lineHeight": "$type-p2-line-height",
+                                              "fontFamily": "$font-body",
+                                              "fontSize": "$type-p2-size",
+                                              "fontWeight": "normal",
+                                              "letterSpacing": "$type-p2-letter-spacing"
+                                            },
+                                            {
+                                              "type": "frame",
+                                              "id": "B60HYD",
+                                              "name": "Media",
+                                              "context": "Uses the same 16:10 thumbnail (720 × 450), filling this panel; a little is trimmed from the sides.",
+                                              "width": "fill_container",
+                                              "height": 420,
+                                              "fill": "$surface-subtle",
+                                              "justifyContent": "center",
+                                              "alignItems": "center",
+                                              "children": [
+                                                {
+                                                  "id": "S6bnU",
+                                                  "type": "ref",
+                                                  "ref": "zV7DP",
+                                                  "name": "Icon",
+                                                  "width": 32,
+                                                  "height": 32,
+                                                  "stroke": "$text-muted"
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "type": "text",
+                                              "id": "Okqht",
+                                              "name": "Paragraph 2",
+                                              "fill": "$text-default",
+                                              "textGrowth": "fixed-width",
+                                              "width": "fill_container",
+                                              "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically. Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically. Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
+                                              "lineHeight": "$type-p2-line-height",
+                                              "fontFamily": "$font-body",
+                                              "fontSize": "$type-p2-size",
+                                              "fontWeight": "normal",
+                                              "letterSpacing": "$type-p2-letter-spacing"
+                                            },
+                                            {
+                                              "type": "text",
+                                              "id": "J3eeCX",
+                                              "name": "Paragraph 2",
+                                              "fill": "$text-default",
+                                              "textGrowth": "fixed-width",
+                                              "width": "fill_container",
+                                              "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
+                                              "lineHeight": "$type-p2-line-height",
+                                              "fontFamily": "$font-body",
+                                              "fontSize": "$type-p2-size",
+                                              "fontWeight": "normal",
+                                              "letterSpacing": "$type-p2-letter-spacing"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "frame",
+                                          "id": "Rj4dF",
+                                          "name": "Category and tags",
+                                          "context": "Category links to /category/<name>; each tag links to /tag/<tag>. A post has one category and up to five tags. Tags are lowercase words joined by hyphens.",
+                                          "width": "fill_container",
+                                          "layout": "vertical",
+                                          "gap": 12,
+                                          "padding": [
+                                            "$scale-0400",
+                                            0,
+                                            0,
+                                            0
+                                          ],
+                                          "children": [
+                                            {
+                                              "type": "frame",
+                                              "id": "jWZqV",
+                                              "name": "Filed under",
+                                              "width": "fill_container",
+                                              "gap": 12,
+                                              "justifyContent": "space_between",
+                                              "alignItems": "center",
+                                              "children": [
+                                                {
+                                                  "type": "frame",
+                                                  "id": "c3Z8el",
+                                                  "name": "Category",
+                                                  "gap": 12,
+                                                  "alignItems": "center",
+                                                  "children": [
+                                                    {
+                                                      "type": "text",
+                                                      "id": "XJHpO",
+                                                      "name": "Label",
+                                                      "fill": "$text-muted",
+                                                      "content": "FILED UNDER",
+                                                      "lineHeight": "$type-eyebrow3-line-height",
+                                                      "fontFamily": "$font-body",
+                                                      "fontSize": "$type-eyebrow3-size",
+                                                      "fontWeight": "500",
+                                                      "letterSpacing": "$type-eyebrow3-letter-spacing"
+                                                    },
+                                                    {
+                                                      "id": "pbMlK",
+                                                      "type": "ref",
+                                                      "ref": "tGiW5",
+                                                      "name": "Category",
+                                                      "descendants": {
+                                                        "tkj40": {
+                                                          "content": "LIFE"
+                                                        }
+                                                      }
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "id": "UdLVG",
+                                                  "type": "ref",
+                                                  "ref": "HXmMz",
+                                                  "name": "All tags",
+                                                  "context": "Links to /tags, the page listing every category and tag.",
+                                                  "descendants": {
+                                                    "BSi7m": {
+                                                      "content": "All tags"
+                                                    }
+                                                  }
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "type": "frame",
+                                              "id": "fEvz3",
+                                              "name": "Tags",
+                                              "gap": 8,
+                                              "alignItems": "center",
+                                              "children": [
+                                                {
+                                                  "id": "Q4TLd",
+                                                  "type": "ref",
+                                                  "ref": "geYri",
+                                                  "name": "Tag",
+                                                  "descendants": {
+                                                    "SAIpz": {
+                                                      "content": "ORIGINS"
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "id": "N9rHIZ",
+                                                  "type": "ref",
+                                                  "ref": "geYri",
+                                                  "name": "Tag",
+                                                  "descendants": {
+                                                    "SAIpz": {
+                                                      "content": "JOURNAL"
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "id": "JK71X",
+                                                  "type": "ref",
+                                                  "ref": "geYri",
+                                                  "name": "Tag",
+                                                  "descendants": {
+                                                    "SAIpz": {
+                                                      "content": "FIRST-POST"
+                                                    }
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "m4vaau",
+                                  "type": "ref",
+                                  "ref": "Rozdd",
+                                  "name": "Newer / older post",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "context": "Links to the neighbouring posts, newest first. The newest post has no Newer link and the oldest has no Older link.",
+                                  "descendants": {
+                                    "B5LPx": {
+                                      "enabled": true
+                                    },
+                                    "eqtno": {
+                                      "content": "Newer post"
+                                    },
+                                    "JnVs9": {
+                                      "content": "Older post"
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "FjRJm",
+                          "type": "ref",
+                          "ref": "AJ8ld",
+                          "name": "Sidebar",
+                          "height": "fill_container"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "C2R59v",
+                      "type": "ref",
+                      "ref": "E6haZ",
+                      "x": 0,
+                      "y": 2715
+                    }
+                  ]
+                },
+                {
+                  "type": "path",
+                  "id": "DiuDK",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Squiggle",
+                  "geometry": "M0 3q4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0",
+                  "viewBox": [
+                    0,
+                    0,
+                    360,
+                    6
+                  ],
+                  "fill": "#00000000",
+                  "width": 360,
+                  "height": 6,
+                  "stroke": "$accent-pink",
+                  "strokeWidth": 3,
+                  "strokeLinecap": "round"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "SPBW6",
+          "name": "Step 70%",
+          "gap": 32,
+          "children": [
+            {
+              "type": "frame",
+              "id": "O7aXt",
+              "name": "Label",
+              "width": 220,
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "dZFCq",
+                  "name": "Progress",
+                  "fill": "$text-default",
+                  "content": "70%",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 28,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "rAEtq",
+                  "name": "Note",
+                  "fill": "$text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": 220,
+                  "content": "It keeps following the scroll position, and un-draws as you scroll back up.",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "oFaja",
+              "name": "Viewport",
+              "clip": true,
+              "width": 1200,
+              "height": 700,
+              "fill": "$surface-default",
+              "cornerRadius": 8,
+              "stroke": "$border-default",
+              "strokeWidth": 1,
+              "strokeAlignment": "inner",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "y3Z0gS",
+                  "x": 0,
+                  "y": -1400,
+                  "name": "Post",
+                  "theme": {
+                    "device": "lg"
+                  },
+                  "clip": true,
+                  "width": 1200,
+                  "fill": "$surface-default",
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "id": "knnHP",
+                      "type": "ref",
+                      "ref": "kgrqX",
+                      "x": 0,
+                      "y": 0
+                    },
+                    {
+                      "type": "frame",
+                      "id": "tJ6Mx",
+                      "name": "Main",
+                      "width": "fill_container",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "g91MI1",
+                          "name": "Content",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "padding": "$scale-0600",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "kUW4L",
+                              "name": "Column",
+                              "width": "fill_container",
+                              "fill": "$surface-default",
+                              "cornerRadius": "$radius-lg",
+                              "layout": "vertical",
+                              "gap": 40,
+                              "padding": "$scale-0900",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "yCIEK",
+                                  "name": "Entry List",
+                                  "context": "One post, shown in full. The title is the page heading; the body is the post's Markdown.",
+                                  "width": "fill_container",
+                                  "layout": "vertical",
+                                  "gap": "$scale-0400",
+                                  "children": [
+                                    {
+                                      "type": "frame",
+                                      "id": "J5qEX",
+                                      "name": "Entry — Hello, out loud",
+                                      "width": "fill_container",
+                                      "layout": "vertical",
+                                      "gap": "$scale-0200",
+                                      "padding": [
+                                        "$scale-0000",
+                                        0,
+                                        "$scale-0600",
+                                        0
+                                      ],
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "RdhCH",
+                                          "name": "Title",
+                                          "fill": "$text-default",
+                                          "textGrowth": "fixed-width",
+                                          "width": "fill_container",
+                                          "content": "Hello, out loud",
+                                          "lineHeight": "$type-h1-line-height",
+                                          "fontFamily": "$font-heading",
+                                          "fontSize": "$type-h1-size",
+                                          "fontWeight": "700",
+                                          "letterSpacing": "$type-h1-letter-spacing"
+                                        },
+                                        {
+                                          "type": "frame",
+                                          "id": "OQCje",
+                                          "name": "Meta",
+                                          "context": "The date, then the post's category. The category links to /category/<name>.",
+                                          "width": "fill_container",
+                                          "gap": 12,
+                                          "alignItems": "center",
+                                          "children": [
+                                            {
+                                              "type": "text",
+                                              "id": "jqTsH",
+                                              "name": "Date",
+                                              "fill": "$text-muted",
+                                              "content": "SUNDAY, SEP 27, 2026",
+                                              "lineHeight": "$type-eyebrow3-line-height",
+                                              "fontFamily": "$font-body",
+                                              "fontSize": "$type-eyebrow3-size",
+                                              "fontWeight": "500",
+                                              "letterSpacing": "$type-eyebrow3-letter-spacing"
+                                            },
+                                            {
+                                              "id": "uMvfm",
+                                              "type": "ref",
+                                              "ref": "tGiW5",
+                                              "name": "Category",
+                                              "descendants": {
+                                                "tkj40": {
+                                                  "content": "LIFE"
+                                                }
+                                              }
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "frame",
+                                          "id": "Kb1An",
+                                          "name": "Body",
+                                          "width": "fill_container",
+                                          "stroke": "$border-default",
+                                          "strokeWidth": {
+                                            "top": "$scale-0100",
+                                            "right": "$scale-0000",
+                                            "bottom": "$scale-0050",
+                                            "left": "$scale-0000"
+                                          },
+                                          "strokeAlignment": "inner",
+                                          "layout": "vertical",
+                                          "gap": "$scale-0600",
+                                          "padding": [
+                                            "$scale-0600",
+                                            0
+                                          ],
+                                          "children": [
+                                            {
+                                              "type": "text",
+                                              "id": "FM676",
+                                              "name": "Paragraph 1",
+                                              "fill": "$text-default",
+                                              "textGrowth": "fixed-width",
+                                              "width": "fill_container",
+                                              "content": "This is the first post in the journal. Replace this with real writing whenever you're ready — the page and its layout are already wired up around whatever goes here.",
+                                              "lineHeight": "$type-p2-line-height",
+                                              "fontFamily": "$font-body",
+                                              "fontSize": "$type-p2-size",
+                                              "fontWeight": "normal",
+                                              "letterSpacing": "$type-p2-letter-spacing"
+                                            },
+                                            {
+                                              "type": "text",
+                                              "id": "a7esv4",
+                                              "name": "Paragraph 2",
+                                              "fill": "$text-default",
+                                              "textGrowth": "fixed-width",
+                                              "width": "fill_container",
+                                              "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
+                                              "lineHeight": "$type-p2-line-height",
+                                              "fontFamily": "$font-body",
+                                              "fontSize": "$type-p2-size",
+                                              "fontWeight": "normal",
+                                              "letterSpacing": "$type-p2-letter-spacing"
+                                            },
+                                            {
+                                              "type": "frame",
+                                              "id": "AcIbJ",
+                                              "name": "Media",
+                                              "context": "Uses the same 16:10 thumbnail (720 × 450), filling this panel; a little is trimmed from the sides.",
+                                              "width": "fill_container",
+                                              "height": 420,
+                                              "fill": "$surface-subtle",
+                                              "justifyContent": "center",
+                                              "alignItems": "center",
+                                              "children": [
+                                                {
+                                                  "id": "aQtG7",
+                                                  "type": "ref",
+                                                  "ref": "zV7DP",
+                                                  "name": "Icon",
+                                                  "width": 32,
+                                                  "height": 32,
+                                                  "stroke": "$text-muted"
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "type": "frame",
+                                              "id": "Kj6p4",
+                                              "name": "Media",
+                                              "context": "Uses the same 16:10 thumbnail (720 × 450), filling this panel; a little is trimmed from the sides.",
+                                              "width": "fill_container",
+                                              "height": 420,
+                                              "fill": "$surface-subtle",
+                                              "justifyContent": "center",
+                                              "alignItems": "center",
+                                              "children": [
+                                                {
+                                                  "id": "f1SjLM",
+                                                  "type": "ref",
+                                                  "ref": "zV7DP",
+                                                  "name": "Icon",
+                                                  "width": 32,
+                                                  "height": 32,
+                                                  "stroke": "$text-muted"
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "type": "text",
+                                              "id": "KBQOV",
+                                              "name": "Paragraph 2",
+                                              "fill": "$text-default",
+                                              "textGrowth": "fixed-width",
+                                              "width": "fill_container",
+                                              "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
+                                              "lineHeight": "$type-p2-line-height",
+                                              "fontFamily": "$font-body",
+                                              "fontSize": "$type-p2-size",
+                                              "fontWeight": "normal",
+                                              "letterSpacing": "$type-p2-letter-spacing"
+                                            },
+                                            {
+                                              "type": "text",
+                                              "id": "ZsZje",
+                                              "name": "Title",
+                                              "fill": "$text-default",
+                                              "textGrowth": "fixed-width",
+                                              "width": "fill_container",
+                                              "content": "This is another heading",
+                                              "lineHeight": "$type-h2-line-height",
+                                              "fontFamily": "$font-heading",
+                                              "fontSize": "$type-h2-size",
+                                              "fontWeight": "700",
+                                              "letterSpacing": "$type-h2-letter-spacing"
+                                            },
+                                            {
+                                              "type": "text",
+                                              "id": "Y2sCcc",
+                                              "name": "Paragraph 2",
+                                              "fill": "$text-default",
+                                              "textGrowth": "fixed-width",
+                                              "width": "fill_container",
+                                              "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
+                                              "lineHeight": "$type-p2-line-height",
+                                              "fontFamily": "$font-body",
+                                              "fontSize": "$type-p2-size",
+                                              "fontWeight": "normal",
+                                              "letterSpacing": "$type-p2-letter-spacing"
+                                            },
+                                            {
+                                              "type": "frame",
+                                              "id": "Z7pJLZ",
+                                              "name": "Media",
+                                              "context": "Uses the same 16:10 thumbnail (720 × 450), filling this panel; a little is trimmed from the sides.",
+                                              "width": "fill_container",
+                                              "height": 420,
+                                              "fill": "$surface-subtle",
+                                              "justifyContent": "center",
+                                              "alignItems": "center",
+                                              "children": [
+                                                {
+                                                  "id": "hckMR",
+                                                  "type": "ref",
+                                                  "ref": "zV7DP",
+                                                  "name": "Icon",
+                                                  "width": 32,
+                                                  "height": 32,
+                                                  "stroke": "$text-muted"
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "type": "text",
+                                              "id": "TtgBk",
+                                              "name": "Paragraph 2",
+                                              "fill": "$text-default",
+                                              "textGrowth": "fixed-width",
+                                              "width": "fill_container",
+                                              "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically. Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically. Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
+                                              "lineHeight": "$type-p2-line-height",
+                                              "fontFamily": "$font-body",
+                                              "fontSize": "$type-p2-size",
+                                              "fontWeight": "normal",
+                                              "letterSpacing": "$type-p2-letter-spacing"
+                                            },
+                                            {
+                                              "type": "text",
+                                              "id": "ZDDGw",
+                                              "name": "Paragraph 2",
+                                              "fill": "$text-default",
+                                              "textGrowth": "fixed-width",
+                                              "width": "fill_container",
+                                              "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
+                                              "lineHeight": "$type-p2-line-height",
+                                              "fontFamily": "$font-body",
+                                              "fontSize": "$type-p2-size",
+                                              "fontWeight": "normal",
+                                              "letterSpacing": "$type-p2-letter-spacing"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "frame",
+                                          "id": "V0FVt",
+                                          "name": "Category and tags",
+                                          "context": "Category links to /category/<name>; each tag links to /tag/<tag>. A post has one category and up to five tags. Tags are lowercase words joined by hyphens.",
+                                          "width": "fill_container",
+                                          "layout": "vertical",
+                                          "gap": 12,
+                                          "padding": [
+                                            "$scale-0400",
+                                            0,
+                                            0,
+                                            0
+                                          ],
+                                          "children": [
+                                            {
+                                              "type": "frame",
+                                              "id": "xxobg",
+                                              "name": "Filed under",
+                                              "width": "fill_container",
+                                              "gap": 12,
+                                              "justifyContent": "space_between",
+                                              "alignItems": "center",
+                                              "children": [
+                                                {
+                                                  "type": "frame",
+                                                  "id": "QpBO0",
+                                                  "name": "Category",
+                                                  "gap": 12,
+                                                  "alignItems": "center",
+                                                  "children": [
+                                                    {
+                                                      "type": "text",
+                                                      "id": "zJglb",
+                                                      "name": "Label",
+                                                      "fill": "$text-muted",
+                                                      "content": "FILED UNDER",
+                                                      "lineHeight": "$type-eyebrow3-line-height",
+                                                      "fontFamily": "$font-body",
+                                                      "fontSize": "$type-eyebrow3-size",
+                                                      "fontWeight": "500",
+                                                      "letterSpacing": "$type-eyebrow3-letter-spacing"
+                                                    },
+                                                    {
+                                                      "id": "I99lU",
+                                                      "type": "ref",
+                                                      "ref": "tGiW5",
+                                                      "name": "Category",
+                                                      "descendants": {
+                                                        "tkj40": {
+                                                          "content": "LIFE"
+                                                        }
+                                                      }
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "id": "ARyfW",
+                                                  "type": "ref",
+                                                  "ref": "HXmMz",
+                                                  "name": "All tags",
+                                                  "context": "Links to /tags, the page listing every category and tag.",
+                                                  "descendants": {
+                                                    "BSi7m": {
+                                                      "content": "All tags"
+                                                    }
+                                                  }
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "type": "frame",
+                                              "id": "ug5zh",
+                                              "name": "Tags",
+                                              "gap": 8,
+                                              "alignItems": "center",
+                                              "children": [
+                                                {
+                                                  "id": "aqekp",
+                                                  "type": "ref",
+                                                  "ref": "geYri",
+                                                  "name": "Tag",
+                                                  "descendants": {
+                                                    "SAIpz": {
+                                                      "content": "ORIGINS"
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "id": "M4a0ti",
+                                                  "type": "ref",
+                                                  "ref": "geYri",
+                                                  "name": "Tag",
+                                                  "descendants": {
+                                                    "SAIpz": {
+                                                      "content": "JOURNAL"
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "id": "hayKv",
+                                                  "type": "ref",
+                                                  "ref": "geYri",
+                                                  "name": "Tag",
+                                                  "descendants": {
+                                                    "SAIpz": {
+                                                      "content": "FIRST-POST"
+                                                    }
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "mTfTP",
+                                  "type": "ref",
+                                  "ref": "Rozdd",
+                                  "name": "Newer / older post",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "context": "Links to the neighbouring posts, newest first. The newest post has no Newer link and the oldest has no Older link.",
+                                  "descendants": {
+                                    "B5LPx": {
+                                      "enabled": true
+                                    },
+                                    "eqtno": {
+                                      "content": "Newer post"
+                                    },
+                                    "JnVs9": {
+                                      "content": "Older post"
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "m9Pe0M",
+                          "type": "ref",
+                          "ref": "AJ8ld",
+                          "name": "Sidebar",
+                          "height": "fill_container"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "wIOCB",
+                      "type": "ref",
+                      "ref": "E6haZ",
+                      "x": 0,
+                      "y": 2715
+                    }
+                  ]
+                },
+                {
+                  "type": "path",
+                  "id": "Cijtt",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Squiggle",
+                  "geometry": "M0 3q4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0",
+                  "viewBox": [
+                    0,
+                    0,
+                    846,
+                    6
+                  ],
+                  "fill": "#00000000",
+                  "width": 846,
+                  "height": 6,
+                  "stroke": "$accent-pink",
+                  "strokeWidth": 3,
+                  "strokeLinecap": "round"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "pfuvF",
+          "name": "Step 100%",
+          "gap": 32,
+          "children": [
+            {
+              "type": "frame",
+              "id": "r8nxRA",
+              "name": "Label",
+              "width": 220,
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "KN4ow",
+                  "name": "Progress",
+                  "fill": "$text-default",
+                  "content": "100%",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 28,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "c4X1Q",
+                  "name": "Note",
+                  "fill": "$text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": 220,
+                  "content": "The end of the post is on screen: the squiggle reaches the edge and a splatter pops at its tip (320 ms).",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "pTMBe",
+              "name": "Viewport",
+              "clip": true,
+              "width": 1200,
+              "height": 700,
+              "fill": "$surface-default",
+              "cornerRadius": 8,
+              "stroke": "$border-default",
+              "strokeWidth": 1,
+              "strokeAlignment": "inner",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ikPec",
+                  "x": 0,
+                  "y": -2000,
+                  "name": "Post",
+                  "theme": {
+                    "device": "lg"
+                  },
+                  "clip": true,
+                  "width": 1200,
+                  "fill": "$surface-default",
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "id": "eG9dH",
+                      "type": "ref",
+                      "ref": "kgrqX",
+                      "x": 0,
+                      "y": 0
+                    },
+                    {
+                      "type": "frame",
+                      "id": "E8gzl8",
+                      "name": "Main",
+                      "width": "fill_container",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "p7gXU",
+                          "name": "Content",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "padding": "$scale-0600",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "pKFrK",
+                              "name": "Column",
+                              "width": "fill_container",
+                              "fill": "$surface-default",
+                              "cornerRadius": "$radius-lg",
+                              "layout": "vertical",
+                              "gap": 40,
+                              "padding": "$scale-0900",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "s490lJ",
+                                  "name": "Entry List",
+                                  "context": "One post, shown in full. The title is the page heading; the body is the post's Markdown.",
+                                  "width": "fill_container",
+                                  "layout": "vertical",
+                                  "gap": "$scale-0400",
+                                  "children": [
+                                    {
+                                      "type": "frame",
+                                      "id": "eywEx",
+                                      "name": "Entry — Hello, out loud",
+                                      "width": "fill_container",
+                                      "layout": "vertical",
+                                      "gap": "$scale-0200",
+                                      "padding": [
+                                        "$scale-0000",
+                                        0,
+                                        "$scale-0600",
+                                        0
+                                      ],
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "N3qq73",
+                                          "name": "Title",
+                                          "fill": "$text-default",
+                                          "textGrowth": "fixed-width",
+                                          "width": "fill_container",
+                                          "content": "Hello, out loud",
+                                          "lineHeight": "$type-h1-line-height",
+                                          "fontFamily": "$font-heading",
+                                          "fontSize": "$type-h1-size",
+                                          "fontWeight": "700",
+                                          "letterSpacing": "$type-h1-letter-spacing"
+                                        },
+                                        {
+                                          "type": "frame",
+                                          "id": "GnQad",
+                                          "name": "Meta",
+                                          "context": "The date, then the post's category. The category links to /category/<name>.",
+                                          "width": "fill_container",
+                                          "gap": 12,
+                                          "alignItems": "center",
+                                          "children": [
+                                            {
+                                              "type": "text",
+                                              "id": "WTYD2",
+                                              "name": "Date",
+                                              "fill": "$text-muted",
+                                              "content": "SUNDAY, SEP 27, 2026",
+                                              "lineHeight": "$type-eyebrow3-line-height",
+                                              "fontFamily": "$font-body",
+                                              "fontSize": "$type-eyebrow3-size",
+                                              "fontWeight": "500",
+                                              "letterSpacing": "$type-eyebrow3-letter-spacing"
+                                            },
+                                            {
+                                              "id": "DrQkY",
+                                              "type": "ref",
+                                              "ref": "tGiW5",
+                                              "name": "Category",
+                                              "descendants": {
+                                                "tkj40": {
+                                                  "content": "LIFE"
+                                                }
+                                              }
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "frame",
+                                          "id": "seUAZ",
+                                          "name": "Body",
+                                          "width": "fill_container",
+                                          "stroke": "$border-default",
+                                          "strokeWidth": {
+                                            "top": "$scale-0100",
+                                            "right": "$scale-0000",
+                                            "bottom": "$scale-0050",
+                                            "left": "$scale-0000"
+                                          },
+                                          "strokeAlignment": "inner",
+                                          "layout": "vertical",
+                                          "gap": "$scale-0600",
+                                          "padding": [
+                                            "$scale-0600",
+                                            0
+                                          ],
+                                          "children": [
+                                            {
+                                              "type": "text",
+                                              "id": "IajMb",
+                                              "name": "Paragraph 1",
+                                              "fill": "$text-default",
+                                              "textGrowth": "fixed-width",
+                                              "width": "fill_container",
+                                              "content": "This is the first post in the journal. Replace this with real writing whenever you're ready — the page and its layout are already wired up around whatever goes here.",
+                                              "lineHeight": "$type-p2-line-height",
+                                              "fontFamily": "$font-body",
+                                              "fontSize": "$type-p2-size",
+                                              "fontWeight": "normal",
+                                              "letterSpacing": "$type-p2-letter-spacing"
+                                            },
+                                            {
+                                              "type": "text",
+                                              "id": "FIq12",
+                                              "name": "Paragraph 2",
+                                              "fill": "$text-default",
+                                              "textGrowth": "fixed-width",
+                                              "width": "fill_container",
+                                              "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
+                                              "lineHeight": "$type-p2-line-height",
+                                              "fontFamily": "$font-body",
+                                              "fontSize": "$type-p2-size",
+                                              "fontWeight": "normal",
+                                              "letterSpacing": "$type-p2-letter-spacing"
+                                            },
+                                            {
+                                              "type": "frame",
+                                              "id": "J41YVZ",
+                                              "name": "Media",
+                                              "context": "Uses the same 16:10 thumbnail (720 × 450), filling this panel; a little is trimmed from the sides.",
+                                              "width": "fill_container",
+                                              "height": 420,
+                                              "fill": "$surface-subtle",
+                                              "justifyContent": "center",
+                                              "alignItems": "center",
+                                              "children": [
+                                                {
+                                                  "id": "i5VLi",
+                                                  "type": "ref",
+                                                  "ref": "zV7DP",
+                                                  "name": "Icon",
+                                                  "width": 32,
+                                                  "height": 32,
+                                                  "stroke": "$text-muted"
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "type": "frame",
+                                              "id": "gfpd2",
+                                              "name": "Media",
+                                              "context": "Uses the same 16:10 thumbnail (720 × 450), filling this panel; a little is trimmed from the sides.",
+                                              "width": "fill_container",
+                                              "height": 420,
+                                              "fill": "$surface-subtle",
+                                              "justifyContent": "center",
+                                              "alignItems": "center",
+                                              "children": [
+                                                {
+                                                  "id": "xNgqH",
+                                                  "type": "ref",
+                                                  "ref": "zV7DP",
+                                                  "name": "Icon",
+                                                  "width": 32,
+                                                  "height": 32,
+                                                  "stroke": "$text-muted"
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "type": "text",
+                                              "id": "aiy9z",
+                                              "name": "Paragraph 2",
+                                              "fill": "$text-default",
+                                              "textGrowth": "fixed-width",
+                                              "width": "fill_container",
+                                              "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
+                                              "lineHeight": "$type-p2-line-height",
+                                              "fontFamily": "$font-body",
+                                              "fontSize": "$type-p2-size",
+                                              "fontWeight": "normal",
+                                              "letterSpacing": "$type-p2-letter-spacing"
+                                            },
+                                            {
+                                              "type": "text",
+                                              "id": "Ij9Hn",
+                                              "name": "Title",
+                                              "fill": "$text-default",
+                                              "textGrowth": "fixed-width",
+                                              "width": "fill_container",
+                                              "content": "This is another heading",
+                                              "lineHeight": "$type-h2-line-height",
+                                              "fontFamily": "$font-heading",
+                                              "fontSize": "$type-h2-size",
+                                              "fontWeight": "700",
+                                              "letterSpacing": "$type-h2-letter-spacing"
+                                            },
+                                            {
+                                              "type": "text",
+                                              "id": "xd8kZ",
+                                              "name": "Paragraph 2",
+                                              "fill": "$text-default",
+                                              "textGrowth": "fixed-width",
+                                              "width": "fill_container",
+                                              "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
+                                              "lineHeight": "$type-p2-line-height",
+                                              "fontFamily": "$font-body",
+                                              "fontSize": "$type-p2-size",
+                                              "fontWeight": "normal",
+                                              "letterSpacing": "$type-p2-letter-spacing"
+                                            },
+                                            {
+                                              "type": "frame",
+                                              "id": "k6Cln",
+                                              "name": "Media",
+                                              "context": "Uses the same 16:10 thumbnail (720 × 450), filling this panel; a little is trimmed from the sides.",
+                                              "width": "fill_container",
+                                              "height": 420,
+                                              "fill": "$surface-subtle",
+                                              "justifyContent": "center",
+                                              "alignItems": "center",
+                                              "children": [
+                                                {
+                                                  "id": "eovOD",
+                                                  "type": "ref",
+                                                  "ref": "zV7DP",
+                                                  "name": "Icon",
+                                                  "width": 32,
+                                                  "height": 32,
+                                                  "stroke": "$text-muted"
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "type": "text",
+                                              "id": "U8tguY",
+                                              "name": "Paragraph 2",
+                                              "fill": "$text-default",
+                                              "textGrowth": "fixed-width",
+                                              "width": "fill_container",
+                                              "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically. Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically. Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
+                                              "lineHeight": "$type-p2-line-height",
+                                              "fontFamily": "$font-body",
+                                              "fontSize": "$type-p2-size",
+                                              "fontWeight": "normal",
+                                              "letterSpacing": "$type-p2-letter-spacing"
+                                            },
+                                            {
+                                              "type": "text",
+                                              "id": "uflyX",
+                                              "name": "Paragraph 2",
+                                              "fill": "$text-default",
+                                              "textGrowth": "fixed-width",
+                                              "width": "fill_container",
+                                              "content": "Content lives as plain Markdown files in src/content/blog/. Add a new .md file with the same frontmatter shape (title, description, pubDate) and it shows up on the journal index automatically.",
+                                              "lineHeight": "$type-p2-line-height",
+                                              "fontFamily": "$font-body",
+                                              "fontSize": "$type-p2-size",
+                                              "fontWeight": "normal",
+                                              "letterSpacing": "$type-p2-letter-spacing"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "frame",
+                                          "id": "H4OLj",
+                                          "name": "Category and tags",
+                                          "context": "Category links to /category/<name>; each tag links to /tag/<tag>. A post has one category and up to five tags. Tags are lowercase words joined by hyphens.",
+                                          "width": "fill_container",
+                                          "layout": "vertical",
+                                          "gap": 12,
+                                          "padding": [
+                                            "$scale-0400",
+                                            0,
+                                            0,
+                                            0
+                                          ],
+                                          "children": [
+                                            {
+                                              "type": "frame",
+                                              "id": "aHRhV",
+                                              "name": "Filed under",
+                                              "width": "fill_container",
+                                              "gap": 12,
+                                              "justifyContent": "space_between",
+                                              "alignItems": "center",
+                                              "children": [
+                                                {
+                                                  "type": "frame",
+                                                  "id": "gbfyE",
+                                                  "name": "Category",
+                                                  "gap": 12,
+                                                  "alignItems": "center",
+                                                  "children": [
+                                                    {
+                                                      "type": "text",
+                                                      "id": "MFQvi",
+                                                      "name": "Label",
+                                                      "fill": "$text-muted",
+                                                      "content": "FILED UNDER",
+                                                      "lineHeight": "$type-eyebrow3-line-height",
+                                                      "fontFamily": "$font-body",
+                                                      "fontSize": "$type-eyebrow3-size",
+                                                      "fontWeight": "500",
+                                                      "letterSpacing": "$type-eyebrow3-letter-spacing"
+                                                    },
+                                                    {
+                                                      "id": "r4Vg88",
+                                                      "type": "ref",
+                                                      "ref": "tGiW5",
+                                                      "name": "Category",
+                                                      "descendants": {
+                                                        "tkj40": {
+                                                          "content": "LIFE"
+                                                        }
+                                                      }
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "id": "u4Sda6",
+                                                  "type": "ref",
+                                                  "ref": "HXmMz",
+                                                  "name": "All tags",
+                                                  "context": "Links to /tags, the page listing every category and tag.",
+                                                  "descendants": {
+                                                    "BSi7m": {
+                                                      "content": "All tags"
+                                                    }
+                                                  }
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "type": "frame",
+                                              "id": "zd4P0",
+                                              "name": "Tags",
+                                              "gap": 8,
+                                              "alignItems": "center",
+                                              "children": [
+                                                {
+                                                  "id": "cSuXk",
+                                                  "type": "ref",
+                                                  "ref": "geYri",
+                                                  "name": "Tag",
+                                                  "descendants": {
+                                                    "SAIpz": {
+                                                      "content": "ORIGINS"
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "id": "fo1Yi",
+                                                  "type": "ref",
+                                                  "ref": "geYri",
+                                                  "name": "Tag",
+                                                  "descendants": {
+                                                    "SAIpz": {
+                                                      "content": "JOURNAL"
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "id": "v5EPtW",
+                                                  "type": "ref",
+                                                  "ref": "geYri",
+                                                  "name": "Tag",
+                                                  "descendants": {
+                                                    "SAIpz": {
+                                                      "content": "FIRST-POST"
+                                                    }
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "R4EW7",
+                                  "type": "ref",
+                                  "ref": "Rozdd",
+                                  "name": "Newer / older post",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "context": "Links to the neighbouring posts, newest first. The newest post has no Newer link and the oldest has no Older link.",
+                                  "descendants": {
+                                    "B5LPx": {
+                                      "enabled": true
+                                    },
+                                    "eqtno": {
+                                      "content": "Newer post"
+                                    },
+                                    "JnVs9": {
+                                      "content": "Older post"
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "K1ZZV",
+                          "type": "ref",
+                          "ref": "AJ8ld",
+                          "name": "Sidebar",
+                          "height": "fill_container"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "x4Sri4",
+                      "type": "ref",
+                      "ref": "E6haZ",
+                      "x": 0,
+                      "y": 2715
+                    }
+                  ]
+                },
+                {
+                  "type": "path",
+                  "id": "yHsXq",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Squiggle",
+                  "geometry": "M0 3q4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0 4.5-3 9 0 4.5 3 9 0",
+                  "viewBox": [
+                    0,
+                    0,
+                    1206,
+                    6
+                  ],
+                  "fill": "#00000000",
+                  "width": 1206,
+                  "height": 6,
+                  "stroke": "$accent-pink",
+                  "strokeWidth": 3,
+                  "strokeLinecap": "round"
+                },
+                {
+                  "type": "frame",
+                  "id": "wOX72",
+                  "layoutPosition": "absolute",
+                  "x": 1130,
+                  "y": -14,
+                  "name": "Splatter",
+                  "width": 70,
+                  "height": 70,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "path",
+                      "id": "JLC0z",
+                      "x": 0,
+                      "y": 0,
+                      "name": "Blob",
+                      "geometry": "M56.3 48.1q-2.3 2.1-4.5 2.7-2.1 0.5-3.3 3-1.3 2.5-3.6 1.9-2.3-0.6-3.6-2.5-1.2-2-1.2-3.9 0-1.9 0-3.3 0-1.5 0.1-3.3 0.1-1.8 1.8-2.3 1.7-0.6 3.3-1 1.6-0.4 4.2-1.3 2.6-0.9 3.1 1.6 0.6 2.5 3.3 4.4 2.6 1.9 0.4 4z",
+                      "viewBox": [
+                        0,
+                        0,
+                        92,
+                        92
+                      ],
+                      "fill": "$accent-pink",
+                      "width": 92,
+                      "height": 92
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "qhcJK",
+                      "x": 49.065287084136955,
+                      "y": 69.42606512872482,
+                      "name": "Drop",
+                      "rotation": -78.5131390199592,
+                      "fill": "$accent-pink",
+                      "width": 4.372751933230438,
+                      "height": 4.834033020272559
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "X6waYZ",
+                      "x": 38.35060857918113,
+                      "y": 63.446480724754075,
+                      "name": "Drop",
+                      "rotation": -107.38115468406171,
+                      "fill": "$accent-pink",
+                      "width": 3.2425586783525344,
+                      "height": 3.6228868609108127
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "A9843",
+                      "x": 35.26594695305626,
+                      "y": 10.430797136956384,
+                      "name": "Drop",
+                      "rotation": -254.7835869783459,
+                      "fill": "$accent-pink",
+                      "width": 2.9361904047132423,
+                      "height": 3.0067679932676334
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "vo4Yv",
+                      "x": 48.6725561280403,
+                      "y": 61.691893173535185,
+                      "name": "Drop",
+                      "rotation": -76.8131943404736,
+                      "fill": "$accent-pink",
+                      "width": 2.8027615121578617,
+                      "height": 3.3908696491562953
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "NkjtF",
+                      "x": 55.19004341794311,
+                      "y": 21.667133721573165,
+                      "name": "Drop",
+                      "rotation": -296.37096217664475,
+                      "fill": "$accent-pink",
+                      "width": 3.6863759215392062,
+                      "height": 4.156506329990945
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "flwlX",
+                      "x": 68.25083121933459,
+                      "y": 31.33439539246172,
+                      "name": "Drop",
+                      "rotation": -331.2440644629505,
+                      "fill": "$accent-pink",
+                      "width": 2.723946568986376,
+                      "height": 3.4159877172962942
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "AbPAX",
+                      "x": 42.27639390297078,
+                      "y": 28.810128394272354,
+                      "name": "Drop",
+                      "rotation": -262.92625437626907,
+                      "fill": "$accent-pink",
+                      "width": 3.6539906095033468,
+                      "height": 3.811747692314274
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "z97hm",
+                      "x": 21.554432133158212,
+                      "y": 31.60836962570624,
+                      "name": "Drop",
+                      "rotation": -209.60096037462395,
+                      "fill": "$accent-pink",
+                      "width": 3.821875939900929,
+                      "height": 3.179358547266743
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "OxB45",
+                      "x": 68.36490108133546,
+                      "y": 18.859326700452172,
+                      "name": "Drop",
+                      "rotation": -311.6951974442672,
+                      "fill": "$accent-pink",
+                      "width": 1.6682092459258666,
+                      "height": 2.196571072120195
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "df95X",
+                      "x": 81.45573163248554,
+                      "y": 40.88366626643974,
+                      "name": "Speck",
+                      "fill": "$accent-pink",
+                      "width": 1.1,
+                      "height": 1.1
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "XT3y2",
+                      "x": 59.298723833739594,
+                      "y": 76.67281026139113,
+                      "name": "Speck",
+                      "fill": "$accent-pink",
+                      "width": 1.1,
+                      "height": 1.1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "themes": {

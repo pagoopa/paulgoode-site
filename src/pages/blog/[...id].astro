@@ -4,6 +4,7 @@
 // links to the newer and older posts.
 import Layout from '../../layouts/Layout.astro';
 import Pagination from '../../components/Pagination.astro';
+import ReadingProgress from '../../components/ReadingProgress.astro';
 import TagChip from '../../components/TagChip.astro';
 import { render } from 'astro:content';
 import { getJournalPosts, postDateFormat } from '../../lib/blog';
@@ -31,6 +32,7 @@ const { category, tags } = post.data;
   sidebar={post.data.sidebar}
   sidebarHide={post.data.sidebarHide}
 >
+  <ReadingProgress />
   <div class="wrap post">
     <div class="entry-column">
       <article class="entry">
