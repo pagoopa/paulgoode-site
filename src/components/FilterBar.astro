@@ -1,6 +1,8 @@
 ---
 // Filter (Filter / Default, Hover and Selected in design/site.pen): a row of chips that
-// shows only the items marked data-filter-type="<value>". "All" shows everything.
+// shows only the items marked data-filter-type. A single value matches one type.
+// Several values, separated by spaces, match any of them, so one shop piece can
+// sit in more than one Big Cartel category. "All" shows everything.
 // Items are always visible without JavaScript; the chips appear once the script runs.
 // The choice is kept in the address (?type=art) so a filtered view can be linked to.
 interface Props {
@@ -34,7 +36,8 @@ const { options, label = 'Filter by type' } = Astro.props;
     const apply = (value: string) => {
       let shown = 0;
       for (const item of items) {
-        const match = value === 'all' || item.dataset.filterType === value;
+        const types = (item.dataset.filterType ?? '').split(/\s+/);
+        const match = value === 'all' || types.includes(value);
         item.hidden = !match;
         if (match) shown += 1;
       }

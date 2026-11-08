@@ -1,0 +1,104 @@
+---
+// Shop: the Big Cartel catalog, drawn in this site's cards. Each card leaves
+// for shop.paulgoode.com, where the buyer pays. The filter chips are the
+// product categories from Big Cartel. A piece can belong to several.
+import Layout from '../layouts/Layout.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import FilterBar from '../components/FilterBar.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import CardReveal from '../components/CardReveal.astro';
+import { getPage } from '../lib/pages';
+import { getShopProducts, shopFilters } from '../lib/shop';
+
+const { data } = await getPage('shop');
+const products = await getShopProducts();
+const filters = shopFilters(products);
+---
+
+<Layout title={data.title} description={data.description} sidebar={data.sidebar} sidebarHide={data.sidebarHide}>
+  <div class="wrap shop">
+    <SectionHeader title={data.heading} intro={data.description} level="h1" />
+
+    {filters.length > 0 && <FilterBar options={filters} label="Filter by category" />}
+
+    <CardReveal />
+
+    {
+      products.length === 0 ? (
+        <p class="shop__empty" role="status">
+          Nothing is listed right now.
+        </p>
+      ) : (
+        <ul class="shop__grid">
+          {products.map((product, index) => (
+            <li data-reveal data-filter-type={product.categories.map((category) => category.permalink).join(' ')}>
+              <ProjectCard
+                href={product.href}
+                eyebrow={product.eyebrow}
+                title={product.name}
+                summary={product.summary}
+                linkLabel={product.soldOut ? 'See it in the shop' : 'View in the shop'}
+                imageSrc={product.image?.src}
+                imageWidth={product.image?.width}
+                imageHeight={product.image?.height}
+                dim={product.soldOut}
+                loading={index === 0 ? 'eager' : 'lazy'}
+              />
+            </li>
+          ))}
+        </ul>
+      )
+    }
+
+    <p data-filter-empty role="status" hidden>No pieces in this category yet.</p>
+  </div>
+</Layout>
+
+<style>
+  .shop {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-block);
+    padding-block: var(--space-section);
+  }
+
+  .shop__empty {
+    margin: 0;
+    color: var(--color-text-muted);
+  }
+
+  /* hidden is overridden by display: flex above, so hide filtered-out cards explicitly. */
+  .shop__grid > li[hidden] {
+    display: none;
+  }
+
+  /* Three across on desktop, two on tablet, one on phones. */
+  .shop__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--scale-0600);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .shop__grid > li {
+    display: flex;
+  }
+
+  .shop__grid :global(.card) {
+    flex: 1;
+  }
+
+  @media (max-width: 1023px) {
+    .shop__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 599px) {
+    .shop__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

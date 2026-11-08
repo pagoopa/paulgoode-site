@@ -12,8 +12,15 @@ interface Props {
   summary?: string;
   linkLabel?: string;
   image?: ImageMetadata;
+  // A remote image, for a catalog this site does not host. Width and height
+  // come from the source so the box can be reserved.
+  imageSrc?: string;
+  imageWidth?: number;
+  imageHeight?: number;
   // Cards link to the page, so the image is decorative unless alt is given.
   imageAlt?: string;
+  // A piece that can no longer be bought. The card still links to the shop.
+  dim?: boolean;
   layout?: 'stacked' | 'side';
   // Featured cards near the top of the page load their image straight away.
   loading?: 'eager' | 'lazy';
@@ -28,7 +35,11 @@ const {
   summary,
   linkLabel = 'View',
   image,
+  imageSrc,
+  imageWidth,
+  imageHeight,
   imageAlt = '',
+  dim = false,
   layout = 'stacked',
   loading = 'lazy',
   headingLevel = 'h2',
@@ -36,7 +47,7 @@ const {
 const Heading = headingLevel;
 ---
 
-<a class:list={['card', 'card-motion', `card--${layout}`]} href={href}>
+<a class:list={['card', 'card-motion', `card--${layout}`, { 'card--dim': dim }]} href={href}>
   <div class="card__media">
     {image && (
       <Image
@@ -46,6 +57,17 @@ const Heading = headingLevel;
         widths={[360, 720]}
         sizes={layout === 'side' ? '(max-width: 599px) 100vw, 280px' : '(max-width: 599px) 100vw, 360px'}
         loading={loading}
+      />
+    )}
+    {imageSrc && (
+      <img
+        class="card__image card-motion__image"
+        src={imageSrc}
+        alt={imageAlt}
+        width={imageWidth}
+        height={imageHeight}
+        loading={loading}
+        decoding="async"
       />
     )}
   </div>
@@ -92,6 +114,10 @@ const Heading = headingLevel;
     object-position: top;
   }
 
+  .card--dim .card__image {
+    opacity: 0.55;
+  }
+
   .card__content {
     display: flex;
     flex-direction: column;
@@ -130,6 +156,7 @@ const Heading = headingLevel;
     display: inline-flex;
     align-items: center;
     gap: var(--scale-0200);
+    margin-top: auto;
     padding-top: var(--scale-0100);
     font-size: var(--type-body1-size);
     line-height: var(--type-body1-line-height);

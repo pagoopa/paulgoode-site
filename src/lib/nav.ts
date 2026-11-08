@@ -8,6 +8,6 @@ export const navItems: { href: string; label: string; also?: string[] }[] = [
   // Series pages are projects too, so Projects stays current on them.
   { href: '/projects', label: 'Projects', also: ['/series'] },
   { href: '/newsletter', label: 'Newsletter' },
-  { href: 'https://shop.paulgoode.com', label: 'Shop' },
+  { href: '/shop', label: 'Shop' },
   { href: '/about', label: 'About' },
 ];
