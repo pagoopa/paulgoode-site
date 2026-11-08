@@ -39,6 +39,18 @@ const showSidebar = sidebar && sidebarSections.length > 0;
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script is:inline>
+      // `js` lets the entrance motion hide things only when the script that shows them will run.
+      // `decor-intro` marks the first page load of a visit: the header decorations draw in then,
+      // and not again on every page after.
+      document.documentElement.classList.add('js');
+      try {
+        if (!sessionStorage.getItem('decor-seen')) {
+          sessionStorage.setItem('decor-seen', '1');
+          document.documentElement.classList.add('decor-intro');
+        }
+      } catch (e) {}
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="description" content={description} />

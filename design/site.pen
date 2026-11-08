@@ -47575,6 +47575,698 @@
           ]
         }
       ]
+    },
+    {
+      "type": "frame",
+      "id": "sw3pD",
+      "x": -3833,
+      "y": 20385,
+      "name": "Header and footer — Decoration storyboard",
+      "fill": "$surface-subtle",
+      "layout": "vertical",
+      "gap": 40,
+      "padding": 64,
+      "children": [
+        {
+          "type": "text",
+          "id": "IbukB",
+          "name": "Title",
+          "fill": "$text-default",
+          "content": "Header and footer decorations: entrance",
+          "fontFamily": "$font-heading",
+          "fontSize": 40,
+          "fontWeight": "700"
+        },
+        {
+          "type": "text",
+          "id": "N3Xgl",
+          "name": "Intro",
+          "fill": "$text-muted",
+          "textGrowth": "fixed-width",
+          "width": 1100,
+          "content": "Header: on the first page load of a visit only (not on every page you open). The twirls wipe in left to right like a pen stroke (700 ms); the splatters pop (scale 0.4 → 1.15 → 1, 320 ms). Left to right, 140 ms apart, about 1.1 seconds in all. Footer: the same, but when you scroll to the bottom of a page: the reward for reaching the end. Reduced motion: everything is simply there.",
+          "lineHeight": 1.5,
+          "fontFamily": "$font-body",
+          "fontSize": 18,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "BYkWk",
+          "name": "Header steps",
+          "layout": "vertical",
+          "gap": 28,
+          "children": [
+            {
+              "type": "text",
+              "id": "o5IVH",
+              "name": "Section",
+              "fill": "$text-default",
+              "content": "HEADER (first load of a visit)",
+              "fontFamily": "$font-body",
+              "fontSize": 14,
+              "fontWeight": "600",
+              "letterSpacing": 1
+            },
+            {
+              "type": "frame",
+              "id": "NQlRk",
+              "name": "Header 0 ms",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "v6RN2",
+                  "name": "Label",
+                  "width": 220,
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "AEmYr",
+                      "name": "Time",
+                      "fill": "$text-default",
+                      "content": "0 ms",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 24,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "xraA4",
+                      "name": "Note",
+                      "fill": "$text-muted",
+                      "textGrowth": "fixed-width",
+                      "width": 220,
+                      "content": "Nothing yet.",
+                      "lineHeight": 1.45,
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "maCka",
+                  "name": "Stage",
+                  "clip": true,
+                  "width": 1200,
+                  "height": 190,
+                  "fill": "$surface-default",
+                  "cornerRadius": 8,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "id": "s0yfo",
+                      "type": "ref",
+                      "ref": "kgrqX",
+                      "name": "Header",
+                      "x": 0,
+                      "y": 0,
+                      "width": 1200,
+                      "descendants": {
+                        "XErQV": {
+                          "opacity": 0
+                        },
+                        "Ywp37": {
+                          "opacity": 0
+                        },
+                        "E3aMm": {
+                          "opacity": 0
+                        },
+                        "oZowF": {
+                          "opacity": 0
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "PaKnQ",
+              "name": "Header 340 ms",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "WquMW",
+                  "name": "Label",
+                  "width": 220,
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "zuBv6",
+                      "name": "Time",
+                      "fill": "$text-default",
+                      "content": "340 ms",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 24,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "SE4ly",
+                      "name": "Note",
+                      "fill": "$text-muted",
+                      "textGrowth": "fixed-width",
+                      "width": 220,
+                      "content": "The pink twirl is drawing: a wipe from left to right, 700 ms.",
+                      "lineHeight": 1.45,
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "I0EwK",
+                  "name": "Stage",
+                  "clip": true,
+                  "width": 1200,
+                  "height": 190,
+                  "fill": "$surface-default",
+                  "cornerRadius": 8,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "id": "vVOur",
+                      "type": "ref",
+                      "ref": "kgrqX",
+                      "name": "Header",
+                      "x": 0,
+                      "y": 0,
+                      "width": 1200,
+                      "descendants": {
+                        "XErQV": {
+                          "opacity": 0
+                        },
+                        "Ywp37": {
+                          "opacity": 0
+                        },
+                        "E3aMm": {
+                          "opacity": 1
+                        },
+                        "oZowF": {
+                          "opacity": 0
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "jaVuc",
+              "name": "Header 620 ms",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "E5hyoz",
+                  "name": "Label",
+                  "width": 220,
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "bPLuM",
+                      "name": "Time",
+                      "fill": "$text-default",
+                      "content": "620 ms",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 24,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "M12ox",
+                      "name": "Note",
+                      "fill": "$text-muted",
+                      "textGrowth": "fixed-width",
+                      "width": 220,
+                      "content": "The yellow splatter pops in (scale 0.4 → 1.15 → 1).",
+                      "lineHeight": 1.45,
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "rRp6y",
+                  "name": "Stage",
+                  "clip": true,
+                  "width": 1200,
+                  "height": 190,
+                  "fill": "$surface-default",
+                  "cornerRadius": 8,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "id": "f8Tyf",
+                      "type": "ref",
+                      "ref": "kgrqX",
+                      "name": "Header",
+                      "x": 0,
+                      "y": 0,
+                      "width": 1200,
+                      "descendants": {
+                        "XErQV": {
+                          "opacity": 1
+                        },
+                        "Ywp37": {
+                          "opacity": 0
+                        },
+                        "E3aMm": {
+                          "opacity": 1
+                        },
+                        "oZowF": {
+                          "opacity": 0
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "z3SfEZ",
+              "name": "Header 760 ms",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "fVPe6",
+                  "name": "Label",
+                  "width": 220,
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "GCYFY",
+                      "name": "Time",
+                      "fill": "$text-default",
+                      "content": "760 ms",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 24,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Z7REh",
+                      "name": "Note",
+                      "fill": "$text-muted",
+                      "textGrowth": "fixed-width",
+                      "width": 220,
+                      "content": "The blue twirl wipes in.",
+                      "lineHeight": 1.45,
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "eXxNB",
+                  "name": "Stage",
+                  "clip": true,
+                  "width": 1200,
+                  "height": 190,
+                  "fill": "$surface-default",
+                  "cornerRadius": 8,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "id": "D7Enk",
+                      "type": "ref",
+                      "ref": "kgrqX",
+                      "name": "Header",
+                      "x": 0,
+                      "y": 0,
+                      "width": 1200,
+                      "descendants": {
+                        "XErQV": {
+                          "opacity": 1
+                        },
+                        "Ywp37": {
+                          "opacity": 0
+                        },
+                        "E3aMm": {
+                          "opacity": 1
+                        },
+                        "oZowF": {
+                          "opacity": 1
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "lCO9E",
+              "name": "Header 900 ms",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "h5Vnk",
+                  "name": "Label",
+                  "width": 220,
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "sqvI8",
+                      "name": "Time",
+                      "fill": "$text-default",
+                      "content": "900 ms",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 24,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "kLuE7",
+                      "name": "Note",
+                      "fill": "$text-muted",
+                      "textGrowth": "fixed-width",
+                      "width": 220,
+                      "content": "The blue splatter pops. Done at about 1.1 seconds.",
+                      "lineHeight": 1.45,
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "g5Uaa",
+                  "name": "Stage",
+                  "clip": true,
+                  "width": 1200,
+                  "height": 190,
+                  "fill": "$surface-default",
+                  "cornerRadius": 8,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "id": "Syhb3",
+                      "type": "ref",
+                      "ref": "kgrqX",
+                      "name": "Header",
+                      "x": 0,
+                      "y": 0,
+                      "width": 1200,
+                      "descendants": {
+                        "XErQV": {
+                          "opacity": 1
+                        },
+                        "Ywp37": {
+                          "opacity": 1
+                        },
+                        "E3aMm": {
+                          "opacity": 1
+                        },
+                        "oZowF": {
+                          "opacity": 1
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "eE4Tr",
+          "name": "Footer steps",
+          "layout": "vertical",
+          "gap": 28,
+          "children": [
+            {
+              "type": "text",
+              "id": "GwNRB",
+              "name": "Section",
+              "fill": "$text-default",
+              "content": "FOOTER (when scrolled into view)",
+              "fontFamily": "$font-body",
+              "fontSize": 14,
+              "fontWeight": "600",
+              "letterSpacing": 1
+            },
+            {
+              "type": "frame",
+              "id": "y1NFGT",
+              "name": "Footer Before",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "WUv6c",
+                  "name": "Label",
+                  "width": 220,
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "I2PcGP",
+                      "name": "Time",
+                      "fill": "$text-default",
+                      "content": "Before",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 24,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "jRL2B",
+                      "name": "Note",
+                      "fill": "$text-muted",
+                      "textGrowth": "fixed-width",
+                      "width": 220,
+                      "content": "Footer is below the fold: decorations hidden.",
+                      "lineHeight": 1.45,
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ivtFS",
+                  "name": "Stage",
+                  "clip": true,
+                  "width": 1200,
+                  "height": 210,
+                  "fill": "$surface-default",
+                  "cornerRadius": 8,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "id": "KztfL",
+                      "type": "ref",
+                      "ref": "E6haZ",
+                      "name": "Footer",
+                      "x": 0,
+                      "y": 50,
+                      "width": 1200,
+                      "descendants": {
+                        "rPC8D": {
+                          "opacity": 0
+                        },
+                        "BBf06": {
+                          "opacity": 0
+                        },
+                        "WH2f9": {
+                          "opacity": 0
+                        },
+                        "tnxzm": {
+                          "opacity": 0
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "FYdoH",
+              "name": "Footer Enters view",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "hSTbG",
+                  "name": "Label",
+                  "width": 220,
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "X54GTS",
+                      "name": "Time",
+                      "fill": "$text-default",
+                      "content": "Enters view",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 24,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "iidN4",
+                      "name": "Note",
+                      "fill": "$text-muted",
+                      "textGrowth": "fixed-width",
+                      "width": 220,
+                      "content": "Triggered when 15% of the footer is on screen. Blue twirl wipes and the blue splatter pops.",
+                      "lineHeight": 1.45,
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "aOQUO",
+                  "name": "Stage",
+                  "clip": true,
+                  "width": 1200,
+                  "height": 210,
+                  "fill": "$surface-default",
+                  "cornerRadius": 8,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "id": "ggLi1",
+                      "type": "ref",
+                      "ref": "E6haZ",
+                      "name": "Footer",
+                      "x": 0,
+                      "y": 50,
+                      "width": 1200,
+                      "descendants": {
+                        "rPC8D": {
+                          "opacity": 0
+                        },
+                        "BBf06": {
+                          "opacity": 1
+                        },
+                        "WH2f9": {
+                          "opacity": 1
+                        },
+                        "tnxzm": {
+                          "opacity": 0
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "NGUNw",
+              "name": "Footer +500 ms",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "CR4RD",
+                  "name": "Label",
+                  "width": 220,
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "dgU8y",
+                      "name": "Time",
+                      "fill": "$text-default",
+                      "content": "+500 ms",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 24,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "JyQ9a",
+                      "name": "Note",
+                      "fill": "$text-muted",
+                      "textGrowth": "fixed-width",
+                      "width": 220,
+                      "content": "Yellow twirl wipes, pink splatter pops. Done.",
+                      "lineHeight": 1.45,
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "emhYs",
+                  "name": "Stage",
+                  "clip": true,
+                  "width": 1200,
+                  "height": 210,
+                  "fill": "$surface-default",
+                  "cornerRadius": 8,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "id": "bzp9W",
+                      "type": "ref",
+                      "ref": "E6haZ",
+                      "name": "Footer",
+                      "x": 0,
+                      "y": 50,
+                      "width": 1200,
+                      "descendants": {
+                        "rPC8D": {
+                          "opacity": 1
+                        },
+                        "BBf06": {
+                          "opacity": 1
+                        },
+                        "WH2f9": {
+                          "opacity": 1
+                        },
+                        "tnxzm": {
+                          "opacity": 1
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "themes": {

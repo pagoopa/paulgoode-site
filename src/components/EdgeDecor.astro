@@ -19,20 +19,22 @@ interface Props {
 const { where } = Astro.props;
 
 // x is the left edge as a share of 1200; y is px from the top of the bar. `phone` keeps it on phones.
+// `twirl` drawings wipe in and splatters pop; each plays in order from left to right.
 const decor = {
   header: [
     { img: splatterYellow, x: 509, y: 45 },
     { img: splatterBlueHeader, x: 1083, y: 75 },
-    { img: twirlPink, x: 200, y: 86, phone: true },
-    { img: twirlBlueHeader, x: 912, y: 108 },
+    { img: twirlPink, x: 200, y: 86, phone: true, twirl: true },
+    { img: twirlBlueHeader, x: 912, y: 108, twirl: true },
   ],
   footer: [
     { img: splatterPink, x: 984, y: -20 },
     { img: splatterBlueFooter, x: 296, y: 18 },
-    { img: twirlBlueFooter, x: 138, y: -14, phone: true },
-    { img: twirlYellow, x: 872, y: 16 },
+    { img: twirlBlueFooter, x: 138, y: -14, phone: true, twirl: true },
+    { img: twirlYellow, x: 872, y: 16, twirl: true },
   ],
 }[where];
+const order = [...decor].sort((a, b) => a.x - b.x);
 
 // The bar's edge: header bulges down about 6px in the middle with one bump near 68%; the footer arches up.
 const edgePath = where === 'header'
@@ -49,22 +51,43 @@ const edgePath = where === 'header'
 >
   <path d={edgePath} />
 </svg>
-<div class="decor" aria-hidden="true">
+<div class:list={['decor', `decor--${where}`]} aria-hidden="true">
   {
     decor.map((d) => (
       <img
-        class:list={['decor__item', { 'decor__item--phone': d.phone }]}
+        class:list={['decor__item', d.twirl ? 'decor__item--twirl' : 'decor__item--splat', { 'decor__item--phone': d.phone }]}
         src={d.img.src}
         alt=""
         width={Math.round(d.img.width)}
         height={Math.round(d.img.height)}
-        style={`left: ${(d.x / 1200) * 100}%; top: ${d.y}px;`}
+        style={`left: ${(d.x / 1200) * 100}%; top: ${d.y}px; --order: ${order.indexOf(d)};`}
         loading="lazy"
         decoding="async"
       />
     ))
   }
 </div>
+
+<script>
+  // The footer's decorations play when it scrolls into view (the CSS below hides them until then).
+  const footerDecor = document.querySelector('.decor--footer');
+  if (footerDecor) {
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          if (entries.some((entry) => entry.isIntersecting)) {
+            footerDecor.classList.add('is-in');
+            observer.disconnect();
+          }
+        },
+        { threshold: 0.15 },
+      );
+      observer.observe(footerDecor);
+    } else {
+      footerDecor.classList.add('is-in');
+    }
+  }
+</script>
 
 <style>
   .edge {
@@ -96,6 +119,58 @@ const edgePath = where === 'header'
   .decor__item {
     position: absolute;
     max-width: none;
+  }
+
+  /* Entrance (the "Header and footer — Decoration storyboard" board in design/site.pen). Twirls
+     wipe in left to right like a pen stroke and splatters pop, one after another, 140ms apart.
+     The header plays on the first load of a visit (Layout sets decor-intro); the footer plays
+     when it scrolls into view. Without JavaScript, or with reduced motion, they are just there.
+     The animations don't hold their end state. */
+  @media (prefers-reduced-motion: no-preference) {
+    :global(html.decor-intro) .decor--header .decor__item--twirl,
+    .decor--footer.is-in .decor__item--twirl {
+      animation: decor-wipe 700ms ease-in-out calc(200ms + var(--order) * 140ms) backwards;
+    }
+
+    :global(html.decor-intro) .decor--header .decor__item--splat,
+    .decor--footer.is-in .decor__item--splat {
+      animation: decor-pop 320ms cubic-bezier(0.2, 0.9, 0.3, 1.3) calc(200ms + var(--order) * 140ms) backwards;
+    }
+
+    /* Hidden until the footer is in view; if the script never runs, shown after 2.5s. */
+    :global(html.js) .decor--footer:not(.is-in) .decor__item {
+      opacity: 0;
+      animation: decor-show 0s 2.5s forwards;
+    }
+  }
+
+  @keyframes decor-wipe {
+    from {
+      clip-path: inset(0 100% 0 0);
+    }
+    to {
+      clip-path: inset(0 0 0 0);
+    }
+  }
+
+  @keyframes decor-pop {
+    0% {
+      opacity: 0;
+      transform: scale(0.4);
+    }
+    60% {
+      opacity: 1;
+      transform: scale(1.15);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes decor-show {
+    to {
+      opacity: 1;
+    }
   }
 
   /* Phones: just the one twirl, a little smaller. */
