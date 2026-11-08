@@ -41,6 +41,9 @@ const posts = allPosts.slice((page - 1) * POSTS_PER_PAGE, page * POSTS_PER_PAGE)
 
       {posts.length === 0 && <p class="prose">{emptyText}</p>}
 
+      <script is:inline>
+        document.documentElement.classList.add('js');
+      </script>
       <ul class="journal__list">
         {posts.map((post, i) => (
           <li class:list={['journal__item', { 'journal__item--lead': i === 0 }]}>
@@ -66,6 +69,40 @@ const posts = allPosts.slice((page - 1) * POSTS_PER_PAGE, page * POSTS_PER_PAGE)
     </div>
   </section>
 </Layout>
+
+<script>
+  // Cards rise and fade in as they scroll into view, one after another (the lead first), and
+  // images fade in once loaded. The `js` class (set above the list) is what hides them, so
+  // without JavaScript, or with reduced motion, everything is simply visible.
+  const items = document.querySelectorAll<HTMLElement>('.journal__item');
+  const images = document.querySelectorAll<HTMLImageElement>('.post-card__image');
+
+  images.forEach((img) => {
+    const show = () => img.classList.add('is-loaded');
+    if (img.complete) show();
+    else img.addEventListener('load', show, { once: true });
+  });
+
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        // Cards that come into view together are staggered 60ms apart.
+        entries
+          .filter((entry) => entry.isIntersecting)
+          .forEach((entry, i) => {
+            const card = entry.target as HTMLElement;
+            card.style.transitionDelay = `${i * 60}ms`;
+            card.classList.add('is-in');
+            observer.unobserve(card);
+          });
+      },
+      { rootMargin: '0px 0px -8% 0px' },
+    );
+    items.forEach((item) => observer.observe(item));
+  } else {
+    items.forEach((item) => item.classList.add('is-in'));
+  }
+</script>
 
 <style>
   .journal {
@@ -97,6 +134,40 @@ const posts = allPosts.slice((page - 1) * POSTS_PER_PAGE, page * POSTS_PER_PAGE)
   @media (max-width: 599px) {
     .journal__list {
       grid-template-columns: minmax(0, 1fr);
+    }
+  }
+
+  /* Loading: cards start 12px low and see-through, then rise in (see the script below). The
+     animation is a safety net: if the script never runs, they appear after 2s anyway. */
+  @media (prefers-reduced-motion: no-preference) {
+    :global(html.js) .journal__item:not(.is-in) {
+      opacity: 0;
+      transform: translateY(12px);
+      animation: reveal-fallback 0s 2s forwards;
+    }
+
+    .journal__item {
+      transition:
+        opacity 360ms ease-out,
+        transform 360ms ease-out;
+    }
+
+    :global(html.js .post-card__image:not(.is-loaded)) {
+      opacity: 0;
+      animation: reveal-fallback 0s 2s forwards;
+    }
+
+    :global(html.js .post-card__image) {
+      transition:
+        opacity 300ms ease-out,
+        transform 400ms ease-out;
+    }
+  }
+
+  @keyframes reveal-fallback {
+    to {
+      opacity: 1;
+      transform: none;
     }
   }
 </style>
