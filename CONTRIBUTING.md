@@ -261,9 +261,17 @@ A series is a numbered set of artwork, like "Junk Drawer Journey".
 
 ## The shop
 
-The shop lives on Big Cartel at https://shop.paulgoode.com, not in this
-repo. The "Shop" links in the header and footer point there.
-Add and price pieces in Big Cartel.
+`/shop` lists the Big Cartel catalog. The build reads
+`https://api.bigcartel.com/hello-7905/products.json`. Each card links to the
+piece on https://shop.paulgoode.com, where checkout, shipping, and tax happen.
+The header and footer "Shop" link points at `/shop`.
+
+Add and price pieces in Big Cartel. An original uses **Track inventory**,
+quantity 1, and overselling off, so a sale marks it sold out in the feed.
+A print-on-demand piece uses **No limit** and a category whose name or
+permalink contains "print" (for example Prints). It stays available. Every
+Big Cartel category becomes a filter on `/shop`, and a piece in several
+categories shows up in each of them. The Astro list updates on the next build.
 
 ## Favicons and app icons
 
