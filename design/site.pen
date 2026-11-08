@@ -32870,6 +32870,168 @@
           ]
         }
       ]
+    },
+    {
+      "type": "frame",
+      "id": "PsVGP",
+      "x": -3833,
+      "y": 11366,
+      "name": "Share image — 1200×630",
+      "clip": true,
+      "width": 1200,
+      "height": 630,
+      "fill": "$surface-inverse",
+      "layout": "none",
+      "children": [
+        {
+          "id": "Bo8xC",
+          "type": "ref",
+          "ref": "IsBQe",
+          "name": "Logo",
+          "x": 96,
+          "y": 96,
+          "width": 315,
+          "height": 200,
+          "fill": "$text-inverse"
+        },
+        {
+          "type": "text",
+          "id": "ze0I9",
+          "x": 96,
+          "y": 340,
+          "name": "Tagline",
+          "fill": "$text-inverse",
+          "textGrowth": "fixed-width",
+          "width": 720,
+          "content": "Drawing is thinking.",
+          "lineHeight": 1.1,
+          "fontFamily": "$font-heading",
+          "fontSize": 72,
+          "fontWeight": "700",
+          "letterSpacing": -1.4
+        },
+        {
+          "type": "text",
+          "id": "hDwx4",
+          "x": 96,
+          "y": 520,
+          "name": "Roles",
+          "fill": "$text-inverse-muted",
+          "content": "UX DESIGNER · ARTIST · MUSICIAN",
+          "fontFamily": "$font-body",
+          "fontSize": 22,
+          "fontWeight": "500",
+          "letterSpacing": 2
+        },
+        {
+          "id": "UL6wK",
+          "type": "ref",
+          "ref": "Ev83o",
+          "name": "Doodle",
+          "x": 880,
+          "y": 130,
+          "width": 240,
+          "height": 240,
+          "descendants": {
+            "SztqI": {
+              "x": 0,
+              "y": 0,
+              "width": 240,
+              "height": 240
+            },
+            "u1YDU": {
+              "x": 0,
+              "y": 0,
+              "width": 240,
+              "height": 240
+            },
+            "XgXyj": {
+              "x": 0,
+              "y": 0,
+              "width": 240,
+              "height": 240
+            },
+            "MNIEV": {
+              "x": 0,
+              "y": 0,
+              "width": 240,
+              "height": 240
+            },
+            "vzs3z": {
+              "x": 0,
+              "y": 0,
+              "width": 240,
+              "height": 240
+            },
+            "o3yiP": {
+              "x": 0,
+              "y": 0,
+              "width": 240,
+              "height": 240
+            },
+            "KxDtY": {
+              "x": 0,
+              "y": 0,
+              "width": 240,
+              "height": 240
+            },
+            "Eu4t8": {
+              "x": 0,
+              "y": 0,
+              "width": 240,
+              "height": 240
+            },
+            "r0shYS": {
+              "x": 0,
+              "y": 0,
+              "width": 240,
+              "height": 240
+            },
+            "R5f17": {
+              "x": 0,
+              "y": 0,
+              "width": 240,
+              "height": 240
+            },
+            "S8UnGE": {
+              "x": 0,
+              "y": 0,
+              "width": 240,
+              "height": 240
+            },
+            "hTnJ2": {
+              "x": 0,
+              "y": 0,
+              "width": 240,
+              "height": 240
+            },
+            "qXDQd": {
+              "x": 0,
+              "y": 0,
+              "width": 240,
+              "height": 240
+            },
+            "Iq30b": {
+              "x": 0,
+              "y": 0,
+              "width": 240,
+              "height": 240
+            },
+            "BzFpX": {
+              "x": 0,
+              "y": 0,
+              "width": 240,
+              "height": 240
+            },
+            "tcYxl": {
+              "x": 0,
+              "y": 0,
+              "width": 240,
+              "height": 240
+            }
+          }
+        }
+      ]
     }
   ],
   "themes": {
