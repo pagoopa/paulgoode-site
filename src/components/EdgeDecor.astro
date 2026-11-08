@@ -1,0 +1,113 @@
+---
+// The torn-but-gentle edge of the header and footer (Header / Left and Footer in
+// design/site.pen): a slightly curved edge with one funky bump, and a few hand-drawn
+// twirls and paint splatters sitting on it. Purely decorative. Positions are percentages
+// of the bar's width, as laid out on the 1200px boards; phones show just two of them.
+import splatterYellow from '../assets/decor/splatter-yellow.svg';
+import splatterBlueHeader from '../assets/decor/splatter-blue-header.svg';
+import twirlPink from '../assets/decor/twirl-pink.svg';
+import twirlBlueHeader from '../assets/decor/twirl-blue-header.svg';
+import splatterPink from '../assets/decor/splatter-pink.svg';
+import splatterBlueFooter from '../assets/decor/splatter-blue-footer.svg';
+import twirlBlueFooter from '../assets/decor/twirl-blue-footer.svg';
+import twirlYellow from '../assets/decor/twirl-yellow.svg';
+
+interface Props {
+  where: 'header' | 'footer';
+}
+
+const { where } = Astro.props;
+
+// x is the left edge as a share of 1200; y is px from the top of the bar. `phone` keeps it on phones.
+const decor = {
+  header: [
+    { img: splatterYellow, x: 509, y: 45 },
+    { img: splatterBlueHeader, x: 1083, y: 75 },
+    { img: twirlPink, x: 200, y: 86, phone: true },
+    { img: twirlBlueHeader, x: 912, y: 108 },
+  ],
+  footer: [
+    { img: splatterPink, x: 984, y: -20 },
+    { img: splatterBlueFooter, x: 296, y: 18 },
+    { img: twirlBlueFooter, x: 138, y: -14, phone: true },
+    { img: twirlYellow, x: 872, y: 16 },
+  ],
+}[where];
+
+// The bar's edge: header bulges down about 6px in the middle with one bump near 68%; the footer arches up.
+const edgePath = where === 'header'
+  ? 'M0 0 H1200 V0.00 L1200 0.00 L1194 0.12 L1188 0.24 L1182 0.35 L1176 0.47 L1170 0.59 L1164 0.70 L1158 0.81 L1152 0.92 L1146 1.03 L1140 1.14 L1134 1.25 L1128 1.35 L1122 1.46 L1116 1.56 L1110 1.66 L1104 1.77 L1098 1.87 L1092 1.97 L1086 2.06 L1080 2.16 L1074 2.26 L1068 2.35 L1062 2.44 L1056 2.53 L1050 2.63 L1044 2.71 L1038 2.80 L1032 2.89 L1026 2.98 L1020 3.06 L1014 3.14 L1008 3.23 L1002 3.31 L996 3.39 L990 3.46 L984 3.54 L978 3.62 L972 3.69 L966 3.77 L960 3.84 L954 3.91 L948 3.98 L942 4.05 L936 4.12 L930 4.18 L924 4.25 L918 4.32 L912 4.38 L906 4.42 L900 4.45 L894 4.57 L888 4.79 L882 4.86 L876 4.54 L870 4.27 L864 4.98 L858 6.63 L852 7.58 L846 6.79 L840 6.38 L834 9.38 L828 14.58 L822 16.91 L816 14.22 L810 10.60 L804 10.40 L798 12.20 L792 11.72 L786 8.38 L780 5.47 L774 5.08 L768 5.99 L762 6.32 L756 5.87 L750 5.47 L744 5.49 L738 5.67 L732 5.76 L726 5.76 L720 5.75 L714 5.77 L708 5.80 L702 5.83 L696 5.85 L690 5.86 L684 5.88 L678 5.90 L672 5.91 L666 5.93 L660 5.94 L654 5.95 L648 5.96 L642 5.97 L636 5.98 L630 5.99 L624 5.99 L618 5.99 L612 6.00 L606 6.00 L600 6.00 L594 6.00 L588 6.00 L582 5.99 L576 5.99 L570 5.99 L564 5.98 L558 5.97 L552 5.96 L546 5.95 L540 5.94 L534 5.93 L528 5.91 L522 5.90 L516 5.88 L510 5.86 L504 5.85 L498 5.83 L492 5.81 L486 5.78 L480 5.76 L474 5.74 L468 5.71 L462 5.68 L456 5.65 L450 5.62 L444 5.59 L438 5.56 L432 5.53 L426 5.50 L420 5.46 L414 5.42 L408 5.39 L402 5.35 L396 5.31 L390 5.27 L384 5.22 L378 5.18 L372 5.13 L366 5.09 L360 5.04 L354 4.99 L348 4.94 L342 4.89 L336 4.84 L330 4.79 L324 4.73 L318 4.67 L312 4.62 L306 4.56 L300 4.50 L294 4.44 L288 4.38 L282 4.31 L276 4.25 L270 4.19 L264 4.12 L258 4.05 L252 3.98 L246 3.91 L240 3.84 L234 3.77 L228 3.69 L222 3.62 L216 3.54 L210 3.46 L204 3.39 L198 3.31 L192 3.23 L186 3.14 L180 3.06 L174 2.98 L168 2.89 L162 2.80 L156 2.71 L150 2.62 L144 2.53 L138 2.44 L132 2.35 L126 2.26 L120 2.16 L114 2.06 L108 1.97 L102 1.87 L96 1.77 L90 1.66 L84 1.56 L78 1.46 L72 1.35 L66 1.25 L60 1.14 L54 1.03 L48 0.92 L42 0.81 L36 0.70 L30 0.59 L24 0.47 L18 0.35 L12 0.24 L6 0.12 L0 0.00 Z'
+  : 'M0 10.00 L0 10.00 L6 9.88 L12 9.76 L18 9.65 L24 9.53 L30 9.41 L36 9.30 L42 9.19 L48 9.08 L54 8.97 L60 8.86 L66 8.75 L72 8.65 L78 8.54 L84 8.44 L90 8.34 L96 8.23 L102 8.13 L108 8.03 L114 7.94 L120 7.84 L126 7.74 L132 7.65 L138 7.56 L144 7.47 L150 7.38 L156 7.29 L162 7.20 L168 7.11 L174 7.02 L180 6.94 L186 6.86 L192 6.77 L198 6.69 L204 6.61 L210 6.54 L216 6.46 L222 6.38 L228 6.31 L234 6.23 L240 6.16 L246 6.09 L252 6.02 L258 5.95 L264 5.88 L270 5.81 L276 5.75 L282 5.69 L288 5.62 L294 5.56 L300 5.50 L306 5.44 L312 5.38 L318 5.33 L324 5.27 L330 5.21 L336 5.16 L342 5.11 L348 5.06 L354 5.01 L360 4.96 L366 4.91 L372 4.87 L378 4.82 L384 4.78 L390 4.73 L396 4.69 L402 4.65 L408 4.61 L414 4.58 L420 4.54 L426 4.50 L432 4.47 L438 4.44 L444 4.41 L450 4.38 L456 4.35 L462 4.32 L468 4.29 L474 4.26 L480 4.24 L486 4.22 L492 4.19 L498 4.17 L504 4.15 L510 4.14 L516 4.12 L522 4.10 L528 4.09 L534 4.07 L540 4.06 L546 4.05 L552 4.04 L558 4.03 L564 4.02 L570 4.02 L576 4.01 L582 4.01 L588 4.00 L594 4.00 L600 4.00 L606 4.00 L612 4.00 L618 4.01 L624 4.01 L630 4.01 L636 4.02 L642 4.03 L648 4.04 L654 4.05 L660 4.06 L666 4.07 L672 4.09 L678 4.10 L684 4.12 L690 4.13 L696 4.15 L702 4.17 L708 4.19 L714 4.22 L720 4.24 L726 4.26 L732 4.29 L738 4.32 L744 4.35 L750 4.38 L756 4.41 L762 4.44 L768 4.47 L774 4.50 L780 4.54 L786 4.58 L792 4.61 L798 4.65 L804 4.69 L810 4.73 L816 4.78 L822 4.82 L828 4.87 L834 4.91 L840 4.96 L846 5.01 L852 5.06 L858 5.11 L864 5.16 L870 5.21 L876 5.27 L882 5.33 L888 5.38 L894 5.44 L900 5.50 L906 5.56 L912 5.62 L918 5.69 L924 5.75 L930 5.82 L936 5.88 L942 5.95 L948 6.02 L954 6.09 L960 6.16 L966 6.23 L972 6.31 L978 6.38 L984 6.46 L990 6.54 L996 6.61 L1002 6.69 L1008 6.77 L1014 6.86 L1020 6.94 L1026 7.02 L1032 7.11 L1038 7.20 L1044 7.29 L1050 7.38 L1056 7.47 L1062 7.56 L1068 7.65 L1074 7.74 L1080 7.84 L1086 7.94 L1092 8.03 L1098 8.13 L1104 8.23 L1110 8.34 L1116 8.44 L1122 8.54 L1128 8.65 L1134 8.75 L1140 8.86 L1146 8.97 L1152 9.08 L1158 9.19 L1164 9.30 L1170 9.41 L1176 9.53 L1182 9.65 L1188 9.76 L1194 9.88 L1200 10.00 L1200 10.00 V10 H0 Z';
+---
+
+<svg
+  class:list={['edge', `edge--${where}`]}
+  viewBox={where === 'header' ? '0 0 1200 20' : '0 0 1200 10'}
+  preserveAspectRatio="none"
+  aria-hidden="true"
+  focusable="false"
+>
+  <path d={edgePath} />
+</svg>
+<div class="decor" aria-hidden="true">
+  {
+    decor.map((d) => (
+      <img
+        class:list={['decor__item', { 'decor__item--phone': d.phone }]}
+        src={d.img.src}
+        alt=""
+        width={Math.round(d.img.width)}
+        height={Math.round(d.img.height)}
+        style={`left: ${(d.x / 1200) * 100}%; top: ${d.y}px;`}
+        loading="lazy"
+        decoding="async"
+      />
+    ))
+  }
+</div>
+
+<style>
+  .edge {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    fill: var(--color-surface-inverse);
+    pointer-events: none;
+    display: block;
+  }
+
+  /* Overlaps the bar's own 1px line by 1px so there's no seam. */
+  .edge--header {
+    top: calc(100% - 1px);
+    height: 20px;
+  }
+
+  .edge--footer {
+    top: -9px;
+    height: 10px;
+  }
+
+  .decor {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  .decor__item {
+    position: absolute;
+    max-width: none;
+  }
+
+  /* Phones: just the one twirl, a little smaller. */
+  @media (max-width: 599px) {
+    .decor__item {
+      display: none;
+    }
+
+    .decor__item--phone {
+      display: block;
+      width: 150px;
+      height: auto;
+    }
+  }
+</style>

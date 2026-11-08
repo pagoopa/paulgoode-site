@@ -2,11 +2,13 @@
 import { Image } from 'astro:assets';
 import profile from '../assets/profile-circle.png';
 import { navItems } from '../lib/nav';
+import EdgeDecor from './EdgeDecor.astro';
 
 const year = new Date().getFullYear();
 ---
 
 <footer class="site-footer">
+  <EdgeDecor where="footer" />
   <div class="wrap site-footer__inner">
     <Image src={profile} alt="" class="site-footer__photo" width={120} height={120} />
     <nav class="site-footer__links" aria-label="Footer">
@@ -28,6 +30,14 @@ const year = new Date().getFullYear();
     background: var(--color-surface-inverse);
     color: var(--color-text-inverse);
     margin-top: var(--space-section);
+    position: relative;
+    overflow-x: clip;
+  }
+
+  /* Content above the decoration. */
+  .site-footer :global(.wrap) {
+    position: relative;
+    z-index: 1;
   }
 
   .site-footer__inner {
