@@ -46538,6 +46538,1043 @@
           ]
         }
       ]
+    },
+    {
+      "type": "frame",
+      "id": "a8YX5",
+      "x": -3833,
+      "y": 13425,
+      "name": "Newsletter — Entrance storyboard",
+      "fill": "$surface-subtle",
+      "layout": "vertical",
+      "gap": 48,
+      "padding": 64,
+      "children": [
+        {
+          "type": "text",
+          "id": "JxqK6",
+          "name": "Title",
+          "fill": "$text-default",
+          "content": "Newsletter: entrance sequence",
+          "fontFamily": "$font-heading",
+          "fontSize": 40,
+          "fontWeight": "700"
+        },
+        {
+          "type": "text",
+          "id": "LYNl7",
+          "name": "Intro",
+          "fill": "$text-muted",
+          "textGrowth": "fixed-width",
+          "width": 900,
+          "content": "Plays once when the page loads, about 1.2 seconds in total. Heading rises, the Subscribe button lands like a sticker, then the three cards are dealt: stacked and slightly rotated, then fanned out one by one with a small settle. Each card's blue bar grows as it lands. About six seconds later the button arrow gives a small wiggle, twice at most. Reduced motion: everything is simply there.",
+          "lineHeight": 1.5,
+          "fontFamily": "$font-body",
+          "fontSize": 18,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "zJNTA",
+          "name": "Step 0 ms",
+          "gap": 40,
+          "children": [
+            {
+              "type": "frame",
+              "id": "x1KlB",
+              "name": "Label",
+              "width": 220,
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "qSbSM",
+                  "name": "Time",
+                  "fill": "$text-default",
+                  "content": "0 ms",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 28,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "KkL62",
+                  "name": "Note",
+                  "fill": "$text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": 220,
+                  "content": "Everything hidden. The page header and sidebar are already there.",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "VfXAT",
+              "name": "Stage",
+              "width": 900,
+              "height": 460,
+              "fill": "$surface-default",
+              "cornerRadius": 12,
+              "stroke": "$border-default",
+              "strokeWidth": 1,
+              "strokeAlignment": "inner",
+              "layout": "none",
+              "children": [
+                {
+                  "id": "WDMbR",
+                  "type": "ref",
+                  "ref": "g7uira",
+                  "name": "Intro",
+                  "x": 24,
+                  "y": 24,
+                  "opacity": 0.1,
+                  "width": 720,
+                  "descendants": {
+                    "z9frDW": {
+                      "content": "NEWSLETTER",
+                      "enabled": false
+                    },
+                    "SqBTJ": {
+                      "content": "Newsletter"
+                    },
+                    "zSXuD": {
+                      "content": "You can sign up for weekly updates sent to you by email."
+                    }
+                  }
+                },
+                {
+                  "id": "iVcmR",
+                  "type": "ref",
+                  "ref": "dOZxf",
+                  "name": "Subscribe",
+                  "x": 24,
+                  "y": 168,
+                  "opacity": 0.1,
+                  "descendants": {
+                    "wLOsh": {
+                      "content": "SUBSCRIBE ON SUBSTACK"
+                    },
+                    "eqCZc": {
+                      "enabled": true
+                    }
+                  }
+                },
+                {
+                  "id": "X6Zi6N",
+                  "type": "ref",
+                  "ref": "zcutF",
+                  "name": "Statement 1",
+                  "x": 24,
+                  "y": 250,
+                  "width": 268,
+                  "rotation": 0,
+                  "opacity": 0.08,
+                  "descendants": {
+                    "n2O4L": {
+                      "height": 0
+                    }
+                  }
+                },
+                {
+                  "id": "I3xjE",
+                  "type": "ref",
+                  "ref": "zcutF",
+                  "name": "Statement 2",
+                  "x": 24,
+                  "y": 250,
+                  "width": 268,
+                  "rotation": 0,
+                  "opacity": 0.08,
+                  "descendants": {
+                    "n2O4L": {
+                      "height": 0
+                    }
+                  }
+                },
+                {
+                  "id": "veya6",
+                  "type": "ref",
+                  "ref": "zcutF",
+                  "name": "Statement 3",
+                  "x": 24,
+                  "y": 250,
+                  "width": 268,
+                  "rotation": 0,
+                  "opacity": 0.08,
+                  "descendants": {
+                    "n2O4L": {
+                      "height": 0
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Z3kAFT",
+          "name": "Step 120 ms",
+          "gap": 40,
+          "children": [
+            {
+              "type": "frame",
+              "id": "I65fb",
+              "name": "Label",
+              "width": 220,
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "J0Izf",
+                  "name": "Time",
+                  "fill": "$text-default",
+                  "content": "120 ms",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 28,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "xtseP",
+                  "name": "Note",
+                  "fill": "$text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": 220,
+                  "content": "Heading and intro rise 12px and fade in (360 ms ease-out), the intro 80 ms after the heading.",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "MFkgC",
+              "name": "Stage",
+              "width": 900,
+              "height": 460,
+              "fill": "$surface-default",
+              "cornerRadius": 12,
+              "stroke": "$border-default",
+              "strokeWidth": 1,
+              "strokeAlignment": "inner",
+              "layout": "none",
+              "children": [
+                {
+                  "id": "x7Oe0y",
+                  "type": "ref",
+                  "ref": "g7uira",
+                  "name": "Intro",
+                  "x": 24,
+                  "y": 24,
+                  "opacity": 1,
+                  "width": 720,
+                  "descendants": {
+                    "z9frDW": {
+                      "content": "NEWSLETTER",
+                      "enabled": false
+                    },
+                    "SqBTJ": {
+                      "content": "Newsletter"
+                    },
+                    "zSXuD": {
+                      "content": "You can sign up for weekly updates sent to you by email."
+                    }
+                  }
+                },
+                {
+                  "id": "tpKq1",
+                  "type": "ref",
+                  "ref": "dOZxf",
+                  "name": "Subscribe",
+                  "x": 24,
+                  "y": 168,
+                  "opacity": 0.1,
+                  "descendants": {
+                    "wLOsh": {
+                      "content": "SUBSCRIBE ON SUBSTACK"
+                    },
+                    "eqCZc": {
+                      "enabled": true
+                    }
+                  }
+                },
+                {
+                  "id": "RQEfJ",
+                  "type": "ref",
+                  "ref": "zcutF",
+                  "name": "Statement 1",
+                  "x": 24,
+                  "y": 250,
+                  "width": 268,
+                  "rotation": 0,
+                  "opacity": 0.08,
+                  "descendants": {
+                    "n2O4L": {
+                      "height": 0
+                    }
+                  }
+                },
+                {
+                  "id": "NaY07",
+                  "type": "ref",
+                  "ref": "zcutF",
+                  "name": "Statement 2",
+                  "x": 24,
+                  "y": 250,
+                  "width": 268,
+                  "rotation": 0,
+                  "opacity": 0.08,
+                  "descendants": {
+                    "n2O4L": {
+                      "height": 0
+                    }
+                  }
+                },
+                {
+                  "id": "LoLZU",
+                  "type": "ref",
+                  "ref": "zcutF",
+                  "name": "Statement 3",
+                  "x": 24,
+                  "y": 250,
+                  "width": 268,
+                  "rotation": 0,
+                  "opacity": 0.08,
+                  "descendants": {
+                    "n2O4L": {
+                      "height": 0
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "n7kFi",
+          "name": "Step 400 ms",
+          "gap": 40,
+          "children": [
+            {
+              "type": "frame",
+              "id": "NjZ62",
+              "name": "Label",
+              "width": 220,
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "X24y6",
+                  "name": "Time",
+                  "fill": "$text-default",
+                  "content": "400 ms",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 28,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "cwPnC",
+                  "name": "Note",
+                  "fill": "$text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": 220,
+                  "content": "Subscribe lands: scales from 1.1 to 1 with a small overshoot, the hard shadow snapping in (320 ms).",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "qOiWJ",
+              "name": "Stage",
+              "width": 900,
+              "height": 460,
+              "fill": "$surface-default",
+              "cornerRadius": 12,
+              "stroke": "$border-default",
+              "strokeWidth": 1,
+              "strokeAlignment": "inner",
+              "layout": "none",
+              "children": [
+                {
+                  "id": "h2XWZv",
+                  "type": "ref",
+                  "ref": "g7uira",
+                  "name": "Intro",
+                  "x": 24,
+                  "y": 24,
+                  "opacity": 1,
+                  "width": 720,
+                  "descendants": {
+                    "z9frDW": {
+                      "content": "NEWSLETTER",
+                      "enabled": false
+                    },
+                    "SqBTJ": {
+                      "content": "Newsletter"
+                    },
+                    "zSXuD": {
+                      "content": "You can sign up for weekly updates sent to you by email."
+                    }
+                  }
+                },
+                {
+                  "id": "fTO5S",
+                  "type": "ref",
+                  "ref": "dOZxf",
+                  "name": "Subscribe",
+                  "x": 24,
+                  "y": 168,
+                  "opacity": 1,
+                  "descendants": {
+                    "wLOsh": {
+                      "content": "SUBSCRIBE ON SUBSTACK"
+                    },
+                    "eqCZc": {
+                      "enabled": true
+                    }
+                  }
+                },
+                {
+                  "id": "o6JUYU",
+                  "type": "ref",
+                  "ref": "zcutF",
+                  "name": "Statement 1",
+                  "x": 24,
+                  "y": 250,
+                  "width": 268,
+                  "rotation": 0,
+                  "opacity": 0.08,
+                  "descendants": {
+                    "n2O4L": {
+                      "height": 0
+                    }
+                  }
+                },
+                {
+                  "id": "vmTQL",
+                  "type": "ref",
+                  "ref": "zcutF",
+                  "name": "Statement 2",
+                  "x": 24,
+                  "y": 250,
+                  "width": 268,
+                  "rotation": 0,
+                  "opacity": 0.08,
+                  "descendants": {
+                    "n2O4L": {
+                      "height": 0
+                    }
+                  }
+                },
+                {
+                  "id": "s2HysK",
+                  "type": "ref",
+                  "ref": "zcutF",
+                  "name": "Statement 3",
+                  "x": 24,
+                  "y": 250,
+                  "width": 268,
+                  "rotation": 0,
+                  "opacity": 0.08,
+                  "descendants": {
+                    "n2O4L": {
+                      "height": 0
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "NV46J",
+          "name": "Step 600 ms",
+          "gap": 40,
+          "children": [
+            {
+              "type": "frame",
+              "id": "buvYN",
+              "name": "Label",
+              "width": 220,
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "kGmBM",
+                  "name": "Time",
+                  "fill": "$text-default",
+                  "content": "600 ms",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 28,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "lwTpn",
+                  "name": "Note",
+                  "fill": "$text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": 220,
+                  "content": "The pile appears behind the button's row: three cards stacked in the middle, rotated −3°, 2° and −1°.",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "M6rUKi",
+              "name": "Stage",
+              "width": 900,
+              "height": 460,
+              "fill": "$surface-default",
+              "cornerRadius": 12,
+              "stroke": "$border-default",
+              "strokeWidth": 1,
+              "strokeAlignment": "inner",
+              "layout": "none",
+              "children": [
+                {
+                  "id": "hf81o",
+                  "type": "ref",
+                  "ref": "g7uira",
+                  "name": "Intro",
+                  "x": 24,
+                  "y": 24,
+                  "opacity": 1,
+                  "width": 720,
+                  "descendants": {
+                    "z9frDW": {
+                      "content": "NEWSLETTER",
+                      "enabled": false
+                    },
+                    "SqBTJ": {
+                      "content": "Newsletter"
+                    },
+                    "zSXuD": {
+                      "content": "You can sign up for weekly updates sent to you by email."
+                    }
+                  }
+                },
+                {
+                  "id": "bA6bs",
+                  "type": "ref",
+                  "ref": "dOZxf",
+                  "name": "Subscribe",
+                  "x": 24,
+                  "y": 168,
+                  "opacity": 1,
+                  "descendants": {
+                    "wLOsh": {
+                      "content": "SUBSCRIBE ON SUBSTACK"
+                    },
+                    "eqCZc": {
+                      "enabled": true
+                    }
+                  }
+                },
+                {
+                  "id": "XC9oe",
+                  "type": "ref",
+                  "ref": "zcutF",
+                  "name": "Statement 1",
+                  "x": 316,
+                  "y": 250,
+                  "width": 268,
+                  "rotation": -3.0000000000000004,
+                  "opacity": 1,
+                  "descendants": {
+                    "n2O4L": {
+                      "height": 8
+                    }
+                  }
+                },
+                {
+                  "id": "kxL3p",
+                  "type": "ref",
+                  "ref": "zcutF",
+                  "name": "Statement 2",
+                  "x": 316,
+                  "y": 250,
+                  "width": 268,
+                  "rotation": 2,
+                  "opacity": 1,
+                  "descendants": {
+                    "n2O4L": {
+                      "height": 8
+                    }
+                  }
+                },
+                {
+                  "id": "XX3h2",
+                  "type": "ref",
+                  "ref": "zcutF",
+                  "name": "Statement 3",
+                  "x": 316,
+                  "y": 250,
+                  "width": 268,
+                  "rotation": -1,
+                  "opacity": 1,
+                  "descendants": {
+                    "n2O4L": {
+                      "height": 8
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "B3AgtZ",
+          "name": "Step 800 ms",
+          "gap": 40,
+          "children": [
+            {
+              "type": "frame",
+              "id": "lAzk1",
+              "name": "Label",
+              "width": 220,
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Wdgpt",
+                  "name": "Time",
+                  "fill": "$text-default",
+                  "content": "800 ms",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 28,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "lMU8G",
+                  "name": "Note",
+                  "fill": "$text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": 220,
+                  "content": "Card 1 deals out to the left and straightens. 120 ms between cards, each 360 ms ease-out with a 2px settle.",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "gV6MM",
+              "name": "Stage",
+              "width": 900,
+              "height": 460,
+              "fill": "$surface-default",
+              "cornerRadius": 12,
+              "stroke": "$border-default",
+              "strokeWidth": 1,
+              "strokeAlignment": "inner",
+              "layout": "none",
+              "children": [
+                {
+                  "id": "ZmP7F",
+                  "type": "ref",
+                  "ref": "g7uira",
+                  "name": "Intro",
+                  "x": 24,
+                  "y": 24,
+                  "opacity": 1,
+                  "width": 720,
+                  "descendants": {
+                    "z9frDW": {
+                      "content": "NEWSLETTER",
+                      "enabled": false
+                    },
+                    "SqBTJ": {
+                      "content": "Newsletter"
+                    },
+                    "zSXuD": {
+                      "content": "You can sign up for weekly updates sent to you by email."
+                    }
+                  }
+                },
+                {
+                  "id": "H1Vx4H",
+                  "type": "ref",
+                  "ref": "dOZxf",
+                  "name": "Subscribe",
+                  "x": 24,
+                  "y": 168,
+                  "opacity": 1,
+                  "descendants": {
+                    "wLOsh": {
+                      "content": "SUBSCRIBE ON SUBSTACK"
+                    },
+                    "eqCZc": {
+                      "enabled": true
+                    }
+                  }
+                },
+                {
+                  "id": "M38yh",
+                  "type": "ref",
+                  "ref": "zcutF",
+                  "name": "Statement 1",
+                  "x": 24,
+                  "y": 250,
+                  "width": 268,
+                  "rotation": 0,
+                  "opacity": 1,
+                  "descendants": {
+                    "n2O4L": {
+                      "height": 24
+                    }
+                  }
+                },
+                {
+                  "id": "gx5cw",
+                  "type": "ref",
+                  "ref": "zcutF",
+                  "name": "Statement 2",
+                  "x": 316,
+                  "y": 250,
+                  "width": 268,
+                  "rotation": 2,
+                  "opacity": 1,
+                  "descendants": {
+                    "n2O4L": {
+                      "height": 8
+                    }
+                  }
+                },
+                {
+                  "id": "Y1UPX",
+                  "type": "ref",
+                  "ref": "zcutF",
+                  "name": "Statement 3",
+                  "x": 316,
+                  "y": 250,
+                  "width": 268,
+                  "rotation": -1,
+                  "opacity": 1,
+                  "descendants": {
+                    "n2O4L": {
+                      "height": 8
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "DghtB",
+          "name": "Step 950 ms",
+          "gap": 40,
+          "children": [
+            {
+              "type": "frame",
+              "id": "wpKPu",
+              "name": "Label",
+              "width": 220,
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "QjrtA",
+                  "name": "Time",
+                  "fill": "$text-default",
+                  "content": "950 ms",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 28,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "TIdhg",
+                  "name": "Note",
+                  "fill": "$text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": 220,
+                  "content": "Card 2 follows. Card 1's bar finishes growing from 0 to 64px.",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "mEUWm",
+              "name": "Stage",
+              "width": 900,
+              "height": 460,
+              "fill": "$surface-default",
+              "cornerRadius": 12,
+              "stroke": "$border-default",
+              "strokeWidth": 1,
+              "strokeAlignment": "inner",
+              "layout": "none",
+              "children": [
+                {
+                  "id": "ZwOE7",
+                  "type": "ref",
+                  "ref": "g7uira",
+                  "name": "Intro",
+                  "x": 24,
+                  "y": 24,
+                  "opacity": 1,
+                  "width": 720,
+                  "descendants": {
+                    "z9frDW": {
+                      "content": "NEWSLETTER",
+                      "enabled": false
+                    },
+                    "SqBTJ": {
+                      "content": "Newsletter"
+                    },
+                    "zSXuD": {
+                      "content": "You can sign up for weekly updates sent to you by email."
+                    }
+                  }
+                },
+                {
+                  "id": "XhQVZ",
+                  "type": "ref",
+                  "ref": "dOZxf",
+                  "name": "Subscribe",
+                  "x": 24,
+                  "y": 168,
+                  "opacity": 1,
+                  "descendants": {
+                    "wLOsh": {
+                      "content": "SUBSCRIBE ON SUBSTACK"
+                    },
+                    "eqCZc": {
+                      "enabled": true
+                    }
+                  }
+                },
+                {
+                  "id": "ApWBu",
+                  "type": "ref",
+                  "ref": "zcutF",
+                  "name": "Statement 1",
+                  "x": 24,
+                  "y": 250,
+                  "width": 268,
+                  "rotation": 0,
+                  "opacity": 1,
+                  "descendants": {
+                    "n2O4L": {
+                      "height": 44
+                    }
+                  }
+                },
+                {
+                  "id": "KdvWf",
+                  "type": "ref",
+                  "ref": "zcutF",
+                  "name": "Statement 2",
+                  "x": 316,
+                  "y": 250,
+                  "width": 268,
+                  "rotation": 0,
+                  "opacity": 1,
+                  "descendants": {
+                    "n2O4L": {
+                      "height": 24
+                    }
+                  }
+                },
+                {
+                  "id": "m3Lln",
+                  "type": "ref",
+                  "ref": "zcutF",
+                  "name": "Statement 3",
+                  "x": 316,
+                  "y": 250,
+                  "width": 268,
+                  "rotation": -1,
+                  "opacity": 1,
+                  "descendants": {
+                    "n2O4L": {
+                      "height": 8
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "t2Iai",
+          "name": "Step 1200 ms",
+          "gap": 40,
+          "children": [
+            {
+              "type": "frame",
+              "id": "LaPda",
+              "name": "Label",
+              "width": 220,
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ruD0h",
+                  "name": "Time",
+                  "fill": "$text-default",
+                  "content": "1200 ms",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 28,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "qWHQ4",
+                  "name": "Note",
+                  "fill": "$text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": 220,
+                  "content": "Card 3 lands. Done. The note under the cards fades in last. The arrow wiggle waits until about 6 seconds.",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "xxHEY",
+              "name": "Stage",
+              "width": 900,
+              "height": 460,
+              "fill": "$surface-default",
+              "cornerRadius": 12,
+              "stroke": "$border-default",
+              "strokeWidth": 1,
+              "strokeAlignment": "inner",
+              "layout": "none",
+              "children": [
+                {
+                  "id": "rUmfR",
+                  "type": "ref",
+                  "ref": "g7uira",
+                  "name": "Intro",
+                  "x": 24,
+                  "y": 24,
+                  "opacity": 1,
+                  "width": 720,
+                  "descendants": {
+                    "z9frDW": {
+                      "content": "NEWSLETTER",
+                      "enabled": false
+                    },
+                    "SqBTJ": {
+                      "content": "Newsletter"
+                    },
+                    "zSXuD": {
+                      "content": "You can sign up for weekly updates sent to you by email."
+                    }
+                  }
+                },
+                {
+                  "id": "T7SL70",
+                  "type": "ref",
+                  "ref": "dOZxf",
+                  "name": "Subscribe",
+                  "x": 24,
+                  "y": 168,
+                  "opacity": 1,
+                  "descendants": {
+                    "wLOsh": {
+                      "content": "SUBSCRIBE ON SUBSTACK"
+                    },
+                    "eqCZc": {
+                      "enabled": true
+                    }
+                  }
+                },
+                {
+                  "id": "zrYwL",
+                  "type": "ref",
+                  "ref": "zcutF",
+                  "name": "Statement 1",
+                  "x": 24,
+                  "y": 250,
+                  "width": 268,
+                  "rotation": 0,
+                  "opacity": 1,
+                  "descendants": {
+                    "n2O4L": {
+                      "height": 64
+                    }
+                  }
+                },
+                {
+                  "id": "i5asC",
+                  "type": "ref",
+                  "ref": "zcutF",
+                  "name": "Statement 2",
+                  "x": 316,
+                  "y": 250,
+                  "width": 268,
+                  "rotation": 0,
+                  "opacity": 1,
+                  "descendants": {
+                    "n2O4L": {
+                      "height": 44
+                    }
+                  }
+                },
+                {
+                  "id": "YTl4a",
+                  "type": "ref",
+                  "ref": "zcutF",
+                  "name": "Statement 3",
+                  "x": 608,
+                  "y": 250,
+                  "width": 268,
+                  "rotation": 0,
+                  "opacity": 1,
+                  "descendants": {
+                    "n2O4L": {
+                      "height": 8
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "themes": {

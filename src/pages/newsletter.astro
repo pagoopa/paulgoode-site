@@ -32,8 +32,8 @@ const { data } = await getPage('newsletter');
 
     {data.highlights.length > 0 && (
       <ul class="newsletter__highlights">
-        {data.highlights.map((text) => (
-          <li>
+        {data.highlights.map((text, i) => (
+          <li style={`--i: ${i}`}>
             <StatementCard text={text} />
           </li>
         ))}
@@ -101,6 +101,111 @@ const { data } = await getPage('newsletter');
     .newsletter__actions {
       flex-direction: column;
       align-items: flex-start;
+    }
+  }
+
+  /* Entrance (the "Newsletter — Entrance storyboard" board in design/site.pen): about 1.2s,
+     once, on load. The heading and intro rise, Subscribe lands like a sticker, then the cards
+     are dealt from a pile in the middle, each growing its blue bar as it lands, then the note
+     fades in. About 6s later the button's arrow wiggles, twice. It's all CSS and only runs
+     with motion allowed; the animations don't hold their end state, so hover still works. */
+  @media (prefers-reduced-motion: no-preference) {
+    .newsletter__hero :global(.section-header__title) {
+      animation: rise 360ms ease-out backwards;
+    }
+
+    .newsletter__hero :global(.section-header__intro) {
+      animation: rise 360ms ease-out 80ms backwards;
+    }
+
+    .newsletter__actions :global(.btn) {
+      animation: land 320ms ease-out 280ms backwards;
+    }
+
+    .newsletter__actions :global(.btn svg) {
+      animation: wiggle 700ms ease-in-out 6s 2;
+    }
+
+    /* Each card starts in the pile (its --deal-x slides it to the middle column) and is dealt
+       to its place, 120ms after the one before. */
+    .newsletter__highlights > li {
+      --deal-delay: calc(520ms + var(--i, 0) * 120ms);
+      --deal-x: calc((1 - var(--i, 0)) * (100% + var(--scale-0600)));
+      --deal-rot: calc(-3deg + var(--i, 0) * 2.5deg);
+      animation: deal 520ms cubic-bezier(0.2, 0.9, 0.3, 1.15) var(--deal-delay) backwards;
+    }
+
+    .newsletter__highlights :global(.statement__bar) {
+      transform-origin: top;
+      animation: bar-grow 360ms ease-out calc(var(--deal-delay) + 300ms) backwards;
+    }
+
+    .newsletter__note {
+      animation: rise 360ms ease-out 1000ms backwards;
+    }
+  }
+
+  /* Tablet and phones stack the cards, so there is no pile: they tilt and rise one by one. */
+  @media (prefers-reduced-motion: no-preference) and (max-width: 1023px) {
+    .newsletter__highlights > li {
+      --deal-x: 0px;
+    }
+  }
+
+  @keyframes rise {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+  }
+
+  /* A sticker slapped on: big, then a hair small, then settled. */
+  @keyframes land {
+    0% {
+      opacity: 0;
+      transform: scale(1.1);
+    }
+    60% {
+      opacity: 1;
+      transform: scale(0.97);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  /* Hold in the pile for a moment, then deal out to the card's place. */
+  @keyframes deal {
+    0% {
+      opacity: 0;
+      transform: translateX(var(--deal-x)) translateY(12px) rotate(var(--deal-rot));
+    }
+    25% {
+      opacity: 1;
+      transform: translateX(var(--deal-x)) rotate(var(--deal-rot));
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  @keyframes bar-grow {
+    from {
+      transform: scaleY(0.12);
+    }
+  }
+
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    35% {
+      transform: translateX(4px);
+    }
+    65% {
+      transform: translateX(-1px);
     }
   }
 </style>
