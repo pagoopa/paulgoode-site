@@ -1,0 +1,61 @@
+---
+// Loading motion for a page of cards: cards marked data-reveal rise and fade in as they scroll
+// into view, one after another (60ms apart), and card images fade in once loaded. Put this
+// before the cards. The `js` class it sets is what hides them (the CSS is in global.css), so
+// without JavaScript, or with reduced motion, everything is simply visible. A card that is
+// hidden (a filtered-out one) rises in when it is shown.
+---
+
+<script is:inline>
+  document.documentElement.classList.add('js');
+</script>
+
+<script>
+  const items = document.querySelectorAll<HTMLElement>('[data-reveal]');
+
+  document.querySelectorAll<HTMLImageElement>('.card-motion__image').forEach((img) => {
+    const show = () => img.classList.add('is-loaded');
+    if (img.complete) show();
+    else img.addEventListener('load', show, { once: true });
+  });
+
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        // Cards that come into view together are staggered 60ms apart.
+        entries
+          .filter((entry) => entry.isIntersecting)
+          .forEach((entry, i) => {
+            const card = entry.target as HTMLElement;
+            card.style.transitionDelay = `${i * 60}ms`;
+            card.classList.add('is-in');
+            observer.unobserve(card);
+          });
+      },
+      { rootMargin: '0px 0px -8% 0px' },
+    );
+    items.forEach((item) => observer.observe(item));
+
+    // Cards a jump down the page has skipped past never come into view, so they just appear.
+    let waiting = false;
+    window.addEventListener(
+      'scroll',
+      () => {
+        if (waiting) return;
+        waiting = true;
+        requestAnimationFrame(() => {
+          waiting = false;
+          items.forEach((item) => {
+            if (!item.classList.contains('is-in') && item.getBoundingClientRect().bottom < 0) {
+              item.classList.add('is-in');
+              observer.unobserve(item);
+            }
+          });
+        });
+      },
+      { passive: true },
+    );
+  } else {
+    items.forEach((item) => item.classList.add('is-in'));
+  }
+</script>

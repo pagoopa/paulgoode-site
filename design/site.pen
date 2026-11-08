@@ -45311,6 +45311,1233 @@
           ]
         }
       ]
+    },
+    {
+      "type": "frame",
+      "id": "U4bNt",
+      "x": -6078,
+      "y": 20129,
+      "name": "Components / Project card — states",
+      "fill": "$surface-default",
+      "layout": "vertical",
+      "gap": 64,
+      "padding": 64,
+      "children": [
+        {
+          "type": "text",
+          "id": "EPmA6",
+          "name": "Title",
+          "fill": "$text-default",
+          "content": "Project card: hover and pressed",
+          "fontFamily": "$font-heading",
+          "fontSize": 40,
+          "fontWeight": "700"
+        },
+        {
+          "type": "text",
+          "id": "fqS0S",
+          "name": "Intro",
+          "fill": "$text-muted",
+          "textGrowth": "fixed-width",
+          "width": 1000,
+          "content": "The same motion as the post cards, so every card on the site behaves alike. Used on Projects, the featured project and the Series pages. Loading is the same too: cards rise and fade in as they scroll into view, 60 ms apart. When a filter shows hidden cards, they rise in then.",
+          "lineHeight": 1.5,
+          "fontFamily": "$font-body",
+          "fontSize": 18,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "wqVpf",
+          "name": "Card / Project / Stacked",
+          "layout": "vertical",
+          "gap": 24,
+          "children": [
+            {
+              "type": "text",
+              "id": "u4LpQ",
+              "name": "Section title",
+              "fill": "$text-default",
+              "content": "Card / Project / Stacked",
+              "fontFamily": "$font-heading",
+              "fontSize": 24,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "R0pZdn",
+              "name": "States",
+              "gap": 48,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "JwIN7",
+                  "name": "DEFAULT",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": [
+                    0,
+                    12,
+                    12,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Y7k36",
+                      "name": "State label",
+                      "fill": "$text-default",
+                      "content": "DEFAULT",
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "WsQ4o",
+                      "name": "Card — default",
+                      "clip": true,
+                      "width": 360,
+                      "fill": "$surface-raised",
+                      "cornerRadius": "$radius-xl",
+                      "stroke": "$border-default",
+                      "strokeWidth": 1,
+                      "strokeAlignment": "inner",
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "#121c2114",
+                        "offset": {
+                          "x": 0,
+                          "y": 1
+                        },
+                        "blur": 2
+                      },
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "o3KaSb",
+                          "name": "Media",
+                          "context": "Thumbnail: its own image, separate from the artwork. 16:10 landscape, export 720 × 450 (twice the widest card). Fills this area exactly. If an entry has no thumbnail, the artwork is used, cropped from the top.",
+                          "width": "fill_container",
+                          "height": 225,
+                          "fill": "$surface-subtle",
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "id": "Y8TJq7",
+                              "type": "ref",
+                              "ref": "zV7DP",
+                              "name": "Icon",
+                              "width": 32,
+                              "height": 32,
+                              "stroke": "$text-muted"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "C1ah8Z",
+                          "name": "Content",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": "$scale-0300",
+                          "padding": "$scale-0600",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "cdXAU",
+                              "name": "Eyebrow",
+                              "fill": "$text-link",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "CASE STUDY",
+                              "lineHeight": "$type-eyebrow3-line-height",
+                              "fontFamily": "$font-body",
+                              "fontSize": "$type-eyebrow3-size",
+                              "fontWeight": "500",
+                              "letterSpacing": "$type-eyebrow3-letter-spacing"
+                            },
+                            {
+                              "type": "text",
+                              "id": "Wyw7R",
+                              "name": "Title",
+                              "fill": "$text-default",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Project title goes here",
+                              "lineHeight": "$type-h4-line-height",
+                              "fontFamily": "$font-heading",
+                              "fontSize": "$type-h4-size",
+                              "fontWeight": "700",
+                              "letterSpacing": "$type-h4-letter-spacing"
+                            },
+                            {
+                              "type": "text",
+                              "id": "QQY3N",
+                              "name": "Summary",
+                              "fill": "$text-muted",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "One or two sentences on the problem, what you did and what changed as a result.",
+                              "lineHeight": "$type-p3-line-height",
+                              "fontFamily": "$font-body",
+                              "fontSize": "$type-p3-size",
+                              "fontWeight": "normal",
+                              "letterSpacing": "$type-p3-letter-spacing"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "HOOeh",
+                              "name": "Link",
+                              "gap": "$scale-0200",
+                              "padding": [
+                                4,
+                                0,
+                                0,
+                                0
+                              ],
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "AjFGW",
+                                  "name": "Link label",
+                                  "fill": "$text-default",
+                                  "content": "View project",
+                                  "lineHeight": "$type-body1-line-height",
+                                  "fontFamily": "$font-body",
+                                  "fontSize": "$type-body1-size",
+                                  "fontWeight": "500",
+                                  "letterSpacing": "$type-body1-letter-spacing"
+                                },
+                                {
+                                  "id": "k0ahZ",
+                                  "type": "ref",
+                                  "ref": "r3ntDW",
+                                  "name": "Icon",
+                                  "width": 20,
+                                  "height": 20,
+                                  "stroke": "$text-default"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Yg00p",
+                  "name": "HOVER",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": [
+                    0,
+                    12,
+                    12,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "lo7Ba",
+                      "name": "State label",
+                      "fill": "$text-default",
+                      "content": "HOVER",
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "yRTK5",
+                      "name": "Card — hover",
+                      "clip": true,
+                      "width": 360,
+                      "fill": "$surface-raised",
+                      "cornerRadius": "$radius-xl",
+                      "stroke": "$border-emphasis",
+                      "strokeWidth": 1,
+                      "strokeAlignment": "inner",
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "$border-emphasis",
+                        "offset": {
+                          "x": 6,
+                          "y": 6
+                        }
+                      },
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "gtwwK",
+                          "name": "Media",
+                          "context": "Thumbnail: its own image, separate from the artwork. 16:10 landscape, export 720 × 450 (twice the widest card). Fills this area exactly. If an entry has no thumbnail, the artwork is used, cropped from the top.",
+                          "width": "fill_container",
+                          "height": 225,
+                          "fill": "$surface-subtle",
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "id": "x6P1Q",
+                              "type": "ref",
+                              "ref": "zV7DP",
+                              "name": "Icon",
+                              "width": 32,
+                              "height": 32,
+                              "stroke": "$text-muted"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "OlZtN",
+                          "name": "Content",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": "$scale-0300",
+                          "padding": "$scale-0600",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "qhsE4",
+                              "name": "Eyebrow",
+                              "fill": "$text-link",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "CASE STUDY",
+                              "lineHeight": "$type-eyebrow3-line-height",
+                              "fontFamily": "$font-body",
+                              "fontSize": "$type-eyebrow3-size",
+                              "fontWeight": "500",
+                              "letterSpacing": "$type-eyebrow3-letter-spacing"
+                            },
+                            {
+                              "type": "text",
+                              "id": "ajekM",
+                              "name": "Title",
+                              "fill": "$text-default",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Project title goes here",
+                              "lineHeight": "$type-h4-line-height",
+                              "fontFamily": "$font-heading",
+                              "fontSize": "$type-h4-size",
+                              "fontWeight": "700",
+                              "letterSpacing": "$type-h4-letter-spacing"
+                            },
+                            {
+                              "type": "text",
+                              "id": "f5Czw",
+                              "name": "Summary",
+                              "fill": "$text-muted",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "One or two sentences on the problem, what you did and what changed as a result.",
+                              "lineHeight": "$type-p3-line-height",
+                              "fontFamily": "$font-body",
+                              "fontSize": "$type-p3-size",
+                              "fontWeight": "normal",
+                              "letterSpacing": "$type-p3-letter-spacing"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "HaEVy",
+                              "name": "Link",
+                              "gap": "$scale-0200",
+                              "padding": [
+                                4,
+                                0,
+                                0,
+                                0
+                              ],
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "k1NsEb",
+                                  "name": "Link label",
+                                  "fill": "$text-default",
+                                  "content": "View project",
+                                  "lineHeight": "$type-body1-line-height",
+                                  "fontFamily": "$font-body",
+                                  "fontSize": "$type-body1-size",
+                                  "fontWeight": "500",
+                                  "letterSpacing": "$type-body1-letter-spacing"
+                                },
+                                {
+                                  "id": "XTNwU",
+                                  "type": "ref",
+                                  "ref": "r3ntDW",
+                                  "name": "Icon",
+                                  "width": 20,
+                                  "height": 20,
+                                  "stroke": "$text-default"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "path",
+                              "id": "QfkyD",
+                              "layoutPosition": "absolute",
+                              "x": 24,
+                              "y": 232,
+                              "name": "Squiggle",
+                              "geometry": "M0 3q5-2 10 0 5 2 10 0 5-2 10 0 5 2 10 0 5-2 10 0 5 2 10 0 5-2 10 0 5 2 10 0 5-2 10 0",
+                              "viewBox": [
+                                0,
+                                0,
+                                90,
+                                6
+                              ],
+                              "fill": "#00000000",
+                              "width": 90,
+                              "height": 6,
+                              "stroke": "$accent-blue",
+                              "strokeWidth": 2,
+                              "strokeLinecap": "round"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "EZ4h1",
+                  "name": "PRESSED",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": [
+                    0,
+                    12,
+                    12,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Lxl98",
+                      "name": "State label",
+                      "fill": "$text-default",
+                      "content": "PRESSED",
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "REoaA",
+                      "name": "Card — pressed",
+                      "clip": true,
+                      "width": 360,
+                      "fill": "$surface-raised",
+                      "cornerRadius": "$radius-xl",
+                      "stroke": "$border-emphasis",
+                      "strokeWidth": 1,
+                      "strokeAlignment": "inner",
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "$border-emphasis",
+                        "offset": {
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "qR5AR",
+                          "name": "Media",
+                          "context": "Thumbnail: its own image, separate from the artwork. 16:10 landscape, export 720 × 450 (twice the widest card). Fills this area exactly. If an entry has no thumbnail, the artwork is used, cropped from the top.",
+                          "width": "fill_container",
+                          "height": 225,
+                          "fill": "$surface-subtle",
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "id": "akXKP",
+                              "type": "ref",
+                              "ref": "zV7DP",
+                              "name": "Icon",
+                              "width": 32,
+                              "height": 32,
+                              "stroke": "$text-muted"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "ezUG8",
+                          "name": "Content",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": "$scale-0300",
+                          "padding": "$scale-0600",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "TNk8L",
+                              "name": "Eyebrow",
+                              "fill": "$text-link",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "CASE STUDY",
+                              "lineHeight": "$type-eyebrow3-line-height",
+                              "fontFamily": "$font-body",
+                              "fontSize": "$type-eyebrow3-size",
+                              "fontWeight": "500",
+                              "letterSpacing": "$type-eyebrow3-letter-spacing"
+                            },
+                            {
+                              "type": "text",
+                              "id": "PCZ2x",
+                              "name": "Title",
+                              "fill": "$text-default",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Project title goes here",
+                              "lineHeight": "$type-h4-line-height",
+                              "fontFamily": "$font-heading",
+                              "fontSize": "$type-h4-size",
+                              "fontWeight": "700",
+                              "letterSpacing": "$type-h4-letter-spacing"
+                            },
+                            {
+                              "type": "text",
+                              "id": "tZpgM",
+                              "name": "Summary",
+                              "fill": "$text-muted",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "One or two sentences on the problem, what you did and what changed as a result.",
+                              "lineHeight": "$type-p3-line-height",
+                              "fontFamily": "$font-body",
+                              "fontSize": "$type-p3-size",
+                              "fontWeight": "normal",
+                              "letterSpacing": "$type-p3-letter-spacing"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "s1Sn6",
+                              "name": "Link",
+                              "gap": "$scale-0200",
+                              "padding": [
+                                4,
+                                0,
+                                0,
+                                0
+                              ],
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "l6Lfmx",
+                                  "name": "Link label",
+                                  "fill": "$text-default",
+                                  "content": "View project",
+                                  "lineHeight": "$type-body1-line-height",
+                                  "fontFamily": "$font-body",
+                                  "fontSize": "$type-body1-size",
+                                  "fontWeight": "500",
+                                  "letterSpacing": "$type-body1-letter-spacing"
+                                },
+                                {
+                                  "id": "qr3ZX",
+                                  "type": "ref",
+                                  "ref": "r3ntDW",
+                                  "name": "Icon",
+                                  "width": 20,
+                                  "height": 20,
+                                  "stroke": "$text-default"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "S59sxm",
+                  "name": "Spec",
+                  "width": 300,
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Pjctf",
+                      "name": "Spec title",
+                      "fill": "$text-default",
+                      "content": "SPEC",
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "DIK4R",
+                      "name": "Spec line",
+                      "fill": "$text-muted",
+                      "textGrowth": "fixed-width",
+                      "width": 300,
+                      "content": "Hover: lifts 3px, 1px ink outline and a 6px hard ink shadow. 160 ms ease-out.",
+                      "lineHeight": 1.45,
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "FzCm6",
+                      "name": "Spec line",
+                      "fill": "$text-muted",
+                      "textGrowth": "fixed-width",
+                      "width": 300,
+                      "content": "Image zooms to 1.04, clipped by the card. 400 ms.",
+                      "lineHeight": 1.45,
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "zQFZB",
+                      "name": "Spec line",
+                      "fill": "$text-muted",
+                      "textGrowth": "fixed-width",
+                      "width": 300,
+                      "content": "Arrow nudges 2px right. A blue squiggle draws under the link label, 240 ms.",
+                      "lineHeight": 1.45,
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "BG6er",
+                      "name": "Spec line",
+                      "fill": "$text-muted",
+                      "textGrowth": "fixed-width",
+                      "width": 300,
+                      "content": "Pressed: sinks back, shadow shrinks to 1px.",
+                      "lineHeight": 1.45,
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "J1PIPI",
+                      "name": "Spec line",
+                      "fill": "$text-muted",
+                      "textGrowth": "fixed-width",
+                      "width": 300,
+                      "content": "Reduced motion: no movement, colour and shadow only.",
+                      "lineHeight": 1.45,
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "wDSKD",
+          "name": "Card / Project / Side",
+          "layout": "vertical",
+          "gap": 24,
+          "children": [
+            {
+              "type": "text",
+              "id": "ldULY",
+              "name": "Section title",
+              "fill": "$text-default",
+              "content": "Card / Project / Side",
+              "fontFamily": "$font-heading",
+              "fontSize": 24,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "oo62P",
+              "name": "States",
+              "layout": "vertical",
+              "gap": 40,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "LtJoC",
+                  "name": "DEFAULT",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": [
+                    0,
+                    12,
+                    12,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "H43AHz",
+                      "name": "State label",
+                      "fill": "$text-default",
+                      "content": "DEFAULT",
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "WS5kV",
+                      "name": "Card — default",
+                      "clip": true,
+                      "width": 720,
+                      "height": 206,
+                      "fill": "$surface-raised",
+                      "cornerRadius": "$radius-xl",
+                      "stroke": "$border-default",
+                      "strokeWidth": 1,
+                      "strokeAlignment": "inner",
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "#121c2114",
+                        "offset": {
+                          "x": 0,
+                          "y": 1
+                        },
+                        "blur": 2
+                      },
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "l7FJh",
+                          "name": "Media",
+                          "context": "Uses the same 16:10 thumbnail (720 × 450), filling this panel; a little is trimmed from the sides.",
+                          "width": 280,
+                          "height": "fill_container",
+                          "fill": "$surface-subtle",
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "id": "bkecD",
+                              "type": "ref",
+                              "ref": "zV7DP",
+                              "name": "Icon",
+                              "width": 32,
+                              "height": 32,
+                              "stroke": "$text-muted"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "xb9FT",
+                          "name": "Content",
+                          "width": "fill_container",
+                          "height": "fill_container",
+                          "layout": "vertical",
+                          "gap": "$scale-0300",
+                          "padding": "$scale-0600",
+                          "justifyContent": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "iHmgh",
+                              "name": "Eyebrow",
+                              "fill": "$text-link",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "CASE STUDY",
+                              "lineHeight": "$type-eyebrow3-line-height",
+                              "fontFamily": "$font-body",
+                              "fontSize": "$type-eyebrow3-size",
+                              "fontWeight": "500",
+                              "letterSpacing": "$type-eyebrow3-letter-spacing"
+                            },
+                            {
+                              "type": "text",
+                              "id": "sFJi5",
+                              "name": "Title",
+                              "fill": "$text-default",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Project title goes here",
+                              "lineHeight": "$type-h4-line-height",
+                              "fontFamily": "$font-heading",
+                              "fontSize": "$type-h4-size",
+                              "fontWeight": "700",
+                              "letterSpacing": "$type-h4-letter-spacing"
+                            },
+                            {
+                              "type": "text",
+                              "id": "AhhCY",
+                              "name": "Summary",
+                              "fill": "$text-muted",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "One or two sentences on the problem, what you did and what changed as a result.",
+                              "lineHeight": "$type-p3-line-height",
+                              "fontFamily": "$font-body",
+                              "fontSize": "$type-p3-size",
+                              "fontWeight": "normal",
+                              "letterSpacing": "$type-p3-letter-spacing"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "Eccuf",
+                              "name": "Link",
+                              "gap": "$scale-0200",
+                              "padding": [
+                                4,
+                                0,
+                                0,
+                                0
+                              ],
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "HyGkH",
+                                  "name": "Link label",
+                                  "fill": "$text-default",
+                                  "content": "View project",
+                                  "lineHeight": "$type-body1-line-height",
+                                  "fontFamily": "$font-body",
+                                  "fontSize": "$type-body1-size",
+                                  "fontWeight": "500",
+                                  "letterSpacing": "$type-body1-letter-spacing"
+                                },
+                                {
+                                  "id": "KfDLX",
+                                  "type": "ref",
+                                  "ref": "r3ntDW",
+                                  "name": "Icon",
+                                  "width": 20,
+                                  "height": 20,
+                                  "stroke": "$text-default"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Rf8iP",
+                  "name": "HOVER",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": [
+                    0,
+                    12,
+                    12,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "J6DfT",
+                      "name": "State label",
+                      "fill": "$text-default",
+                      "content": "HOVER",
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "cD21N",
+                      "name": "Card — hover",
+                      "clip": true,
+                      "width": 720,
+                      "height": 206,
+                      "fill": "$surface-raised",
+                      "cornerRadius": "$radius-xl",
+                      "stroke": "$border-emphasis",
+                      "strokeWidth": 1,
+                      "strokeAlignment": "inner",
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "$border-emphasis",
+                        "offset": {
+                          "x": 6,
+                          "y": 6
+                        }
+                      },
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "GcpCN",
+                          "name": "Media",
+                          "context": "Uses the same 16:10 thumbnail (720 × 450), filling this panel; a little is trimmed from the sides.",
+                          "width": 280,
+                          "height": "fill_container",
+                          "fill": "$surface-subtle",
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "id": "A7i9jv",
+                              "type": "ref",
+                              "ref": "zV7DP",
+                              "name": "Icon",
+                              "width": 32,
+                              "height": 32,
+                              "stroke": "$text-muted"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "eCi8K",
+                          "name": "Content",
+                          "width": "fill_container",
+                          "height": "fill_container",
+                          "layout": "vertical",
+                          "gap": "$scale-0300",
+                          "padding": "$scale-0600",
+                          "justifyContent": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "aWlMC",
+                              "name": "Eyebrow",
+                              "fill": "$text-link",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "CASE STUDY",
+                              "lineHeight": "$type-eyebrow3-line-height",
+                              "fontFamily": "$font-body",
+                              "fontSize": "$type-eyebrow3-size",
+                              "fontWeight": "500",
+                              "letterSpacing": "$type-eyebrow3-letter-spacing"
+                            },
+                            {
+                              "type": "text",
+                              "id": "pIVr2",
+                              "name": "Title",
+                              "fill": "$text-default",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Project title goes here",
+                              "lineHeight": "$type-h4-line-height",
+                              "fontFamily": "$font-heading",
+                              "fontSize": "$type-h4-size",
+                              "fontWeight": "700",
+                              "letterSpacing": "$type-h4-letter-spacing"
+                            },
+                            {
+                              "type": "text",
+                              "id": "Y2EER",
+                              "name": "Summary",
+                              "fill": "$text-muted",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "One or two sentences on the problem, what you did and what changed as a result.",
+                              "lineHeight": "$type-p3-line-height",
+                              "fontFamily": "$font-body",
+                              "fontSize": "$type-p3-size",
+                              "fontWeight": "normal",
+                              "letterSpacing": "$type-p3-letter-spacing"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "LbeaV",
+                              "name": "Link",
+                              "gap": "$scale-0200",
+                              "padding": [
+                                4,
+                                0,
+                                0,
+                                0
+                              ],
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "aeNTG",
+                                  "name": "Link label",
+                                  "fill": "$text-default",
+                                  "content": "View project",
+                                  "lineHeight": "$type-body1-line-height",
+                                  "fontFamily": "$font-body",
+                                  "fontSize": "$type-body1-size",
+                                  "fontWeight": "500",
+                                  "letterSpacing": "$type-body1-letter-spacing"
+                                },
+                                {
+                                  "id": "c6LcW",
+                                  "type": "ref",
+                                  "ref": "r3ntDW",
+                                  "name": "Icon",
+                                  "width": 20,
+                                  "height": 20,
+                                  "stroke": "$text-default"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "path",
+                              "id": "uuIhi",
+                              "layoutPosition": "absolute",
+                              "x": 24,
+                              "y": 177,
+                              "name": "Squiggle",
+                              "geometry": "M0 3q5-2 10 0 5 2 10 0 5-2 10 0 5 2 10 0 5-2 10 0 5 2 10 0 5-2 10 0 5 2 10 0 5-2 10 0",
+                              "viewBox": [
+                                0,
+                                0,
+                                90,
+                                6
+                              ],
+                              "fill": "#00000000",
+                              "width": 90,
+                              "height": 6,
+                              "stroke": "$accent-blue",
+                              "strokeWidth": 2,
+                              "strokeLinecap": "round"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "mRLQ6",
+                  "name": "PRESSED",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": [
+                    0,
+                    12,
+                    12,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "d1uzmG",
+                      "name": "State label",
+                      "fill": "$text-default",
+                      "content": "PRESSED",
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "mAmIs",
+                      "name": "Card — pressed",
+                      "clip": true,
+                      "width": 720,
+                      "height": 206,
+                      "fill": "$surface-raised",
+                      "cornerRadius": "$radius-xl",
+                      "stroke": "$border-emphasis",
+                      "strokeWidth": 1,
+                      "strokeAlignment": "inner",
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "$border-emphasis",
+                        "offset": {
+                          "x": 1,
+                          "y": 1
+                        }
+                      },
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "lCaRW",
+                          "name": "Media",
+                          "context": "Uses the same 16:10 thumbnail (720 × 450), filling this panel; a little is trimmed from the sides.",
+                          "width": 280,
+                          "height": "fill_container",
+                          "fill": "$surface-subtle",
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "id": "oY6Np",
+                              "type": "ref",
+                              "ref": "zV7DP",
+                              "name": "Icon",
+                              "width": 32,
+                              "height": 32,
+                              "stroke": "$text-muted"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "FdPbE",
+                          "name": "Content",
+                          "width": "fill_container",
+                          "height": "fill_container",
+                          "layout": "vertical",
+                          "gap": "$scale-0300",
+                          "padding": "$scale-0600",
+                          "justifyContent": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "ouRqf",
+                              "name": "Eyebrow",
+                              "fill": "$text-link",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "CASE STUDY",
+                              "lineHeight": "$type-eyebrow3-line-height",
+                              "fontFamily": "$font-body",
+                              "fontSize": "$type-eyebrow3-size",
+                              "fontWeight": "500",
+                              "letterSpacing": "$type-eyebrow3-letter-spacing"
+                            },
+                            {
+                              "type": "text",
+                              "id": "O16y0i",
+                              "name": "Title",
+                              "fill": "$text-default",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Project title goes here",
+                              "lineHeight": "$type-h4-line-height",
+                              "fontFamily": "$font-heading",
+                              "fontSize": "$type-h4-size",
+                              "fontWeight": "700",
+                              "letterSpacing": "$type-h4-letter-spacing"
+                            },
+                            {
+                              "type": "text",
+                              "id": "A9MfA",
+                              "name": "Summary",
+                              "fill": "$text-muted",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "One or two sentences on the problem, what you did and what changed as a result.",
+                              "lineHeight": "$type-p3-line-height",
+                              "fontFamily": "$font-body",
+                              "fontSize": "$type-p3-size",
+                              "fontWeight": "normal",
+                              "letterSpacing": "$type-p3-letter-spacing"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "V4FXSv",
+                              "name": "Link",
+                              "gap": "$scale-0200",
+                              "padding": [
+                                4,
+                                0,
+                                0,
+                                0
+                              ],
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "nPtQg",
+                                  "name": "Link label",
+                                  "fill": "$text-default",
+                                  "content": "View project",
+                                  "lineHeight": "$type-body1-line-height",
+                                  "fontFamily": "$font-body",
+                                  "fontSize": "$type-body1-size",
+                                  "fontWeight": "500",
+                                  "letterSpacing": "$type-body1-letter-spacing"
+                                },
+                                {
+                                  "id": "bOLeA",
+                                  "type": "ref",
+                                  "ref": "r3ntDW",
+                                  "name": "Icon",
+                                  "width": 20,
+                                  "height": 20,
+                                  "stroke": "$text-default"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "j8u9wy",
+                  "name": "Spec",
+                  "width": 720,
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "UoAUS",
+                      "name": "Spec title",
+                      "fill": "$text-default",
+                      "content": "SPEC",
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "G0LWsK",
+                      "name": "Spec line",
+                      "fill": "$text-muted",
+                      "textGrowth": "fixed-width",
+                      "width": 720,
+                      "content": "Same states as the stacked card. Image zoom 1.03 on the wider image.",
+                      "lineHeight": 1.45,
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "themes": {

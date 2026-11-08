@@ -6,6 +6,7 @@ import Layout from '../layouts/Layout.astro';
 import SectionHeader from '../components/SectionHeader.astro';
 import FilterBar from '../components/FilterBar.astro';
 import ProjectCard from '../components/ProjectCard.astro';
+import CardReveal from '../components/CardReveal.astro';
 import { getPage } from '../lib/pages';
 import { getProjects, projectUrl } from '../lib/projects';
 import { projectTypes } from '../lib/labels';
@@ -27,8 +28,10 @@ const options = Object.entries(projectTypes).map(([value, { label }]) => ({ valu
 
     <FilterBar options={options} />
 
+    <CardReveal />
+
     {featured && (
-      <div data-filter-type={featured.data.type}>
+      <div data-filter-type={featured.data.type} data-reveal>
         <ProjectCard
           layout="side"
           href={projectUrl(featured)}
@@ -44,7 +47,7 @@ const options = Object.entries(projectTypes).map(([value, { label }]) => ({ valu
 
     <ul class="projects__grid">
       {others.map((project) => (
-        <li data-filter-type={project.data.type}>
+        <li data-filter-type={project.data.type} data-reveal>
           <ProjectCard
             href={projectUrl(project)}
             eyebrow={projectTypes[project.data.type].eyebrow}
