@@ -99,6 +99,14 @@ const windowDecor = [
     button.addEventListener('click', () => setOpen(true));
     closeButton.addEventListener('click', () => setOpen(false));
 
+    // From 600px up the links sit in the bar and there's no window, so close it if the screen widens.
+    window.matchMedia('(min-width: 600px)').addEventListener('change', (event) => {
+      if (event.matches && isOpen()) {
+        header.dataset.menuOpen = 'false';
+        button.setAttribute('aria-expanded', 'false');
+      }
+    });
+
     // Also close on Esc, on tapping a link, and on tapping the dimmed page around the window.
     nav.addEventListener('click', (event) => {
       const target = event.target as Element;
