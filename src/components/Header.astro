@@ -2,6 +2,11 @@
 import { Image } from 'astro:assets';
 import logo from '../assets/pg-main.png';
 import { navItems } from '../lib/nav';
+import EdgeDecor from './EdgeDecor.astro';
+import splatterPink from '../assets/decor/splatter-pink.svg';
+import splatterBlue from '../assets/decor/splatter-blue-footer.svg';
+import twirlYellow from '../assets/decor/twirl-yellow.svg';
+import twirlBlue from '../assets/decor/twirl-blue-footer.svg';
 
 const currentPath = Astro.url.pathname;
 
@@ -11,9 +16,19 @@ function isActive(item: (typeof navItems)[number]) {
   if (item.href === '/') return currentPath === '/' || currentPath.startsWith('/blog');
   return [item.href, ...(item.also ?? [])].some((path) => currentPath.startsWith(path));
 }
+
+// The phone menu window's decoration (Mobile Nav board in design/site.pen): x is the left edge
+// as a share of the 318px window, y is px from its top, w is the width in px.
+const windowDecor = [
+  { img: twirlYellow, x: 112, y: 36, w: 127 },
+  { img: splatterPink, x: 226, y: 224, w: 92 },
+  { img: splatterBlue, x: 16, y: 292, w: 69 },
+  { img: twirlBlue, x: 96, y: 300, w: 130 },
+];
 ---
 
 <header class="site-header" data-menu-open="false">
+  <EdgeDecor where="header" />
   <div class="wrap site-header__inner">
     <a href="/" class="site-header__logo" aria-label="Paul Goode — home">
       <Image src={logo} alt="Paul Goode" height={59} densities={[1, 2]} loading="eager" />
@@ -25,57 +40,87 @@ function isActive(item: (typeof navItems)[number]) {
       aria-expanded="false"
       aria-label="Open menu"
     >
-      <svg class="site-header__icon site-header__icon--menu" viewBox="0 0 24 24" aria-hidden="true">
+      <svg class="site-header__icon" viewBox="0 0 24 24" aria-hidden="true">
         <path d="M4 7h16m-16 5h16m-16 5h16" />
-      </svg>
-      <svg class="site-header__icon site-header__icon--close" viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M6 6l12 12m0-12l-12 12" />
       </svg>
     </button>
     <nav id="site-nav" class="site-header__nav" aria-label="Primary">
-      <div class="site-header__links">
-        {navItems.map((item) => (
-          <a
-            href={item.href}
-            class:list={['link-nav', { 'is-active': isActive(item) }]}
-          >
-            <span class="link-label">{item.label}</span>
-          </a>
-        ))}
+      <div class="site-header__panel">
+        <p class="site-header__eyebrow" aria-hidden="true">Menu</p>
+        <button type="button" class="site-header__close" aria-label="Close menu">
+          <svg class="site-header__icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 6l12 12m0-12l-12 12" />
+          </svg>
+        </button>
+        <div class="site-header__links">
+          {navItems.map((item) => (
+            <a
+              href={item.href}
+              class:list={['link-nav', { 'is-active': isActive(item) }]}
+            >
+              <span class="link-label">{item.label}</span>
+            </a>
+          ))}
+        </div>
+        <div class="site-header__panel-decor" aria-hidden="true">
+          {windowDecor.map((d) => (
+            <img
+              src={d.img.src}
+              alt=""
+              width={d.w}
+              height={Math.round((d.w * d.img.height) / d.img.width)}
+              style={`left: ${(d.x / 318) * 100}%; top: ${d.y}px;`}
+              loading="lazy"
+              decoding="async"
+            />
+          ))}
+        </div>
       </div>
     </nav>
   </div>
 </header>
 
 <script>
-  // Mobile menu: the button toggles data-menu-open on the header; CSS does the rest.
+  // Mobile menu: the button opens a window over the page (data-menu-open on the header); CSS does the rest.
   const header = document.querySelector<HTMLElement>('.site-header');
   const button = header?.querySelector<HTMLButtonElement>('.site-header__menu-button');
+  const nav = header?.querySelector<HTMLElement>('.site-header__nav');
+  const closeButton = header?.querySelector<HTMLButtonElement>('.site-header__close');
 
-  if (header && button) {
+  if (header && button && nav && closeButton) {
     const isOpen = () => header.dataset.menuOpen === 'true';
     const setOpen = (open: boolean) => {
-      // The open menu runs from the bar's bottom edge (wherever it is on screen) to the bottom of the screen.
-      if (open) header.style.setProperty('--menu-top', `${header.getBoundingClientRect().bottom}px`);
       header.dataset.menuOpen = String(open);
       button.setAttribute('aria-expanded', String(open));
-      button.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      // Focus moves into the window, and back to the button when it closes.
+      (open ? closeButton : button).focus();
     };
 
-    button.addEventListener('click', () => setOpen(!isOpen()));
+    button.addEventListener('click', () => setOpen(true));
+    closeButton.addEventListener('click', () => setOpen(false));
 
-    // Also close on Esc, on tapping a link, and on tapping the page outside the header.
+    // Also close on Esc, on tapping a link, and on tapping the dimmed page around the window.
+    nav.addEventListener('click', (event) => {
+      const target = event.target as Element;
+      if (target === nav || target.closest('a')) setOpen(false);
+    });
     document.addEventListener('keydown', (event) => {
-      if (event.key === 'Escape' && isOpen()) {
+      if (!isOpen()) return;
+      if (event.key === 'Escape') {
         setOpen(false);
-        button.focus();
+      } else if (event.key === 'Tab') {
+        // Keep Tab inside the window while it's open.
+        const items = [closeButton, ...nav.querySelectorAll<HTMLElement>('a')];
+        const first = items[0];
+        const last = items[items.length - 1];
+        if (event.shiftKey && document.activeElement === first) {
+          event.preventDefault();
+          last.focus();
+        } else if (!event.shiftKey && document.activeElement === last) {
+          event.preventDefault();
+          first.focus();
+        }
       }
-    });
-    header.querySelector('.site-header__nav')?.addEventListener('click', (event) => {
-      if ((event.target as Element).closest('a')) setOpen(false);
-    });
-    document.addEventListener('click', (event) => {
-      if (isOpen() && !header.contains(event.target as Node)) setOpen(false);
     });
   }
 </script>
@@ -87,9 +132,16 @@ function isActive(item: (typeof navItems)[number]) {
     --color-border-focus: var(--color-border-focus-inverse);
     position: relative;
     z-index: 10;
+    overflow-x: clip;
     background: var(--color-surface-inverse);
     color: var(--color-text-inverse);
     border-bottom: 1px solid var(--color-border-inverse);
+  }
+
+  /* Content above the decoration; the sideways overflow of the drawings is cut off. */
+  .site-header :global(.wrap) {
+    position: relative;
+    z-index: 1;
   }
 
   /* The bar is 120px tall with its 1px bottom line, at every width. */
@@ -113,8 +165,16 @@ function isActive(item: (typeof navItems)[number]) {
     filter: invert(1);
   }
 
-  .site-header__menu-button {
+  /* The menu window's parts only exist on phones. */
+  .site-header__menu-button,
+  .site-header__eyebrow,
+  .site-header__close,
+  .site-header__panel-decor {
     display: none;
+  }
+
+  .site-header__panel {
+    display: contents;
   }
 
   /* Link / Nav links; their styles are in global.css. The links sit 12px lower than the
@@ -131,7 +191,7 @@ function isActive(item: (typeof navItems)[number]) {
     }
   }
 
-  /* Phones: Header / Left (closed) and Menu Open. See the
+  /* Phones: Header / Left (closed) and the menu window. See the
      "Mobile Nav — Open / Close Interaction" board in design/site.pen. */
   @media (max-width: 599px) {
     /* On phones the bar ends at the gutter, not the margin, next to the 44px menu button. */
@@ -139,18 +199,22 @@ function isActive(item: (typeof navItems)[number]) {
       padding-inline-end: var(--layout-gutter);
     }
 
-    .site-header__menu-button {
+    .site-header__menu-button,
+    .site-header__close {
       display: flex;
       align-items: center;
       justify-content: center;
       width: 44px;
       height: 44px;
-      margin-top: 12px;
       padding: 0;
       border: 0;
       background: transparent;
       color: var(--color-text-inverse);
       cursor: pointer;
+    }
+
+    .site-header__menu-button {
+      margin-top: 12px;
     }
 
     .site-header__icon {
@@ -163,28 +227,20 @@ function isActive(item: (typeof navItems)[number]) {
       stroke-linejoin: round;
     }
 
-    .site-header__icon--close,
-    .site-header[data-menu-open='true'] .site-header__icon--menu {
-      display: none;
-    }
-
-    .site-header[data-menu-open='true'] .site-header__icon--close {
-      display: block;
-    }
-
-    /* The menu fills the screen below the bar. The nav clips it at the bar's bottom edge, so it
-       slides out from behind the bar, and scrolls if the links don't fit (phones held sideways).
-       Hidden once the close animation ends, so the links can't be tabbed to while closed. */
+    /* The nav is the dimmed backdrop: it covers the screen and fades in over the page. It scrolls
+       if the window doesn't fit (phones held sideways). Hidden once the close animation ends,
+       so the links can't be tabbed to while closed. */
     .site-header__nav {
       position: fixed;
-      top: var(--menu-top, 0);
-      left: 0;
-      right: 0;
-      bottom: 0;
+      inset: 0;
       overflow-y: auto;
       overscroll-behavior: contain;
+      background: rgb(10 17 20 / 0.72);
+      opacity: 0;
       visibility: hidden;
-      transition: visibility 0s linear 200ms;
+      transition:
+        opacity 200ms ease-in,
+        visibility 0s linear 200ms;
     }
 
     /* The page behind the open menu doesn't scroll. */
@@ -192,39 +248,90 @@ function isActive(item: (typeof navItems)[number]) {
       overflow: hidden;
     }
 
-    /* The links stay at the top; the menu's background runs to the bottom of the screen. */
+    /* The window: the sticker look of the buttons, a light outline and a hard yellow shadow. */
+    .site-header__panel {
+      display: block;
+      position: relative;
+      box-sizing: border-box;
+      width: min(318px, calc(100% - 72px));
+      margin: 56px auto 40px;
+      padding: 30px 28px 98px;
+      overflow: hidden;
+      background: var(--color-surface-inverse);
+      border: 1px solid var(--color-text-inverse);
+      border-radius: 16px;
+      box-shadow: 5px 5px 0 var(--color-accent-yellow);
+      transform: translateY(-12px);
+      transition: transform 200ms ease-in;
+    }
+
+    .site-header__eyebrow {
+      display: block;
+      margin: 0;
+      font-size: 12px;
+      line-height: 1.4;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: var(--color-text-inverse-muted);
+    }
+
+    .site-header__close {
+      position: absolute;
+      top: 16px;
+      right: 20px;
+      border: 1px solid var(--color-text-inverse);
+      border-radius: 50%;
+    }
+
+    .site-header__close:focus-visible {
+      outline: 2px solid var(--color-border-focus);
+      outline-offset: 2px;
+    }
+
     .site-header__links {
       flex-direction: column;
       align-items: flex-start;
       flex-wrap: nowrap;
-      gap: var(--scale-0200);
-      min-height: 100%;
-      padding: var(--scale-0400) var(--layout-margin) var(--scale-0600);
-      background: var(--color-surface-inverse);
-      opacity: 0;
-      transform: translateY(-24px);
-      transition:
-        opacity 200ms ease-in,
-        transform 200ms ease-in;
+      gap: 6px;
+      margin-top: 28px;
+    }
+
+    /* Window links: 20px in the heading font. The label's 10px bottom padding holds the squiggle. */
+    .site-header__links .link-nav {
+      padding-block: 0;
+      font-family: var(--font-heading);
+      font-size: 20px;
+      line-height: 1.25;
+      letter-spacing: 0;
+      font-weight: 700;
+    }
+
+    .site-header__panel-decor {
+      display: block;
+    }
+
+    .site-header__panel-decor img {
+      position: absolute;
+      height: auto;
+      pointer-events: none;
     }
 
     .site-header[data-menu-open='true'] .site-header__nav {
+      opacity: 1;
       visibility: visible;
-      transition: none;
+      transition: opacity 240ms ease-out;
     }
 
-    .site-header[data-menu-open='true'] .site-header__links {
-      opacity: 1;
+    .site-header[data-menu-open='true'] .site-header__panel {
       transform: none;
-      transition:
-        opacity 240ms ease-out,
-        transform 240ms ease-out;
+      transition: transform 240ms ease-out;
     }
   }
 
   /* Reduced motion: fade only. */
   @media (max-width: 599px) and (prefers-reduced-motion: reduce) {
-    .site-header__links {
+    .site-header__panel {
       transform: none;
     }
   }
