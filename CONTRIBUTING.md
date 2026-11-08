@@ -264,3 +264,12 @@ A series is a numbered set of artwork, like "Junk Drawer Journey".
 The shop lives on Big Cartel at https://shop.paulgoode.com, not in this
 repo. The "Shop" links in the header and footer point there.
 Add and price pieces in Big Cartel.
+
+## Favicons and app icons
+
+The site's icons come from the "Favicon Examples" board in `design/site.pen` and live in
+`public/`: `favicon.svg` and `favicon.ico` (16, 32 and 48px) for browser tabs,
+`apple-touch-icon.png` (180px) for iOS, and `icon-192.png`, `icon-512.png` and
+`icon-maskable-512.png` (the mark smaller, so Android can crop it) listed in
+`site.webmanifest`. They are exported from the board's frames; to change them, edit the
+board, export again and replace the files. The tab and theme colour is `#121c21`.
