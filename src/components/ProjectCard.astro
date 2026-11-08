@@ -17,6 +17,8 @@ interface Props {
   layout?: 'stacked' | 'side';
   // Featured cards near the top of the page load their image straight away.
   loading?: 'eager' | 'lazy';
+  // The title's heading level: h2 under a page's h1 (the default), h3 under an h2.
+  headingLevel?: 'h2' | 'h3';
 }
 
 const {
@@ -29,7 +31,9 @@ const {
   imageAlt = '',
   layout = 'stacked',
   loading = 'lazy',
+  headingLevel = 'h2',
 } = Astro.props;
+const Heading = headingLevel;
 ---
 
 <a class:list={['card', `card--${layout}`]} href={href}>
@@ -47,7 +51,7 @@ const {
   </div>
   <div class="card__content">
     {eyebrow && <p class="card__eyebrow">{eyebrow}</p>}
-    <h3 class="card__title">{title}</h3>
+    <Heading class="card__title">{title}</Heading>
     {summary && <p class="card__summary">{summary}</p>}
     <span class="card__link">
       {linkLabel}
