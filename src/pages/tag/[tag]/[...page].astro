@@ -25,6 +25,6 @@ const { tag, posts, page } = Astro.props;
   page={page}
   posts={posts}
   pageUrl={(n) => tagUrl(tag, n)}
-  title={page === 1 ? tag : `${tag} — Page ${page}`}
+  title={page === 1 ? `Posts tagged ${tag}` : `Posts tagged ${tag}, page ${page}`}
   heading={{ eyebrow: 'Tag', title: tag, intro: `${postCount(posts.length)} tagged ${tag}.` }}
 />

@@ -1,5 +1,5 @@
 ---
-# Browser tab title and search-engine description.
+# Browser tab title (shown as "<title> - Paul Goode") and search-engine description.
 title: About
 description: Paul Goode — senior UX designer, artist, and musician.
 heading: About

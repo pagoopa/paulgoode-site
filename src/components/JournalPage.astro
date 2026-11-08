@@ -28,9 +28,10 @@ interface Props {
 const { page, heading, emptyText = 'Nothing published yet.' } = Astro.props;
 const allPosts = Astro.props.posts ?? (await getJournalPosts());
 const pageUrl = Astro.props.pageUrl ?? journalPageUrl;
-const title = Astro.props.title ?? (page === 1 ? 'Journal' : `Journal — Page ${page}`);
 const pageCount = Math.max(1, Math.ceil(allPosts.length / POSTS_PER_PAGE));
 const posts = allPosts.slice((page - 1) * POSTS_PER_PAGE, page * POSTS_PER_PAGE);
+// The home page is titled after its lead post; later pages of the journal after their number.
+const title = Astro.props.title ?? (page === 1 ? posts[0]?.data.title : `Blog, page ${page}`);
 ---
 
 <Layout title={title}>

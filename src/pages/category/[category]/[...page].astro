@@ -25,7 +25,7 @@ const label = categoryLabel(category);
   page={page}
   posts={posts}
   pageUrl={(n) => categoryUrl(category, n)}
-  title={page === 1 ? label : `${label} — Page ${page}`}
+  title={page === 1 ? `${label} posts` : `${label} posts, page ${page}`}
   heading={{ eyebrow: 'Category', title: label, intro: `${postCount(posts.length)} filed under ${label}.` }}
   emptyText="Nothing filed here yet."
 />
