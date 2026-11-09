@@ -7,7 +7,7 @@ category: life
 tags: [notes]
 ---
 
-[Watch the video on YouTube](https://www.youtube.com/watch?v=tARDKRFowMw)
+<div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/tARDKRFowMw" title="008 - Old Notes" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 Looking back can be fun.
 

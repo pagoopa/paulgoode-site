@@ -8,7 +8,7 @@ category: art
 tags: [video, soundtrack, ai-generated]
 ---
 
-[Watch the video on YouTube](https://www.youtube.com/watch?v=HCN8sGvEqgg)
+<div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/HCN8sGvEqgg" title="Nylon Nights - Study &amp; Focus Mix" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 Explored a few visual themes and making a long soundtrack. This was a lot of fun to create. Guess it is like one of those lo-fi study tracks, except… a little more acidic. Still has that deep focus drone feel.
 
