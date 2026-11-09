@@ -22,12 +22,14 @@ Over the weekend, used those images to set an initial drawing and underpainting 
 
 Then, continuing to figure out the initial painting. (Takes a while… and I keep turning it to make it easier to reach areas.)
 
-![011 - Messy Monday: image 3 of 4](./image-3.jpg)
+<div class="gallery">
 
-![011 - Messy Monday: image 4 of 4](./image-4.jpg)
+![The second canvas with blue and green triangular shapes and dense patterns](./image-3.jpg)
+
+![The same canvas further along, with pink and purple details added](./image-4.jpg)
+
+</div>
 
 That’s about it. Again, just trying to share daily-ish updates. Aiming for 30 days. Hope this finds you well.
 
 Paul
-
----

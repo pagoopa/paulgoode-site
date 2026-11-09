@@ -12,11 +12,9 @@ tags: [encouragement, notes]
 
 ---
 
----
-
 Like any modern spoiled brat that needs to recall memories, I looked at my phone photos archive to figure out what was going on in early 2022. (You know, that’s the last time I updated this sketchbook.)
 
-What I found was a photo of these papers stuck up in my office. Let’s call them the "Triptych of Encouragement,” but each one of the notes is ruthless.
+What I found was a photo of these papers stuck up in my office. Let’s call them the “Triptych of Encouragement,” but each one of the notes is ruthless.
 
 ![Stickies on the Fireplace](./image-1.jpg)
 
@@ -31,7 +29,7 @@ This one is rough and says:
 
 It assumes too much. Firstly, having a project assumes that I know what I’m doing. Picking up dog poop in the backyard could be the most “defined” project I put myself through.
 
-Then, “Idea Generator”? This whole thing would be more realistic if it said, “Half-Backed Idea Abandoner.” **That’s reality.**
+Then, “Idea Generator”? This whole thing would be more realistic if it said, “Half-Baked Idea Abandoner.” **That’s reality.**
 
 But, no, that’s not how we’re supposed to roll. In the Kingdom, we give ourselves a break and lean into hope. Not temporary hope, but hope that leaves a stain.
 
@@ -104,12 +102,16 @@ Here’s an animation of the drawing coming together.
 
 Then, here’s the final assembled image.
 
-![003 - Triptych of Encouragement: image 5 of 7](./image-5.jpg)
+![The three notes redrawn as one graphic: Project-Oriented Idea Generator, Independent Artist, Designer, UXer on a KOG Mission, and Kreative License, with four small encouragement cards](./image-5.jpg)
 
 Then, laminated and posted.
 
-![003 - Triptych of Encouragement: image 6 of 7](./image-6.jpg)
+<div class="gallery">
 
-![003 - Triptych of Encouragement: image 7 of 7](./image-7.jpg)
+![The printed graphic going through a laminator on the carpet](./image-6.jpg)
+
+![The laminated graphic taped to a whiteboard among sticky notes](./image-7.jpg)
+
+</div>
 
 OK. Keep Going!

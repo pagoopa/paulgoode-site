@@ -12,30 +12,30 @@ tags: [video, soundtrack, ai-generated]
 
 Explored a few visual themes and making a long soundtrack. This was a lot of fun to create. Guess it is like one of those lo-fi study tracks, except… a little more acidic. Still has that deep focus drone feel.
 
-Obviously, I was generating the image and video segments. Then sequenced everything, making some kaleidoscope overlays. It still have a bit of craft to it.
+Obviously, I was generating the image and video segments. Then sequenced everything, making some kaleidoscope overlays. It still has a bit of craft to it.
 
 The wild thing was playing with the potential storyline that was forming.
 
-![Been a Minute: image 1 of 10](./image-1.jpg)
+![A man and a boy with umbrellas walk past Defender’s Supply on a rainy city street while a man inside swings a bat](./image-1.jpg)
 
 <!-- more -->
 
-![Been a Minute: image 2 of 10](./image-2.jpg)
+![Close-up of the man’s and the boy’s worried faces](./image-2.jpg)
 
-![Been a Minute: image 3 of 10](./image-3.jpg)
+![The man and the boy crouch under one umbrella on a glowing, rain-soaked street](./image-3.jpg)
 
-![Been a Minute: image 4 of 10](./image-4.jpg)
+![Parachutes drifting down across a purple starry sky](./image-4.jpg)
 
-![Been a Minute: image 5 of 10](./image-5.jpg)
+![Two soldiers in gas masks sit in the back of a truck, a city bridge behind them](./image-5.jpg)
 
-![Been a Minute: image 6 of 10](./image-6.jpg)
+![A soldier in a gas mask looks at a glowing tablet inside the truck](./image-6.jpg)
 
-![Been a Minute: image 7 of 10](./image-7.jpg)
+![A giant lizard rises from a jungle under a purple sky](./image-7.jpg)
 
-![Been a Minute: image 8 of 10](./image-8.jpg)
+![A flood of turquoise water carrying umbrellas through a city canyon](./image-8.jpg)
 
-![Been a Minute: image 9 of 10](./image-9.jpg)
+![An old man holds a photo of his younger self in the jungle](./image-9.jpg)
 
-![Been a Minute: image 10 of 10](./image-10.jpg)
+![The old man in his shop, with tears on his face](./image-10.jpg)
 
 Be well.

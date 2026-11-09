@@ -18,25 +18,33 @@ I laminated and stuck these notes up on the wall. Then, looked at the canvas pai
 
 Looking back at some old photos, seems like it began in 2013. What? Well, paintings have always taken a while to finish. They are challenging. For this one, I even used photos to figure out possible color schemes.
 
-![009 - Prep Work: image 2 of 15](./image-2.jpg)
+<div class="gallery">
 
-![009 - Prep Work: image 3 of 15](./image-3.jpg)
+![An early stage of the painting: a sun, rays and figures drawn in red-brown line over a yellow wash](./image-2.jpg)
 
-![009 - Prep Work: image 4 of 15](./image-4.jpg)
+![The same painting with the figures colored light blue against orange mountains](./image-3.jpg)
 
-![009 - Prep Work: image 5 of 15](./image-5.jpg)
+![A color study of the painting with the figures in pink and red](./image-4.jpg)
+
+![A color study of the painting with the figures in bright blue under a yellow sun](./image-5.jpg)
+
+</div>
 
 More recently, I did finish this wild one. I let it be about light, disruption, melting and liquid energy. This thing I stewarded for years, but finally called it done in 2023.
 
-![009 - Prep Work: image 6 of 15](./image-6.jpg)
+<div class="gallery">
 
-![009 - Prep Work: image 7 of 15](./image-7.jpg)
+![Working on the finished canvas with a palette tray beside the desk](./image-6.jpg)
 
-![009 - Prep Work: image 8 of 15](./image-8.jpg)
+![The finished painting, a dense swirl of yellow, blue and green lines, propped on a red milk crate](./image-7.jpg)
 
-![009 - Prep Work: image 9 of 15](./image-9.jpg)
+![A close view of the painting’s swirling lines and eye shapes](./image-8.jpg)
 
-![009 - Prep Work: image 10 of 15](./image-10.jpg)
+![The finished painting leaning against a wooden fence outdoors](./image-9.jpg)
+
+![A detail of red, blue and green brushstrokes in the painting](./image-10.jpg)
+
+</div>
 
 ## What is important?
 
@@ -44,7 +52,7 @@ Looking back at my old notes, there have been so many scribbles about my old job
 
 All these sketches have been fleeting. Technology moves on. I’ve been through 4 layoffs now. The thing that remains consistent is the call from deep within to “go for it.”
 
-![009 - Prep Work: image 11 of 15](./image-11.jpg)
+![A worn red Field Notes notebook held over a desk of note cards](./image-11.jpg)
 
 Out of anyone in the world, I’m the only one with my assignment. I’m the only one that has “whatever creative” locked up inside of me that has not seen the light of day… and will never see itself come to life unless it is stewarded into existence.
 
@@ -52,11 +60,15 @@ Time to lean in. Lean into time?
 
 ## Stretch
 
-![009 - Prep Work: image 12 of 15](./image-12.jpg)
+<div class="gallery">
 
-![009 - Prep Work: image 13 of 15](./image-13.jpg)
+![Raw canvas draped over handmade stretcher frames in the office](./image-12.jpg)
 
-![009 - Prep Work: image 14 of 15](./image-14.jpg)
+![Stretched canvases leaning against the wall beside a planning whiteboard](./image-13.jpg)
+
+![Brushing gesso onto a stretched canvas on the desk](./image-14.jpg)
+
+</div>
 
 Collected my old handmade stretchers from the garage and attic. Cut canvas, stretched it and applied gesso to prep.
 

@@ -1,6 +1,6 @@
 ---
 title: "The Power of 10"
-description: "Had to add a UV-protecting varnish the last of the paintings."
+description: "Had to add a UV-protecting varnish to the last of the paintings."
 pubDate: 2026-08-30
 draft: true
 thumbnail: ./image-1.jpg
@@ -8,9 +8,9 @@ category: art
 tags: [make-10, painting]
 ---
 
-Had to add a UV-protecting varnish the last of the paintings. Took them outside. Laid them all out on the pavement. Realized there were 10 in all.
+Had to add a UV-protecting varnish to the last of the paintings. Took them outside. Laid them all out on the pavement. Realized there were 10 in all.
 
-![The Power of 10: image 1 of 12](./image-1.jpg)
+![Ten black-and-white paintings laid out in two rows on the pavement](./image-1.jpg)
 
 <!-- more -->
 
@@ -30,17 +30,17 @@ Make 10.
 
 Here were the first 5.
 
-![The Power of 10: image 2 of 12](./image-2.jpg)
+![The first five paintings on a kitchen table](./image-2.jpg)
 
 Then, I kept going.
 
-![The Power of 10: image 3 of 12](./image-3.jpg)
+![Two new paintings taped side by side: a figure-eight shape and a bird-like form](./image-3.jpg)
 
-![The Power of 10: image 4 of 12](./image-4.jpg)
+![A painting of a large face in profile with a stubbled chin, next to its sketchbook version](./image-4.jpg)
 
-![The Power of 10: image 5 of 12](./image-5.jpg)
+![A painting of an oval shape with patterned wings, next to its sketchbook version](./image-5.jpg)
 
-![The Power of 10: image 6 of 12](./image-6.jpg)
+![A painting of a winged heart over arches, next to its sketchbook version](./image-6.jpg)
 
 I made 10.
 
@@ -58,13 +58,13 @@ Here’s where I’ve been poking around.
 
 ### Ghost Man
 
-![The Power of 10: image 7 of 12](./image-7.jpg)
+![A Ghost Man card: a ghostly figure with a long arm reaching toward lightning shapes on a yellow sticky note](./image-7.jpg)
 
-![The Power of 10: image 8 of 12](./image-8.jpg)
+![Three Ghost Man cards laid on a sketchbook page](./image-8.jpg)
 
 These are all a play on a few drawings from a LONG time ago. This thing has always been interesting to me. It is on a single card, but the combination is wild.
 
-![The Power of 10: image 9 of 12](./image-9.jpg)
+![Ghost Man in blue ink beside a yellow-and-black panel of eyes and chains](./image-9.jpg)
 
 I’m often thinking about the heaviness of this fleshly life and the fact of leaving it all behind, looking back on it as it were a dream (after the death of the body). All of the body’s wants, needs, expectations, pains… gone.
 

@@ -36,7 +36,7 @@ Here it is in all of its propensity to be odd. I will have to spend more time to
 
 Oh… I was also able to make this other thing, er, dude.
 
-This particular dude appears to be leveraging a farmer’s handkerchief… which is where one nostril is closed and air is force out of the open nostril. This results in, hopefully, snot being ejected from the skull of the individual… er… dude (in this case).
+This particular dude appears to be leveraging a farmer’s handkerchief… which is where one nostril is closed and air is forced out of the open nostril. This results in, hopefully, snot being ejected from the skull of the individual… er… dude (in this case).
 
 ![A black-and-white painting of a half face with a stubbled chin and a wide eye, next to its smaller sketchbook version](./image-2.jpg)
 

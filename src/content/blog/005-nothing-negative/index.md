@@ -13,4 +13,4 @@ Anyway, as a Creative Person, “FUD” can sit on my chest and make me want to 
 
 That’s why I love spending time encouraging myself. Even when there’s anxiety, I still feel a glowing shield all around me in the midst of it. To get over the anxiety, I just “unsubscribe” and lean into love, joy & hope.
 
-What if all that “FUD” could be uprooted, unsubscribed, once an for all? **What would you do?**
+What if all that “FUD” could be uprooted, unsubscribed, once and for all? **What would you do?**
