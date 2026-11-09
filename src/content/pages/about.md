@@ -5,10 +5,4 @@ description: Paul Goode — senior UX designer, artist, and musician.
 heading: About
 ---
 
-Placeholder bio — replace with the real one. Senior UX designer and
-visual thinker with a fine arts background (VCU, painting and
-printmaking), working across enterprise and consumer product design.
-
-Runs Uplifting Ink, a visual thinking company spanning products and
-events, organized around one idea: Dream Out Loud — making process
-visible and learning in public.
+Artist and UX designer, figuring things out day by day. I think by talking and drawing — this is where I take notes and share what I'm learning.

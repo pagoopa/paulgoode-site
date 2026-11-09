@@ -12,7 +12,7 @@ import { getCollection } from 'astro:content';
 import { getSeriesEntries, entryUrl } from '../../../lib/series';
 
 export async function getStaticPaths() {
-  const allSeries = await getCollection('series');
+  const allSeries = await getCollection('series', ({ data }) => import.meta.env.DEV || !data.draft);
   return allSeries.map((series) => ({ params: { series: series.id }, props: { series } }));
 }
 

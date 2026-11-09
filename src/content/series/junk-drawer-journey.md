@@ -5,4 +5,5 @@ domains:
   - spirit
   - art
 status: active
+draft: true
 ---

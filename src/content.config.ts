@@ -28,6 +28,8 @@ const series = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/series' }),
   schema: z.object({
     title: z.string(),
+    // true leaves the series' page out of the built site (it still shows when running locally).
+    draft: z.boolean().default(false),
     // Landing intro. The premise is the one-line reason; this is the text the page shows today.
     description: z.string(),
     // "An excuse to…". Optional until the sentence is written.
