@@ -3,6 +3,7 @@ title: "Starting small (again)"
 description: "And you can too!"
 pubDate: 2026-09-13
 category: art
+thumbnail: ./cover.jpg
 tags: [thumbnails, ghost-boy, desert-dreams]
 ---
 
@@ -10,13 +11,13 @@ Spent the weekend drafting some thumbnails for my next series. Made 58 total ide
 
 *I’m kinda rambling in here… but hope you find some encouragement.*
 
-![Pencil sketches to ink](./image-1.jpg)
+![Pencil sketches to ink](./start-small-01.jpg)
 
 <!-- more -->
 
-![Rows of small black-and-white ink thumbnail drawings on paper cards, laid out on a wooden desk](./image-2.jpg)
+![Rows of small black-and-white ink thumbnail drawings on paper cards, laid out on a wooden desk](./start-small-02.jpg)
 
-![Old Happy Man](./image-3.jpg)
+![Old Happy Man](./start-small-03.jpg)
 
 **Starting small feels right.** These are drafts. Maybe terrible… but as I make something a little larger, it gives me an assortment to pick from.
 
@@ -48,13 +49,13 @@ Maybe quilting? You’ve cut all your squares, mapped it out, and now you find t
 
 One thing you’ll see is “ghost boy” at the moment. He gets fascinated with shiny objects and forgets that he is only a ghost. As a ghost, he can’t take shiny objects home with him. He gets overwhelmed with life, forgetting that he is just ghost that here today and gone tomorrow.
 
-![Ghost Boy](./image-4.jpg)
+![Ghost Boy](./start-small-04.jpg)
 
 Then, you’ll see some ideas related to the desert and driving. In my 20’s, I had the luxury of driving across the USA a lot. Driving into the desert was scary.
 
 You had to make sure you had enough gas because you were going to be on a LONG road ahead. It was desolate. You were alone.
 
-![Desert Dreams](./image-5.jpg)
+![Desert Dreams](./start-small-05.jpg)
 
 Then, as you’re driving along there would be billboards with attention-grabbing offers to see aliens or mummies at specific rest stops.
 
@@ -62,11 +63,11 @@ Your imagination would go wild. Out of mad curiosity you would pull into the res
 
 The creature would always be something completely ridiculous and you would realize that someone’s uncle slapped it together, put it in a glass box, and left it out back for suckers to pay and see.
 
-![Mysteries](./image-6.jpg)
+![Mysteries](./start-small-06.jpg)
 
 I guess this series is called “The Mishaps & Messy Adventures of Ghost Boy” or something. If successful, there will be big things, small things, and wall sculptures/reliefs. I see color.
 
-![Planning Ahead](./image-7.jpg)
+![Planning Ahead](./start-small-07.jpg)
 
 ## Back to you. What should YOU do?
 
@@ -98,10 +99,10 @@ I did the thing.
 
 ---
 
-By the way, I made a [shop](https://shop.paulgoode.com) with the previous series. They’re kind of big and IMHO would look nice in pairs.
+By the way, I made a [shop](https://www.paulgoode.com/shop/) with the previous series. They’re kind of big and IMHO would look nice in pairs.
 
 I have no clue if the pricing makes sense or if anyone cares. Mostly doing it for myself… because pricing and putting my stuff out there is hard. (I’m doing the hard things.) If you have educated feedback, please do share.
 
-**Visit** - **[shop.paulgoode.com](https://shop.paulgoode.com)**
+**Visit** - **[shop.paulgoode.com](https://www.paulgoode.com/shop/)**
 
 – Paul

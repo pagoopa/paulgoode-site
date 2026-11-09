@@ -2,6 +2,7 @@
 title: "009 - Prep Work"
 description: "Stretched some canvas. Preparing to be old."
 pubDate: 2025-03-20
+draft: true
 thumbnail: ./image-1.jpg
 category: studio
 tags: [painting, notes]

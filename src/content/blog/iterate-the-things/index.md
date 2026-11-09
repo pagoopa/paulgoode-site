@@ -2,6 +2,7 @@
 title: "Iterate the Things"
 description: "A little bit bigger"
 pubDate: 2026-08-19
+draft: true
 thumbnail: ./image-1.jpg
 category: art
 tags: [thumbnails, tiktok, pagoopaloops]

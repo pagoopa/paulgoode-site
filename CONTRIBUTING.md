@@ -289,3 +289,12 @@ title of the newest post; a post uses its own title; About, Projects, Newsletter
 use the `title` in their file in `src/content/pages/`; a project uses its name. Category and
 tag pages read "Art posts" and "Posts tagged ghost-boy", and later pages add ", page 2". The
 same title is used for link previews. The pattern lives in `src/lib/title.ts`.
+
+## Hiding content until it's ready
+
+- **A post or project:** add `draft: true` to its top block. Drafts are left out of the built site
+  (pages, lists, counts, feeds and the sitemap) but still show when you run `npm run dev`, so you
+  can keep working on them. Remove the line, or set it to `false`, to publish.
+- **A sidebar section on every page:** the list `hiddenEverywhere` in `src/lib/sidebar.ts`
+  (About is in it for now). Take a name out to bring the section back.
+- A single page can still hide sections with `sidebarHide` in its own top block.

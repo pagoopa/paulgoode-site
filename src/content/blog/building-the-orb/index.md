@@ -2,6 +2,7 @@
 title: "Building the Orb"
 description: "It was the morning of Saturday."
 pubDate: 2026-08-22
+draft: true
 thumbnail: ./image-1.jpg
 category: studio
 tags: [orb]

@@ -2,6 +2,7 @@
 title: "Building the Spork"
 description: "Tasty & cruddy soundtrack also made."
 pubDate: 2026-08-24
+draft: true
 thumbnail: ./image-1.jpg
 category: art
 tags: [spork, orb, learning]
