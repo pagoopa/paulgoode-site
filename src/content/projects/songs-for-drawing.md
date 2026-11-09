@@ -4,5 +4,6 @@ summary: "Short pieces written to draw to, recorded at home."
 type: music
 # featured: true
 order: 6
+draft: true
 ---
 Placeholder: the write-up for this project goes here.

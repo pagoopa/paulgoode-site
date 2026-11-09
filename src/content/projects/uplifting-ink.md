@@ -4,5 +4,6 @@ summary: "Building a visual thinking company: the products, the workshops and th
 type: case-study
 featured: true
 order: 1
+draft: true
 ---
 Placeholder: the write-up for this project goes here.

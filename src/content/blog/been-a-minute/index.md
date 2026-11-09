@@ -2,6 +2,7 @@
 title: "Been a Minute"
 description: "I made something"
 pubDate: 2026-06-11
+draft: true
 thumbnail: ./image-1.jpg
 category: art
 tags: [video, soundtrack, ai-generated]
