@@ -6,7 +6,7 @@ import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
 import SectionHeader from '../components/SectionHeader.astro';
 import PageActions from '../components/PageActions.astro';
-import portrait from '../assets/profile-circle.png';
+import portrait from '../assets/paul-sketch.png';
 import { getPage } from '../lib/pages';
 
 const { data, Content } = await getPage('about');
@@ -25,7 +25,15 @@ const { data, Content } = await getPage('about');
       <div class="about__bio prose">
         <Content />
       </div>
-      <Image class="about__portrait" src={portrait} alt="Paul Goode" width={220} height={220} loading="eager" />
+      <Image
+        class="about__portrait"
+        src={portrait}
+        alt="Sketch portrait of Paul Goode"
+        width={220}
+        height={220}
+        densities={[1, 2]}
+        loading="eager"
+      />
     </div>
 
     <PageActions actions={data.actions} />
