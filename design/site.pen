@@ -15799,8 +15799,8 @@
     {
       "type": "text",
       "id": "S2QEeA",
-      "x": -311,
-      "y": 7050,
+      "x": -460,
+      "y": 8324,
       "fill": "#38eeff",
       "content": "Series - Page",
       "fontFamily": "Roboto Mono",
@@ -17250,8 +17250,8 @@
     {
       "type": "frame",
       "id": "F6FNm",
-      "x": -311,
-      "y": 7587,
+      "x": -460,
+      "y": 8721,
       "name": "Series — Desktop (1200)",
       "theme": {
         "device": "lg"
@@ -17723,8 +17723,8 @@
     {
       "type": "frame",
       "id": "Zksjh",
-      "x": 1009,
-      "y": 7587,
+      "x": 860,
+      "y": 8721,
       "name": "Series — Tablet (810)",
       "theme": {
         "device": "md"
@@ -18055,8 +18055,8 @@
     {
       "type": "frame",
       "id": "uABk5",
-      "x": 1939,
-      "y": 7587,
+      "x": 1790,
+      "y": 8721,
       "name": "Series — Mobile (390)",
       "theme": {
         "device": "sm"
@@ -19584,12 +19584,7 @@
                                   "name": "Media",
                                   "width": "fill_container",
                                   "height": 420,
-                                  "fill": {
-                                    "type": "image",
-                                    "enabled": true,
-                                    "url": "../src/content/notes/cloud-mucous.jpg",
-                                    "mode": "cover"
-                                  }
+                                  "fill": "$surface-subtle"
                                 },
                                 {
                                   "type": "frame",
@@ -19711,12 +19706,7 @@
                                   "name": "Media",
                                   "width": "fill_container",
                                   "height": 420,
-                                  "fill": {
-                                    "type": "image",
-                                    "enabled": true,
-                                    "url": "../src/content/notes/mystical-union.jpg",
-                                    "mode": "cover"
-                                  }
+                                  "fill": "$surface-subtle"
                                 },
                                 {
                                   "type": "frame",
@@ -19831,12 +19821,7 @@
                                       "name": "Media",
                                       "width": "fill_container",
                                       "height": 260,
-                                      "fill": {
-                                        "type": "image",
-                                        "enabled": true,
-                                        "url": "../src/content/notes/evening-walks-1.jpg",
-                                        "mode": "cover"
-                                      }
+                                      "fill": "$surface-subtle"
                                     },
                                     {
                                       "type": "frame",
@@ -19844,12 +19829,7 @@
                                       "name": "Media",
                                       "width": "fill_container",
                                       "height": 260,
-                                      "fill": {
-                                        "type": "image",
-                                        "enabled": true,
-                                        "url": "../src/content/notes/evening-walks-2.jpg",
-                                        "mode": "cover"
-                                      }
+                                      "fill": "$surface-subtle"
                                     }
                                   ]
                                 },
@@ -19866,12 +19846,7 @@
                                       "name": "Media",
                                       "width": "fill_container",
                                       "height": 260,
-                                      "fill": {
-                                        "type": "image",
-                                        "enabled": true,
-                                        "url": "../src/content/notes/evening-walks-3.jpg",
-                                        "mode": "cover"
-                                      }
+                                      "fill": "$surface-subtle"
                                     },
                                     {
                                       "type": "frame",
@@ -19879,12 +19854,7 @@
                                       "name": "Media",
                                       "width": "fill_container",
                                       "height": 260,
-                                      "fill": {
-                                        "type": "image",
-                                        "enabled": true,
-                                        "url": "../src/content/notes/evening-walks-4.jpg",
-                                        "mode": "cover"
-                                      }
+                                      "fill": "$surface-subtle"
                                     }
                                   ]
                                 },
@@ -20087,12 +20057,7 @@
                               "name": "Media",
                               "width": "fill_container",
                               "height": 374,
-                              "fill": {
-                                "type": "image",
-                                "enabled": true,
-                                "url": "../src/content/notes/cloud-mucous.jpg",
-                                "mode": "cover"
-                              }
+                              "fill": "$surface-subtle"
                             },
                             {
                               "type": "frame",
@@ -20214,12 +20179,7 @@
                               "name": "Media",
                               "width": "fill_container",
                               "height": 374,
-                              "fill": {
-                                "type": "image",
-                                "enabled": true,
-                                "url": "../src/content/notes/mystical-union.jpg",
-                                "mode": "cover"
-                              }
+                              "fill": "$surface-subtle"
                             },
                             {
                               "type": "frame",
@@ -20334,12 +20294,7 @@
                                   "name": "Media",
                                   "width": "fill_container",
                                   "height": 230,
-                                  "fill": {
-                                    "type": "image",
-                                    "enabled": true,
-                                    "url": "../src/content/notes/evening-walks-1.jpg",
-                                    "mode": "cover"
-                                  }
+                                  "fill": "$surface-subtle"
                                 },
                                 {
                                   "type": "frame",
@@ -20347,12 +20302,7 @@
                                   "name": "Media",
                                   "width": "fill_container",
                                   "height": 230,
-                                  "fill": {
-                                    "type": "image",
-                                    "enabled": true,
-                                    "url": "../src/content/notes/evening-walks-2.jpg",
-                                    "mode": "cover"
-                                  }
+                                  "fill": "$surface-subtle"
                                 }
                               ]
                             },
@@ -20369,12 +20319,7 @@
                                   "name": "Media",
                                   "width": "fill_container",
                                   "height": 230,
-                                  "fill": {
-                                    "type": "image",
-                                    "enabled": true,
-                                    "url": "../src/content/notes/evening-walks-3.jpg",
-                                    "mode": "cover"
-                                  }
+                                  "fill": "$surface-subtle"
                                 },
                                 {
                                   "type": "frame",
@@ -20382,12 +20327,7 @@
                                   "name": "Media",
                                   "width": "fill_container",
                                   "height": 230,
-                                  "fill": {
-                                    "type": "image",
-                                    "enabled": true,
-                                    "url": "../src/content/notes/evening-walks-4.jpg",
-                                    "mode": "cover"
-                                  }
+                                  "fill": "$surface-subtle"
                                 }
                               ]
                             },
@@ -20595,12 +20535,7 @@
                               "name": "Media",
                               "width": "fill_container",
                               "height": 176,
-                              "fill": {
-                                "type": "image",
-                                "enabled": true,
-                                "url": "../src/content/notes/cloud-mucous.jpg",
-                                "mode": "cover"
-                              }
+                              "fill": "$surface-subtle"
                             },
                             {
                               "type": "frame",
@@ -20722,12 +20657,7 @@
                               "name": "Media",
                               "width": "fill_container",
                               "height": 176,
-                              "fill": {
-                                "type": "image",
-                                "enabled": true,
-                                "url": "../src/content/notes/mystical-union.jpg",
-                                "mode": "cover"
-                              }
+                              "fill": "$surface-subtle"
                             },
                             {
                               "type": "frame",
@@ -20842,12 +20772,7 @@
                                   "name": "Media",
                                   "width": "fill_container",
                                   "height": 120,
-                                  "fill": {
-                                    "type": "image",
-                                    "enabled": true,
-                                    "url": "../src/content/notes/evening-walks-1.jpg",
-                                    "mode": "cover"
-                                  }
+                                  "fill": "$surface-subtle"
                                 },
                                 {
                                   "type": "frame",
@@ -20855,12 +20780,7 @@
                                   "name": "Media",
                                   "width": "fill_container",
                                   "height": 120,
-                                  "fill": {
-                                    "type": "image",
-                                    "enabled": true,
-                                    "url": "../src/content/notes/evening-walks-2.jpg",
-                                    "mode": "cover"
-                                  }
+                                  "fill": "$surface-subtle"
                                 }
                               ]
                             },
@@ -20877,12 +20797,7 @@
                                   "name": "Media",
                                   "width": "fill_container",
                                   "height": 120,
-                                  "fill": {
-                                    "type": "image",
-                                    "enabled": true,
-                                    "url": "../src/content/notes/evening-walks-3.jpg",
-                                    "mode": "cover"
-                                  }
+                                  "fill": "$surface-subtle"
                                 },
                                 {
                                   "type": "frame",
@@ -20890,12 +20805,7 @@
                                   "name": "Media",
                                   "width": "fill_container",
                                   "height": 120,
-                                  "fill": {
-                                    "type": "image",
-                                    "enabled": true,
-                                    "url": "../src/content/notes/evening-walks-4.jpg",
-                                    "mode": "cover"
-                                  }
+                                  "fill": "$surface-subtle"
                                 }
                               ]
                             },
@@ -43446,8 +43356,8 @@
     {
       "type": "frame",
       "id": "L21qzW",
-      "x": 800,
-      "y": 0,
+      "x": 6,
+      "y": -11,
       "name": "Card / Post / Lead",
       "reusable": true,
       "clip": true,
@@ -43575,8 +43485,8 @@
     {
       "type": "frame",
       "id": "eLVmm",
-      "x": 800,
-      "y": 340,
+      "x": 6,
+      "y": 351,
       "name": "Card / Post",
       "reusable": true,
       "clip": true,
@@ -51658,6 +51568,20 @@
           ]
         }
       ]
+    },
+    {
+      "type": "rectangle",
+      "id": "l1Hhv",
+      "x": -9224.753174985757,
+      "y": 7968.141518481105,
+      "fill": {
+        "type": "image",
+        "enabled": true,
+        "url": "paul-head-2026-sketch.png",
+        "mode": "cover"
+      },
+      "width": 933,
+      "height": 933
     }
   ],
   "themes": {
