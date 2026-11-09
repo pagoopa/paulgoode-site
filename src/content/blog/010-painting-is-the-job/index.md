@@ -2,6 +2,7 @@
 title: "010 - Painting is the Job"
 description: "Update on painting and some things I'm listening to"
 pubDate: 2025-03-22
+thumbnail: ./image-1.jpg
 category: studio
 tags: [painting]
 ---
