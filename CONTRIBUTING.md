@@ -295,6 +295,10 @@ same title is used for link previews. The pattern lives in `src/lib/title.ts`.
 - **A post or project:** add `draft: true` to its top block. Drafts are left out of the built site
   (pages, lists, counts, feeds and the sitemap) but still show when you run `npm run dev`, so you
   can keep working on them. Remove the line, or set it to `false`, to publish.
+- **A series:** the same `draft: true` in its file in `src/content/series/`.
+- **A link in the header and footer:** add `hidden: true` to its entry in `src/lib/nav.ts` (Projects
+  is hidden for now; the `/projects` page itself still exists but is linked from nowhere and is
+  left out of the sitemap). Take the line off to bring it back.
 - **A sidebar section on every page:** the list `hiddenEverywhere` in `src/lib/sidebar.ts`
   (About is in it for now). Take a name out to bring the section back.
 - A single page can still hide sections with `sidebarHide` in its own top block.
