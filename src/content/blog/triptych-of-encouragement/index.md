@@ -2,6 +2,7 @@
 title: "003 - Triptych of Encouragement"
 description: "Rolling back the years... and fears."
 pubDate: 2025-03-11
+thumbnail: ./image-1.jpg
 category: spirit
 tags: [encouragement, notes]
 ---

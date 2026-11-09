@@ -2,6 +2,7 @@
 title: "001 - Deliverance in San Antonio"
 description: "Spent some time with Michael Schwab to discuss our experience at the revival in San Antonio, as TSNL Forerunners, and witnessing the deliverance of a young man of witchcraft by Daniel Adams."
 pubDate: 2022-02-21
+thumbnail: ./image-1.jpg
 category: spirit
 tags: [deliverance]
 ---

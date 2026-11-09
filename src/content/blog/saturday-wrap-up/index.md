@@ -2,6 +2,7 @@
 title: "012 - Saturday Wrap Up"
 description: "Finished that painting. Storytelling workshop completed. Long week done."
 pubDate: 2025-03-30
+thumbnail: ./image-1.jpg
 category: studio
 tags: [painting, storytelling]
 ---

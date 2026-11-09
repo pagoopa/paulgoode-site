@@ -2,6 +2,7 @@
 title: "002 - Current State"
 description: "This graphic sums it up. Everything that I'm loosely thinking about and grappling with as a designer."
 pubDate: 2022-02-28
+thumbnail: ./image-1.jpg
 category: design
 tags: [visual-thinking]
 ---
