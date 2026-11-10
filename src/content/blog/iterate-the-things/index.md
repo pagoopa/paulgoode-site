@@ -22,42 +22,50 @@ Here are images that have been uploaded to “Notes” in Substack. (I’m mostl
 
 ### Set #1
 
-![Iterate the Things: image 1 of 16](./image-1.jpg)
+<div class="gallery">
 
-![Iterate the Things: image 2 of 16](./image-2.jpg)
+![A sketchbook page inked in bold black and white: a round bird-like shape over angled rays, with its thumbnail card propped behind](./image-1.jpg)
 
-![Iterate the Things: image 3 of 16](./image-3.jpg)
+![A sketchbook page with a sun over bands of patterns and a wavy bottom edge, with its thumbnail card behind](./image-2.jpg)
 
-![Iterate the Things: image 4 of 16](./image-4.jpg)
+![A sketchbook page with clouds, crosshatched hills, a row of circles and a dark triangle](./image-3.jpg)
 
-![Iterate the Things: image 5 of 16](./image-5.jpg)
+![A sketchbook page with a crest at the top, rays, a row of circles and a wavy band](./image-4.jpg)
 
-![Iterate the Things: image 6 of 16](./image-6.jpg)
+![A sketchbook page with a person-shaped silhouette in a frame above a row of circles](./image-5.jpg)
 
-![Iterate the Things: image 7 of 16](./image-7.jpg)
+![A sketchbook page laid out like a screen, with a column of lines and dots, figures and panels](./image-6.jpg)
 
-![Iterate the Things: image 8 of 16](./image-8.jpg)
+![A sketchbook page laid out like a control panel, with dials, lines and striped panels](./image-7.jpg)
 
-![Iterate the Things: image 9 of 16](./image-9.jpg)
+![A sketchbook page with a winged heart shape over crossed bands and arches](./image-8.jpg)
+
+![A sketchbook page with a figure inside a circle, framed by rays and an arch](./image-9.jpg)
+
+</div>
 
 ### Set #2
 
-![Iterate the Things: image 10 of 16](./image-10.jpg)
+<div class="gallery">
 
-![Iterate the Things: image 11 of 16](./image-11.jpg)
+![A large ink drawing of the crest, rays and circles, next to its sketchbook version](./image-10.jpg)
 
-![Iterate the Things: image 12 of 16](./image-12.jpg)
+![Five large ink drawings laid out on a kitchen table](./image-11.jpg)
 
-![Iterate the Things: image 13 of 16](./image-13.jpg)
+![A large ink drawing of the control-panel layout, next to its sketchbook version](./image-12.jpg)
 
-![Iterate the Things: image 14 of 16](./image-14.jpg)
+![A large ink drawing of the sun and patterned bands, next to its sketchbook version](./image-13.jpg)
 
-![Iterate the Things: image 15 of 16](./image-15.jpg)
+![A large ink drawing of the framed silhouette, next to its sketchbook version](./image-14.jpg)
 
-![Iterate the Things: image 16 of 16](./image-16.jpg)
+![A large ink drawing with a cross in a diamond at its center, next to its sketchbook version](./image-15.jpg)
+
+![Two of the large ink drawings hung on a wooden fence](./image-16.jpg)
+
+</div>
 
 Thanks to Brad Did for continued “hearting” on the Substack Note posts!
 
-If you’re on TikTok, find me at [Pagoopaloops](https://www.tiktok.com/@pagoopa?_r=1&_t=ZP-991Hnkaxreo).
+If you’re on TikTok, find me at [Pagoopaloops](https://www.tiktok.com/@pagoopa).
 
 Hope you’re doing well. Later.

@@ -24,7 +24,7 @@ I took a few photos and printed them out:
 
 Just looking at my old drawings, there’s loads of content to move to paint:
 
-![010 - Painting is the Job: image 3 of 10](./image-3.jpg)
+![An old, detailed colored-pencil drawing on a large white panel](./image-3.jpg)
 
 ## Painting Process
 
@@ -34,19 +34,23 @@ Started by drawing the concept out with charcoal:
 
 Then, layered on an underpainting in red. This mixes with the charcoal and produces some depth:
 
-![010 - Painting is the Job: image 5 of 10](./image-5.jpg)
+![The canvas on the desk with the drawing blocked in as a red underpainting](./image-5.jpg)
 
 Roughed out some color overlays. Spilled coffee. Started to question if this was a good idea:
 
-![010 - Painting is the Job: image 6 of 10](./image-6.jpg)
+![The canvas with rough blue, green and red color laid over the underpainting](./image-6.jpg)
 
 Added some lines to build it out. Then, it felt worthwhile and made more sense:
 
-![010 - Painting is the Job: image 7 of 10](./image-7.jpg)
+<div class="gallery">
 
-![010 - Painting is the Job: image 8 of 10](./image-8.jpg)
+![The painting with dark outlines and patterns added to the shapes](./image-7.jpg)
 
-![010 - Painting is the Job: image 9 of 10](./image-9.jpg)
+![The painting lying on the desk, seen at an angle](./image-8.jpg)
+
+![The painting propped beside the original drawing and a small reference print](./image-9.jpg)
+
+</div>
 
 That’s where I have paused.
 
@@ -58,7 +62,7 @@ That’s where I have paused.
 
 I have a “storytelling workshop” to lead next week and figuring out what to share. While painting, I have been listening to lots of videos on Storytelling.
 
-What that turned into is binge watching David Perell’s “How I Write” channel. Never heard it before and have love it.
+What that turned into is binge watching David Perell’s “How I Write” channel. Never heard it before and have loved it.
 
 This interview with Mark Forsyth was fantastic.
 
