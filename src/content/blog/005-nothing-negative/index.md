@@ -2,6 +2,7 @@
 title: "005 - Nothing Negative"
 description: "What if you had no fear?"
 pubDate: 2025-03-14
+thumbnail: ./thumbnail.jpg
 category: spirit
 tags: [encouragement]
 ---

@@ -2,6 +2,7 @@
 title: "006 - It Doesn't Matter"
 description: "Highlights from TheQuantumLounge"
 pubDate: 2025-03-15
+thumbnail: ./thumbnail.jpg
 category: life
 tags: [video, encouragement]
 ---
