@@ -41,7 +41,15 @@
     let index = 0;
     let opener: HTMLElement | null = null;
 
-    const source = (item: Item) => item.img.dataset.full || item.img.currentSrc || item.img.src;
+    // The biggest file in the image's srcset, so the lightbox isn't limited to the size picked for the post.
+    const largest = (img: HTMLImageElement) =>
+      img.srcset
+        .split(',')
+        .map((entry) => entry.trim().split(/\s+/))
+        .filter(([url, size]) => url && size?.endsWith('w'))
+        .sort((a, b) => parseInt(b[1]) - parseInt(a[1]))[0]?.[0];
+    const source = (item: Item) =>
+      item.img.dataset.full || largest(item.img) || item.img.currentSrc || item.img.src;
     const captionOf = (item: Item) =>
       item.img.closest('figure')?.querySelector('figcaption')?.textContent?.trim() || item.img.alt || '';
 
