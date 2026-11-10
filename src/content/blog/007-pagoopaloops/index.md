@@ -7,6 +7,6 @@ category: art
 tags: [pagoopaloops, tiktok]
 ---
 
-I have a TikTok channel called [pagoopaloops](https://www.tiktok.com/@pagoopa) which is mostly my music + video creations. Today, the challenge was to create something in one day.
+I have a TikTok channel called [pagoopaloops](https://www.tiktok.com/@pagoopaloops) which is mostly my music + video creations. Today, the challenge was to create something in one day.
 
 Headphones recommended. May not be good. On TikTok, it sorta loops. You should look there, if possible.
