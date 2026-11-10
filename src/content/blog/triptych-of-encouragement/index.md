@@ -100,6 +100,8 @@ I decided to put this into one graphic to print and laminate. Some new elements 
 
 Here’s an animation of the drawing coming together.
 
+<div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/U_Ivu_zsdqE" title="Triptych of Encouragement: the drawing coming together" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
 Then, here’s the final assembled image.
 
 ![The three notes redrawn as one graphic: Project-Oriented Idea Generator, Independent Artist, Designer, UXer on a KOG Mission, and Kreative License, with four small encouragement cards](./image-5.jpg)

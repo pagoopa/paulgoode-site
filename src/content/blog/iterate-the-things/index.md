@@ -8,6 +8,8 @@ category: art
 tags: [thumbnails, tiktok, pagoopaloops]
 ---
 
+<div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/qwwamxxBk-Y" title="Iterate the Things" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
 Hey 👋 — Added this thing on [TikTok](https://www.tiktok.com/t/ZP8WnFcKY/) and figured that uploading it here would be fine. (Aside from me looking like my shirt buttons are gonna fly off… it is a good one take.)
 
 Basically it goes thru the thumbnail-to-sketchbook-to-bigger things I have been working on.
