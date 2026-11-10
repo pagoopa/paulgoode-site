@@ -2,6 +2,7 @@
 title: "008 - Old Notes"
 description: "Rummaged through the backlog binder and scooped these cards out. Enjoy!"
 pubDate: 2025-03-18
+thumbnail: ./thumbnail.jpg
 category: life
 tags: [notes]
 ---
