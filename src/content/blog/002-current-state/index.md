@@ -22,7 +22,7 @@ Anyway, to “keep going” this week, I created that graphic and a little video
 
 If you can handle a 9-minute ramble, here’s what I got:
 
-[Watch the video on YouTube](https://www.youtube.com/watch?v=xan8J58g-9Q)
+<div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/xan8J58g-9Q" title="002 - Current State" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 Thanks and hope that you’re well out there.
 

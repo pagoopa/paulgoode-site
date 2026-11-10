@@ -10,7 +10,7 @@ tags: [notes, video, encouragement]
 
 Was looking at a few Bible Notes today and decided to make a video sharing how I laminate them.
 
-[Watch the video on YouTube](https://www.youtube.com/watch?v=5JAcxO9x4dw)
+<div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/5JAcxO9x4dw" title="004 - Laminate the Notes" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 From the video, I shared one of the digital card drawings. Ended up tracing it with ink… and laminated it.
 

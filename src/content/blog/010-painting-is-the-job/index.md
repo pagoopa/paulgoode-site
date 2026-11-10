@@ -64,10 +64,10 @@ This interview with Mark Forsyth was fantastic.
 
 This is like painting in a room with smart people talking about smart things.
 
-[Watch the video on YouTube](https://www.youtube.com/watch?v=ulhrXgpjveA)
+<div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/ulhrXgpjveA" title="Writing Formulas Everybody Should Know (Mark Forsyth Interview)" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 ### 2 - I Am Rey
 
 Found this creator’s channel on TikTok and decided to see if there was more on YouTube. If you can handle the way he talks, **the content is superb.**
 
-[Watch the video on YouTube](https://www.youtube.com/watch?v=b6HnntxbbHs)
+<div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/b6HnntxbbHs" title="Why 99% of Prayers Get Deleted as Spam (The #1 Mistake to Avoid)" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>

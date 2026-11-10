@@ -7,7 +7,7 @@ category: art
 tags: [video, soundtrack, ai-generated]
 ---
 
-[Watch the video on YouTube](https://www.youtube.com/watch?v=0edP3G6DBiE)
+<div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/0edP3G6DBiE" title="Giant Montage: All Renders from &quot;Walking&quot;" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 Last month, I made [a short video of a giant running around the universe](https://youtube.com/shorts/p8qdif5hdcw?si=oP1PR7anXvm0ztM5). The 2-minute video consisted of a bunch of other videos all taped together. Some portions were edited in Apple Motion, just to extend the length and get some different effects.
 

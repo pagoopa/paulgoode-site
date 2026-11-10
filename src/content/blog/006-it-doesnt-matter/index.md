@@ -7,7 +7,7 @@ category: life
 tags: [video, encouragement]
 ---
 
-[Watch the video on YouTube](https://www.youtube.com/watch?v=JYCuPgXlXQU)
+<div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/JYCuPgXlXQU" title="006 - It Doesn't Matter" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 I found these videos from Alan Fisher on TikTok. He runs a channel called [TheQuantumLounge on YouTube](https://www.youtube.com/@thequantumlounge) as well.
 
