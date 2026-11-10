@@ -7,6 +7,8 @@ category: spirit
 tags: [encouragement]
 ---
 
+<div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/Eo6GtKKM0qA" title="Nothing Negative" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
 Fear, Uncertainty & Doubt (FUD) can crush me. Honest. That’s why I love listening to people like [Graham Cooke](https://www.youtube.com/watch?v=RtVSTy7K7Do). (He has some more formal stuff on YouTube out there, but I like the older stuff… and the soaking talks.)
 
 Anyway, as a Creative Person, “FUD” can sit on my chest and make me want to lie down. So, if there’s any creative task that I want to do for myself, it can be a workout to get through it. I’ve been fighting this since a kid. Nothing new.

@@ -8,6 +8,8 @@ category: studio
 tags: [orb]
 ---
 
+<div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/pR1uzZ2q5VA" title="Building Orb" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
 It was the morning of Saturday. I had rolled out of bed after some intense dreams that are now halfway forgotten. (They come back when necessary.)
 
 The dogs were fed and convinced me to walk them. To do this, they send the small cute one. He sorta looks at me them moves towards the door with any glance to step that I make.

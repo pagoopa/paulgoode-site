@@ -8,6 +8,8 @@ category: art
 tags: [spork, orb, learning]
 ---
 
+<div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/6YQyq5AXQIg" title="Building Spork" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
 ## Prelude
 
 Hey, just trying to share things I’m working on.

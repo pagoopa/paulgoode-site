@@ -102,6 +102,8 @@ I decided to put this into one graphic to print and laminate. Some new elements 
 
 Here’s an animation of the drawing coming together.
 
+<div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/U_Ivu_zsdqE" title="Triptych of Encouragement: the drawing coming together" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
 Then, here’s the final assembled image.
 
 ![003 - Triptych of Encouragement: image 5 of 7](./image-5.jpg)
