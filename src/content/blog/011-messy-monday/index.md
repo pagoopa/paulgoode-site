@@ -2,7 +2,6 @@
 title: "011 - Messy Monday"
 description: "Updates on painting and thinkering"
 pubDate: 2025-03-25
-draft: true
 thumbnail: ./image-1.jpg
 category: studio
 tags: [painting, thumbnails]

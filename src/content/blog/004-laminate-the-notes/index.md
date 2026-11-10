@@ -2,7 +2,6 @@
 title: "004 - Laminate the Notes"
 description: "Inspire yourself already"
 pubDate: 2025-03-13
-draft: true
 thumbnail: ./image-1.jpg
 category: spirit
 tags: [notes, video, encouragement]
